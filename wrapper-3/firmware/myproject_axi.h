@@ -15,8 +15,8 @@ typedef float T_out;
 /*typedef hls::axis<T_in, 0, 0, 0> input_axi_t;
 typedef hls::axis<T_out, 0, 0, 0> output_axi_t;*/
 
-typedef hls::axis<T_in[N_IN], 0, 0, 0> input_axis_t;
-typedef hls::axis<T_out[N_OUT], 0, 0, 0> output_axis_t;
+typedef hls::axis<T_in, 0, 0, 0> input_axis_t;
+typedef hls::axis<T_out, 0, 0, 0> output_axis_t;
 
 typedef hls::stream<input_axis_t> input_axi_t;
 typedef hls::stream<output_axis_t> output_axi_t;
@@ -67,7 +67,7 @@ typedef struct out_struct {
 } output_axi_t;
 */
 void myproject_axi(
-    input_axi_t &in,
-    output_axi_t &out
+    input_axi_t in[N_IN],
+    output_axi_t out[N_OUT]
         );
 #endif

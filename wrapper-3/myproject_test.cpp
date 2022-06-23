@@ -76,21 +76,22 @@ int main(int argc, char **argv)
       }
 
       //hls-fpga-machine-learning insert data
-      input_axi_t instream;
-      output_axi_t outstream;
-      input_axis_t inputs;
-      output_axis_t outputs;
+      input_axi_t instream[N_IN];
+      output_axi_t outstream[N_OUT];
+      input_axis_t inputs[N_IN];
+      output_axis_t outputs[N_OUT];
       // nnet::copy_data_axi<float, input_axis_t, 0, N_IN>(in, inputs);
       // inputs.data = in.data();
       for(int i = 0; i<N_IN; i++){
-	    inputs.data[i] = in.at(i);
+	    inputs[i].data = in.at(i);
+	    instream[i].write(inputs[i]);
 	  }
-      instream.write(inputs);
+
 
       //hls-fpga-machine-learning insert top-level-function
       myproject_axi(instream,outstream);
 
-      if (e % CHECKPOINT == 0) {
+      /*if (e % CHECKPOINT == 0) {
         std::cout << "Predictions" << std::endl;
         //hls-fpga-machine-learning insert predictions
         for(int i = 0; i < N_OUT; i++) {
@@ -102,18 +103,21 @@ int main(int argc, char **argv)
         //for(int i = 0; i<N_OUT; i++){
         //  outputs[i] = outstream[i].read();
         //}
-        outputs = outstream.read();
-        nnet::print_axis_result<output_axis_t, N_OUT>(outputs, std::cout, true);
-      }
+        for(int i = 0; i <N_OUT; i++){
+          outputs[i] = outstream[i].read();
+          nnet::print_axis_result<output_axis_t, N_OUT>(outputs[i], std::cout, true);
+        }
+      }*/
       e++;
 
       //hls-fpga-machine-learning insert tb-output
       //for(int i = 0; i<N_OUT; i++){
 	  //	outputs[i] = outstream[i].read();
 	  //}
-      outputs = outstream.read();
-      nnet::print_axis_result<output_axis_t, N_OUT>(outputs, fout);
-
+     /* for(int i = 0; i <N_OUT; i++){
+	    outputs[i] = outstream[i].read();
+	    nnet::print_axis_result<output_axis_t, N_OUT>(outputs[i], std::cout, true);
+	  }*/
     }
     fin.close();
     fpr.close();
