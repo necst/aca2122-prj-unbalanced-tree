@@ -164,10 +164,10 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject_axi.cpp:10:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="myproject_axi" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject_axi.cpp:24:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject_axi.cpp:23:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="myproject_axi" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject_axi.cpp:34:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject_axi.cpp:33:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="myproject_axi" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_INVALID" msg_id="207-5565" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:9:9" msg_body="'#pragma HLS unroll' can only be applied inside loop body">
@@ -380,11 +380,11 @@
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:104:11" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="anonymous"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/myproject_axi.cpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_33_2' (firmware/myproject_axi.cpp:33:22) in function 'myproject_axi' completely with a factor of 10">
-        <args Factor="10" LoopLoc="firmware/myproject_axi.cpp:33:22" LoopName="VITIS_LOOP_33_2"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/myproject_axi.cpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_32_2' (firmware/myproject_axi.cpp:32:22) in function 'myproject_axi' completely with a factor of 10">
+        <args Factor="10" LoopLoc="firmware/myproject_axi.cpp:32:22" LoopName="VITIS_LOOP_32_2"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/myproject_axi.cpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_23_1' (firmware/myproject_axi.cpp:23:22) in function 'myproject_axi' completely with a factor of 10">
-        <args Factor="10" LoopLoc="firmware/myproject_axi.cpp:23:22" LoopName="VITIS_LOOP_23_1"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/myproject_axi.cpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_22_1' (firmware/myproject_axi.cpp:22:22) in function 'myproject_axi' completely with a factor of 10">
+        <args Factor="10" LoopLoc="firmware/myproject_axi.cpp:22:22" LoopName="VITIS_LOOP_22_1"/>
     </msg>
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:184:0" msg_body="Unrolling loop 'VITIS_LOOP_300_21' (firmware/BDT.h:300:28) in function 'BDT::BDT&lt;20, 3, 2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, true&gt;::decision_function' completely with a factor of 1">
         <args Factor="1" LoopLoc="firmware/BDT.h:300:28" LoopName="VITIS_LOOP_300_21"/>
@@ -1073,23 +1073,17 @@
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/myproject_axi.cpp:20:14" msg_body="Applying array_partition to 'out_local': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="out_local"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:293:5" msg_body="Inlining function '_llvm.fpga.unpack.none.a10f32.i320' into 'myproject_axi(hls::stream&lt;hls::axis&lt;float [10], 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float [10], 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)'">
-        <args Callee="_llvm.fpga.unpack.none.a10f32.i320" Caller="myproject_axi(hls::stream&lt;hls::axis&lt;float [10], 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float [10], 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:293:5" msg_body="Inlining function '_llvm.fpga.unpack.none.f32.i32' into 'myproject_axi(hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)'">
+        <args Callee="_llvm.fpga.unpack.none.f32.i32" Caller="myproject_axi(hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5" msg_body="Inlining function '_llvm.fpga.pack.none.i1.s_struct.ap_uint&lt;1&gt;s' into 'myproject_axi(hls::stream&lt;hls::axis&lt;float [10], 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float [10], 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)'">
-        <args Callee="_llvm.fpga.pack.none.i1.s_struct.ap_uint&lt;1&gt;s" Caller="myproject_axi(hls::stream&lt;hls::axis&lt;float [10], 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float [10], 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5" msg_body="Inlining function '_llvm.fpga.pack.none.i1.s_struct.ap_uint&lt;1&gt;s' into 'myproject_axi(hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)'">
+        <args Callee="_llvm.fpga.pack.none.i1.s_struct.ap_uint&lt;1&gt;s" Caller="myproject_axi(hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5" msg_body="Inlining function '_llvm.fpga.pack.none.i40.s_struct.ap_uint&lt;40&gt;s' into 'myproject_axi(hls::stream&lt;hls::axis&lt;float [10], 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float [10], 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)'">
-        <args Callee="_llvm.fpga.pack.none.i40.s_struct.ap_uint&lt;40&gt;s" Caller="myproject_axi(hls::stream&lt;hls::axis&lt;float [10], 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float [10], 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5" msg_body="Inlining function '_llvm.fpga.pack.none.i4.s_struct.ap_uint&lt;4&gt;s' into 'myproject_axi(hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)'">
+        <args Callee="_llvm.fpga.pack.none.i4.s_struct.ap_uint&lt;4&gt;s" Caller="myproject_axi(hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5" msg_body="Inlining function '_llvm.fpga.pack.none.i320.a10f32' into 'myproject_axi(hls::stream&lt;hls::axis&lt;float [10], 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float [10], 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)'">
-        <args Callee="_llvm.fpga.pack.none.i320.a10f32" Caller="myproject_axi(hls::stream&lt;hls::axis&lt;float [10], 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float [10], 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:293:5" msg_body="Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint&lt;40&gt;s.i40' into 'myproject_axi(hls::stream&lt;hls::axis&lt;float [10], 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float [10], 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)'">
-        <args Callee="_llvm.fpga.unpack.none.s_struct.ap_uint&lt;40&gt;s.i40" Caller="myproject_axi(hls::stream&lt;hls::axis&lt;float [10], 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float [10], 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:293:5" msg_body="Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint&lt;1&gt;s.i1' into 'myproject_axi(hls::stream&lt;hls::axis&lt;float [10], 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float [10], 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)'">
-        <args Callee="_llvm.fpga.unpack.none.s_struct.ap_uint&lt;1&gt;s.i1" Caller="myproject_axi(hls::stream&lt;hls::axis&lt;float [10], 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float [10], 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5" msg_body="Inlining function '_llvm.fpga.pack.none.i32.f32' into 'myproject_axi(hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)'">
+        <args Callee="_llvm.fpga.pack.none.i32.f32" Caller="myproject_axi(hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

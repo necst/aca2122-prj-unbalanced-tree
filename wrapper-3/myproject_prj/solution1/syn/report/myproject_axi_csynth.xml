@@ -22,21 +22,21 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>7</Best-caseLatency>
-<Average-caseLatency>7</Average-caseLatency>
-<Worst-caseLatency>7</Worst-caseLatency>
-<Best-caseRealTimeLatency>49.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>49.000 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>49.000 ns</Worst-caseRealTimeLatency>
-<Interval-min>8</Interval-min>
-<Interval-max>8</Interval-max>
+<Best-caseLatency>25</Best-caseLatency>
+<Average-caseLatency>25</Average-caseLatency>
+<Worst-caseLatency>25</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.175 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.175 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.175 us</Worst-caseRealTimeLatency>
+<Interval-min>26</Interval-min>
+<Interval-max>26</Interval-max>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<FF>1919</FF>
-<LUT>9198</LUT>
+<FF>1936</FF>
+<LUT>9307</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -103,7 +103,7 @@
 <IOProtocol>axis</IOProtocol>
 <IOConfig>register, both mode</IOConfig>
 <Dir>in</Dir>
-<Bits>320</Bits>
+<Bits>32</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -151,7 +151,7 @@
 <IOProtocol>axis</IOProtocol>
 <IOConfig>register, both mode</IOConfig>
 <Dir>in</Dir>
-<Bits>40</Bits>
+<Bits>4</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -163,7 +163,7 @@
 <IOProtocol>axis</IOProtocol>
 <IOConfig>register, both mode</IOConfig>
 <Dir>in</Dir>
-<Bits>40</Bits>
+<Bits>4</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -175,7 +175,7 @@
 <IOProtocol>axis</IOProtocol>
 <IOConfig>register, both mode</IOConfig>
 <Dir>out</Dir>
-<Bits>320</Bits>
+<Bits>32</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -223,7 +223,7 @@
 <IOProtocol>axis</IOProtocol>
 <IOConfig>register, both mode</IOConfig>
 <Dir>out</Dir>
-<Bits>40</Bits>
+<Bits>4</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -235,7 +235,7 @@
 <IOProtocol>axis</IOProtocol>
 <IOConfig>register, both mode</IOConfig>
 <Dir>out</Dir>
-<Bits>40</Bits>
+<Bits>4</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>

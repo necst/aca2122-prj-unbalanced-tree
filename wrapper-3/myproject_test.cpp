@@ -76,15 +76,16 @@ int main(int argc, char **argv)
       }
 
       //hls-fpga-machine-learning insert data
-      input_axi_t instream[N_IN];
-      output_axi_t outstream[N_OUT];
-      input_axis_t inputs[N_IN];
-      output_axis_t outputs[N_OUT];
+      input_axi_t instream;
+      output_axi_t outstream;
+      input_axis_t inputs;
+      output_axis_t outputs;
       // nnet::copy_data_axi<float, input_axis_t, 0, N_IN>(in, inputs);
       // inputs.data = in.data();
       for(int i = 0; i<N_IN; i++){
-	    inputs[i].data = in.at(i);
-	    instream[i].write(inputs[i]);
+	    inputs.data = in.at(i);
+	    inputs.last = (i == N_IN - 1) ? true : false;
+	    instream.write(inputs);
 	  }
 
 
@@ -111,9 +112,10 @@ int main(int argc, char **argv)
       e++;
 
       //hls-fpga-machine-learning insert tb-output
-      //for(int i = 0; i<N_OUT; i++){
-	  //	outputs[i] = outstream[i].read();
-	  //}
+      for(int i = 0; i<N_OUT; i++){
+	  	outputs = outstream.read();
+	  	std::cout << "data: " << outputs.data << ", last: " << outputs.last << std::endl;
+	  }
      /* for(int i = 0; i <N_OUT; i++){
 	    outputs[i] = outstream[i].read();
 	    nnet::print_axis_result<output_axis_t, N_OUT>(outputs[i], std::cout, true);

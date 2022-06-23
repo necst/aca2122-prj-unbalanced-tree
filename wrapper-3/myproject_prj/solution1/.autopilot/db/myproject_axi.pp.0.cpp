@@ -33692,17 +33692,16 @@ static const unsigned N_IN = 10;
 static const unsigned N_OUT = 10;
 typedef float T_in;
 typedef float T_out;
+# 27 "firmware/myproject_axi.h"
+typedef hls::axis<T_in, 0, 0, 0> input_axis_t;
+typedef hls::axis<T_out, 0, 0, 0> output_axis_t;
 
 
 
-
-
-typedef hls::axis<T_in[N_IN], 0, 0, 0> input_axis_t;
-typedef hls::axis<T_out[N_OUT], 0, 0, 0> output_axis_t;
 
 typedef hls::stream<input_axis_t> input_axi_t;
 typedef hls::stream<output_axis_t> output_axi_t;
-# 69 "firmware/myproject_axi.h"
+# 81 "firmware/myproject_axi.h"
 __attribute__((sdx_kernel("myproject_axi", 0))) void myproject_axi(
     input_axi_t &in,
     output_axi_t &out
@@ -33725,29 +33724,29 @@ __attribute__((sdx_kernel("myproject_axi", 0))) void myproject_axi(
     unsigned short out_size = 0;
 
     score_t tree_scores[BDT::fn_classes(n_classes) * n_trees]{};
-    bool is_last = false;
+
     input_axis_t in_struct;
     output_axis_t out_struct;
     fake_input in_local[N_IN];
     result_t out_local[N_OUT];
 
-    in_struct = in.read();
-    VITIS_LOOP_23_1: for(unsigned i = 0; i < N_IN; i++){
+    VITIS_LOOP_22_1: for(unsigned i = 0; i < N_IN; i++){
 #pragma HLS UNROLL
 
- in_local[i] = in_struct.data[i];
+ in_struct = in.read();
+        in_local[i] = in_struct.data;
 
 
     }
     myproject(in_local, out_local, tree_scores);
 
-    out_struct.last = in_struct.last;
-    VITIS_LOOP_33_2: for(unsigned i = 0; i < N_OUT; i++){
+    VITIS_LOOP_32_2: for(unsigned i = 0; i < N_OUT; i++){
 #pragma HLS UNROLL
-
- out_struct.data[i] = out_local[i];
+ out_struct.last = (i == N_OUT - 1) ? true : false;
+        out_struct.data = out_local[i];
+        out.write(out_struct);
 
 
     }
-    out.write(out_struct);
+
 }

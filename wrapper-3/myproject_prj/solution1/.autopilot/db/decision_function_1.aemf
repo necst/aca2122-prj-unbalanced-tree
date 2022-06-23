@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1655987319627">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1656021567525">
   <ports id="1" name="p_read1" type="PortType" coreId="1919510075" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="2" name="p_read2" type="PortType" coreId="1330007625" bitwidth="32">
+  <ports id="2" name="p_read2" type="PortType" coreId="904436032" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="3" name="p_read3" type="PortType" coreId="3104446656" bitwidth="32">
+  <ports id="3" name="p_read3" type="PortType" coreId="903102528" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
   <ports id="13" name="ap_return" direction="DirOut">
@@ -105,7 +105,7 @@
         <dataOutputObjs>or</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="zext_ln148" lineNumber="148" fileName="firmware/BDT.h" fileDirectory=".." rtlName="zext_ln148_fu_104_p1" coreId="2964257440" contextFuncName="decision_function" bitwidth="2" opcode="zext" m_display="0" m_topoIndex="12" m_clusterGroupNumber="2">
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="zext_ln148" lineNumber="148" fileName="firmware/BDT.h" fileDirectory=".." rtlName="zext_ln148_fu_104_p1" coreId="902522688" contextFuncName="decision_function" bitwidth="2" opcode="zext" m_display="0" m_topoIndex="12" m_clusterGroupNumber="2">
         <inlineStackInfo fileName="firmware/BDT.h" linenumber="148" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="decision_function"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -136,7 +136,7 @@
         <dataOutputObjs>ret</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="_ln153" lineNumber="153" fileName="firmware/BDT.h" fileDirectory=".." coreId="2962785248" contextFuncName="decision_function" opcode="ret" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="_ln153" lineNumber="153" fileName="firmware/BDT.h" fileDirectory=".." coreId="901994096" contextFuncName="decision_function" opcode="ret" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/BDT.h" linenumber="153" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="decision_function"/>
         <dataInputObjs>mux</dataInputObjs>
         <dataOutputObjs>ap_return</dataOutputObjs>

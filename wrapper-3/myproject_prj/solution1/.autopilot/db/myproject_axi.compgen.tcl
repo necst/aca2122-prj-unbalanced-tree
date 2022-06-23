@@ -25,7 +25,7 @@ eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     corename {in_r} \
     metadata {  } \
     op interface \
-    ports { in_r_TDATA { I 320 vector } } \
+    ports { in_r_TDATA { I 32 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'in_r_V_data_V'"
@@ -44,7 +44,7 @@ eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     corename {in_r} \
     metadata {  } \
     op interface \
-    ports { in_r_TKEEP { I 40 vector } } \
+    ports { in_r_TKEEP { I 4 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'in_r_V_keep_V'"
@@ -63,7 +63,7 @@ eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     corename {in_r} \
     metadata {  } \
     op interface \
-    ports { in_r_TSTRB { I 40 vector } } \
+    ports { in_r_TSTRB { I 4 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'in_r_V_strb_V'"
@@ -101,7 +101,7 @@ eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     corename {out_r} \
     metadata {  } \
     op interface \
-    ports { out_r_TDATA { O 320 vector } } \
+    ports { out_r_TDATA { O 32 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'out_r_V_data_V'"
@@ -120,7 +120,7 @@ eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     corename {out_r} \
     metadata {  } \
     op interface \
-    ports { out_r_TKEEP { O 40 vector } } \
+    ports { out_r_TKEEP { O 4 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'out_r_V_keep_V'"
@@ -139,7 +139,7 @@ eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     corename {out_r} \
     metadata {  } \
     op interface \
-    ports { out_r_TSTRB { O 40 vector } } \
+    ports { out_r_TSTRB { O 4 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'out_r_V_strb_V'"

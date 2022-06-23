@@ -18,8 +18,8 @@
     "in": {
       "index": "0",
       "direction": "in",
-      "srcType": "stream<hls::axis<float [10], 0, 0, 0>, 0>&",
-      "srcSize": "512",
+      "srcType": "stream<hls::axis<float, 0, 0, 0>, 0>&",
+      "srcSize": "96",
       "hwRefs": [{
           "type": "interface",
           "interface": "in_r",
@@ -31,8 +31,8 @@
     "out": {
       "index": "1",
       "direction": "out",
-      "srcType": "stream<hls::axis<float [10], 0, 0, 0>, 0>&",
-      "srcSize": "512",
+      "srcType": "stream<hls::axis<float, 0, 0, 0>, 0>&",
+      "srcSize": "96",
       "hwRefs": [{
           "type": "interface",
           "interface": "out_r",
@@ -60,8 +60,8 @@
     "ClockPeriod": "7",
     "Uncertainty": "1.89",
     "IsCombinational": "0",
-    "II": "8",
-    "Latency": "7"
+    "II": "26",
+    "Latency": "25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 7.000 [get_ports ap_clk]"]},
   "Ipx": {
@@ -185,7 +185,7 @@
       "type": "axi4stream",
       "busTypeName": "axis",
       "mode": "slave",
-      "dataWidth": "320",
+      "dataWidth": "32",
       "portPrefix": "in_r_",
       "ports": [
         "in_r_TDATA",
@@ -207,7 +207,7 @@
       "type": "axi4stream",
       "busTypeName": "axis",
       "mode": "master",
-      "dataWidth": "320",
+      "dataWidth": "32",
       "portPrefix": "out_r_",
       "ports": [
         "out_r_TDATA",
@@ -247,7 +247,7 @@
     },
     "in_r_TDATA": {
       "dir": "in",
-      "width": "320"
+      "width": "32"
     },
     "in_r_TVALID": {
       "dir": "in",
@@ -264,15 +264,15 @@
     },
     "in_r_TKEEP": {
       "dir": "in",
-      "width": "40"
+      "width": "4"
     },
     "in_r_TSTRB": {
       "dir": "in",
-      "width": "40"
+      "width": "4"
     },
     "out_r_TDATA": {
       "dir": "out",
-      "width": "320"
+      "width": "32"
     },
     "out_r_TVALID": {
       "dir": "out",
@@ -289,11 +289,11 @@
     },
     "out_r_TKEEP": {
       "dir": "out",
-      "width": "40"
+      "width": "4"
     },
     "out_r_TSTRB": {
       "dir": "out",
-      "width": "40"
+      "width": "4"
     }
   },
   "ModuleInfo": {
@@ -301,7 +301,7 @@
       "ModuleName": "myproject_axi",
       "Instances": [{
           "ModuleName": "myproject",
-          "InstanceName": "out_local_V_myproject_fu_182",
+          "InstanceName": "out_local_V_myproject_fu_151",
           "Instances": [
             {
               "ModuleName": "decision_function_7",
@@ -701,10 +701,10 @@
       },
       "myproject_axi": {
         "Latency": {
-          "LatencyBest": "7",
-          "LatencyAvg": "7",
-          "LatencyWorst": "7",
-          "PipelineII": "8",
+          "LatencyBest": "25",
+          "LatencyAvg": "25",
+          "LatencyWorst": "25",
+          "PipelineII": "26",
           "PipelineDepth": "",
           "PipelineType": "no"
         },
@@ -714,10 +714,10 @@
           "Estimate": "4.973"
         },
         "Area": {
-          "FF": "1919",
+          "FF": "1936",
           "AVAIL_FF": "141120",
           "UTIL_FF": "1",
-          "LUT": "9198",
+          "LUT": "9307",
           "AVAIL_LUT": "70560",
           "UTIL_LUT": "13",
           "BRAM_18K": "0",
@@ -736,7 +736,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2022-06-23 14:30:04 CEST",
+    "Time": "2022-06-23 23:59:46 CEST",
     "ToolName": "vitis_hls",
     "ToolVersion": "2020.1"
   }

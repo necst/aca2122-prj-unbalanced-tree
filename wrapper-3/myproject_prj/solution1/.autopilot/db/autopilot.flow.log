@@ -1,4 +1,4 @@
-INFO-FLOW: Workspace /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1 opened at Thu Jun 23 14:28:19 CEST 2022
+INFO-FLOW: Workspace /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1 opened at Thu Jun 23 23:59:07 CEST 2022
 Execute     ap_set_clock -name default -period 7 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 7ns.
 Execute     set_part xczu3eg-sbva484-1-e 
@@ -9,7 +9,7 @@ DBG:HLSDevice: init success
 Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.hlp 
 Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
 INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
-Command       create_platform done; 0.93 sec.
+Command       create_platform done; 0.74 sec.
 Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
 Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
 Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
@@ -25,7 +25,7 @@ Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/
 Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
 Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info 
 Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 1.01 sec.
+Command     set_part done; 0.82 sec.
 Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
 INFO: [HLS 200-1505] Using flow_target 'vivado'
 Execute     get_config_interface -m_axi_latency 
@@ -46,7 +46,7 @@ Execute     config_export -format=sysgen
 Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
 INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
 Execute     config_export -rtl=verilog 
-Command   open_solution done; 1.03 sec.
+Command   open_solution done; 0.84 sec.
 Execute   set_part xczu3eg-sbva484-1-e 
 INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
 Execute     create_platform xczu3eg-sbva484-1-e -board  
@@ -101,7 +101,6 @@ Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info
 INFO-FLOW: Running: GCC PP 39
 INFO-FLOW: Source preprocessing
 Execute       ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/bin/clang firmware/myproject_axi.cpp -foptimization-record-file=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0 -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot -I /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -I /usr/include/x86_64-linux-gnu -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.pp.0.cpp -hls-platform-db-name=/opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_slow > /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.cpp.clang.out.log 2> /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.cpp.clang.err.log 
-Command       ap_eval done; 0.15 sec.
 INFO-FLOW: Done: GCC PP 39 time: 0.1 seconds per iteration
 Execute       set_directive_top myproject_axi -name=myproject_axi 
 Execute       source /opt/Xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
@@ -110,18 +109,18 @@ Execute         source /opt/Xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/try/try
 Execute       list_core -type functional_unit 
 INFO-FLOW: Source syntax check for synthesis
 Execute       ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.pp.0.cpp -hls-platform-db-name=/opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_slow > /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/clang.out.log 2> /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/clang.err.log 
-Command       ap_eval done; 0.52 sec.
+Command       ap_eval done; 0.49 sec.
 Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/.systemc_flag -fix-errors /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.51 sec.
+Command       clang_tidy done; 0.53 sec.
 INFO-FLOW: Running: clang-tidy CDT preprocess 39
 Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/all.directive.json 
 INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/all.directive.json -fix-errors /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.69 sec.
+Command       clang_tidy done; 0.71 sec.
 Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert -desc constantarray_remove-assert /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.pp.0.cpp std=gnu++14 -target fpga  
 INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
 Command       clang_tidy done; 0.76 sec.
-INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 1.4 seconds per iteration
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 1.5 seconds per iteration
 INFO-FLOW: Calling xilinx-label-all-loops ... 
 INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
 Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.pp.0.cpp std=gnu++14 -target fpga  
@@ -135,7 +134,7 @@ Command       ap_eval done; 0.43 sec.
 Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info 
 INFO-FLOW: compiling source code to llvm bc
 Execute       ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot -I /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.bc -hls-platform-db-name=/opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_slow > /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.pp.0.cpp.clang.out.log 2> /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.pp.0.cpp.clang.err.log 
-Command       ap_eval done; 0.49 sec.
+Command       ap_eval done; 0.5 sec.
 INFO: [HLS 200-10] Analyzing design file 'firmware/myproject.cpp' ... 
 INFO-FLOW: Compiling one TU...
 Execute       get_config_compile -pragma_strict_mode 
@@ -149,7 +148,7 @@ Execute       set_directive_top myproject_axi -name=myproject_axi
 Execute       list_core -type functional_unit 
 INFO-FLOW: Source syntax check for synthesis
 Execute       ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -hls-platform-db-name=/opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_slow > /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/clang.out.log 2> /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/clang.err.log 
-Command       ap_eval done; 0.46 sec.
+Command       ap_eval done; 0.45 sec.
 WARNING: [HLS 207-5565] '#pragma HLS unroll' can only be applied inside loop body (firmware/myproject.cpp:9:9)
 Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/.systemc_flag -fix-errors /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
@@ -157,25 +156,25 @@ Command       clang_tidy done; 0.44 sec.
 INFO-FLOW: Running: clang-tidy CDT preprocess 39
 Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/all.directive.json 
 INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/all.directive.json -fix-errors /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.44 sec.
+Command       clang_tidy done; 0.43 sec.
 Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert -desc constantarray_remove-assert /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp std=gnu++14 -target fpga  
 INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.64 sec.
+Command       clang_tidy done; 0.62 sec.
 INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 1.1 seconds per iteration
 INFO-FLOW: Calling xilinx-label-all-loops ... 
 INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
 Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp std=gnu++14 -target fpga  
 Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp.clang-tidy.loop-label.out.log 2> /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp.clang-tidy.loop-label.err.log 
-Command         ap_eval done; 0.74 sec.
-Command       clang_tidy done; 0.8 sec.
+Command         ap_eval done; 0.73 sec.
+Command       clang_tidy done; 0.79 sec.
 Execute       get_config_dataflow -strict_mode 
 Execute       ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp.xilinx-dataflow-lawyer.err.log 
-Command       ap_eval done; 0.42 sec.
+Command       ap_eval done; 0.41 sec.
 Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info 
 INFO-FLOW: compiling source code to llvm bc
 Execute       ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot -I /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.bc -hls-platform-db-name=/opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_slow > /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp.clang.out.log 2> /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp.clang.err.log 
-Command       ap_eval done; 0.49 sec.
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 8.51 seconds. CPU system time: 0.69 seconds. Elapsed time: 8.43 seconds; current allocated memory: 164.855 MB.
+Command       ap_eval done; 0.48 sec.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 8.41 seconds. CPU system time: 0.69 seconds. Elapsed time: 8.3 seconds; current allocated memory: 165.047 MB.
 INFO-FLOW: Linking Debug ...
 INFO-FLOW: Linking dut bc code.
 Execute       run_link_or_opt -out /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.g.ld.0.bc -args  "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.g.bc" "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.g.bc"  
@@ -187,14 +186,14 @@ INFO-FLOW:
 INFO-FLOW: Linking math bc lib
 Execute       run_link_or_opt -out /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.g.ld.2.m1.bc -args /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /opt/Xilinx/Vitis_HLS/2021.2/lnx64/lib/libhlsm_39.bc /opt/Xilinx/Vitis_HLS/2021.2/lnx64/lib/libhlsmc++_39.bc 
 Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /opt/Xilinx/Vitis_HLS/2021.2/lnx64/lib/libhlsm_39.bc /opt/Xilinx/Vitis_HLS/2021.2/lnx64/lib/libhlsmc++_39.bc -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.g.ld.2.m1.bc > /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log 
-Command         ap_eval done; 2.03 sec.
+Command         ap_eval done; 1.87 sec.
 INFO-FLOW: 
-Command       run_link_or_opt done; 2.03 sec.
+Command       run_link_or_opt done; 1.87 sec.
 Execute       run_link_or_opt -opt -out /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=myproject_axi -reflow-float-conversion 
 Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=myproject_axi -reflow-float-conversion -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc > /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log 
-Command         ap_eval done; 0.74 sec.
+Command         ap_eval done; 0.66 sec.
 INFO-FLOW: 
-Command       run_link_or_opt done; 0.74 sec.
+Command       run_link_or_opt done; 0.66 sec.
 Execute       run_link_or_opt -out /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.g.ld.4.m2.bc -args /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /opt/Xilinx/Vitis_HLS/2021.2/lnx64/lib/libfloatconversion_39.bc 
 Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /opt/Xilinx/Vitis_HLS/2021.2/lnx64/lib/libfloatconversion_39.bc -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.g.ld.4.m2.bc > /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log 
 INFO-FLOW: 
@@ -290,8 +289,8 @@ INFO: [HLS 214-291] Loop 'VITIS_LOOP_147_1' is marked as complete unroll implied
 INFO: [HLS 214-291] Loop 'Activate' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:125:13)
 INFO: [HLS 214-291] Loop 'Compare' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:112:11)
 INFO: [HLS 214-291] Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:104:11)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_33_2' (firmware/myproject_axi.cpp:33:22) in function 'myproject_axi' completely with a factor of 10 (firmware/myproject_axi.cpp:6:0)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_23_1' (firmware/myproject_axi.cpp:23:22) in function 'myproject_axi' completely with a factor of 10 (firmware/myproject_axi.cpp:6:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_32_2' (firmware/myproject_axi.cpp:32:22) in function 'myproject_axi' completely with a factor of 10 (firmware/myproject_axi.cpp:6:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_22_1' (firmware/myproject_axi.cpp:22:22) in function 'myproject_axi' completely with a factor of 10 (firmware/myproject_axi.cpp:6:0)
 INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_300_21' (firmware/BDT.h:300:28) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
 INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_287_20' (firmware/BDT.h:287:22) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
 INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_282_19' (firmware/BDT.h:282:22) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
@@ -522,22 +521,20 @@ INFO: [HLS 214-248] Applying array_partition to 'tree_scores': Complete partitio
 INFO: [HLS 214-248] Applying array_partition to 'in_local': Complete partitioning on dimension 1. (firmware/myproject_axi.cpp:19:16)
 INFO: [HLS 214-248] Applying array_partition to 'out_local': Complete partitioning on dimension 1. (firmware/myproject_axi.cpp:20:14)
 INFO: [HLS 214-270] Starting automatic array partition analysis...
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.a10f32.i320' into 'myproject_axi(hls::stream<hls::axis<float [10], 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<float [10], 0ul, 0ul, 0ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:293:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i1.s_struct.ap_uint<1>s' into 'myproject_axi(hls::stream<hls::axis<float [10], 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<float [10], 0ul, 0ul, 0ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i40.s_struct.ap_uint<40>s' into 'myproject_axi(hls::stream<hls::axis<float [10], 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<float [10], 0ul, 0ul, 0ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i320.a10f32' into 'myproject_axi(hls::stream<hls::axis<float [10], 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<float [10], 0ul, 0ul, 0ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<40>s.i40' into 'myproject_axi(hls::stream<hls::axis<float [10], 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<float [10], 0ul, 0ul, 0ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:293:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<1>s.i1' into 'myproject_axi(hls::stream<hls::axis<float [10], 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<float [10], 0ul, 0ul, 0ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:293:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.f32.i32' into 'myproject_axi(hls::stream<hls::axis<float, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<float, 0ul, 0ul, 0ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:293:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i1.s_struct.ap_uint<1>s' into 'myproject_axi(hls::stream<hls::axis<float, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<float, 0ul, 0ul, 0ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i4.s_struct.ap_uint<4>s' into 'myproject_axi(hls::stream<hls::axis<float, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<float, 0ul, 0ul, 0ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i32.f32' into 'myproject_axi(hls::stream<hls::axis<float, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<float, 0ul, 0ul, 0ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5)
 INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/kernel.internal.xml
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 5.72 seconds. CPU system time: 0.23 seconds. Elapsed time: 5.99 seconds; current allocated memory: 169.688 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 169.688 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 5.71 seconds. CPU system time: 0.3 seconds. Elapsed time: 6.04 seconds; current allocated memory: 170.871 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 170.871 MB.
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 INFO-FLOW: Running Standard Transforms...
 Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top myproject_axi -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.g.0.bc -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
-Command         transform done; 0.16 sec.
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 213.594 MB.
+Command         transform done; 0.17 sec.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 214.934 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.g.1.bc -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.g.2.prechk.bc -f 
@@ -547,28 +544,28 @@ Execute         transform -syn-check /home/nghielme/PycharmProjects/conifer/exam
 WARNING: [SYNCHK 200-23] /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1000: variable-indexed range selection may cause suboptimal QoR.
 INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
 Command         transform done; 0.16 sec.
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.36 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.37 seconds; current allocated memory: 267.652 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.35 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.36 seconds; current allocated memory: 270.930 MB.
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.g.1.bc to /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
 Execute         transform -hls -tmp /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db -interface-port-rename -function-uniquify -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -function-uniquify -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -annotate-dataflow-channels -scalar-preprocessing -scalar-propagation2 -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.o.1.bc -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.o.1.tmp.bc -f 
 INFO: [XFORM 203-602] Inlining function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' into 'myproject' (firmware/myproject.cpp:10) automatically.
-Command         transform done; 0.3 sec.
+Command         transform done; 0.31 sec.
 INFO-FLOW: Presyn 2...
 Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -barrier -norm-name /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.o.1.tmp.bc -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (firmware/myproject_axi.cpp:41:1) in function 'myproject_axi'... converting 89 basic blocks.
 INFO: [XFORM 203-11] Balancing expressions in function 'myproject' (firmware/BDT.h:4:26)...8 expression(s) balanced.
 Command         transform done; 0.25 sec.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.53 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.55 seconds; current allocated memory: 347.812 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.54 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.56 seconds; current allocated memory: 351.047 MB.
 Execute         get_config_compile -enable_auto_rewind 
 Execute         get_config_compile -enable_loop_extract 
 INFO-FLOW: Building ssdm...
 Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation2 -deadargelim -globaldce -mem2reg -load-elim -read-loop-dep -loop-simplify -loop-extract-inner -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.o.2.bc -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
-Command         transform done; 0.24 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.22 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.24 seconds; current allocated memory: 441.441 MB.
+Command         transform done; 0.25 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.25 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.25 seconds; current allocated memory: 439.660 MB.
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 1.35 sec.
-Command     elaborate done; 15.77 sec.
+Command       opt_and_import_c done; 1.37 sec.
+Command     elaborate done; 15.71 sec.
 Execute     ap_eval exec zip -j /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
 Execute     autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
@@ -676,7 +673,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'decision_function.7'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.7'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.12 seconds; current allocated memory: 442.328 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.12 seconds; current allocated memory: 440.863 MB.
 Execute       syn_report -verbosereport -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_7.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -689,7 +686,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 442.406 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 440.941 MB.
 Execute       syn_report -verbosereport -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_7.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -704,7 +701,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'decision_function.6'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.6'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 442.594 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 441.129 MB.
 Execute       syn_report -verbosereport -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_6.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -717,7 +714,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 442.652 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 441.191 MB.
 Execute       syn_report -verbosereport -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_6.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -732,7 +729,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'decision_function.5'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.5'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 442.863 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 441.371 MB.
 Execute       syn_report -verbosereport -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_5.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -745,7 +742,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 442.930 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 441.496 MB.
 Execute       syn_report -verbosereport -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_5.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -760,7 +757,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'decision_function.4'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.4'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 443.133 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 441.668 MB.
 Execute       syn_report -verbosereport -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_4.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -773,7 +770,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 443.191 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 441.699 MB.
 Execute       syn_report -verbosereport -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_4.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -788,7 +785,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'decision_function.3'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.3'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 443.367 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 441.902 MB.
 Execute       syn_report -verbosereport -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_3.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -801,7 +798,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 443.461 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 441.992 MB.
 Execute       syn_report -verbosereport -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_3.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -816,7 +813,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'decision_function.2'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.2'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 443.633 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 442.172 MB.
 Execute       syn_report -verbosereport -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_2.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -829,7 +826,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 443.758 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 442.293 MB.
 Execute       syn_report -verbosereport -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_2.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -844,7 +841,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'decision_function.1'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 443.879 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 442.441 MB.
 Execute       syn_report -verbosereport -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_1.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -857,7 +854,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 444.004 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 442.566 MB.
 Execute       syn_report -verbosereport -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_1.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -872,7 +869,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'decision_function'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 444.168 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 442.703 MB.
 Execute       syn_report -verbosereport -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -885,7 +882,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 444.289 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 442.820 MB.
 Execute       syn_report -verbosereport -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -900,7 +897,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'myproject'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'myproject'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 444.445 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 442.984 MB.
 Execute       syn_report -verbosereport -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -913,11 +910,11 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 444.496 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 443.035 MB.
 Execute       syn_report -verbosereport -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
-Command       syn_report done; 0.18 sec.
+Command       syn_report done; 0.17 sec.
 Execute       db_write -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.bind.adb -f 
 INFO-FLOW: Finish binding myproject.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -927,12 +924,12 @@ Execute       set_default_model myproject_axi
 Execute       schedule -model myproject_axi 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.21 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.41 seconds. CPU system time: 0 seconds. Elapsed time: 0.4 seconds; current allocated memory: 448.902 MB.
+Command       schedule done; 0.24 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.43 seconds. CPU system time: 0 seconds. Elapsed time: 0.42 seconds; current allocated memory: 447.520 MB.
 Execute       syn_report -verbosereport -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
-Command       syn_report done; 0.13 sec.
+Command       syn_report done; 0.16 sec.
 Execute       db_write -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.sched.adb -f 
 INFO-FLOW: Finish scheduling myproject_axi.
 Execute       set_default_model myproject_axi 
@@ -942,12 +939,12 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind done; 0.26 sec.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.39 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.4 seconds; current allocated memory: 448.902 MB.
+Command       bind done; 0.28 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.45 seconds. CPU system time: 0 seconds. Elapsed time: 0.45 seconds; current allocated memory: 447.520 MB.
 Execute       syn_report -verbosereport -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
-Command       syn_report done; 0.79 sec.
+Command       syn_report done; 0.8 sec.
 Execute       db_write -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.bind.adb -f 
 INFO-FLOW: Finish binding myproject_axi.
 Execute       get_model_list myproject_axi -filter all-wo-channel 
@@ -973,7 +970,7 @@ Execute       get_config_rtl -module_auto_prefix
 Execute       create_rtl_model decision_function.7 -top_prefix myproject_axi_ -sub_prefix myproject_axi_ -mg_file /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_7.compgen.tcl 
 INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_7'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.82 seconds. CPU system time: 0 seconds. Elapsed time: 0.83 seconds; current allocated memory: 448.902 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.82 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.84 seconds; current allocated memory: 447.520 MB.
 Execute       source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
 Execute       gen_rtl decision_function.7 -style xilinx -f -lang vhdl -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/syn/vhdl/myproject_axi_decision_function_7 
 Execute       gen_rtl decision_function.7 -style xilinx -f -lang vlog -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/syn/verilog/myproject_axi_decision_function_7 
@@ -999,7 +996,7 @@ Execute       get_config_rtl -module_auto_prefix
 Execute       create_rtl_model decision_function.6 -top_prefix myproject_axi_ -sub_prefix myproject_axi_ -mg_file /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_6.compgen.tcl 
 INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_6'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 448.957 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 447.641 MB.
 Execute       source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
 Execute       gen_rtl decision_function.6 -style xilinx -f -lang vhdl -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/syn/vhdl/myproject_axi_decision_function_6 
 Execute       gen_rtl decision_function.6 -style xilinx -f -lang vlog -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/syn/verilog/myproject_axi_decision_function_6 
@@ -1025,7 +1022,7 @@ Execute       get_config_rtl -module_auto_prefix
 Execute       create_rtl_model decision_function.5 -top_prefix myproject_axi_ -sub_prefix myproject_axi_ -mg_file /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_5.compgen.tcl 
 INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_5'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 449.617 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 448.297 MB.
 Execute       source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
 Execute       gen_rtl decision_function.5 -style xilinx -f -lang vhdl -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/syn/vhdl/myproject_axi_decision_function_5 
 Execute       gen_rtl decision_function.5 -style xilinx -f -lang vlog -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/syn/verilog/myproject_axi_decision_function_5 
@@ -1052,7 +1049,7 @@ Execute       create_rtl_model decision_function.4 -top_prefix myproject_axi_ -s
 WARNING: [RTGEN 206-101] RTL name 'mux_42_32_1_1' is changed to 'mux_42_32_1_1_x' due to conflict.
 INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1_x': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_4'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 450.273 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 448.957 MB.
 Execute       source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
 Execute       gen_rtl decision_function.4 -style xilinx -f -lang vhdl -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/syn/vhdl/myproject_axi_decision_function_4 
 Execute       gen_rtl decision_function.4 -style xilinx -f -lang vlog -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/syn/verilog/myproject_axi_decision_function_4 
@@ -1078,7 +1075,7 @@ Execute       get_config_rtl -module_auto_prefix
 Execute       create_rtl_model decision_function.3 -top_prefix myproject_axi_ -sub_prefix myproject_axi_ -mg_file /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_3.compgen.tcl 
 INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_3'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 450.930 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 449.613 MB.
 Execute       source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
 Execute       gen_rtl decision_function.3 -style xilinx -f -lang vhdl -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/syn/vhdl/myproject_axi_decision_function_3 
 Execute       gen_rtl decision_function.3 -style xilinx -f -lang vlog -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/syn/verilog/myproject_axi_decision_function_3 
@@ -1104,7 +1101,7 @@ Execute       get_config_rtl -module_auto_prefix
 Execute       create_rtl_model decision_function.2 -top_prefix myproject_axi_ -sub_prefix myproject_axi_ -mg_file /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_2.compgen.tcl 
 INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1_x': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_2'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 451.629 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 450.301 MB.
 Execute       source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
 Execute       gen_rtl decision_function.2 -style xilinx -f -lang vhdl -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/syn/vhdl/myproject_axi_decision_function_2 
 Execute       gen_rtl decision_function.2 -style xilinx -f -lang vlog -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/syn/verilog/myproject_axi_decision_function_2 
@@ -1130,7 +1127,7 @@ Execute       get_config_rtl -module_auto_prefix
 Execute       create_rtl_model decision_function.1 -top_prefix myproject_axi_ -sub_prefix myproject_axi_ -mg_file /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_1.compgen.tcl 
 INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 452.285 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 450.938 MB.
 Execute       source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
 Execute       gen_rtl decision_function.1 -style xilinx -f -lang vhdl -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/syn/vhdl/myproject_axi_decision_function_1 
 Execute       gen_rtl decision_function.1 -style xilinx -f -lang vlog -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/syn/verilog/myproject_axi_decision_function_1 
@@ -1156,7 +1153,7 @@ Execute       get_config_rtl -module_auto_prefix
 Execute       create_rtl_model decision_function -top_prefix myproject_axi_ -sub_prefix myproject_axi_ -mg_file /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function.compgen.tcl 
 INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1_x': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 453.008 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 451.633 MB.
 Execute       source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
 Execute       gen_rtl decision_function -style xilinx -f -lang vhdl -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/syn/vhdl/myproject_axi_decision_function 
 Execute       gen_rtl decision_function -style xilinx -f -lang vlog -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/syn/verilog/myproject_axi_decision_function 
@@ -1181,7 +1178,7 @@ Execute       get_config_rtl -module_prefix
 Execute       get_config_rtl -module_auto_prefix 
 Execute       create_rtl_model myproject -top_prefix myproject_axi_ -sub_prefix myproject_axi_ -mg_file /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'myproject'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 453.734 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 452.391 MB.
 Execute       source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
 Execute       gen_rtl myproject -style xilinx -f -lang vhdl -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/syn/vhdl/myproject_axi_myproject 
 Execute       gen_rtl myproject -style xilinx -f -lang vlog -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/syn/verilog/myproject_axi_myproject 
@@ -1217,16 +1214,16 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'myproject_axi/out_r_V_last
 INFO: [RTGEN 206-500] Setting interface mode on function 'myproject_axi' to 'ap_ctrl_none'.
 INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 10 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'myproject_axi'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.32 seconds. CPU system time: 0 seconds. Elapsed time: 0.32 seconds; current allocated memory: 458.227 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.31 seconds. CPU system time: 0 seconds. Elapsed time: 0.32 seconds; current allocated memory: 457.070 MB.
 Execute       source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
 Execute       gen_rtl myproject_axi -istop -style xilinx -f -lang vhdl -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/syn/vhdl/myproject_axi 
 Command       gen_rtl done; 0.36 sec.
 Execute       gen_rtl myproject_axi -istop -style xilinx -f -lang vlog -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/syn/verilog/myproject_axi 
-Command       gen_rtl done; 0.17 sec.
+Command       gen_rtl done; 0.18 sec.
 Execute       syn_report -csynth -model myproject_axi -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/syn/report/myproject_axi_csynth.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
-Command       syn_report done; 0.17 sec.
+Command       syn_report done; 0.18 sec.
 Execute       syn_report -rtlxml -model myproject_axi -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/syn/report/myproject_axi_csynth.xml 
 Execute         get_solution -flow_target
 Execute           get_solution -flow_target 
@@ -1234,14 +1231,14 @@ Command       syn_report done; 0.18 sec.
 Execute       syn_report -verbosereport -model myproject_axi -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.verbose.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
-Command       syn_report done; 0.96 sec.
+Command       syn_report done; 0.98 sec.
 Execute       db_write -model myproject_axi -f -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.adb 
 Command       db_write done; 0.2 sec.
 Execute       db_write -model myproject_axi -bindview -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/design.bindinfo.xml 
 Execute       gen_tb_info myproject_axi -p /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi 
 Execute       export_constraint_db -f -tool general -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.constraint.tcl 
 Execute       syn_report -designview -model myproject_axi -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.design.xml 
-Command       syn_report done; 0.46 sec.
+Command       syn_report done; 0.48 sec.
 Execute       syn_report -csynthDesign -model myproject_axi -o /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/syn/report/csynth.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -1407,7 +1404,7 @@ Execute       source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-2
 Execute       source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function.compgen.tcl 
 Execute       source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.compgen.tcl 
 Execute       source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.compgen.tcl 
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2.72 seconds. CPU system time: 0.02 seconds. Elapsed time: 2.73 seconds; current allocated memory: 469.723 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2.73 seconds. CPU system time: 0.02 seconds. Elapsed time: 2.77 seconds; current allocated memory: 468.793 MB.
 INFO-FLOW: DBG:PROC: ::AP::create_csynth_xml bind_adapter_nodes_var='bind_adapter_nodes' bind_report_dict_var='bind_report_dict' outfile=''
 INFO-FLOW: Running: create_csynth_xml read xml data
 INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
@@ -1654,23 +1651,23 @@ Execute       get_config_export -ip_xdc_ooc_file
 Execute       get_config_debug -directory 
 Execute       source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/impl/misc/myproject_axi_fpext_32ns_64_2_no_dsp_1_ip.tcl 
 Execute       source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/impl/misc/myproject_axi_fpext_32ns_64_4_no_dsp_1_ip.tcl 
-INFO-FLOW: DBG:PROC: ::AP::add_csynth_report_sections bind_adapter_nodes='' bind_report_dict='TOP myproject_axi DATA {myproject_axi {DEPTH 1 CHILDREN myproject BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME man_V_1_fu_424_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501 VARIABLE man_V_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME F2_fu_444_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE F2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln590_fu_456_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE add_ln590 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln590_fu_462_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE sub_ln590 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME man_V_4_fu_524_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501 VARIABLE man_V_4 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME F2_1_fu_544_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE F2_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln590_1_fu_556_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE add_ln590_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln590_1_fu_562_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE sub_ln590_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME man_V_7_fu_624_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501 VARIABLE man_V_7 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME F2_2_fu_644_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE F2_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln590_2_fu_656_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE add_ln590_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln590_2_fu_662_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE sub_ln590_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME man_V_10_fu_724_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501 VARIABLE man_V_10 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME F2_3_fu_744_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE F2_3 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln590_3_fu_756_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE add_ln590_3 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln590_3_fu_762_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE sub_ln590_3 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME man_V_13_fu_824_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501 VARIABLE man_V_13 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME F2_4_fu_844_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE F2_4 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln590_4_fu_856_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE add_ln590_4 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln590_4_fu_862_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE sub_ln590_4 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME man_V_16_fu_924_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501 VARIABLE man_V_16 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME F2_5_fu_944_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE F2_5 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln590_5_fu_956_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE add_ln590_5 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln590_5_fu_962_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE sub_ln590_5 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME man_V_19_fu_1024_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501 VARIABLE man_V_19 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME F2_6_fu_1044_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE F2_6 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln590_6_fu_1056_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE add_ln590_6 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln590_6_fu_1062_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE sub_ln590_6 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME man_V_22_fu_1124_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501 VARIABLE man_V_22 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME F2_7_fu_1144_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE F2_7 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln590_7_fu_1156_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE add_ln590_7 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln590_7_fu_1162_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE sub_ln590_7 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME man_V_25_fu_1224_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501 VARIABLE man_V_25 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME F2_8_fu_1244_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE F2_8 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln590_8_fu_1256_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE add_ln590_8 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln590_8_fu_1262_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE sub_ln590_8 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME man_V_28_fu_1324_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501 VARIABLE man_V_28 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME F2_9_fu_1344_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE F2_9 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln590_9_fu_1356_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE add_ln590_9 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln590_9_fu_1362_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE sub_ln590_9 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME tmp_V_fu_2766_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:992 VARIABLE tmp_V LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln997_fu_2799_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:997 VARIABLE sub_ln997 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME lsb_index_fu_2805_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:997 VARIABLE lsb_index LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln1000_fu_2831_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1000 VARIABLE sub_ln1000 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln1012_fu_2928_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1012 VARIABLE sub_ln1012 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln1011_fu_2943_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1011 VARIABLE add_ln1011 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME m_2_fu_2968_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1014 VARIABLE m_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL tadder LATENCY 0 OPTYPE add PRAGMA {} RTLNAME sub_ln1017_fu_3004_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1017 VARIABLE sub_ln1017 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL tadder LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln1017_fu_3009_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1017 VARIABLE add_ln1017 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} myproject {DEPTH 2 CHILDREN {decision_function_7 decision_function_6 decision_function_5 decision_function_4 decision_function_3 decision_function_2 decision_function_1 decision_function} BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln712_fu_176_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:712 VARIABLE add_ln712 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln712_1_fu_182_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:712 VARIABLE add_ln712_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL tadder LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln712_2_fu_188_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:712 VARIABLE add_ln712_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL tadder LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln712_3_fu_194_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:712 VARIABLE add_ln712_3 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL tadder LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln712_4_fu_200_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:712 VARIABLE add_ln712_4 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL tadder LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln712_5_fu_206_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:712 VARIABLE add_ln712_5 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL tadder LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln712_6_fu_212_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:712 VARIABLE add_ln712_6 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL tadder LATENCY 0 OPTYPE add PRAGMA {} RTLNAME ap_return SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:712 VARIABLE add_ln712_7 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} decision_function_7 {DEPTH 3 CHILDREN {} AREA {DSP 0 BRAM 0 URAM 0}} decision_function_6 {DEPTH 3 CHILDREN {} AREA {DSP 0 BRAM 0 URAM 0}} decision_function_5 {DEPTH 3 CHILDREN {} AREA {DSP 0 BRAM 0 URAM 0}} decision_function_4 {DEPTH 3 CHILDREN {} AREA {DSP 0 BRAM 0 URAM 0}} decision_function_3 {DEPTH 3 CHILDREN {} AREA {DSP 0 BRAM 0 URAM 0}} decision_function_2 {DEPTH 3 CHILDREN {} AREA {DSP 0 BRAM 0 URAM 0}} decision_function_1 {DEPTH 3 CHILDREN {} AREA {DSP 0 BRAM 0 URAM 0}} decision_function {DEPTH 3 CHILDREN {} AREA {DSP 0 BRAM 0 URAM 0}}}'
+INFO-FLOW: DBG:PROC: ::AP::add_csynth_report_sections bind_adapter_nodes='' bind_report_dict='TOP myproject_axi DATA {myproject_axi {DEPTH 1 CHILDREN myproject BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME man_V_1_fu_286_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501 VARIABLE man_V_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME F2_fu_306_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE F2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln590_fu_318_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE add_ln590 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln590_fu_324_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE sub_ln590 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME man_V_4_fu_386_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501 VARIABLE man_V_4 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME F2_1_fu_406_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE F2_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln590_1_fu_418_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE add_ln590_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln590_1_fu_424_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE sub_ln590_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME man_V_7_fu_486_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501 VARIABLE man_V_7 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME F2_2_fu_506_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE F2_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln590_2_fu_518_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE add_ln590_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln590_2_fu_524_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE sub_ln590_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME man_V_10_fu_586_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501 VARIABLE man_V_10 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME F2_3_fu_606_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE F2_3 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln590_3_fu_618_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE add_ln590_3 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln590_3_fu_624_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE sub_ln590_3 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME man_V_13_fu_686_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501 VARIABLE man_V_13 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME F2_4_fu_706_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE F2_4 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln590_4_fu_718_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE add_ln590_4 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln590_4_fu_724_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE sub_ln590_4 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME man_V_16_fu_786_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501 VARIABLE man_V_16 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME F2_5_fu_806_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE F2_5 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln590_5_fu_818_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE add_ln590_5 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln590_5_fu_824_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE sub_ln590_5 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME man_V_19_fu_886_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501 VARIABLE man_V_19 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME F2_6_fu_906_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE F2_6 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln590_6_fu_918_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE add_ln590_6 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln590_6_fu_924_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE sub_ln590_6 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME man_V_22_fu_986_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501 VARIABLE man_V_22 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME F2_7_fu_1006_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE F2_7 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln590_7_fu_1018_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE add_ln590_7 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln590_7_fu_1024_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE sub_ln590_7 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME man_V_25_fu_1086_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501 VARIABLE man_V_25 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME F2_8_fu_1106_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE F2_8 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln590_8_fu_1118_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE add_ln590_8 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln590_8_fu_1124_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE sub_ln590_8 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME man_V_28_fu_1186_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501 VARIABLE man_V_28 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME F2_9_fu_1206_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE F2_9 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln590_9_fu_1218_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE add_ln590_9 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln590_9_fu_1224_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681 VARIABLE sub_ln590_9 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME tmp_V_fu_2628_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:992 VARIABLE tmp_V LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln997_fu_2661_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:997 VARIABLE sub_ln997 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME lsb_index_fu_2667_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:997 VARIABLE lsb_index LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln1000_fu_2693_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1000 VARIABLE sub_ln1000 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln1012_fu_2790_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1012 VARIABLE sub_ln1012 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln1011_fu_2805_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1011 VARIABLE add_ln1011 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME m_2_fu_2830_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1014 VARIABLE m_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL tadder LATENCY 0 OPTYPE add PRAGMA {} RTLNAME sub_ln1017_fu_2866_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1017 VARIABLE sub_ln1017 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL tadder LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln1017_fu_2871_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1017 VARIABLE add_ln1017 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} myproject {DEPTH 2 CHILDREN {decision_function_7 decision_function_6 decision_function_5 decision_function_4 decision_function_3 decision_function_2 decision_function_1 decision_function} BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln712_fu_176_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:712 VARIABLE add_ln712 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln712_1_fu_182_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:712 VARIABLE add_ln712_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL tadder LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln712_2_fu_188_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:712 VARIABLE add_ln712_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL tadder LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln712_3_fu_194_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:712 VARIABLE add_ln712_3 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL tadder LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln712_4_fu_200_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:712 VARIABLE add_ln712_4 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL tadder LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln712_5_fu_206_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:712 VARIABLE add_ln712_5 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL tadder LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln712_6_fu_212_p2 SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:712 VARIABLE add_ln712_6 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL tadder LATENCY 0 OPTYPE add PRAGMA {} RTLNAME ap_return SOURCE /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:712 VARIABLE add_ln712_7 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} decision_function_7 {DEPTH 3 CHILDREN {} AREA {DSP 0 BRAM 0 URAM 0}} decision_function_6 {DEPTH 3 CHILDREN {} AREA {DSP 0 BRAM 0 URAM 0}} decision_function_5 {DEPTH 3 CHILDREN {} AREA {DSP 0 BRAM 0 URAM 0}} decision_function_4 {DEPTH 3 CHILDREN {} AREA {DSP 0 BRAM 0 URAM 0}} decision_function_3 {DEPTH 3 CHILDREN {} AREA {DSP 0 BRAM 0 URAM 0}} decision_function_2 {DEPTH 3 CHILDREN {} AREA {DSP 0 BRAM 0 URAM 0}} decision_function_1 {DEPTH 3 CHILDREN {} AREA {DSP 0 BRAM 0 URAM 0}} decision_function {DEPTH 3 CHILDREN {} AREA {DSP 0 BRAM 0 URAM 0}}}'
 INFO-FLOW: DBG:PUTS:       update_csynth_reports json2reportxml
 INFO-FLOW: Running: gen_csynth_pragma_report_xml
 INFO-FLOW: Done: gen_csynth_pragma_report_xml time: 0 seconds per iteration
 INFO-FLOW: DBG:PUTS:       update_csynth_reports wrote xml
 INFO-FLOW: DBG:PUTS:       update_csynth_reports appended to csynth rpt file
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.3 seconds. CPU system time: 0 seconds. Elapsed time: 0.29 seconds; current allocated memory: 474.734 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.28 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.3 seconds; current allocated memory: 473.926 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for myproject_axi.
 INFO: [VLOG 209-307] Generating Verilog RTL for myproject_axi.
 Execute       syn_report -model myproject_axi -printsummary 
 INFO: [HLS 200-789] **** Estimated Fmax: 201.08 MHz
-Command     autosyn done; 6.61 sec.
-Command   csynth_design done; 22.44 sec.
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 22.06 seconds. CPU system time: 1.07 seconds. Elapsed time: 22.44 seconds; current allocated memory: -625.383 MB.
-Command ap_source done; 23.6 sec.
+Command     autosyn done; 6.69 sec.
+Command   csynth_design done; 22.46 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 22.07 seconds. CPU system time: 1.16 seconds. Elapsed time: 22.46 seconds; current allocated memory: -626.699 MB.
+Command ap_source done; 23.4 sec.
 Execute cleanup_all 
-INFO-FLOW: Workspace /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1 opened at Thu Jun 23 14:30:03 CEST 2022
+INFO-FLOW: Workspace /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1 opened at Thu Jun 23 23:59:45 CEST 2022
 Execute     ap_set_clock -name default -period 7 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 7ns.
 Execute     set_part xczu3eg-sbva484-1-e 
@@ -1681,7 +1678,7 @@ DBG:HLSDevice: init success
 Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.hlp 
 Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
 INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
-Command       create_platform done; 0.79 sec.
+Command       create_platform done; 0.73 sec.
 Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
 Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
 Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
@@ -1697,7 +1694,7 @@ Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/
 Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
 Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info 
 Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 0.88 sec.
+Command     set_part done; 0.81 sec.
 Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
 INFO: [HLS 200-1505] Using flow_target 'vivado'
 Execute     get_config_interface -m_axi_latency 
@@ -1718,7 +1715,7 @@ Execute     config_export -format=sysgen
 Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
 INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
 Execute     config_export -rtl=verilog 
-Command   open_solution done; 0.88 sec.
+Command   open_solution done; 0.81 sec.
 Execute   set_part xczu3eg-sbva484-1-e 
 INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
 Execute     create_platform xczu3eg-sbva484-1-e -board  
@@ -1967,7 +1964,7 @@ INFO-FLOW: DBG:PUTS:     IP package: success /home/nghielme/PycharmProjects/coni
 Execute     get_config_export -output 
 Execute     send_msg_by_id INFO @200-802@%s myproject_prj/solution1/impl/export.zip 
 INFO: [HLS 200-802] Generated output file myproject_prj/solution1/impl/export.zip
-Command   export_design done; 24.09 sec.
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 14.16 seconds. CPU system time: 2.34 seconds. Elapsed time: 24.09 seconds; current allocated memory: -928.562 MB.
-Command ap_source done; 25.08 sec.
+Command   export_design done; 22.9 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 13.17 seconds. CPU system time: 2.29 seconds. Elapsed time: 22.9 seconds; current allocated memory: -930.406 MB.
+Command ap_source done; 23.82 sec.
 Execute cleanup_all 

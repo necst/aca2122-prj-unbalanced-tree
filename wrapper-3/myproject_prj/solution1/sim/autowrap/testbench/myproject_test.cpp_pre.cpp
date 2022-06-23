@@ -83882,15 +83882,15 @@ typedef float T_out;
 
 
 
-typedef hls::axis<T_in[N_IN], 0, 0, 0> input_axis_t;
-typedef hls::axis<T_out[N_OUT], 0, 0, 0> output_axis_t;
+typedef hls::axis<T_in, 0, 0, 0> input_axis_t;
+typedef hls::axis<T_out, 0, 0, 0> output_axis_t;
 
 typedef hls::stream<input_axis_t> input_axi_t;
 typedef hls::stream<output_axis_t> output_axi_t;
 # 69 "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/firmware/myproject_axi.h"
 void myproject_axi(
-    input_axi_t &in,
-    output_axi_t &out
+    input_axi_t in[N_IN],
+    output_axi_t out[N_OUT]
         );
 # 29 "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_test.cpp" 2
 # 1 "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/firmware/nnet_utils/nnet_helpers.h" 1
@@ -84416,50 +84416,39 @@ int main(int argc, char **argv)
       }
 
 
-      input_axi_t instream;
-      output_axi_t outstream;
+      input_axi_t instream[N_IN];
+      output_axi_t outstream[N_OUT];
       input_axis_t inputs;
       output_axis_t outputs;
 
 
       for(int i = 0; i<N_IN; i++){
-     inputs.data[i] = in.at(i);
+     inputs.data = in.at(i);
+     inputs.last = (i == N_IN - 1) ? true : false;
+     instream[i].write(inputs);
    }
-      instream.write(inputs);
+
 
 
       myproject_axi(instream,outstream);
-
-      if (e % 5000 == 0) {
-        std::cout << "Predictions" << std::endl;
-
-        for(int i = 0; i < N_OUT; i++) {
-          std::cout << pr[i] << " ";
-        }
-        std::cout << std::endl;
-        std::cout << "Quantized predictions" << std::endl;
-
-
-
-
-        outputs = outstream.read();
-        nnet::print_axis_result<output_axis_t, N_OUT>(outputs, std::cout, true);
-      }
+# 112 "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_test.cpp"
       e++;
 
 
+      for(int i = 0; i<N_OUT; i++){
+    outputs = outstream[i].read();
+    std::cout << "data: " << outputs.data << ", last: " << outputs.last << std::endl;
+   }
 
 
 
-      outputs = outstream.read();
-      nnet::print_axis_result<output_axis_t, N_OUT>(outputs, fout);
 
     }
     fin.close();
     fpr.close();
   } else {
     std::cout << "INFO: Unable to open input/predictions file, using default input." << std::endl;
-# 143 "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_test.cpp"
+# 149 "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_test.cpp"
   }
 
   fout.close();

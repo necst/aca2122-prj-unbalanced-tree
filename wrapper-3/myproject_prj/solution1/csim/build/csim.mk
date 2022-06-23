@@ -16,7 +16,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../myproject_test.cpp ../../../../firmware/myproject.cpp ../../../../firmware/myproject_axi.cpp
+HLS_SOURCES = ../../../../myproject_test.cpp ../../../../firmware/myproject_axi.cpp ../../../../firmware/myproject.cpp
 
 override TARGET := csim.exe
 
@@ -53,8 +53,8 @@ IFLAG += -D__SIM_FIR__
 
 IFLAG += -D__SIM_DDS__
 
-IFLAG += -D__DSP48E1__
-IFLAG += -Wno-unknown-pragmas -I../../firmware 
+IFLAG += -D__DSP48E2__
+IFLAG += -Wno-unknown-pragmas 
 IFLAG += -g
 DFLAG += -D__xilinx_ip_top= -DAESL_TB
 CCFLAG += -Werror=return-type
@@ -70,18 +70,18 @@ all: $(TARGET)
 
 $(ObjDir)/myproject_test.o: ../../../../myproject_test.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../myproject_test.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD -I../../../../firmware -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -DRTL_SIM -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/myproject_test.d
-
-$(ObjDir)/myproject.o: ../../../../firmware/myproject.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../firmware/myproject.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/myproject.d
 
 $(ObjDir)/myproject_axi.o: ../../../../firmware/myproject_axi.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../firmware/myproject_axi.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/myproject_axi.d
+
+$(ObjDir)/myproject.o: ../../../../firmware/myproject.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../firmware/myproject.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/myproject.d

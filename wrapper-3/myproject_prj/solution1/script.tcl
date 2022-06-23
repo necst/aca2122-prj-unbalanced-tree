@@ -16,7 +16,7 @@ create_clock -period 7 -name default
 config_compile -name_max_length 60
 config_export -format sysgen -rtl verilog
 source "./myproject_prj/solution1/directives.tcl"
-csim_design
+csim_design -clean
 csynth_design
 cosim_design -trace_level all
 export_design -rtl verilog -format sysgen

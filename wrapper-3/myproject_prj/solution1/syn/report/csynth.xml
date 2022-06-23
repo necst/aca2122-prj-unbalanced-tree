@@ -19,20 +19,20 @@
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
             <unit>clock cycles</unit>
-            <Best-caseLatency>7</Best-caseLatency>
-            <Average-caseLatency>7</Average-caseLatency>
-            <Worst-caseLatency>7</Worst-caseLatency>
-            <Best-caseRealTimeLatency>49.000 ns</Best-caseRealTimeLatency>
-            <Average-caseRealTimeLatency>49.000 ns</Average-caseRealTimeLatency>
-            <Worst-caseRealTimeLatency>49.000 ns</Worst-caseRealTimeLatency>
-            <Interval-min>8</Interval-min>
-            <Interval-max>8</Interval-max>
+            <Best-caseLatency>25</Best-caseLatency>
+            <Average-caseLatency>25</Average-caseLatency>
+            <Worst-caseLatency>25</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0.175 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0.175 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0.175 us</Worst-caseRealTimeLatency>
+            <Interval-min>26</Interval-min>
+            <Interval-max>26</Interval-max>
         </SummaryOfOverallLatency>
     </PerformanceEstimates>
     <AreaEstimates>
         <Resources>
-            <FF>1919</FF>
-            <LUT>9198</LUT>
+            <FF>1936</FF>
+            <LUT>9307</LUT>
             <BRAM_18K>0</BRAM_18K>
             <DSP>0</DSP>
             <URAM>0</URAM>
@@ -98,7 +98,7 @@
             <IOProtocol>axis</IOProtocol>
             <IOConfig>register, both mode</IOConfig>
             <Dir>in</Dir>
-            <Bits>320</Bits>
+            <Bits>32</Bits>
             <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -146,7 +146,7 @@
             <IOProtocol>axis</IOProtocol>
             <IOConfig>register, both mode</IOConfig>
             <Dir>in</Dir>
-            <Bits>40</Bits>
+            <Bits>4</Bits>
             <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -158,7 +158,7 @@
             <IOProtocol>axis</IOProtocol>
             <IOConfig>register, both mode</IOConfig>
             <Dir>in</Dir>
-            <Bits>40</Bits>
+            <Bits>4</Bits>
             <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -170,7 +170,7 @@
             <IOProtocol>axis</IOProtocol>
             <IOConfig>register, both mode</IOConfig>
             <Dir>out</Dir>
-            <Bits>320</Bits>
+            <Bits>32</Bits>
             <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -218,7 +218,7 @@
             <IOProtocol>axis</IOProtocol>
             <IOConfig>register, both mode</IOConfig>
             <Dir>out</Dir>
-            <Bits>40</Bits>
+            <Bits>4</Bits>
             <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -230,7 +230,7 @@
             <IOProtocol>axis</IOProtocol>
             <IOConfig>register, both mode</IOConfig>
             <Dir>out</Dir>
-            <Bits>40</Bits>
+            <Bits>4</Bits>
             <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -240,10 +240,10 @@
             <ModuleName>myproject_axi</ModuleName>
             <InstancesList>
                 <Instance>
-                    <InstName>out_local_V_myproject_fu_182</InstName>
+                    <InstName>out_local_V_myproject_fu_151</InstName>
                     <ModuleName>myproject</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>182</ID>
+                    <ID>151</ID>
                     <InstancesList>
                         <Instance>
                             <InstName>s_V_decision_function_7_fu_108</InstName>
@@ -297,7 +297,7 @@
                     <BindInstances>add_ln712_fu_176_p2 add_ln712_1_fu_182_p2 add_ln712_2_fu_188_p2 add_ln712_3_fu_194_p2 add_ln712_4_fu_200_p2 add_ln712_5_fu_206_p2 add_ln712_6_fu_212_p2 ap_return</BindInstances>
                 </Instance>
             </InstancesList>
-            <BindInstances>man_V_1_fu_424_p2 F2_fu_444_p2 add_ln590_fu_456_p2 sub_ln590_fu_462_p2 man_V_4_fu_524_p2 F2_1_fu_544_p2 add_ln590_1_fu_556_p2 sub_ln590_1_fu_562_p2 man_V_7_fu_624_p2 F2_2_fu_644_p2 add_ln590_2_fu_656_p2 sub_ln590_2_fu_662_p2 man_V_10_fu_724_p2 F2_3_fu_744_p2 add_ln590_3_fu_756_p2 sub_ln590_3_fu_762_p2 man_V_13_fu_824_p2 F2_4_fu_844_p2 add_ln590_4_fu_856_p2 sub_ln590_4_fu_862_p2 man_V_16_fu_924_p2 F2_5_fu_944_p2 add_ln590_5_fu_956_p2 sub_ln590_5_fu_962_p2 man_V_19_fu_1024_p2 F2_6_fu_1044_p2 add_ln590_6_fu_1056_p2 sub_ln590_6_fu_1062_p2 man_V_22_fu_1124_p2 F2_7_fu_1144_p2 add_ln590_7_fu_1156_p2 sub_ln590_7_fu_1162_p2 man_V_25_fu_1224_p2 F2_8_fu_1244_p2 add_ln590_8_fu_1256_p2 sub_ln590_8_fu_1262_p2 man_V_28_fu_1324_p2 F2_9_fu_1344_p2 add_ln590_9_fu_1356_p2 sub_ln590_9_fu_1362_p2 tmp_V_fu_2766_p2 sub_ln997_fu_2799_p2 lsb_index_fu_2805_p2 sub_ln1000_fu_2831_p2 sub_ln1012_fu_2928_p2 add_ln1011_fu_2943_p2 m_2_fu_2968_p2 sub_ln1017_fu_3004_p2 add_ln1017_fu_3009_p2</BindInstances>
+            <BindInstances>man_V_1_fu_286_p2 F2_fu_306_p2 add_ln590_fu_318_p2 sub_ln590_fu_324_p2 man_V_4_fu_386_p2 F2_1_fu_406_p2 add_ln590_1_fu_418_p2 sub_ln590_1_fu_424_p2 man_V_7_fu_486_p2 F2_2_fu_506_p2 add_ln590_2_fu_518_p2 sub_ln590_2_fu_524_p2 man_V_10_fu_586_p2 F2_3_fu_606_p2 add_ln590_3_fu_618_p2 sub_ln590_3_fu_624_p2 man_V_13_fu_686_p2 F2_4_fu_706_p2 add_ln590_4_fu_718_p2 sub_ln590_4_fu_724_p2 man_V_16_fu_786_p2 F2_5_fu_806_p2 add_ln590_5_fu_818_p2 sub_ln590_5_fu_824_p2 man_V_19_fu_886_p2 F2_6_fu_906_p2 add_ln590_6_fu_918_p2 sub_ln590_6_fu_924_p2 man_V_22_fu_986_p2 F2_7_fu_1006_p2 add_ln590_7_fu_1018_p2 sub_ln590_7_fu_1024_p2 man_V_25_fu_1086_p2 F2_8_fu_1106_p2 add_ln590_8_fu_1118_p2 sub_ln590_8_fu_1124_p2 man_V_28_fu_1186_p2 F2_9_fu_1206_p2 add_ln590_9_fu_1218_p2 sub_ln590_9_fu_1224_p2 tmp_V_fu_2628_p2 sub_ln997_fu_2661_p2 lsb_index_fu_2667_p2 sub_ln1000_fu_2693_p2 sub_ln1012_fu_2790_p2 add_ln1011_fu_2805_p2 m_2_fu_2830_p2 sub_ln1017_fu_2866_p2 add_ln1017_fu_2871_p2</BindInstances>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
@@ -689,22 +689,22 @@
                     <EstimatedClockPeriod>4.973</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>7</Best-caseLatency>
-                    <Average-caseLatency>7</Average-caseLatency>
-                    <Worst-caseLatency>7</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>49.000 ns</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>49.000 ns</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>49.000 ns</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>8</PipelineInitiationInterval>
+                    <Best-caseLatency>25</Best-caseLatency>
+                    <Average-caseLatency>25</Average-caseLatency>
+                    <Worst-caseLatency>25</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.175 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.175 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.175 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>26</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <FF>1919</FF>
+                    <FF>1936</FF>
                     <AVAIL_FF>141120</AVAIL_FF>
                     <UTIL_FF>1</UTIL_FF>
-                    <LUT>9198</LUT>
+                    <LUT>9307</LUT>
                     <AVAIL_LUT>70560</AVAIL_LUT>
                     <UTIL_LUT>13</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -719,55 +719,55 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="man_V_1_fu_424_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501" URAM="0" VARIABLE="man_V_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="F2_fu_444_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="F2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln590_fu_456_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="add_ln590"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln590_fu_462_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="sub_ln590"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="man_V_4_fu_524_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501" URAM="0" VARIABLE="man_V_4"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="F2_1_fu_544_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="F2_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln590_1_fu_556_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="add_ln590_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln590_1_fu_562_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="sub_ln590_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="man_V_7_fu_624_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501" URAM="0" VARIABLE="man_V_7"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="F2_2_fu_644_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="F2_2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln590_2_fu_656_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="add_ln590_2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln590_2_fu_662_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="sub_ln590_2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="man_V_10_fu_724_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501" URAM="0" VARIABLE="man_V_10"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="F2_3_fu_744_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="F2_3"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln590_3_fu_756_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="add_ln590_3"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln590_3_fu_762_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="sub_ln590_3"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="man_V_13_fu_824_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501" URAM="0" VARIABLE="man_V_13"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="F2_4_fu_844_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="F2_4"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln590_4_fu_856_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="add_ln590_4"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln590_4_fu_862_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="sub_ln590_4"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="man_V_16_fu_924_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501" URAM="0" VARIABLE="man_V_16"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="F2_5_fu_944_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="F2_5"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln590_5_fu_956_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="add_ln590_5"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln590_5_fu_962_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="sub_ln590_5"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="man_V_19_fu_1024_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501" URAM="0" VARIABLE="man_V_19"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="F2_6_fu_1044_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="F2_6"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln590_6_fu_1056_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="add_ln590_6"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln590_6_fu_1062_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="sub_ln590_6"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="man_V_22_fu_1124_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501" URAM="0" VARIABLE="man_V_22"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="F2_7_fu_1144_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="F2_7"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln590_7_fu_1156_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="add_ln590_7"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln590_7_fu_1162_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="sub_ln590_7"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="man_V_25_fu_1224_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501" URAM="0" VARIABLE="man_V_25"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="F2_8_fu_1244_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="F2_8"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln590_8_fu_1256_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="add_ln590_8"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln590_8_fu_1262_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="sub_ln590_8"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="man_V_28_fu_1324_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501" URAM="0" VARIABLE="man_V_28"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="F2_9_fu_1344_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="F2_9"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln590_9_fu_1356_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="add_ln590_9"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln590_9_fu_1362_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="sub_ln590_9"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="tmp_V_fu_2766_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:992" URAM="0" VARIABLE="tmp_V"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln997_fu_2799_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:997" URAM="0" VARIABLE="sub_ln997"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="lsb_index_fu_2805_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:997" URAM="0" VARIABLE="lsb_index"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln1000_fu_2831_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1000" URAM="0" VARIABLE="sub_ln1000"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln1012_fu_2928_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1012" URAM="0" VARIABLE="sub_ln1012"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1011_fu_2943_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1011" URAM="0" VARIABLE="add_ln1011"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="m_2_fu_2968_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1014" URAM="0" VARIABLE="m_2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub_ln1017_fu_3004_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1017" URAM="0" VARIABLE="sub_ln1017"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1017_fu_3009_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1017" URAM="0" VARIABLE="add_ln1017"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="man_V_1_fu_286_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501" URAM="0" VARIABLE="man_V_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="F2_fu_306_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="F2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln590_fu_318_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="add_ln590"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln590_fu_324_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="sub_ln590"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="man_V_4_fu_386_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501" URAM="0" VARIABLE="man_V_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="F2_1_fu_406_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="F2_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln590_1_fu_418_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="add_ln590_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln590_1_fu_424_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="sub_ln590_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="man_V_7_fu_486_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501" URAM="0" VARIABLE="man_V_7"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="F2_2_fu_506_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="F2_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln590_2_fu_518_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="add_ln590_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln590_2_fu_524_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="sub_ln590_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="man_V_10_fu_586_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501" URAM="0" VARIABLE="man_V_10"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="F2_3_fu_606_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="F2_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln590_3_fu_618_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="add_ln590_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln590_3_fu_624_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="sub_ln590_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="man_V_13_fu_686_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501" URAM="0" VARIABLE="man_V_13"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="F2_4_fu_706_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="F2_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln590_4_fu_718_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="add_ln590_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln590_4_fu_724_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="sub_ln590_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="man_V_16_fu_786_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501" URAM="0" VARIABLE="man_V_16"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="F2_5_fu_806_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="F2_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln590_5_fu_818_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="add_ln590_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln590_5_fu_824_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="sub_ln590_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="man_V_19_fu_886_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501" URAM="0" VARIABLE="man_V_19"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="F2_6_fu_906_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="F2_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln590_6_fu_918_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="add_ln590_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln590_6_fu_924_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="sub_ln590_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="man_V_22_fu_986_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501" URAM="0" VARIABLE="man_V_22"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="F2_7_fu_1006_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="F2_7"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln590_7_fu_1018_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="add_ln590_7"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln590_7_fu_1024_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="sub_ln590_7"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="man_V_25_fu_1086_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501" URAM="0" VARIABLE="man_V_25"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="F2_8_fu_1106_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="F2_8"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln590_8_fu_1118_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="add_ln590_8"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln590_8_fu_1124_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="sub_ln590_8"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="man_V_28_fu_1186_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:501" URAM="0" VARIABLE="man_V_28"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="F2_9_fu_1206_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="F2_9"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln590_9_fu_1218_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="add_ln590_9"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln590_9_fu_1224_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:681" URAM="0" VARIABLE="sub_ln590_9"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="tmp_V_fu_2628_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:992" URAM="0" VARIABLE="tmp_V"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln997_fu_2661_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:997" URAM="0" VARIABLE="sub_ln997"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="lsb_index_fu_2667_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:997" URAM="0" VARIABLE="lsb_index"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln1000_fu_2693_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1000" URAM="0" VARIABLE="sub_ln1000"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln1012_fu_2790_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1012" URAM="0" VARIABLE="sub_ln1012"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1011_fu_2805_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1011" URAM="0" VARIABLE="add_ln1011"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="m_2_fu_2830_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1014" URAM="0" VARIABLE="m_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub_ln1017_fu_2866_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1017" URAM="0" VARIABLE="sub_ln1017"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1017_fu_2871_p2" SOURCE="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1017" URAM="0" VARIABLE="add_ln1017"/>
             </BindNodes>
         </Module>
     </ModuleInformation>
@@ -777,12 +777,12 @@
         <config_export format="sysgen"/>
     </UserConfigCommands>
     <Args>
-        <Arg ArgName="in" index="0" direction="in" srcType="stream&lt;hls::axis&lt;float [10], 0, 0, 0&gt;, 0&gt;&amp;" srcSize="512">
+        <Arg ArgName="in" index="0" direction="in" srcType="stream&lt;hls::axis&lt;float, 0, 0, 0&gt;, 0&gt;&amp;" srcSize="96">
             <hwRefs>
                 <hwRef type="interface" interface="in_r" name="" usage="data" direction="in"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="out" index="1" direction="out" srcType="stream&lt;hls::axis&lt;float [10], 0, 0, 0&gt;, 0&gt;&amp;" srcSize="512">
+        <Arg ArgName="out" index="1" direction="out" srcType="stream&lt;hls::axis&lt;float, 0, 0, 0&gt;, 0&gt;&amp;" srcSize="96">
             <hwRefs>
                 <hwRef type="interface" interface="out_r" name="" usage="data" direction="out"/>
             </hwRefs>
@@ -812,7 +812,7 @@
                 <port>ap_rst_n</port>
             </ports>
         </Interface>
-        <Interface InterfaceName="in_r" type="axi4stream" busTypeName="axis" mode="slave" dataWidth="320" portPrefix="in_r_">
+        <Interface InterfaceName="in_r" type="axi4stream" busTypeName="axis" mode="slave" dataWidth="32" portPrefix="in_r_">
             <ports>
                 <port>in_r_TDATA</port>
                 <port>in_r_TKEEP</port>
@@ -825,7 +825,7 @@
                 <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both" argName="in"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="out_r" type="axi4stream" busTypeName="axis" mode="master" dataWidth="320" portPrefix="out_r_">
+        <Interface InterfaceName="out_r" type="axi4stream" busTypeName="axis" mode="master" dataWidth="32" portPrefix="out_r_">
             <ports>
                 <port>out_r_TDATA</port>
                 <port>out_r_TKEEP</port>
@@ -844,8 +844,8 @@
             <item name="AXIS">
                 <table isCollapsed="0">
                     <keys size="8">Interface, Register Mode, TDATA, TKEEP, TLAST, TREADY, TSTRB, TVALID</keys>
-                    <column name="in_r">both, 320, 40, 1, 1, 40, 1</column>
-                    <column name="out_r">both, 320, 40, 1, 1, 40, 1</column>
+                    <column name="in_r">both, 32, 4, 1, 1, 4, 1</column>
+                    <column name="out_r">both, 32, 4, 1, 1, 4, 1</column>
                 </table>
             </item>
             <item name="TOP LEVEL CONTROL">
@@ -863,8 +863,8 @@
             <item name="Top Function Arguments">
                 <table isCollapsed="1">
                     <keys size="3">Argument, Direction, Datatype</keys>
-                    <column name="in">in, stream&lt;hls::axis&lt;float [10] 0 0 0&gt; 0&gt;&amp;</column>
-                    <column name="out">out, stream&lt;hls::axis&lt;float [10] 0 0 0&gt; 0&gt;&amp;</column>
+                    <column name="in">in, stream&lt;hls::axis&lt;float 0 0 0&gt; 0&gt;&amp;</column>
+                    <column name="out">out, stream&lt;hls::axis&lt;float 0 0 0&gt; 0&gt;&amp;</column>
                 </table>
             </item>
             <item name="SW-to-HW Mapping">
@@ -903,8 +903,8 @@
         <Pragma type="interface" location="firmware/myproject_axi.cpp:8" status="valid" parentFunction="myproject_axi" variable="in" isDirective="0" options="axis port=in"/>
         <Pragma type="interface" location="firmware/myproject_axi.cpp:9" status="valid" parentFunction="myproject_axi" variable="out" isDirective="0" options="axis port=out"/>
         <Pragma type="interface" location="firmware/myproject_axi.cpp:10" status="valid" parentFunction="myproject_axi" variable="return" isDirective="0" options="ap_ctrl_none port=return"/>
-        <Pragma type="unroll" location="firmware/myproject_axi.cpp:24" status="valid" parentFunction="myproject_axi" variable="" isDirective="0" options=""/>
-        <Pragma type="unroll" location="firmware/myproject_axi.cpp:34" status="valid" parentFunction="myproject_axi" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/myproject_axi.cpp:23" status="valid" parentFunction="myproject_axi" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="firmware/myproject_axi.cpp:33" status="valid" parentFunction="myproject_axi" variable="" isDirective="0" options=""/>
         <Pragma type="unroll" location="firmware/nnet_utils/nnet_types.h:33" status="valid" parentFunction="operator=" variable="" isDirective="0" options=""/>
     </PragmaReport>
 </profile>
