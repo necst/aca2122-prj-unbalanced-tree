@@ -1,0 +1,20 @@
+AcceleratorConfig:
+  Driver: python
+  Interface: axi_stream
+  Precision:
+    Input: float
+    Output: float
+Backend: VivadoAccelerator
+Board: pynq-z2
+ClockPeriod: 5
+HLSConfig:
+  Model:
+    Precision: ap_fixed<32,16>
+    ReuseFactor: 1
+IOType: io_parallel
+InputData: X_test.npy
+OutputDir: wrapper-3
+Part: xc7z020clg400-1
+ProjectName: myproject
+Stamp: 1cBeC6Ac
+XilinxPart: xc7z020clg400-1

@@ -1,0 +1,148 @@
+
+
+================================================================
+== Vitis HLS Report for 'myproject'
+================================================================
+* Date:           Thu Jun 23 13:09:27 2022
+
+* Version:        2020.1 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  7.00 ns|  4.714 ns|     1.89 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------------+---------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                  |                     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |             Instance             |        Module       |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +----------------------------------+---------------------+---------+---------+----------+----------+-----+-----+---------+
+        |s_V_decision_function_7_fu_108    |decision_function_7  |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+        |s_V_1_decision_function_6_fu_116  |decision_function_6  |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+        |s_V_2_decision_function_5_fu_126  |decision_function_5  |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+        |s_V_3_decision_function_4_fu_134  |decision_function_4  |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+        |s_V_4_decision_function_3_fu_142  |decision_function_3  |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+        |s_V_5_decision_function_2_fu_150  |decision_function_2  |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+        |s_V_6_decision_function_1_fu_158  |decision_function_1  |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+        |s_V_7_decision_function_fu_168    |decision_function    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+        +----------------------------------+---------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    270|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       0|    786|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|      -|    -|
+|Register         |        -|    -|       -|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|       0|   1056|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      432|  360|  141120|  70560|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|       0|      1|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------------+---------------------+---------+----+---+----+-----+
+    |             Instance             |        Module       | BRAM_18K| DSP| FF| LUT| URAM|
+    +----------------------------------+---------------------+---------+----+---+----+-----+
+    |s_V_7_decision_function_fu_168    |decision_function    |        0|   0|  0|  97|    0|
+    |s_V_6_decision_function_1_fu_158  |decision_function_1  |        0|   0|  0|  97|    0|
+    |s_V_5_decision_function_2_fu_150  |decision_function_2  |        0|   0|  0|  99|    0|
+    |s_V_4_decision_function_3_fu_142  |decision_function_3  |        0|   0|  0|  99|    0|
+    |s_V_3_decision_function_4_fu_134  |decision_function_4  |        0|   0|  0|  99|    0|
+    |s_V_2_decision_function_5_fu_126  |decision_function_5  |        0|   0|  0|  99|    0|
+    |s_V_1_decision_function_6_fu_116  |decision_function_6  |        0|   0|  0|  99|    0|
+    |s_V_decision_function_7_fu_108    |decision_function_7  |        0|   0|  0|  97|    0|
+    +----------------------------------+---------------------+---------+----+---+----+-----+
+    |Total                             |                     |        0|   0|  0| 786|    0|
+    +----------------------------------+---------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |add_ln712_1_fu_182_p2  |         +|   0|  0|  39|          32|          32|
+    |add_ln712_2_fu_188_p2  |         +|   0|  0|  32|          32|          32|
+    |add_ln712_3_fu_194_p2  |         +|   0|  0|  32|          32|          32|
+    |add_ln712_4_fu_200_p2  |         +|   0|  0|  32|          32|          11|
+    |add_ln712_5_fu_206_p2  |         +|   0|  0|  32|          32|          32|
+    |add_ln712_6_fu_212_p2  |         +|   0|  0|  32|          32|          32|
+    |add_ln712_fu_176_p2    |         +|   0|  0|  39|          32|          32|
+    |ap_return              |         +|   0|  0|  32|          32|          32|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |Total                  |          |   0|  0| 270|         256|         235|
+    +-----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------+-----+-----+------------+--------------+--------------+
+| RTL Ports | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-----------+-----+-----+------------+--------------+--------------+
+|ap_ready   |  out|    1|  ap_ctrl_hs|     myproject|  return value|
+|ap_return  |  out|   32|  ap_ctrl_hs|     myproject|  return value|
+|p_read     |   in|   32|     ap_none|        p_read|        scalar|
+|p_read1    |   in|   32|     ap_none|       p_read1|        scalar|
+|p_read2    |   in|   32|     ap_none|       p_read2|        scalar|
+|p_read3    |   in|   32|     ap_none|       p_read3|        scalar|
+|p_read4    |   in|   32|     ap_none|       p_read4|        scalar|
+|p_read5    |   in|   32|     ap_none|       p_read5|        scalar|
+|p_read6    |   in|   32|     ap_none|       p_read6|        scalar|
+|p_read7    |   in|   32|     ap_none|       p_read7|        scalar|
+|p_read8    |   in|   32|     ap_none|       p_read8|        scalar|
+|p_read9    |   in|   32|     ap_none|       p_read9|        scalar|
++-----------+-----+-----+------------+--------------+--------------+
+

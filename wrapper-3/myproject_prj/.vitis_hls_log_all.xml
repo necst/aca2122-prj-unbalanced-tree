@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <packageLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="myproject_prj" solutionName="solution1" date="2022-06-23T14:28:39.977+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] RTL name 'mux_42_32_1_1' is changed to 'mux_42_32_1_1_x' due to conflict." projectName="myproject_prj" solutionName="solution1" date="2022-06-23T14:28:39.277+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'decision_function.1' to 'decision_function_1'." projectName="myproject_prj" solutionName="solution1" date="2022-06-23T14:28:36.534+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'decision_function.2' to 'decision_function_2'." projectName="myproject_prj" solutionName="solution1" date="2022-06-23T14:28:36.523+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'decision_function.3' to 'decision_function_3'." projectName="myproject_prj" solutionName="solution1" date="2022-06-23T14:28:36.520+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'decision_function.4' to 'decision_function_4'." projectName="myproject_prj" solutionName="solution1" date="2022-06-23T14:28:36.516+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'decision_function.5' to 'decision_function_5'." projectName="myproject_prj" solutionName="solution1" date="2022-06-23T14:28:36.514+0200" type="Warning"/>
+      </synLog>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'myproject_axi_fpext_32ns_64_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="myproject_prj" solutionName="solution1" date="2022-06-23T14:30:18.086+0200" type="Warning"/>
+      </packageLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

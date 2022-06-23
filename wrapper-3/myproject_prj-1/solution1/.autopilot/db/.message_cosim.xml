@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="ERROR" prefix="[COSIM 212-41]" key="COSIM_TCL_41_1109" tag="" content="../../weights is not found." resolution=""/>
+	<Message severity="WARNING" prefix="[COSIM 212-42]" key="COSIM_TCL_42_1110" tag="" content="Please make sure test bench files are set correctly in Vitis HLS project tcl." resolution=""/>
+	<Message severity="ERROR" prefix="[COSIM 212-5]" key="COSIM_TCL_5_1075" tag="" content="*** C/RTL co-simulation file generation failed. ***" resolution=""/>
+	<Message severity="ERROR" prefix="[COSIM 212-4]" key="COSIM_TCL_4_1074" tag="" content="*** C/RTL co-simulation finished: FAIL ***" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Command cosim_design CPU user time: 0.28 seconds. CPU system time: 0.15 seconds. Elapsed time: 0.26 seconds; current allocated memory: 0.000 MB." resolution=""/>
+</Messages>

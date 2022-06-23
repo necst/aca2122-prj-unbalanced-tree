@@ -1,0 +1,21 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../myproject_test.cpp in debug mode
+   Compiling ../../../../firmware/myproject.cpp in debug mode
+   Compiling ../../../../firmware/myproject_axi.cpp in debug mode
+   Generating csim.exe
+Processing input 0
+Predictions
+-0.991211 0 0 0 0 0 4.62428e-44 0 0 0 
+Quantized predictions
+{ data: -0.987152, 0.499985, -31507, 0.499985, 512.035, 0, 512.035, 0, -31507, 0.499985, , last: 1}
+WARNING: Hls::stream 'hls::stream<hls::axis<float [10], 0ul, 0ul, 0ul>, 0>1' is read while empty, which may result in RTL simulation hanging.
+Processing input 5000
+Predictions
+-0.308594 0 0 0 0 0 4.62428e-44 0 0 0 
+Quantized predictions
+{ data: -0.303787, 0.499985, -31507, 0.499985, 512.035, 0, 512.035, 0, -31507, 0.499985, , last: 1}
+WARNING: Hls::stream 'hls::stream<hls::axis<float [10], 0ul, 0ul, 0ul>, 0>10001' is read while empty, which may result in RTL simulation hanging.
+INFO: Saved inference results to file: tb_data/csim_results.log
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="myproject.cpp" path="C:\Users\manna\Downloads\wrapper\wrapper-3\firmware\myproject.cpp"/>
+    <originFiles name="myproject_axi.cpp" path="C:\Users\manna\Downloads\wrapper\wrapper-3\firmware\myproject_axi.cpp"/>
+    <originFiles name="BDT.h" path="C:\Users\manna\Downloads\wrapper\wrapper-3\firmware\BDT.h"/>
+  </source>
+  <testbench>
+    <originFiles name="myproject_test.cpp" path="C:\Users\manna\Downloads\wrapper\wrapper-3\myproject_test.cpp"/>
+    <originFiles name="tb_data" path="C:\Users\manna\Downloads\wrapper\wrapper-3\tb_data"/>
+    <originFiles name="weights" path="C:\Users\manna\Downloads\wrapper\wrapper-3\firmware\weights"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
