@@ -51,3 +51,13 @@ export_ip_user_files -of_objects [get_ips design_1_myproject_axi_0_0] -no_script
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 4
 wait_on_run impl_1
+startgroup
+set_property -dict [list CONFIG.c_m_axi_s2mm_data_width.VALUE_SRC PROPAGATED CONFIG.c_single_interface.VALUE_SRC PROPAGATED CONFIG.c_s_axis_s2mm_tdata_width.VALUE_SRC PROPAGATED] [get_bd_cells hier_0/axi_dma_0]
+set_property -dict [list CONFIG.c_sg_length_width {14} CONFIG.c_mm2s_burst_size {128} CONFIG.c_s2mm_burst_size {128}] [get_bd_cells hier_0/axi_dma_0]
+endgroup
+validate_bd_design
+save_bd_design
+reset_run synth_1
+reset_run design_1_axi_dma_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

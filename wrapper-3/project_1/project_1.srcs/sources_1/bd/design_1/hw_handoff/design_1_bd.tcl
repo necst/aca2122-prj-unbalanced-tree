@@ -168,10 +168,10 @@ proc create_hier_cell_hier_0 { parentCell nameHier } {
   set axi_dma_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0 ]
   set_property -dict [ list \
    CONFIG.c_include_sg {0} \
-   CONFIG.c_mm2s_burst_size {256} \
-   CONFIG.c_s2mm_burst_size {256} \
+   CONFIG.c_mm2s_burst_size {128} \
+   CONFIG.c_s2mm_burst_size {128} \
    CONFIG.c_sg_include_stscntrl_strm {0} \
-   CONFIG.c_sg_length_width {26} \
+   CONFIG.c_sg_length_width {14} \
  ] $axi_dma_0
 
   # Create instance: myproject_axi_0, and set properties

@@ -1764,10 +1764,10 @@
               }
             },
             "interface_nets": {
-              "s01_couplers_to_auto_ds": {
+              "auto_pc_to_s01_couplers": {
                 "interface_ports": [
-                  "S_AXI",
-                  "auto_ds/S_AXI"
+                  "M_AXI",
+                  "auto_pc/M_AXI"
                 ]
               },
               "auto_ds_to_auto_pc": {
@@ -1776,10 +1776,10 @@
                   "auto_pc/S_AXI"
                 ]
               },
-              "auto_pc_to_s01_couplers": {
+              "s01_couplers_to_auto_ds": {
                 "interface_ports": [
-                  "M_AXI",
-                  "auto_pc/M_AXI"
+                  "S_AXI",
+                  "auto_ds/S_AXI"
                 ]
               }
             },
@@ -1856,12 +1856,6 @@
           }
         },
         "interface_nets": {
-          "s00_couplers_to_xbar": {
-            "interface_ports": [
-              "s00_couplers/M_AXI",
-              "xbar/S00_AXI"
-            ]
-          },
           "s01_couplers_to_xbar": {
             "interface_ports": [
               "s01_couplers/M_AXI",
@@ -1874,22 +1868,28 @@
               "m00_couplers/M_AXI"
             ]
           },
-          "ps8_0_axi_periph_to_s00_couplers": {
-            "interface_ports": [
-              "S00_AXI",
-              "s00_couplers/S_AXI"
-            ]
-          },
           "xbar_to_m00_couplers": {
             "interface_ports": [
               "xbar/M00_AXI",
               "m00_couplers/S_AXI"
             ]
           },
+          "ps8_0_axi_periph_to_s00_couplers": {
+            "interface_ports": [
+              "S00_AXI",
+              "s00_couplers/S_AXI"
+            ]
+          },
           "ps8_0_axi_periph_to_s01_couplers": {
             "interface_ports": [
               "S01_AXI",
               "s01_couplers/S_AXI"
+            ]
+          },
+          "s00_couplers_to_xbar": {
+            "interface_ports": [
+              "s00_couplers/M_AXI",
+              "xbar/S00_AXI"
             ]
           }
         },
@@ -1950,13 +1950,13 @@
                 "value": "0"
               },
               "c_mm2s_burst_size": {
-                "value": "256"
+                "value": "128"
               },
               "c_s2mm_burst_size": {
-                "value": "256"
+                "value": "128"
               },
               "c_sg_length_width": {
-                "value": "26"
+                "value": "14"
               }
             },
             "addressing": {
