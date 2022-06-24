@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:myproject_axi:1.0
-// IP Revision: 2112564230
+// IP Revision: 2112564258
 
 (* X_CORE_INFO = "myproject_axi,Vivado 2021.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_myproject_axi_0_0,myproject_axi,{}" *)
-(* CORE_GENERATION_INFO = "design_1_myproject_axi_0_0,myproject_axi,{x_ipProduct=Vivado 2021.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=myproject_axi,x_ipVersion=1.0,x_ipCoreRevision=2112564230,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "design_1_myproject_axi_0_0,myproject_axi,{x_ipProduct=Vivado 2021.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=myproject_axi,x_ipVersion=1.0,x_ipCoreRevision=2112564258,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_myproject_axi_0_0 (

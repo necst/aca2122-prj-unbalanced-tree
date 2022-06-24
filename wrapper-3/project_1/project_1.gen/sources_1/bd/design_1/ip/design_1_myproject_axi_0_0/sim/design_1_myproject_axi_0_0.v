@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:hls:myproject_axi:1.0
-// IP Revision: 2112564230
+// IP Revision: 2112564258
 
 `timescale 1ns/1ps
 

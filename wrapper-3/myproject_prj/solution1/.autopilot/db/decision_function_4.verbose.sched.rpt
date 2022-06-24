@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'decision_function_4'
 ================================================================
-* Date:           Fri Jun 24 22:49:44 2022
+* Date:           Fri Jun 24 23:18:14 2022
 
 * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)
 * Project:        myproject_prj
@@ -111,7 +111,7 @@ The critical path consists of the following:
 	'xor' operation ('activation', firmware/BDT.h:135) [9]  (0.331 ns)
 	'and' operation ('activation', firmware/BDT.h:135) [11]  (0 ns)
 	'or' operation ('or_ln148', firmware/BDT.h:148) [14]  (0.331 ns)
-	'select' operation ('select_ln148', firmware/BDT.h:148) [17]  (0 ns)
+	'or' operation ('or_ln148_4', firmware/BDT.h:148) [16]  (0 ns)
 	'select' operation ('select_ln148_4', firmware/BDT.h:148) [18]  (0 ns)
 	'mux' operation ('agg_result', firmware/BDT.h:149) [19]  (0.605 ns)
 

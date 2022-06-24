@@ -83874,8 +83874,8 @@ static const unsigned N_OUT = 1;
 typedef float T_in;
 typedef float T_out;
 # 28 "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/firmware/myproject_axi.h"
-typedef hls::axis<T_in, 1, 1, 1> input_axis_t;
-typedef hls::axis<T_out, 1, 1, 1> output_axis_t;
+typedef ap_axis<32, 1, 1, 1> input_axis_t;
+typedef ap_axis<32, 1, 1, 1> output_axis_t;
 
 
 

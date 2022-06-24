@@ -25,8 +25,8 @@ struct ap_axis{
 };*/
 
 
-typedef hls::axis<T_in, 1, 1, 1> input_axis_t;
-typedef hls::axis<T_out, 1, 1, 1> output_axis_t;
+typedef ap_axis<32, 1, 1, 1> input_axis_t;
+typedef ap_axis<32, 1, 1, 1> output_axis_t;
 
 // typedef ap_axis<T_in, 32, 1, 1, 1> input_axis_t;
 // typedef ap_axis<T_out, 32, 1, 1, 1> output_axis_t;

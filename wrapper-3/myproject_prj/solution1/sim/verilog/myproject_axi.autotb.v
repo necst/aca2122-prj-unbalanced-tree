@@ -13,8 +13,8 @@
 `define AUTOTB_TOP_INST AESL_inst_apatb_myproject_axi_top
 `define AUTOTB_MAX_ALLOW_LATENCY  15000000
 `define AUTOTB_CLOCK_PERIOD_DIV2 3.50
-`define AUTOTB_II 17
-`define AUTOTB_LATENCY 16
+`define AUTOTB_II 12
+`define AUTOTB_LATENCY 11
 
 `define AESL_DEPTH_in_r_V_data_V 1
 `define AESL_DEPTH_in_r_V_keep_V 1
@@ -62,7 +62,7 @@ module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 10000;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 16;
+parameter LATENCY_ESTIMATION = 11;
 parameter LENGTH_in_r_V_data_V = 10;
 parameter LENGTH_in_r_V_keep_V = 10;
 parameter LENGTH_in_r_V_strb_V = 10;

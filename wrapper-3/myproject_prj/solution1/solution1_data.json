@@ -18,7 +18,7 @@
     "in": {
       "index": "0",
       "direction": "in",
-      "srcType": "stream<hls::axis<float, 1, 1, 1>, 0>&",
+      "srcType": "stream<hls::axis<ap_int<32>, 1, 1, 1>, 0>&",
       "srcSize": "96",
       "hwRefs": [{
           "type": "interface",
@@ -31,7 +31,7 @@
     "out": {
       "index": "1",
       "direction": "out",
-      "srcType": "stream<hls::axis<float, 1, 1, 1>, 0>&",
+      "srcType": "stream<hls::axis<ap_int<32>, 1, 1, 1>, 0>&",
       "srcSize": "96",
       "hwRefs": [{
           "type": "interface",
@@ -46,6 +46,7 @@
     "FlowTarget": "vivado",
     "ConfigTcl": [
       "config_compile -name_max_length=60",
+      "config_compile -complex-mul-dsp=0",
       "config_export -format=ip_catalog"
     ],
     "DirectiveTcl": [
@@ -61,8 +62,8 @@
     "ClockPeriod": "7",
     "Uncertainty": "1.89",
     "IsCombinational": "0",
-    "II": "17",
-    "Latency": "16"
+    "II": "12",
+    "Latency": "11"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 7.000 [get_ports ap_clk]"]},
   "Ipx": {
@@ -92,7 +93,6 @@
       "impl\/vhdl\/myproject_axi_decision_function_5.vhd",
       "impl\/vhdl\/myproject_axi_decision_function_6.vhd",
       "impl\/vhdl\/myproject_axi_decision_function_7.vhd",
-      "impl\/vhdl\/myproject_axi_fpext_32ns_64_2_no_dsp_1.vhd",
       "impl\/vhdl\/myproject_axi_mux_42_32_1_1.vhd",
       "impl\/vhdl\/myproject_axi_mux_42_32_1_1_x.vhd",
       "impl\/vhdl\/myproject_axi_myproject.vhd",
@@ -108,7 +108,6 @@
       "impl\/verilog\/myproject_axi_decision_function_5.v",
       "impl\/verilog\/myproject_axi_decision_function_6.v",
       "impl\/verilog\/myproject_axi_decision_function_7.v",
-      "impl\/verilog\/myproject_axi_fpext_32ns_64_2_no_dsp_1.v",
       "impl\/verilog\/myproject_axi_hls_deadlock_idx0_monitor.v",
       "impl\/verilog\/myproject_axi_hls_deadlock_kernel_monitor_top.vh",
       "impl\/verilog\/myproject_axi_mux_42_32_1_1.v",
@@ -118,7 +117,6 @@
       "impl\/verilog\/myproject_axi.v"
     ],
     "IpMisc": ["impl\/misc\/logo.png"],
-    "Subcore": ["impl\/misc\/myproject_axi_fpext_32ns_64_2_no_dsp_1_ip.tcl"],
     "CsynthXml": "syn\/report\/csynth.xml",
     "DebugDir": ".debug",
     "KernelXml": ".autopilot\/db\/kernel.internal.xml",
@@ -129,11 +127,7 @@
   "SubcoreInfo": {
     "HasXpmMemory": false,
     "HasClockedDsp": false,
-    "Ip": [{
-        "Name": "myproject_axi_fpext_32ns_64_2_no_dsp_1_ip",
-        "Vlnv": "xilinx.com:ip:floating_point:7.1",
-        "Params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name myproject_axi_fpext_32ns_64_2_no_dsp_1_ip CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Float_to_Float CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
-      }]
+    "Ip": []
   },
   "Interfaces": {
     "ap_clk": {
@@ -311,7 +305,7 @@
       "ModuleName": "myproject_axi",
       "Instances": [{
           "ModuleName": "myproject",
-          "InstanceName": "out_local_V_myproject_fu_179",
+          "InstanceName": "out_local_V_myproject_fu_121",
           "Instances": [
             {
               "ModuleName": "decision_function_7",
@@ -711,25 +705,25 @@
       },
       "myproject_axi": {
         "Latency": {
-          "LatencyBest": "16",
-          "LatencyAvg": "16",
-          "LatencyWorst": "16",
-          "PipelineII": "17",
+          "LatencyBest": "11",
+          "LatencyAvg": "11",
+          "LatencyWorst": "11",
+          "PipelineII": "12",
           "PipelineDepth": "",
           "PipelineType": "no"
         },
         "Timing": {
           "Target": "7.00",
           "Uncertainty": "1.89",
-          "Estimate": "4.973"
+          "Estimate": "4.714"
         },
         "Area": {
-          "FF": "1927",
+          "FF": "364",
           "AVAIL_FF": "141120",
-          "UTIL_FF": "1",
-          "LUT": "9236",
+          "UTIL_FF": "~0",
+          "LUT": "1209",
           "AVAIL_LUT": "70560",
-          "UTIL_LUT": "13",
+          "UTIL_LUT": "1",
           "BRAM_18K": "0",
           "AVAIL_BRAM": "432",
           "UTIL_BRAM": "0",
@@ -746,7 +740,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2022-06-24 22:50:55 CEST",
+    "Time": "2022-06-24 23:18:52 CEST",
     "ToolName": "vitis_hls",
     "ToolVersion": "2021.2"
   }

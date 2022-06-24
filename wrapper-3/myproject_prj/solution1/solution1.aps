@@ -1,4 +1,8 @@
 <AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <config>
+        <config_compile name_max_length="60" complex-mul-dsp="0"/>
+        <config_export format="ip_catalog"/>
+    </config>
     <name>
         <value string="solution1"/>
     </name>
@@ -6,10 +10,6 @@
         <value string="myproject_prj"/>
     </project>
     <flowTarget value="vivado"/>
-    <config>
-        <config_compile name_max_length="60"/>
-        <config_export format="ip_catalog"/>
-    </config>
     <targetInfo>
         <TargetInfo value="xczu3eg:-sbva484:-1-e"/>
     </targetInfo>
@@ -17,7 +17,7 @@
         <library value="xilinx/zynquplus/zynquplus" name="DefaultPlatform"/>
     </libraryList>
     <clockList>
-        <clock name="default" period="7" default="false"/>
+        <clock default="false" name="default" period="7"/>
     </clockList>
     <Simulation argv="">
         <SimFlow name="cosim" setup="false" dumpTrace="all" optimizeCompile="false" ldflags="" mflags="" compiledLibrary="" toolName="auto">

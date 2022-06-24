@@ -26,8 +26,8 @@
       },
       "rst_ps8_0_100M": "",
       "hier_0": {
-        "axi_dma_0": "",
-        "myproject_axi_0": ""
+        "myproject_axi_0": "",
+        "axi_dma_0": ""
       }
     },
     "components": {
@@ -2018,16 +2018,22 @@
           }
         },
         "ports": {
-          "ap_clk": {
+          "s_axi_lite_aclk": {
             "type": "clk",
             "direction": "I"
           },
-          "ap_rst_n": {
+          "axi_resetn": {
             "type": "rst",
             "direction": "I"
           }
         },
         "components": {
+          "myproject_axi_0": {
+            "vlnv": "xilinx.com:hls:myproject_axi:1.0",
+            "xci_name": "design_1_myproject_axi_0_0",
+            "xci_path": "ip/design_1_myproject_axi_0_0/design_1_myproject_axi_0_0.xci",
+            "inst_hier_path": "hier_0/myproject_axi_0"
+          },
           "axi_dma_0": {
             "vlnv": "xilinx.com:ip:axi_dma:7.1",
             "xci_name": "design_1_axi_dma_0_0",
@@ -2072,12 +2078,6 @@
                 }
               }
             }
-          },
-          "myproject_axi_0": {
-            "vlnv": "xilinx.com:hls:myproject_axi:1.0",
-            "xci_name": "design_1_myproject_axi_0_0",
-            "xci_path": "ip/design_1_myproject_axi_0_0/design_1_myproject_axi_0_0.xci",
-            "inst_hier_path": "hier_0/myproject_axi_0"
           }
         },
         "interface_nets": {
@@ -2103,18 +2103,18 @@
         "nets": {
           "rst_ps8_0_100M_peripheral_aresetn": {
             "ports": [
-              "ap_rst_n",
-              "myproject_axi_0/ap_rst_n",
-              "axi_dma_0/axi_resetn"
+              "axi_resetn",
+              "axi_dma_0/axi_resetn",
+              "myproject_axi_0/ap_rst_n"
             ]
           },
           "zynq_ultra_ps_e_0_pl_clk0": {
             "ports": [
-              "ap_clk",
-              "myproject_axi_0/ap_clk",
+              "s_axi_lite_aclk",
+              "axi_dma_0/s_axi_lite_aclk",
               "axi_dma_0/m_axi_mm2s_aclk",
               "axi_dma_0/m_axi_s2mm_aclk",
-              "axi_dma_0/s_axi_lite_aclk"
+              "myproject_axi_0/ap_clk"
             ]
           }
         }
@@ -2148,7 +2148,7 @@
           "ps8_0_axi_periph/M00_ARESETN",
           "ps8_0_axi_periph/ARESETN",
           "ps8_0_axi_periph/S01_ARESETN",
-          "hier_0/ap_rst_n"
+          "hier_0/axi_resetn"
         ]
       },
       "zynq_ultra_ps_e_0_pl_clk0": {
@@ -2161,7 +2161,7 @@
           "ps8_0_axi_periph/ACLK",
           "zynq_ultra_ps_e_0/maxihpm1_fpd_aclk",
           "ps8_0_axi_periph/S01_ACLK",
-          "hier_0/ap_clk"
+          "hier_0/s_axi_lite_aclk"
         ]
       },
       "zynq_ultra_ps_e_0_pl_resetn0": {

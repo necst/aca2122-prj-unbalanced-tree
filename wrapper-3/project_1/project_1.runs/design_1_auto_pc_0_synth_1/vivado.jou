@@ -2,12 +2,12 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Fri Jun 24 22:55:55 2022
-# Process ID: 3739362
+# Start of session at: Fri Jun 24 23:22:57 2022
+# Process ID: 3780273
 # Current directory: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/design_1_auto_pc_0_synth_1
 # Command line: vivado -log design_1_auto_pc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_auto_pc_0.tcl
 # Log file: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/design_1_auto_pc_0_synth_1/design_1_auto_pc_0.vds
 # Journal file: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/design_1_auto_pc_0_synth_1/vivado.jou
-# Running On: yavin, OS: Linux, CPU Frequency: 4471.158 MHz, CPU Physical cores: 8, Host memory: 67274 MB
+# Running On: yavin, OS: Linux, CPU Frequency: 4600.000 MHz, CPU Physical cores: 8, Host memory: 67274 MB
 #-----------------------------------------------------------
 source design_1_auto_pc_0.tcl -notrace
