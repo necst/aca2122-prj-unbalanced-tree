@@ -4,7 +4,7 @@ set moduleIsExternC "1"
 set rawDecl ""
 set globalVariable ""
 set PortList ""
-set PortName "in_r"
+set PortName "in"
 set BitWidth "96"
 set ArrayOpt ""
 set Const "0"
@@ -70,7 +70,7 @@ set structIsPacked "0"
 set DataType [list "ap_axiu<32, 0, 0, 0>" "struct ap_axis" $structMem 1 0 $structParameter $structArgument $NameSpace $structIsPacked]
 set Port [list $PortName $Interface $DataType $Pointer $Dims $Const $Volatile $ArrayOpt]
 lappend PortList $Port
-set PortName "out_r"
+set PortName "out"
 set BitWidth "96"
 set ArrayOpt ""
 set Const "0"

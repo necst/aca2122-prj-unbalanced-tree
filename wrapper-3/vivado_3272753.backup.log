@@ -1,0 +1,173 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jun 24 15:48:30 2022
+# Process ID: 3272753
+# Current directory: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3
+# Command line: vivado
+# Log file: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/vivado.log
+# Journal file: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project project_2020.2 /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2020.2 -part xczu3eg-sbva484-1-e
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property board_part em.avnet.com:ultra96:part0:1.2 [current_project]
+create_bd_design "design_1"
+Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2020.2/project_2020.2.srcs/sources_1/bd/design_1/design_1.bd> 
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.3 zynq_ultra_ps_e_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:zynq_ultra_ps_e -config {apply_board_preset "1" }  [get_bd_cells zynq_ultra_ps_e_0]
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+CRITICAL WARNING: [PSU-2]  Actual DLL frequecy is : 1485,000000. If DLL output frequency is less than 1500 MHz then there may be performance degradation. 
+INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose.
+ERROR: [IP_Flow 19-3478] Validation failed for parameter 'IOPLL(PSU__CRL_APB__IOPLL_CTRL__FBDIV)' with value '45' for BD Cell 'zynq_ultra_ps_e_0'. Error: PLL frequency 1485,000000 MHz  is out of range for the parameter: PSU__CRL_APB__IOPLL_CTRL__FBDIV. Valid input PLL frequency range is [1500 : 3000] MHz
+INFO: [IP_Flow 19-3438] Customization errors found on 'zynq_ultra_ps_e_0'. Restoring to previous valid configuration.
+unexpected "," outside function argument list
+in expression "99,000000 * 1000000"
+ERROR: [BD 41-1273] Error running post_config_ip TCL procedure: unexpected "," outside function argument list
+    ::xilinx.com_ip_zynq_ultra_ps_e_3.3::post_config_ip Line 47
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running apply_rule TCL procedure: ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+    ::xilinx.com_bd_rule_zynq_ultra_ps_e::apply_rule Line 29
+INFO: [BD 5-145] Automation rule xilinx.com:bd_rule:zynq_ultra_ps_e was not applied to object zynq_ultra_ps_e_0
+apply_bd_automation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 8759.590 ; gain = 3.055 ; free physical = 19078 ; free virtual = 40178
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:zynq_ultra_ps_e -config {apply_board_preset "1" }  [get_bd_cells zynq_ultra_ps_e_0]'
+ERROR: [Common 17-39] 'apply_bd_automation' failed due to earlier errors.
+apply_bd_automation -rule xilinx.com:bd_rule:zynq_ultra_ps_e -config {apply_board_preset "1" }  [get_bd_cells zynq_ultra_ps_e_0]
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+CRITICAL WARNING: [PSU-2]  Actual DLL frequecy is : 1485,000000. If DLL output frequency is less than 1500 MHz then there may be performance degradation. 
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__ACT_DDR_FREQ_MHZ' with value '475,200012'. Invalid long/float value '475,200012' specified for parameter 'PSU UIPARAM ACT DDR FREQ MHZ(PSU__ACT_DDR_FREQ_MHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRF_APB__ACPU_CTRL__ACT_FREQMHZ' with value '1188,000000'. Invalid long/float value '1188,000000' specified for parameter 'ACT ACPU(PSU__CRF_APB__ACPU_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRF_APB__APLL_CTRL__FRACDATA' with value '0,000000'. Invalid long/float value '0,000000' specified for parameter 'PSU CRF APB APLL CTRL FRACDATA(PSU__CRF_APB__APLL_CTRL__FRACDATA)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRF_APB__DBG_FPD_CTRL__ACT_FREQMHZ' with value '247,500000'. Invalid long/float value '247,500000' specified for parameter 'ACT DBG_FPD(PSU__CRF_APB__DBG_FPD_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRF_APB__DBG_TSTMP_CTRL__ACT_FREQMHZ' with value '247,500000'. Invalid long/float value '247,500000' specified for parameter 'ACT DBG_TSTMP(PSU__CRF_APB__DBG_TSTMP_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRF_APB__DDR_CTRL__ACT_FREQMHZ' with value '237,600006'. Invalid long/float value '237,600006' specified for parameter 'ACT DDR(PSU__CRF_APB__DDR_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRF_APB__DPDMA_REF_CTRL__ACT_FREQMHZ' with value '594,000000'. Invalid long/float value '594,000000' specified for parameter 'ACT DPDMA(PSU__CRF_APB__DPDMA_REF_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRF_APB__DPLL_CTRL__FRACDATA' with value '0,000000'. Invalid long/float value '0,000000' specified for parameter 'PSU CRF APB DPLL CTRL FRACDATA(PSU__CRF_APB__DPLL_CTRL__FRACDATA)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRF_APB__DP_AUDIO_REF_CTRL__ACT_FREQMHZ' with value '25,000000'. Invalid long/float value '25,000000' specified for parameter 'ACT DP AUDIO(PSU__CRF_APB__DP_AUDIO_REF_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRF_APB__DP_STC_REF_CTRL__ACT_FREQMHZ' with value '26,315790'. Invalid long/float value '26,315790' specified for parameter 'ACT DP STC(PSU__CRF_APB__DP_STC_REF_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRF_APB__DP_VIDEO_REF_CTRL__ACT_FREQMHZ' with value '300,000000'. Invalid long/float value '300,000000' specified for parameter 'ACT DP VIDEO(PSU__CRF_APB__DP_VIDEO_REF_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRF_APB__GDMA_REF_CTRL__ACT_FREQMHZ' with value '594,000000'. Invalid long/float value '594,000000' specified for parameter 'ACT GDMA(PSU__CRF_APB__GDMA_REF_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRF_APB__GPU_REF_CTRL__ACT_FREQMHZ' with value '594,000000'. Invalid long/float value '594,000000' specified for parameter 'ACT GPU REF(PSU__CRF_APB__GPU_REF_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRF_APB__TOPSW_LSBUS_CTRL__ACT_FREQMHZ' with value '99,000000'. Invalid long/float value '99,000000' specified for parameter 'ACT TOPSW_LSBUS(PSU__CRF_APB__TOPSW_LSBUS_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRF_APB__TOPSW_MAIN_CTRL__ACT_FREQMHZ' with value '528,000000'. Invalid long/float value '528,000000' specified for parameter 'ACT TOPSW_MAIN(PSU__CRF_APB__TOPSW_MAIN_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRF_APB__VPLL_CTRL__FRACDATA' with value '0,000000'. Invalid long/float value '0,000000' specified for parameter 'PSU CRF APB VPLL CTRL FRACDATA(PSU__CRF_APB__VPLL_CTRL__FRACDATA)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRL_APB__ADMA_REF_CTRL__ACT_FREQMHZ' with value '495,000000'. Invalid long/float value '495,000000' specified for parameter 'ACT ADMA_REF(PSU__CRL_APB__ADMA_REF_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRL_APB__AMS_REF_CTRL__ACT_FREQMHZ' with value '49,500000'. Invalid long/float value '49,500000' specified for parameter 'ACT AMS_REF(PSU__CRL_APB__AMS_REF_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRL_APB__CPU_R5_CTRL__ACT_FREQMHZ' with value '495,000000'. Invalid long/float value '495,000000' specified for parameter 'ACT CPU_R5(PSU__CRL_APB__CPU_R5_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRL_APB__DBG_LPD_CTRL__ACT_FREQMHZ' with value '247,500000'. Invalid long/float value '247,500000' specified for parameter 'ACT DBG_LPD(PSU__CRL_APB__DBG_LPD_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRL_APB__DLL_REF_CTRL__ACT_FREQMHZ' with value '990,000000'. Invalid long/float value '990,000000' specified for parameter 'ACT DLL_REF(PSU__CRL_APB__DLL_REF_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRL_APB__I2C1_REF_CTRL__ACT_FREQMHZ' with value '93,843750'. Invalid long/float value '93,843750' specified for parameter 'ACT I2C1(PSU__CRL_APB__I2C1_REF_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRL_APB__IOPLL_CTRL__FRACDATA' with value '0,000000'. Invalid long/float value '0,000000' specified for parameter 'PSU CRL APB IOPLL CTRL FRACDATA(PSU__CRL_APB__IOPLL_CTRL__FRACDATA)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRL_APB__IOU_SWITCH_CTRL__ACT_FREQMHZ' with value '264,000000'. Invalid long/float value '264,000000' specified for parameter 'ACT IOU_SWITCH(PSU__CRL_APB__IOU_SWITCH_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRL_APB__LPD_LSBUS_CTRL__ACT_FREQMHZ' with value '99,000000'. Invalid long/float value '99,000000' specified for parameter 'ACT LPD_LSBUS(PSU__CRL_APB__LPD_LSBUS_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRL_APB__LPD_SWITCH_CTRL__ACT_FREQMHZ' with value '495,000000'. Invalid long/float value '495,000000' specified for parameter 'ACT LPD_SWITCH(PSU__CRL_APB__LPD_SWITCH_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRL_APB__PCAP_CTRL__ACT_FREQMHZ' with value '198,000000'. Invalid long/float value '198,000000' specified for parameter 'ACT PCAP(PSU__CRL_APB__PCAP_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRL_APB__PL0_REF_CTRL__ACT_FREQMHZ' with value '99,000000'. Invalid long/float value '99,000000' specified for parameter 'ACT PL0(PSU__CRL_APB__PL0_REF_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRL_APB__RPLL_CTRL__FRACDATA' with value '0,000000'. Invalid long/float value '0,000000' specified for parameter 'PSU CRL APB RPLL CTRL FRACDATA(PSU__CRL_APB__RPLL_CTRL__FRACDATA)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRL_APB__SDIO0_REF_CTRL__ACT_FREQMHZ' with value '187,687500'. Invalid long/float value '187,687500' specified for parameter 'ACT SDIO0(PSU__CRL_APB__SDIO0_REF_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRL_APB__SDIO1_REF_CTRL__ACT_FREQMHZ' with value '187,687500'. Invalid long/float value '187,687500' specified for parameter 'ACT SDIO1(PSU__CRL_APB__SDIO1_REF_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRL_APB__SPI0_REF_CTRL__ACT_FREQMHZ' with value '187,687500'. Invalid long/float value '187,687500' specified for parameter 'ACT SPI0(PSU__CRL_APB__SPI0_REF_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRL_APB__SPI1_REF_CTRL__ACT_FREQMHZ' with value '187,687500'. Invalid long/float value '187,687500' specified for parameter 'ACT SPI1(PSU__CRL_APB__SPI1_REF_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRL_APB__TIMESTAMP_REF_CTRL__ACT_FREQMHZ' with value '33,000000'. Invalid long/float value '33,000000' specified for parameter 'ACT TIMESTAMP_REF(PSU__CRL_APB__TIMESTAMP_REF_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRL_APB__UART0_REF_CTRL__ACT_FREQMHZ' with value '93,843750'. Invalid long/float value '93,843750' specified for parameter 'ACT UART0(PSU__CRL_APB__UART0_REF_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRL_APB__UART1_REF_CTRL__ACT_FREQMHZ' with value '93,843750'. Invalid long/float value '93,843750' specified for parameter 'ACT UART1(PSU__CRL_APB__UART1_REF_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRL_APB__USB0_BUS_REF_CTRL__ACT_FREQMHZ' with value '214,500000'. Invalid long/float value '214,500000' specified for parameter 'ACT USB0(PSU__CRL_APB__USB0_BUS_REF_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRL_APB__USB1_BUS_REF_CTRL__ACT_FREQMHZ' with value '214,500000'. Invalid long/float value '214,500000' specified for parameter 'ACT USB1(PSU__CRL_APB__USB1_BUS_REF_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__CRL_APB__USB3_DUAL_REF_CTRL__ACT_FREQMHZ' with value '19,756578'. Invalid long/float value '19,756578' specified for parameter 'ACT USB3 DUAL(PSU__CRL_APB__USB3_DUAL_REF_CTRL__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__DDR__INTERFACE__FREQMHZ' with value '266,500'. Invalid long/float value '266,500' specified for parameter 'ACT DDR(PSU__DDR__INTERFACE__FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__FPD_SLCR__WDT1__ACT_FREQMHZ' with value '83,416664'. Invalid long/float value '83,416664' specified for parameter 'WDT1 FREQMHZ(PSU__FPD_SLCR__WDT1__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__FPD_SLCR__WDT1__FREQMHZ' with value '83,416664'. Invalid long/float value '83,416664' specified for parameter 'WDT1 FREQMHZ(PSU__FPD_SLCR__WDT1__FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__IOU_SLCR__TTC0__ACT_FREQMHZ' with value '100,000000'. Invalid long/float value '100,000000' specified for parameter 'TTC0 FREQMHZ(PSU__IOU_SLCR__TTC0__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__IOU_SLCR__TTC0__FREQMHZ' with value '100,000000'. Invalid long/float value '100,000000' specified for parameter 'TTC0 FREQMHZ(PSU__IOU_SLCR__TTC0__FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__IOU_SLCR__TTC1__ACT_FREQMHZ' with value '100,000000'. Invalid long/float value '100,000000' specified for parameter 'TTC1 FREQMHZ(PSU__IOU_SLCR__TTC1__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__IOU_SLCR__TTC1__FREQMHZ' with value '100,000000'. Invalid long/float value '100,000000' specified for parameter 'TTC1 FREQMHZ(PSU__IOU_SLCR__TTC1__FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__IOU_SLCR__TTC2__ACT_FREQMHZ' with value '100,000000'. Invalid long/float value '100,000000' specified for parameter 'TTC2 FREQMHZ(PSU__IOU_SLCR__TTC2__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__IOU_SLCR__TTC2__FREQMHZ' with value '100,000000'. Invalid long/float value '100,000000' specified for parameter 'TTC2 FREQMHZ(PSU__IOU_SLCR__TTC2__FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__IOU_SLCR__TTC3__ACT_FREQMHZ' with value '100,000000'. Invalid long/float value '100,000000' specified for parameter 'TTC3 FREQMHZ(PSU__IOU_SLCR__TTC3__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__IOU_SLCR__TTC3__FREQMHZ' with value '100,000000'. Invalid long/float value '100,000000' specified for parameter 'TTC3 FREQMHZ(PSU__IOU_SLCR__TTC3__FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__IOU_SLCR__WDT0__ACT_FREQMHZ' with value '93,843750'. Invalid long/float value '93,843750' specified for parameter 'WDT0 FREQMHZ(PSU__IOU_SLCR__WDT0__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__IOU_SLCR__WDT0__FREQMHZ' with value '93,843750'. Invalid long/float value '93,843750' specified for parameter 'WDT0 FREQMHZ(PSU__IOU_SLCR__WDT0__FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__LPD_SLCR__CSUPMU__ACT_FREQMHZ' with value '100,000000'. Invalid long/float value '100,000000' specified for parameter 'CSU WDT FREQMHZ(PSU__LPD_SLCR__CSUPMU__ACT_FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+WARNING: [IP_Flow 19-3258] Validation failed for parameter 'PSU__LPD_SLCR__CSUPMU__FREQMHZ' with value '100,000000'. Invalid long/float value '100,000000' specified for parameter 'CSU WDT FREQMHZ(PSU__LPD_SLCR__CSUPMU__FREQMHZ)' for BD Cell 'zynq_ultra_ps_e_0'.
+
+ERROR: [IP_Flow 19-3478] Validation failed for parameter 'IOPLL(PSU__CRL_APB__IOPLL_CTRL__FBDIV)' with value '45' for BD Cell 'zynq_ultra_ps_e_0'. Error: PLL frequency 1485,000000 MHz  is out of range for the parameter: PSU__CRL_APB__IOPLL_CTRL__FBDIV. Valid input PLL frequency range is [1500 : 3000] MHz
+INFO: [IP_Flow 19-3438] Customization errors found on 'zynq_ultra_ps_e_0'. Restoring to previous valid configuration.
+ERROR: [IP_Flow 19-3439] Failed to restore IP 'zynq_ultra_ps_e_0' customization to its previous valid configuration.
+unexpected "," outside function argument list
+in expression "99,000000 * 1000000"
+ERROR: [BD 41-1273] Error running post_config_ip TCL procedure: unexpected "," outside function argument list
+    ::xilinx.com_ip_zynq_ultra_ps_e_3.3::post_config_ip Line 47
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running apply_rule TCL procedure: ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+    ::xilinx.com_bd_rule_zynq_ultra_ps_e::apply_rule Line 29
+INFO: [BD 5-145] Automation rule xilinx.com:bd_rule:zynq_ultra_ps_e was not applied to object zynq_ultra_ps_e_0
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:zynq_ultra_ps_e -config {apply_board_preset "1" }  [get_bd_cells zynq_ultra_ps_e_0]'
+ERROR: [Common 17-39] 'apply_bd_automation' failed due to earlier errors.
+set_property  ip_repo_paths  /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1 [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+create_bd_cell -type ip -vlnv xilinx.com:hls:myproject_axi:1.0 myproject_axi_0
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 24 15:51:37 2022...

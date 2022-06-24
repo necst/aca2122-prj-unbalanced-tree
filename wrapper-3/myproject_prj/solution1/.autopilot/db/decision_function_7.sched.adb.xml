@@ -19,7 +19,7 @@
 
 <Node id="3" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-arrayctor.loop:0 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_1
+.thread:0 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_2
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln0"/></StgValue>
@@ -34,10 +34,10 @@ arrayctor.loop:0 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i
 
 <Node id="4" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-arrayctor.loop:1 %p_read22 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read2
+.thread:1 %p_read13 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read1
 
 ]]></Node>
-<StgValue><ssdm name="p_read22"/></StgValue>
+<StgValue><ssdm name="p_read13"/></StgValue>
 </operation>
 
 <operation id="4" st_id="1" stage="1" lat="1">
@@ -49,10 +49,10 @@ arrayctor.loop:1 %p_read22 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read2
 
 <Node id="5" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-arrayctor.loop:2 %p_read11 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read1
+.thread:2 %p_read_11 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read
 
 ]]></Node>
-<StgValue><ssdm name="p_read11"/></StgValue>
+<StgValue><ssdm name="p_read_11"/></StgValue>
 </operation>
 
 <operation id="5" st_id="1" stage="1" lat="1">
@@ -64,10 +64,10 @@ arrayctor.loop:2 %p_read11 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read1
 
 <Node id="6" bw="1" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-arrayctor.loop:3 %comparison = icmp_slt  i32 %p_read11, i32 73288
+.thread:3 %icmp_ln1497 = icmp_slt  i32 %p_read_11, i32 73288
 
 ]]></Node>
-<StgValue><ssdm name="comparison"/></StgValue>
+<StgValue><ssdm name="icmp_ln1497"/></StgValue>
 </operation>
 
 <operation id="6" st_id="1" stage="1" lat="1">
@@ -79,10 +79,10 @@ arrayctor.loop:3 %comparison = icmp_slt  i32 %p_read11, i32 73288
 
 <Node id="7" bw="1" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-arrayctor.loop:4 %comparison_3 = icmp_slt  i32 %p_read11, i32 4294888266
+.thread:4 %icmp_ln1497_1 = icmp_slt  i32 %p_read_11, i32 4294888266
 
 ]]></Node>
-<StgValue><ssdm name="comparison_3"/></StgValue>
+<StgValue><ssdm name="icmp_ln1497_1"/></StgValue>
 </operation>
 
 <operation id="7" st_id="1" stage="1" lat="1">
@@ -94,10 +94,10 @@ arrayctor.loop:4 %comparison_3 = icmp_slt  i32 %p_read11, i32 4294888266
 
 <Node id="8" bw="1" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-arrayctor.loop:5 %comparison_2 = icmp_slt  i32 %p_read22, i32 81380
+.thread:5 %icmp_ln1497_2 = icmp_slt  i32 %p_read13, i32 81380
 
 ]]></Node>
-<StgValue><ssdm name="comparison_2"/></StgValue>
+<StgValue><ssdm name="icmp_ln1497_2"/></StgValue>
 </operation>
 
 <operation id="8" st_id="1" stage="1" lat="1">
@@ -109,10 +109,10 @@ arrayctor.loop:5 %comparison_2 = icmp_slt  i32 %p_read22, i32 81380
 
 <Node id="9" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-arrayctor.loop:6 %activation = xor i1 %comparison, i1 1
+.thread:6 %xor_ln133 = xor i1 %icmp_ln1497_1, i1 1
 
 ]]></Node>
-<StgValue><ssdm name="activation"/></StgValue>
+<StgValue><ssdm name="xor_ln133"/></StgValue>
 </operation>
 
 <operation id="9" st_id="1" stage="1" lat="1">
@@ -124,10 +124,10 @@ arrayctor.loop:6 %activation = xor i1 %comparison, i1 1
 
 <Node id="10" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-arrayctor.loop:7 %xor_ln135 = xor i1 %comparison_3, i1 1
+.thread:7 %and_ln133 = and i1 %icmp_ln1497_2, i1 %xor_ln133
 
 ]]></Node>
-<StgValue><ssdm name="xor_ln135"/></StgValue>
+<StgValue><ssdm name="and_ln133"/></StgValue>
 </operation>
 
 <operation id="10" st_id="1" stage="1" lat="1">
@@ -139,10 +139,10 @@ arrayctor.loop:7 %xor_ln135 = xor i1 %comparison_3, i1 1
 
 <Node id="11" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-arrayctor.loop:8 %and_ln133 = and i1 %comparison_2, i1 %xor_ln135
+.thread:8 %and_ln133_1 = and i1 %and_ln133, i1 %icmp_ln1497
 
 ]]></Node>
-<StgValue><ssdm name="and_ln133"/></StgValue>
+<StgValue><ssdm name="and_ln133_1"/></StgValue>
 </operation>
 
 <operation id="11" st_id="1" stage="1" lat="1">
@@ -154,10 +154,10 @@ arrayctor.loop:8 %and_ln133 = and i1 %comparison_2, i1 %xor_ln135
 
 <Node id="12" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-arrayctor.loop:9 %activation_2 = and i1 %and_ln133, i1 %comparison
+.thread:9 %xor_ln148 = xor i1 %icmp_ln1497, i1 1
 
 ]]></Node>
-<StgValue><ssdm name="activation_2"/></StgValue>
+<StgValue><ssdm name="xor_ln148"/></StgValue>
 </operation>
 
 <operation id="12" st_id="1" stage="1" lat="1">
@@ -169,13 +169,28 @@ arrayctor.loop:9 %activation_2 = and i1 %and_ln133, i1 %comparison
 
 <Node id="13" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-arrayctor.loop:10 %or_ln148 = or i1 %comparison_3, i1 %activation
+.thread:10 %or_ln148 = or i1 %icmp_ln1497_1, i1 %xor_ln148
 
 ]]></Node>
 <StgValue><ssdm name="or_ln148"/></StgValue>
 </operation>
 
 <operation id="13" st_id="1" stage="1" lat="1">
+<core>LogicGate</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="14" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+.thread:11 %or_ln148_1 = or i1 %or_ln148, i1 %and_ln133_1
+
+]]></Node>
+<StgValue><ssdm name="or_ln148_1"/></StgValue>
+</operation>
+
+<operation id="14" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -184,27 +199,12 @@ arrayctor.loop:10 %or_ln148 = or i1 %comparison_3, i1 %activation
 </and_exp></or_exp>
 </condition>
 
-<Node id="14" bw="2" op_0_bw="1">
+<Node id="15" bw="2" op_0_bw="1">
 <![CDATA[
-arrayctor.loop:11 %zext_ln148 = zext i1 %comparison
+.thread:12 %zext_ln149 = zext i1 %icmp_ln1497
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln148"/></StgValue>
-</operation>
-
-<operation id="14" st_id="1" stage="1" lat="1">
-<core>LogicGate</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="15" bw="1" op_0_bw="1" op_1_bw="1">
-<![CDATA[
-arrayctor.loop:12 %or_ln148_1 = or i1 %or_ln148, i1 %activation_2
-
-]]></Node>
-<StgValue><ssdm name="or_ln148_1"/></StgValue>
+<StgValue><ssdm name="zext_ln149"/></StgValue>
 </operation>
 
 <operation id="15" st_id="1" stage="1" lat="1">
@@ -217,10 +217,10 @@ arrayctor.loop:12 %or_ln148_1 = or i1 %or_ln148, i1 %activation_2
 
 <Node id="16" bw="2" op_0_bw="1" op_1_bw="2" op_2_bw="2">
 <![CDATA[
-arrayctor.loop:13 %select_ln148 = select i1 %or_ln148, i2 %zext_ln148, i2 2
+.thread:13 %select_ln149 = select i1 %or_ln148, i2 %zext_ln149, i2 2
 
 ]]></Node>
-<StgValue><ssdm name="select_ln148"/></StgValue>
+<StgValue><ssdm name="select_ln149"/></StgValue>
 </operation>
 
 <operation id="16" st_id="1" stage="1" lat="1">
@@ -232,10 +232,10 @@ arrayctor.loop:13 %select_ln148 = select i1 %or_ln148, i2 %zext_ln148, i2 2
 
 <Node id="17" bw="2" op_0_bw="1" op_1_bw="2" op_2_bw="2">
 <![CDATA[
-arrayctor.loop:14 %select_ln148_1 = select i1 %or_ln148_1, i2 %select_ln148, i2 3
+.thread:14 %select_ln149_1 = select i1 %or_ln148_1, i2 %select_ln149, i2 3
 
 ]]></Node>
-<StgValue><ssdm name="select_ln148_1"/></StgValue>
+<StgValue><ssdm name="select_ln149_1"/></StgValue>
 </operation>
 
 <operation id="17" st_id="1" stage="1" lat="1">
@@ -247,10 +247,10 @@ arrayctor.loop:14 %select_ln148_1 = select i1 %or_ln148_1, i2 %select_ln148, i2 
 
 <Node id="18" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="2">
 <![CDATA[
-arrayctor.loop:15 %agg_result = mux i32 @_ssdm_op_Mux.ap_auto.4i32.i2, i32 49209, i32 45279, i32 4294937773, i32 40738, i2 %select_ln148_1
+.thread:15 %tmp = mux i32 @_ssdm_op_Mux.ap_auto.4i32.i2, i32 49209, i32 45279, i32 4294937773, i32 40738, i2 %select_ln149_1
 
 ]]></Node>
-<StgValue><ssdm name="agg_result"/></StgValue>
+<StgValue><ssdm name="tmp"/></StgValue>
 </operation>
 
 <operation id="18" st_id="1" stage="1" lat="1">
@@ -262,7 +262,7 @@ arrayctor.loop:15 %agg_result = mux i32 @_ssdm_op_Mux.ap_auto.4i32.i2, i32 49209
 
 <Node id="19" bw="0" op_0_bw="32">
 <![CDATA[
-arrayctor.loop:16 %ret_ln153 = ret i32 %agg_result
+.thread:16 %ret_ln153 = ret i32 %tmp
 
 ]]></Node>
 <StgValue><ssdm name="ret_ln153"/></StgValue>

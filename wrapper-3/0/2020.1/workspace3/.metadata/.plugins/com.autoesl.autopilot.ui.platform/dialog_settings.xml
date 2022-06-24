@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="Co-simulation_Dialog">
+		<item value="700"/>
+		<item value="303"/>
+		<item value="500"/>
+		<item value="700"/>
+	</list>
+	<list key="Export_RTL">
+		<item value="700"/>
+		<item value="290"/>
+		<item value="700"/>
+		<item value="713"/>
+	</list>
+	<list key="C_Synthesis_-_Active_Solution">
+		<item value="700"/>
+		<item value="390"/>
+		<item value="500"/>
+		<item value="400"/>
+	</list>
+	<list key="dialog_settings_filter_index_key">
+		<item value="All"/>
+		<item value="All"/>
+		<item value="All"/>
+		<item value="All"/>
+		<item value="All"/>
+		<item value="All"/>
+	</list>
+	<list key="C_Simulation_Dialog">
+		<item value="700"/>
+		<item value="429"/>
+		<item value="400"/>
+		<item value="439"/>
+	</list>
+	<list key="project_settings_dialog_bound">
+		<item value="528"/>
+		<item value="49"/>
+		<item value="870"/>
+		<item value="750"/>
+	</list>
+</section>

@@ -15,28 +15,44 @@
 </UserAssignments>
 
 <PerformanceEstimates>
-<PipelineType>no</PipelineType>
+<PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>4.885</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.971</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>21</Best-caseLatency>
-<Average-caseLatency>21</Average-caseLatency>
-<Worst-caseLatency>21</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.147 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.147 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.147 us</Worst-caseRealTimeLatency>
-<Interval-min>22</Interval-min>
-<Interval-max>22</Interval-max>
+<Best-caseLatency>20</Best-caseLatency>
+<Average-caseLatency>20</Average-caseLatency>
+<Worst-caseLatency>20</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.140 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.140 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.140 us</Worst-caseRealTimeLatency>
+<Interval-min>21</Interval-min>
+<Interval-max>21</Interval-max>
 </SummaryOfOverallLatency>
+<SummaryOfLoopLatency>
+<VITIS_LOOP_22_1>
+<TripCount>10</TripCount>
+<Latency>12</Latency>
+<AbsoluteTimeLatency>84</AbsoluteTimeLatency>
+<PipelineII>1</PipelineII>
+<PipelineDepth>4</PipelineDepth>
+</VITIS_LOOP_22_1>
+<VITIS_LOOP_32_2>
+<TripCount>2</TripCount>
+<Latency>3</Latency>
+<AbsoluteTimeLatency>21</AbsoluteTimeLatency>
+<PipelineII>1</PipelineII>
+<PipelineDepth>3</PipelineDepth>
+</VITIS_LOOP_32_2>
+</SummaryOfLoopLatency>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<FF>727</FF>
-<LUT>4879</LUT>
+<FF>827</FF>
+<LUT>4988</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -51,28 +67,6 @@
 </AreaEstimates>
 
 <InterfaceSummary>
-<RtlPorts>
-<name>ap_local_block</name>
-<Object>myproject_axi</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_local_deadlock</name>
-<Object>myproject_axi</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
 <RtlPorts>
 <name>ap_clk</name>
 <Object>myproject_axi</Object>
@@ -97,7 +91,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>in_r_TDATA</name>
-<Object>in_r_V_data_V</Object>
+<Object>in_V_data_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -109,7 +103,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>in_r_TVALID</name>
-<Object>in_r_V_last_V</Object>
+<Object>in_V_last_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -121,7 +115,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>in_r_TREADY</name>
-<Object>in_r_V_last_V</Object>
+<Object>in_V_last_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -133,7 +127,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>in_r_TLAST</name>
-<Object>in_r_V_last_V</Object>
+<Object>in_V_last_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -145,7 +139,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>in_r_TKEEP</name>
-<Object>in_r_V_keep_V</Object>
+<Object>in_V_keep_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -157,7 +151,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>in_r_TSTRB</name>
-<Object>in_r_V_strb_V</Object>
+<Object>in_V_strb_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -169,7 +163,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>out_r_TDATA</name>
-<Object>out_r_V_data_V</Object>
+<Object>out_V_data_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -181,7 +175,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>out_r_TVALID</name>
-<Object>out_r_V_last_V</Object>
+<Object>out_V_last_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -193,7 +187,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>out_r_TREADY</name>
-<Object>out_r_V_last_V</Object>
+<Object>out_V_last_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -205,7 +199,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>out_r_TLAST</name>
-<Object>out_r_V_last_V</Object>
+<Object>out_V_last_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -217,7 +211,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>out_r_TKEEP</name>
-<Object>out_r_V_keep_V</Object>
+<Object>out_V_keep_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -229,7 +223,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>out_r_TSTRB</name>
-<Object>out_r_V_strb_V</Object>
+<Object>out_V_strb_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>

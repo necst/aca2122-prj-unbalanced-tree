@@ -2,158 +2,117 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Fri Jun 24 11:30:57 2022
-# Process ID: 2961194
+# Start of session at: Fri Jun 24 16:36:18 2022
+# Process ID: 3333436
 # Current directory: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3
-# Command line: vivado project_1/project_1.xpr
+# Command line: vivado
 # Log file: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/vivado.log
 # Journal file: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project project_1/project_1.xpr
-Scanning sources...
-Finished scanning sources
+create_project project_2 /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2 -part xczu3eg-sbva484-1-e
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1'.
+INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.1/data/ip'.
-WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
-List of locked IPs:
-design_1_myproject_axi_0_0
-
-open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 7097.863 ; gain = 45.293 ; free physical = 25237 ; free virtual = 41435
 WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 7088.547 ; gain = 30.016 ; free physical = 12469 ; free virtual = 34242
+set_property board_part em.avnet.com:ultra96:part0:1.2 [current_project]
+create_bd_design "design_1"
+Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.srcs/sources_1/bd/design_1/design_1.bd> 
 update_compile_order -fileset sources_1
-open_bd_design {/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
-Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.3 - zynq_ultra_ps_e_0
-Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps8_0_axi_periph
-Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
-Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
-Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
-Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_100M
-Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
-Adding component instance block -- xilinx.com:hls:myproject_axi:1.0 - myproject_axi_0
-Successfully read diagram <design_1> from BD file </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>
-report_ip_status -name ip_status 
-upgrade_ip -vlnv xilinx.com:hls:myproject_axi:1.0 [get_ips  design_1_myproject_axi_0_0] -log ip_upgrade.log
-Upgrading '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
-INFO: [IP_Flow 19-3422] Upgraded design_1_myproject_axi_0_0 (Myproject_axi 1.0) from revision 2112562859 to revision 2112563547
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_cd160b2f.ui> 
-INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/ip_upgrade.log'.
-export_ip_user_files -of_objects [get_ips design_1_myproject_axi_0_0] -no_script -sync -force -quiet
-generate_target all [get_files  /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_cd160b2f.ui> 
-VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v
-VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v
-VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_cd160b2f.ui> 
-WARNING: [IP_Flow 19-519] IP 'design_1_myproject_axi_0_0' detected a language mismatch between 'VHDL Simulation Wrapper' and 'Verilog Simulation' output products. Please check with the IP provider to see if this is expected.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block hier_0/myproject_axi_0 .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
-WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
-WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_ds .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_pc .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc'
-WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
-WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_ds .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_pc .
-Exporting to file /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
-Generated Block Design Tcl file /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
-Generated Hardware Definition File /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
-generate_target: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 7384.000 ; gain = 0.000 ; free physical = 24961 ; free virtual = 41151
-catch { config_ip_cache -export [get_ips -all design_1_myproject_axi_0_0] }
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_myproject_axi_0_0, cache-ID = da23986085e6908e; cache size = 20.294 MB.
-catch { config_ip_cache -export [get_ips -all design_1_auto_ds_0] }
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_0, cache-ID = f246bd3e0ed0db22; cache size = 20.294 MB.
-catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 96ee5dac97f2143c; cache size = 20.294 MB.
-catch { config_ip_cache -export [get_ips -all design_1_auto_ds_1] }
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_1, cache-ID = f246bd3e0ed0db22; cache size = 20.294 MB.
-catch { config_ip_cache -export [get_ips -all design_1_auto_pc_1] }
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 96ee5dac97f2143c; cache size = 20.294 MB.
-export_ip_user_files -of_objects [get_files /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
-export_simulation -of_objects [get_files /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.ip_user_files -ipstatic_source_dir /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.cache/compile_simlib/modelsim} {questa=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.cache/compile_simlib/questa} {ies=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.cache/compile_simlib/ies} {xcelium=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.cache/compile_simlib/xcelium} {vcs=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.cache/compile_simlib/vcs} {riviera=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Fri Jun 24 11:32:12 2022] Launched synth_1...
-Run output will be captured here: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/runme.log
-[Fri Jun 24 11:32:12 2022] Launched impl_1...
-Run output will be captured here: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/impl_1/runme.log
-reset_run synth_1
-WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/impl/ip/component.xml. It will be created.
-update_ip_catalog -rebuild -scan_changes
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.3 zynq_ultra_ps_e_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:zynq_ultra_ps_e -config {apply_board_preset "1" }  [get_bd_cells zynq_ultra_ps_e_0]
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+set_property  ip_repo_paths  /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj [current_project]
+update_ip_catalog
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj'.
 WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
-report_ip_status -name ip_status
-upgrade_ip -vlnv xilinx.com:hls:myproject_axi:1.0 [get_ips  design_1_myproject_axi_0_0] -log ip_upgrade.log
-Upgrading '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
-INFO: [IP_Flow 19-3422] Upgraded design_1_myproject_axi_0_0 (Myproject_axi 1.0) from revision 2112563547 to revision 2112563554
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_cd160b2f.ui> 
-INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/ip_upgrade.log'.
-export_ip_user_files -of_objects [get_ips design_1_myproject_axi_0_0] -no_script -sync -force -quiet
-launch_runs impl_1 -to_step write_bitstream -jobs 4
+create_bd_cell -type ip -vlnv xilinx.com:hls:myproject_axi:1.0 myproject_axi_0
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup
+set_property -dict [list CONFIG.c_include_sg {0} CONFIG.c_sg_include_stscntrl_strm {0}] [get_bd_cells axi_dma_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_FPD} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Slave segment '/axi_dma_0/S_AXI_LITE/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xA000_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Master {/zynq_ultra_ps_e_0/M_AXI_HPM1_FPD} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {/ps8_0_axi_periph} master_apm {0}}  [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM1_FPD]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins myproject_axi_0/in_r]
+connect_bd_intf_net [get_bd_intf_pins myproject_axi_0/out_r] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins myproject_axi_0/ap_clk]
+group_bd_cells hier_0 [get_bd_cells myproject_axi_0] [get_bd_cells axi_dma_0]
+make_wrapper -files [get_files /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
 WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
 WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
 WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
 WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_cd160b2f.ui> 
-VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v
-VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v
-VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_cd160b2f.ui> 
-WARNING: [IP_Flow 19-519] IP 'design_1_myproject_axi_0_0' detected a language mismatch between 'VHDL Simulation Wrapper' and 'Verilog Simulation' output products. Please check with the IP provider to see if this is expected.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block hier_0/myproject_axi_0 .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
+Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+add_files -norecurse /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [xilinx.com:ip:zynq_ultra_ps_e:3.3-0] design_1_zynq_ultra_ps_e_0_0: 
+Changes in your design (including the PCW configuration settings) are not automatically exported from Vivado to Xilinx's SDK, Petalinux or Yocto.
+This is by design to avoid disrupting existing embedded development efforts. To have any changes of your design taking effect in the embedded software flow please export your
+design by going through Vivado's main menu, click on File, then Export finally select Export Hardware, please ensure you click on the Include BitStream option.
+The auto-generated HDF file is all you need to import in Xilinx's SDK, Petalinux or Yocto for your changes to be reflected in the Embedded Software Flow.
+For more information, please consult PG201, section: Exporting PCW Settings to Embedded Software Flows
+INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_HPM0_FPD'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_HPM1_FPD'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_ultra_ps_e_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
 WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
 WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
 INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_ds .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
 INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_pc .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc'
 WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
 WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
 INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_ds .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
 INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_pc .
-Exporting to file /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
-Generated Block Design Tcl file /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
-Generated Hardware Definition File /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_0, cache-ID = f246bd3e0ed0db22; cache size = 10.782 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_1, cache-ID = f246bd3e0ed0db22; cache size = 10.782 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 96ee5dac97f2143c; cache size = 10.782 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 96ee5dac97f2143c; cache size = 10.782 MB.
-[Fri Jun 24 11:35:06 2022] Launched design_1_myproject_axi_0_0_synth_1, synth_1...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps8_0_100M .
+WARNING: [IP_Flow 19-519] IP 'design_1_myproject_axi_0_0' detected a language mismatch between 'VHDL Simulation Wrapper' and 'Verilog Simulation' output products. Please check with the IP provider to see if this is expected.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hier_0/myproject_axi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hier_0/axi_dma_0 .
+Exporting to file /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Fri Jun 24 16:40:05 2022] Launched design_1_xbar_0_synth_1, design_1_myproject_axi_0_0_synth_1, design_1_rst_ps8_0_100M_0_synth_1, design_1_axi_dma_0_0_synth_1, design_1_auto_pc_1_synth_1, design_1_auto_ds_1_synth_1, design_1_auto_ds_0_synth_1, design_1_zynq_ultra_ps_e_0_0_synth_1, design_1_auto_pc_0_synth_1, synth_1...
 Run output will be captured here:
-design_1_myproject_axi_0_0_synth_1: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/design_1_myproject_axi_0_0_synth_1/runme.log
-synth_1: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/runme.log
-[Fri Jun 24 11:35:06 2022] Launched impl_1...
-Run output will be captured here: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/impl_1/runme.log
-launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 7384.000 ; gain = 0.000 ; free physical = 25009 ; free virtual = 41095
+design_1_xbar_0_synth_1: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.runs/design_1_xbar_0_synth_1/runme.log
+design_1_myproject_axi_0_0_synth_1: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.runs/design_1_myproject_axi_0_0_synth_1/runme.log
+design_1_rst_ps8_0_100M_0_synth_1: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.runs/design_1_rst_ps8_0_100M_0_synth_1/runme.log
+design_1_axi_dma_0_0_synth_1: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.runs/design_1_axi_dma_0_0_synth_1/runme.log
+design_1_auto_pc_1_synth_1: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.runs/design_1_auto_pc_1_synth_1/runme.log
+design_1_auto_ds_1_synth_1: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.runs/design_1_auto_ds_1_synth_1/runme.log
+design_1_auto_ds_0_synth_1: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.runs/design_1_auto_ds_0_synth_1/runme.log
+design_1_zynq_ultra_ps_e_0_0_synth_1: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.runs/design_1_zynq_ultra_ps_e_0_0_synth_1/runme.log
+design_1_auto_pc_0_synth_1: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.runs/design_1_auto_pc_0_synth_1/runme.log
+synth_1: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.runs/synth_1/runme.log
+[Fri Jun 24 16:40:05 2022] Launched impl_1...
+Run output will be captured here: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 7511.426 ; gain = 145.055 ; free physical = 11517 ; free virtual = 33341
 open_run impl_1
 INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
-Netlist sorting complete. Time (s): cpu = 00:00:00,15 ; elapsed = 00:00:00,14 . Memory (MB): peak = 7952.699 ; gain = 0.000 ; free physical = 24355 ; free virtual = 40526
-INFO: [Netlist 29-17] Analyzing 548 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00,11 ; elapsed = 00:00:00,11 . Memory (MB): peak = 8091.852 ; gain = 0.000 ; free physical = 9347 ; free virtual = 31243
+INFO: [Netlist 29-17] Analyzing 132 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2020.1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -164,176 +123,12 @@ INFO: [Project 1-853] Binary constraint restore complete.
 Reading XDEF placement.
 Reading placer database...
 Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 8114.289 ; gain = 18.844 ; free physical = 23982 ; free virtual = 40154
-Restored from archive | CPU: 1,170000 secs | Memory: 17,162781 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 8114.289 ; gain = 18.844 ; free physical = 23982 ; free virtual = 40154
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8114.289 ; gain = 0.000 ; free physical = 23993 ; free virtual = 40166
+Read XDEF File: Time (s): cpu = 00:00:00,89 ; elapsed = 00:00:00,88 . Memory (MB): peak = 8219.469 ; gain = 12.875 ; free physical = 9092 ; free virtual = 30988
+Restored from archive | CPU: 0,900000 secs | Memory: 9,708054 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00,89 ; elapsed = 00:00:00,89 . Memory (MB): peak = 8219.469 ; gain = 12.875 ; free physical = 9092 ; free virtual = 30988
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8219.469 ; gain = 0.000 ; free physical = 9095 ; free virtual = 30992
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 15 instances were transformed.
   RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 15 instances
 
-open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 8391.770 ; gain = 1007.770 ; free physical = 23828 ; free virtual = 40001
-WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/impl/ip/component.xml. It will be created.
-open_bd_design {/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
-update_ip_catalog -rebuild -scan_changes
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1'.
-WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
-report_ip_status -name ip_status
-upgrade_ip -vlnv xilinx.com:hls:myproject_axi:1.0 [get_ips  design_1_myproject_axi_0_0] -log ip_upgrade.log
-Upgrading '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
-INFO: [IP_Flow 19-3422] Upgraded design_1_myproject_axi_0_0 (Myproject_axi 1.0) from revision 2112563554 to revision 2112563611
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_cd160b2f.ui> 
-INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/ip_upgrade.log'.
-export_ip_user_files -of_objects [get_ips design_1_myproject_axi_0_0] -no_script -sync -force -quiet
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_cd160b2f.ui> 
-VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v
-VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v
-VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_cd160b2f.ui> 
-WARNING: [IP_Flow 19-519] IP 'design_1_myproject_axi_0_0' detected a language mismatch between 'VHDL Simulation Wrapper' and 'Verilog Simulation' output products. Please check with the IP provider to see if this is expected.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block hier_0/myproject_axi_0 .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
-WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
-WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_ds .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_pc .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc'
-WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
-WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_ds .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_pc .
-Exporting to file /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
-Generated Block Design Tcl file /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
-Generated Hardware Definition File /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_0, cache-ID = f246bd3e0ed0db22; cache size = 20,294 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_1, cache-ID = f246bd3e0ed0db22; cache size = 20,294 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 96ee5dac97f2143c; cache size = 20,294 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 96ee5dac97f2143c; cache size = 20,294 MB.
-[Fri Jun 24 12:32:41 2022] Launched design_1_myproject_axi_0_0_synth_1, synth_1...
-Run output will be captured here:
-design_1_myproject_axi_0_0_synth_1: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/design_1_myproject_axi_0_0_synth_1/runme.log
-synth_1: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/runme.log
-[Fri Jun 24 12:32:41 2022] Launched impl_1...
-Run output will be captured here: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/impl_1/runme.log
-launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 9684.688 ; gain = 51.023 ; free physical = 22596 ; free virtual = 38807
-WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
-WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/impl/ip/component.xml. It will be created.
-update_ip_catalog -rebuild -scan_changes
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1'.
-WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
-report_ip_status -name ip_status
-upgrade_ip -vlnv xilinx.com:hls:myproject_axi:1.0 [get_ips  design_1_myproject_axi_0_0] -log ip_upgrade.log
-Upgrading '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
-INFO: [IP_Flow 19-3422] Upgraded design_1_myproject_axi_0_0 (Myproject_axi 1.0) from revision 2112563611 to revision 2112563640
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_cd160b2f.ui> 
-INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/ip_upgrade.log'.
-export_ip_user_files -of_objects [get_ips design_1_myproject_axi_0_0] -no_script -sync -force -quiet
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_cd160b2f.ui> 
-VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v
-VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v
-VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_cd160b2f.ui> 
-WARNING: [IP_Flow 19-519] IP 'design_1_myproject_axi_0_0' detected a language mismatch between 'VHDL Simulation Wrapper' and 'Verilog Simulation' output products. Please check with the IP provider to see if this is expected.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block hier_0/myproject_axi_0 .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
-WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
-WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_ds .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_pc .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc'
-WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
-WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_ds .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_pc .
-Exporting to file /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
-Generated Block Design Tcl file /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
-Generated Hardware Definition File /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_0, cache-ID = f246bd3e0ed0db22; cache size = 23,199 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 96ee5dac97f2143c; cache size = 23,199 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_1, cache-ID = f246bd3e0ed0db22; cache size = 23,199 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 96ee5dac97f2143c; cache size = 23,199 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_myproject_axi_0_0, cache-ID = a7c6b5b505802dc3; cache size = 23,199 MB.
-[Fri Jun 24 13:02:02 2022] Launched synth_1...
-Run output will be captured here: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/runme.log
-[Fri Jun 24 13:02:02 2022] Launched impl_1...
-Run output will be captured here: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/impl_1/runme.log
-launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 9702.695 ; gain = 18.008 ; free physical = 22337 ; free virtual = 38650
-startgroup
-set_property -dict [list CONFIG.c_m_axi_s2mm_data_width.VALUE_SRC PROPAGATED CONFIG.c_single_interface.VALUE_SRC PROPAGATED CONFIG.c_s_axis_s2mm_tdata_width.VALUE_SRC PROPAGATED] [get_bd_cells hier_0/axi_dma_0]
-set_property -dict [list CONFIG.c_sg_length_width {14} CONFIG.c_mm2s_burst_size {128} CONFIG.c_s2mm_burst_size {128}] [get_bd_cells hier_0/axi_dma_0]
-endgroup
-validate_bd_design
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-save_bd_design
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_cd160b2f.ui> 
-reset_run synth_1
-reset_run design_1_axi_dma_0_0_synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_cd160b2f.ui> 
-VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v
-VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v
-VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_cd160b2f.ui> 
-INFO: [BD 41-1029] Generation completed for the IP Integrator block hier_0/axi_dma_0 .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
-WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
-WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_ds .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_pc .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc'
-WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
-WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_ds .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_pc .
-Exporting to file /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
-Generated Block Design Tcl file /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
-Generated Hardware Definition File /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_0, cache-ID = f246bd3e0ed0db22; cache size = 23,199 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_1, cache-ID = f246bd3e0ed0db22; cache size = 23,199 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 96ee5dac97f2143c; cache size = 23,199 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 96ee5dac97f2143c; cache size = 23,199 MB.
-[Fri Jun 24 13:32:38 2022] Launched design_1_axi_dma_0_0_synth_1, synth_1...
-Run output will be captured here:
-design_1_axi_dma_0_0_synth_1: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/design_1_axi_dma_0_0_synth_1/runme.log
-synth_1: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/runme.log
-[Fri Jun 24 13:32:38 2022] Launched impl_1...
-Run output will be captured here: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/impl_1/runme.log
-launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 9755.719 ; gain = 0.000 ; free physical = 22263 ; free virtual = 38658
+open_run: Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 8484.207 ; gain = 972.781 ; free physical = 8930 ; free virtual = 30827

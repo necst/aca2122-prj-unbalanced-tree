@@ -68,8 +68,8 @@ if {$opt(reset)} {
 }
 catch {config_array_partition -maximum_size 4096}
 config_compile -name_max_length 60
-set_part {xc7z020clg400-1}
-create_clock -period 5 -name default
+set_part {xczu3eg-sbva484-1-e}
+create_clock -period 7 -name default
 
 
 if {$opt(csim)} {

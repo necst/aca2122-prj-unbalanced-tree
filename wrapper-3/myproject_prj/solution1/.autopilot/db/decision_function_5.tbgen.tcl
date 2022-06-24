@@ -12,25 +12,25 @@ set isEnableWaveformDebug 1
 set C_modelName {decision_function.5}
 set C_modelType { int 32 }
 set C_modelArgList {
+	{ p_read int 32 regular  }
 	{ p_read1 int 32 regular  }
-	{ p_read2 int 32 regular  }
 }
 set C_modelArgMapList {[ 
-	{ "Name" : "p_read1", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "p_read2", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
+	{ "Name" : "p_read", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
+ 	{ "Name" : "p_read1", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 32} ]}
 # RTL Port declarations: 
 set portNum 4
 set portList { 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ p_read1 sc_in sc_lv 32 signal 0 } 
-	{ p_read2 sc_in sc_lv 32 signal 1 } 
+	{ p_read sc_in sc_lv 32 signal 0 } 
+	{ p_read1 sc_in sc_lv 32 signal 1 } 
 	{ ap_return sc_out sc_lv 32 signal -1 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
+ 	{ "name": "p_read", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "p_read", "role": "default" }} , 
  	{ "name": "p_read1", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "p_read1", "role": "default" }} , 
- 	{ "name": "p_read2", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "p_read2", "role": "default" }} , 
  	{ "name": "ap_return", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "ap_return", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
@@ -47,17 +47,16 @@ set RtlHierarchyInfo {[
 		"HasSubDataflow" : "0",
 		"InDataflowNetwork" : "0",
 		"HasNonBlockingOperation" : "0",
-		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "p_read1", "Type" : "None", "Direction" : "I"},
-			{"Name" : "p_read2", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mux_42_32_1_1_U25", "Parent" : "0"}]}
+			{"Name" : "p_read", "Type" : "None", "Direction" : "I"},
+			{"Name" : "p_read1", "Type" : "None", "Direction" : "I"}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mux_42_32_1_1_U9", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	decision_function_5 {
-		p_read1 {Type I LastRead 0 FirstWrite -1}
-		p_read2 {Type I LastRead 0 FirstWrite -1}}}
+		p_read {Type I LastRead 0 FirstWrite -1}
+		p_read1 {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -70,6 +69,6 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
+	p_read { ap_none {  { p_read in_data 0 32 } } }
 	p_read1 { ap_none {  { p_read1 in_data 0 32 } } }
-	p_read2 { ap_none {  { p_read2 in_data 0 32 } } }
 }
