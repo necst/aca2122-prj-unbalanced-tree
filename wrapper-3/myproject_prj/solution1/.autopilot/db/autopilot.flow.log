@@ -1968,3 +1968,901 @@ Command   export_design done; 22.9 sec.
 INFO: [HLS 200-111] Finished Command export_design CPU user time: 13.17 seconds. CPU system time: 2.29 seconds. Elapsed time: 22.9 seconds; current allocated memory: -930.406 MB.
 Command ap_source done; 23.82 sec.
 Execute cleanup_all 
+INFO-FLOW: Workspace /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1 opened at Fri Jun 24 11:26:50 CEST 2022
+Execute     ap_set_clock -name default -period 7 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 7ns.
+Execute     set_part xczu3eg-sbva484-1-e 
+Execute       create_platform xczu3eg-sbva484-1-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2021.2/lib/lnx64.o/librdi_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2020.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
+Command       create_platform done; 0.75 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.84 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-1464@%s config_compile -complex-mul-dsp=0 
+INFO: [HLS 200-1464] Running solution command: config_compile -complex-mul-dsp=0
+Execute     config_compile -complex-mul-dsp=0 
+Execute     send_msg_by_id INFO @200-1464@%s config_compile -name_max_length=60 
+INFO: [HLS 200-1464] Running solution command: config_compile -name_max_length=60
+Execute     config_compile -name_max_length=60 
+INFO: [XFORM 203-1161] The maximum of name length is set into 60.
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=sysgen 
+INFO: [HLS 200-1464] Running solution command: config_export -format=sysgen
+Execute     config_export -format=sysgen 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 0.85 sec.
+Execute   set_part xczu3eg-sbva484-1-e 
+INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
+Execute     create_platform xczu3eg-sbva484-1-e -board  
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+INFO: [XFORM 203-1161] The maximum of name length is set into 60.
+Execute   create_clock -period 7 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 7 -name default 
+Execute   config_compile -name_max_length 60 
+INFO: [HLS 200-1510] Running: config_compile -name_max_length 60 
+INFO: [XFORM 203-1161] The maximum of name length is set into 60.
+Execute   config_export -format sysgen -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format sysgen -rtl verilog 
+Execute   source ./myproject_prj/solution1/directives.tcl 
+Execute     set_directive_top -name myproject_axi myproject_axi 
+INFO: [HLS 200-1510] Running: set_directive_top -name myproject_axi myproject_axi 
+Execute   csim_design -clean -quiet 
+INFO: [HLS 200-1510] Running: csim_design -clean -quiet 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 0.43 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 4.66 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 5.03 seconds. CPU system time: 0.5 seconds. Elapsed time: 4.66 seconds; current allocated memory: -937.109 MB.
+Command ap_source done; 5.62 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1 opened at Fri Jun 24 11:27:26 CEST 2022
+Execute     ap_set_clock -name default -period 7 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 7ns.
+Execute     set_part xczu3eg-sbva484-1-e 
+Execute       create_platform xczu3eg-sbva484-1-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2021.2/lib/lnx64.o/librdi_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2020.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
+Command       create_platform done; 0.84 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.92 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-1464@%s config_compile -complex-mul-dsp=0 
+INFO: [HLS 200-1464] Running solution command: config_compile -complex-mul-dsp=0
+Execute     config_compile -complex-mul-dsp=0 
+Execute     send_msg_by_id INFO @200-1464@%s config_compile -name_max_length=60 
+INFO: [HLS 200-1464] Running solution command: config_compile -name_max_length=60
+Execute     config_compile -name_max_length=60 
+INFO: [XFORM 203-1161] The maximum of name length is set into 60.
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=sysgen 
+INFO: [HLS 200-1464] Running solution command: config_export -format=sysgen
+Execute     config_export -format=sysgen 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 0.93 sec.
+Execute   set_part xczu3eg-sbva484-1-e 
+INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
+Execute     create_platform xczu3eg-sbva484-1-e -board  
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+INFO: [XFORM 203-1161] The maximum of name length is set into 60.
+Execute   create_clock -period 7 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 7 -name default 
+Execute   config_compile -name_max_length 60 
+INFO: [HLS 200-1510] Running: config_compile -name_max_length 60 
+INFO: [XFORM 203-1161] The maximum of name length is set into 60.
+Execute   config_export -format sysgen -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format sysgen -rtl verilog 
+Execute   source ./myproject_prj/solution1/directives.tcl 
+Execute     set_directive_top -name myproject_axi myproject_axi 
+INFO: [HLS 200-1510] Running: set_directive_top -name myproject_axi myproject_axi 
+Execute   export_design -rtl verilog -format sysgen 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format sysgen 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -description 
+Execute     get_config_export -display_name 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -ipname 
+Execute     get_config_export -library 
+Execute     get_config_export -output 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -vendor 
+Execute     get_config_export -version 
+Execute     get_config_export -xo 
+Execute     config_export -format=sysgen -rtl=verilog 
+INFO-FLOW: DBG:PUTS: export_design_wrap: -format sysgen -rtl verilog
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_export -ipname 
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+Execute     get_config_rtl -module_auto_prefix 
+Execute     get_solution -flow_target 
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+Execute     get_config_export -ip_xdc_file 
+Execute     get_config_export -ip_xdc_ooc_file 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/common.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op.gen 
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=7.000 (was NA)
+INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=myproject_axi xml_exists=1
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     get_config_export -deadlock_detection 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     get_config_rtl -module_prefix 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to myproject_axi
+Execute     get_config_export -deadlock_detection 
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=8
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=21 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='myproject_axi_mux_42_32_1_1
+myproject_axi_mux_42_32_1_1_x
+myproject_axi_fpext_32ns_64_2_no_dsp_1
+myproject_axi_regslice_both
+myproject_axi_regslice_both
+myproject_axi_regslice_both
+myproject_axi_regslice_both
+myproject_axi_regslice_both
+myproject_axi_regslice_both
+myproject_axi_regslice_both
+myproject_axi_regslice_both
+decision_function_7
+decision_function_6
+decision_function_5
+decision_function_4
+decision_function_3
+decision_function_2
+decision_function_1
+decision_function
+myproject
+myproject_axi
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_solution -flow_target 
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/top-io-be.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.compgen.dataonly.tcl 
+Execute     get_config_export -format 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_7.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_6.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_5.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_4.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_3.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_2.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_1.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute     get_solution -flow_target 
+Execute     get_config_rtl -kernel_profile 
+Execute     get_config_rtl -kernel_profile 
+Execute     get_config_rtl -stall_sig_gen 
+Execute     get_config_rtl -profile 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.constraint.tcl 
+Execute     sc_get_clocks myproject_axi 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -ip_xdc_file 
+Execute     get_config_export -ip_xdc_ooc_file 
+Execute     get_config_debug -directory 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/impl/misc/myproject_axi_fpext_32ns_64_2_no_dsp_1_ip.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/impl/misc/myproject_axi_fpext_32ns_64_4_no_dsp_1_ip.tcl 
+Execute     get_config_export -deadlock_detection 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     get_config_rtl -module_prefix 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to myproject_axi
+Execute     get_config_export -deadlock_detection 
+Execute     get_config_export -format 
+INFO-FLOW: DBG:PUTS:       generate_ip_script #gSsdmPorts=0 g_lang=vlog is_sdaccel=false is_sdsoc=true xo_file=
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_debug -directory 
+INFO-FLOW: DBG:PUTS:       generate_top_info
+INFO-FLOW: DBG:PUTS:       prepArgInfo -> loadAnalyze_DB top_module=myproject_axi
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -ip_xdc_ooc_file 
+Execute     get_config_export -ip_xdc_file 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       generate_ipi_example_script
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.constraint.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/common.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op.gen 
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:     IP package: exec /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/impl/ip/pack.sh
+INFO-FLOW: DBG:PUTS:     IP package: success /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/impl/ip/pack.sh
+Execute     get_config_export -output 
+Execute     send_msg_by_id INFO @200-802@%s myproject_prj/solution1/impl/export.zip 
+INFO: [HLS 200-802] Generated output file myproject_prj/solution1/impl/export.zip
+Command   export_design done; 23.13 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 13.32 seconds. CPU system time: 2.3 seconds. Elapsed time: 23.13 seconds; current allocated memory: -930.406 MB.
+Command ap_source done; 24.17 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1 opened at Fri Jun 24 11:33:24 CEST 2022
+Execute     ap_set_clock -name default -period 7 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 7ns.
+Execute     set_part xczu3eg-sbva484-1-e 
+Execute       create_platform xczu3eg-sbva484-1-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2021.2/lib/lnx64.o/librdi_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2020.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
+Command       create_platform done; 0.74 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.82 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-1464@%s config_compile -complex-mul-dsp=0 
+INFO: [HLS 200-1464] Running solution command: config_compile -complex-mul-dsp=0
+Execute     config_compile -complex-mul-dsp=0 
+Execute     send_msg_by_id INFO @200-1464@%s config_compile -name_max_length=60 
+INFO: [HLS 200-1464] Running solution command: config_compile -name_max_length=60
+Execute     config_compile -name_max_length=60 
+INFO: [XFORM 203-1161] The maximum of name length is set into 60.
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=sysgen 
+INFO: [HLS 200-1464] Running solution command: config_export -format=sysgen
+Execute     config_export -format=sysgen 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 0.82 sec.
+Execute   set_part xczu3eg-sbva484-1-e 
+INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
+Execute     create_platform xczu3eg-sbva484-1-e -board  
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+INFO: [XFORM 203-1161] The maximum of name length is set into 60.
+Execute   create_clock -period 7 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 7 -name default 
+Execute   config_compile -name_max_length 60 
+INFO: [HLS 200-1510] Running: config_compile -name_max_length 60 
+INFO: [XFORM 203-1161] The maximum of name length is set into 60.
+Execute   config_export -format sysgen -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format sysgen -rtl verilog 
+Execute   source ./myproject_prj/solution1/directives.tcl 
+Execute     set_directive_top -name myproject_axi myproject_axi 
+INFO: [HLS 200-1510] Running: set_directive_top -name myproject_axi myproject_axi 
+Execute   cosim_design -trace_level all 
+INFO: [HLS 200-1510] Running: cosim_design -trace_level all 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/common.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op.gen 
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=7.000 (was NA)
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info 
+INFO-FLOW: TB processing: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_test.cpp /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/./sim/autowrap/testbench/myproject_test.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process -desc tb-process /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/./sim/autowrap/testbench/myproject_test.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/./sim/autowrap/testbench/myproject_test.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     clang_tidy done; 1.57 sec.
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info 
+INFO-FLOW: TB processing: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/firmware/myproject_axi.cpp /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/./sim/autowrap/testbench/myproject_axi.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process -desc tb-process /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/./sim/autowrap/testbench/myproject_axi.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/./sim/autowrap/testbench/myproject_axi.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     clang_tidy done; 1.42 sec.
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info 
+INFO-FLOW: TB processing: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/firmware/myproject.cpp /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/./sim/autowrap/testbench/myproject.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process -desc tb-process /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/./sim/autowrap/testbench/myproject.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/./sim/autowrap/testbench/myproject.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     clang_tidy done; 1 sec.
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/./sim/autowrap/testbench/tb.status.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 1.74 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source dataflow_monitor_API.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+Command     ap_source done; error code: 1; 1.48 sec.
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+Command   cosim_design done; error code: 2; 37.65 sec.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 26.55 seconds. CPU system time: 3.55 seconds. Elapsed time: 37.65 seconds; current allocated memory: -926.734 MB.
+Command ap_source done; error code: 1; 38.58 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1 opened at Fri Jun 24 11:34:12 CEST 2022
+Execute     ap_set_clock -name default -period 7 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 7ns.
+Execute     set_part xczu3eg-sbva484-1-e 
+Execute       create_platform xczu3eg-sbva484-1-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2021.2/lib/lnx64.o/librdi_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2020.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
+Command       create_platform done; 0.77 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.85 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-1464@%s config_compile -complex-mul-dsp=0 
+INFO: [HLS 200-1464] Running solution command: config_compile -complex-mul-dsp=0
+Execute     config_compile -complex-mul-dsp=0 
+Execute     send_msg_by_id INFO @200-1464@%s config_compile -name_max_length=60 
+INFO: [HLS 200-1464] Running solution command: config_compile -name_max_length=60
+Execute     config_compile -name_max_length=60 
+INFO: [XFORM 203-1161] The maximum of name length is set into 60.
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=sysgen 
+INFO: [HLS 200-1464] Running solution command: config_export -format=sysgen
+Execute     config_export -format=sysgen 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 0.87 sec.
+Execute   set_part xczu3eg-sbva484-1-e 
+INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
+Execute     create_platform xczu3eg-sbva484-1-e -board  
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+INFO: [XFORM 203-1161] The maximum of name length is set into 60.
+Execute   create_clock -period 7 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 7 -name default 
+Execute   config_compile -name_max_length 60 
+INFO: [HLS 200-1510] Running: config_compile -name_max_length 60 
+INFO: [XFORM 203-1161] The maximum of name length is set into 60.
+Execute   config_export -format sysgen -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format sysgen -rtl verilog 
+Execute   source ./myproject_prj/solution1/directives.tcl 
+Execute     set_directive_top -name myproject_axi myproject_axi 
+INFO: [HLS 200-1510] Running: set_directive_top -name myproject_axi myproject_axi 
+Execute   export_design -rtl verilog -format sysgen 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format sysgen 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -description 
+Execute     get_config_export -display_name 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -ipname 
+Execute     get_config_export -library 
+Execute     get_config_export -output 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -vendor 
+Execute     get_config_export -version 
+Execute     get_config_export -xo 
+Execute     config_export -format=sysgen -rtl=verilog 
+INFO-FLOW: DBG:PUTS: export_design_wrap: -format sysgen -rtl verilog
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_export -ipname 
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+Execute     get_config_rtl -module_auto_prefix 
+Execute     get_solution -flow_target 
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+Execute     get_config_export -ip_xdc_file 
+Execute     get_config_export -ip_xdc_ooc_file 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/common.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op.gen 
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=7.000 (was NA)
+INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=myproject_axi xml_exists=1
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     get_config_export -deadlock_detection 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     get_config_rtl -module_prefix 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to myproject_axi
+Execute     get_config_export -deadlock_detection 
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=8
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=21 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='myproject_axi_mux_42_32_1_1
+myproject_axi_mux_42_32_1_1_x
+myproject_axi_fpext_32ns_64_2_no_dsp_1
+myproject_axi_regslice_both
+myproject_axi_regslice_both
+myproject_axi_regslice_both
+myproject_axi_regslice_both
+myproject_axi_regslice_both
+myproject_axi_regslice_both
+myproject_axi_regslice_both
+myproject_axi_regslice_both
+decision_function_7
+decision_function_6
+decision_function_5
+decision_function_4
+decision_function_3
+decision_function_2
+decision_function_1
+decision_function
+myproject
+myproject_axi
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_solution -flow_target 
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/top-io-be.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.compgen.dataonly.tcl 
+Execute     get_config_export -format 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_7.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_6.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_5.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_4.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_3.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_2.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function_1.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/decision_function.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute     get_solution -flow_target 
+Execute     get_config_rtl -kernel_profile 
+Execute     get_config_rtl -kernel_profile 
+Execute     get_config_rtl -stall_sig_gen 
+Execute     get_config_rtl -profile 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.constraint.tcl 
+Execute     sc_get_clocks myproject_axi 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -ip_xdc_file 
+Execute     get_config_export -ip_xdc_ooc_file 
+Execute     get_config_debug -directory 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/impl/misc/myproject_axi_fpext_32ns_64_2_no_dsp_1_ip.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/impl/misc/myproject_axi_fpext_32ns_64_4_no_dsp_1_ip.tcl 
+Execute     get_config_export -deadlock_detection 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     get_config_rtl -module_prefix 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to myproject_axi
+Execute     get_config_export -deadlock_detection 
+Execute     get_config_export -format 
+INFO-FLOW: DBG:PUTS:       generate_ip_script #gSsdmPorts=0 g_lang=vlog is_sdaccel=false is_sdsoc=true xo_file=
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_debug -directory 
+INFO-FLOW: DBG:PUTS:       generate_top_info
+INFO-FLOW: DBG:PUTS:       prepArgInfo -> loadAnalyze_DB top_module=myproject_axi
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.rtl_wrap.cfg.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -ip_xdc_ooc_file 
+Execute     get_config_export -ip_xdc_file 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       generate_ipi_example_script
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.constraint.tcl 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/myproject_axi.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       copy-tb-files /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/impl/.verilog/sim_tbs
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/common.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op.gen 
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:     IP package: exec /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/impl/ip/pack.sh
+INFO-FLOW: DBG:PUTS:     IP package: success /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/impl/ip/pack.sh
+Execute     get_config_export -output 
+Execute     send_msg_by_id INFO @200-802@%s myproject_prj/solution1/impl/export.zip 
+INFO: [HLS 200-802] Generated output file myproject_prj/solution1/impl/export.zip
+Command   export_design done; 23.02 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 13.03 seconds. CPU system time: 2.48 seconds. Elapsed time: 23.02 seconds; current allocated memory: -930.383 MB.
+Command ap_source done; 23.98 sec.
+Execute cleanup_all 

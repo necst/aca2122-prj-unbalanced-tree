@@ -7,7 +7,7 @@
 #include "hls_stream.h"
 
 static const unsigned N_IN = 10;
-static const unsigned N_OUT = 10;
+static const unsigned N_OUT = 1;
 typedef float T_in;
 typedef float T_out;
 

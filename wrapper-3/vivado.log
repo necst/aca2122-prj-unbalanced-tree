@@ -2,277 +2,174 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Thu Jun 23 14:23:36 2022
-# Process ID: 1578844
+# Start of session at: Fri Jun 24 11:30:57 2022
+# Process ID: 2961194
 # Current directory: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3
-# Command line: vivado
+# Command line: vivado project_1/project_1.xpr
 # Log file: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/vivado.log
 # Journal file: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/vivado.jou
 #-----------------------------------------------------------
 start_gui
-create_project project_1 /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1 -part xczu3eg-sbva484-1-e
+open_project project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_myproject_axi_0_0
+
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 7097.863 ; gain = 45.293 ; free physical = 25237 ; free virtual = 41435
 WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
-create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 7088.547 ; gain = 23.012 ; free physical = 18834 ; free virtual = 39623
-set_property board_part em.avnet.com:ultra96:part0:1.2 [current_project]
-create_bd_design "design_1"
-Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
 update_compile_order -fileset sources_1
-update_ip_catalog -rebuild
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
-set_property  ip_repo_paths  /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1 [current_project]
-update_ip_catalog
+open_bd_design {/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.3 - zynq_ultra_ps_e_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps8_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_100M
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:hls:myproject_axi:1.0 - myproject_axi_0
+Successfully read diagram <design_1> from BD file </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:hls:myproject_axi:1.0 [get_ips  design_1_myproject_axi_0_0] -log ip_upgrade.log
+Upgrading '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_myproject_axi_0_0 (Myproject_axi 1.0) from revision 2112562859 to revision 2112563547
+Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_cd160b2f.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_myproject_axi_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
+Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_cd160b2f.ui> 
+VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_cd160b2f.ui> 
+WARNING: [IP_Flow 19-519] IP 'design_1_myproject_axi_0_0' detected a language mismatch between 'VHDL Simulation Wrapper' and 'Verilog Simulation' output products. Please check with the IP provider to see if this is expected.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hier_0/myproject_axi_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_pc .
+Exporting to file /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 7384.000 ; gain = 0.000 ; free physical = 24961 ; free virtual = 41151
+catch { config_ip_cache -export [get_ips -all design_1_myproject_axi_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_myproject_axi_0_0, cache-ID = da23986085e6908e; cache size = 20.294 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_ds_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_0, cache-ID = f246bd3e0ed0db22; cache size = 20.294 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 96ee5dac97f2143c; cache size = 20.294 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_ds_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_1, cache-ID = f246bd3e0ed0db22; cache size = 20.294 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 96ee5dac97f2143c; cache size = 20.294 MB.
+export_ip_user_files -of_objects [get_files /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.ip_user_files -ipstatic_source_dir /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.cache/compile_simlib/modelsim} {questa=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.cache/compile_simlib/questa} {ies=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.cache/compile_simlib/ies} {xcelium=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.cache/compile_simlib/xcelium} {vcs=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.cache/compile_simlib/vcs} {riviera=/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Jun 24 11:32:12 2022] Launched synth_1...
+Run output will be captured here: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/runme.log
+[Fri Jun 24 11:32:12 2022] Launched impl_1...
+Run output will be captured here: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1'.
 WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
-update_ip_catalog -rebuild
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1'.
-WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
-update_ip_catalog -rebuild
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1'.
-WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:hls:myproject_axi:1.0 myproject_axi_0
-endgroup
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.3 zynq_ultra_ps_e_0
-endgroup
-apply_bd_automation -rule xilinx.com:bd_rule:zynq_ultra_ps_e -config {apply_board_preset "1" }  [get_bd_cells zynq_ultra_ps_e_0]
-INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
-apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/myproject_axi_0/in_r" Bridge_IP "New AXI-Stream FIFO (Medium/Low frequency transfer)" Conn_out_r "1" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM0_FPD]
-INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
-Slave segment '/axi_fifo_mm_s/S_AXI/Mem0' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xA000_0000 [ 4K ]>.
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Master {/zynq_ultra_ps_e_0/M_AXI_HPM1_FPD} Slave {/axi_fifo_mm_s/S_AXI} ddr_seg {Auto} intc_ip {/ps8_0_axi_periph} master_apm {0}}  [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM1_FPD]
-startgroup
-delete_bd_objs [get_bd_intf_nets axis_dwidth_converter_M_AXIS] [get_bd_intf_nets zynq_ultra_ps_e_0_M_AXI_HPM1_FPD] [get_bd_intf_nets axi_fifo_mm_s_AXI_STR_TXD] [get_bd_intf_nets myproject_axi_0_out_r] [get_bd_intf_nets ps8_0_axi_periph_M00_AXI] [get_bd_intf_nets zynq_ultra_ps_e_0_M_AXI_HPM0_FPD] [get_bd_intf_nets axis_subset_converter_M_AXIS]
-delete_bd_objs [get_bd_nets zynq_ultra_ps_e_0_pl_resetn0] [get_bd_nets rst_ps8_0_100M_peripheral_aresetn] [get_bd_nets zynq_ultra_ps_e_0_pl_clk0]
-delete_bd_objs [get_bd_cells zynq_ultra_ps_e_0] [get_bd_cells axi_fifo_mm_s] [get_bd_cells axis_dwidth_converter] [get_bd_cells myproject_axi_0] [get_bd_cells axis_subset_converter] [get_bd_cells rst_ps8_0_100M]
-delete_bd_objs [get_bd_cells ps8_0_axi_periph]
-endgroup
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:hls:myproject_axi:1.0 myproject_axi_0
-endgroup
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.3 zynq_ultra_ps_e_0
-endgroup
-apply_bd_automation -rule xilinx.com:bd_rule:zynq_ultra_ps_e -config {apply_board_preset "1" }  [get_bd_cells zynq_ultra_ps_e_0]
-INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
-endgroup
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_FPD} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
-INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
-Slave segment '/axi_dma_0/S_AXI_LITE/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xA000_0000 [ 64K ]>.
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Master {/zynq_ultra_ps_e_0/M_AXI_HPM1_FPD} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {/ps8_0_axi_periph} master_apm {0}}  [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM1_FPD]
-connect_bd_intf_net [get_bd_intf_pins myproject_axi_0/in_r] [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S]
-startgroup
-set_property -dict [list CONFIG.c_include_sg {0} CONFIG.c_sg_length_width {26} CONFIG.c_sg_include_stscntrl_strm {0} CONFIG.c_mm2s_burst_size {256} CONFIG.c_s2mm_burst_size {256}] [get_bd_cells axi_dma_0]
-endgroup
-connect_bd_intf_net [get_bd_intf_pins myproject_axi_0/out_r] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
-apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins myproject_axi_0/ap_clk]
-validate_bd_design
-INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
-ERROR: [xilinx.com:ip:axi_dma:7.1-8] /axi_dma_0
-                   ################################################################################# 
-                   Propagated TDATA WIDTH on S_AXIS_S2MM is not 8, 16, 32, 64, 128, 256, 512 or 1024
-                   #################################################################################
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /axi_dma_0/S_AXIS_S2MM(4) and /myproject_axi_0/out_r(40)
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:hls:myproject_axi:1.0 [get_ips  design_1_myproject_axi_0_0] -log ip_upgrade.log
+Upgrading '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_myproject_axi_0_0 (Myproject_axi 1.0) from revision 2112563547 to revision 2112563554
+Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_cd160b2f.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_myproject_axi_0_0] -no_script -sync -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 4
 WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
 WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
 WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
 WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /myproject_axi_0/in_r(40) and /axi_dma_0/M_AXIS_MM2S(4)
-ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dwidth_converter:2.1 axi_dwidth_converter_0
-endgroup
-delete_bd_objs [get_bd_intf_nets myproject_axi_0_out_r]
-apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/axi_dwidth_converter_0/M_AXI" Bridge_IP "New AXI-Stream FIFO (Medium/Low frequency transfer)" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins myproject_axi_0/out_r]
-No interface associated with "/axi_dwidth_converter_0/M_AXI" found
-ERROR: [BD 41-2168] Errors found in procedure apply_rule:
+Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_cd160b2f.ui> 
+VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : </home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_cd160b2f.ui> 
+WARNING: [IP_Flow 19-519] IP 'design_1_myproject_axi_0_0' detected a language mismatch between 'VHDL Simulation Wrapper' and 'Verilog Simulation' output products. Please check with the IP provider to see if this is expected.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hier_0/myproject_axi_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_pc .
+Exporting to file /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_0, cache-ID = f246bd3e0ed0db22; cache size = 10.782 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_1, cache-ID = f246bd3e0ed0db22; cache size = 10.782 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 96ee5dac97f2143c; cache size = 10.782 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 96ee5dac97f2143c; cache size = 10.782 MB.
+[Fri Jun 24 11:35:06 2022] Launched design_1_myproject_axi_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_myproject_axi_0_0_synth_1: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/design_1_myproject_axi_0_0_synth_1/runme.log
+synth_1: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/runme.log
+[Fri Jun 24 11:35:06 2022] Launched impl_1...
+Run output will be captured here: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 7384.000 ; gain = 0.000 ; free physical = 25009 ; free virtual = 41095
+open_run impl_1
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+Netlist sorting complete. Time (s): cpu = 00:00:00,15 ; elapsed = 00:00:00,14 . Memory (MB): peak = 7952.699 ; gain = 0.000 ; free physical = 24355 ; free virtual = 40526
+INFO: [Netlist 29-17] Analyzing 548 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 8114.289 ; gain = 18.844 ; free physical = 23982 ; free virtual = 40154
+Restored from archive | CPU: 1,170000 secs | Memory: 17,162781 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 8114.289 ; gain = 18.844 ; free physical = 23982 ; free virtual = 40154
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8114.289 ; gain = 0.000 ; free physical = 23993 ; free virtual = 40166
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 15 instances were transformed.
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 15 instances
 
-
-INFO: [BD 5-145] Automation rule xilinx.com:bd_rule:axi4 was not applied to object S_AXI
-ERROR: [Common 17-39] 'apply_bd_automation' failed due to earlier errors.
-ERROR: [BD 41-1273] Error running apply_rule TCL procedure: No interface associated with "/axi_dwidth_converter_0/M_AXI" found
-    connect_fifo_mm_intf Line 27
-INFO: [BD 5-145] Automation rule xilinx.com:bd_rule:axi4_s2mm was not applied to object out_r
-INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/axi_dwidth_converter_0/M_AXI" Bridge_IP "New AXI-Stream FIFO (Medium/Low frequency transfer)" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins myproject_axi_0/out_r]'
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Master {/axi_dwidth_converter_0/M_AXI} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {/ps8_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_dwidth_converter_0/M_AXI]
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:axis_dwidth_converter:1.1 axis_dwidth_converter_0
-endgroup
-delete_bd_objs [get_bd_intf_nets axi_dwidth_converter_0_M_AXI] [get_bd_cells axi_dwidth_converter_0]
-connect_bd_intf_net [get_bd_intf_pins myproject_axi_0/out_r] [get_bd_intf_pins axis_dwidth_converter_0/S_AXIS]
-delete_bd_objs [get_bd_intf_nets axi_dma_0_M_AXIS_MM2S]
-connect_bd_intf_net [get_bd_intf_pins axis_dwidth_converter_0/M_AXIS] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
-apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axis_dwidth_converter_0/aclk]
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:axis_dwidth_converter:1.1 axis_dwidth_converter_1
-endgroup
-connect_bd_intf_net [get_bd_intf_pins myproject_axi_0/in_r] [get_bd_intf_pins axis_dwidth_converter_1/M_AXIS]
-connect_bd_intf_net [get_bd_intf_pins axis_dwidth_converter_1/S_AXIS] [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S]
-apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axis_dwidth_converter_1/aclk]
-validate_bd_design
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /myproject_axi_0/in_r(40) and /axis_dwidth_converter_1/M_AXIS(2)
-startgroup
-set_property -dict [list CONFIG.S_TDATA_NUM_BYTES.VALUE_SRC PROPAGATED] [get_bd_cells axis_dwidth_converter_1]
-set_property -dict [list CONFIG.HAS_MI_TKEEP {1}] [get_bd_cells axis_dwidth_converter_1]
-endgroup
-startgroup
-set_property -dict [list CONFIG.S_TDATA_NUM_BYTES.VALUE_SRC PROPAGATED] [get_bd_cells axis_dwidth_converter_0]
-set_property -dict [list CONFIG.HAS_MI_TKEEP {1}] [get_bd_cells axis_dwidth_converter_0]
-endgroup
-validate_bd_design
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /myproject_axi_0/in_r(40) and /axis_dwidth_converter_1/M_AXIS(2)
-startgroup
-set_property -dict [list CONFIG.S_TDATA_NUM_BYTES.VALUE_SRC PROPAGATED] [get_bd_cells axis_dwidth_converter_0]
-endgroup
-startgroup
-set_property -dict [list CONFIG.S_TDATA_NUM_BYTES.VALUE_SRC PROPAGATED] [get_bd_cells axis_dwidth_converter_1]
-endgroup
-startgroup
-set_property -dict [list CONFIG.S_TDATA_NUM_BYTES.VALUE_SRC USER] [get_bd_cells axis_dwidth_converter_0]
-set_property -dict [list CONFIG.S_TDATA_NUM_BYTES {1}] [get_bd_cells axis_dwidth_converter_0]
-endgroup
-startgroup
-set_property -dict [list CONFIG.S_TDATA_NUM_BYTES.VALUE_SRC PROPAGATED] [get_bd_cells axis_dwidth_converter_1]
-endgroup
-startgroup
-set_property -dict [list CONFIG.S_TDATA_NUM_BYTES.VALUE_SRC USER] [get_bd_cells axis_dwidth_converter_1]
-set_property -dict [list CONFIG.S_TDATA_NUM_BYTES {1}] [get_bd_cells axis_dwidth_converter_1]
-endgroup
-startgroup
-endgroup
-validate_bd_design
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /axis_dwidth_converter_0/S_AXIS(1) and /myproject_axi_0/out_r(40)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /axis_dwidth_converter_1/S_AXIS(1) and /axi_dma_0/M_AXIS_MM2S(4)
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /myproject_axi_0/in_r(40) and /axis_dwidth_converter_1/M_AXIS(2)
-startgroup
-set_property -dict [list CONFIG.S_TDATA_NUM_BYTES.VALUE_SRC PROPAGATED] [get_bd_cells axis_dwidth_converter_0]
-endgroup
-startgroup
-set_property -dict [list CONFIG.S_TDATA_NUM_BYTES.VALUE_SRC PROPAGATED] [get_bd_cells axis_dwidth_converter_1]
-endgroup
-validate_bd_design
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /myproject_axi_0/in_r(40) and /axis_dwidth_converter_1/M_AXIS(2)
-startgroup
-set_property -dict [list CONFIG.M_TDATA_NUM_BYTES {40} CONFIG.HAS_MI_TKEEP {1}] [get_bd_cells axis_dwidth_converter_0]
-endgroup
-validate_bd_design
-ERROR: [xilinx.com:ip:axi_dma:7.1-8] /axi_dma_0
-                   ################################################################################# 
-                   Propagated TDATA WIDTH on S_AXIS_S2MM is not 8, 16, 32, 64, 128, 256, 512 or 1024
-                   #################################################################################
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /axi_dma_0/S_AXIS_S2MM(2) and /axis_dwidth_converter_0/M_AXIS(40)
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /myproject_axi_0/in_r(40) and /axis_dwidth_converter_1/M_AXIS(2)
-ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
-startgroup
-set_property -dict [list CONFIG.M_TDATA_NUM_BYTES {512}] [get_bd_cells axis_dwidth_converter_0]
-endgroup
-startgroup
-endgroup
-startgroup
-set_property -dict [list CONFIG.M_TDATA_NUM_BYTES {512} CONFIG.HAS_MI_TKEEP {1}] [get_bd_cells axis_dwidth_converter_1]
-endgroup
-validate_bd_design
-ERROR: [xilinx.com:ip:axi_dma:7.1-8] /axi_dma_0
-                   ################################################################################# 
-                   Propagated TDATA WIDTH on S_AXIS_S2MM is not 8, 16, 32, 64, 128, 256, 512 or 1024
-                   #################################################################################
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /axi_dma_0/S_AXIS_S2MM(2) and /axis_dwidth_converter_0/M_AXIS(512)
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /myproject_axi_0/in_r(40) and /axis_dwidth_converter_1/M_AXIS(512)
-ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
-startgroup
-set_property -dict [list CONFIG.c_m_axi_s2mm_data_width.VALUE_SRC PROPAGATED CONFIG.c_s_axis_s2mm_tdata_width.VALUE_SRC PROPAGATED] [get_bd_cells axi_dma_0]
-endgroup
-startgroup
-set_property -dict [list CONFIG.S_TDATA_NUM_BYTES.VALUE_SRC PROPAGATED] [get_bd_cells axis_dwidth_converter_0]
-endgroup
-startgroup
-set_property -dict [list CONFIG.S_TDATA_NUM_BYTES.VALUE_SRC PROPAGATED] [get_bd_cells axis_dwidth_converter_1]
-endgroup
-validate_bd_design
-ERROR: [xilinx.com:ip:axi_dma:7.1-8] /axi_dma_0
-                   ################################################################################# 
-                   Propagated TDATA WIDTH on S_AXIS_S2MM is not 8, 16, 32, 64, 128, 256, 512 or 1024
-                   #################################################################################
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /axi_dma_0/S_AXIS_S2MM(2) and /axis_dwidth_converter_0/M_AXIS(512)
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /myproject_axi_0/in_r(40) and /axis_dwidth_converter_1/M_AXIS(512)
-ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
-delete_bd_objs [get_bd_intf_nets myproject_axi_0_out_r] [get_bd_intf_nets axis_dwidth_converter_0_M_AXIS] [get_bd_intf_nets axi_dma_0_M_AXIS_MM2S] [get_bd_intf_nets axis_dwidth_converter_1_M_AXIS] [get_bd_cells axis_dwidth_converter_0] [get_bd_cells axis_dwidth_converter_1]
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dwidth_converter:2.1 axi_dwidth_converter_0
-endgroup
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Master {/axi_dwidth_converter_0/M_AXI} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {/ps8_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_dwidth_converter_0/M_AXI]
-startgroup
-set_property -dict [list CONFIG.PROTOCOL.VALUE_SRC PROPAGATED] [get_bd_cells axi_dwidth_converter_0]
-endgroup
-delete_bd_objs [get_bd_intf_nets axi_dwidth_converter_0_M_AXI]
-apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/axi_dwidth_converter_0/M_AXI" Bridge_IP "New AXI-Stream FIFO (Medium/Low frequency transfer)" Conn_in_r "1" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins myproject_axi_0/out_r]
-No interface associated with "/axi_dwidth_converter_0/M_AXI" found
-ERROR: [BD 41-2168] Errors found in procedure apply_rule:
-
-
-INFO: [BD 5-145] Automation rule xilinx.com:bd_rule:axi4 was not applied to object S_AXI
-ERROR: [Common 17-39] 'apply_bd_automation' failed due to earlier errors.
-ERROR: [BD 41-1273] Error running apply_rule TCL procedure: No interface associated with "/axi_dwidth_converter_0/M_AXI" found
-    connect_fifo_mm_intf Line 27
-INFO: [BD 5-145] Automation rule xilinx.com:bd_rule:axi4_s2mm was not applied to object out_r
-INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/axi_dwidth_converter_0/M_AXI" Bridge_IP "New AXI-Stream FIFO (Medium/Low frequency transfer)" Conn_in_r "1" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins myproject_axi_0/out_r]'
--65
-undo
-INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_intf_nets axi_dwidth_converter_0_M_AXI]'
-delete_bd_objs [get_bd_intf_nets axi_dwidth_converter_0_M_AXI]
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Master {/axi_dwidth_converter_0/M_AXI} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {/ps8_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_dwidth_converter_0/M_AXI]
-delete_bd_objs [get_bd_intf_nets axi_dwidth_converter_0_M_AXI] [get_bd_cells axi_dwidth_converter_0]
-connect_bd_intf_net [get_bd_intf_pins myproject_axi_0/out_r] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
-connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins myproject_axi_0/in_r]
-validate_bd_design
-ERROR: [xilinx.com:ip:axi_dma:7.1-8] /axi_dma_0
-                   ################################################################################# 
-                   Propagated TDATA WIDTH on S_AXIS_S2MM is not 8, 16, 32, 64, 128, 256, 512 or 1024
-                   #################################################################################
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /axi_dma_0/S_AXIS_S2MM(2) and /myproject_axi_0/out_r(40)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /myproject_axi_0/in_r(40) and /axi_dma_0/M_AXIS_MM2S(4)
-ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
-exit
-INFO: [Common 17-206] Exiting Vivado at Thu Jun 23 15:14:32 2022...
+open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 8391.770 ; gain = 1007.770 ; free physical = 23828 ; free virtual = 40001

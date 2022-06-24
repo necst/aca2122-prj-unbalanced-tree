@@ -131,3 +131,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 15 instances
 
 open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 8510.367 ; gain = 987.434 ; free physical = 24659 ; free virtual = 40274
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/impl/ip/component.xml. It will be created.
+open_bd_design {/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1'.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.

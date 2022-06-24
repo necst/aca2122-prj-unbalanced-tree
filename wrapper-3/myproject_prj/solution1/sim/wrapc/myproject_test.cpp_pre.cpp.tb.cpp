@@ -83878,23 +83878,22 @@ public:
 # 8 "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/firmware/myproject_axi.h" 2
 
 static const unsigned N_IN = 10;
-static const unsigned N_OUT = 10;
+static const unsigned N_OUT = 1;
 typedef float T_in;
 typedef float T_out;
-
-
-
-
-
+# 27 "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/firmware/myproject_axi.h"
 typedef hls::axis<T_in, 0, 0, 0> input_axis_t;
 typedef hls::axis<T_out, 0, 0, 0> output_axis_t;
 
+
+
+
 typedef hls::stream<input_axis_t> input_axi_t;
 typedef hls::stream<output_axis_t> output_axi_t;
-# 69 "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/firmware/myproject_axi.h"
+# 81 "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/firmware/myproject_axi.h"
 void myproject_axi(
-    input_axi_t in[N_IN],
-    output_axi_t out[N_OUT]
+    input_axi_t &in,
+    output_axi_t &out
         );
 # 29 "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_test.cpp" 2
 # 1 "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/firmware/nnet_utils/nnet_helpers.h" 1
@@ -84370,7 +84369,7 @@ namespace nnet {
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_myproject_axi_sw(hls::stream<hls::axis<float, 0, 0, 0>, 0> *, hls::stream<hls::axis<float, 0, 0, 0>, 0> *);
+void apatb_myproject_axi_sw(hls::stream<hls::axis<float, 0, 0, 0>, 0> &, hls::stream<hls::axis<float, 0, 0, 0>, 0> &);
 # 41 "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_test.cpp"
 int main(int argc, char **argv)
 {
@@ -84426,8 +84425,8 @@ int main(int argc, char **argv)
       }
 
 
-      input_axi_t instream[N_IN];
-      output_axi_t outstream[N_OUT];
+      input_axi_t instream;
+      output_axi_t outstream;
       input_axis_t inputs;
       output_axis_t outputs;
 
@@ -84435,7 +84434,7 @@ int main(int argc, char **argv)
       for(int i = 0; i<N_IN; i++){
      inputs.data = in.at(i);
      inputs.last = (i == N_IN - 1) ? true : false;
-     instream[i].write(inputs);
+     instream.write(inputs);
    }
 
 
@@ -84454,7 +84453,7 @@ myproject_axi(instream,outstream);
 
 
       for(int i = 0; i<N_OUT; i++){
-    outputs = outstream[i].read();
+    outputs = outstream.read();
     std::cout << "data: " << outputs.data << ", last: " << outputs.last << std::endl;
    }
 

@@ -73584,29 +73584,28 @@ public:
 # 8 "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/firmware/myproject_axi.h" 2
 
 static const unsigned N_IN = 10;
-static const unsigned N_OUT = 10;
+static const unsigned N_OUT = 1;
 typedef float T_in;
 typedef float T_out;
-
-
-
-
-
+# 27 "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/firmware/myproject_axi.h"
 typedef hls::axis<T_in, 0, 0, 0> input_axis_t;
 typedef hls::axis<T_out, 0, 0, 0> output_axis_t;
 
+
+
+
 typedef hls::stream<input_axis_t> input_axi_t;
 typedef hls::stream<output_axis_t> output_axi_t;
-# 69 "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/firmware/myproject_axi.h"
+# 81 "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/firmware/myproject_axi.h"
 void myproject_axi(
-    input_axi_t in[N_IN],
-    output_axi_t out[N_OUT]
+    input_axi_t &in,
+    output_axi_t &out
         );
 # 2 "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/firmware/myproject_axi.cpp" 2
 
 void myproject_axi(
-    input_axi_t in[N_IN],
-    output_axi_t out[N_OUT]
+    input_axi_t &in,
+    output_axi_t &out
         ){
 
 #pragma HLS INTERFACE axis port=in
@@ -73617,7 +73616,7 @@ void myproject_axi(
     unsigned short out_size = 0;
 
     score_t tree_scores[BDT::fn_classes(n_classes) * n_trees]{};
-    bool is_last = false;
+
     input_axis_t in_struct;
     output_axis_t out_struct;
     fake_input in_local[N_IN];
@@ -73626,18 +73625,18 @@ void myproject_axi(
     for(unsigned i = 0; i < N_IN; i++){
 #pragma HLS UNROLL
 
-     in_struct = in[i].read();
+     in_struct = in.read();
         in_local[i] = in_struct.data;
-        is_last |= (in_struct.last == 1)? true: false;
+
 
     }
     myproject(in_local, out_local, tree_scores);
 
     for(unsigned i = 0; i < N_OUT; i++){
 #pragma HLS UNROLL
-        out_struct.last = (is_last && (i == N_OUT - 1))? true : false;
+        out_struct.last = (i == N_OUT - 1) ? true : false;
         out_struct.data = out_local[i];
-        out[i].write(out_struct);
+        out.write(out_struct);
 
 
     }
@@ -73647,18 +73646,18 @@ void myproject_axi(
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_myproject_axi_ir(hls::stream<hls::axis<float, 0, 0, 0>, 0> *, hls::stream<hls::axis<float, 0, 0, 0>, 0> *);
+void apatb_myproject_axi_ir(hls::stream<hls::axis<float, 0, 0, 0>, 0> &, hls::stream<hls::axis<float, 0, 0, 0>, 0> &);
 #ifdef __cplusplus
 extern "C"
 #endif
-void myproject_axi_hw_stub(hls::stream<hls::axis<float, 0, 0, 0>, 0> *in, hls::stream<hls::axis<float, 0, 0, 0>, 0> *out){
+void myproject_axi_hw_stub(hls::stream<hls::axis<float, 0, 0, 0>, 0> &in, hls::stream<hls::axis<float, 0, 0, 0>, 0> &out){
 myproject_axi(in, out);
 return ;
 }
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_myproject_axi_sw(hls::stream<hls::axis<float, 0, 0, 0>, 0> *in, hls::stream<hls::axis<float, 0, 0, 0>, 0> *out){
+void apatb_myproject_axi_sw(hls::stream<hls::axis<float, 0, 0, 0>, 0> &in, hls::stream<hls::axis<float, 0, 0, 0>, 0> &out){
 apatb_myproject_axi_ir(in, out);
 return ;
 }
