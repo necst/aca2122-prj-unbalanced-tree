@@ -4,13 +4,13 @@
 # IP: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.xci
 # IP: The module: 'design_1_xbar_0' is the root of the design. Do not add the DONT_TOUCH constraint.
 
-# XDC: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc
+# XDC: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc
 # XDC: The top module name and the constraint reference have the same name: 'design_1_xbar_0'. Do not add the DONT_TOUCH constraint.
-set_property DONT_TOUCH TRUE [get_cells inst -quiet] -quiet
+set_property KEEP_HIERARCHY SOFT [get_cells inst -quiet] -quiet
 
 # IP: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.xci
 # IP: The module: 'design_1_xbar_0' is the root of the design. Do not add the DONT_TOUCH constraint.
 
-# XDC: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc
+# XDC: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc
 # XDC: The top module name and the constraint reference have the same name: 'design_1_xbar_0'. Do not add the DONT_TOUCH constraint.
-#dup# set_property DONT_TOUCH TRUE [get_cells inst -quiet] -quiet
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells inst -quiet] -quiet

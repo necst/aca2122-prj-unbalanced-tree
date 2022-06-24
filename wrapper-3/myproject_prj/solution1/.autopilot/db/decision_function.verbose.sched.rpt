@@ -3,9 +3,9 @@
 ================================================================
 == Vitis HLS Report for 'decision_function'
 ================================================================
-* Date:           Fri Jun 24 22:05:26 2022
+* Date:           Fri Jun 24 22:49:44 2022
 
-* Version:        2020.1 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)
 * Project:        myproject_prj
 * Solution:       solution1 (Vivado IP Flow Target)
 * Product family: zynquplus
@@ -108,7 +108,7 @@ The critical path consists of the following:
 	wire read operation ('p_read11') on port 'p_read1' [5]  (0 ns)
 	'icmp' operation ('comparison') [7]  (1.11 ns)
 	'or' operation ('or_ln148', firmware/BDT.h:148) [13]  (0.331 ns)
-	'select' operation ('select_ln148', firmware/BDT.h:148) [16]  (0 ns)
+	'or' operation ('or_ln148_1', firmware/BDT.h:148) [15]  (0 ns)
 	'select' operation ('select_ln148_1', firmware/BDT.h:148) [17]  (0 ns)
 	'mux' operation ('agg_result', firmware/BDT.h:149) [18]  (0.605 ns)
 

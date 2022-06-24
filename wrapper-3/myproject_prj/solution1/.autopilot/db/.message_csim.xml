@@ -4,6 +4,6 @@
 	<Message severity="INFO" prefix="[SIM 211-4]" key="SIM_4_1577" tag="" content="CSIM will launch GCC as the compiler." resolution=""/>
 	<Message severity="INFO" prefix="[SIM 211-1]" key="SIM_1_1586" tag="" content="CSim done with 0 errors." resolution=""/>
 	<Message severity="INFO" prefix="[SIM 211-3]" key="SIM_3_1588" tag="" content="*************** CSIM finish ***************" resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Command csim_design CPU user time: 5.08 seconds. CPU system time: 0.48 seconds. Elapsed time: 4.56 seconds; current allocated memory: -937.109 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Command csim_design CPU user time: 4.82 seconds. CPU system time: 0.49 seconds. Elapsed time: 4.52 seconds; current allocated memory: -937.109 MB." resolution=""/>
 	<Message severity="INFO" prefix="[HLS 200-1510]" key="HLS_150_1932" tag="" content="Running: csynth_design" resolution=""/>
 </Messages>

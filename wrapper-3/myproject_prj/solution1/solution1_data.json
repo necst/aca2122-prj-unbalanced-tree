@@ -46,7 +46,6 @@
     "FlowTarget": "vivado",
     "ConfigTcl": [
       "config_compile -name_max_length=60",
-      "config_compile -complex-mul-dsp=0",
       "config_export -format=ip_catalog"
     ],
     "DirectiveTcl": [
@@ -81,7 +80,8 @@
   "Files": {
     "CSource": [
       "..\/..\/firmware\/myproject.cpp",
-      "..\/..\/firmware\/myproject_axi.cpp"
+      "..\/..\/firmware\/myproject_axi.cpp",
+      "..\/..\/firmware\/BDT.h"
     ],
     "Vhdl": [
       "impl\/vhdl\/myproject_axi_decision_function.vhd",
@@ -746,8 +746,8 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2022-06-24 22:05:32 CEST",
+    "Time": "2022-06-24 22:50:55 CEST",
     "ToolName": "vitis_hls",
-    "ToolVersion": "2020.1"
+    "ToolVersion": "2021.2"
   }
 }

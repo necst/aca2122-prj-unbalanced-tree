@@ -42,8 +42,8 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xczu3eg:-sbva484:-1-e
-set SourceFiles {sc {} c {../../firmware/myproject.cpp ../../firmware/myproject_axi.cpp}}
-set SourceFlags {sc {} c {{} {}}}
+set SourceFiles {sc {} c {../../firmware/myproject.cpp ../../firmware/myproject_axi.cpp ../../firmware/BDT.h}}
+set SourceFlags {sc {} c {{ } {} { } {} { } {}}}
 set DirectiveFile /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/solution1.directive
 set TBFiles {verilog {../../tb_data ../../myproject_test.cpp} bc {../../tb_data ../../myproject_test.cpp} sc {../../tb_data ../../myproject_test.cpp} vhdl {../../tb_data ../../myproject_test.cpp} c {} cas {../../tb_data ../../myproject_test.cpp}}
 set SpecLanguage C

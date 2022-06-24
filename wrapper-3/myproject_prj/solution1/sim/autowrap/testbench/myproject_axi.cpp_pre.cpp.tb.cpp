@@ -1,5 +1,5 @@
 // ==============================================================
-// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
 // Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
 # 1 "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/firmware/myproject_axi.cpp"

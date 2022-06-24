@@ -3,9 +3,9 @@
 ================================================================
 == Vitis HLS Report for 'decision_function_1'
 ================================================================
-* Date:           Fri Jun 24 22:05:29 2022
+* Date:           Fri Jun 24 22:49:46 2022
 
-* Version:        2020.1 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)
 * Project:        myproject_prj
 * Solution:       solution1 (Vivado IP Flow Target)
 * Product family: zynquplus

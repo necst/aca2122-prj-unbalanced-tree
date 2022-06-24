@@ -275,7 +275,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>9c6891ae</spirit:value>
+            <spirit:value>5f39b885</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -294,7 +294,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>fe08fe97</spirit:value>
+            <spirit:value>10827eac</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -313,7 +313,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>47d3c9c4</spirit:value>
+            <spirit:value>67207e45</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -332,7 +332,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e6384dfa</spirit:value>
+            <spirit:value>38ad213d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -754,8 +754,8 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>hdl/ip/myproject_axi_fpext_32ns_64_2_no_dsp_1_ip.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:name>hdl/ip/myproject_axi_fpext_32ns_64_2_no_dsp_1_ip.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>constraints/myproject_axi_ooc.xdc</spirit:name>
@@ -920,8 +920,8 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/myproject_axi_fpext_32ns_64_2_no_dsp_1_ip.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:name>hdl/ip/myproject_axi_fpext_32ns_64_2_no_dsp_1_ip.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -938,8 +938,8 @@
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>hdl/ip/myproject_axi_fpext_32ns_64_2_no_dsp_1_ip.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:name>hdl/ip/myproject_axi_fpext_32ns_64_2_no_dsp_1_ip.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>constraints/myproject_axi_ooc.xdc</spirit:name>
@@ -1001,7 +1001,7 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/myproject_axi.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_25fee653</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_6ab14a62</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1087,8 +1087,8 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/myproject_axi_fpext_32ns_64_2_no_dsp_1_ip.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:name>hdl/ip/myproject_axi_fpext_32ns_64_2_no_dsp_1_ip.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1171,17 +1171,17 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Myproject_axi</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2112564185</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2022-06-24T20:05:45Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2112564230</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2022-06-24T20:51:07Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
       </xilinx:sdxKernelAttributes>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2020.1</xilinx:xilinxVersion>
+      <xilinx:xilinxVersion>2021.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="15da68db"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="aafd71dc"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="d9481c18"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="d6d22ff6"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="3d113de9"/>
     </xilinx:packagingInfo>

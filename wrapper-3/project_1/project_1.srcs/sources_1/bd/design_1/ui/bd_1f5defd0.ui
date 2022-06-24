@@ -1,22 +1,22 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.759236",
-   "Default View_TopLeft":"0,-340",
+   "Default View_ScaleFactor":"0.795313",
+   "Default View_TopLeft":"-176,-714",
    "ExpandedHierarchyInLayout":"",
-   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:9.0 TLS
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
 #  -string -flagsOSRD
-preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 2 -x 360 -y -50 -defaultsOSRD
-preplace inst ps8_0_axi_periph -pg 1 -lvl 4 -x 1220 -y -80 -defaultsOSRD
-preplace inst rst_ps8_0_100M -pg 1 -lvl 3 -x 880 -y -40 -defaultsOSRD
-preplace inst hier_0 -pg 1 -lvl 5 -x 1470 -y -60 -defaultsOSRD
-preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 1 4 50 -140 680 -140 1060 80 1370
-preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 2 1 700 -60n
-preplace netloc rst_ps8_0_100M_peripheral_aresetn 1 3 2 1070 70 1380
-preplace netloc ps8_0_axi_periph_M00_AXI 1 4 1 N -80
-preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM1_FPD 1 2 2 690J -150 N
-preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 2 2 670J -160 1060
-levelinfo -pg 1 0 30 360 880 1220 1470 1570
-pagesize -pg 1 -db -bbox -sgen 0 -590 1570 200
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 330 -y -110 -defaultsOSRD
+preplace inst ps8_0_axi_periph -pg 1 -lvl 3 -x 1180 -y -80 -defaultsOSRD
+preplace inst rst_ps8_0_100M -pg 1 -lvl 2 -x 840 -y -30 -defaultsOSRD
+preplace inst hier_0 -pg 1 -lvl 4 -x 1430 -y -60 -defaultsOSRD
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 4 20 -200 650 -130 1020 80 1330
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 1 1 640 -100n
+preplace netloc rst_ps8_0_100M_peripheral_aresetn 1 2 2 1030 70 1340
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 2 640J -150 1020
+preplace netloc ps8_0_axi_periph_M00_AXI 1 3 1 N -80
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM1_FPD 1 1 2 660J -140 1030
+levelinfo -pg 1 0 330 840 1180 1430 1530
+pagesize -pg 1 -db -bbox -sgen 0 -630 1530 180
 "
 }
 {

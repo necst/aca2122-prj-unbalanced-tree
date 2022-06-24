@@ -1,15 +1,4 @@
 <AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
-    <config>
-        <config_compile name_max_length="60" complex-mul-dsp="0"/>
-        <config_export format="ip_catalog"/>
-    </config>
-    <Simulation argv="">
-        <SimFlow name="cosim" setup="false" dumpTrace="all" optimizeCompile="false" ldflags="" mflags="" compiledLibrary="" toolName="auto">
-            <Rtl name="systemc" active="false"/>
-            <Rtl name="verilog" active="true"/>
-            <Rtl name="vhdl" active="false"/>
-        </SimFlow>
-    </Simulation>
     <name>
         <value string="solution1"/>
     </name>
@@ -17,6 +6,10 @@
         <value string="myproject_prj"/>
     </project>
     <flowTarget value="vivado"/>
+    <config>
+        <config_compile name_max_length="60"/>
+        <config_export format="ip_catalog"/>
+    </config>
     <targetInfo>
         <TargetInfo value="xczu3eg:-sbva484:-1-e"/>
     </targetInfo>
@@ -24,8 +17,15 @@
         <library value="xilinx/zynquplus/zynquplus" name="DefaultPlatform"/>
     </libraryList>
     <clockList>
-        <clock default="false" name="default" period="7"/>
+        <clock name="default" period="7" default="false"/>
     </clockList>
+    <Simulation argv="">
+        <SimFlow name="cosim" setup="false" dumpTrace="all" optimizeCompile="false" ldflags="" mflags="" compiledLibrary="" toolName="auto">
+            <Rtl name="systemc" active="false"/>
+            <Rtl name="verilog" active="true"/>
+            <Rtl name="vhdl" active="false"/>
+        </SimFlow>
+    </Simulation>
     <ExportDesign askAgain="true" evaluate="false" rtl="verilog" formatName="ip_catalog">
         <Format formatName="ip_catalog" description="" vendor="" library="" ipname="myproject_axi" version="" display_name="" taxonomy=""/>
     </ExportDesign>
