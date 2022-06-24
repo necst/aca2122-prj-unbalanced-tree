@@ -33716,8 +33716,8 @@ __attribute__((sdx_kernel("myproject_axi", 0))) void myproject_axi(
 # 6 "firmware/myproject_axi.cpp"
 
 
-#pragma HLS INTERFACE axis port=in
-#pragma HLS INTERFACE axis port=out
+#pragma HLS INTERFACE axis register both port=in
+#pragma HLS INTERFACE axis register both port=out
 #pragma HLS INTERFACE ap_ctrl_none port=return
 
  unsigned short in_size = 0;

@@ -850,7 +850,7 @@
                 <port>in_r_TVALID</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both" argName="in"/>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="in"/>
             </constraints>
         </Interface>
         <Interface InterfaceName="out_r" type="axi4stream" busTypeName="axis" mode="master" dataWidth="32" portPrefix="out_r_">
@@ -863,7 +863,7 @@
                 <port>out_r_TVALID</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both" argName="out"/>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="out"/>
             </constraints>
         </Interface>
     </Interfaces>
@@ -928,8 +928,8 @@
         <Pragma type="unroll" location="firmware/myproject.cpp:9" status="invalid" parentFunction="myproject" variable="" isDirective="0" options="">
             <Msg msg_id="207-5565" msg_severity="WARNING" msg_body="'#pragma HLS unroll' can only be applied inside loop body"/>
         </Pragma>
-        <Pragma type="interface" location="firmware/myproject_axi.cpp:8" status="valid" parentFunction="myproject_axi" variable="in" isDirective="0" options="axis port=in"/>
-        <Pragma type="interface" location="firmware/myproject_axi.cpp:9" status="valid" parentFunction="myproject_axi" variable="out" isDirective="0" options="axis port=out"/>
+        <Pragma type="interface" location="firmware/myproject_axi.cpp:8" status="valid" parentFunction="myproject_axi" variable="in" isDirective="0" options="axis register both port=in"/>
+        <Pragma type="interface" location="firmware/myproject_axi.cpp:9" status="valid" parentFunction="myproject_axi" variable="out" isDirective="0" options="axis register both port=out"/>
         <Pragma type="interface" location="firmware/myproject_axi.cpp:10" status="valid" parentFunction="myproject_axi" variable="return" isDirective="0" options="ap_ctrl_none port=return"/>
         <Pragma type="pipeline" location="firmware/myproject_axi.cpp:23" status="valid" parentFunction="myproject_axi" variable="" isDirective="0" options=""/>
         <Pragma type="pipeline" location="firmware/myproject_axi.cpp:33" status="valid" parentFunction="myproject_axi" variable="" isDirective="0" options=""/>

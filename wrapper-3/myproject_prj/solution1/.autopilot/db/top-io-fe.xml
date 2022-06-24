@@ -3,12 +3,12 @@
     <args>
       <arg id="0" access_type="r" src_name="in" src_type="stream&lt;hls::axis&lt;float, 0, 0, 0&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="96" src_size_or_depth="1">
         <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="in_r" hw_bitwidth="32" hw_size_or_depth="1">
-          <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both"/>
+          <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both"/>
         </hw>
       </arg>
       <arg id="1" access_type="w" src_name="out" src_type="stream&lt;hls::axis&lt;float, 0, 0, 0&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="96" src_size_or_depth="1">
         <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="out_r" hw_bitwidth="32" hw_size_or_depth="1">
-          <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both"/>
+          <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both"/>
         </hw>
       </arg>
     </args>

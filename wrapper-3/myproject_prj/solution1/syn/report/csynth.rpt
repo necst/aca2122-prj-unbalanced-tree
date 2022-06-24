@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'myproject_axi'
 ================================================================
 + General Information: 
-    * Date:           Fri Jun 24 12:30:32 2022
+    * Date:           Fri Jun 24 13:00:20 2022
     * Version:        2020.1 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)
     * Project:        myproject_prj
     * Solution:       solution1 (Vivado IP Flow Target)
@@ -132,32 +132,32 @@
 +--------+---------+---------------------------------------+-----------------------------------------------------------+
 
 * Valid Pragma Syntax
-+-----------------+--------------------------+----------------------------------------------------------+
-| Type            | Options                  | Location                                                 |
-+-----------------+--------------------------+----------------------------------------------------------+
-| pipeline        | II = 1                   | firmware/BDT.h:85 in decision_function                   |
-| array_partition | variable=feature         | firmware/BDT.h:86 in decision_function, feature          |
-| array_partition | variable=threshold       | firmware/BDT.h:87 in decision_function, threshold        |
-| array_partition | variable=value           | firmware/BDT.h:88 in decision_function, value            |
-| array_partition | variable=children_left   | firmware/BDT.h:89 in decision_function, children_left    |
-| array_partition | variable=children_right  | firmware/BDT.h:90 in decision_function, children_right   |
-| array_partition | variable=parent          | firmware/BDT.h:91 in decision_function, parent           |
-| array_partition | variable=comparison      | firmware/BDT.h:106 in decision_function, comparison      |
-| array_partition | variable=activation      | firmware/BDT.h:107 in decision_function, activation      |
-| array_partition | variable=activation_leaf | firmware/BDT.h:108 in decision_function, activation_leaf |
-| array_partition | variable=value_leaf      | firmware/BDT.h:109 in decision_function, value_leaf      |
-| unroll          |                          | firmware/BDT.h:113 in decision_function                  |
-| unroll          |                          | firmware/BDT.h:126 in decision_function                  |
-| array_partition | variable=x               | firmware/myproject.cpp:5 in myproject, x                 |
-| array_partition | variable=score           | firmware/myproject.cpp:6 in myproject, score             |
-| array_partition | variable=tree_scores     | firmware/myproject.cpp:7 in myproject, tree_scores       |
-| pipeline        |                          | firmware/myproject.cpp:8 in myproject                    |
-| interface       | axis port=in             | firmware/myproject_axi.cpp:8 in myproject_axi, in        |
-| interface       | axis port=out            | firmware/myproject_axi.cpp:9 in myproject_axi, out       |
-| interface       | ap_ctrl_none port=return | firmware/myproject_axi.cpp:10 in myproject_axi, return   |
-| pipeline        |                          | firmware/myproject_axi.cpp:23 in myproject_axi           |
-| pipeline        |                          | firmware/myproject_axi.cpp:33 in myproject_axi           |
-| unroll          |                          | firmware/nnet_utils/nnet_types.h:33 in operator=         |
-+-----------------+--------------------------+----------------------------------------------------------+
++-----------------+-----------------------------+----------------------------------------------------------+
+| Type            | Options                     | Location                                                 |
++-----------------+-----------------------------+----------------------------------------------------------+
+| pipeline        | II = 1                      | firmware/BDT.h:85 in decision_function                   |
+| array_partition | variable=feature            | firmware/BDT.h:86 in decision_function, feature          |
+| array_partition | variable=threshold          | firmware/BDT.h:87 in decision_function, threshold        |
+| array_partition | variable=value              | firmware/BDT.h:88 in decision_function, value            |
+| array_partition | variable=children_left      | firmware/BDT.h:89 in decision_function, children_left    |
+| array_partition | variable=children_right     | firmware/BDT.h:90 in decision_function, children_right   |
+| array_partition | variable=parent             | firmware/BDT.h:91 in decision_function, parent           |
+| array_partition | variable=comparison         | firmware/BDT.h:106 in decision_function, comparison      |
+| array_partition | variable=activation         | firmware/BDT.h:107 in decision_function, activation      |
+| array_partition | variable=activation_leaf    | firmware/BDT.h:108 in decision_function, activation_leaf |
+| array_partition | variable=value_leaf         | firmware/BDT.h:109 in decision_function, value_leaf      |
+| unroll          |                             | firmware/BDT.h:113 in decision_function                  |
+| unroll          |                             | firmware/BDT.h:126 in decision_function                  |
+| array_partition | variable=x                  | firmware/myproject.cpp:5 in myproject, x                 |
+| array_partition | variable=score              | firmware/myproject.cpp:6 in myproject, score             |
+| array_partition | variable=tree_scores        | firmware/myproject.cpp:7 in myproject, tree_scores       |
+| pipeline        |                             | firmware/myproject.cpp:8 in myproject                    |
+| interface       | axis register both port=in  | firmware/myproject_axi.cpp:8 in myproject_axi, in        |
+| interface       | axis register both port=out | firmware/myproject_axi.cpp:9 in myproject_axi, out       |
+| interface       | ap_ctrl_none port=return    | firmware/myproject_axi.cpp:10 in myproject_axi, return   |
+| pipeline        |                             | firmware/myproject_axi.cpp:23 in myproject_axi           |
+| pipeline        |                             | firmware/myproject_axi.cpp:33 in myproject_axi           |
+| unroll          |                             | firmware/nnet_utils/nnet_types.h:33 in operator=         |
++-----------------+-----------------------------+----------------------------------------------------------+
 
 

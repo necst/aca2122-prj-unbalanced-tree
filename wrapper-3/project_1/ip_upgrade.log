@@ -1,6 +1,27 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Fri Jun 24 13:01:44 2022
+| Host         : yavin running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_myproject_axi_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_myproject_axi_0_0 (xilinx.com:hls:myproject_axi:1.0) from (Rev. 2112563611) to (Rev. 2112563640)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
 | Date         : Fri Jun 24 12:32:19 2022
 | Host         : yavin running 64-bit Ubuntu 20.04.4 LTS
 | Command      : upgrade_ip

@@ -1,6 +1,6 @@
 INFO: Applying HLS Y2K22 patch v1.2 for IP revision
 INFO: [HLS 200-10] Running '/opt/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/lnx64.o/vitis_hls'
-INFO: [HLS 200-10] For user 'nghielme' on host 'yavin.cern.ch' (Linux_x86_64 version 5.4.0-110-generic) on Fri Jun 24 12:31:14 CEST 2022
+INFO: [HLS 200-10] For user 'nghielme' on host 'yavin.cern.ch' (Linux_x86_64 version 5.4.0-110-generic) on Fri Jun 24 13:00:28 CEST 2022
 INFO: [HLS 200-10] On os Ubuntu 20.04.4 LTS
 INFO: [HLS 200-10] In directory '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3'
 Sourcing Tcl script '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/export.tcl'
@@ -53,7 +53,7 @@ INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'myproject_axi_fpe
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.1/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Fri Jun 24 12:31:27 2022...
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 24 13:00:43 2022...
 INFO: [HLS 200-802] Generated output file myproject_prj/solution1/impl/export.zip
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 13.02 seconds. CPU system time: 2.22 seconds. Elapsed time: 22.74 seconds; current allocated memory: -930.312 MB.
-INFO: [HLS 200-112] Total CPU user time: 14.35 seconds. Total CPU system time: 2.57 seconds. Total elapsed time: 23.85 seconds; peak allocated memory: 171.809 MB.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 13.45 seconds. CPU system time: 2.18 seconds. Elapsed time: 23.72 seconds; current allocated memory: -929.148 MB.
+INFO: [HLS 200-112] Total CPU user time: 14.95 seconds. Total CPU system time: 2.47 seconds. Total elapsed time: 24.94 seconds; peak allocated memory: 172.973 MB.

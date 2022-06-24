@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1656066631590">
-  <ports id="1" name="p_read1" type="PortType" coreId="1635216754" bitwidth="32">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1656068419314">
+  <ports id="1" name="p_read1" type="PortType" coreId="539768064" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="2" name="p_read2" type="PortType" coreId="1160441696" bitwidth="32">
+  <ports id="2" name="p_read2" type="PortType" coreId="2972745728" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="3" name="p_read3" type="PortType" coreId="1160441696" bitwidth="32">
+  <ports id="3" name="p_read3" type="PortType" coreId="100" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
   <ports id="13" name="ap_return" direction="DirOut">
@@ -48,7 +48,7 @@
         <dataInputObjs>p_read2</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="7" name="p_read11" lineNumber="1550" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." coreId="1160441696" contextFuncName="operator_le_32_16_true_AP_TRN_AP_WRAP_0" bitwidth="32" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="7" name="p_read11" lineNumber="1550" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." coreId="0" contextFuncName="operator_le_32_16_true_AP_TRN_AP_WRAP_0" bitwidth="32" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1550" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>p_read1</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -105,7 +105,7 @@
         <dataOutputObjs>or</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="zext_ln148" lineNumber="148" fileName="firmware/BDT.h" fileDirectory=".." rtlName="zext_ln148_fu_104_p1" coreId="1164232912" contextFuncName="decision_function" bitwidth="2" opcode="zext" m_display="0" m_topoIndex="12" m_clusterGroupNumber="2">
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="zext_ln148" lineNumber="148" fileName="firmware/BDT.h" fileDirectory=".." rtlName="zext_ln148_fu_104_p1" coreId="2975906328" contextFuncName="decision_function" bitwidth="2" opcode="zext" m_display="0" m_topoIndex="12" m_clusterGroupNumber="2">
         <inlineStackInfo fileName="firmware/BDT.h" linenumber="148" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="decision_function"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -136,7 +136,7 @@
         <dataOutputObjs>ret</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="_ln153" lineNumber="153" fileName="firmware/BDT.h" fileDirectory=".." coreId="1164039808" contextFuncName="decision_function" opcode="ret" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="_ln153" lineNumber="153" fileName="firmware/BDT.h" fileDirectory=".." coreId="2974899904" contextFuncName="decision_function" opcode="ret" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/BDT.h" linenumber="153" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="decision_function"/>
         <dataInputObjs>mux</dataInputObjs>
         <dataOutputObjs>ap_return</dataOutputObjs>

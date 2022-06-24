@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1656066632758">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1656068420434">
   <ports id="1" name="in_r_V_data_V" type="PortType" originalName="in" coreId="0" bitwidth="32">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
   <ports id="2" name="in_r_V_keep_V" type="PortType" originalName="in" coreId="0" bitwidth="4">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="3" name="in_r_V_strb_V" type="PortType" originalName="in" coreId="1163142112" bitwidth="4">
+  <ports id="3" name="in_r_V_strb_V" type="PortType" originalName="in" coreId="2975742432" bitwidth="4">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="4" name="in_r_V_last_V" type="PortType" originalName="in" coreId="1164219056" bitwidth="1">
+  <ports id="4" name="in_r_V_last_V" type="PortType" originalName="in" coreId="2976067008" bitwidth="1">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="5" name="out_r_V_data_V" type="PortType" originalName="out" coreId="1162705744" bitwidth="32" direction="DirOut">
+  <ports id="5" name="out_r_V_data_V" type="PortType" originalName="out" coreId="176" bitwidth="32" direction="DirOut">
     <dataInputObjs>write</dataInputObjs>
   </ports>
-  <ports id="6" name="out_r_V_keep_V" type="PortType" originalName="out" coreId="1165208192" bitwidth="4" direction="DirOut">
+  <ports id="6" name="out_r_V_keep_V" type="PortType" originalName="out" coreId="2977008640" bitwidth="4" direction="DirOut">
     <dataInputObjs>write</dataInputObjs>
   </ports>
-  <ports id="7" name="out_r_V_strb_V" type="PortType" originalName="out" coreId="1164024608" bitwidth="4" direction="DirOut">
+  <ports id="7" name="out_r_V_strb_V" type="PortType" originalName="out" coreId="2976646944" bitwidth="4" direction="DirOut">
     <dataInputObjs>write</dataInputObjs>
   </ports>
-  <ports id="8" name="out_r_V_last_V" type="PortType" originalName="out" coreId="1162810368" bitwidth="1" direction="DirOut">
+  <ports id="8" name="out_r_V_last_V" type="PortType" originalName="out" coreId="2976656368" bitwidth="1" direction="DirOut">
     <dataInputObjs>write</dataInputObjs>
   </ports>
   <edges id="109" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.11"/>
@@ -148,53 +148,53 @@
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="in_local_V_1_loc" coreId="1162810368" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="in_local_V_1_loc" coreId="2976771184" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="in_local_V_2_loc" coreId="1163535968" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="in_local_V_2_loc" coreId="2974670176" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="in_local_V_3_loc" coreId="1164516272" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="in_local_V_3_loc" coreId="2974670176" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="in_local_V_4_loc" coreId="1163814832" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="in_local_V_4_loc" coreId="304" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="in_local_V_5_loc" coreId="1162810368" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="in_local_V_5_loc" coreId="2974670176" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="in_local_V_6_loc" coreId="1163366480" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="in_local_V_6_loc" coreId="2976607392" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="in_local_V_7_loc" coreId="608" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="in_local_V_7_loc" coreId="2976590240" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="in_local_V_8_loc" coreId="1162810368" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="in_local_V_8_loc" coreId="304" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="in_local_V_9_loc" coreId="1164770848" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="in_local_V_9_loc" coreId="2974670176" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="empty" coreId="1165066928" bitwidth="32" opcode="wait" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1"/>
-    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="_ln0" rtlName="grp_myproject_axi_Pipeline_VITIS_LOOP_22_1_fu_151" coreId="1164050472" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="2.78" m_topoIndex="12" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="empty" coreId="2974969728" bitwidth="32" opcode="wait" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="_ln0" rtlName="grp_myproject_axi_Pipeline_VITIS_LOOP_22_1_fu_151" coreId="2975339896" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="2.78" m_topoIndex="12" m_clusterGroupNumber="-1">
       <dataInputObjs>in_r_V_data_V</dataInputObjs>
       <dataInputObjs>in_r_V_keep_V</dataInputObjs>
       <dataInputObjs>in_r_V_strb_V</dataInputObjs>
@@ -211,48 +211,48 @@
       <dataInputObjs>alloca</dataInputObjs>
       <constName>myproject_axi_Pipeline_VITIS_LOOP_22_1</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="in_local_V_9_loc_load" coreId="1164769744" bitwidth="32" opcode="load" nodeLabel="3.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="in_local_V_9_loc_load" coreId="2976647552" bitwidth="32" opcode="load" nodeLabel="3.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="in_local_V_8_loc_load" coreId="176" bitwidth="32" opcode="load" nodeLabel="3.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="in_local_V_8_loc_load" coreId="0" bitwidth="32" opcode="load" nodeLabel="3.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="in_local_V_7_loc_load" coreId="1162810368" bitwidth="32" opcode="load" nodeLabel="3.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="in_local_V_7_loc_load" coreId="2976891264" bitwidth="32" opcode="load" nodeLabel="3.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="in_local_V_6_loc_load" coreId="1163367680" bitwidth="32" opcode="load" nodeLabel="3.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="in_local_V_6_loc_load" coreId="304" bitwidth="32" opcode="load" nodeLabel="3.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="in_local_V_5_loc_load" coreId="1163367808" bitwidth="32" opcode="load" nodeLabel="3.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="in_local_V_5_loc_load" coreId="2976064992" bitwidth="32" opcode="load" nodeLabel="3.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="in_local_V_4_loc_load" coreId="1165108768" bitwidth="32" opcode="load" nodeLabel="3.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="in_local_V_4_loc_load" coreId="30" bitwidth="32" opcode="load" nodeLabel="3.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="in_local_V_3_loc_load" coreId="1164853616" bitwidth="32" opcode="load" nodeLabel="3.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="in_local_V_3_loc_load" coreId="2976149248" bitwidth="32" opcode="load" nodeLabel="3.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="in_local_V_2_loc_load" coreId="1164854600" bitwidth="32" opcode="load" nodeLabel="3.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="in_local_V_2_loc_load" coreId="2974670176" bitwidth="32" opcode="load" nodeLabel="3.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="in_local_V_1_loc_load" coreId="1162810368" bitwidth="32" opcode="load" nodeLabel="3.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="in_local_V_1_loc_load" coreId="2975998208" bitwidth="32" opcode="load" nodeLabel="3.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="in_local_V_loc_load" coreId="1769239137" bitwidth="32" opcode="load" nodeLabel="3.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="in_local_V_loc_load" coreId="2976772936" bitwidth="32" opcode="load" nodeLabel="3.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="empty_19" coreId="1163816160" bitwidth="32" opcode="wait" nodeLabel="3.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1"/>
-    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="out_local_V" lineNumber="30" originalName="out_local.V" fileName="firmware/myproject_axi.cpp" fileDirectory=".." rtlName="out_local_V_myproject_fu_173" coreId="1163536272" contextFuncName="myproject_axi" bitwidth="32" opcode="call" nodeLabel="3.0" m_display="0" m_delay="4.71" m_topoIndex="24" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="empty_19" coreId="0" bitwidth="32" opcode="wait" nodeLabel="3.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="out_local_V" lineNumber="30" originalName="out_local.V" fileName="firmware/myproject_axi.cpp" fileDirectory=".." rtlName="out_local_V_myproject_fu_173" coreId="0" contextFuncName="myproject_axi" bitwidth="32" opcode="call" nodeLabel="3.0" m_display="0" m_delay="4.71" m_topoIndex="24" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="firmware/myproject_axi.cpp" linenumber="30" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="myproject_axi"/>
       <dataInputObjs>load</dataInputObjs>
       <dataInputObjs>load</dataInputObjs>
@@ -276,7 +276,7 @@
       <dataOutputObjs>select</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="s" lineNumber="30" originalName="s" fileName="firmware/myproject_axi.cpp" fileDirectory=".." rtlName="s_reg_582" coreId="1164516288" contextFuncName="myproject_axi" bitwidth="1" opcode="bitselect" nodeLabel="3.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="s" lineNumber="30" originalName="s" fileName="firmware/myproject_axi.cpp" fileDirectory=".." rtlName="s_reg_582" coreId="2976377056" contextFuncName="myproject_axi" bitwidth="1" opcode="bitselect" nodeLabel="3.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="firmware/myproject_axi.cpp" linenumber="30" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="myproject_axi"/>
       <dataInputObjs>call</dataInputObjs>
       <dataOutputObjs>select</dataOutputObjs>
@@ -299,13 +299,13 @@
       <dataOutputObjs>and</dataOutputObjs>
       <dataOutputObjs>bitselect</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="p_Result_3" lineNumber="1242" originalName="__Result__" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="p_Result_3_fu_250_p4" coreId="1162810368" contextFuncName="countLeadingZeros" bitwidth="32" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="p_Result_3" lineNumber="1242" originalName="__Result__" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="p_Result_3_fu_250_p4" coreId="2974670176" contextFuncName="countLeadingZeros" bitwidth="32" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h" linenumber="1242" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="countLeadingZeros"/>
       <dataInputObjs>select</dataInputObjs>
       <dataOutputObjs>cttz</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="l" lineNumber="1244" originalName="l" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="l_fu_260_p3" coreId="0" contextFuncName="countLeadingZeros" bitwidth="32" opcode="cttz" nodeLabel="5.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="l" lineNumber="1244" originalName="l" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="l_fu_260_p3" coreId="2976630456" contextFuncName="countLeadingZeros" bitwidth="32" opcode="cttz" nodeLabel="5.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h" linenumber="1244" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="countLeadingZeros"/>
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>sub</dataOutputObjs>
@@ -331,7 +331,7 @@
       <dataOutputObjs>icmp</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="tmp" lineNumber="999" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="tmp_fu_280_p4" coreId="1165075040" contextFuncName="to_float" bitwidth="31" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="tmp" lineNumber="999" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="tmp_fu_280_p4" coreId="2977788848" contextFuncName="to_float" bitwidth="31" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" linenumber="999" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="to_float"/>
       <dataInputObjs>add</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
@@ -343,7 +343,7 @@
       <dataOutputObjs>select</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="zext_ln1010" lineNumber="1010" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1010_fu_394_p1" coreId="1165842144" contextFuncName="to_float" bitwidth="64" opcode="zext" nodeLabel="6.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="zext_ln1010" lineNumber="1010" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1010_fu_394_p1" coreId="2977788848" contextFuncName="to_float" bitwidth="64" opcode="zext" nodeLabel="6.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1010" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="to_float"/>
       <dataInputObjs>select</dataInputObjs>
       <dataOutputObjs>shl</dataOutputObjs>
@@ -395,7 +395,7 @@
       <dataOutputObjs>select</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="tmp_3" lineNumber="1002" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="tmp_3_fu_340_p3" coreId="1165788256" contextFuncName="to_float" bitwidth="1" opcode="bitselect" nodeLabel="5.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="2">
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="tmp_3" lineNumber="1002" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="tmp_3_fu_340_p3" coreId="2974440832" contextFuncName="to_float" bitwidth="1" opcode="bitselect" nodeLabel="5.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="2">
       <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1002" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="to_float"/>
       <dataInputObjs>add</dataInputObjs>
       <dataOutputObjs>xor</dataOutputObjs>
@@ -407,7 +407,7 @@
       <dataOutputObjs>and</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="p_Result_4" lineNumber="1002" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="p_Result_4_fu_354_p3" coreId="1165500336" contextFuncName="to_float" bitwidth="1" opcode="bitselect" nodeLabel="5.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="p_Result_4" lineNumber="1002" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="p_Result_4_fu_354_p3" coreId="176" contextFuncName="to_float" bitwidth="1" opcode="bitselect" nodeLabel="5.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1002" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="to_float"/>
       <dataInputObjs>select</dataInputObjs>
       <dataInputObjs>add</dataInputObjs>
@@ -433,7 +433,7 @@
       <dataOutputObjs>zext</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="zext_ln1012" lineNumber="1012" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1012_fu_402_p1" coreId="0" contextFuncName="to_float" bitwidth="64" opcode="zext" nodeLabel="6.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="3">
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="zext_ln1012" lineNumber="1012" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1012_fu_402_p1" coreId="1868984933" contextFuncName="to_float" bitwidth="64" opcode="zext" nodeLabel="6.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="3">
       <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1012" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="to_float"/>
       <dataInputObjs>sub</dataInputObjs>
       <dataOutputObjs>shl</dataOutputObjs>
@@ -457,7 +457,7 @@
       <dataOutputObjs>zext</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="zext_ln1011" lineNumber="1011" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1011_fu_417_p1" coreId="1162147120" contextFuncName="to_float" bitwidth="64" opcode="zext" nodeLabel="6.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="3">
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="zext_ln1011" lineNumber="1011" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1011_fu_417_p1" coreId="2975969888" contextFuncName="to_float" bitwidth="64" opcode="zext" nodeLabel="6.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="3">
       <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1011" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="to_float"/>
       <dataInputObjs>add</dataInputObjs>
       <dataOutputObjs>lshr</dataOutputObjs>
@@ -482,7 +482,7 @@
       <dataInputObjs>shl</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="zext_ln1014" lineNumber="1014" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1014_fu_434_p1" coreId="0" contextFuncName="to_float" bitwidth="64" opcode="zext" nodeLabel="6.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="3">
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="zext_ln1014" lineNumber="1014" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1014_fu_434_p1" coreId="2976935536" contextFuncName="to_float" bitwidth="64" opcode="zext" nodeLabel="6.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="3">
       <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1014" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="to_float"/>
       <dataInputObjs>select</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
@@ -494,18 +494,18 @@
       <dataOutputObjs>partselect</dataOutputObjs>
       <dataOutputObjs>bitselect</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="m_5" lineNumber="1015" originalName="m" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="m_5_fu_443_p4" coreId="1163941712" contextFuncName="to_float" bitwidth="63" opcode="partselect" nodeLabel="6.0" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="m_5" lineNumber="1015" originalName="m" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="m_5_fu_443_p4" coreId="2976180176" contextFuncName="to_float" bitwidth="63" opcode="partselect" nodeLabel="6.0" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1015" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="to_float"/>
       <dataInputObjs>add</dataInputObjs>
       <dataOutputObjs>zext</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="zext_ln1015" lineNumber="1015" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1015_fu_453_p1" coreId="1163836352" contextFuncName="to_float" bitwidth="64" opcode="zext" nodeLabel="6.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="zext_ln1015" lineNumber="1015" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1015_fu_453_p1" coreId="2974670176" contextFuncName="to_float" bitwidth="64" opcode="zext" nodeLabel="6.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1015" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="to_float"/>
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>partset</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="p_Result_s" lineNumber="1017" originalName="__Result__" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="p_Result_s_fu_457_p3" coreId="0" contextFuncName="to_float" bitwidth="1" opcode="bitselect" nodeLabel="6.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="p_Result_s" lineNumber="1017" originalName="__Result__" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="p_Result_s_fu_457_p3" coreId="2976078848" contextFuncName="to_float" bitwidth="1" opcode="bitselect" nodeLabel="6.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1017" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="to_float"/>
       <dataInputObjs>add</dataInputObjs>
       <dataOutputObjs>select</dataOutputObjs>
@@ -517,7 +517,7 @@
       <dataOutputObjs>add</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="trunc_ln996" lineNumber="996" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln996_fu_390_p1" coreId="1163859664" contextFuncName="to_float" bitwidth="8" opcode="trunc" nodeLabel="5.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="trunc_ln996" lineNumber="996" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="trunc_ln996_fu_390_p1" coreId="0" contextFuncName="to_float" bitwidth="8" opcode="trunc" nodeLabel="5.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" linenumber="996" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="to_float"/>
       <dataInputObjs>cttz</dataInputObjs>
       <dataOutputObjs>sub</dataOutputObjs>
@@ -534,20 +534,20 @@
       <dataInputObjs>select</dataInputObjs>
       <dataOutputObjs>bitconcatenate</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="tmp_1" lineNumber="1022" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="tmp_1_fu_484_p3" coreId="1161868464" contextFuncName="to_float" bitwidth="9" opcode="bitconcatenate" nodeLabel="6.0" m_display="0" m_topoIndex="67" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="tmp_1" lineNumber="1022" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="tmp_1_fu_484_p3" coreId="2976377056" contextFuncName="to_float" bitwidth="9" opcode="bitconcatenate" nodeLabel="6.0" m_display="0" m_topoIndex="67" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1022" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="to_float"/>
       <dataInputObjs>bitselect</dataInputObjs>
       <dataInputObjs>add</dataInputObjs>
       <dataOutputObjs>partset</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="p_Result_5" lineNumber="1022" originalName="__Result__" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="p_Result_5_fu_491_p5" coreId="0" contextFuncName="to_float" bitwidth="64" opcode="partset" nodeLabel="6.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="p_Result_5" lineNumber="1022" originalName="__Result__" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="p_Result_5_fu_491_p5" coreId="2974345824" contextFuncName="to_float" bitwidth="64" opcode="partset" nodeLabel="6.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1022" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="to_float"/>
       <dataInputObjs>zext</dataInputObjs>
       <dataInputObjs>bitconcatenate</dataInputObjs>
       <dataOutputObjs>trunc</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="89" name="LD" lineNumber="755" originalName="LD" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_common.h" fileDirectory=".." rtlName="LD_fu_503_p1" coreId="1162810368" contextFuncName="rawBitsToFloat" bitwidth="32" opcode="trunc" nodeLabel="6.0" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="89" name="LD" lineNumber="755" originalName="LD" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_common.h" fileDirectory=".." rtlName="LD_fu_503_p1" coreId="1031365995" contextFuncName="rawBitsToFloat" bitwidth="32" opcode="trunc" nodeLabel="6.0" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_common.h" linenumber="755" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="rawBitsToFloat"/>
       <dataInputObjs>partset</dataInputObjs>
       <dataOutputObjs>select</dataOutputObjs>
@@ -568,7 +568,7 @@
       <dataOutputObjs>out_r_V_last_V</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="92" name="_ln46" lineNumber="46" fileName="firmware/myproject_axi.cpp" fileDirectory=".." coreId="1160646416" contextFuncName="myproject_axi" opcode="ret" nodeLabel="7.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="92" name="_ln46" lineNumber="46" fileName="firmware/myproject_axi.cpp" fileDirectory=".." coreId="2976102848" contextFuncName="myproject_axi" opcode="ret" nodeLabel="7.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="firmware/myproject_axi.cpp" linenumber="46" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="myproject_axi"/>
     </node_objs>
     <fileValidLineNumbers fileName="firmware/myproject_axi.cpp">

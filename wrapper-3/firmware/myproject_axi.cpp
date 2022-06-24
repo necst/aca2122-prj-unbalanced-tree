@@ -5,8 +5,8 @@ void myproject_axi(
     output_axi_t &out
         ){
 
-    #pragma HLS INTERFACE axis port=in
-    #pragma HLS INTERFACE axis port=out
+    #pragma HLS INTERFACE axis register both port=in
+    #pragma HLS INTERFACE axis register both port=out
     #pragma HLS INTERFACE ap_ctrl_none port=return
 
     unsigned short in_size = 0;

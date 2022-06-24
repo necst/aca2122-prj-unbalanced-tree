@@ -34,8 +34,8 @@
 <pragma file="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" line="1318" pragmaType="inline" parentfunction="ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const" off="0" region="0" recursive="0"/>
 <pragma file="firmware/myproject_axi.cpp" line="32" pragmaType="pipeline" parentfunction="myproject_axi" off="0" ii="-1" rewind="0" style=""/>
 <pragma file="firmware/myproject_axi.cpp" line="22" pragmaType="pipeline" parentfunction="myproject_axi" off="0" ii="-1" rewind="0" style=""/>
-<pragma file="firmware/myproject_axi.cpp" line="6" pragmaType="interface" parentfunction="myproject_axi" mode="axis" port="in" register="0" register_mode="both" name="" depth="-1"/>
-<pragma file="firmware/myproject_axi.cpp" line="8" pragmaType="interface" parentfunction="myproject_axi" mode="axis" port="out" register="0" register_mode="both" name="" depth="-1"/>
+<pragma file="firmware/myproject_axi.cpp" line="6" pragmaType="interface" parentfunction="myproject_axi" mode="axis" port="in" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="firmware/myproject_axi.cpp" line="8" pragmaType="interface" parentfunction="myproject_axi" mode="axis" port="out" register="1" register_mode="both" name="" depth="-1"/>
 <pragma file="firmware/myproject_axi.cpp" line="9" pragmaType="interface" parentfunction="myproject_axi" mode="ap_ctrl_none" port="return" name=""/>
 <pragma file="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed.h" line="68" pragmaType="inline" parentfunction="ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed()" off="0" region="0" recursive="0"/>
 <pragma file="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h" line="290" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
