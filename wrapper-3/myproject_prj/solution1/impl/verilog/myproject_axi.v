@@ -3482,12 +3482,19 @@ reg find_kernel_block = 0;
 
 
 reg find_kernel_block = 0;
+// synthesis translate_off
+`include "myproject_axi_hls_deadlock_kernel_monitor_top.vh"
+// synthesis translate_on
+
+
+reg find_kernel_block = 0;
 assign ap_local_block = find_kernel_block;
 // synthesis translate_off
 `include "myproject_axi_hls_deadlock_kernel_monitor_top.vh"
 // synthesis translate_on
 
 endmodule //myproject_axi
+
 
 
 

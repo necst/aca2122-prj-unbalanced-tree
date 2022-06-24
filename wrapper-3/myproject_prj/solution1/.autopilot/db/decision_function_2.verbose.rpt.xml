@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'decision_function_2'" level="0">
-<item name = "Date">Thu Jun 23 23:59:27 2022
+<item name = "Date">Fri Jun 24 12:30:31 2022
 </item>
 <item name = "Version">2020.1 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)</item>
 <item name = "Project">myproject_prj</item>
@@ -61,7 +61,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="mux_42_32_1_1_x_U19">mux_42_32_1_1_x, 0, 0, 0, 20, 0</column>
+<column name="mux_42_32_1_1_x_U35">mux_42_32_1_1_x, 0, 0, 0, 20, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">

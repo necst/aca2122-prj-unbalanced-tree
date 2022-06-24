@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="myproject_axi" xd:componentRef="myproject_axi" xd:initiationInterval="26" xd:clockPeriod="7" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="myproject_axi" xd:componentRef="myproject_axi" xd:initiationInterval="22" xd:clockPeriod="7" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
   <xd:arg xd:name="in" xd:originalName="in" xd:direction="in" xd:interfaceRef="in_r" xd:busTypeRef="axis" xd:dataWidth="32"/>
   <xd:arg xd:name="out" xd:originalName="out" xd:direction="out" xd:interfaceRef="out_r" xd:busTypeRef="axis" xd:dataWidth="32"/>
-  <xd:latencyEstimates xd:best-case="25" xd:worst-case="25" xd:average-case="25"/>
-  <xd:resourceEstimates xd:LUT="9307" xd:FF="1936" xd:BRAM="0" xd:DSP="0"/>
+  <xd:latencyEstimates xd:best-case="21" xd:worst-case="21" xd:average-case="21"/>
+  <xd:resourceEstimates xd:LUT="4879" xd:FF="727" xd:BRAM="0" xd:DSP="0"/>
 </xd:acceleratorMap>

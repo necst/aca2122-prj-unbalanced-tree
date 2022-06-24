@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
-| Date         : Fri Jun 24 11:36:47 2022
+| Date         : Fri Jun 24 12:34:09 2022
 | Host         : yavin running 64-bit Ubuntu 20.04.4 LTS
 | Command      : report_utilization -file design_1_myproject_axi_0_0_utilization_synth.rpt -pb design_1_myproject_axi_0_0_utilization_synth.pb
 | Design       : design_1_myproject_axi_0_0
@@ -28,20 +28,22 @@ Table of Contents
 1. CLB Logic
 ------------
 
-+-------------------------+------+-------+-----------+-------+
-|        Site Type        | Used | Fixed | Available | Util% |
-+-------------------------+------+-------+-----------+-------+
-| CLB LUTs*               | 6354 |     0 |     70560 |  9.01 |
-|   LUT as Logic          | 6354 |     0 |     70560 |  9.01 |
-|   LUT as Memory         |    0 |     0 |     28800 |  0.00 |
-| CLB Registers           | 2645 |     0 |    141120 |  1.87 |
-|   Register as Flip Flop | 2645 |     0 |    141120 |  1.87 |
-|   Register as Latch     |    0 |     0 |    141120 |  0.00 |
-| CARRY8                  |  174 |     0 |      8820 |  1.97 |
-| F7 Muxes                |  308 |     0 |     35280 |  0.87 |
-| F8 Muxes                |    0 |     0 |     17640 |  0.00 |
-| F9 Muxes                |    0 |     0 |      8820 |  0.00 |
-+-------------------------+------+-------+-----------+-------+
++----------------------------+------+-------+-----------+-------+
+|          Site Type         | Used | Fixed | Available | Util% |
++----------------------------+------+-------+-----------+-------+
+| CLB LUTs*                  | 1413 |     0 |     70560 |  2.00 |
+|   LUT as Logic             | 1409 |     0 |     70560 |  2.00 |
+|   LUT as Memory            |    4 |     0 |     28800 |  0.01 |
+|     LUT as Distributed RAM |    0 |     0 |           |       |
+|     LUT as Shift Register  |    4 |     0 |           |       |
+| CLB Registers              |  745 |     0 |    141120 |  0.53 |
+|   Register as Flip Flop    |  745 |     0 |    141120 |  0.53 |
+|   Register as Latch        |    0 |     0 |    141120 |  0.00 |
+| CARRY8                     |   81 |     0 |      8820 |  0.92 |
+| F7 Muxes                   |    0 |     0 |     35280 |  0.00 |
+| F8 Muxes                   |    0 |     0 |     17640 |  0.00 |
+| F9 Muxes                   |    0 |     0 |      8820 |  0.00 |
++----------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
 
@@ -59,8 +61,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 2     |          Yes |         Set |            - |
-| 2643  |          Yes |       Reset |            - |
+| 0     |          Yes |         Set |            - |
+| 745   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -147,16 +149,15 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT5     | 2785 |                 CLB |
-| FDRE     | 2643 |            Register |
-| LUT6     | 1925 |                 CLB |
-| LUT2     | 1151 |                 CLB |
-| LUT3     |  801 |                 CLB |
-| LUT4     |  507 |                 CLB |
-| MUXF7    |  308 |                 CLB |
-| CARRY8   |  174 |                 CLB |
-| LUT1     |  108 |                 CLB |
-| FDSE     |    2 |            Register |
+| FDRE     |  745 |            Register |
+| LUT2     |  579 |                 CLB |
+| LUT6     |  506 |                 CLB |
+| LUT5     |  316 |                 CLB |
+| LUT3     |  231 |                 CLB |
+| LUT1     |  131 |                 CLB |
+| LUT4     |   83 |                 CLB |
+| CARRY8   |   81 |                 CLB |
+| SRL16E   |    4 |                 CLB |
 +----------+------+---------------------+
 
 

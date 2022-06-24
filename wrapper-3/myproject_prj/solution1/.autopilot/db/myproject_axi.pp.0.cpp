@@ -33689,7 +33689,7 @@ private:
 
 
 static const unsigned N_IN = 10;
-static const unsigned N_OUT = 10;
+static const unsigned N_OUT = 1;
 typedef float T_in;
 typedef float T_out;
 # 27 "firmware/myproject_axi.h"
@@ -33731,7 +33731,7 @@ __attribute__((sdx_kernel("myproject_axi", 0))) void myproject_axi(
     result_t out_local[N_OUT];
 
     VITIS_LOOP_22_1: for(unsigned i = 0; i < N_IN; i++){
-#pragma HLS UNROLL
+#pragma HLS PIPELINE
 
  in_struct = in.read();
         in_local[i] = in_struct.data;
@@ -33741,9 +33741,14 @@ __attribute__((sdx_kernel("myproject_axi", 0))) void myproject_axi(
     myproject(in_local, out_local, tree_scores);
 
     VITIS_LOOP_32_2: for(unsigned i = 0; i < N_OUT; i++){
-#pragma HLS UNROLL
+#pragma HLS PIPELINE
  out_struct.last = (i == N_OUT - 1) ? true : false;
         out_struct.data = out_local[i];
+     out_struct.dest = 0;
+     out_struct.id = 0;
+     out_struct.keep = ( 1<<(32/8) ) - 1;
+     out_struct.strb = ( 1<<(32/8) ) - 1;
+     out_struct.user = 0;
         out.write(out_struct);
 
 

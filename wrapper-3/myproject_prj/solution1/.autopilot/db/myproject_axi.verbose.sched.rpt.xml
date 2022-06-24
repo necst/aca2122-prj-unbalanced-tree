@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'myproject_axi'" level="0">
-<item name = "Date">Thu Jun 23 23:59:25 2022
+<item name = "Date">Fri Jun 24 12:30:29 2022
 </item>
 <item name = "Version">2020.1 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)</item>
 <item name = "Project">myproject_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">7.00 ns, 4.973 ns, 1.89 ns</column>
+<column name="ap_clk">7.00 ns, 4.885 ns, 1.89 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">25, 25, 0.175 us, 0.175 us, 26, 26, no</column>
+<column name="">21, 21, 0.147 us, 0.147 us, 22, 22, no</column>
 </table>
 </item>
 <item name = "Detail">

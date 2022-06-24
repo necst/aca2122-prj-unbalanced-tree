@@ -43,7 +43,7 @@ myproject_axi_mux_42_32_1_1_x #(
     .din3_WIDTH( 32 ),
     .din4_WIDTH( 2 ),
     .dout_WIDTH( 32 ))
-mux_42_32_1_1_x_U26(
+mux_42_32_1_1_x_U42(
     .din0(32'd36059),
     .din1(32'd26870),
     .din2(32'd10117),

@@ -69,13 +69,46 @@ set NewPortList {[
  	{ "name": "out_r_TLAST", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "out_r_V_last_V", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "4", "21", "22", "23", "24", "25", "26", "27", "28"],
 		"CDFG" : "myproject_axi",
 		"Protocol" : "ap_ctrl_none",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "0", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "25", "EstimateLatencyMax" : "25",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "21", "EstimateLatencyMax" : "21",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"IsBlackBox" : "0",
+		"Port" : [
+			{"Name" : "in_r_V_data_V", "Type" : "Axis", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_myproject_axi_Pipeline_VITIS_LOOP_22_1_fu_151", "Port" : "in_r_V_data_V", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+			{"Name" : "in_r_V_keep_V", "Type" : "Axis", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_myproject_axi_Pipeline_VITIS_LOOP_22_1_fu_151", "Port" : "in_r_V_keep_V", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+			{"Name" : "in_r_V_strb_V", "Type" : "Axis", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_myproject_axi_Pipeline_VITIS_LOOP_22_1_fu_151", "Port" : "in_r_V_strb_V", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+			{"Name" : "in_r_V_last_V", "Type" : "Axis", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_myproject_axi_Pipeline_VITIS_LOOP_22_1_fu_151", "Port" : "in_r_V_last_V", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+			{"Name" : "out_r_V_data_V", "Type" : "Axis", "Direction" : "O",
+				"BlockSignal" : [
+					{"Name" : "out_r_TDATA_blk_n", "Type" : "RtlSignal"}]},
+			{"Name" : "out_r_V_keep_V", "Type" : "Axis", "Direction" : "O"},
+			{"Name" : "out_r_V_strb_V", "Type" : "Axis", "Direction" : "O"},
+			{"Name" : "out_r_V_last_V", "Type" : "Axis", "Direction" : "O"}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_myproject_axi_Pipeline_VITIS_LOOP_22_1_fu_151", "Parent" : "0", "Child" : ["2", "3"],
+		"CDFG" : "myproject_axi_Pipeline_VITIS_LOOP_22_1",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "14", "EstimateLatencyMax" : "14",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -90,13 +123,22 @@ set RtlHierarchyInfo {[
 			{"Name" : "in_r_V_keep_V", "Type" : "Axis", "Direction" : "I"},
 			{"Name" : "in_r_V_strb_V", "Type" : "Axis", "Direction" : "I"},
 			{"Name" : "in_r_V_last_V", "Type" : "Axis", "Direction" : "I"},
-			{"Name" : "out_r_V_data_V", "Type" : "Axis", "Direction" : "O",
-				"BlockSignal" : [
-					{"Name" : "out_r_TDATA_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "out_r_V_keep_V", "Type" : "Axis", "Direction" : "O"},
-			{"Name" : "out_r_V_strb_V", "Type" : "Axis", "Direction" : "O"},
-			{"Name" : "out_r_V_last_V", "Type" : "Axis", "Direction" : "O"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_151", "Parent" : "0", "Child" : ["2", "4", "6", "8", "10", "12", "14", "16"],
+			{"Name" : "in_local_V_9_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "in_local_V_8_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "in_local_V_7_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "in_local_V_6_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "in_local_V_5_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "in_local_V_4_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "in_local_V_3_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "in_local_V_2_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "in_local_V_1_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "in_local_V_out", "Type" : "Vld", "Direction" : "O"}],
+		"Loop" : [
+			{"Name" : "VITIS_LOOP_22_1", "PipelineType" : "UPC",
+				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter3", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter3", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_myproject_axi_Pipeline_VITIS_LOOP_22_1_fu_151.fpext_32ns_64_2_no_dsp_1_U1", "Parent" : "1"},
+	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_myproject_axi_Pipeline_VITIS_LOOP_22_1_fu_151.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_173", "Parent" : "0", "Child" : ["5", "7", "9", "11", "13", "15", "17", "19"],
 		"CDFG" : "myproject",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "1", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0", "real_start" : "0",
@@ -121,7 +163,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "p_read7", "Type" : "None", "Direction" : "I"},
 			{"Name" : "p_read8", "Type" : "None", "Direction" : "I"},
 			{"Name" : "p_read9", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_151.s_V_decision_function_7_fu_108", "Parent" : "1", "Child" : ["3"],
+	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_173.s_V_decision_function_7_fu_108", "Parent" : "4", "Child" : ["6"],
 		"CDFG" : "decision_function_7",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "1", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0", "real_start" : "0",
@@ -138,8 +180,8 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "p_read1", "Type" : "None", "Direction" : "I"},
 			{"Name" : "p_read2", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "3", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_151.s_V_decision_function_7_fu_108.mux_42_32_1_1_U1", "Parent" : "2"},
-	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_151.s_V_1_decision_function_6_fu_116", "Parent" : "1", "Child" : ["5"],
+	{"ID" : "6", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_173.s_V_decision_function_7_fu_108.mux_42_32_1_1_U17", "Parent" : "5"},
+	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_173.s_V_1_decision_function_6_fu_116", "Parent" : "4", "Child" : ["8"],
 		"CDFG" : "decision_function_6",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "1", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0", "real_start" : "0",
@@ -157,8 +199,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "p_read1", "Type" : "None", "Direction" : "I"},
 			{"Name" : "p_read2", "Type" : "None", "Direction" : "I"},
 			{"Name" : "p_read3", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "5", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_151.s_V_1_decision_function_6_fu_116.mux_42_32_1_1_U5", "Parent" : "4"},
-	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_151.s_V_2_decision_function_5_fu_126", "Parent" : "1", "Child" : ["7"],
+	{"ID" : "8", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_173.s_V_1_decision_function_6_fu_116.mux_42_32_1_1_U21", "Parent" : "7"},
+	{"ID" : "9", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_173.s_V_2_decision_function_5_fu_126", "Parent" : "4", "Child" : ["10"],
 		"CDFG" : "decision_function_5",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "1", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0", "real_start" : "0",
@@ -175,8 +217,8 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "p_read1", "Type" : "None", "Direction" : "I"},
 			{"Name" : "p_read2", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "7", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_151.s_V_2_decision_function_5_fu_126.mux_42_32_1_1_U9", "Parent" : "6"},
-	{"ID" : "8", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_151.s_V_3_decision_function_4_fu_134", "Parent" : "1", "Child" : ["9"],
+	{"ID" : "10", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_173.s_V_2_decision_function_5_fu_126.mux_42_32_1_1_U25", "Parent" : "9"},
+	{"ID" : "11", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_173.s_V_3_decision_function_4_fu_134", "Parent" : "4", "Child" : ["12"],
 		"CDFG" : "decision_function_4",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "1", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0", "real_start" : "0",
@@ -193,8 +235,8 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "p_read1", "Type" : "None", "Direction" : "I"},
 			{"Name" : "p_read2", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "9", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_151.s_V_3_decision_function_4_fu_134.mux_42_32_1_1_x_U12", "Parent" : "8"},
-	{"ID" : "10", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_151.s_V_4_decision_function_3_fu_142", "Parent" : "1", "Child" : ["11"],
+	{"ID" : "12", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_173.s_V_3_decision_function_4_fu_134.mux_42_32_1_1_x_U28", "Parent" : "11"},
+	{"ID" : "13", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_173.s_V_4_decision_function_3_fu_142", "Parent" : "4", "Child" : ["14"],
 		"CDFG" : "decision_function_3",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "1", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0", "real_start" : "0",
@@ -211,8 +253,8 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "p_read1", "Type" : "None", "Direction" : "I"},
 			{"Name" : "p_read2", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "11", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_151.s_V_4_decision_function_3_fu_142.mux_42_32_1_1_U16", "Parent" : "10"},
-	{"ID" : "12", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_151.s_V_5_decision_function_2_fu_150", "Parent" : "1", "Child" : ["13"],
+	{"ID" : "14", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_173.s_V_4_decision_function_3_fu_142.mux_42_32_1_1_U32", "Parent" : "13"},
+	{"ID" : "15", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_173.s_V_5_decision_function_2_fu_150", "Parent" : "4", "Child" : ["16"],
 		"CDFG" : "decision_function_2",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "1", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0", "real_start" : "0",
@@ -229,8 +271,8 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "p_read1", "Type" : "None", "Direction" : "I"},
 			{"Name" : "p_read2", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "13", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_151.s_V_5_decision_function_2_fu_150.mux_42_32_1_1_x_U19", "Parent" : "12"},
-	{"ID" : "14", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_151.s_V_6_decision_function_1_fu_158", "Parent" : "1", "Child" : ["15"],
+	{"ID" : "16", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_173.s_V_5_decision_function_2_fu_150.mux_42_32_1_1_x_U35", "Parent" : "15"},
+	{"ID" : "17", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_173.s_V_6_decision_function_1_fu_158", "Parent" : "4", "Child" : ["18"],
 		"CDFG" : "decision_function_1",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "1", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0", "real_start" : "0",
@@ -248,8 +290,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "p_read1", "Type" : "None", "Direction" : "I"},
 			{"Name" : "p_read2", "Type" : "None", "Direction" : "I"},
 			{"Name" : "p_read3", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "15", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_151.s_V_6_decision_function_1_fu_158.mux_42_32_1_1_U22", "Parent" : "14"},
-	{"ID" : "16", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_151.s_V_7_decision_function_fu_168", "Parent" : "1", "Child" : ["17"],
+	{"ID" : "18", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_173.s_V_6_decision_function_1_fu_158.mux_42_32_1_1_U38", "Parent" : "17"},
+	{"ID" : "19", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_173.s_V_7_decision_function_fu_168", "Parent" : "4", "Child" : ["20"],
 		"CDFG" : "decision_function",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "1", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0", "real_start" : "0",
@@ -266,37 +308,42 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "p_read1", "Type" : "None", "Direction" : "I"},
 			{"Name" : "p_read2", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "17", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_151.s_V_7_decision_function_fu_168.mux_42_32_1_1_x_U26", "Parent" : "16"},
-	{"ID" : "18", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fpext_32ns_64_2_no_dsp_1_U39", "Parent" : "0"},
-	{"ID" : "19", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fpext_32ns_64_2_no_dsp_1_U40", "Parent" : "0"},
-	{"ID" : "20", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fpext_32ns_64_2_no_dsp_1_U41", "Parent" : "0"},
-	{"ID" : "21", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fpext_32ns_64_2_no_dsp_1_U42", "Parent" : "0"},
-	{"ID" : "22", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fpext_32ns_64_2_no_dsp_1_U43", "Parent" : "0"},
-	{"ID" : "23", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fpext_32ns_64_2_no_dsp_1_U44", "Parent" : "0"},
-	{"ID" : "24", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fpext_32ns_64_2_no_dsp_1_U45", "Parent" : "0"},
-	{"ID" : "25", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fpext_32ns_64_2_no_dsp_1_U46", "Parent" : "0"},
-	{"ID" : "26", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fpext_32ns_64_2_no_dsp_1_U47", "Parent" : "0"},
-	{"ID" : "27", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fpext_32ns_64_2_no_dsp_1_U48", "Parent" : "0"},
-	{"ID" : "28", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_r_V_data_V_U", "Parent" : "0"},
-	{"ID" : "29", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_r_V_keep_V_U", "Parent" : "0"},
-	{"ID" : "30", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_r_V_strb_V_U", "Parent" : "0"},
-	{"ID" : "31", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_r_V_last_V_U", "Parent" : "0"},
-	{"ID" : "32", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_r_V_data_V_U", "Parent" : "0"},
-	{"ID" : "33", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_r_V_keep_V_U", "Parent" : "0"},
-	{"ID" : "34", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_r_V_strb_V_U", "Parent" : "0"},
-	{"ID" : "35", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_r_V_last_V_U", "Parent" : "0"}]}
+	{"ID" : "20", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.out_local_V_myproject_fu_173.s_V_7_decision_function_fu_168.mux_42_32_1_1_x_U42", "Parent" : "19"},
+	{"ID" : "21", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_r_V_data_V_U", "Parent" : "0"},
+	{"ID" : "22", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_r_V_keep_V_U", "Parent" : "0"},
+	{"ID" : "23", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_r_V_strb_V_U", "Parent" : "0"},
+	{"ID" : "24", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_r_V_last_V_U", "Parent" : "0"},
+	{"ID" : "25", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_r_V_data_V_U", "Parent" : "0"},
+	{"ID" : "26", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_r_V_keep_V_U", "Parent" : "0"},
+	{"ID" : "27", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_r_V_strb_V_U", "Parent" : "0"},
+	{"ID" : "28", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_r_V_last_V_U", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	myproject_axi {
-		in_r_V_data_V {Type I LastRead 9 FirstWrite -1}
-		in_r_V_keep_V {Type I LastRead 9 FirstWrite -1}
-		in_r_V_strb_V {Type I LastRead 9 FirstWrite -1}
-		in_r_V_last_V {Type I LastRead 9 FirstWrite -1}
-		out_r_V_data_V {Type O LastRead -1 FirstWrite 15}
-		out_r_V_keep_V {Type O LastRead -1 FirstWrite 15}
-		out_r_V_strb_V {Type O LastRead -1 FirstWrite 15}
-		out_r_V_last_V {Type O LastRead -1 FirstWrite 15}}
+		in_r_V_data_V {Type I LastRead 0 FirstWrite -1}
+		in_r_V_keep_V {Type I LastRead 0 FirstWrite -1}
+		in_r_V_strb_V {Type I LastRead 0 FirstWrite -1}
+		in_r_V_last_V {Type I LastRead 0 FirstWrite -1}
+		out_r_V_data_V {Type O LastRead -1 FirstWrite 6}
+		out_r_V_keep_V {Type O LastRead -1 FirstWrite 6}
+		out_r_V_strb_V {Type O LastRead -1 FirstWrite 6}
+		out_r_V_last_V {Type O LastRead -1 FirstWrite 6}}
+	myproject_axi_Pipeline_VITIS_LOOP_22_1 {
+		in_r_V_data_V {Type I LastRead 0 FirstWrite -1}
+		in_r_V_keep_V {Type I LastRead 0 FirstWrite -1}
+		in_r_V_strb_V {Type I LastRead 0 FirstWrite -1}
+		in_r_V_last_V {Type I LastRead 0 FirstWrite -1}
+		in_local_V_9_out {Type O LastRead -1 FirstWrite 2}
+		in_local_V_8_out {Type O LastRead -1 FirstWrite 2}
+		in_local_V_7_out {Type O LastRead -1 FirstWrite 2}
+		in_local_V_6_out {Type O LastRead -1 FirstWrite 2}
+		in_local_V_5_out {Type O LastRead -1 FirstWrite 2}
+		in_local_V_4_out {Type O LastRead -1 FirstWrite 2}
+		in_local_V_3_out {Type O LastRead -1 FirstWrite 2}
+		in_local_V_2_out {Type O LastRead -1 FirstWrite 2}
+		in_local_V_1_out {Type O LastRead -1 FirstWrite 2}
+		in_local_V_out {Type O LastRead -1 FirstWrite 2}}
 	myproject {
 		p_read {Type I LastRead 0 FirstWrite -1}
 		p_read1 {Type I LastRead 0 FirstWrite -1}
@@ -338,8 +385,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "25", "Max" : "25"}
-	, {"Name" : "Interval", "Min" : "26", "Max" : "26"}
+	{"Name" : "Latency", "Min" : "21", "Max" : "21"}
+	, {"Name" : "Interval", "Min" : "22", "Max" : "22"}
 ]}
 
 set PipelineEnableSignalInfo {[

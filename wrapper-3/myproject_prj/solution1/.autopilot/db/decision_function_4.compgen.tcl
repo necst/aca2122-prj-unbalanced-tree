@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 12
+set id 28
 set name myproject_axi_mux_42_32_1_1_x
 set corename simcore_mux
 set op mux
@@ -61,7 +61,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 14 \
+    id 30 \
     name p_read1 \
     type other \
     dir I \
@@ -76,7 +76,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 15 \
+    id 31 \
     name p_read2 \
     type other \
     dir I \

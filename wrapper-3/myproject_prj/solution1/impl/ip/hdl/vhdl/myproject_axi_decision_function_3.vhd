@@ -71,7 +71,7 @@ attribute shreg_extract : string;
 
 
 begin
-    mux_42_32_1_1_U16 : component myproject_axi_mux_42_32_1_1
+    mux_42_32_1_1_U32 : component myproject_axi_mux_42_32_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,

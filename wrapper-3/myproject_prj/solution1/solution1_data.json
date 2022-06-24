@@ -60,8 +60,8 @@
     "ClockPeriod": "7",
     "Uncertainty": "1.89",
     "IsCombinational": "0",
-    "II": "26",
-    "Latency": "25"
+    "II": "22",
+    "Latency": "21"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 7.000 [get_ports ap_clk]"]},
   "Ipx": {
@@ -91,6 +91,7 @@
       "impl\/vhdl\/myproject_axi_decision_function_5.vhd",
       "impl\/vhdl\/myproject_axi_decision_function_6.vhd",
       "impl\/vhdl\/myproject_axi_decision_function_7.vhd",
+      "impl\/vhdl\/myproject_axi_flow_control_loop_pipe_sequential_init.vhd",
       "impl\/vhdl\/myproject_axi_fpext_32ns_64_2_no_dsp_1.vhd",
       "impl\/vhdl\/myproject_axi_fpext_32ns_64_4_no_dsp_1.vhd",
       "impl\/vhdl\/myproject_axi_lshr_32s_6ns_32_1_1.vhd",
@@ -100,6 +101,7 @@
       "impl\/vhdl\/myproject_axi_mux_42_32_1_1.vhd",
       "impl\/vhdl\/myproject_axi_mux_42_32_1_1_x.vhd",
       "impl\/vhdl\/myproject_axi_myproject.vhd",
+      "impl\/vhdl\/myproject_axi_myproject_axi_Pipeline_VITIS_LOOP_22_1.vhd",
       "impl\/vhdl\/myproject_axi_regslice_both.vhd",
       "impl\/vhdl\/myproject_axi_shl_32ns_32ns_32_2_1.vhd",
       "impl\/vhdl\/myproject_axi_shl_32ns_32s_32_2_1.vhd",
@@ -116,6 +118,7 @@
       "impl\/verilog\/myproject_axi_decision_function_5.v",
       "impl\/verilog\/myproject_axi_decision_function_6.v",
       "impl\/verilog\/myproject_axi_decision_function_7.v",
+      "impl\/verilog\/myproject_axi_flow_control_loop_pipe_sequential_init.v",
       "impl\/verilog\/myproject_axi_fpext_32ns_64_2_no_dsp_1.v",
       "impl\/verilog\/myproject_axi_fpext_32ns_64_4_no_dsp_1.v",
       "impl\/verilog\/myproject_axi_hls_deadlock_idx0_monitor.v",
@@ -127,6 +130,7 @@
       "impl\/verilog\/myproject_axi_mux_42_32_1_1.v",
       "impl\/verilog\/myproject_axi_mux_42_32_1_1_x.v",
       "impl\/verilog\/myproject_axi_myproject.v",
+      "impl\/verilog\/myproject_axi_myproject_axi_Pipeline_VITIS_LOOP_22_1.v",
       "impl\/verilog\/myproject_axi_regslice_both.v",
       "impl\/verilog\/myproject_axi_shl_32ns_32ns_32_2_1.v",
       "impl\/verilog\/myproject_axi_shl_32ns_32s_32_2_1.v",
@@ -299,9 +303,14 @@
   "ModuleInfo": {
     "Hierarchy": {
       "ModuleName": "myproject_axi",
-      "Instances": [{
+      "Instances": [
+        {
+          "ModuleName": "myproject_axi_Pipeline_VITIS_LOOP_22_1",
+          "InstanceName": "grp_myproject_axi_Pipeline_VITIS_LOOP_22_1_fu_151"
+        },
+        {
           "ModuleName": "myproject",
-          "InstanceName": "out_local_V_myproject_fu_151",
+          "InstanceName": "out_local_V_myproject_fu_173",
           "Instances": [
             {
               "ModuleName": "decision_function_7",
@@ -336,9 +345,17 @@
               "InstanceName": "s_V_7_decision_function_fu_168"
             }
           ]
-        }]
+        }
+      ]
     },
     "Info": {
+      "myproject_axi_Pipeline_VITIS_LOOP_22_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
       "decision_function_7": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "0",
@@ -411,6 +428,45 @@
       }
     },
     "Metrics": {
+      "myproject_axi_Pipeline_VITIS_LOOP_22_1": {
+        "Latency": {
+          "LatencyBest": "14",
+          "LatencyAvg": "14",
+          "LatencyWorst": "14",
+          "PipelineII": "14",
+          "PipelineDepth": "",
+          "PipelineType": "no"
+        },
+        "Timing": {
+          "Target": "7.00",
+          "Uncertainty": "1.89",
+          "Estimate": "4.885"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_22_1",
+            "TripCount": "10",
+            "Latency": "12",
+            "PipelineII": "1",
+            "PipelineDepth": "4"
+          }],
+        "Area": {
+          "FF": "578",
+          "AVAIL_FF": "141120",
+          "UTIL_FF": "~0",
+          "LUT": "2601",
+          "AVAIL_LUT": "70560",
+          "UTIL_LUT": "3",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "432",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "360",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
       "decision_function_7": {
         "Latency": {
           "LatencyBest": "0",
@@ -701,25 +757,25 @@
       },
       "myproject_axi": {
         "Latency": {
-          "LatencyBest": "25",
-          "LatencyAvg": "25",
-          "LatencyWorst": "25",
-          "PipelineII": "26",
+          "LatencyBest": "21",
+          "LatencyAvg": "21",
+          "LatencyWorst": "21",
+          "PipelineII": "22",
           "PipelineDepth": "",
           "PipelineType": "no"
         },
         "Timing": {
           "Target": "7.00",
           "Uncertainty": "1.89",
-          "Estimate": "4.973"
+          "Estimate": "4.885"
         },
         "Area": {
-          "FF": "1936",
+          "FF": "727",
           "AVAIL_FF": "141120",
-          "UTIL_FF": "1",
-          "LUT": "9307",
+          "UTIL_FF": "~0",
+          "LUT": "4879",
           "AVAIL_LUT": "70560",
-          "UTIL_LUT": "13",
+          "UTIL_LUT": "6",
           "BRAM_18K": "0",
           "AVAIL_BRAM": "432",
           "UTIL_BRAM": "0",
@@ -736,7 +792,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2022-06-24 11:34:14 CEST",
+    "Time": "2022-06-24 12:31:15 CEST",
     "ToolName": "vitis_hls",
     "ToolVersion": "2020.1"
   }

@@ -20,7 +20,7 @@ void myproject_axi(
     result_t out_local[N_OUT];
 
     for(unsigned i = 0; i < N_IN; i++){
-        #pragma HLS UNROLL
+        #pragma HLS PIPELINE
          // Read input with cast
     	in_struct = in.read();
         in_local[i] = in_struct.data;
@@ -30,9 +30,14 @@ void myproject_axi(
     myproject(in_local, out_local, tree_scores);
 
     for(unsigned i = 0; i < N_OUT; i++){
-        #pragma HLS UNROLL
+        #pragma HLS PIPELINE
         out_struct.last = (i == N_OUT - 1) ? true : false;
         out_struct.data = out_local[i];
+    	out_struct.dest = 0;
+    	out_struct.id = 0;
+    	out_struct.keep = ( 1<<(32/8) ) - 1;
+    	out_struct.strb = ( 1<<(32/8) ) - 1;
+    	out_struct.user = 0;
         out.write(out_struct);
 
         // std::cout << "i_out: " << i << " - out[i].last: " << out[i].last << std::endl;
