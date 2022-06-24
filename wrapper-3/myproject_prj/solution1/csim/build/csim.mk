@@ -1,6 +1,6 @@
 # ==============================================================
 # Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
-# Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+# Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 # ==============================================================
 CSIM_DESIGN = 1
 
@@ -20,7 +20,7 @@ HLS_SOURCES = ../../../../myproject_test.cpp ../../../../firmware/myproject.cpp 
 
 override TARGET := csim.exe
 
-AUTOPILOT_ROOT := /opt/Xilinx/Vitis_HLS/2020.2
+AUTOPILOT_ROOT := /opt/Xilinx/Vitis_HLS/2021.2
 AUTOPILOT_MACH := lnx64
 ifdef AP_GCC_M32
   AUTOPILOT_MACH := Linux_x86
@@ -28,7 +28,7 @@ ifdef AP_GCC_M32
 endif
 IFLAG += -fPIC
 ifndef AP_GCC_PATH
-  AP_GCC_PATH := /opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/bin
+  AP_GCC_PATH := /opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/bin
 endif
 AUTOPILOT_TOOL := ${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools
 AP_CLANG_PATH := ${AUTOPILOT_TOOL}/clang-3.9/bin

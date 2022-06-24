@@ -24,6 +24,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <sstream>
 
 #include "firmware/myproject_axi.h"
 #include "firmware/nnet_utils/nnet_helpers.h"
@@ -114,7 +115,10 @@ int main(int argc, char **argv)
       //hls-fpga-machine-learning insert tb-output
       for(int i = 0; i<N_OUT; i++){
 	  	outputs = outstream.read();
-	  	std::cout << "data: " << outputs.data << ", last: " << outputs.last << std::endl;
+	  	std::stringstream output_string;
+	  	output_string << "data: " << outputs.data << ", last: " << outputs.last << ", keep: " << outputs.keep << std::endl;
+	  	std::cout << output_string.str();
+        fout << output_string.str();
 	  }
      /* for(int i = 0; i <N_OUT; i++){
 	    outputs[i] = outstream[i].read();
@@ -141,10 +145,10 @@ int main(int argc, char **argv)
     }
     //hls-fpga-machine-learning insert output
     nnet::print_axi_result<output_axis_t, N_OUT>(out, std::cout, true);
-
-    //hls-fpga-machine-learning insert tb-output
-    nnet::print_axi_result<output_axis_t, N_OUT>(out, fout);
     */
+    //hls-fpga-machine-learning insert tb-output
+    // nnet::print_axi_result<output_axis_t, N_OUT>(out, fout);
+
 
   }
 

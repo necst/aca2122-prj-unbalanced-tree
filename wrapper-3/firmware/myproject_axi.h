@@ -5,9 +5,10 @@
 #include "myproject.h"
 #include "ap_axi_sdata.h"
 #include "hls_stream.h"
+#include "parameters.h"
 
-static const unsigned N_IN = 10;
-static const unsigned N_OUT = 2;
+static const unsigned N_IN = n_features;
+static const unsigned N_OUT = 1;
 typedef float T_in;
 typedef float T_out;
 
@@ -24,8 +25,8 @@ struct ap_axis{
 };*/
 
 
-typedef hls::axis<T_in, 0, 0, 0> input_axis_t;
-typedef hls::axis<T_out, 0, 0, 0> output_axis_t;
+typedef hls::axis<T_in, 1, 1, 1> input_axis_t;
+typedef hls::axis<T_out, 1, 1, 1> output_axis_t;
 
 // typedef ap_axis<T_in, 32, 1, 1, 1> input_axis_t;
 // typedef ap_axis<T_out, 32, 1, 1, 1> output_axis_t;

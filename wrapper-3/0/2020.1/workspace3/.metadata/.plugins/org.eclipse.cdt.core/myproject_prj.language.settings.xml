@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project>
     	
-    <configuration id="cdt.managedbuild.config.gnu.exe.debug.1709787288" name="Debug">
+    <configuration id="cdt.managedbuild.config.gnu.exe.debug.1424746672" name="Debug">
         		
         <extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
             			
@@ -9,13 +9,13 @@
                 				
                 <language id="org.eclipse.cdt.core.gcc">
                     					
-                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include">
+                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include-fixed">
+                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include-fixed">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
@@ -27,7 +27,7 @@
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include">
+                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/include">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
@@ -1537,31 +1537,31 @@
                 				
                 <language id="org.eclipse.cdt.core.g++">
                     					
-                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0">
+                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu">
+                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/backward">
+                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/backward">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include">
+                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include-fixed">
+                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include-fixed">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
@@ -1573,7 +1573,7 @@
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include">
+                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/include">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
@@ -3333,7 +3333,7 @@
         	
     </configuration>
     	
-    <configuration id="cdt.managedbuild.config.gnu.exe.release.532539577" name="Release">
+    <configuration id="cdt.managedbuild.config.gnu.exe.release.983415073" name="Release">
         		
         <extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
             			
@@ -3341,13 +3341,13 @@
                 				
                 <language id="org.eclipse.cdt.core.gcc">
                     					
-                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include">
+                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include-fixed">
+                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include-fixed">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
@@ -3359,7 +3359,7 @@
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include">
+                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/include">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
@@ -4869,31 +4869,31 @@
                 				
                 <language id="org.eclipse.cdt.core.g++">
                     					
-                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0">
+                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu">
+                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/backward">
+                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/backward">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include">
+                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include-fixed">
+                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/include-fixed">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
@@ -4905,7 +4905,7 @@
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/include">
+                    <entry kind="includePath" name="/opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/include">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					

@@ -1,6 +1,6 @@
 // ==============================================================
 // Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
-// Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
  `timescale 1ns/1ps
 
@@ -13,58 +13,74 @@
 `define AUTOTB_TOP_INST AESL_inst_apatb_myproject_axi_top
 `define AUTOTB_MAX_ALLOW_LATENCY  15000000
 `define AUTOTB_CLOCK_PERIOD_DIV2 3.50
-`define AUTOTB_II 21
-`define AUTOTB_LATENCY 20
+`define AUTOTB_II 17
+`define AUTOTB_LATENCY 16
 
-`define AESL_DEPTH_in_V_data_V 1
-`define AESL_DEPTH_in_V_keep_V 1
-`define AESL_DEPTH_in_V_strb_V 1
-`define AESL_DEPTH_in_V_last_V 1
-`define AESL_DEPTH_out_V_data_V 1
-`define AESL_DEPTH_out_V_keep_V 1
-`define AESL_DEPTH_out_V_strb_V 1
-`define AESL_DEPTH_out_V_last_V 1
-`define AUTOTB_TVIN_in_V_data_V  "./c.myproject_axi.autotvin_in_V_data_V.dat"
-`define AUTOTB_TVIN_in_V_keep_V  "./c.myproject_axi.autotvin_in_V_keep_V.dat"
-`define AUTOTB_TVIN_in_V_strb_V  "./c.myproject_axi.autotvin_in_V_strb_V.dat"
-`define AUTOTB_TVIN_in_V_last_V  "./c.myproject_axi.autotvin_in_V_last_V.dat"
-`define AUTOTB_TVIN_out_V_data_V  "./c.myproject_axi.autotvin_out_V_data_V.dat"
-`define AUTOTB_TVIN_out_V_keep_V  "./c.myproject_axi.autotvin_out_V_keep_V.dat"
-`define AUTOTB_TVIN_out_V_strb_V  "./c.myproject_axi.autotvin_out_V_strb_V.dat"
-`define AUTOTB_TVIN_out_V_last_V  "./c.myproject_axi.autotvin_out_V_last_V.dat"
-`define AUTOTB_TVIN_in_V_data_V_out_wrapc  "./rtl.myproject_axi.autotvin_in_V_data_V.dat"
-`define AUTOTB_TVIN_in_V_keep_V_out_wrapc  "./rtl.myproject_axi.autotvin_in_V_keep_V.dat"
-`define AUTOTB_TVIN_in_V_strb_V_out_wrapc  "./rtl.myproject_axi.autotvin_in_V_strb_V.dat"
-`define AUTOTB_TVIN_in_V_last_V_out_wrapc  "./rtl.myproject_axi.autotvin_in_V_last_V.dat"
-`define AUTOTB_TVIN_out_V_data_V_out_wrapc  "./rtl.myproject_axi.autotvin_out_V_data_V.dat"
-`define AUTOTB_TVIN_out_V_keep_V_out_wrapc  "./rtl.myproject_axi.autotvin_out_V_keep_V.dat"
-`define AUTOTB_TVIN_out_V_strb_V_out_wrapc  "./rtl.myproject_axi.autotvin_out_V_strb_V.dat"
-`define AUTOTB_TVIN_out_V_last_V_out_wrapc  "./rtl.myproject_axi.autotvin_out_V_last_V.dat"
-`define AUTOTB_TVOUT_out_V_data_V  "./c.myproject_axi.autotvout_out_V_data_V.dat"
-`define AUTOTB_TVOUT_out_V_keep_V  "./c.myproject_axi.autotvout_out_V_keep_V.dat"
-`define AUTOTB_TVOUT_out_V_strb_V  "./c.myproject_axi.autotvout_out_V_strb_V.dat"
-`define AUTOTB_TVOUT_out_V_last_V  "./c.myproject_axi.autotvout_out_V_last_V.dat"
-`define AUTOTB_TVOUT_out_V_data_V_out_wrapc  "./impl_rtl.myproject_axi.autotvout_out_V_data_V.dat"
-`define AUTOTB_TVOUT_out_V_keep_V_out_wrapc  "./impl_rtl.myproject_axi.autotvout_out_V_keep_V.dat"
-`define AUTOTB_TVOUT_out_V_strb_V_out_wrapc  "./impl_rtl.myproject_axi.autotvout_out_V_strb_V.dat"
-`define AUTOTB_TVOUT_out_V_last_V_out_wrapc  "./impl_rtl.myproject_axi.autotvout_out_V_last_V.dat"
+`define AESL_DEPTH_in_r_V_data_V 1
+`define AESL_DEPTH_in_r_V_keep_V 1
+`define AESL_DEPTH_in_r_V_strb_V 1
+`define AESL_DEPTH_in_r_V_user_V 1
+`define AESL_DEPTH_in_r_V_last_V 1
+`define AESL_DEPTH_in_r_V_id_V 1
+`define AESL_DEPTH_in_r_V_dest_V 1
+`define AESL_DEPTH_out_r_V_data_V 1
+`define AESL_DEPTH_out_r_V_keep_V 1
+`define AESL_DEPTH_out_r_V_strb_V 1
+`define AESL_DEPTH_out_r_V_user_V 1
+`define AESL_DEPTH_out_r_V_last_V 1
+`define AESL_DEPTH_out_r_V_id_V 1
+`define AESL_DEPTH_out_r_V_dest_V 1
+`define AUTOTB_TVIN_in_r_V_data_V  "./c.myproject_axi.autotvin_in_r_V_data_V.dat"
+`define AUTOTB_TVIN_in_r_V_keep_V  "./c.myproject_axi.autotvin_in_r_V_keep_V.dat"
+`define AUTOTB_TVIN_in_r_V_strb_V  "./c.myproject_axi.autotvin_in_r_V_strb_V.dat"
+`define AUTOTB_TVIN_in_r_V_user_V  "./c.myproject_axi.autotvin_in_r_V_user_V.dat"
+`define AUTOTB_TVIN_in_r_V_last_V  "./c.myproject_axi.autotvin_in_r_V_last_V.dat"
+`define AUTOTB_TVIN_in_r_V_id_V  "./c.myproject_axi.autotvin_in_r_V_id_V.dat"
+`define AUTOTB_TVIN_in_r_V_dest_V  "./c.myproject_axi.autotvin_in_r_V_dest_V.dat"
+`define AUTOTB_TVIN_in_r_V_data_V_out_wrapc  "./rtl.myproject_axi.autotvin_in_r_V_data_V.dat"
+`define AUTOTB_TVIN_in_r_V_keep_V_out_wrapc  "./rtl.myproject_axi.autotvin_in_r_V_keep_V.dat"
+`define AUTOTB_TVIN_in_r_V_strb_V_out_wrapc  "./rtl.myproject_axi.autotvin_in_r_V_strb_V.dat"
+`define AUTOTB_TVIN_in_r_V_user_V_out_wrapc  "./rtl.myproject_axi.autotvin_in_r_V_user_V.dat"
+`define AUTOTB_TVIN_in_r_V_last_V_out_wrapc  "./rtl.myproject_axi.autotvin_in_r_V_last_V.dat"
+`define AUTOTB_TVIN_in_r_V_id_V_out_wrapc  "./rtl.myproject_axi.autotvin_in_r_V_id_V.dat"
+`define AUTOTB_TVIN_in_r_V_dest_V_out_wrapc  "./rtl.myproject_axi.autotvin_in_r_V_dest_V.dat"
+`define AUTOTB_TVOUT_out_r_V_data_V  "./c.myproject_axi.autotvout_out_r_V_data_V.dat"
+`define AUTOTB_TVOUT_out_r_V_keep_V  "./c.myproject_axi.autotvout_out_r_V_keep_V.dat"
+`define AUTOTB_TVOUT_out_r_V_strb_V  "./c.myproject_axi.autotvout_out_r_V_strb_V.dat"
+`define AUTOTB_TVOUT_out_r_V_user_V  "./c.myproject_axi.autotvout_out_r_V_user_V.dat"
+`define AUTOTB_TVOUT_out_r_V_last_V  "./c.myproject_axi.autotvout_out_r_V_last_V.dat"
+`define AUTOTB_TVOUT_out_r_V_id_V  "./c.myproject_axi.autotvout_out_r_V_id_V.dat"
+`define AUTOTB_TVOUT_out_r_V_dest_V  "./c.myproject_axi.autotvout_out_r_V_dest_V.dat"
+`define AUTOTB_TVOUT_out_r_V_data_V_out_wrapc  "./impl_rtl.myproject_axi.autotvout_out_r_V_data_V.dat"
+`define AUTOTB_TVOUT_out_r_V_keep_V_out_wrapc  "./impl_rtl.myproject_axi.autotvout_out_r_V_keep_V.dat"
+`define AUTOTB_TVOUT_out_r_V_strb_V_out_wrapc  "./impl_rtl.myproject_axi.autotvout_out_r_V_strb_V.dat"
+`define AUTOTB_TVOUT_out_r_V_user_V_out_wrapc  "./impl_rtl.myproject_axi.autotvout_out_r_V_user_V.dat"
+`define AUTOTB_TVOUT_out_r_V_last_V_out_wrapc  "./impl_rtl.myproject_axi.autotvout_out_r_V_last_V.dat"
+`define AUTOTB_TVOUT_out_r_V_id_V_out_wrapc  "./impl_rtl.myproject_axi.autotvout_out_r_V_id_V.dat"
+`define AUTOTB_TVOUT_out_r_V_dest_V_out_wrapc  "./impl_rtl.myproject_axi.autotvout_out_r_V_dest_V.dat"
 module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 10000;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 20;
-parameter LENGTH_in_V_data_V = 10;
-parameter LENGTH_in_V_keep_V = 10;
-parameter LENGTH_in_V_strb_V = 10;
-parameter LENGTH_in_V_last_V = 10;
-parameter LENGTH_out_V_data_V = 2;
-parameter LENGTH_out_V_keep_V = 2;
-parameter LENGTH_out_V_strb_V = 2;
-parameter LENGTH_out_V_last_V = 2;
+parameter LATENCY_ESTIMATION = 16;
+parameter LENGTH_in_r_V_data_V = 10;
+parameter LENGTH_in_r_V_keep_V = 10;
+parameter LENGTH_in_r_V_strb_V = 10;
+parameter LENGTH_in_r_V_user_V = 10;
+parameter LENGTH_in_r_V_last_V = 10;
+parameter LENGTH_in_r_V_id_V = 10;
+parameter LENGTH_in_r_V_dest_V = 10;
+parameter LENGTH_out_r_V_data_V = 1;
+parameter LENGTH_out_r_V_keep_V = 1;
+parameter LENGTH_out_r_V_strb_V = 1;
+parameter LENGTH_out_r_V_user_V = 1;
+parameter LENGTH_out_r_V_last_V = 1;
+parameter LENGTH_out_r_V_id_V = 1;
+parameter LENGTH_out_r_V_dest_V = 1;
 
 task read_token;
     input integer fp;
-    output reg [127 : 0] token;
+    output reg [159 : 0] token;
     integer ret;
     begin
         token = "";
@@ -76,10 +92,10 @@ endtask
 task post_check;
     input integer fp1;
     input integer fp2;
-    reg [127 : 0] token1;
-    reg [127 : 0] token2;
-    reg [127 : 0] golden;
-    reg [127 : 0] result;
+    reg [159 : 0] token1;
+    reg [159 : 0] token2;
+    reg [159 : 0] golden;
+    reg [159 : 0] result;
     integer ret;
     begin
         read_token(fp1, token1);
@@ -144,30 +160,40 @@ reg AESL_done_delay2 = 0;
 reg AESL_ready_delay = 0;
 wire ready;
 wire ready_wire;
+wire  ap_local_block;
+wire  ap_local_deadlock;
 wire [31 : 0] in_r_TDATA;
 wire  in_r_TVALID;
 wire  in_r_TREADY;
 wire [3 : 0] in_r_TKEEP;
 wire [3 : 0] in_r_TSTRB;
+wire [0 : 0] in_r_TUSER;
 wire [0 : 0] in_r_TLAST;
+wire [0 : 0] in_r_TID;
+wire [0 : 0] in_r_TDEST;
 wire [31 : 0] out_r_TDATA;
 wire  out_r_TVALID;
 wire  out_r_TREADY;
 wire [3 : 0] out_r_TKEEP;
 wire [3 : 0] out_r_TSTRB;
+wire [0 : 0] out_r_TUSER;
 wire [0 : 0] out_r_TLAST;
-reg [31:0] ap_c_n_tvin_trans_num_in_V_data_V;
-reg [31:0] ap_c_n_tvin_trans_num_in_V_keep_V;
-reg [31:0] ap_c_n_tvin_trans_num_in_V_strb_V;
-reg [31:0] ap_c_n_tvin_trans_num_in_V_last_V;
-reg [31:0] ap_c_n_tvin_trans_num_out_V_data_V;
-reg [31:0] ap_c_n_tvin_trans_num_out_V_keep_V;
-reg [31:0] ap_c_n_tvin_trans_num_out_V_strb_V;
-reg [31:0] ap_c_n_tvin_trans_num_out_V_last_V;
-reg [31:0] ap_c_n_tvout_trans_num_out_V_data_V;
-reg [31:0] ap_c_n_tvout_trans_num_out_V_keep_V;
-reg [31:0] ap_c_n_tvout_trans_num_out_V_strb_V;
-reg [31:0] ap_c_n_tvout_trans_num_out_V_last_V;
+wire [0 : 0] out_r_TID;
+wire [0 : 0] out_r_TDEST;
+reg [31:0] ap_c_n_tvin_trans_num_in_r_V_data_V;
+reg [31:0] ap_c_n_tvin_trans_num_in_r_V_keep_V;
+reg [31:0] ap_c_n_tvin_trans_num_in_r_V_strb_V;
+reg [31:0] ap_c_n_tvin_trans_num_in_r_V_user_V;
+reg [31:0] ap_c_n_tvin_trans_num_in_r_V_last_V;
+reg [31:0] ap_c_n_tvin_trans_num_in_r_V_id_V;
+reg [31:0] ap_c_n_tvin_trans_num_in_r_V_dest_V;
+reg [31:0] ap_c_n_tvout_trans_num_out_r_V_data_V;
+reg [31:0] ap_c_n_tvout_trans_num_out_r_V_keep_V;
+reg [31:0] ap_c_n_tvout_trans_num_out_r_V_strb_V;
+reg [31:0] ap_c_n_tvout_trans_num_out_r_V_user_V;
+reg [31:0] ap_c_n_tvout_trans_num_out_r_V_last_V;
+reg [31:0] ap_c_n_tvout_trans_num_out_r_V_id_V;
+reg [31:0] ap_c_n_tvout_trans_num_out_r_V_dest_V;
 integer done_cnt = 0;
 integer AESL_ready_cnt = 0;
 integer ready_cnt = 0;
@@ -178,11 +204,14 @@ reg ready_delay_last_n;
 reg done_delay_last_n;
 reg interface_done = 0;
 
+
 wire ap_clk;
 wire ap_rst_n;
 wire ap_rst_n_n;
 
 `AUTOTB_DUT `AUTOTB_DUT_INST(
+    .ap_local_block(ap_local_block),
+    .ap_local_deadlock(ap_local_deadlock),
     .ap_clk(ap_clk),
     .ap_rst_n(ap_rst_n),
     .in_r_TDATA(in_r_TDATA),
@@ -190,13 +219,19 @@ wire ap_rst_n_n;
     .in_r_TREADY(in_r_TREADY),
     .in_r_TKEEP(in_r_TKEEP),
     .in_r_TSTRB(in_r_TSTRB),
+    .in_r_TUSER(in_r_TUSER),
     .in_r_TLAST(in_r_TLAST),
+    .in_r_TID(in_r_TID),
+    .in_r_TDEST(in_r_TDEST),
     .out_r_TDATA(out_r_TDATA),
     .out_r_TVALID(out_r_TVALID),
     .out_r_TREADY(out_r_TREADY),
     .out_r_TKEEP(out_r_TKEEP),
     .out_r_TSTRB(out_r_TSTRB),
-    .out_r_TLAST(out_r_TLAST));
+    .out_r_TUSER(out_r_TUSER),
+    .out_r_TLAST(out_r_TLAST),
+    .out_r_TID(out_r_TID),
+    .out_r_TDEST(out_r_TDEST));
 
 // Assignment for control signal
 assign ap_clk = AESL_clock;
@@ -207,6 +242,12 @@ assign AESL_start = start;
 assign AESL_ce = ce;
 assign AESL_continue = tb_continue;
 assign AESL_ready = ready;
+
+
+
+
+
+
 
 
 
@@ -227,7 +268,10 @@ AESL_axi_s_in_r AESL_AXI_S_in_r(
     .TRAN_in_r_TDATA(in_r_TDATA),
     .TRAN_in_r_TKEEP(in_r_TKEEP),
     .TRAN_in_r_TSTRB(in_r_TSTRB),
+    .TRAN_in_r_TUSER(in_r_TUSER),
     .TRAN_in_r_TLAST(in_r_TLAST),
+    .TRAN_in_r_TID(in_r_TID),
+    .TRAN_in_r_TDEST(in_r_TDEST),
     .TRAN_in_r_TVALID(in_r_TVALID),
     .TRAN_in_r_TREADY(in_r_TREADY),
     .ready(in_r_ready),
@@ -248,7 +292,10 @@ AESL_axi_s_out_r AESL_AXI_S_out_r(
     .TRAN_out_r_TDATA(out_r_TDATA),
     .TRAN_out_r_TKEEP(out_r_TKEEP),
     .TRAN_out_r_TSTRB(out_r_TSTRB),
+    .TRAN_out_r_TUSER(out_r_TUSER),
     .TRAN_out_r_TLAST(out_r_TLAST),
+    .TRAN_out_r_TID(out_r_TID),
+    .TRAN_out_r_TDEST(out_r_TDEST),
     .TRAN_out_r_TVALID(out_r_TVALID),
     .TRAN_out_r_TREADY(out_r_TREADY),
     .ready(out_r_ready),
@@ -309,54 +356,87 @@ end
         integer fp2;
         wait (all_finish == 1);
         // last transaction is saved at negedge right after last done
-        @ (posedge AESL_clock);
-        @ (posedge AESL_clock);
-        @ (posedge AESL_clock);
-        @ (posedge AESL_clock);
-    fp1 = $fopen("./rtl.myproject_axi.autotvout_out_V_data_V.dat", "r");
-    fp2 = $fopen("./impl_rtl.myproject_axi.autotvout_out_V_data_V.dat", "r");
+        repeat(6) @ (posedge AESL_clock);
+    fp1 = $fopen("./rtl.myproject_axi.autotvout_out_r_V_data_V.dat", "r");
+    fp2 = $fopen("./impl_rtl.myproject_axi.autotvout_out_r_V_data_V.dat", "r");
     if(fp1 == 0)        // Failed to open file
-        $display("Failed to open file \"./rtl.myproject_axi.autotvout_out_V_data_V.dat\"!");
+        $display("Failed to open file \"./rtl.myproject_axi.autotvout_out_r_V_data_V.dat\"!");
     else if(fp2 == 0)
-        $display("Failed to open file \"./impl_rtl.myproject_axi.autotvout_out_V_data_V.dat\"!");
+        $display("Failed to open file \"./impl_rtl.myproject_axi.autotvout_out_r_V_data_V.dat\"!");
     else begin
-        $display("Comparing rtl.myproject_axi.autotvout_out_V_data_V.dat with impl_rtl.myproject_axi.autotvout_out_V_data_V.dat");
+        $display("Comparing rtl.myproject_axi.autotvout_out_r_V_data_V.dat with impl_rtl.myproject_axi.autotvout_out_r_V_data_V.dat");
         post_check(fp1, fp2);
     end
     $fclose(fp1);
     $fclose(fp2);
-    fp1 = $fopen("./rtl.myproject_axi.autotvout_out_V_keep_V.dat", "r");
-    fp2 = $fopen("./impl_rtl.myproject_axi.autotvout_out_V_keep_V.dat", "r");
+    fp1 = $fopen("./rtl.myproject_axi.autotvout_out_r_V_keep_V.dat", "r");
+    fp2 = $fopen("./impl_rtl.myproject_axi.autotvout_out_r_V_keep_V.dat", "r");
     if(fp1 == 0)        // Failed to open file
-        $display("Failed to open file \"./rtl.myproject_axi.autotvout_out_V_keep_V.dat\"!");
+        $display("Failed to open file \"./rtl.myproject_axi.autotvout_out_r_V_keep_V.dat\"!");
     else if(fp2 == 0)
-        $display("Failed to open file \"./impl_rtl.myproject_axi.autotvout_out_V_keep_V.dat\"!");
+        $display("Failed to open file \"./impl_rtl.myproject_axi.autotvout_out_r_V_keep_V.dat\"!");
     else begin
-        $display("Comparing rtl.myproject_axi.autotvout_out_V_keep_V.dat with impl_rtl.myproject_axi.autotvout_out_V_keep_V.dat");
+        $display("Comparing rtl.myproject_axi.autotvout_out_r_V_keep_V.dat with impl_rtl.myproject_axi.autotvout_out_r_V_keep_V.dat");
         post_check(fp1, fp2);
     end
     $fclose(fp1);
     $fclose(fp2);
-    fp1 = $fopen("./rtl.myproject_axi.autotvout_out_V_strb_V.dat", "r");
-    fp2 = $fopen("./impl_rtl.myproject_axi.autotvout_out_V_strb_V.dat", "r");
+    fp1 = $fopen("./rtl.myproject_axi.autotvout_out_r_V_strb_V.dat", "r");
+    fp2 = $fopen("./impl_rtl.myproject_axi.autotvout_out_r_V_strb_V.dat", "r");
     if(fp1 == 0)        // Failed to open file
-        $display("Failed to open file \"./rtl.myproject_axi.autotvout_out_V_strb_V.dat\"!");
+        $display("Failed to open file \"./rtl.myproject_axi.autotvout_out_r_V_strb_V.dat\"!");
     else if(fp2 == 0)
-        $display("Failed to open file \"./impl_rtl.myproject_axi.autotvout_out_V_strb_V.dat\"!");
+        $display("Failed to open file \"./impl_rtl.myproject_axi.autotvout_out_r_V_strb_V.dat\"!");
     else begin
-        $display("Comparing rtl.myproject_axi.autotvout_out_V_strb_V.dat with impl_rtl.myproject_axi.autotvout_out_V_strb_V.dat");
+        $display("Comparing rtl.myproject_axi.autotvout_out_r_V_strb_V.dat with impl_rtl.myproject_axi.autotvout_out_r_V_strb_V.dat");
         post_check(fp1, fp2);
     end
     $fclose(fp1);
     $fclose(fp2);
-    fp1 = $fopen("./rtl.myproject_axi.autotvout_out_V_last_V.dat", "r");
-    fp2 = $fopen("./impl_rtl.myproject_axi.autotvout_out_V_last_V.dat", "r");
+    fp1 = $fopen("./rtl.myproject_axi.autotvout_out_r_V_user_V.dat", "r");
+    fp2 = $fopen("./impl_rtl.myproject_axi.autotvout_out_r_V_user_V.dat", "r");
     if(fp1 == 0)        // Failed to open file
-        $display("Failed to open file \"./rtl.myproject_axi.autotvout_out_V_last_V.dat\"!");
+        $display("Failed to open file \"./rtl.myproject_axi.autotvout_out_r_V_user_V.dat\"!");
     else if(fp2 == 0)
-        $display("Failed to open file \"./impl_rtl.myproject_axi.autotvout_out_V_last_V.dat\"!");
+        $display("Failed to open file \"./impl_rtl.myproject_axi.autotvout_out_r_V_user_V.dat\"!");
     else begin
-        $display("Comparing rtl.myproject_axi.autotvout_out_V_last_V.dat with impl_rtl.myproject_axi.autotvout_out_V_last_V.dat");
+        $display("Comparing rtl.myproject_axi.autotvout_out_r_V_user_V.dat with impl_rtl.myproject_axi.autotvout_out_r_V_user_V.dat");
+        post_check(fp1, fp2);
+    end
+    $fclose(fp1);
+    $fclose(fp2);
+    fp1 = $fopen("./rtl.myproject_axi.autotvout_out_r_V_last_V.dat", "r");
+    fp2 = $fopen("./impl_rtl.myproject_axi.autotvout_out_r_V_last_V.dat", "r");
+    if(fp1 == 0)        // Failed to open file
+        $display("Failed to open file \"./rtl.myproject_axi.autotvout_out_r_V_last_V.dat\"!");
+    else if(fp2 == 0)
+        $display("Failed to open file \"./impl_rtl.myproject_axi.autotvout_out_r_V_last_V.dat\"!");
+    else begin
+        $display("Comparing rtl.myproject_axi.autotvout_out_r_V_last_V.dat with impl_rtl.myproject_axi.autotvout_out_r_V_last_V.dat");
+        post_check(fp1, fp2);
+    end
+    $fclose(fp1);
+    $fclose(fp2);
+    fp1 = $fopen("./rtl.myproject_axi.autotvout_out_r_V_id_V.dat", "r");
+    fp2 = $fopen("./impl_rtl.myproject_axi.autotvout_out_r_V_id_V.dat", "r");
+    if(fp1 == 0)        // Failed to open file
+        $display("Failed to open file \"./rtl.myproject_axi.autotvout_out_r_V_id_V.dat\"!");
+    else if(fp2 == 0)
+        $display("Failed to open file \"./impl_rtl.myproject_axi.autotvout_out_r_V_id_V.dat\"!");
+    else begin
+        $display("Comparing rtl.myproject_axi.autotvout_out_r_V_id_V.dat with impl_rtl.myproject_axi.autotvout_out_r_V_id_V.dat");
+        post_check(fp1, fp2);
+    end
+    $fclose(fp1);
+    $fclose(fp2);
+    fp1 = $fopen("./rtl.myproject_axi.autotvout_out_r_V_dest_V.dat", "r");
+    fp2 = $fopen("./impl_rtl.myproject_axi.autotvout_out_r_V_dest_V.dat", "r");
+    if(fp1 == 0)        // Failed to open file
+        $display("Failed to open file \"./rtl.myproject_axi.autotvout_out_r_V_dest_V.dat\"!");
+    else if(fp2 == 0)
+        $display("Failed to open file \"./impl_rtl.myproject_axi.autotvout_out_r_V_dest_V.dat\"!");
+    else begin
+        $display("Comparing rtl.myproject_axi.autotvout_out_r_V_dest_V.dat with impl_rtl.myproject_axi.autotvout_out_r_V_dest_V.dat");
         post_check(fp1, fp2);
     end
     $fclose(fp1);
@@ -371,30 +451,48 @@ initial begin
 end
 
 
-reg end_in_V_data_V;
-reg [31:0] size_in_V_data_V;
-reg [31:0] size_in_V_data_V_backup;
-reg end_in_V_keep_V;
-reg [31:0] size_in_V_keep_V;
-reg [31:0] size_in_V_keep_V_backup;
-reg end_in_V_strb_V;
-reg [31:0] size_in_V_strb_V;
-reg [31:0] size_in_V_strb_V_backup;
-reg end_in_V_last_V;
-reg [31:0] size_in_V_last_V;
-reg [31:0] size_in_V_last_V_backup;
-reg end_out_V_data_V;
-reg [31:0] size_out_V_data_V;
-reg [31:0] size_out_V_data_V_backup;
-reg end_out_V_keep_V;
-reg [31:0] size_out_V_keep_V;
-reg [31:0] size_out_V_keep_V_backup;
-reg end_out_V_strb_V;
-reg [31:0] size_out_V_strb_V;
-reg [31:0] size_out_V_strb_V_backup;
-reg end_out_V_last_V;
-reg [31:0] size_out_V_last_V;
-reg [31:0] size_out_V_last_V_backup;
+reg end_in_r_V_data_V;
+reg [31:0] size_in_r_V_data_V;
+reg [31:0] size_in_r_V_data_V_backup;
+reg end_in_r_V_keep_V;
+reg [31:0] size_in_r_V_keep_V;
+reg [31:0] size_in_r_V_keep_V_backup;
+reg end_in_r_V_strb_V;
+reg [31:0] size_in_r_V_strb_V;
+reg [31:0] size_in_r_V_strb_V_backup;
+reg end_in_r_V_user_V;
+reg [31:0] size_in_r_V_user_V;
+reg [31:0] size_in_r_V_user_V_backup;
+reg end_in_r_V_last_V;
+reg [31:0] size_in_r_V_last_V;
+reg [31:0] size_in_r_V_last_V_backup;
+reg end_in_r_V_id_V;
+reg [31:0] size_in_r_V_id_V;
+reg [31:0] size_in_r_V_id_V_backup;
+reg end_in_r_V_dest_V;
+reg [31:0] size_in_r_V_dest_V;
+reg [31:0] size_in_r_V_dest_V_backup;
+reg end_out_r_V_data_V;
+reg [31:0] size_out_r_V_data_V;
+reg [31:0] size_out_r_V_data_V_backup;
+reg end_out_r_V_keep_V;
+reg [31:0] size_out_r_V_keep_V;
+reg [31:0] size_out_r_V_keep_V_backup;
+reg end_out_r_V_strb_V;
+reg [31:0] size_out_r_V_strb_V;
+reg [31:0] size_out_r_V_strb_V_backup;
+reg end_out_r_V_user_V;
+reg [31:0] size_out_r_V_user_V;
+reg [31:0] size_out_r_V_user_V_backup;
+reg end_out_r_V_last_V;
+reg [31:0] size_out_r_V_last_V;
+reg [31:0] size_out_r_V_last_V_backup;
+reg end_out_r_V_id_V;
+reg [31:0] size_out_r_V_id_V;
+reg [31:0] size_out_r_V_id_V_backup;
+reg end_out_r_V_dest_V;
+reg [31:0] size_out_r_V_dest_V;
+reg [31:0] size_out_r_V_dest_V_backup;
 
 initial begin : initial_process
     integer proc_rand;
@@ -410,29 +508,16 @@ initial begin : initial_process_for_dut_rst
     repeat(3) @ (posedge AESL_clock);
     dut_rst = 1;
 end
-    // in_V_data_V : axi_s
-    reg ready_in_V_data_V;
+    // in_r_V_data_V : axi_s
+    reg ready_in_r_V_data_V;
     
     always @ (*) begin
-        if (end_in_V_data_V) begin
-            ready_in_V_data_V <= 1;
-        end else if (ap_c_n_tvin_trans_num_in_V_data_V > ready_cnt) begin
-            ready_in_V_data_V <= 1;
+        if (end_in_r_V_data_V) begin
+            ready_in_r_V_data_V <= 1;
+        end else if (ap_c_n_tvin_trans_num_in_r_V_data_V > ready_cnt) begin
+            ready_in_r_V_data_V <= 1;
         end else begin
-            ready_in_V_data_V <= 0;
-        end
-    end
-    
-    // out_V_data_V : axi_s
-    reg ready_out_V_data_V;
-    
-    always @ (*) begin
-        if (end_out_V_data_V) begin
-            ready_out_V_data_V <= 1;
-        end else if (ap_c_n_tvin_trans_num_out_V_data_V > ready_cnt) begin
-            ready_out_V_data_V <= 1;
-        end else begin
-            ready_out_V_data_V <= 0;
+            ready_in_r_V_data_V <= 0;
         end
     end
     
@@ -441,7 +526,7 @@ end
         if (~AESL_reset) begin
             start <= 0;
         end else begin
-            start <= ready_in_V_data_V && ready_out_V_data_V;
+            start <= ready_in_r_V_data_V;
         end
     end
 
@@ -501,71 +586,122 @@ begin
           interface_done = 0;
   end
 end
-    // out_V_data_V : axi_s
-    reg done_out_V_data_V;
+    // out_r_V_data_V : axi_s
+    reg done_out_r_V_data_V;
     
     always @ (*) begin
-        if (end_out_V_data_V) begin
-            done_out_V_data_V <= 1;
-        end else if (ap_c_n_tvout_trans_num_out_V_data_V > done_cnt + 1) begin
-            done_out_V_data_V <= 1;
-        end else if (size_out_V_data_V > 1) begin
-            done_out_V_data_V <= 0;
+        if (end_out_r_V_data_V) begin
+            done_out_r_V_data_V <= 1;
+        end else if (ap_c_n_tvout_trans_num_out_r_V_data_V > done_cnt + 1) begin
+            done_out_r_V_data_V <= 1;
+        end else if (size_out_r_V_data_V > 1) begin
+            done_out_r_V_data_V <= 0;
         end else if (out_r_TVALID == 1) begin
-            done_out_V_data_V <= 1;
+            done_out_r_V_data_V <= 1;
         end else begin
-            done_out_V_data_V <= 0;
+            done_out_r_V_data_V <= 0;
         end
     end
     
-    // out_V_keep_V : axi_s
-    reg done_out_V_keep_V;
+    // out_r_V_keep_V : axi_s
+    reg done_out_r_V_keep_V;
     
     always @ (*) begin
-        if (end_out_V_keep_V) begin
-            done_out_V_keep_V <= 1;
-        end else if (ap_c_n_tvout_trans_num_out_V_keep_V > done_cnt + 1) begin
-            done_out_V_keep_V <= 1;
-        end else if (size_out_V_keep_V > 1) begin
-            done_out_V_keep_V <= 0;
+        if (end_out_r_V_keep_V) begin
+            done_out_r_V_keep_V <= 1;
+        end else if (ap_c_n_tvout_trans_num_out_r_V_keep_V > done_cnt + 1) begin
+            done_out_r_V_keep_V <= 1;
+        end else if (size_out_r_V_keep_V > 1) begin
+            done_out_r_V_keep_V <= 0;
         end else if (out_r_TVALID == 1) begin
-            done_out_V_keep_V <= 1;
+            done_out_r_V_keep_V <= 1;
         end else begin
-            done_out_V_keep_V <= 0;
+            done_out_r_V_keep_V <= 0;
         end
     end
     
-    // out_V_strb_V : axi_s
-    reg done_out_V_strb_V;
+    // out_r_V_strb_V : axi_s
+    reg done_out_r_V_strb_V;
     
     always @ (*) begin
-        if (end_out_V_strb_V) begin
-            done_out_V_strb_V <= 1;
-        end else if (ap_c_n_tvout_trans_num_out_V_strb_V > done_cnt + 1) begin
-            done_out_V_strb_V <= 1;
-        end else if (size_out_V_strb_V > 1) begin
-            done_out_V_strb_V <= 0;
+        if (end_out_r_V_strb_V) begin
+            done_out_r_V_strb_V <= 1;
+        end else if (ap_c_n_tvout_trans_num_out_r_V_strb_V > done_cnt + 1) begin
+            done_out_r_V_strb_V <= 1;
+        end else if (size_out_r_V_strb_V > 1) begin
+            done_out_r_V_strb_V <= 0;
         end else if (out_r_TVALID == 1) begin
-            done_out_V_strb_V <= 1;
+            done_out_r_V_strb_V <= 1;
         end else begin
-            done_out_V_strb_V <= 0;
+            done_out_r_V_strb_V <= 0;
         end
     end
     
-    // out_V_last_V : axi_s
-    reg done_out_V_last_V;
+    // out_r_V_user_V : axi_s
+    reg done_out_r_V_user_V;
     
     always @ (*) begin
-        if (end_out_V_last_V) begin
-            done_out_V_last_V <= 1;
-        end else if (ap_c_n_tvout_trans_num_out_V_last_V > done_cnt + 1) begin
-            done_out_V_last_V <= 1;
-        end else if (size_out_V_last_V > 1) begin
-            done_out_V_last_V <= 0;
+        if (end_out_r_V_user_V) begin
+            done_out_r_V_user_V <= 1;
+        end else if (ap_c_n_tvout_trans_num_out_r_V_user_V > done_cnt + 1) begin
+            done_out_r_V_user_V <= 1;
+        end else if (size_out_r_V_user_V > 1) begin
+            done_out_r_V_user_V <= 0;
         end else if (out_r_TVALID == 1) begin
-            done_out_V_last_V <= 1;
+            done_out_r_V_user_V <= 1;
         end else begin
-            done_out_V_last_V <= 0;
+            done_out_r_V_user_V <= 0;
+        end
+    end
+    
+    // out_r_V_last_V : axi_s
+    reg done_out_r_V_last_V;
+    
+    always @ (*) begin
+        if (end_out_r_V_last_V) begin
+            done_out_r_V_last_V <= 1;
+        end else if (ap_c_n_tvout_trans_num_out_r_V_last_V > done_cnt + 1) begin
+            done_out_r_V_last_V <= 1;
+        end else if (size_out_r_V_last_V > 1) begin
+            done_out_r_V_last_V <= 0;
+        end else if (out_r_TVALID == 1) begin
+            done_out_r_V_last_V <= 1;
+        end else begin
+            done_out_r_V_last_V <= 0;
+        end
+    end
+    
+    // out_r_V_id_V : axi_s
+    reg done_out_r_V_id_V;
+    
+    always @ (*) begin
+        if (end_out_r_V_id_V) begin
+            done_out_r_V_id_V <= 1;
+        end else if (ap_c_n_tvout_trans_num_out_r_V_id_V > done_cnt + 1) begin
+            done_out_r_V_id_V <= 1;
+        end else if (size_out_r_V_id_V > 1) begin
+            done_out_r_V_id_V <= 0;
+        end else if (out_r_TVALID == 1) begin
+            done_out_r_V_id_V <= 1;
+        end else begin
+            done_out_r_V_id_V <= 0;
+        end
+    end
+    
+    // out_r_V_dest_V : axi_s
+    reg done_out_r_V_dest_V;
+    
+    always @ (*) begin
+        if (end_out_r_V_dest_V) begin
+            done_out_r_V_dest_V <= 1;
+        end else if (ap_c_n_tvout_trans_num_out_r_V_dest_V > done_cnt + 1) begin
+            done_out_r_V_dest_V <= 1;
+        end else if (size_out_r_V_dest_V > 1) begin
+            done_out_r_V_dest_V <= 0;
+        end else if (out_r_TVALID == 1) begin
+            done_out_r_V_dest_V <= 1;
+        end else begin
+            done_out_r_V_dest_V <= 0;
         end
     end
     
@@ -574,75 +710,75 @@ end
         if (~AESL_reset) begin
             AESL_done <= 0;
         end else begin
-            AESL_done <= done_out_V_data_V && done_out_V_keep_V && done_out_V_strb_V && done_out_V_last_V;
+            AESL_done <= done_out_r_V_data_V && done_out_r_V_keep_V && done_out_r_V_strb_V && done_out_r_V_user_V && done_out_r_V_last_V && done_out_r_V_id_V && done_out_r_V_dest_V;
         end
     end
     
-    `define STREAM_SIZE_IN_in_V_data_V "./stream_size_in_in_V_data_V.dat"
+    `define STREAM_SIZE_IN_in_r_V_data_V "./stream_size_in_in_r_V_data_V.dat"
     
-    initial begin : gen_ap_c_n_tvin_trans_num_in_V_data_V
-        integer fp_in_V_data_V;
-        reg [127:0] token_in_V_data_V;
+    initial begin : gen_ap_c_n_tvin_trans_num_in_r_V_data_V
+        integer fp_in_r_V_data_V;
+        reg [127:0] token_in_r_V_data_V;
         integer ret;
         
-        ap_c_n_tvin_trans_num_in_V_data_V = 0;
-        end_in_V_data_V = 0;
+        ap_c_n_tvin_trans_num_in_r_V_data_V = 0;
+        end_in_r_V_data_V = 0;
         wait (AESL_reset === 1);
         
-        fp_in_V_data_V = $fopen(`STREAM_SIZE_IN_in_V_data_V, "r");
-        if(fp_in_V_data_V == 0) begin
-            $display("Failed to open file \"%s\"!", `STREAM_SIZE_IN_in_V_data_V);
+        fp_in_r_V_data_V = $fopen(`STREAM_SIZE_IN_in_r_V_data_V, "r");
+        if(fp_in_r_V_data_V == 0) begin
+            $display("Failed to open file \"%s\"!", `STREAM_SIZE_IN_in_r_V_data_V);
             $finish;
         end
-        read_token(fp_in_V_data_V, token_in_V_data_V); // should be [[[runtime]]]
-        if (token_in_V_data_V != "[[[runtime]]]") begin
-            $display("ERROR: token_in_V_data_V != \"[[[runtime]]]\"");
+        read_token(fp_in_r_V_data_V, token_in_r_V_data_V); // should be [[[runtime]]]
+        if (token_in_r_V_data_V != "[[[runtime]]]") begin
+            $display("ERROR: token_in_r_V_data_V != \"[[[runtime]]]\"");
             $finish;
         end
-        size_in_V_data_V = 0;
-        size_in_V_data_V_backup = 0;
-        while (size_in_V_data_V == 0 && end_in_V_data_V == 0) begin
-            ap_c_n_tvin_trans_num_in_V_data_V = ap_c_n_tvin_trans_num_in_V_data_V + 1;
-            read_token(fp_in_V_data_V, token_in_V_data_V); // should be [[transaction]] or [[[/runtime]]]
-            if (token_in_V_data_V == "[[transaction]]") begin
-                read_token(fp_in_V_data_V, token_in_V_data_V); // should be transaction number
-                read_token(fp_in_V_data_V, token_in_V_data_V); // should be size for hls::stream
-                ret = $sscanf(token_in_V_data_V, "%d", size_in_V_data_V);
-                if (size_in_V_data_V > 0) begin
-                    size_in_V_data_V_backup = size_in_V_data_V;
+        size_in_r_V_data_V = 0;
+        size_in_r_V_data_V_backup = 0;
+        while (size_in_r_V_data_V == 0 && end_in_r_V_data_V == 0) begin
+            ap_c_n_tvin_trans_num_in_r_V_data_V = ap_c_n_tvin_trans_num_in_r_V_data_V + 1;
+            read_token(fp_in_r_V_data_V, token_in_r_V_data_V); // should be [[transaction]] or [[[/runtime]]]
+            if (token_in_r_V_data_V == "[[transaction]]") begin
+                read_token(fp_in_r_V_data_V, token_in_r_V_data_V); // should be transaction number
+                read_token(fp_in_r_V_data_V, token_in_r_V_data_V); // should be size for hls::stream
+                ret = $sscanf(token_in_r_V_data_V, "%d", size_in_r_V_data_V);
+                if (size_in_r_V_data_V > 0) begin
+                    size_in_r_V_data_V_backup = size_in_r_V_data_V;
                 end
-                read_token(fp_in_V_data_V, token_in_V_data_V); // should be [[/transaction]]
-            end else if (token_in_V_data_V == "[[[/runtime]]]") begin
-                $fclose(fp_in_V_data_V);
-                end_in_V_data_V = 1;
+                read_token(fp_in_r_V_data_V, token_in_r_V_data_V); // should be [[/transaction]]
+            end else if (token_in_r_V_data_V == "[[[/runtime]]]") begin
+                $fclose(fp_in_r_V_data_V);
+                end_in_r_V_data_V = 1;
             end else begin
-                $display("ERROR: unknown token_in_V_data_V");
+                $display("ERROR: unknown token_in_r_V_data_V");
                 $finish;
             end
         end
         forever begin
             @ (posedge AESL_clock);
-            if (end_in_V_data_V == 0) begin
+            if (end_in_r_V_data_V == 0) begin
                 if ((in_r_TREADY & in_r_TVALID) == 1) begin
-                    if (size_in_V_data_V > 0) begin
-                        size_in_V_data_V = size_in_V_data_V - 1;
-                        while (size_in_V_data_V == 0 && end_in_V_data_V == 0) begin
-                            ap_c_n_tvin_trans_num_in_V_data_V = ap_c_n_tvin_trans_num_in_V_data_V + 1;
-                            read_token(fp_in_V_data_V, token_in_V_data_V); // should be [[transaction]] or [[[/runtime]]]
-                            if (token_in_V_data_V == "[[transaction]]") begin
-                                read_token(fp_in_V_data_V, token_in_V_data_V); // should be transaction number
-                                read_token(fp_in_V_data_V, token_in_V_data_V); // should be size for hls::stream
-                                ret = $sscanf(token_in_V_data_V, "%d", size_in_V_data_V);
-                                if (size_in_V_data_V > 0) begin
-                                    size_in_V_data_V_backup = size_in_V_data_V;
+                    if (size_in_r_V_data_V > 0) begin
+                        size_in_r_V_data_V = size_in_r_V_data_V - 1;
+                        while (size_in_r_V_data_V == 0 && end_in_r_V_data_V == 0) begin
+                            ap_c_n_tvin_trans_num_in_r_V_data_V = ap_c_n_tvin_trans_num_in_r_V_data_V + 1;
+                            read_token(fp_in_r_V_data_V, token_in_r_V_data_V); // should be [[transaction]] or [[[/runtime]]]
+                            if (token_in_r_V_data_V == "[[transaction]]") begin
+                                read_token(fp_in_r_V_data_V, token_in_r_V_data_V); // should be transaction number
+                                read_token(fp_in_r_V_data_V, token_in_r_V_data_V); // should be size for hls::stream
+                                ret = $sscanf(token_in_r_V_data_V, "%d", size_in_r_V_data_V);
+                                if (size_in_r_V_data_V > 0) begin
+                                    size_in_r_V_data_V_backup = size_in_r_V_data_V;
                                 end
-                                read_token(fp_in_V_data_V, token_in_V_data_V); // should be [[/transaction]]
-                            end else if (token_in_V_data_V == "[[[/runtime]]]") begin
-                                size_in_V_data_V = size_in_V_data_V_backup;
-                                $fclose(fp_in_V_data_V);
-                                end_in_V_data_V = 1;
+                                read_token(fp_in_r_V_data_V, token_in_r_V_data_V); // should be [[/transaction]]
+                            end else if (token_in_r_V_data_V == "[[[/runtime]]]") begin
+                                size_in_r_V_data_V = size_in_r_V_data_V_backup;
+                                $fclose(fp_in_r_V_data_V);
+                                end_in_r_V_data_V = 1;
                             end else begin
-                                $display("ERROR: unknown token_in_V_data_V");
+                                $display("ERROR: unknown token_in_r_V_data_V");
                                 $finish;
                             end
                         end
@@ -650,11 +786,11 @@ end
                 end
             end else begin
                 if ((in_r_TREADY & in_r_TVALID) == 1) begin
-                    if (size_in_V_data_V > 0) begin
-                        size_in_V_data_V = size_in_V_data_V - 1;
-                        if (size_in_V_data_V == 0) begin
-                            ap_c_n_tvin_trans_num_in_V_data_V = ap_c_n_tvin_trans_num_in_V_data_V + 1;
-                            size_in_V_data_V = size_in_V_data_V_backup;
+                    if (size_in_r_V_data_V > 0) begin
+                        size_in_r_V_data_V = size_in_r_V_data_V - 1;
+                        if (size_in_r_V_data_V == 0) begin
+                            ap_c_n_tvin_trans_num_in_r_V_data_V = ap_c_n_tvin_trans_num_in_r_V_data_V + 1;
+                            size_in_r_V_data_V = size_in_r_V_data_V_backup;
                         end
                     end
                 end
@@ -662,68 +798,64 @@ end
         end
     end
     
+    `define STREAM_SIZE_OUT_out_r_V_data_V "./stream_size_out_out_r_V_data_V.dat"
     
-    initial begin : proc_ap_c_n_tvin_trans_num_out_V_data_V
-        ap_c_n_tvin_trans_num_out_V_data_V = AUTOTB_TRANSACTION_NUM + 1;
-    end
-    `define STREAM_SIZE_OUT_out_V_data_V "./stream_size_out_out_V_data_V.dat"
-    
-    initial begin : proc_ap_c_n_tvout_trans_num_out_V_data_V
-        integer fp_out_V_data_V;
-        reg [127:0] token_out_V_data_V;
+    initial begin : proc_ap_c_n_tvout_trans_num_out_r_V_data_V
+        integer fp_out_r_V_data_V;
+        reg [127:0] token_out_r_V_data_V;
         integer ret;
         
-        ap_c_n_tvout_trans_num_out_V_data_V = 0;
-        end_out_V_data_V = 0;
+        ap_c_n_tvout_trans_num_out_r_V_data_V = 0;
+        end_out_r_V_data_V = 0;
         wait (AESL_reset === 1);
         
-        fp_out_V_data_V = $fopen(`STREAM_SIZE_OUT_out_V_data_V, "r");
-        if (fp_out_V_data_V == 0) begin // Failed to open file
-            $display("Failed to open size file for \"%s\"!", `STREAM_SIZE_OUT_out_V_data_V);
+        fp_out_r_V_data_V = $fopen(`STREAM_SIZE_OUT_out_r_V_data_V, "r");
+        if (fp_out_r_V_data_V == 0) begin // Failed to open file
+            $display("Failed to open size file for \"%s\"!", `STREAM_SIZE_OUT_out_r_V_data_V);
             $finish;
         end
-        read_token(fp_out_V_data_V, token_out_V_data_V);
-        if (token_out_V_data_V != "[[[runtime]]]") begin
-            $display("ERROR: token_out_V_data_V != \"[[[runtime]]]\"");
+        read_token(fp_out_r_V_data_V, token_out_r_V_data_V);
+        if (token_out_r_V_data_V != "[[[runtime]]]") begin
+            $display("ERROR: token_out_r_V_data_V != \"[[[runtime]]]\"");
             $finish;
         end
         
-        size_out_V_data_V = 0;
-        while (size_out_V_data_V == 0 && end_out_V_data_V == 0) begin
-            ap_c_n_tvout_trans_num_out_V_data_V = ap_c_n_tvout_trans_num_out_V_data_V + 1;
-            read_token(fp_out_V_data_V, token_out_V_data_V); // should be [[transaction]] or [[[/runtime]]]
-            if (token_out_V_data_V == "[[transaction]]") begin
-                read_token(fp_out_V_data_V, token_out_V_data_V); // should be transaction number
-                read_token(fp_out_V_data_V, token_out_V_data_V); // should be size for hls::stream
-                ret = $sscanf(token_out_V_data_V, "%d", size_out_V_data_V);
-                read_token(fp_out_V_data_V, token_out_V_data_V); // should be [[/transaction]]
-            end else if (token_out_V_data_V == "[[[/runtime]]]") begin
-                $fclose(fp_out_V_data_V);
-                end_out_V_data_V = 1;
+        size_out_r_V_data_V = 0;
+        while (size_out_r_V_data_V == 0 && end_out_r_V_data_V == 0) begin
+            ap_c_n_tvout_trans_num_out_r_V_data_V = ap_c_n_tvout_trans_num_out_r_V_data_V + 1;
+            read_token(fp_out_r_V_data_V, token_out_r_V_data_V); // should be [[transaction]] or [[[/runtime]]]
+            if (token_out_r_V_data_V == "[[transaction]]") begin
+                read_token(fp_out_r_V_data_V, token_out_r_V_data_V); // should be transaction number
+                read_token(fp_out_r_V_data_V, token_out_r_V_data_V); // should be size for hls::stream
+                ret = $sscanf(token_out_r_V_data_V, "%d", size_out_r_V_data_V);
+                read_token(fp_out_r_V_data_V, token_out_r_V_data_V); // should be [[/transaction]]
+            end else if (token_out_r_V_data_V == "[[[/runtime]]]") begin
+                $fclose(fp_out_r_V_data_V);
+                end_out_r_V_data_V = 1;
             end else begin
-                $display("ERROR: unknown token_out_V_data_V");
+                $display("ERROR: unknown token_out_r_V_data_V");
                 $finish;
             end
         end
         forever begin
             @ (posedge AESL_clock);
-            if (end_out_V_data_V == 0) begin 
+            if (end_out_r_V_data_V == 0) begin 
                 if (out_r_TVALID == 1) begin
-                    if (size_out_V_data_V > 0) begin
-                        size_out_V_data_V = size_out_V_data_V - 1;
-                        while (size_out_V_data_V == 0 && end_out_V_data_V == 0) begin
-                            ap_c_n_tvout_trans_num_out_V_data_V = ap_c_n_tvout_trans_num_out_V_data_V + 1;
-                            read_token(fp_out_V_data_V, token_out_V_data_V); // should be [[transaction]] or [[[/runtime]]]
-                            if (token_out_V_data_V == "[[transaction]]") begin
-                                read_token(fp_out_V_data_V, token_out_V_data_V); // should be transaction number
-                                read_token(fp_out_V_data_V, token_out_V_data_V); // should be size for hls::stream
-                                ret = $sscanf(token_out_V_data_V, "%d", size_out_V_data_V);
-                                read_token(fp_out_V_data_V, token_out_V_data_V); // should be [[/transaction]]
-                            end else if (token_out_V_data_V == "[[[/runtime]]]") begin
-                                $fclose(fp_out_V_data_V);
-                                end_out_V_data_V = 1;
+                    if (size_out_r_V_data_V > 0) begin
+                        size_out_r_V_data_V = size_out_r_V_data_V - 1;
+                        while (size_out_r_V_data_V == 0 && end_out_r_V_data_V == 0) begin
+                            ap_c_n_tvout_trans_num_out_r_V_data_V = ap_c_n_tvout_trans_num_out_r_V_data_V + 1;
+                            read_token(fp_out_r_V_data_V, token_out_r_V_data_V); // should be [[transaction]] or [[[/runtime]]]
+                            if (token_out_r_V_data_V == "[[transaction]]") begin
+                                read_token(fp_out_r_V_data_V, token_out_r_V_data_V); // should be transaction number
+                                read_token(fp_out_r_V_data_V, token_out_r_V_data_V); // should be size for hls::stream
+                                ret = $sscanf(token_out_r_V_data_V, "%d", size_out_r_V_data_V);
+                                read_token(fp_out_r_V_data_V, token_out_r_V_data_V); // should be [[/transaction]]
+                            end else if (token_out_r_V_data_V == "[[[/runtime]]]") begin
+                                $fclose(fp_out_r_V_data_V);
+                                end_out_r_V_data_V = 1;
                             end else begin
-                                $display("ERROR: unknown token_out_V_data_V");
+                                $display("ERROR: unknown token_out_r_V_data_V");
                                 $finish;
                             end
                         end
@@ -732,68 +864,64 @@ end
             end
         end
     end
+    `define STREAM_SIZE_OUT_out_r_V_keep_V "./stream_size_out_out_r_V_keep_V.dat"
     
-    initial begin : proc_ap_c_n_tvin_trans_num_out_V_keep_V
-        ap_c_n_tvin_trans_num_out_V_keep_V = AUTOTB_TRANSACTION_NUM + 1;
-    end
-    `define STREAM_SIZE_OUT_out_V_keep_V "./stream_size_out_out_V_keep_V.dat"
-    
-    initial begin : proc_ap_c_n_tvout_trans_num_out_V_keep_V
-        integer fp_out_V_keep_V;
-        reg [127:0] token_out_V_keep_V;
+    initial begin : proc_ap_c_n_tvout_trans_num_out_r_V_keep_V
+        integer fp_out_r_V_keep_V;
+        reg [127:0] token_out_r_V_keep_V;
         integer ret;
         
-        ap_c_n_tvout_trans_num_out_V_keep_V = 0;
-        end_out_V_keep_V = 0;
+        ap_c_n_tvout_trans_num_out_r_V_keep_V = 0;
+        end_out_r_V_keep_V = 0;
         wait (AESL_reset === 1);
         
-        fp_out_V_keep_V = $fopen(`STREAM_SIZE_OUT_out_V_keep_V, "r");
-        if (fp_out_V_keep_V == 0) begin // Failed to open file
-            $display("Failed to open size file for \"%s\"!", `STREAM_SIZE_OUT_out_V_keep_V);
+        fp_out_r_V_keep_V = $fopen(`STREAM_SIZE_OUT_out_r_V_keep_V, "r");
+        if (fp_out_r_V_keep_V == 0) begin // Failed to open file
+            $display("Failed to open size file for \"%s\"!", `STREAM_SIZE_OUT_out_r_V_keep_V);
             $finish;
         end
-        read_token(fp_out_V_keep_V, token_out_V_keep_V);
-        if (token_out_V_keep_V != "[[[runtime]]]") begin
-            $display("ERROR: token_out_V_keep_V != \"[[[runtime]]]\"");
+        read_token(fp_out_r_V_keep_V, token_out_r_V_keep_V);
+        if (token_out_r_V_keep_V != "[[[runtime]]]") begin
+            $display("ERROR: token_out_r_V_keep_V != \"[[[runtime]]]\"");
             $finish;
         end
         
-        size_out_V_keep_V = 0;
-        while (size_out_V_keep_V == 0 && end_out_V_keep_V == 0) begin
-            ap_c_n_tvout_trans_num_out_V_keep_V = ap_c_n_tvout_trans_num_out_V_keep_V + 1;
-            read_token(fp_out_V_keep_V, token_out_V_keep_V); // should be [[transaction]] or [[[/runtime]]]
-            if (token_out_V_keep_V == "[[transaction]]") begin
-                read_token(fp_out_V_keep_V, token_out_V_keep_V); // should be transaction number
-                read_token(fp_out_V_keep_V, token_out_V_keep_V); // should be size for hls::stream
-                ret = $sscanf(token_out_V_keep_V, "%d", size_out_V_keep_V);
-                read_token(fp_out_V_keep_V, token_out_V_keep_V); // should be [[/transaction]]
-            end else if (token_out_V_keep_V == "[[[/runtime]]]") begin
-                $fclose(fp_out_V_keep_V);
-                end_out_V_keep_V = 1;
+        size_out_r_V_keep_V = 0;
+        while (size_out_r_V_keep_V == 0 && end_out_r_V_keep_V == 0) begin
+            ap_c_n_tvout_trans_num_out_r_V_keep_V = ap_c_n_tvout_trans_num_out_r_V_keep_V + 1;
+            read_token(fp_out_r_V_keep_V, token_out_r_V_keep_V); // should be [[transaction]] or [[[/runtime]]]
+            if (token_out_r_V_keep_V == "[[transaction]]") begin
+                read_token(fp_out_r_V_keep_V, token_out_r_V_keep_V); // should be transaction number
+                read_token(fp_out_r_V_keep_V, token_out_r_V_keep_V); // should be size for hls::stream
+                ret = $sscanf(token_out_r_V_keep_V, "%d", size_out_r_V_keep_V);
+                read_token(fp_out_r_V_keep_V, token_out_r_V_keep_V); // should be [[/transaction]]
+            end else if (token_out_r_V_keep_V == "[[[/runtime]]]") begin
+                $fclose(fp_out_r_V_keep_V);
+                end_out_r_V_keep_V = 1;
             end else begin
-                $display("ERROR: unknown token_out_V_keep_V");
+                $display("ERROR: unknown token_out_r_V_keep_V");
                 $finish;
             end
         end
         forever begin
             @ (posedge AESL_clock);
-            if (end_out_V_keep_V == 0) begin 
+            if (end_out_r_V_keep_V == 0) begin 
                 if (out_r_TVALID == 1) begin
-                    if (size_out_V_keep_V > 0) begin
-                        size_out_V_keep_V = size_out_V_keep_V - 1;
-                        while (size_out_V_keep_V == 0 && end_out_V_keep_V == 0) begin
-                            ap_c_n_tvout_trans_num_out_V_keep_V = ap_c_n_tvout_trans_num_out_V_keep_V + 1;
-                            read_token(fp_out_V_keep_V, token_out_V_keep_V); // should be [[transaction]] or [[[/runtime]]]
-                            if (token_out_V_keep_V == "[[transaction]]") begin
-                                read_token(fp_out_V_keep_V, token_out_V_keep_V); // should be transaction number
-                                read_token(fp_out_V_keep_V, token_out_V_keep_V); // should be size for hls::stream
-                                ret = $sscanf(token_out_V_keep_V, "%d", size_out_V_keep_V);
-                                read_token(fp_out_V_keep_V, token_out_V_keep_V); // should be [[/transaction]]
-                            end else if (token_out_V_keep_V == "[[[/runtime]]]") begin
-                                $fclose(fp_out_V_keep_V);
-                                end_out_V_keep_V = 1;
+                    if (size_out_r_V_keep_V > 0) begin
+                        size_out_r_V_keep_V = size_out_r_V_keep_V - 1;
+                        while (size_out_r_V_keep_V == 0 && end_out_r_V_keep_V == 0) begin
+                            ap_c_n_tvout_trans_num_out_r_V_keep_V = ap_c_n_tvout_trans_num_out_r_V_keep_V + 1;
+                            read_token(fp_out_r_V_keep_V, token_out_r_V_keep_V); // should be [[transaction]] or [[[/runtime]]]
+                            if (token_out_r_V_keep_V == "[[transaction]]") begin
+                                read_token(fp_out_r_V_keep_V, token_out_r_V_keep_V); // should be transaction number
+                                read_token(fp_out_r_V_keep_V, token_out_r_V_keep_V); // should be size for hls::stream
+                                ret = $sscanf(token_out_r_V_keep_V, "%d", size_out_r_V_keep_V);
+                                read_token(fp_out_r_V_keep_V, token_out_r_V_keep_V); // should be [[/transaction]]
+                            end else if (token_out_r_V_keep_V == "[[[/runtime]]]") begin
+                                $fclose(fp_out_r_V_keep_V);
+                                end_out_r_V_keep_V = 1;
                             end else begin
-                                $display("ERROR: unknown token_out_V_keep_V");
+                                $display("ERROR: unknown token_out_r_V_keep_V");
                                 $finish;
                             end
                         end
@@ -802,68 +930,64 @@ end
             end
         end
     end
+    `define STREAM_SIZE_OUT_out_r_V_strb_V "./stream_size_out_out_r_V_strb_V.dat"
     
-    initial begin : proc_ap_c_n_tvin_trans_num_out_V_strb_V
-        ap_c_n_tvin_trans_num_out_V_strb_V = AUTOTB_TRANSACTION_NUM + 1;
-    end
-    `define STREAM_SIZE_OUT_out_V_strb_V "./stream_size_out_out_V_strb_V.dat"
-    
-    initial begin : proc_ap_c_n_tvout_trans_num_out_V_strb_V
-        integer fp_out_V_strb_V;
-        reg [127:0] token_out_V_strb_V;
+    initial begin : proc_ap_c_n_tvout_trans_num_out_r_V_strb_V
+        integer fp_out_r_V_strb_V;
+        reg [127:0] token_out_r_V_strb_V;
         integer ret;
         
-        ap_c_n_tvout_trans_num_out_V_strb_V = 0;
-        end_out_V_strb_V = 0;
+        ap_c_n_tvout_trans_num_out_r_V_strb_V = 0;
+        end_out_r_V_strb_V = 0;
         wait (AESL_reset === 1);
         
-        fp_out_V_strb_V = $fopen(`STREAM_SIZE_OUT_out_V_strb_V, "r");
-        if (fp_out_V_strb_V == 0) begin // Failed to open file
-            $display("Failed to open size file for \"%s\"!", `STREAM_SIZE_OUT_out_V_strb_V);
+        fp_out_r_V_strb_V = $fopen(`STREAM_SIZE_OUT_out_r_V_strb_V, "r");
+        if (fp_out_r_V_strb_V == 0) begin // Failed to open file
+            $display("Failed to open size file for \"%s\"!", `STREAM_SIZE_OUT_out_r_V_strb_V);
             $finish;
         end
-        read_token(fp_out_V_strb_V, token_out_V_strb_V);
-        if (token_out_V_strb_V != "[[[runtime]]]") begin
-            $display("ERROR: token_out_V_strb_V != \"[[[runtime]]]\"");
+        read_token(fp_out_r_V_strb_V, token_out_r_V_strb_V);
+        if (token_out_r_V_strb_V != "[[[runtime]]]") begin
+            $display("ERROR: token_out_r_V_strb_V != \"[[[runtime]]]\"");
             $finish;
         end
         
-        size_out_V_strb_V = 0;
-        while (size_out_V_strb_V == 0 && end_out_V_strb_V == 0) begin
-            ap_c_n_tvout_trans_num_out_V_strb_V = ap_c_n_tvout_trans_num_out_V_strb_V + 1;
-            read_token(fp_out_V_strb_V, token_out_V_strb_V); // should be [[transaction]] or [[[/runtime]]]
-            if (token_out_V_strb_V == "[[transaction]]") begin
-                read_token(fp_out_V_strb_V, token_out_V_strb_V); // should be transaction number
-                read_token(fp_out_V_strb_V, token_out_V_strb_V); // should be size for hls::stream
-                ret = $sscanf(token_out_V_strb_V, "%d", size_out_V_strb_V);
-                read_token(fp_out_V_strb_V, token_out_V_strb_V); // should be [[/transaction]]
-            end else if (token_out_V_strb_V == "[[[/runtime]]]") begin
-                $fclose(fp_out_V_strb_V);
-                end_out_V_strb_V = 1;
+        size_out_r_V_strb_V = 0;
+        while (size_out_r_V_strb_V == 0 && end_out_r_V_strb_V == 0) begin
+            ap_c_n_tvout_trans_num_out_r_V_strb_V = ap_c_n_tvout_trans_num_out_r_V_strb_V + 1;
+            read_token(fp_out_r_V_strb_V, token_out_r_V_strb_V); // should be [[transaction]] or [[[/runtime]]]
+            if (token_out_r_V_strb_V == "[[transaction]]") begin
+                read_token(fp_out_r_V_strb_V, token_out_r_V_strb_V); // should be transaction number
+                read_token(fp_out_r_V_strb_V, token_out_r_V_strb_V); // should be size for hls::stream
+                ret = $sscanf(token_out_r_V_strb_V, "%d", size_out_r_V_strb_V);
+                read_token(fp_out_r_V_strb_V, token_out_r_V_strb_V); // should be [[/transaction]]
+            end else if (token_out_r_V_strb_V == "[[[/runtime]]]") begin
+                $fclose(fp_out_r_V_strb_V);
+                end_out_r_V_strb_V = 1;
             end else begin
-                $display("ERROR: unknown token_out_V_strb_V");
+                $display("ERROR: unknown token_out_r_V_strb_V");
                 $finish;
             end
         end
         forever begin
             @ (posedge AESL_clock);
-            if (end_out_V_strb_V == 0) begin 
+            if (end_out_r_V_strb_V == 0) begin 
                 if (out_r_TVALID == 1) begin
-                    if (size_out_V_strb_V > 0) begin
-                        size_out_V_strb_V = size_out_V_strb_V - 1;
-                        while (size_out_V_strb_V == 0 && end_out_V_strb_V == 0) begin
-                            ap_c_n_tvout_trans_num_out_V_strb_V = ap_c_n_tvout_trans_num_out_V_strb_V + 1;
-                            read_token(fp_out_V_strb_V, token_out_V_strb_V); // should be [[transaction]] or [[[/runtime]]]
-                            if (token_out_V_strb_V == "[[transaction]]") begin
-                                read_token(fp_out_V_strb_V, token_out_V_strb_V); // should be transaction number
-                                read_token(fp_out_V_strb_V, token_out_V_strb_V); // should be size for hls::stream
-                                ret = $sscanf(token_out_V_strb_V, "%d", size_out_V_strb_V);
-                                read_token(fp_out_V_strb_V, token_out_V_strb_V); // should be [[/transaction]]
-                            end else if (token_out_V_strb_V == "[[[/runtime]]]") begin
-                                $fclose(fp_out_V_strb_V);
-                                end_out_V_strb_V = 1;
+                    if (size_out_r_V_strb_V > 0) begin
+                        size_out_r_V_strb_V = size_out_r_V_strb_V - 1;
+                        while (size_out_r_V_strb_V == 0 && end_out_r_V_strb_V == 0) begin
+                            ap_c_n_tvout_trans_num_out_r_V_strb_V = ap_c_n_tvout_trans_num_out_r_V_strb_V + 1;
+                            read_token(fp_out_r_V_strb_V, token_out_r_V_strb_V); // should be [[transaction]] or [[[/runtime]]]
+                            if (token_out_r_V_strb_V == "[[transaction]]") begin
+                                read_token(fp_out_r_V_strb_V, token_out_r_V_strb_V); // should be transaction number
+                                read_token(fp_out_r_V_strb_V, token_out_r_V_strb_V); // should be size for hls::stream
+                                ret = $sscanf(token_out_r_V_strb_V, "%d", size_out_r_V_strb_V);
+                                read_token(fp_out_r_V_strb_V, token_out_r_V_strb_V); // should be [[/transaction]]
+                            end else if (token_out_r_V_strb_V == "[[[/runtime]]]") begin
+                                $fclose(fp_out_r_V_strb_V);
+                                end_out_r_V_strb_V = 1;
                             end else begin
-                                $display("ERROR: unknown token_out_V_strb_V");
+                                $display("ERROR: unknown token_out_r_V_strb_V");
                                 $finish;
                             end
                         end
@@ -872,68 +996,64 @@ end
             end
         end
     end
+    `define STREAM_SIZE_OUT_out_r_V_user_V "./stream_size_out_out_r_V_user_V.dat"
     
-    initial begin : proc_ap_c_n_tvin_trans_num_out_V_last_V
-        ap_c_n_tvin_trans_num_out_V_last_V = AUTOTB_TRANSACTION_NUM + 1;
-    end
-    `define STREAM_SIZE_OUT_out_V_last_V "./stream_size_out_out_V_last_V.dat"
-    
-    initial begin : proc_ap_c_n_tvout_trans_num_out_V_last_V
-        integer fp_out_V_last_V;
-        reg [127:0] token_out_V_last_V;
+    initial begin : proc_ap_c_n_tvout_trans_num_out_r_V_user_V
+        integer fp_out_r_V_user_V;
+        reg [127:0] token_out_r_V_user_V;
         integer ret;
         
-        ap_c_n_tvout_trans_num_out_V_last_V = 0;
-        end_out_V_last_V = 0;
+        ap_c_n_tvout_trans_num_out_r_V_user_V = 0;
+        end_out_r_V_user_V = 0;
         wait (AESL_reset === 1);
         
-        fp_out_V_last_V = $fopen(`STREAM_SIZE_OUT_out_V_last_V, "r");
-        if (fp_out_V_last_V == 0) begin // Failed to open file
-            $display("Failed to open size file for \"%s\"!", `STREAM_SIZE_OUT_out_V_last_V);
+        fp_out_r_V_user_V = $fopen(`STREAM_SIZE_OUT_out_r_V_user_V, "r");
+        if (fp_out_r_V_user_V == 0) begin // Failed to open file
+            $display("Failed to open size file for \"%s\"!", `STREAM_SIZE_OUT_out_r_V_user_V);
             $finish;
         end
-        read_token(fp_out_V_last_V, token_out_V_last_V);
-        if (token_out_V_last_V != "[[[runtime]]]") begin
-            $display("ERROR: token_out_V_last_V != \"[[[runtime]]]\"");
+        read_token(fp_out_r_V_user_V, token_out_r_V_user_V);
+        if (token_out_r_V_user_V != "[[[runtime]]]") begin
+            $display("ERROR: token_out_r_V_user_V != \"[[[runtime]]]\"");
             $finish;
         end
         
-        size_out_V_last_V = 0;
-        while (size_out_V_last_V == 0 && end_out_V_last_V == 0) begin
-            ap_c_n_tvout_trans_num_out_V_last_V = ap_c_n_tvout_trans_num_out_V_last_V + 1;
-            read_token(fp_out_V_last_V, token_out_V_last_V); // should be [[transaction]] or [[[/runtime]]]
-            if (token_out_V_last_V == "[[transaction]]") begin
-                read_token(fp_out_V_last_V, token_out_V_last_V); // should be transaction number
-                read_token(fp_out_V_last_V, token_out_V_last_V); // should be size for hls::stream
-                ret = $sscanf(token_out_V_last_V, "%d", size_out_V_last_V);
-                read_token(fp_out_V_last_V, token_out_V_last_V); // should be [[/transaction]]
-            end else if (token_out_V_last_V == "[[[/runtime]]]") begin
-                $fclose(fp_out_V_last_V);
-                end_out_V_last_V = 1;
+        size_out_r_V_user_V = 0;
+        while (size_out_r_V_user_V == 0 && end_out_r_V_user_V == 0) begin
+            ap_c_n_tvout_trans_num_out_r_V_user_V = ap_c_n_tvout_trans_num_out_r_V_user_V + 1;
+            read_token(fp_out_r_V_user_V, token_out_r_V_user_V); // should be [[transaction]] or [[[/runtime]]]
+            if (token_out_r_V_user_V == "[[transaction]]") begin
+                read_token(fp_out_r_V_user_V, token_out_r_V_user_V); // should be transaction number
+                read_token(fp_out_r_V_user_V, token_out_r_V_user_V); // should be size for hls::stream
+                ret = $sscanf(token_out_r_V_user_V, "%d", size_out_r_V_user_V);
+                read_token(fp_out_r_V_user_V, token_out_r_V_user_V); // should be [[/transaction]]
+            end else if (token_out_r_V_user_V == "[[[/runtime]]]") begin
+                $fclose(fp_out_r_V_user_V);
+                end_out_r_V_user_V = 1;
             end else begin
-                $display("ERROR: unknown token_out_V_last_V");
+                $display("ERROR: unknown token_out_r_V_user_V");
                 $finish;
             end
         end
         forever begin
             @ (posedge AESL_clock);
-            if (end_out_V_last_V == 0) begin 
+            if (end_out_r_V_user_V == 0) begin 
                 if (out_r_TVALID == 1) begin
-                    if (size_out_V_last_V > 0) begin
-                        size_out_V_last_V = size_out_V_last_V - 1;
-                        while (size_out_V_last_V == 0 && end_out_V_last_V == 0) begin
-                            ap_c_n_tvout_trans_num_out_V_last_V = ap_c_n_tvout_trans_num_out_V_last_V + 1;
-                            read_token(fp_out_V_last_V, token_out_V_last_V); // should be [[transaction]] or [[[/runtime]]]
-                            if (token_out_V_last_V == "[[transaction]]") begin
-                                read_token(fp_out_V_last_V, token_out_V_last_V); // should be transaction number
-                                read_token(fp_out_V_last_V, token_out_V_last_V); // should be size for hls::stream
-                                ret = $sscanf(token_out_V_last_V, "%d", size_out_V_last_V);
-                                read_token(fp_out_V_last_V, token_out_V_last_V); // should be [[/transaction]]
-                            end else if (token_out_V_last_V == "[[[/runtime]]]") begin
-                                $fclose(fp_out_V_last_V);
-                                end_out_V_last_V = 1;
+                    if (size_out_r_V_user_V > 0) begin
+                        size_out_r_V_user_V = size_out_r_V_user_V - 1;
+                        while (size_out_r_V_user_V == 0 && end_out_r_V_user_V == 0) begin
+                            ap_c_n_tvout_trans_num_out_r_V_user_V = ap_c_n_tvout_trans_num_out_r_V_user_V + 1;
+                            read_token(fp_out_r_V_user_V, token_out_r_V_user_V); // should be [[transaction]] or [[[/runtime]]]
+                            if (token_out_r_V_user_V == "[[transaction]]") begin
+                                read_token(fp_out_r_V_user_V, token_out_r_V_user_V); // should be transaction number
+                                read_token(fp_out_r_V_user_V, token_out_r_V_user_V); // should be size for hls::stream
+                                ret = $sscanf(token_out_r_V_user_V, "%d", size_out_r_V_user_V);
+                                read_token(fp_out_r_V_user_V, token_out_r_V_user_V); // should be [[/transaction]]
+                            end else if (token_out_r_V_user_V == "[[[/runtime]]]") begin
+                                $fclose(fp_out_r_V_user_V);
+                                end_out_r_V_user_V = 1;
                             end else begin
-                                $display("ERROR: unknown token_out_V_last_V");
+                                $display("ERROR: unknown token_out_r_V_user_V");
                                 $finish;
                             end
                         end
@@ -942,15 +1062,251 @@ end
             end
         end
     end
+    `define STREAM_SIZE_OUT_out_r_V_last_V "./stream_size_out_out_r_V_last_V.dat"
+    
+    initial begin : proc_ap_c_n_tvout_trans_num_out_r_V_last_V
+        integer fp_out_r_V_last_V;
+        reg [127:0] token_out_r_V_last_V;
+        integer ret;
+        
+        ap_c_n_tvout_trans_num_out_r_V_last_V = 0;
+        end_out_r_V_last_V = 0;
+        wait (AESL_reset === 1);
+        
+        fp_out_r_V_last_V = $fopen(`STREAM_SIZE_OUT_out_r_V_last_V, "r");
+        if (fp_out_r_V_last_V == 0) begin // Failed to open file
+            $display("Failed to open size file for \"%s\"!", `STREAM_SIZE_OUT_out_r_V_last_V);
+            $finish;
+        end
+        read_token(fp_out_r_V_last_V, token_out_r_V_last_V);
+        if (token_out_r_V_last_V != "[[[runtime]]]") begin
+            $display("ERROR: token_out_r_V_last_V != \"[[[runtime]]]\"");
+            $finish;
+        end
+        
+        size_out_r_V_last_V = 0;
+        while (size_out_r_V_last_V == 0 && end_out_r_V_last_V == 0) begin
+            ap_c_n_tvout_trans_num_out_r_V_last_V = ap_c_n_tvout_trans_num_out_r_V_last_V + 1;
+            read_token(fp_out_r_V_last_V, token_out_r_V_last_V); // should be [[transaction]] or [[[/runtime]]]
+            if (token_out_r_V_last_V == "[[transaction]]") begin
+                read_token(fp_out_r_V_last_V, token_out_r_V_last_V); // should be transaction number
+                read_token(fp_out_r_V_last_V, token_out_r_V_last_V); // should be size for hls::stream
+                ret = $sscanf(token_out_r_V_last_V, "%d", size_out_r_V_last_V);
+                read_token(fp_out_r_V_last_V, token_out_r_V_last_V); // should be [[/transaction]]
+            end else if (token_out_r_V_last_V == "[[[/runtime]]]") begin
+                $fclose(fp_out_r_V_last_V);
+                end_out_r_V_last_V = 1;
+            end else begin
+                $display("ERROR: unknown token_out_r_V_last_V");
+                $finish;
+            end
+        end
+        forever begin
+            @ (posedge AESL_clock);
+            if (end_out_r_V_last_V == 0) begin 
+                if (out_r_TVALID == 1) begin
+                    if (size_out_r_V_last_V > 0) begin
+                        size_out_r_V_last_V = size_out_r_V_last_V - 1;
+                        while (size_out_r_V_last_V == 0 && end_out_r_V_last_V == 0) begin
+                            ap_c_n_tvout_trans_num_out_r_V_last_V = ap_c_n_tvout_trans_num_out_r_V_last_V + 1;
+                            read_token(fp_out_r_V_last_V, token_out_r_V_last_V); // should be [[transaction]] or [[[/runtime]]]
+                            if (token_out_r_V_last_V == "[[transaction]]") begin
+                                read_token(fp_out_r_V_last_V, token_out_r_V_last_V); // should be transaction number
+                                read_token(fp_out_r_V_last_V, token_out_r_V_last_V); // should be size for hls::stream
+                                ret = $sscanf(token_out_r_V_last_V, "%d", size_out_r_V_last_V);
+                                read_token(fp_out_r_V_last_V, token_out_r_V_last_V); // should be [[/transaction]]
+                            end else if (token_out_r_V_last_V == "[[[/runtime]]]") begin
+                                $fclose(fp_out_r_V_last_V);
+                                end_out_r_V_last_V = 1;
+                            end else begin
+                                $display("ERROR: unknown token_out_r_V_last_V");
+                                $finish;
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+    `define STREAM_SIZE_OUT_out_r_V_id_V "./stream_size_out_out_r_V_id_V.dat"
+    
+    initial begin : proc_ap_c_n_tvout_trans_num_out_r_V_id_V
+        integer fp_out_r_V_id_V;
+        reg [127:0] token_out_r_V_id_V;
+        integer ret;
+        
+        ap_c_n_tvout_trans_num_out_r_V_id_V = 0;
+        end_out_r_V_id_V = 0;
+        wait (AESL_reset === 1);
+        
+        fp_out_r_V_id_V = $fopen(`STREAM_SIZE_OUT_out_r_V_id_V, "r");
+        if (fp_out_r_V_id_V == 0) begin // Failed to open file
+            $display("Failed to open size file for \"%s\"!", `STREAM_SIZE_OUT_out_r_V_id_V);
+            $finish;
+        end
+        read_token(fp_out_r_V_id_V, token_out_r_V_id_V);
+        if (token_out_r_V_id_V != "[[[runtime]]]") begin
+            $display("ERROR: token_out_r_V_id_V != \"[[[runtime]]]\"");
+            $finish;
+        end
+        
+        size_out_r_V_id_V = 0;
+        while (size_out_r_V_id_V == 0 && end_out_r_V_id_V == 0) begin
+            ap_c_n_tvout_trans_num_out_r_V_id_V = ap_c_n_tvout_trans_num_out_r_V_id_V + 1;
+            read_token(fp_out_r_V_id_V, token_out_r_V_id_V); // should be [[transaction]] or [[[/runtime]]]
+            if (token_out_r_V_id_V == "[[transaction]]") begin
+                read_token(fp_out_r_V_id_V, token_out_r_V_id_V); // should be transaction number
+                read_token(fp_out_r_V_id_V, token_out_r_V_id_V); // should be size for hls::stream
+                ret = $sscanf(token_out_r_V_id_V, "%d", size_out_r_V_id_V);
+                read_token(fp_out_r_V_id_V, token_out_r_V_id_V); // should be [[/transaction]]
+            end else if (token_out_r_V_id_V == "[[[/runtime]]]") begin
+                $fclose(fp_out_r_V_id_V);
+                end_out_r_V_id_V = 1;
+            end else begin
+                $display("ERROR: unknown token_out_r_V_id_V");
+                $finish;
+            end
+        end
+        forever begin
+            @ (posedge AESL_clock);
+            if (end_out_r_V_id_V == 0) begin 
+                if (out_r_TVALID == 1) begin
+                    if (size_out_r_V_id_V > 0) begin
+                        size_out_r_V_id_V = size_out_r_V_id_V - 1;
+                        while (size_out_r_V_id_V == 0 && end_out_r_V_id_V == 0) begin
+                            ap_c_n_tvout_trans_num_out_r_V_id_V = ap_c_n_tvout_trans_num_out_r_V_id_V + 1;
+                            read_token(fp_out_r_V_id_V, token_out_r_V_id_V); // should be [[transaction]] or [[[/runtime]]]
+                            if (token_out_r_V_id_V == "[[transaction]]") begin
+                                read_token(fp_out_r_V_id_V, token_out_r_V_id_V); // should be transaction number
+                                read_token(fp_out_r_V_id_V, token_out_r_V_id_V); // should be size for hls::stream
+                                ret = $sscanf(token_out_r_V_id_V, "%d", size_out_r_V_id_V);
+                                read_token(fp_out_r_V_id_V, token_out_r_V_id_V); // should be [[/transaction]]
+                            end else if (token_out_r_V_id_V == "[[[/runtime]]]") begin
+                                $fclose(fp_out_r_V_id_V);
+                                end_out_r_V_id_V = 1;
+                            end else begin
+                                $display("ERROR: unknown token_out_r_V_id_V");
+                                $finish;
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+    `define STREAM_SIZE_OUT_out_r_V_dest_V "./stream_size_out_out_r_V_dest_V.dat"
+    
+    initial begin : proc_ap_c_n_tvout_trans_num_out_r_V_dest_V
+        integer fp_out_r_V_dest_V;
+        reg [127:0] token_out_r_V_dest_V;
+        integer ret;
+        
+        ap_c_n_tvout_trans_num_out_r_V_dest_V = 0;
+        end_out_r_V_dest_V = 0;
+        wait (AESL_reset === 1);
+        
+        fp_out_r_V_dest_V = $fopen(`STREAM_SIZE_OUT_out_r_V_dest_V, "r");
+        if (fp_out_r_V_dest_V == 0) begin // Failed to open file
+            $display("Failed to open size file for \"%s\"!", `STREAM_SIZE_OUT_out_r_V_dest_V);
+            $finish;
+        end
+        read_token(fp_out_r_V_dest_V, token_out_r_V_dest_V);
+        if (token_out_r_V_dest_V != "[[[runtime]]]") begin
+            $display("ERROR: token_out_r_V_dest_V != \"[[[runtime]]]\"");
+            $finish;
+        end
+        
+        size_out_r_V_dest_V = 0;
+        while (size_out_r_V_dest_V == 0 && end_out_r_V_dest_V == 0) begin
+            ap_c_n_tvout_trans_num_out_r_V_dest_V = ap_c_n_tvout_trans_num_out_r_V_dest_V + 1;
+            read_token(fp_out_r_V_dest_V, token_out_r_V_dest_V); // should be [[transaction]] or [[[/runtime]]]
+            if (token_out_r_V_dest_V == "[[transaction]]") begin
+                read_token(fp_out_r_V_dest_V, token_out_r_V_dest_V); // should be transaction number
+                read_token(fp_out_r_V_dest_V, token_out_r_V_dest_V); // should be size for hls::stream
+                ret = $sscanf(token_out_r_V_dest_V, "%d", size_out_r_V_dest_V);
+                read_token(fp_out_r_V_dest_V, token_out_r_V_dest_V); // should be [[/transaction]]
+            end else if (token_out_r_V_dest_V == "[[[/runtime]]]") begin
+                $fclose(fp_out_r_V_dest_V);
+                end_out_r_V_dest_V = 1;
+            end else begin
+                $display("ERROR: unknown token_out_r_V_dest_V");
+                $finish;
+            end
+        end
+        forever begin
+            @ (posedge AESL_clock);
+            if (end_out_r_V_dest_V == 0) begin 
+                if (out_r_TVALID == 1) begin
+                    if (size_out_r_V_dest_V > 0) begin
+                        size_out_r_V_dest_V = size_out_r_V_dest_V - 1;
+                        while (size_out_r_V_dest_V == 0 && end_out_r_V_dest_V == 0) begin
+                            ap_c_n_tvout_trans_num_out_r_V_dest_V = ap_c_n_tvout_trans_num_out_r_V_dest_V + 1;
+                            read_token(fp_out_r_V_dest_V, token_out_r_V_dest_V); // should be [[transaction]] or [[[/runtime]]]
+                            if (token_out_r_V_dest_V == "[[transaction]]") begin
+                                read_token(fp_out_r_V_dest_V, token_out_r_V_dest_V); // should be transaction number
+                                read_token(fp_out_r_V_dest_V, token_out_r_V_dest_V); // should be size for hls::stream
+                                ret = $sscanf(token_out_r_V_dest_V, "%d", size_out_r_V_dest_V);
+                                read_token(fp_out_r_V_dest_V, token_out_r_V_dest_V); // should be [[/transaction]]
+                            end else if (token_out_r_V_dest_V == "[[[/runtime]]]") begin
+                                $fclose(fp_out_r_V_dest_V);
+                                end_out_r_V_dest_V = 1;
+                            end else begin
+                                $display("ERROR: unknown token_out_r_V_dest_V");
+                                $finish;
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+task write_binary;
+    input integer fp;
+    input reg[64-1:0] in;
+    input integer in_bw;
+    reg [63:0] tmp_long;
+    reg[64-1:0] local_in;
+    integer char_num;
+    integer long_num;
+    integer i;
+    integer j;
+    begin
+        long_num = (in_bw + 63) / 64;
+        char_num = ((in_bw - 1) % 64 + 7) / 8;
+        for(i=long_num;i>0;i=i-1) begin
+             local_in = in;
+             tmp_long = local_in >> ((i-1)*64);
+             for(j=0;j<64;j=j+1)
+                 if (tmp_long[j] === 1'bx)
+                     tmp_long[j] = 1'b0;
+             if (i == long_num) begin
+                 case(char_num)
+                     1: $fwrite(fp,"%c",tmp_long[7:0]);
+                     2: $fwrite(fp,"%c%c",tmp_long[15:8],tmp_long[7:0]);
+                     3: $fwrite(fp,"%c%c%c",tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
+                     4: $fwrite(fp,"%c%c%c%c",tmp_long[31:24],tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
+                     5: $fwrite(fp,"%c%c%c%c%c",tmp_long[39:32],tmp_long[31:24],tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
+                     6: $fwrite(fp,"%c%c%c%c%c%c",tmp_long[47:40],tmp_long[39:32],tmp_long[31:24],tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
+                     7: $fwrite(fp,"%c%c%c%c%c%c%c",tmp_long[55:48],tmp_long[47:40],tmp_long[39:32],tmp_long[31:24],tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
+                     8: $fwrite(fp,"%c%c%c%c%c%c%c%c",tmp_long[63:56],tmp_long[55:48],tmp_long[47:40],tmp_long[39:32],tmp_long[31:24],tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
+                     default: ;
+                 endcase
+             end
+             else begin
+                 $fwrite(fp,"%c%c%c%c%c%c%c%c",tmp_long[63:56],tmp_long[55:48],tmp_long[47:40],tmp_long[39:32],tmp_long[31:24],tmp_long[23:16],tmp_long[15:8],tmp_long[7:0]);
+             end
+        end
+    end
+endtask;
 
-reg dump_tvout_finish_out_V_data_V;
+reg dump_tvout_finish_out_r_V_data_V;
 
-initial begin : dump_tvout_runtime_sign_out_V_data_V
+initial begin : dump_tvout_runtime_sign_out_r_V_data_V
     integer fp;
-    dump_tvout_finish_out_V_data_V = 0;
-    fp = $fopen(`AUTOTB_TVOUT_out_V_data_V_out_wrapc, "w");
+    dump_tvout_finish_out_r_V_data_V = 0;
+    fp = $fopen(`AUTOTB_TVOUT_out_r_V_data_V_out_wrapc, "w");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_out_V_data_V_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_out_r_V_data_V_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
@@ -958,29 +1314,27 @@ initial begin : dump_tvout_runtime_sign_out_V_data_V
     $fclose(fp);
     wait (done_cnt == AUTOTB_TRANSACTION_NUM);
     // last transaction is saved at negedge right after last done
-    @ (posedge AESL_clock);
-    @ (posedge AESL_clock);
-    @ (posedge AESL_clock);
-    fp = $fopen(`AUTOTB_TVOUT_out_V_data_V_out_wrapc, "a");
+    repeat(5) @ (posedge AESL_clock);
+    fp = $fopen(`AUTOTB_TVOUT_out_r_V_data_V_out_wrapc, "a");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_out_V_data_V_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_out_r_V_data_V_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
     $fdisplay(fp,"[[[/runtime]]]");
     $fclose(fp);
-    dump_tvout_finish_out_V_data_V = 1;
+    dump_tvout_finish_out_r_V_data_V = 1;
 end
 
 
-reg dump_tvout_finish_out_V_keep_V;
+reg dump_tvout_finish_out_r_V_keep_V;
 
-initial begin : dump_tvout_runtime_sign_out_V_keep_V
+initial begin : dump_tvout_runtime_sign_out_r_V_keep_V
     integer fp;
-    dump_tvout_finish_out_V_keep_V = 0;
-    fp = $fopen(`AUTOTB_TVOUT_out_V_keep_V_out_wrapc, "w");
+    dump_tvout_finish_out_r_V_keep_V = 0;
+    fp = $fopen(`AUTOTB_TVOUT_out_r_V_keep_V_out_wrapc, "w");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_out_V_keep_V_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_out_r_V_keep_V_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
@@ -988,29 +1342,27 @@ initial begin : dump_tvout_runtime_sign_out_V_keep_V
     $fclose(fp);
     wait (done_cnt == AUTOTB_TRANSACTION_NUM);
     // last transaction is saved at negedge right after last done
-    @ (posedge AESL_clock);
-    @ (posedge AESL_clock);
-    @ (posedge AESL_clock);
-    fp = $fopen(`AUTOTB_TVOUT_out_V_keep_V_out_wrapc, "a");
+    repeat(5) @ (posedge AESL_clock);
+    fp = $fopen(`AUTOTB_TVOUT_out_r_V_keep_V_out_wrapc, "a");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_out_V_keep_V_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_out_r_V_keep_V_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
     $fdisplay(fp,"[[[/runtime]]]");
     $fclose(fp);
-    dump_tvout_finish_out_V_keep_V = 1;
+    dump_tvout_finish_out_r_V_keep_V = 1;
 end
 
 
-reg dump_tvout_finish_out_V_strb_V;
+reg dump_tvout_finish_out_r_V_strb_V;
 
-initial begin : dump_tvout_runtime_sign_out_V_strb_V
+initial begin : dump_tvout_runtime_sign_out_r_V_strb_V
     integer fp;
-    dump_tvout_finish_out_V_strb_V = 0;
-    fp = $fopen(`AUTOTB_TVOUT_out_V_strb_V_out_wrapc, "w");
+    dump_tvout_finish_out_r_V_strb_V = 0;
+    fp = $fopen(`AUTOTB_TVOUT_out_r_V_strb_V_out_wrapc, "w");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_out_V_strb_V_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_out_r_V_strb_V_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
@@ -1018,29 +1370,27 @@ initial begin : dump_tvout_runtime_sign_out_V_strb_V
     $fclose(fp);
     wait (done_cnt == AUTOTB_TRANSACTION_NUM);
     // last transaction is saved at negedge right after last done
-    @ (posedge AESL_clock);
-    @ (posedge AESL_clock);
-    @ (posedge AESL_clock);
-    fp = $fopen(`AUTOTB_TVOUT_out_V_strb_V_out_wrapc, "a");
+    repeat(5) @ (posedge AESL_clock);
+    fp = $fopen(`AUTOTB_TVOUT_out_r_V_strb_V_out_wrapc, "a");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_out_V_strb_V_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_out_r_V_strb_V_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
     $fdisplay(fp,"[[[/runtime]]]");
     $fclose(fp);
-    dump_tvout_finish_out_V_strb_V = 1;
+    dump_tvout_finish_out_r_V_strb_V = 1;
 end
 
 
-reg dump_tvout_finish_out_V_last_V;
+reg dump_tvout_finish_out_r_V_user_V;
 
-initial begin : dump_tvout_runtime_sign_out_V_last_V
+initial begin : dump_tvout_runtime_sign_out_r_V_user_V
     integer fp;
-    dump_tvout_finish_out_V_last_V = 0;
-    fp = $fopen(`AUTOTB_TVOUT_out_V_last_V_out_wrapc, "w");
+    dump_tvout_finish_out_r_V_user_V = 0;
+    fp = $fopen(`AUTOTB_TVOUT_out_r_V_user_V_out_wrapc, "w");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_out_V_last_V_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_out_r_V_user_V_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
@@ -1048,18 +1398,100 @@ initial begin : dump_tvout_runtime_sign_out_V_last_V
     $fclose(fp);
     wait (done_cnt == AUTOTB_TRANSACTION_NUM);
     // last transaction is saved at negedge right after last done
-    @ (posedge AESL_clock);
-    @ (posedge AESL_clock);
-    @ (posedge AESL_clock);
-    fp = $fopen(`AUTOTB_TVOUT_out_V_last_V_out_wrapc, "a");
+    repeat(5) @ (posedge AESL_clock);
+    fp = $fopen(`AUTOTB_TVOUT_out_r_V_user_V_out_wrapc, "a");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_out_V_last_V_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_out_r_V_user_V_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
     $fdisplay(fp,"[[[/runtime]]]");
     $fclose(fp);
-    dump_tvout_finish_out_V_last_V = 1;
+    dump_tvout_finish_out_r_V_user_V = 1;
+end
+
+
+reg dump_tvout_finish_out_r_V_last_V;
+
+initial begin : dump_tvout_runtime_sign_out_r_V_last_V
+    integer fp;
+    dump_tvout_finish_out_r_V_last_V = 0;
+    fp = $fopen(`AUTOTB_TVOUT_out_r_V_last_V_out_wrapc, "w");
+    if (fp == 0) begin
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_out_r_V_last_V_out_wrapc);
+        $display("ERROR: Simulation using HLS TB failed.");
+        $finish;
+    end
+    $fdisplay(fp,"[[[runtime]]]");
+    $fclose(fp);
+    wait (done_cnt == AUTOTB_TRANSACTION_NUM);
+    // last transaction is saved at negedge right after last done
+    repeat(5) @ (posedge AESL_clock);
+    fp = $fopen(`AUTOTB_TVOUT_out_r_V_last_V_out_wrapc, "a");
+    if (fp == 0) begin
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_out_r_V_last_V_out_wrapc);
+        $display("ERROR: Simulation using HLS TB failed.");
+        $finish;
+    end
+    $fdisplay(fp,"[[[/runtime]]]");
+    $fclose(fp);
+    dump_tvout_finish_out_r_V_last_V = 1;
+end
+
+
+reg dump_tvout_finish_out_r_V_id_V;
+
+initial begin : dump_tvout_runtime_sign_out_r_V_id_V
+    integer fp;
+    dump_tvout_finish_out_r_V_id_V = 0;
+    fp = $fopen(`AUTOTB_TVOUT_out_r_V_id_V_out_wrapc, "w");
+    if (fp == 0) begin
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_out_r_V_id_V_out_wrapc);
+        $display("ERROR: Simulation using HLS TB failed.");
+        $finish;
+    end
+    $fdisplay(fp,"[[[runtime]]]");
+    $fclose(fp);
+    wait (done_cnt == AUTOTB_TRANSACTION_NUM);
+    // last transaction is saved at negedge right after last done
+    repeat(5) @ (posedge AESL_clock);
+    fp = $fopen(`AUTOTB_TVOUT_out_r_V_id_V_out_wrapc, "a");
+    if (fp == 0) begin
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_out_r_V_id_V_out_wrapc);
+        $display("ERROR: Simulation using HLS TB failed.");
+        $finish;
+    end
+    $fdisplay(fp,"[[[/runtime]]]");
+    $fclose(fp);
+    dump_tvout_finish_out_r_V_id_V = 1;
+end
+
+
+reg dump_tvout_finish_out_r_V_dest_V;
+
+initial begin : dump_tvout_runtime_sign_out_r_V_dest_V
+    integer fp;
+    dump_tvout_finish_out_r_V_dest_V = 0;
+    fp = $fopen(`AUTOTB_TVOUT_out_r_V_dest_V_out_wrapc, "w");
+    if (fp == 0) begin
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_out_r_V_dest_V_out_wrapc);
+        $display("ERROR: Simulation using HLS TB failed.");
+        $finish;
+    end
+    $fdisplay(fp,"[[[runtime]]]");
+    $fclose(fp);
+    wait (done_cnt == AUTOTB_TRANSACTION_NUM);
+    // last transaction is saved at negedge right after last done
+    repeat(5) @ (posedge AESL_clock);
+    fp = $fopen(`AUTOTB_TVOUT_out_r_V_dest_V_out_wrapc, "a");
+    if (fp == 0) begin
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_out_r_V_dest_V_out_wrapc);
+        $display("ERROR: Simulation using HLS TB failed.");
+        $finish;
+    end
+    $fdisplay(fp,"[[[/runtime]]]");
+    $fclose(fp);
+    dump_tvout_finish_out_r_V_dest_V = 1;
 end
 
 
@@ -1204,6 +1636,8 @@ endtask
 task calculate_performance();
     integer i;
     integer fp;
+    integer real_cnt;
+    integer valid_cnt;
     reg [31:0] latency [0:AUTOTB_TRANSACTION_NUM - 1];
     reg [31:0] latency_min;
     reg [31:0] latency_max;
@@ -1223,20 +1657,27 @@ task calculate_performance();
         interval_max = 0;
         interval_total = 0;
         total_execute_time = lat_total;
+        real_cnt = (start_cnt < finish_cnt) ? start_cnt : AUTOTB_TRANSACTION_NUM;
+        valid_cnt = 0;
 
-        for (i = 0; i < AUTOTB_TRANSACTION_NUM; i = i + 1) begin
+        for (i = 0; i < real_cnt; i = i + 1) begin
             // calculate latency
-            latency[i] = finish_timestamp[i] - start_timestamp[i];
-            if (latency[i] > latency_max) latency_max = latency[i];
-            if (latency[i] < latency_min) latency_min = latency[i];
-            latency_total = latency_total + latency[i];
+            if (finish_timestamp[i] >= start_timestamp[i]) begin
+                latency[i] = finish_timestamp[i] - start_timestamp[i];
+                if (latency[i] > latency_max) latency_max = latency[i];
+                if (latency[i] < latency_min) latency_min = latency[i];
+                latency_total = latency_total + latency[i];
+                valid_cnt = valid_cnt + 1;
+            end else begin
+                latency[i] = 0;
+            end
             // calculate interval
-            if (AUTOTB_TRANSACTION_NUM == 1) begin
+            if (real_cnt == 1) begin
                 interval[i] = 0;
                 interval_max = 0;
                 interval_min = 0;
                 interval_total = 0;
-            end else if (i < AUTOTB_TRANSACTION_NUM - 1) begin
+            end else if (i < real_cnt - 1) begin
                 interval[i] = start_timestamp[i + 1] - start_timestamp[i];
                 if (interval[i] > interval_max) interval_max = interval[i];
                 if (interval[i] < interval_min) interval_min = interval[i];
@@ -1244,11 +1685,14 @@ task calculate_performance();
             end
         end
 
-        latency_average = latency_total / AUTOTB_TRANSACTION_NUM;
-        if (AUTOTB_TRANSACTION_NUM == 1) begin
+        if (valid_cnt > 0)
+            latency_average = latency_total / valid_cnt;
+        else
+            latency_average = latency_total;
+        if (real_cnt == 1) begin
             interval_average = 0;
         end else begin
-            interval_average = interval_total / (AUTOTB_TRANSACTION_NUM - 1);
+            interval_average = interval_total / (real_cnt - 1);
         end
 
         fp = $fopen(`AUTOTB_LAT_RESULT_FILE, "w");
@@ -1266,12 +1710,12 @@ task calculate_performance();
         fp = $fopen(`AUTOTB_PER_RESULT_TRANS_FILE, "w");
 
         $fdisplay(fp, "%20s%16s%16s", "", "latency", "interval");
-        if (AUTOTB_TRANSACTION_NUM == 1) begin
+        if (real_cnt == 1) begin
             i = 0;
             $fdisplay(fp, "transaction%8d:%16d%16d", i, latency[i], interval[i]);
         end else begin
-            for (i = 0; i < AUTOTB_TRANSACTION_NUM; i = i + 1) begin
-                if (i < AUTOTB_TRANSACTION_NUM - 1) begin
+            for (i = 0; i < real_cnt; i = i + 1) begin
+                if (i < real_cnt - 1) begin
                     $fdisplay(fp, "transaction%8d:%16d%16d", i, latency[i], interval[i]);
                 end else begin
                     $fdisplay(fp, "transaction%8d:%16d               x", i, latency[i]);
@@ -1280,6 +1724,8 @@ task calculate_performance();
         end
 
         $fclose(fp);
+        if (start_cnt < finish_cnt)
+            $display("Note: for this 'ap_ctrl_none' design the last %0d transactions have no output. In order to save runtime, cosim will end eariler after getting all needed output. So performance report only covers the first %0d transactions.",(finish_cnt - start_cnt), start_cnt);
     end
 endtask
 
@@ -1291,6 +1737,11 @@ endtask
 `ifndef POST_SYN
 
 `endif
+
+AESL_deadlock_kernel_monitor_top kernel_monitor_top(
+    .kernel_monitor_reset(~AESL_reset),
+    .kernel_monitor_clock(AESL_clock));
+
 ///////////////////////////////////////////////////////
 // dataflow status monitor
 ///////////////////////////////////////////////////////

@@ -1,6 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AdditionalInfo>
   <CTypeInfo>
+      <RtlPort>
+        <name>in_r_TDATA</name>
+        <type>Floating-point</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>in_r_TDEST</name>
+        <type>Floating-point</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>in_r_TID</name>
+        <type>Floating-point</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>in_r_TKEEP</name>
+        <type>Floating-point</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>in_r_TLAST</name>
+        <type>Floating-point</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>in_r_TREADY</name>
+        <type>Floating-point</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>in_r_TSTRB</name>
+        <type>Floating-point</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>in_r_TUSER</name>
+        <type>Floating-point</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>in_r_TVALID</name>
+        <type>Floating-point</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>out_r_TDATA</name>
+        <type>Floating-point</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>out_r_TDEST</name>
+        <type>Floating-point</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>out_r_TID</name>
+        <type>Floating-point</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>out_r_TKEEP</name>
+        <type>Floating-point</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>out_r_TLAST</name>
+        <type>Floating-point</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>out_r_TREADY</name>
+        <type>Floating-point</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>out_r_TSTRB</name>
+        <type>Floating-point</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>out_r_TUSER</name>
+        <type>Floating-point</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>out_r_TVALID</name>
+        <type>Floating-point</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
   </CTypeInfo>
   <DesignConstraint>
     <clk_period>7</clk_period>
@@ -8,7 +98,7 @@
   <Machine>64</Machine>
   <modelParameters>
     <combinational>0</combinational>
-    <latency>20</latency>
-    <II>x</II>
+    <latency>16</latency>
+    <II>17</II>
   </modelParameters>
 </AdditionalInfo>

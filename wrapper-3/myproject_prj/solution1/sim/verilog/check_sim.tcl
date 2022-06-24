@@ -1,6 +1,6 @@
 # ==============================================================
 # Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
-# Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+# Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 # ==============================================================
 proc sc_sim_check {ret err logfile} {
 	if {$::AESL_AUTOSIM::gDebug == 1} {
@@ -80,28 +80,18 @@ proc check_tvin_file {} {
 		puts stdout "[debug_prompt arg check_sim.tcl] start...";
 	}
     set rtlfilelist {
-         "c.myproject_axi.autotvin_in_V_data_V.dat"
-         "c.myproject_axi.autotvin_in_V_keep_V.dat"
-         "c.myproject_axi.autotvin_in_V_strb_V.dat"
-         "c.myproject_axi.autotvin_in_V_last_V.dat"
-         "c.myproject_axi.autotvin_out_V_data_V.dat"
-         "c.myproject_axi.autotvin_out_V_keep_V.dat"
-         "c.myproject_axi.autotvin_out_V_strb_V.dat"
-         "c.myproject_axi.autotvin_out_V_last_V.dat"
-         "c.myproject_axi.autotvout_out_V_data_V.dat"
-         "c.myproject_axi.autotvout_out_V_keep_V.dat"
-         "c.myproject_axi.autotvout_out_V_strb_V.dat"
-         "c.myproject_axi.autotvout_out_V_last_V.dat"
+         "c.myproject_axi.autotvin_in_r_V_data_V.dat"
+         "c.myproject_axi.autotvin_in_r_V_keep_V.dat"
+         "c.myproject_axi.autotvin_in_r_V_strb_V.dat"
+         "c.myproject_axi.autotvin_in_r_V_user_V.dat"
+         "c.myproject_axi.autotvin_in_r_V_last_V.dat"
+         "c.myproject_axi.autotvin_in_r_V_id_V.dat"
+         "c.myproject_axi.autotvin_in_r_V_dest_V.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {
         } else {
             ::AP::printMsg ERR COSIM 320 COSIM_320_994
-            return 1
-        }
-        set ret [catch {eval exec "grep /runtime $rtlfile"} err]
-        if { $ret } {
-            ::AP::printMsg ERR COSIM 320 COSIM_320_995
             return 1
         }
     }
@@ -116,20 +106,18 @@ proc check_tvout_file {} {
 		puts stdout "[debug_prompt arg check_sim.tcl] start...";
 	}
     set rtlfilelist {
-         "rtl.myproject_axi.autotvout_out_V_data_V.dat"
-         "rtl.myproject_axi.autotvout_out_V_keep_V.dat"
-         "rtl.myproject_axi.autotvout_out_V_strb_V.dat"
-         "rtl.myproject_axi.autotvout_out_V_last_V.dat"
+         "rtl.myproject_axi.autotvout_out_r_V_data_V.dat"
+         "rtl.myproject_axi.autotvout_out_r_V_keep_V.dat"
+         "rtl.myproject_axi.autotvout_out_r_V_strb_V.dat"
+         "rtl.myproject_axi.autotvout_out_r_V_user_V.dat"
+         "rtl.myproject_axi.autotvout_out_r_V_last_V.dat"
+         "rtl.myproject_axi.autotvout_out_r_V_id_V.dat"
+         "rtl.myproject_axi.autotvout_out_r_V_dest_V.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {
         } else {
             ::AP::printMsg ERR COSIM 303 COSIM_303_996
-            return 1
-        }
-        set ret [catch {eval exec "grep /runtime $rtlfile"} err]
-        if { $ret } {
-            ::AP::printMsg ERR COSIM 303 COSIM_303_997
             return 1
         }
     }

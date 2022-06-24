@@ -1,6 +1,6 @@
 ==============================================================
 Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
-Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ==============================================================
 INFO: [HLS 200-1505] Using default flow_target 'vivado'
 INFO: [HLS 200-1510] Running: config_array_partition -maximum_size 4096 
@@ -9,7 +9,7 @@ ERROR: [HLS 200-642] The 'config_array_partition -maximum_size' command is not s
 INFO: [HLS 200-1510] Running: config_compile -name_max_length 60 
 INFO: [XFORM 203-1161] The maximum of name length is set into 60.
 INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
-INFO: [HLS 200-10] Setting target device to 'xczu3eg-sbva484-1-e'
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
 INFO: [XFORM 203-1161] The maximum of name length is set into 60.
 INFO: [HLS 200-1510] Running: create_clock -period 7 -name default 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 7ns.
@@ -18,28 +18,15 @@ INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-111] Finished Command csim_design CPU user time: 5.04 seconds. CPU system time: 0.48 seconds. Elapsed time: 4.84 seconds; current allocated memory: 121.085 MB.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 5.08 seconds. CPU system time: 0.48 seconds. Elapsed time: 4.56 seconds; current allocated memory: -937.109 MB.
 INFO: [HLS 200-1510] Running: csynth_design 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0.01 seconds. Elapsed time: 0 seconds; current allocated memory: 121.257 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 161.066 MB.
 INFO: [HLS 200-10] Analyzing design file 'firmware/myproject.cpp' ... 
-WARNING: [HLS 207-5537] '#pragma HLS unroll' can only be applied inside loop body: firmware/myproject.cpp:9:9
+WARNING: [HLS 207-5565] '#pragma HLS unroll' can only be applied inside loop body (firmware/myproject.cpp:9:9)
 INFO: [HLS 200-10] Analyzing design file 'firmware/myproject_axi.cpp' ... 
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 6.53 seconds. CPU system time: 0.4 seconds. Elapsed time: 6.96 seconds; current allocated memory: 123.714 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 7.55 seconds. CPU system time: 0.5 seconds. Elapsed time: 8.1 seconds; current allocated memory: 164.336 MB.
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
-INFO: [HLS 214-131] Inlining function 'hls::axis<float, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<float, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:293:50)
-INFO: [HLS 214-131] Inlining function 'hls::axis<float, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<float, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:296:25)
-INFO: [HLS 214-131] Inlining function 'hls::axis<float, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<float, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:295:67)
-INFO: [HLS 214-131] Inlining function 'hls::axis<float, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<float, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:295:36)
-INFO: [HLS 214-131] Inlining function 'hls::axis<float, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<float, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:294:39)
-INFO: [HLS 214-131] Inlining function 'hls::axis<float, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<float, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:294:23)
-INFO: [HLS 214-131] Inlining function 'hls::axis<float, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<float, 0ul, 0ul, 0ul>, 0>::write(hls::axis<float, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:304:51)
-INFO: [HLS 214-131] Inlining function 'hls::axis<float, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<float, 0ul, 0ul, 0ul>, 0>::write(hls::axis<float, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:307:26)
-INFO: [HLS 214-131] Inlining function 'hls::axis<float, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<float, 0ul, 0ul, 0ul>, 0>::write(hls::axis<float, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:68)
-INFO: [HLS 214-131] Inlining function 'hls::axis<float, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<float, 0ul, 0ul, 0ul>, 0>::write(hls::axis<float, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:37)
-INFO: [HLS 214-131] Inlining function 'hls::axis<float, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<float, 0ul, 0ul, 0ul>, 0>::write(hls::axis<float, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:40)
-INFO: [HLS 214-131] Inlining function 'hls::axis<float, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<float, 0ul, 0ul, 0ul>, 0>::write(hls::axis<float, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:24)
-INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<float, 0ul, 0ul, 0ul>, 0>::read()' into 'myproject_axi(hls::stream<hls::axis<float, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<float, 0ul, 0ul, 0ul>, 0>&)' (firmware/myproject_axi.cpp:25:17)
-INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<float, 0ul, 0ul, 0ul>, 0>::write(hls::axis<float, 0ul, 0ul, 0ul> const&)' into 'myproject_axi(hls::stream<hls::axis<float, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<float, 0ul, 0ul, 0ul>, 0>&)' (firmware/myproject_axi.cpp:41:13)
+INFO: [HLS 214-284] Auto array partition mode is set into default.
 INFO: [HLS 214-210] Disaggregating variable 'bdt' (firmware/parameters.h:18:0)
 INFO: [HLS 214-210] Disaggregating variable 'bdt (.21)' (firmware/parameters.h:18:0)
 INFO: [HLS 214-210] Disaggregating variable 'bdt (.20)' (firmware/parameters.h:18:0)
@@ -61,159 +48,281 @@ INFO: [HLS 214-210] Disaggregating variable 'bdt (.5)' (firmware/parameters.h:18
 INFO: [HLS 214-210] Disaggregating variable 'bdt (.4)' (firmware/parameters.h:18:0)
 INFO: [HLS 214-210] Disaggregating variable 'bdt (.3)' (firmware/parameters.h:18:0)
 INFO: [HLS 214-210] Disaggregating variable 'bdt (.2)' (firmware/parameters.h:18:0)
-INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<0, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:125:13)
-INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<0, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:112:11)
-INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<1, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:125:13)
-INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<1, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:112:11)
-INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:125:13)
-INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:112:11)
-INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<3, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:125:13)
-INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<3, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:112:11)
-INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<4, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:125:13)
-INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<4, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:112:11)
-INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<5, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:125:13)
-INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<5, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:112:11)
-INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<6, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:125:13)
-INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<6, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:112:11)
-INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<7, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:125:13)
-INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<7, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:112:11)
-INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<8, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:125:13)
-INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<8, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:112:11)
-INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<9, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:125:13)
-INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<9, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:112:11)
-INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<10, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:125:13)
-INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<10, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:112:11)
-INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<11, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:125:13)
-INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<11, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:112:11)
-INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<12, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:125:13)
-INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<12, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:112:11)
-INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<13, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:125:13)
-INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<13, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:112:11)
-INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<14, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:125:13)
-INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<14, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:112:11)
-INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<15, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:125:13)
-INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<15, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:112:11)
-INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<16, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:125:13)
-INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<16, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:112:11)
-INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<17, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:125:13)
-INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<17, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:112:11)
-INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<18, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:125:13)
-INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<18, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:112:11)
-INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<19, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:125:13)
-INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<19, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:112:11)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 6.36 seconds. CPU system time: 0.25 seconds. Elapsed time: 6.64 seconds; current allocated memory: 131.391 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 131.393 MB.
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_300_21' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:300:28)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_287_20' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:287:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_282_19' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:282:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_277_18' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:277:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_272_17' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:272:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_267_16' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:267:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_262_15' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:262:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_257_14' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:257:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_252_13' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:252:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_247_12' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:247:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_242_11' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:242:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_237_10' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:237:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_232_9' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:232:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_227_8' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:227:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_222_7' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:222:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_217_6' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:217:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_212_5' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:212:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_207_4' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:207:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_202_3' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:202:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_197_2' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:197:21)
+INFO: [HLS 214-291] Loop 'Trees' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:192:3)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_188_1' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:188:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_147_1' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:147:21)
+INFO: [HLS 214-291] Loop 'Activate' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:125:13)
+INFO: [HLS 214-291] Loop 'Compare' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:112:11)
+INFO: [HLS 214-291] Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:104:11)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_32_2' (firmware/myproject_axi.cpp:32:22) in function 'myproject_axi' completely with a factor of 1 (firmware/myproject_axi.cpp:6:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_22_1' (firmware/myproject_axi.cpp:22:22) in function 'myproject_axi' completely with a factor of 10 (firmware/myproject_axi.cpp:6:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_300_21' (firmware/BDT.h:300:28) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_287_20' (firmware/BDT.h:287:22) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_282_19' (firmware/BDT.h:282:22) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_277_18' (firmware/BDT.h:277:22) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_272_17' (firmware/BDT.h:272:22) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_267_16' (firmware/BDT.h:267:22) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_262_15' (firmware/BDT.h:262:22) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_257_14' (firmware/BDT.h:257:22) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_252_13' (firmware/BDT.h:252:22) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_247_12' (firmware/BDT.h:247:22) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_242_11' (firmware/BDT.h:242:22) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_237_10' (firmware/BDT.h:237:22) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_232_9' (firmware/BDT.h:232:21) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_227_8' (firmware/BDT.h:227:21) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_222_7' (firmware/BDT.h:222:21) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_217_6' (firmware/BDT.h:217:21) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_212_5' (firmware/BDT.h:212:21) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_207_4' (firmware/BDT.h:207:21) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_202_3' (firmware/BDT.h:202:21) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_197_2' (firmware/BDT.h:197:21) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'Trees' (firmware/BDT.h:192:3) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_188_1' (firmware/BDT.h:188:21) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<19, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<19, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<19, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<19, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<18, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<18, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<18, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<18, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<17, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<17, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<17, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<17, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<16, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<16, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<16, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<16, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<15, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<15, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<15, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<15, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<14, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<14, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<14, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<14, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<13, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<13, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<13, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<13, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<12, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<12, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<12, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<12, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<11, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<11, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<11, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<11, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<10, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<10, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<10, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<10, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<9, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<9, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<9, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<9, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<8, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<8, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<8, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<8, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<7, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<7, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<7, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<7, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<6, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<6, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<6, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<6, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<5, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<5, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<5, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<5, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<4, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<4, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<4, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<4, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<3, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<3, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<3, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<3, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<1, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<1, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<1, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<1, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<0, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<0, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<0, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<0, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.21.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.21.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.21.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.21.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.21.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.21.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.20.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.20.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.20.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.20.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.20.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.20.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.19.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.19.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.19.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.19.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.19.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.19.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.18.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.18.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.18.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.18.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.18.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.18.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.17.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.17.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.17.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.17.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.17.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.17.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.16.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.16.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.16.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.16.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.16.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.16.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.15.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.15.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.15.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.15.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.15.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.15.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.14.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.14.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.14.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.14.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.14.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.14.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.13.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.13.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.13.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.13.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.13.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.13.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.12.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.12.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.12.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.12.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.12.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.12.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.11.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.11.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.11.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.11.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.11.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.11.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.10.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.10.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.10.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.10.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.10.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.10.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.9.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.9.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.9.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.9.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.9.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.9.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.8.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.8.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.8.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.8.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.8.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.8.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.7.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.7.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.7.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.7.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.7.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.7.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.6.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.6.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.6.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.6.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.6.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.6.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.5.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.5.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.5.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.5.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.5.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.5.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.4.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.4.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.4.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.4.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.4.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.4.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.3.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.3.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.3.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.3.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.3.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.3.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.2.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.2.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.2.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.2.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.2.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.2.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to 'comparison': Complete partitioning on dimension 1. (firmware/BDT.h:101:7)
+INFO: [HLS 214-248] Applying array_partition to 'activation': Complete partitioning on dimension 1. (firmware/BDT.h:102:8)
+INFO: [HLS 214-248] Applying array_partition to 'activation_leaf': Complete partitioning on dimension 1. (firmware/BDT.h:103:8)
+INFO: [HLS 214-248] Applying array_partition to 'value_leaf': Complete partitioning on dimension 1. (firmware/BDT.h:104:11)
+INFO: [HLS 214-248] Applying array_partition to 'tree_scores': Complete partitioning on dimension 1. (firmware/myproject_axi.cpp:15:13)
+INFO: [HLS 214-248] Applying array_partition to 'in_local': Complete partitioning on dimension 1. (firmware/myproject_axi.cpp:19:16)
+INFO: [HLS 214-248] Applying array_partition to 'out_local': Complete partitioning on dimension 1. (firmware/myproject_axi.cpp:20:14)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.f32.i32' into 'myproject_axi(hls::stream<hls::axis<float, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<float, 1ul, 1ul, 1ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:293:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i1.s_struct.ap_uint<1>s' into 'myproject_axi(hls::stream<hls::axis<float, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<float, 1ul, 1ul, 1ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i4.s_struct.ap_uint<4>s' into 'myproject_axi(hls::stream<hls::axis<float, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<float, 1ul, 1ul, 1ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i32.f32' into 'myproject_axi(hls::stream<hls::axis<float, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<float, 1ul, 1ul, 1ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 5.25 seconds. CPU system time: 0.23 seconds. Elapsed time: 5.49 seconds; current allocated memory: 168.695 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 168.695 MB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.16 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 144.912 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 212.145 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
-WARNING: [SYNCHK 200-23] /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h:947: variable-indexed range selection may cause suboptimal QoR.
+WARNING: [SYNCHK 200-23] /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1000: variable-indexed range selection may cause suboptimal QoR.
 INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.26 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.27 seconds; current allocated memory: 162.534 MB.
-INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'BDT::Tree<7, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' (firmware/BDT.h:103:51).
-INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'BDT::Tree<6, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' (firmware/BDT.h:103:51).
-INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'BDT::Tree<5, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' (firmware/BDT.h:103:51).
-INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'BDT::Tree<4, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' (firmware/BDT.h:103:51).
-INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'BDT::Tree<3, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' (firmware/BDT.h:103:51).
-INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'BDT::Tree<2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' (firmware/BDT.h:103:51).
-INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'BDT::Tree<1, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' (firmware/BDT.h:103:51).
-INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'BDT::Tree<0, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' (firmware/BDT.h:103:51).
-INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147) in function 'BDT::Tree<7, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4.
-INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147) in function 'BDT::Tree<6, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4.
-INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147) in function 'BDT::Tree<5, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4.
-INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147) in function 'BDT::Tree<4, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4.
-INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147) in function 'BDT::Tree<3, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4.
-INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147) in function 'BDT::Tree<2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4.
-INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147) in function 'BDT::Tree<1, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4.
-INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147) in function 'BDT::Tree<0, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4.
-INFO: [XFORM 203-101] Partitioning array 'in_local.V' (firmware/myproject_axi.cpp:19) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'out_local.V' (firmware/myproject_axi.cpp:20) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'tree_scores'  in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_6.feature'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_6.value.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_7.feature'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_2.children_left'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_3.children_left'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_1.children_left'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_8.children_left'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_4.children_left'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_9.value.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_7.threshold.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_19.value.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_11.value.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_0.children_left'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_4.threshold.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_17.children_left'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_15.children_left'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_8.value.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_5.parent'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_7.parent'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_14.value.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_12.value.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_3.parent'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_4.value.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_3.feature'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_10.value.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_2.feature'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_13.children_left'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_3.value.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_7.value.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_16.children_left'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_0.parent'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_1.threshold.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_5.feature'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_5.threshold.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_12.children_left'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_6.parent'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_0.value.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_18.value.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_1.parent'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_2.threshold.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_3.threshold.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_18.children_left'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_7.children_left'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_15.value.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_0.threshold.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_1.feature'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_5.children_left'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_9.children_left'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_6.children_left'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_10.children_left'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_19.children_left'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_16.value.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_13.value.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_17.value.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_4.feature'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_14.children_left'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_11.children_left'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_2.value.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_6.threshold.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_0.feature'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_1.value.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_5.value.V'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_4.parent'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'bdt.tree_2.parent'  in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'activation_leaf' (firmware/BDT.h:103) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'value_leaf.V' (firmware/BDT.h:104) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'activation_leaf' (firmware/BDT.h:103) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'value_leaf.V' (firmware/BDT.h:104) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'activation_leaf' (firmware/BDT.h:103) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'value_leaf.V' (firmware/BDT.h:104) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'activation_leaf' (firmware/BDT.h:103) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'value_leaf.V' (firmware/BDT.h:104) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'activation_leaf' (firmware/BDT.h:103) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'value_leaf.V' (firmware/BDT.h:104) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'activation_leaf' (firmware/BDT.h:103) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'value_leaf.V' (firmware/BDT.h:104) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'activation_leaf' (firmware/BDT.h:103) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'value_leaf.V' (firmware/BDT.h:104) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'activation_leaf' (firmware/BDT.h:103) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'value_leaf.V' (firmware/BDT.h:104) in dimension 1 completely.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.31 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.34 seconds; current allocated memory: 268.285 MB.
 INFO: [XFORM 203-602] Inlining function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' into 'myproject' (firmware/myproject.cpp:10) automatically.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'myproject_axi'... converting 20 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (firmware/myproject_axi.cpp:32:35) in function 'myproject_axi'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (firmware/myproject_axi.cpp:47:1) in function 'myproject_axi'... converting 89 basic blocks.
 INFO: [XFORM 203-11] Balancing expressions in function 'myproject' (firmware/BDT.h:4:26)...8 expression(s) balanced.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.64 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.66 seconds; current allocated memory: 202.340 MB.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.22 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.23 seconds; current allocated memory: 289.097 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.51 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.52 seconds; current allocated memory: 347.910 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.22 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.24 seconds; current allocated memory: 439.969 MB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'myproject_axi' ...
 WARNING: [SYN 201-103] Legalizing function name 'decision_function.7' to 'decision_function_7'.
@@ -228,171 +337,668 @@ INFO: [HLS 200-42] -- Implementing module 'decision_function_7'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'decision_function.7'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, function 'decision_function.7'
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.7'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 289.329 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 441.082 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 289.436 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 441.145 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'decision_function_6' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'decision_function.6'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, function 'decision_function.6'
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.6'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 289.540 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 441.320 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 289.643 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 441.383 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'decision_function_5' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'decision_function.5'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, function 'decision_function.5'
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.5'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 289.738 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 441.559 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 289.839 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 441.578 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'decision_function_4' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'decision_function.4'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, function 'decision_function.4'
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.4'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 289.936 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 441.785 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 290.038 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 441.871 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'decision_function_3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'decision_function.3'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, function 'decision_function.3'
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.3'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 290.131 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 442.047 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 290.232 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 442.070 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'decision_function_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'decision_function.2'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, function 'decision_function.2'
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.2'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 290.324 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 442.273 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 290.429 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 442.336 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'decision_function_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'decision_function.1'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, function 'decision_function.1'
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 290.530 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 442.516 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 290.631 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 442.641 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'decision_function' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'decision_function'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, function 'decision_function'
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 290.720 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 442.738 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 290.825 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 442.797 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'myproject' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'myproject'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, function 'myproject'
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'myproject'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 290.940 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 443.004 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.33 seconds. CPU system time: 0 seconds. Elapsed time: 0.34 seconds; current allocated memory: 291.077 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 443.055 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'myproject_axi' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_22_1'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_22_1'
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_32_2'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_32_2'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.31 seconds. CPU system time: 0 seconds. Elapsed time: 0.31 seconds; current allocated memory: 291.775 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.4 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.41 seconds; current allocated memory: 447.582 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.22 seconds. CPU system time: 0 seconds. Elapsed time: 0.21 seconds; current allocated memory: 292.731 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.42 seconds. CPU system time: 0 seconds. Elapsed time: 0.42 seconds; current allocated memory: 447.582 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_7' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_7'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.43 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.43 seconds; current allocated memory: 292.911 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.82 seconds. CPU system time: 0 seconds. Elapsed time: 0.81 seconds; current allocated memory: 447.582 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_6' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_6'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 293.418 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 447.582 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_5' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_5'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 293.981 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 447.945 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_4' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 WARNING: [RTGEN 206-101] RTL name 'mux_42_32_1_1' is changed to 'mux_42_32_1_1_x' due to conflict.
 INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1_x': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_4'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 294.485 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 448.547 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_3'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 294.987 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 449.086 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 7ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_compile -name_max_length=60
+INFO: [XFORM 203-1161] The maximum of name length is set into 60.
+INFO: [HLS 200-1510] Running: config_array_partition -maximum_size 4096 
+INFO: [XFORM 203-101] Allowed max sub elements number after partition is 4096.
+ERROR: [HLS 200-642] The 'config_array_partition -maximum_size' command is not supported.
+INFO: [HLS 200-1510] Running: config_compile -name_max_length 60 
+INFO: [XFORM 203-1161] The maximum of name length is set into 60.
+INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
+INFO: [XFORM 203-1161] The maximum of name length is set into 60.
+INFO: [HLS 200-1510] Running: create_clock -period 7 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-10] Analyzing design file 'firmware/myproject.cpp' ... 
+WARNING: [HLS 207-5565] '#pragma HLS unroll' can only be applied inside loop body (firmware/myproject.cpp:9:9)
+INFO: [HLS 200-10] Analyzing design file 'firmware/myproject_axi.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 8.19 seconds. CPU system time: 0.68 seconds. Elapsed time: 8 seconds; current allocated memory: 161.230 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-210] Disaggregating variable 'bdt' (firmware/parameters.h:18:0)
+INFO: [HLS 214-210] Disaggregating variable 'bdt (.21)' (firmware/parameters.h:18:0)
+INFO: [HLS 214-210] Disaggregating variable 'bdt (.20)' (firmware/parameters.h:18:0)
+INFO: [HLS 214-210] Disaggregating variable 'bdt (.19)' (firmware/parameters.h:18:0)
+INFO: [HLS 214-210] Disaggregating variable 'bdt (.18)' (firmware/parameters.h:18:0)
+INFO: [HLS 214-210] Disaggregating variable 'bdt (.17)' (firmware/parameters.h:18:0)
+INFO: [HLS 214-210] Disaggregating variable 'bdt (.16)' (firmware/parameters.h:18:0)
+INFO: [HLS 214-210] Disaggregating variable 'bdt (.15)' (firmware/parameters.h:18:0)
+INFO: [HLS 214-210] Disaggregating variable 'bdt (.14)' (firmware/parameters.h:18:0)
+INFO: [HLS 214-210] Disaggregating variable 'bdt (.13)' (firmware/parameters.h:18:0)
+INFO: [HLS 214-210] Disaggregating variable 'bdt (.12)' (firmware/parameters.h:18:0)
+INFO: [HLS 214-210] Disaggregating variable 'bdt (.11)' (firmware/parameters.h:18:0)
+INFO: [HLS 214-210] Disaggregating variable 'bdt (.10)' (firmware/parameters.h:18:0)
+INFO: [HLS 214-210] Disaggregating variable 'bdt (.9)' (firmware/parameters.h:18:0)
+INFO: [HLS 214-210] Disaggregating variable 'bdt (.8)' (firmware/parameters.h:18:0)
+INFO: [HLS 214-210] Disaggregating variable 'bdt (.7)' (firmware/parameters.h:18:0)
+INFO: [HLS 214-210] Disaggregating variable 'bdt (.6)' (firmware/parameters.h:18:0)
+INFO: [HLS 214-210] Disaggregating variable 'bdt (.5)' (firmware/parameters.h:18:0)
+INFO: [HLS 214-210] Disaggregating variable 'bdt (.4)' (firmware/parameters.h:18:0)
+INFO: [HLS 214-210] Disaggregating variable 'bdt (.3)' (firmware/parameters.h:18:0)
+INFO: [HLS 214-210] Disaggregating variable 'bdt (.2)' (firmware/parameters.h:18:0)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_300_21' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:300:28)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_287_20' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:287:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_282_19' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:282:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_277_18' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:277:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_272_17' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:272:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_267_16' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:267:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_262_15' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:262:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_257_14' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:257:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_252_13' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:252:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_247_12' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:247:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_242_11' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:242:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_237_10' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:237:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_232_9' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:232:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_227_8' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:227:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_222_7' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:222:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_217_6' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:217:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_212_5' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:212:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_207_4' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:207:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_202_3' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:202:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_197_2' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:197:21)
+INFO: [HLS 214-291] Loop 'Trees' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:192:3)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_188_1' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:188:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_147_1' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:147:21)
+INFO: [HLS 214-291] Loop 'Activate' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:125:13)
+INFO: [HLS 214-291] Loop 'Compare' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:112:11)
+INFO: [HLS 214-291] Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:104:11)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_32_2' (firmware/myproject_axi.cpp:32:22) in function 'myproject_axi' completely with a factor of 1 (firmware/myproject_axi.cpp:6:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_22_1' (firmware/myproject_axi.cpp:22:22) in function 'myproject_axi' completely with a factor of 10 (firmware/myproject_axi.cpp:6:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_300_21' (firmware/BDT.h:300:28) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_287_20' (firmware/BDT.h:287:22) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_282_19' (firmware/BDT.h:282:22) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_277_18' (firmware/BDT.h:277:22) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_272_17' (firmware/BDT.h:272:22) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_267_16' (firmware/BDT.h:267:22) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_262_15' (firmware/BDT.h:262:22) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_257_14' (firmware/BDT.h:257:22) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_252_13' (firmware/BDT.h:252:22) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_247_12' (firmware/BDT.h:247:22) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_242_11' (firmware/BDT.h:242:22) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_237_10' (firmware/BDT.h:237:22) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_232_9' (firmware/BDT.h:232:21) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_227_8' (firmware/BDT.h:227:21) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_222_7' (firmware/BDT.h:222:21) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_217_6' (firmware/BDT.h:217:21) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_212_5' (firmware/BDT.h:212:21) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_207_4' (firmware/BDT.h:207:21) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_202_3' (firmware/BDT.h:202:21) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_197_2' (firmware/BDT.h:197:21) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'Trees' (firmware/BDT.h:192:3) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_188_1' (firmware/BDT.h:188:21) in function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' completely with a factor of 1 (firmware/BDT.h:184:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<19, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<19, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<19, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<19, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<18, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<18, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<18, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<18, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<17, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<17, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<17, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<17, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<16, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<16, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<16, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<16, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<15, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<15, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<15, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<15, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<14, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<14, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<14, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<14, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<13, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<13, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<13, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<13, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<12, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<12, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<12, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<12, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<11, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<11, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<11, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<11, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<10, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<10, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<10, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<10, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<9, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<9, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<9, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<9, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<8, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<8, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<8, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<8, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<7, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<7, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<7, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<7, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<6, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<6, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<6, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<6, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<5, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<5, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<5, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<5, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<4, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<4, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<4, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<4, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<3, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<3, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<3, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<3, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<1, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<1, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<1, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<1, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree<0, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree<0, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree<0, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 7 (firmware/BDT.h:84:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree<0, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 4 (firmware/BDT.h:84:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.21.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.21.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.21.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.21.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.21.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.21.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.20.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.20.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.20.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.20.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.20.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.20.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.19.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.19.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.19.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.19.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.19.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.19.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.18.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.18.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.18.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.18.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.18.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.18.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.17.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.17.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.17.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.17.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.17.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.17.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.16.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.16.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.16.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.16.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.16.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.16.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.15.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.15.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.15.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.15.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.15.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.15.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.14.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.14.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.14.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.14.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.14.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.14.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.13.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.13.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.13.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.13.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.13.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.13.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.12.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.12.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.12.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.12.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.12.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.12.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.11.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.11.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.11.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.11.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.11.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.11.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.10.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.10.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.10.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.10.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.10.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.10.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.9.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.9.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.9.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.9.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.9.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.9.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.8.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.8.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.8.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.8.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.8.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.8.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.7.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.7.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.7.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.7.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.7.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.7.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.6.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.6.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.6.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.6.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.6.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.6.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.5.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.5.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.5.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.5.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.5.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.5.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.4.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.4.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.4.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.4.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.4.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.4.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.3.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.3.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.3.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.3.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.3.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.3.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.2.5': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.2.4': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.2.3': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.2.2': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.2.1': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL3bdt.2.0': Complete partitioning on dimension 2. (firmware/parameters.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to 'comparison': Complete partitioning on dimension 1. (firmware/BDT.h:101:7)
+INFO: [HLS 214-248] Applying array_partition to 'activation': Complete partitioning on dimension 1. (firmware/BDT.h:102:8)
+INFO: [HLS 214-248] Applying array_partition to 'activation_leaf': Complete partitioning on dimension 1. (firmware/BDT.h:103:8)
+INFO: [HLS 214-248] Applying array_partition to 'value_leaf': Complete partitioning on dimension 1. (firmware/BDT.h:104:11)
+INFO: [HLS 214-248] Applying array_partition to 'tree_scores': Complete partitioning on dimension 1. (firmware/myproject_axi.cpp:15:13)
+INFO: [HLS 214-248] Applying array_partition to 'in_local': Complete partitioning on dimension 1. (firmware/myproject_axi.cpp:19:16)
+INFO: [HLS 214-248] Applying array_partition to 'out_local': Complete partitioning on dimension 1. (firmware/myproject_axi.cpp:20:14)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.f32.i32' into 'myproject_axi(hls::stream<hls::axis<float, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<float, 1ul, 1ul, 1ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:293:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i1.s_struct.ap_uint<1>s' into 'myproject_axi(hls::stream<hls::axis<float, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<float, 1ul, 1ul, 1ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i4.s_struct.ap_uint<4>s' into 'myproject_axi(hls::stream<hls::axis<float, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<float, 1ul, 1ul, 1ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i32.f32' into 'myproject_axi(hls::stream<hls::axis<float, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<float, 1ul, 1ul, 1ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 5.45 seconds. CPU system time: 0.3 seconds. Elapsed time: 5.8 seconds; current allocated memory: 165.668 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 165.668 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.14 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.17 seconds; current allocated memory: 209.285 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1000: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.33 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.35 seconds; current allocated memory: 265.438 MB.
+INFO: [XFORM 203-602] Inlining function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' into 'myproject' (firmware/myproject.cpp:10) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (firmware/myproject_axi.cpp:47:1) in function 'myproject_axi'... converting 89 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'myproject' (firmware/BDT.h:4:26)...8 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.5 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.53 seconds; current allocated memory: 343.809 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.22 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.24 seconds; current allocated memory: 437.086 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'myproject_axi' ...
+WARNING: [SYN 201-103] Legalizing function name 'decision_function.7' to 'decision_function_7'.
+WARNING: [SYN 201-103] Legalizing function name 'decision_function.6' to 'decision_function_6'.
+WARNING: [SYN 201-103] Legalizing function name 'decision_function.5' to 'decision_function_5'.
+WARNING: [SYN 201-103] Legalizing function name 'decision_function.4' to 'decision_function_4'.
+WARNING: [SYN 201-103] Legalizing function name 'decision_function.3' to 'decision_function_3'.
+WARNING: [SYN 201-103] Legalizing function name 'decision_function.2' to 'decision_function_2'.
+WARNING: [SYN 201-103] Legalizing function name 'decision_function.1' to 'decision_function_1'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function.7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.13 seconds; current allocated memory: 438.219 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 438.281 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function.6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.6'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 438.461 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 438.527 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function.5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 438.699 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 438.758 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function.4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 438.961 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 438.984 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function.3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 439.188 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 439.316 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function.2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 439.422 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 439.543 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function.1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 439.656 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 439.793 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 439.914 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 440.035 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'myproject' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'myproject'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'myproject'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 440.184 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 440.234 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'myproject_axi' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.41 seconds. CPU system time: 0 seconds. Elapsed time: 0.41 seconds; current allocated memory: 444.762 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.42 seconds. CPU system time: 0 seconds. Elapsed time: 0.43 seconds; current allocated memory: 444.762 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.82 seconds. CPU system time: 0 seconds. Elapsed time: 0.83 seconds; current allocated memory: 444.762 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_6'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 444.762 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 445.160 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] RTL name 'mux_42_32_1_1' is changed to 'mux_42_32_1_1_x' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1_x': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 445.738 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 446.309 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------

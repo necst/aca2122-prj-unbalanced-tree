@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'decision_function_4'" level="0">
-<item name = "Date">Fri Jun 24 16:34:28 2022
+<item name = "Date">Fri Jun 24 22:05:28 2022
 </item>
-<item name = "Version">2020.1 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
+<item name = "Version">2020.1 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)</item>
 <item name = "Project">myproject_prj</item>
 <item name = "Solution">solution1 (Vivado IP Flow Target)</item>
 <item name = "Product family">zynquplus</item>
@@ -78,18 +78,18 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="and_ln133_3_fu_78_p2">and, 0, 0, 2, 1, 1</column>
-<column name="and_ln133_5_fu_90_p2">and, 0, 0, 2, 1, 1</column>
+<column name="activation_16_fu_78_p2">and, 0, 0, 2, 1, 1</column>
+<column name="activation_17_fu_90_p2">and, 0, 0, 2, 1, 1</column>
 <column name="and_ln133_fu_84_p2">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln1497_7_fu_54_p2">icmp, 0, 0, 20, 32, 17</column>
-<column name="icmp_ln1497_8_fu_60_p2">icmp, 0, 0, 20, 32, 18</column>
-<column name="icmp_ln1497_fu_48_p2">icmp, 0, 0, 20, 32, 18</column>
-<column name="or_ln148_4_fu_102_p2">or, 0, 0, 2, 1, 1</column>
+<column name="comparison_8_fu_54_p2">icmp, 0, 0, 20, 32, 17</column>
+<column name="comparison_9_fu_60_p2">icmp, 0, 0, 20, 32, 18</column>
+<column name="comparison_fu_48_p2">icmp, 0, 0, 20, 32, 18</column>
+<column name="or_ln148_4_fu_106_p2">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln148_fu_96_p2">or, 0, 0, 2, 1, 1</column>
-<column name="select_ln149_fu_112_p3">select, 0, 0, 3, 1, 2</column>
-<column name="tmp_fu_128_p5">select, 0, 0, 2, 1, 2</column>
-<column name="xor_ln133_3_fu_72_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln133_fu_66_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="agg_result_fu_128_p5">select, 0, 0, 2, 1, 2</column>
+<column name="select_ln148_fu_112_p3">select, 0, 0, 3, 1, 2</column>
+<column name="activation_fu_66_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln135_fu_72_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -109,8 +109,8 @@
 <keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
 <column name="ap_ready">out, 1, ap_ctrl_hs, decision_function.4, return value</column>
 <column name="ap_return">out, 32, ap_ctrl_hs, decision_function.4, return value</column>
-<column name="p_read">in, 32, ap_none, p_read, scalar</column>
 <column name="p_read1">in, 32, ap_none, p_read1, scalar</column>
+<column name="p_read2">in, 32, ap_none, p_read2, scalar</column>
 </table>
 </item>
 </section>

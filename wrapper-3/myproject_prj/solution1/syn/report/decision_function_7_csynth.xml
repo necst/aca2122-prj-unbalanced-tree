@@ -77,8 +77,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>p_read</name>
-<Object>p_read</Object>
+<name>p_read1</name>
+<Object>p_read1</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -88,8 +88,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>p_read1</name>
-<Object>p_read1</Object>
+<name>p_read2</name>
+<Object>p_read2</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
-//Date        : Fri Jun 24 16:39:51 2022
+//Date        : Fri Jun 24 22:08:58 2022
 //Host        : yavin running 64-bit Ubuntu 20.04.4 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=14,numReposBlks=9,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_clkrst_cnt=1,da_zynq_ultra_ps_e_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=14,numReposBlks=9,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=4,da_clkrst_cnt=3,da_zynq_ultra_ps_e_cnt=2,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    ();
 
@@ -124,9 +124,9 @@ module design_1
         .S_AXI_LITE_wdata(ps8_0_axi_periph_M00_AXI_WDATA),
         .S_AXI_LITE_wready(ps8_0_axi_periph_M00_AXI_WREADY),
         .S_AXI_LITE_wvalid(ps8_0_axi_periph_M00_AXI_WVALID),
-        .axi_resetn(rst_ps8_0_100M_peripheral_aresetn),
-        .s_axi_lite_aclk(zynq_ultra_ps_e_0_pl_clk0));
-  design_1_ps8_0_axi_periph_0 ps8_0_axi_periph
+        .ap_clk(zynq_ultra_ps_e_0_pl_clk0),
+        .ap_rst_n(rst_ps8_0_100M_peripheral_aresetn));
+  design_1_ps8_0_axi_periph_1 ps8_0_axi_periph
        (.ACLK(zynq_ultra_ps_e_0_pl_clk0),
         .ARESETN(rst_ps8_0_100M_peripheral_aresetn),
         .M00_ACLK(zynq_ultra_ps_e_0_pl_clk0),
@@ -225,14 +225,14 @@ module design_1
         .S01_AXI_wready(zynq_ultra_ps_e_0_M_AXI_HPM1_FPD_WREADY),
         .S01_AXI_wstrb(zynq_ultra_ps_e_0_M_AXI_HPM1_FPD_WSTRB),
         .S01_AXI_wvalid(zynq_ultra_ps_e_0_M_AXI_HPM1_FPD_WVALID));
-  design_1_rst_ps8_0_100M_0 rst_ps8_0_100M
+  design_1_rst_ps8_0_100M_1 rst_ps8_0_100M
        (.aux_reset_in(1'b1),
         .dcm_locked(1'b1),
         .ext_reset_in(zynq_ultra_ps_e_0_pl_resetn0),
         .mb_debug_sys_rst(1'b0),
         .peripheral_aresetn(rst_ps8_0_100M_peripheral_aresetn),
         .slowest_sync_clk(zynq_ultra_ps_e_0_pl_clk0));
-  design_1_zynq_ultra_ps_e_0_0 zynq_ultra_ps_e_0
+  design_1_zynq_ultra_ps_e_0_1 zynq_ultra_ps_e_0
        (.maxigp0_araddr(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARADDR),
         .maxigp0_arburst(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARBURST),
         .maxigp0_arcache(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARCACHE),
@@ -314,7 +314,7 @@ module design_1
         .pl_resetn0(zynq_ultra_ps_e_0_pl_resetn0));
 endmodule
 
-module design_1_ps8_0_axi_periph_0
+module design_1_ps8_0_axi_periph_1
    (ACLK,
     ARESETN,
     M00_ACLK,
@@ -910,7 +910,7 @@ module design_1_ps8_0_axi_periph_0
         .S_AXI_wready(ps8_0_axi_periph_to_s01_couplers_WREADY),
         .S_AXI_wstrb(ps8_0_axi_periph_to_s01_couplers_WSTRB),
         .S_AXI_wvalid(ps8_0_axi_periph_to_s01_couplers_WVALID));
-  design_1_xbar_0 xbar
+  design_1_xbar_1 xbar
        (.aclk(ps8_0_axi_periph_ACLK_net),
         .aresetn(ps8_0_axi_periph_ARESETN_net),
         .m_axi_araddr(xbar_to_m00_couplers_ARADDR),
@@ -967,8 +967,8 @@ module hier_0_imp_MHUNTD
     S_AXI_LITE_wdata,
     S_AXI_LITE_wready,
     S_AXI_LITE_wvalid,
-    axi_resetn,
-    s_axi_lite_aclk);
+    ap_clk,
+    ap_rst_n);
   input [39:0]S_AXI_LITE_araddr;
   output S_AXI_LITE_arready;
   input S_AXI_LITE_arvalid;
@@ -985,8 +985,8 @@ module hier_0_imp_MHUNTD
   input [31:0]S_AXI_LITE_wdata;
   output S_AXI_LITE_wready;
   input S_AXI_LITE_wvalid;
-  input axi_resetn;
-  input s_axi_lite_aclk;
+  input ap_clk;
+  input ap_rst_n;
 
   wire [31:0]axi_dma_0_M_AXIS_MM2S_TDATA;
   wire [3:0]axi_dma_0_M_AXIS_MM2S_TKEEP;
@@ -1033,9 +1033,9 @@ module hier_0_imp_MHUNTD
   assign ps8_0_axi_periph_M00_AXI_RREADY = S_AXI_LITE_rready;
   assign ps8_0_axi_periph_M00_AXI_WDATA = S_AXI_LITE_wdata[31:0];
   assign ps8_0_axi_periph_M00_AXI_WVALID = S_AXI_LITE_wvalid;
-  assign rst_ps8_0_100M_peripheral_aresetn = axi_resetn;
-  assign zynq_ultra_ps_e_0_pl_clk0 = s_axi_lite_aclk;
-  design_1_axi_dma_0_0 axi_dma_0
+  assign rst_ps8_0_100M_peripheral_aresetn = ap_rst_n;
+  assign zynq_ultra_ps_e_0_pl_clk0 = ap_clk;
+  design_1_axi_dma_0_1 axi_dma_0
        (.axi_resetn(rst_ps8_0_100M_peripheral_aresetn),
         .m_axi_mm2s_aclk(zynq_ultra_ps_e_0_pl_clk0),
         .m_axi_mm2s_arready(1'b0),
@@ -1075,14 +1075,17 @@ module hier_0_imp_MHUNTD
         .s_axis_s2mm_tlast(myproject_axi_0_out_r_TLAST),
         .s_axis_s2mm_tready(myproject_axi_0_out_r_TREADY),
         .s_axis_s2mm_tvalid(myproject_axi_0_out_r_TVALID));
-  design_1_myproject_axi_0_0 myproject_axi_0
+  design_1_myproject_axi_0_2 myproject_axi_0
        (.ap_clk(zynq_ultra_ps_e_0_pl_clk0),
         .ap_rst_n(rst_ps8_0_100M_peripheral_aresetn),
         .in_r_TDATA(axi_dma_0_M_AXIS_MM2S_TDATA),
+        .in_r_TDEST(1'b0),
+        .in_r_TID(1'b0),
         .in_r_TKEEP(axi_dma_0_M_AXIS_MM2S_TKEEP),
         .in_r_TLAST(axi_dma_0_M_AXIS_MM2S_TLAST),
         .in_r_TREADY(axi_dma_0_M_AXIS_MM2S_TREADY),
         .in_r_TSTRB({1'b1,1'b1,1'b1,1'b1}),
+        .in_r_TUSER(1'b0),
         .in_r_TVALID(axi_dma_0_M_AXIS_MM2S_TVALID),
         .out_r_TDATA(myproject_axi_0_out_r_TDATA),
         .out_r_TKEEP(myproject_axi_0_out_r_TKEEP),

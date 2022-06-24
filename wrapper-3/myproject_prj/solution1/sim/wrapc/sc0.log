@@ -1,4 +1,4 @@
-   Build using "/opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/bin/g++"
+   Build using "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/bin/g++"
    Compiling apatb_myproject_axi.cpp
    Compiling myproject_axi.cpp_pre.cpp.tb.cpp
    Compiling myproject.cpp_pre.cpp.tb.cpp

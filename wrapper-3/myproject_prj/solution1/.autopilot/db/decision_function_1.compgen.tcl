@@ -11,21 +11,6 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 23 \
-    name p_read \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_p_read \
-    op interface \
-    ports { p_read { I 32 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 24 \
     name p_read1 \
     type other \
     dir I \
@@ -40,7 +25,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 25 \
+    id 24 \
     name p_read2 \
     type other \
     dir I \
@@ -49,6 +34,21 @@ eval "cg_default_interface_gen_dc { \
     corename dc_p_read2 \
     op interface \
     ports { p_read2 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 25 \
+    name p_read3 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_p_read3 \
+    op interface \
+    ports { p_read3 { I 32 vector } } \
 } "
 }
 

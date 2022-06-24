@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_ohXgwfLoEeyry9l0jVI7_A" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_ohXgwvLoEeyry9l0jVI7_A" bindingContexts="_ohXgy_LoEeyry9l0jVI7_A">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;myproject_test.cpp&quot; tooltip=&quot;myproject_prj/testbench/myproject_test.cpp&quot;>&#xA;&lt;persistable path=&quot;/myproject_prj/testbench/myproject_test.cpp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;BDT.h&quot; tooltip=&quot;myproject_prj/source/BDT.h&quot;>&#xA;&lt;persistable path=&quot;/myproject_prj/source/BDT.h&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;parameters.h&quot; tooltip=&quot;myproject_prj/.reference/parameters.h&quot;>&#xA;&lt;persistable path=&quot;/myproject_prj/.reference/parameters.h&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.cdt.ui.ExternalEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;parameters.h&quot; tooltip=&quot;/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/firmware/parameters.h&quot;>&#xA;&lt;persistable path=&quot;/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/firmware/parameters.h&quot; project=&quot;myproject_prj&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.autoesl.autopilot.ui.platform.editorlog&quot; name=&quot;myproject_axi_csim.log&quot; tooltip=&quot;myproject_prj/solution1/csim/report/myproject_axi_csim.log&quot;>&#xA;&lt;persistable path=&quot;/myproject_prj/solution1/csim/report/myproject_axi_csim.log&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;myproject.cpp&quot; tooltip=&quot;myproject_prj/source/myproject.cpp&quot;>&#xA;&lt;persistable path=&quot;/myproject_prj/source/myproject.cpp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;myproject_axi.h&quot; tooltip=&quot;myproject_prj/.reference/myproject_axi.h&quot;>&#xA;&lt;persistable path=&quot;/myproject_prj/.reference/myproject_axi.h&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;myproject_axi.cpp&quot; tooltip=&quot;myproject_prj/source/myproject_axi.cpp&quot;>&#xA;&lt;persistable path=&quot;/myproject_prj/source/myproject_axi.cpp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;ap_axi_sdata.h&quot; tooltip=&quot;myproject_prj/.reference/ap_axi_sdata.h&quot;>&#xA;&lt;persistable path=&quot;/myproject_prj/.reference/ap_axi_sdata.h&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.cdt.ui.ExternalEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;ap_axi_sdata.h&quot; tooltip=&quot;/opt/Xilinx/Vitis_HLS/2021.2/include/ap_axi_sdata.h&quot;>&#xA;&lt;persistable path=&quot;/opt/Xilinx/Vitis_HLS/2021.2/include/ap_axi_sdata.h&quot; project=&quot;myproject_prj&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.cdt.ui.ExternalEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;myproject_axi.h&quot; tooltip=&quot;/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/firmware/myproject_axi.h&quot;>&#xA;&lt;persistable path=&quot;/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/firmware/myproject_axi.h&quot; project=&quot;myproject_prj&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.autoesl.autopilot.ui.platform.editorlog&quot; name=&quot;csim_results.log&quot; tooltip=&quot;myproject_prj/testbench/tb_data/csim_results.log&quot;>&#xA;&lt;persistable path=&quot;/myproject_prj/testbench/tb_data/csim_results.log&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.autoesl.autopilot.ui.platform.editorlog&quot; name=&quot;rtl_cosim_results.log&quot; tooltip=&quot;myproject_prj/testbench/tb_data/rtl_cosim_results.log&quot;>&#xA;&lt;persistable path=&quot;/myproject_prj/testbench/tb_data/rtl_cosim_results.log&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;myproject_test.cpp&quot; tooltip=&quot;myproject_prj/testbench/myproject_test.cpp&quot;>&#xA;&lt;persistable path=&quot;/myproject_prj/testbench/myproject_test.cpp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;BDT.h&quot; tooltip=&quot;myproject_prj/source/BDT.h&quot;>&#xA;&lt;persistable path=&quot;/myproject_prj/source/BDT.h&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;parameters.h&quot; tooltip=&quot;myproject_prj/.reference/parameters.h&quot;>&#xA;&lt;persistable path=&quot;/myproject_prj/.reference/parameters.h&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.cdt.ui.ExternalEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;parameters.h&quot; tooltip=&quot;/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/firmware/parameters.h&quot;>&#xA;&lt;persistable path=&quot;/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/firmware/parameters.h&quot; project=&quot;myproject_prj&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.autoesl.autopilot.ui.platform.editorlog&quot; name=&quot;myproject_axi_csim.log&quot; tooltip=&quot;myproject_prj/solution1/csim/report/myproject_axi_csim.log&quot;>&#xA;&lt;persistable path=&quot;/myproject_prj/solution1/csim/report/myproject_axi_csim.log&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;myproject.cpp&quot; tooltip=&quot;myproject_prj/source/myproject.cpp&quot;>&#xA;&lt;persistable path=&quot;/myproject_prj/source/myproject.cpp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;myproject_axi.h&quot; tooltip=&quot;myproject_prj/.reference/myproject_axi.h&quot;>&#xA;&lt;persistable path=&quot;/myproject_prj/.reference/myproject_axi.h&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;myproject_axi.cpp&quot; tooltip=&quot;myproject_prj/source/myproject_axi.cpp&quot;>&#xA;&lt;persistable path=&quot;/myproject_prj/source/myproject_axi.cpp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;ap_axi_sdata.h&quot; tooltip=&quot;myproject_prj/.reference/ap_axi_sdata.h&quot;>&#xA;&lt;persistable path=&quot;/myproject_prj/.reference/ap_axi_sdata.h&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.cdt.ui.ExternalEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;ap_axi_sdata.h&quot; tooltip=&quot;/opt/Xilinx/Vitis_HLS/2021.2/include/ap_axi_sdata.h&quot;>&#xA;&lt;persistable path=&quot;/opt/Xilinx/Vitis_HLS/2021.2/include/ap_axi_sdata.h&quot; project=&quot;myproject_prj&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.cdt.ui.ExternalEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;myproject_axi.h&quot; tooltip=&quot;/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/firmware/myproject_axi.h&quot;>&#xA;&lt;persistable path=&quot;/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/firmware/myproject_axi.h&quot; project=&quot;myproject_prj&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_ohXgwvLoEeyry9l0jVI7_A" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_o7pB8fLoEeyry9l0jVI7_A" x="634" y="129" width="1024" height="768">
@@ -17,9 +17,18 @@
         <children xsi:type="advanced:Perspective" xmi:id="_o-ZbAfLoEeyry9l0jVI7_A" elementId="com.autoesl.autopilot.ui.platform.perspective" selectedElement="_o-ZbAvLoEeyry9l0jVI7_A" label="Synthesis" iconURI="platform:/plugin/com.autoesl.autopilot.ui.platform/AutoPilotIDE16.gif">
           <persistedState key="persp.hiddenItems" value="persp.hideToolbarSC:print,persp.hideToolbarSC:org.eclipse.ui.edit.undo,persp.hideToolbarSC:org.eclipse.ui.edit.redo,persp.hideToolbarSC:org.eclipse.ui.edit.text.toggleShowSelectedElementOnly,persp.hideToolbarSC:org.eclipse.debug.ui.commands.RunToLine,persp.hideToolbarSC:org.eclipse.jdt.ui.actions.OpenProjectWizard,persp.hideToolbarSC:com.autoesl.autopilot.ui.platform.actions.AutoESLOpenSynthesisLogAction,"/>
           <tags>persp.showIn:org.eclipse.tm.terminal.view.ui.TerminalsView</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_o-ZbAvLoEeyry9l0jVI7_A" selectedElement="_o-ZbCfLoEeyry9l0jVI7_A" horizontal="true">
+          <tags>persp.actionSet:com.autoesl.autopilot.ui.cdfg.actionset</tags>
+          <tags>persp.actionSet:org.eclipse.search.searchActionSet</tags>
+          <tags>persp.actionSet:org.eclipse.ui.edit.text.actionSet.annotationNavigation</tags>
+          <tags>persp.actionSet:org.eclipse.ui.edit.text.actionSet.navigation</tags>
+          <tags>persp.actionSet:org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo</tags>
+          <tags>persp.actionSet:org.eclipse.ui.externaltools.ExternalToolsSet</tags>
+          <tags>persp.actionSet:org.eclipse.ui.actionSet.keyBindings</tags>
+          <tags>persp.actionSet:org.eclipse.ui.actionSet.openFiles</tags>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_o-ZbAvLoEeyry9l0jVI7_A" selectedElement="_o-ZbA_LoEeyry9l0jVI7_A" horizontal="true">
             <children xsi:type="basic:PartSashContainer" xmi:id="_o-ZbA_LoEeyry9l0jVI7_A" containerData="1800" selectedElement="_o-ZbBPLoEeyry9l0jVI7_A">
               <children xsi:type="basic:PartStack" xmi:id="_o-ZbBPLoEeyry9l0jVI7_A" elementId="left_top" containerData="5000" selectedElement="_o-ZbBfLoEeyry9l0jVI7_A">
+                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_o-ZbBfLoEeyry9l0jVI7_A" elementId="com.autoesl.autopilot.ui.platform.views.AutoPilotProjectExplorer" ref="_o-QREPLoEeyry9l0jVI7_A" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:Other</tags>
@@ -37,7 +46,7 @@
                 </children>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_o-ZbCfLoEeyry9l0jVI7_A" containerData="8200" selectedElement="_o-ZbEPLoEeyry9l0jVI7_A">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_o-ZbCfLoEeyry9l0jVI7_A" containerData="8200" selectedElement="_o-ZbCvLoEeyry9l0jVI7_A">
               <children xsi:type="basic:PartSashContainer" xmi:id="_o-ZbCvLoEeyry9l0jVI7_A" containerData="5041" selectedElement="_o-ZbC_LoEeyry9l0jVI7_A" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_o-ZbC_LoEeyry9l0jVI7_A" elementId="org.eclipse.ui.editorss" containerData="8000" ref="_o-PqAPLoEeyry9l0jVI7_A"/>
                 <children xsi:type="basic:PartStack" xmi:id="_o-ZbDPLoEeyry9l0jVI7_A" elementId="right" toBeRendered="false" containerData="2000">
@@ -56,7 +65,6 @@
                 </children>
               </children>
               <children xsi:type="basic:PartStack" xmi:id="_o-ZbEPLoEeyry9l0jVI7_A" elementId="bottom" containerData="4959" selectedElement="_o-ZbEfLoEeyry9l0jVI7_A">
-                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_o-ZbEfLoEeyry9l0jVI7_A" elementId="org.eclipse.ui.console.ConsoleView" ref="_o-RfMfLoEeyry9l0jVI7_A" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:General</tags>
@@ -152,9 +160,11 @@
     <sharedElements xsi:type="basic:Part" xmi:id="_o-QREPLoEeyry9l0jVI7_A" elementId="com.autoesl.autopilot.ui.platform.views.AutoPilotProjectExplorer" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Explorer" iconURI="platform:/plugin/com.autoesl.autopilot.ui.platform/icons/resource_persp.gif" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="com.autoesl.autopilot.ui.platform.views.AutoPilotProjectExplorer"/>
       <persistedState key="originalCompatibilityViewBundle" value="com.autoesl.autopilot.ui.platform"/>
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view LINK_NAVIGATOR_TO_EDITOR=&quot;0&quot;>&#xA;&lt;filters>&#xA;&lt;filter element=&quot;*.class&quot; isEnabled=&quot;false&quot;/>&#xA;&lt;filter element=&quot;.*&quot; isEnabled=&quot;false&quot;/>&#xA;&lt;/filters>&#xA;&lt;expanded>&#xA;&lt;element path=&quot;/myproject_prj&quot;/>&#xA;&lt;/expanded>&#xA;&lt;selection/>&#xA;&lt;/view>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view LINK_NAVIGATOR_TO_EDITOR=&quot;0&quot;>&#xA;&lt;filters>&#xA;&lt;filter element=&quot;*.class&quot; isEnabled=&quot;false&quot;/>&#xA;&lt;filter element=&quot;.*&quot; isEnabled=&quot;false&quot;/>&#xA;&lt;/filters>&#xA;&lt;expanded>&#xA;&lt;element path=&quot;/myproject_prj&quot;/>&#xA;&lt;element path=&quot;/myproject_prj/solution1&quot;/>&#xA;&lt;element path=&quot;/myproject_prj/solution1/constraints&quot;/>&#xA;&lt;element path=&quot;/myproject_prj/solution1/csim&quot;/>&#xA;&lt;element path=&quot;/myproject_prj/solution1/impl&quot;/>&#xA;&lt;element path=&quot;/myproject_prj/solution1/sim&quot;/>&#xA;&lt;element path=&quot;/myproject_prj/solution1/syn&quot;/>&#xA;&lt;/expanded>&#xA;&lt;selection>&#xA;&lt;element path=&quot;/myproject_prj/testbench/tb_data/csim_results.log&quot;/>&#xA;&lt;/selection>&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:Other</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_pBiOkPLoEeyry9l0jVI7_A" elementId="com.autoesl.autopilot.ui.platform.views.AutoPilotProjectExplorer">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -179,8 +189,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_pFIVIPLoEeyry9l0jVI7_A" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -882,6 +890,12 @@
   <bindingTables xmi:id="_o8Pe5_LoEeyry9l0jVI7_A" bindingContext="_o8Pe5vLoEeyry9l0jVI7_A"/>
   <bindingTables xmi:id="_o8Pe6fLoEeyry9l0jVI7_A" bindingContext="_o8Pe6PLoEeyry9l0jVI7_A"/>
   <bindingTables xmi:id="_o8QF8fLoEeyry9l0jVI7_A" bindingContext="_o8QF8PLoEeyry9l0jVI7_A"/>
+  <bindingTables xmi:id="_gfrHEPPsEey_rtjnCDAo2A" elementId="com.autoesl.autopilot.ui.cdfg.diagram.ui.diagramContext" bindingContext="_gfZaQPPsEey_rtjnCDAo2A">
+    <bindings xmi:id="_gfs8QPPsEey_rtjnCDAo2A" keySequence="F5" command="_gfYMKfPsEey_rtjnCDAo2A"/>
+  </bindingTables>
+  <bindingTables xmi:id="_gfs8QfPsEey_rtjnCDAo2A" elementId="com.autoesl.autopilot.ui.datapath.datapath.diagram.ui.diagramContext" bindingContext="_gfZaQfPsEey_rtjnCDAo2A">
+    <bindings xmi:id="_gfs8QvPsEey_rtjnCDAo2A" keySequence="F5" command="_gfYMKPPsEey_rtjnCDAo2A"/>
+  </bindingTables>
   <rootContext xmi:id="_ohXgy_LoEeyry9l0jVI7_A" elementId="org.eclipse.ui.contexts.dialogAndWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" name="In Dialogs and Windows" description="Either a dialog or a window is open">
     <children xmi:id="_ohXgzPLoEeyry9l0jVI7_A" elementId="org.eclipse.ui.contexts.window" contributorURI="platform:/plugin/org.eclipse.ui.workbench" name="In Windows" description="A window is open">
       <children xmi:id="_ohXgzfLoEeyry9l0jVI7_A" elementId="org.eclipse.e4.ui.contexts.views" contributorURI="platform:/plugin/org.eclipse.ui.workbench" name="%bindingcontext.name.bindingView"/>
@@ -905,7 +919,10 @@
       <children xmi:id="_ooutBfLoEeyry9l0jVI7_A" elementId="org.eclipse.debug.ui.console" name="In I/O Console" description="In I/O console"/>
       <children xmi:id="_ooutBvLoEeyry9l0jVI7_A" elementId="org.eclipse.tm.terminal.view.ui.TerminalsView" name="In Terminal View" description="Show modified keyboard shortcuts in context menu"/>
       <children xmi:id="_ooutCPLoEeyry9l0jVI7_A" elementId="org.eclipse.compare.compareEditorScope" name="Comparing in an Editor" description="Comparing in an Editor"/>
-      <children xmi:id="_ooutCvLoEeyry9l0jVI7_A" elementId="org.eclipse.gmf.runtime.diagram.ui.diagramContext" name="Diagram Editing" description="GMF Diagram Editing"/>
+      <children xmi:id="_ooutCvLoEeyry9l0jVI7_A" elementId="org.eclipse.gmf.runtime.diagram.ui.diagramContext" name="Diagram Editing" description="GMF Diagram Editing">
+        <children xmi:id="_gfZaQPPsEey_rtjnCDAo2A" elementId="com.autoesl.autopilot.ui.cdfg.diagram.ui.diagramContext" name="In Cdfg Diagram Editor" description="Cdfg Diagram Editing"/>
+        <children xmi:id="_gfZaQfPsEey_rtjnCDAo2A" elementId="com.autoesl.autopilot.ui.datapath.datapath.diagram.ui.diagramContext" name="In Datapath Diagram Editor" description="Datapath Diagram Editing"/>
+      </children>
       <children xmi:id="_ooutDPLoEeyry9l0jVI7_A" elementId="org.eclipse.ui.console.ConsoleView" name="In Console View" description="In Console View"/>
       <children xmi:id="_ooutDvLoEeyry9l0jVI7_A" elementId="org.eclipse.debug.ui.memoryview" name="In Memory View" description="In memory view"/>
       <children xmi:id="_ooutEfLoEeyry9l0jVI7_A" elementId="org.eclipse.debug.ui.debugging" name="Debugging" description="Debugging programs">
@@ -1068,7 +1085,7 @@
     <tags>categoryTag:Other</tags>
   </descriptors>
   <descriptors xmi:id="_o6-6ofLoEeyry9l0jVI7_A" elementId="com.autoesl.autopilot.ui.platform.views.VivadoHLSModuleHierarchyView" label="Module Hierarchy" iconURI="platform:/plugin/com.autoesl.autopilot.ui.platform/icons/cheatsheet_item_obj.gif" tooltip="" category="Other" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
-    <persistedState key="originalCompatibilityViewClass" value="com.autoesl.autopilot.ui.platform.views.ModuleHierarchyView"/>
+    <persistedState key="originalCompatibilityViewClass" value="com.autoesl.autopilot.ui.platform.views.VivadoHLSModuleHierarchyView"/>
     <persistedState key="originalCompatibilityViewBundle" value="com.autoesl.autopilot.ui.platform"/>
     <tags>View</tags>
     <tags>categoryTag:Other</tags>
@@ -1097,7 +1114,7 @@
     <tags>View</tags>
     <tags>categoryTag:Other</tags>
   </descriptors>
-  <descriptors xmi:id="_o7EaMPLoEeyry9l0jVI7_A" elementId="com.autoesl.autopilot.ui.platform.flownavigator" label="Flow Navigator" iconURI="platform:/plugin/com.autoesl.autopilot.ui.platform/icons/bookmarks_view.gif" tooltip="" category="Other" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+  <descriptors xmi:id="_o7EaMPLoEeyry9l0jVI7_A" elementId="com.autoesl.autopilot.ui.platform.flownavigator" label="Flow Navigator" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" category="Other" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
     <persistedState key="originalCompatibilityViewClass" value="com.autoesl.autopilot.ui.platform.flowNavigator.FlowNavigator"/>
     <persistedState key="originalCompatibilityViewBundle" value="com.autoesl.autopilot.ui.platform"/>
     <tags>View</tags>
@@ -1548,6 +1565,42 @@
     <tags>View</tags>
     <tags>categoryTag:General</tags>
   </descriptors>
+  <descriptors xmi:id="_gt5JQPPsEey_rtjnCDAo2A" elementId="com.autoesl.autopilot.ui.cdfg.custom.views.AutoPilotCfgView" label="Control Flow Graph" iconURI="platform:/plugin/com.autoesl.autopilot.ui.cdfg.custom/icons/overview_obj.gif" tooltip="" category="Other" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="com.autoesl.autopilot.ui.cdfg.custom.views.AutoPilotCfgView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="com.autoesl.autopilot.ui.cdfg.custom"/>
+    <tags>View</tags>
+    <tags>categoryTag:Other</tags>
+  </descriptors>
+  <descriptors xmi:id="_gt6XYPPsEey_rtjnCDAo2A" elementId="com.autoesl.autopilot.ui.cdfg.custom.views.SearchCDFGNodesView" label="Search Nodes" iconURI="platform:/plugin/com.autoesl.autopilot.ui.cdfg.custom/icons/search_results_view.gif" tooltip="" category="Other" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="com.autoesl.autopilot.ui.cdfg.custom.views.SearchCDFGNodesView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="com.autoesl.autopilot.ui.cdfg.custom"/>
+    <tags>View</tags>
+    <tags>categoryTag:Other</tags>
+  </descriptors>
+  <descriptors xmi:id="_gt6-cPPsEey_rtjnCDAo2A" elementId="com.autoesl.autopilot.ui.cdfg.custom.views.CDFGResourceTreeView" label="Resource Profile" iconURI="platform:/plugin/com.autoesl.autopilot.ui.cdfg.custom/icons/resource_view.png" tooltip="" category="Other" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="com.autoesl.autopilot.ui.cdfg.custom.views.CDFGResourceTreeView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="com.autoesl.autopilot.ui.cdfg.custom"/>
+    <tags>View</tags>
+    <tags>categoryTag:Other</tags>
+  </descriptors>
+  <descriptors xmi:id="_gt7lgPPsEey_rtjnCDAo2A" elementId="com.autoesl.autopilot.ui.cdfg.custom.views.CDFGHierarchyView" label="Hierarchy" iconURI="platform:/plugin/com.autoesl.autopilot.ui.cdfg.custom/icons/regionNode.gif" tooltip="" category="Other" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="com.autoesl.autopilot.ui.cdfg.custom.views.CDFGHierarchyView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="com.autoesl.autopilot.ui.cdfg.custom"/>
+    <tags>View</tags>
+    <tags>categoryTag:Other</tags>
+  </descriptors>
+  <descriptors xmi:id="_gt8zoPPsEey_rtjnCDAo2A" elementId="com.autoesl.autopilot.ui.platform.views.AutoPilotDirectiveViewV2" label="Directive" iconURI="platform:/plugin/com.autoesl.autopilot.ui.platform/icons/container_topic.gif" tooltip="" category="Other" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="com.autoesl.autopilot.ui.platform.views.AutoPilotDirectiveViewV2"/>
+    <persistedState key="originalCompatibilityViewBundle" value="com.autoesl.autopilot.ui.platform"/>
+    <tags>View</tags>
+    <tags>categoryTag:Other</tags>
+  </descriptors>
+  <descriptors xmi:id="_gt9asPPsEey_rtjnCDAo2A" elementId="com.autoesl.autopilot.ui.platform.views.sourceFunction" label="Functions" iconURI="platform:/plugin/com.autoesl.autopilot.ui.platform/icons/drcs.gif" tooltip="" category="Other" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="com.autoesl.autopilot.ui.platform.views.VivadoHLSSourceFunctionView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="com.autoesl.autopilot.ui.platform"/>
+    <tags>View</tags>
+    <tags>categoryTag:Other</tags>
+  </descriptors>
   <commands xmi:id="_oonYQPLoEeyry9l0jVI7_A" elementId="org.eclipse.jdt.ui.correction.inlineLocal.assist" commandName="Quick Assist - Inline local variable" description="Invokes quick assist and selects 'Inline local variable'" category="_oomKPfLoEeyry9l0jVI7_A"/>
   <commands xmi:id="_oonYQfLoEeyry9l0jVI7_A" elementId="org.eclipse.dltk.ui.navigate.gototype" commandName="Go to Type" description="Go to Type" category="_oomKKfLoEeyry9l0jVI7_A"/>
   <commands xmi:id="_oonYQvLoEeyry9l0jVI7_A" elementId="org.eclipse.ui.edit.text.select.pageUp" commandName="Select Page Up" description="Select to the top of the page" category="_oomKJvLoEeyry9l0jVI7_A"/>
@@ -1724,7 +1777,7 @@
   <commands xmi:id="_ooomivLoEeyry9l0jVI7_A" elementId="org.eclipse.jdt.debug.ui.commands.Inspect" commandName="Inspect" description="Inspect result of evaluating selected text" category="_oomKN_LoEeyry9l0jVI7_A"/>
   <commands xmi:id="_ooomi_LoEeyry9l0jVI7_A" elementId="org.eclipse.cdt.debug.ui.command.addRegisterGroup" commandName="Add RegisterGroup" description="Adds a Register Group" category="_oomKJ_LoEeyry9l0jVI7_A"/>
   <commands xmi:id="_ooomjPLoEeyry9l0jVI7_A" elementId="org.eclipse.cdt.debug.ui.command.resumeWithoutSignal" commandName="Resume Without Signal" description="Resume Without Signal" category="_oomKKPLoEeyry9l0jVI7_A"/>
-  <commands xmi:id="_ooomjfLoEeyry9l0jVI7_A" elementId="com.autoesl.autopilot.ui.platform.command.openprocessexecutiongraphdynamic" commandName="Open Timeline Trace" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_ooomjfLoEeyry9l0jVI7_A" elementId="com.autoesl.autopilot.ui.platform.command.openprocessexecutiongraphdynamic" commandName="Open Process Execution Graph(Dynamic)" category="_oomxMPLoEeyry9l0jVI7_A"/>
   <commands xmi:id="_ooomjvLoEeyry9l0jVI7_A" elementId="org.eclipse.ui.edit.text.goto.columnNext" commandName="Next Column" description="Go to the next column" category="_oomKJvLoEeyry9l0jVI7_A"/>
   <commands xmi:id="_ooomj_LoEeyry9l0jVI7_A" elementId="org.eclipse.egit.ui.history.Squash" commandName="Squash Commits" category="_oomxMPLoEeyry9l0jVI7_A"/>
   <commands xmi:id="_ooomkPLoEeyry9l0jVI7_A" elementId="org.eclipse.search.ui.performTextSearchWorkingSet" commandName="Find Text in Working Set" description="Searches the files in the working set for specific text." category="_oomKNfLoEeyry9l0jVI7_A"/>
@@ -1843,7 +1896,7 @@
   <commands xmi:id="_oopNvvLoEeyry9l0jVI7_A" elementId="org.eclipse.cdt.ui.edit.text.c.organize.includes" commandName="Organize Includes" description="Evaluates all required includes and replaces the current includes" category="_oomKJPLoEeyry9l0jVI7_A"/>
   <commands xmi:id="_oopNv_LoEeyry9l0jVI7_A" elementId="org.eclipse.jdt.ui.edit.text.java.indent" commandName="Correct Indentation" description="Corrects the indentation of the selected lines" category="_oomKPfLoEeyry9l0jVI7_A"/>
   <commands xmi:id="_oopNwPLoEeyry9l0jVI7_A" elementId="org.eclipse.ui.ide.copyConfigCommand" commandName="Copy Configuration Data To Clipboard" description="Copies the configuration data (system properties, installed bundles, etc) to the clipboard." category="_oomKIvLoEeyry9l0jVI7_A"/>
-  <commands xmi:id="_oopNwfLoEeyry9l0jVI7_A" elementId="com.autoesl.autopilot.ui.platform.command.addsource" commandName="Add Source File..." category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_oopNwfLoEeyry9l0jVI7_A" elementId="com.autoesl.autopilot.ui.platform.command.addsource" commandName="Add Source..." category="_oomxMPLoEeyry9l0jVI7_A"/>
   <commands xmi:id="_oopNwvLoEeyry9l0jVI7_A" elementId="org.eclipse.ui.navigate.forwardHistory" commandName="Forward History" description="Move forward in the editor navigation history" category="_oomKKfLoEeyry9l0jVI7_A"/>
   <commands xmi:id="_oop0gPLoEeyry9l0jVI7_A" elementId="com.autoesl.autopilot.ui.platform.command.indexcsource" commandName="Index C Source" category="_oomxMPLoEeyry9l0jVI7_A"/>
   <commands xmi:id="_oop0gfLoEeyry9l0jVI7_A" elementId="org.eclipse.search.ui.performTextSearchProject" commandName="Find Text in Project" description="Searches the files in the project for specific text." category="_oomKNfLoEeyry9l0jVI7_A"/>
@@ -1912,7 +1965,7 @@
   <commands xmi:id="_oop0vvLoEeyry9l0jVI7_A" elementId="org.eclipse.ui.edit.selectAll" commandName="Select All" description="Select all" category="_oomKIvLoEeyry9l0jVI7_A"/>
   <commands xmi:id="_oop0v_LoEeyry9l0jVI7_A" elementId="org.eclipse.jdt.ui.edit.text.java.show.outline" commandName="Quick Outline" description="Show the quick outline for the editor input" category="_oomKKfLoEeyry9l0jVI7_A"/>
   <commands xmi:id="_oop0wPLoEeyry9l0jVI7_A" elementId="org.eclipse.jdt.ui.edit.text.java.goto.next.member" commandName="Go to Next Member" description="Move the caret to the next member of the compilation unit" category="_oomKKfLoEeyry9l0jVI7_A"/>
-  <commands xmi:id="_oop0wfLoEeyry9l0jVI7_A" elementId="com.autoesl.autopilot.ui.platform.command.newtestbench" commandName="New Test Bench File..." category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_oop0wfLoEeyry9l0jVI7_A" elementId="com.autoesl.autopilot.ui.platform.command.newtestbench" commandName="New Test Bench..." category="_oomxMPLoEeyry9l0jVI7_A"/>
   <commands xmi:id="_oop0wvLoEeyry9l0jVI7_A" elementId="org.eclipse.ui.project.rebuildProject" commandName="Rebuild Project" description="Rebuild the selected projects" category="_oomKMfLoEeyry9l0jVI7_A"/>
   <commands xmi:id="_oop0w_LoEeyry9l0jVI7_A" elementId="org.eclipse.ui.edit.text.copyLineDown" commandName="Copy Lines" description="Duplicates the selected lines and moves the selection to the copy" category="_oomKJvLoEeyry9l0jVI7_A"/>
   <commands xmi:id="_oop0xPLoEeyry9l0jVI7_A" elementId="org.eclipse.cdt.ui.refactor.extract.local.variable" commandName="Extract Local Variable - Refactoring " description="Extracts a local variable for the selected expression" category="_oomKL_LoEeyry9l0jVI7_A"/>
@@ -1932,7 +1985,7 @@
     <parameters xmi:id="_oop00fLoEeyry9l0jVI7_A" elementId="name" name="Name" optional="false"/>
     <parameters xmi:id="_oop00vLoEeyry9l0jVI7_A" elementId="url" name="URL" optional="false"/>
   </commands>
-  <commands xmi:id="_oop00_LoEeyry9l0jVI7_A" elementId="com.autoesl.autopilot.ui.platform.command.addtestbench" commandName="Add Test Bench File..." category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_oop00_LoEeyry9l0jVI7_A" elementId="com.autoesl.autopilot.ui.platform.command.addtestbench" commandName="Add Test Bench..." category="_oomxMPLoEeyry9l0jVI7_A"/>
   <commands xmi:id="_oop01PLoEeyry9l0jVI7_A" elementId="org.eclipse.egit.ui.team.PushBranch" commandName="Push Branch..." category="_oomKOfLoEeyry9l0jVI7_A"/>
   <commands xmi:id="_ooqbkPLoEeyry9l0jVI7_A" elementId="org.eclipse.jdt.debug.ui.commands.Execute" commandName="Execute" description="Evaluate selected text" category="_oomKN_LoEeyry9l0jVI7_A"/>
   <commands xmi:id="_ooqbkfLoEeyry9l0jVI7_A" elementId="com.autoesl.autopilot.ui.platform.command.postsyncfg" commandName="Open Post-synthesis Control Flow" category="_oomxMPLoEeyry9l0jVI7_A"/>
@@ -1987,7 +2040,7 @@
   <commands xmi:id="_ooqbv_LoEeyry9l0jVI7_A" elementId="org.eclipse.jdt.ui.navigate.open.type.in.hierarchy" commandName="Open Type in Hierarchy" description="Open a type in the type hierarchy view" category="_oomKKfLoEeyry9l0jVI7_A"/>
   <commands xmi:id="_ooqbwPLoEeyry9l0jVI7_A" elementId="org.eclipse.ui.ide.copyBuildIdCommand" commandName="Copy Build Id Information To Clipboard" description="Copies the build identification information to the clipboard." category="_oomKIvLoEeyry9l0jVI7_A"/>
   <commands xmi:id="_ooqbwfLoEeyry9l0jVI7_A" elementId="org.eclipse.ui.edit.text.select.textEnd" commandName="Select Text End" description="Select to the end of the text" category="_oomKJvLoEeyry9l0jVI7_A"/>
-  <commands xmi:id="_ooqbwvLoEeyry9l0jVI7_A" elementId="com.autoesl.autopilot.ui.platform.command.newsource" commandName="New Source File..." category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_ooqbwvLoEeyry9l0jVI7_A" elementId="com.autoesl.autopilot.ui.platform.command.newsource" commandName="New Source..." category="_oomxMPLoEeyry9l0jVI7_A"/>
   <commands xmi:id="_ooqbw_LoEeyry9l0jVI7_A" elementId="org.eclipse.ui.edit.text.goto.wordPrevious" commandName="Previous Word" description="Go to the previous word" category="_oomKJvLoEeyry9l0jVI7_A"/>
   <commands xmi:id="_ooqbxPLoEeyry9l0jVI7_A" elementId="org.eclipse.cdt.debug.ui.command.connect" commandName="Connect" description="Connect to a process" category="_oomKMvLoEeyry9l0jVI7_A"/>
   <commands xmi:id="_ooqbxfLoEeyry9l0jVI7_A" elementId="org.eclipse.ui.window.preferences" commandName="Preferences" description="Open the preferences dialog" category="_oomKLfLoEeyry9l0jVI7_A">
@@ -2604,6 +2657,48 @@
   <commands xmi:id="_o6Gw4PLoEeyry9l0jVI7_A" elementId="AUTOGEN:::org.eclipse.jdt.debug.ui.DisplayViewActions/org.eclipse.jdt.debug.ui.displayViewToolbar.Display" commandName="Display" description="Display Result of Evaluating Selected Text" category="_oomxMPLoEeyry9l0jVI7_A"/>
   <commands xmi:id="_o6Gw4fLoEeyry9l0jVI7_A" elementId="AUTOGEN:::org.eclipse.jdt.debug.ui.DisplayViewActions/org.eclipse.jdt.debug.ui.displayViewToolbar.Inspect" commandName="Inspect" description="Inspect Result of Evaluating Selected Text" category="_oomxMPLoEeyry9l0jVI7_A"/>
   <commands xmi:id="_o6Gw4vLoEeyry9l0jVI7_A" elementId="AUTOGEN:::org.eclipse.pde.ui.logViewActions/org.eclipse.jdt.debug.ui.LogViewActions.showStackTrace" commandName="Show Stack Trace in Console View" description="Show Stack Trace in Console View" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gfYMIfPsEey_rtjnCDAo2A" elementId="com.autoesl.autopilot.ui.platform.command.openanalysis" commandName="Open Analysis Viewer" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gfYMIvPsEey_rtjnCDAo2A" elementId="com.autoesl.autopilot.ui.platform.opencosimreport" commandName="Open cosim report" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gfYMI_PsEey_rtjnCDAo2A" elementId="com.autoesl.autopilot.ui.platform.command.run" commandName="Run" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gfYMJPPsEey_rtjnCDAo2A" elementId="com.autoesl.autopilot.ui.platform.command.opendataflowview" commandName="Open Dataflow View" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gfYMJfPsEey_rtjnCDAo2A" elementId="com.autoesl.autopilot.ui.platform.command.openanalysisperspective" commandName="Open Schedule Viewer" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gfYMJvPsEey_rtjnCDAo2A" elementId="com.autoesl.autopilot.ui.platform.command.fileBrowser" commandName="File Browser" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gfYMJ_PsEey_rtjnCDAo2A" elementId="com.autoesl.autopilot.ui.platform.command.drective.redo" commandName="Redo" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gfYMKPPsEey_rtjnCDAo2A" elementId="com.autoesl.autopilot.ui.datapath.datapath.diagram.updateDiagram" commandName="Update Datapath diagram" description="Perform Datapath diagram update" category="_oomKIvLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gfYMKfPsEey_rtjnCDAo2A" elementId="com.autoesl.autopilot.ui.cdfg.diagram.updateDiagram" commandName="Update Cdfg diagram" description="Perform Cdfg diagram update" category="_oomKIvLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gfYMKvPsEey_rtjnCDAo2A" elementId="com.autoesl.autopilot.ui.platform.command.openreport" commandName="Open Report" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gfYMK_PsEey_rtjnCDAo2A" elementId="com.autoesl.autopilot.ui.platform.command.settings" commandName="Settings" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gfYMLPPsEey_rtjnCDAo2A" elementId="com.autoesl.autopilot.ui.platform.command.rtlreport" commandName="Open Export RTL Report" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gfYMLfPsEey_rtjnCDAo2A" elementId="com.autoesl.autopilot.ui.platform.command.synreport" commandName="Open Synthesis Report" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gfYMLvPsEey_rtjnCDAo2A" elementId="com.autoesl.autopilot.ui.platform.directiveviewcommand" commandName="Directive View" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gfYML_PsEey_rtjnCDAo2A" elementId="com.autoesl.autopilot.ui.platform.command.directive.undo" commandName="Undo" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtkZIPPsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.cdfg.custom.editorSearchContribution/com.autoesl.autopilot.ui.cdfg.custom.action1" commandName="Search Schedule Viewer" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtlAMPPsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.cdfg.custom.editorSearchContribution/com.autoesl.autopilot.ui.cdfg.custom.action2" commandName="Zoom 100%" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtlAMfPsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.cdfg.custom.editorSearchContribution/com.autoesl.autopilot.ui.cdfg.custom.actions.ShowAllBlocksEditorAction" commandName="Show/Hide All Blocks" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtlAMvPsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.cdfg.custom.editorSearchContribution/com.autoesl.autopilot.ui.cdfg.custom.actions.ShowAllRegionsEditorAction" commandName="Show/Hide  All Regions" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtlAM_PsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.cdfg.custom.editorSearchContribution/com.autoesl.autopilot.ui.cdfg.custom.actions.ZoomToFitEditorAction" commandName="Zoom To Fit" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtlANPPsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.cdfg.custom.editorContribution1/com.autoesl.autopilot.ui.cdfg.custom.gef.editor.actions.ZoomOutToolbarAction" commandName="Zoom Out" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtlnQPPsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.cdfg.custom.editorContribution1/com.autoesl.autopilot.ui.cdfg.custom.gef.editor.actions.ZoomInToolbarAction" commandName="Zoom In" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtlnQfPsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.cdfg.custom.editorContribution1/com.autoesl.autopilot.ui.cdfg.custom.actions.GoToUpLevelEditorAction" commandName="Up Level" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtlnQvPsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.cdfg.custom.editorContribution2/com.autoesl.autopilot.ui.cdfg.custom.gef.hanglers.openPartOfDataflowHandler" commandName="Show/Hide Part of Dataflow" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtlnQ_PsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.cdfg.custom.editorContribution2/com.autoesl.autopilot.ui.cdfg.custom.gef.handlers.openDataFlowLegendHandler" commandName="Open Dataflow Legend" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtlnRPPsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.cdfg.custom.editorContribution2/com.autoesl.autopilot.ui.cdfg.custom.gef.editor.actions.ZoomOutToolbarAction" commandName="Zoom Out" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtlnRfPsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.cdfg.custom.editorContribution2/com.autoesl.autopilot.ui.cdfg.custom.gef.editor.actions.ZoomInToolbarAction" commandName="Zoom In" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtlnRvPsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.cdfg.custom.editorContribution2/com.autoesl.autopilot.ui.cdfg.custom.actions.ZoomToFitEditorAction" commandName="Zoom To Fit" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtmOUPPsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.cdfg.custom.editorContribution2/com.autoesl.autopilot.ui.cdfg.custom.actions.GoToUpLevelEditorAction" commandName="Up Level" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtmOUfPsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.cdfg.custom.editorContribution4//developer/home5/shrex/p4HEADWorkspace0518/org.eclipse.ui/icons/full/elcl16/backward_nav.gif" commandName="Up Level" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtmOUvPsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.cdfg.custom.editorContribution1/com.autoesl.autopilot.ui.cdfg.custom.editor.LoopPipeLineZoomOutEditorAction" commandName="Zoom Out" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtmOU_PsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.cdfg.custom.editorContribution1/LoopPipeLineZoomInEditorAction" commandName="Zoom In" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtmOVPPsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.cdfg.custom.editorContribution1//developer/home5/shrex/p4HEADWorkspace0518/org.eclipse.ui/icons/full/elcl16/backward_nav.gif" commandName="Up Level" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtm1YPPsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.cdfg.custom.views.CDFGResourceViewActionID/com.autoesl.autopilot.ui.cdfg.custom.views.CDFGResourceViewZoomInAction" commandName="Zoom In" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtm1YfPsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.cdfg.custom.views.CDFGResourceViewActionID/com.autoesl.autopilot.ui.cdfg.custom.views.CDFGResourceViewZoomOutAction" commandName="Zoom Out" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtm1YvPsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.cdfg.custom.views.CDFGResourceViewActionID/com.autoesl.autopilot.ui.cdfg.custom.views.CDFGResourceViewZoom100Action" commandName="Zoom100%" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtm1Y_PsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.cdfg.custom.views.CDFGFSMViewID/com.autoesl.autopilot.ui.cdfg.custom.views.CDFGFSMViewZoomInAction" commandName="Zoom In" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtnccPPsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.cdfg.custom.views.CDFGFSMViewID/com.autoesl.autopilot.ui.cdfg.custom.views.CDFGFSMViewZoomOutAction" commandName="Zoom Out" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtnccfPsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.cdfg.custom.views.CDFGFSMViewID/com.autoesl.autopilot.ui.cdfg.custom.views.CDFGFSMViewZoom100Action" commandName="Zoom100%" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtnccvPsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.platform.viewContribution1/com.autoesl.autopilot.ui.platform.views.AutoPilotFileViewFilterAction" commandName="Filte inactive solution" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtncc_PsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.platform.views.AutoPilotDirectiveViewV2.actionContribution1/com.autoesl.autopilot.ui.platform.views.actions.CollapseAllInDirectiveView" commandName="Collapse All" category="_oomxMPLoEeyry9l0jVI7_A"/>
+  <commands xmi:id="_gtqfwPPsEey_rtjnCDAo2A" elementId="AUTOGEN:::com.autoesl.autopilot.ui.platform.views.AutoPilotDirectiveViewV2.actionContribution1/com.autoesl.autopilot.ui.platform.views.actions.ExpandSelectedItemInDirectiveView" commandName="Expand All" category="_oomxMPLoEeyry9l0jVI7_A"/>
   <addons xmi:id="_ohXgz_LoEeyry9l0jVI7_A" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_ohXg0PLoEeyry9l0jVI7_A" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_ohXg0fLoEeyry9l0jVI7_A" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
@@ -2615,7 +2710,7 @@
   <addons xmi:id="_ohXg1_LoEeyry9l0jVI7_A" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_ohXg2PLoEeyry9l0jVI7_A" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_oobyEPLoEeyry9l0jVI7_A" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_ggBFUPPsEey_rtjnCDAo2A" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <categories xmi:id="_oomKIPLoEeyry9l0jVI7_A" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_oomKIfLoEeyry9l0jVI7_A" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
   <categories xmi:id="_oomKIvLoEeyry9l0jVI7_A" elementId="org.eclipse.ui.category.edit" name="Edit"/>

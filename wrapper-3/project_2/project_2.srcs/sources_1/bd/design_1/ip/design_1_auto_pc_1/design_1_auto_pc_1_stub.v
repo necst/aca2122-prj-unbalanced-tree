@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
-// Date        : Fri Jun 24 16:43:05 2022
+// Date        : Fri Jun 24 16:43:04 2022
 // Host        : yavin running 64-bit Ubuntu 20.04.4 LTS
-// Command     : write_verilog -force -mode synth_stub
-//               /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top design_1_auto_pc_1 -prefix
+//               design_1_auto_pc_1_ design_1_auto_pc_1_stub.v
 // Design      : design_1_auto_pc_1
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xczu3eg-sbva484-1-e

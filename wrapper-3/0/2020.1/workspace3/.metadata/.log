@@ -64,3 +64,154 @@ Caused by: org.eclipse.swt.SWTException: Invalid thread access
 
 !ENTRY org.eclipse.core.jobs 2 2 2022-06-24 15:37:13.034
 !MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.ui.internal.console.IOConsolePartitioner$TrimJob
+!SESSION 2022-06-24 20:36:03.544 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -showlocation -perspective com.autoesl.autopilot.ui.platform.perspective -application com.autoesl.autopilot.ui.platform.application
+Command-line arguments:  -showlocation -clean -data 0/2020.1/workspace3 -perspective com.autoesl.autopilot.ui.platform.perspective -application com.autoesl.autopilot.ui.platform.application
+
+!ENTRY org.eclipse.emf.ecore 2 0 2022-06-24 20:36:05.092
+!MESSAGE Both 'com.autoesl.autopilot.ui.models' and 'com.autoesl.autopilot.ui.models' register a package for 'com.autoesl.autopilot.solution'
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-06-24 20:36:05.096
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 2 2 2022-06-24 20:36:08.308
+!MESSAGE Invalid preference category path: com.autoesl.autopilot.ui.startup.preferences.AutoPilotRootPreferencePage (bundle: com.autoesl.autopilot.ui.cdfg.diagram, page: com.autoesl.autopilot.ui.cdfg.diagram.general)
+
+!ENTRY org.eclipse.ui.workbench 4 2 2022-06-24 20:36:09.206
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at ui.utils.HSystem.getEnv(SourceFile:523)
+	at ui.utils.HSystem.isFrankMode(SourceFile:1451)
+	at ui.icon.HIcon.<clinit>(SourceFile:414)
+	at ui.frmwork.ag.<clinit>(SourceFile:29)
+	at ui.frmwork.shortcut.PAShortcutSchema.createCommandNameDefaults(SourceFile:57)
+	at ui.frmwork.shortcut.a.foM(SourceFile:54)
+	at ui.frmwork.shortcut.a.<init>(SourceFile:43)
+	at ui.frmwork.shortcut.PAShortcutSchema.<init>(SourceFile:39)
+	at ui.utils.sdx.HSDXMgr.init(SourceFile:87)
+	at ui.utils.sdx.HSDXMgr.sharedInstance(SourceFile:78)
+	at ui.utils.HSystem.setHLSMode(SourceFile:1688)
+	at com.autoesl.autopilot.ui.common.awtbridge.SDXSwingBridgeHelper.initialHLSMode(SDXSwingBridgeHelper.java:60)
+	at com.autoesl.autopilot.ui.cdfg.gantt.Activator.earlyStartup(Unknown Source)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:80)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:56)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2720)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function cannot be found by com.autoesl.autopilot.ui.lib_1.0.0
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:516)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 18 more
+
+!ENTRY org.eclipse.ui 4 0 2022-06-24 20:36:09.207
+!MESSAGE Unable to execute early startup code for the org.eclipse.ui.IStartup extension contributed by the 'com.autoesl.autopilot.ui.cdfg.gantt' plug-in.
+!STACK 0
+java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at ui.utils.HSystem.getEnv(SourceFile:523)
+	at ui.utils.HSystem.isFrankMode(SourceFile:1451)
+	at ui.icon.HIcon.<clinit>(SourceFile:414)
+	at ui.frmwork.ag.<clinit>(SourceFile:29)
+	at ui.frmwork.shortcut.PAShortcutSchema.createCommandNameDefaults(SourceFile:57)
+	at ui.frmwork.shortcut.a.foM(SourceFile:54)
+	at ui.frmwork.shortcut.a.<init>(SourceFile:43)
+	at ui.frmwork.shortcut.PAShortcutSchema.<init>(SourceFile:39)
+	at ui.utils.sdx.HSDXMgr.init(SourceFile:87)
+	at ui.utils.sdx.HSDXMgr.sharedInstance(SourceFile:78)
+	at ui.utils.HSystem.setHLSMode(SourceFile:1688)
+	at com.autoesl.autopilot.ui.common.awtbridge.SDXSwingBridgeHelper.initialHLSMode(SDXSwingBridgeHelper.java:60)
+	at com.autoesl.autopilot.ui.cdfg.gantt.Activator.earlyStartup(Unknown Source)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:80)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:56)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2720)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function cannot be found by com.autoesl.autopilot.ui.lib_1.0.0
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:516)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 18 more
+
+!ENTRY com.autoesl.autopilot.ui.platform 1 0 2022-06-24 20:36:18.128
+!MESSAGE HLS_Info: Finish initializing the SWIG data
+
+!ENTRY org.eclipse.jface 2 0 2022-06-24 20:36:21.050
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-06-24 20:36:21.050
+!MESSAGE A conflict occurred for CTRL+ARROW_LEFT:
+Binding(CTRL+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.egit.ui.RepositoriesViewCollapseWorkingTree,Collapse Working Tree,
+		,
+		Category(org.eclipse.egit.ui.commandCategory,Git,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@53eb4ef5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.egit.ui.RepositoriesView,,,system)
+Binding(CTRL+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.goto.wordPrevious,Previous Word,
+		Go to the previous word,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7b3b0896,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.ui.navigator 4 0 2022-06-24 20:36:22.058
+!MESSAGE An extension already exists with id "org.eclipse.egit.ui.RepositoriesViewContent".
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-06-24 20:36:28.783
+!MESSAGE Indexed 'myproject_prj' (3 sources, 300 headers) in 11 sec: 62,295 declarations; 109,076 references; 48 unresolved inclusions; 0 syntax errors; 2,036 unresolved names (1.2%)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2022-06-24 20:37:44.935
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1002)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.disposed(InjectorImpl.java:459)
+	at org.eclipse.e4.core.internal.di.Requestor.disposed(Requestor.java:160)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:83)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:105)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.handleInvalid(TrackableComputationExt.java:68)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:186)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:171)
+	at org.eclipse.e4.core.internal.contexts.osgi.EclipseContextOSGi.dispose(EclipseContextOSGi.java:102)
+	at org.eclipse.e4.core.internal.contexts.osgi.EclipseContextOSGi.bundleChanged(EclipseContextOSGi.java:144)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:973)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEventPrivileged(EquinoxEventPublisher.java:235)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:141)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:133)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor.publishModuleEvent(EquinoxContainerAdaptor.java:217)
+	at org.eclipse.osgi.container.Module.publishEvent(Module.java:498)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:656)
+	at org.eclipse.osgi.container.Module.stop(Module.java:520)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4724)
+	at org.eclipse.swt.SWT.error(SWT.java:4639)
+	at org.eclipse.swt.SWT.error(SWT.java:4610)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1447)
+	at org.eclipse.swt.widgets.Display.checkDevice(Display.java:949)
+	at org.eclipse.swt.widgets.Display.removeFilter(Display.java:4785)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.contextDisposed(MenuManagerRenderer.java:337)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 23 more
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-06-24 20:37:45.983
+!MESSAGE The workspace will exit with unsaved changes in this session.
+
+!ENTRY org.eclipse.core.jobs 2 2 2022-06-24 20:37:46.437
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.ui.internal.console.IOConsolePartitioner$TrimJob

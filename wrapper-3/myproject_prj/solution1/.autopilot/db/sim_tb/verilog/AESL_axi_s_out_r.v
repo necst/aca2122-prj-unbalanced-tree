@@ -1,14 +1,24 @@
 // ==============================================================
 // Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
-// Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
 
 `timescale 1 ns / 1 ps
 
-`define TV_OUT_out_r_TDATA "./impl_rtl.myproject_axi.autotvout_out_V_data_V.dat"
-`define TV_OUT_out_r_TKEEP "./impl_rtl.myproject_axi.autotvout_out_V_keep_V.dat"
-`define TV_OUT_out_r_TSTRB "./impl_rtl.myproject_axi.autotvout_out_V_strb_V.dat"
-`define TV_OUT_out_r_TLAST "./impl_rtl.myproject_axi.autotvout_out_V_last_V.dat"
+`define TV_OUT_out_r_TDATA "./impl_rtl.myproject_axi.autotvout_out_r_V_data_V.dat"
+`define EGRESS_STATUS_out_r_TDATA "./stream_egress_status_out_r_V_data_V.dat"
+`define TV_OUT_out_r_TKEEP "./impl_rtl.myproject_axi.autotvout_out_r_V_keep_V.dat"
+`define EGRESS_STATUS_out_r_TKEEP "./stream_egress_status_out_r_V_keep_V.dat"
+`define TV_OUT_out_r_TSTRB "./impl_rtl.myproject_axi.autotvout_out_r_V_strb_V.dat"
+`define EGRESS_STATUS_out_r_TSTRB "./stream_egress_status_out_r_V_strb_V.dat"
+`define TV_OUT_out_r_TUSER "./impl_rtl.myproject_axi.autotvout_out_r_V_user_V.dat"
+`define EGRESS_STATUS_out_r_TUSER "./stream_egress_status_out_r_V_user_V.dat"
+`define TV_OUT_out_r_TLAST "./impl_rtl.myproject_axi.autotvout_out_r_V_last_V.dat"
+`define EGRESS_STATUS_out_r_TLAST "./stream_egress_status_out_r_V_last_V.dat"
+`define TV_OUT_out_r_TID "./impl_rtl.myproject_axi.autotvout_out_r_V_id_V.dat"
+`define EGRESS_STATUS_out_r_TID "./stream_egress_status_out_r_V_id_V.dat"
+`define TV_OUT_out_r_TDEST "./impl_rtl.myproject_axi.autotvout_out_r_V_dest_V.dat"
+`define EGRESS_STATUS_out_r_TDEST "./stream_egress_status_out_r_V_dest_V.dat"
 
 `define AUTOTB_TRANSACTION_NUM 10000
 
@@ -18,7 +28,10 @@ module AESL_axi_s_out_r (
     input [32 - 1:0] TRAN_out_r_TDATA,
     input [4 - 1:0] TRAN_out_r_TKEEP,
     input [4 - 1:0] TRAN_out_r_TSTRB,
+    input TRAN_out_r_TUSER,
     input TRAN_out_r_TLAST,
+    input TRAN_out_r_TID,
+    input TRAN_out_r_TDEST,
     input TRAN_out_r_TVALID,
     output TRAN_out_r_TREADY,
     input ready,
@@ -33,7 +46,7 @@ module AESL_axi_s_out_r (
     reg out_r_TDATA_read_en;
     wire [32 - 1:0] out_r_TDATA_read_data;
     
-    fifo #(2, 32) fifo_out_r_TDATA (
+    fifo #(1, 32) fifo_out_r_TDATA (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(out_r_TDATA_write_en),
@@ -56,7 +69,7 @@ module AESL_axi_s_out_r (
     reg out_r_TKEEP_read_en;
     wire [4 - 1:0] out_r_TKEEP_read_data;
     
-    fifo #(2, 4) fifo_out_r_TKEEP (
+    fifo #(1, 4) fifo_out_r_TKEEP (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(out_r_TKEEP_write_en),
@@ -79,7 +92,7 @@ module AESL_axi_s_out_r (
     reg out_r_TSTRB_read_en;
     wire [4 - 1:0] out_r_TSTRB_read_data;
     
-    fifo #(2, 4) fifo_out_r_TSTRB (
+    fifo #(1, 4) fifo_out_r_TSTRB (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(out_r_TSTRB_write_en),
@@ -95,6 +108,29 @@ module AESL_axi_s_out_r (
         out_r_TSTRB_write_data <= TRAN_out_r_TSTRB;
         out_r_TSTRB_read_en <= 0;
     end
+    wire out_r_TUSER_full;
+    wire out_r_TUSER_empty;
+    reg out_r_TUSER_write_en;
+    reg [1 - 1:0] out_r_TUSER_write_data;
+    reg out_r_TUSER_read_en;
+    wire [1 - 1:0] out_r_TUSER_read_data;
+    
+    fifo #(1, 1) fifo_out_r_TUSER (
+        .reset(1'b0),
+        .write_clock(clk),
+        .write_en(out_r_TUSER_write_en),
+        .write_data(out_r_TUSER_write_data),
+        .read_clock(clk),
+        .read_en(out_r_TUSER_read_en),
+        .read_data(out_r_TUSER_read_data),
+        .full(out_r_TUSER_full),
+        .empty(out_r_TUSER_empty));
+    
+    always @ (*) begin
+        out_r_TUSER_write_en <= TRAN_out_r_TVALID;
+        out_r_TUSER_write_data <= TRAN_out_r_TUSER;
+        out_r_TUSER_read_en <= 0;
+    end
     wire out_r_TLAST_full;
     wire out_r_TLAST_empty;
     reg out_r_TLAST_write_en;
@@ -102,7 +138,7 @@ module AESL_axi_s_out_r (
     reg out_r_TLAST_read_en;
     wire [1 - 1:0] out_r_TLAST_read_data;
     
-    fifo #(2, 1) fifo_out_r_TLAST (
+    fifo #(1, 1) fifo_out_r_TLAST (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(out_r_TLAST_write_en),
@@ -118,10 +154,56 @@ module AESL_axi_s_out_r (
         out_r_TLAST_write_data <= TRAN_out_r_TLAST;
         out_r_TLAST_read_en <= 0;
     end
+    wire out_r_TID_full;
+    wire out_r_TID_empty;
+    reg out_r_TID_write_en;
+    reg [1 - 1:0] out_r_TID_write_data;
+    reg out_r_TID_read_en;
+    wire [1 - 1:0] out_r_TID_read_data;
+    
+    fifo #(1, 1) fifo_out_r_TID (
+        .reset(1'b0),
+        .write_clock(clk),
+        .write_en(out_r_TID_write_en),
+        .write_data(out_r_TID_write_data),
+        .read_clock(clk),
+        .read_en(out_r_TID_read_en),
+        .read_data(out_r_TID_read_data),
+        .full(out_r_TID_full),
+        .empty(out_r_TID_empty));
+    
+    always @ (*) begin
+        out_r_TID_write_en <= TRAN_out_r_TVALID;
+        out_r_TID_write_data <= TRAN_out_r_TID;
+        out_r_TID_read_en <= 0;
+    end
+    wire out_r_TDEST_full;
+    wire out_r_TDEST_empty;
+    reg out_r_TDEST_write_en;
+    reg [1 - 1:0] out_r_TDEST_write_data;
+    reg out_r_TDEST_read_en;
+    wire [1 - 1:0] out_r_TDEST_read_data;
+    
+    fifo #(1, 1) fifo_out_r_TDEST (
+        .reset(1'b0),
+        .write_clock(clk),
+        .write_en(out_r_TDEST_write_en),
+        .write_data(out_r_TDEST_write_data),
+        .read_clock(clk),
+        .read_en(out_r_TDEST_read_en),
+        .read_data(out_r_TDEST_read_data),
+        .full(out_r_TDEST_full),
+        .empty(out_r_TDEST_empty));
+    
+    always @ (*) begin
+        out_r_TDEST_write_en <= TRAN_out_r_TVALID;
+        out_r_TDEST_write_data <= TRAN_out_r_TDEST;
+        out_r_TDEST_read_en <= 0;
+    end
     assign TRAN_out_r_TVALID = TRAN_out_r_TVALID_temp;
 
     
-    assign TRAN_out_r_TREADY = ~(out_r_TDATA_full || out_r_TKEEP_full || out_r_TSTRB_full || out_r_TLAST_full);
+    assign TRAN_out_r_TREADY = ~(out_r_TDATA_full || out_r_TKEEP_full || out_r_TSTRB_full || out_r_TUSER_full || out_r_TLAST_full || out_r_TID_full || out_r_TDEST_full);
     
     function is_blank_char(input [7:0] in_char);
         if (in_char == " " || in_char == "\011" || in_char == "\012" || in_char == "\015") begin
@@ -131,7 +213,7 @@ module AESL_axi_s_out_r (
         end
     endfunction
     
-    function [127:0] read_token(input integer fp);
+    function [159:0] read_token(input integer fp);
         integer ret;
         begin
             read_token = "";
@@ -140,8 +222,8 @@ module AESL_axi_s_out_r (
         end
     endfunction
     
-    function [127:0] rm_0x(input [127:0] token);
-        reg [127:0] token_tmp;
+    function [159:0] rm_0x(input [159:0] token);
+        reg [159:0] token_tmp;
         integer i;
         begin
             token_tmp = "";
@@ -258,6 +340,37 @@ module AESL_axi_s_out_r (
         end
     end
     
+    reg [31:0] transaction_save_out_r_TUSER;
+    
+    initial begin : AXI_stream_receiver_out_r_TUSER
+        integer fp;
+        reg [1 - 1:0] data;
+        reg [8 * 5:1] str;
+        
+        transaction_save_out_r_TUSER = 0;
+        fifo_out_r_TUSER.clear();
+        wait (reset === 1);
+        forever begin
+            @ (negedge clk);
+            if (done_1 == 1) begin
+                fp = $fopen(`TV_OUT_out_r_TUSER, "a");
+                if (fp == 0) begin // Failed to open file
+                    $display("ERROR: Failed to open file \"%s\"!", `TV_OUT_out_r_TUSER);
+                    $finish;
+                end
+                $fdisplay(fp, "[[transaction]] %d", transaction_save_out_r_TUSER);
+                while (~fifo_out_r_TUSER.empty) begin
+                    fifo_out_r_TUSER.pop(data);
+                    $fdisplay(fp, "0x%x", data);
+                end
+                $fdisplay(fp, "[[/transaction]]");
+                transaction_save_out_r_TUSER = transaction_save_out_r_TUSER + 1;
+                fifo_out_r_TUSER.clear();
+                $fclose(fp);
+            end
+        end
+    end
+    
     reg [31:0] transaction_save_out_r_TLAST;
     
     initial begin : AXI_stream_receiver_out_r_TLAST
@@ -284,6 +397,68 @@ module AESL_axi_s_out_r (
                 $fdisplay(fp, "[[/transaction]]");
                 transaction_save_out_r_TLAST = transaction_save_out_r_TLAST + 1;
                 fifo_out_r_TLAST.clear();
+                $fclose(fp);
+            end
+        end
+    end
+    
+    reg [31:0] transaction_save_out_r_TID;
+    
+    initial begin : AXI_stream_receiver_out_r_TID
+        integer fp;
+        reg [1 - 1:0] data;
+        reg [8 * 5:1] str;
+        
+        transaction_save_out_r_TID = 0;
+        fifo_out_r_TID.clear();
+        wait (reset === 1);
+        forever begin
+            @ (negedge clk);
+            if (done_1 == 1) begin
+                fp = $fopen(`TV_OUT_out_r_TID, "a");
+                if (fp == 0) begin // Failed to open file
+                    $display("ERROR: Failed to open file \"%s\"!", `TV_OUT_out_r_TID);
+                    $finish;
+                end
+                $fdisplay(fp, "[[transaction]] %d", transaction_save_out_r_TID);
+                while (~fifo_out_r_TID.empty) begin
+                    fifo_out_r_TID.pop(data);
+                    $fdisplay(fp, "0x%x", data);
+                end
+                $fdisplay(fp, "[[/transaction]]");
+                transaction_save_out_r_TID = transaction_save_out_r_TID + 1;
+                fifo_out_r_TID.clear();
+                $fclose(fp);
+            end
+        end
+    end
+    
+    reg [31:0] transaction_save_out_r_TDEST;
+    
+    initial begin : AXI_stream_receiver_out_r_TDEST
+        integer fp;
+        reg [1 - 1:0] data;
+        reg [8 * 5:1] str;
+        
+        transaction_save_out_r_TDEST = 0;
+        fifo_out_r_TDEST.clear();
+        wait (reset === 1);
+        forever begin
+            @ (negedge clk);
+            if (done_1 == 1) begin
+                fp = $fopen(`TV_OUT_out_r_TDEST, "a");
+                if (fp == 0) begin // Failed to open file
+                    $display("ERROR: Failed to open file \"%s\"!", `TV_OUT_out_r_TDEST);
+                    $finish;
+                end
+                $fdisplay(fp, "[[transaction]] %d", transaction_save_out_r_TDEST);
+                while (~fifo_out_r_TDEST.empty) begin
+                    fifo_out_r_TDEST.pop(data);
+                    $fdisplay(fp, "0x%x", data);
+                end
+                $fdisplay(fp, "[[/transaction]]");
+                transaction_save_out_r_TDEST = transaction_save_out_r_TDEST + 1;
+                fifo_out_r_TDEST.clear();
                 $fclose(fp);
             end
         end

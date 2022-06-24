@@ -3,10 +3,10 @@
 #################
 array set opt {
   reset      0
-  csim       1
+  csim       0
   synth      1
-  cosim      1
-  validation 1
+  cosim      0
+  validation 0
   export     1
   vsynth     0
 }

@@ -2,6 +2,7 @@
 proc df_record_move {} {
     set fifo_record_directory "../../.autopilot/db/channel_depth_info"
     set process_record_directory "../../.autopilot/db/process_stalling_info"
+    set loop_record_directory "../../.autopilot/db/loop_performance_info"
 
     if {[file isdirectory $fifo_record_directory] == 0} {
         file mkdir $fifo_record_directory
@@ -9,6 +10,10 @@ proc df_record_move {} {
 
     if {[file isdirectory $process_record_directory] == 0} {
         file mkdir $process_record_directory
+    }
+
+    if {[file isdirectory $loop_record_directory] == 0} {
+        file mkdir $loop_record_directory
     }
     exec zip process.zip -m {*}[glob status*.csv module_status*.csv]
     df_move_file_type "process.zip" $process_record_directory

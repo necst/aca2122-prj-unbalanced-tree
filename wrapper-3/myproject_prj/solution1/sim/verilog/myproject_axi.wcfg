@@ -32,13 +32,28 @@
          <obj_property name="label">C Outputs</obj_property>
          <obj_property name="DisplayName">label</obj_property>
          <wvobject type="group" fp_name="group4">
-            <obj_property name="label">out(axis)</obj_property>
+            <obj_property name="label">return(axi_slave)</obj_property>
             <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/AESL_inst_myproject_axi/out_r_TDEST">
+               <obj_property name="ElementShortName">out_r_TDEST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">out_r_TDEST[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/AESL_inst_myproject_axi/out_r_TID">
+               <obj_property name="ElementShortName">out_r_TID[0:0]</obj_property>
+               <obj_property name="ObjectShortName">out_r_TID[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
             <wvobject type="array" fp_name="/apatb_myproject_axi_top/AESL_inst_myproject_axi/out_r_TLAST">
                <obj_property name="ElementShortName">out_r_TLAST[0:0]</obj_property>
                <obj_property name="ObjectShortName">out_r_TLAST[0:0]</obj_property>
                <obj_property name="CustomSignalColor">#ffff00</obj_property>
                <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/AESL_inst_myproject_axi/out_r_TUSER">
+               <obj_property name="ElementShortName">out_r_TUSER[0:0]</obj_property>
+               <obj_property name="ObjectShortName">out_r_TUSER[0:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
             <wvobject type="array" fp_name="/apatb_myproject_axi_top/AESL_inst_myproject_axi/out_r_TSTRB">
@@ -68,19 +83,42 @@
                <obj_property name="ObjectShortName">out_r_TDATA[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_axi_top/AESL_inst_myproject_axi/ap_local_deadlock">
+               <obj_property name="ElementShortName">ap_local_deadlock</obj_property>
+               <obj_property name="ObjectShortName">ap_local_deadlock</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_axi_top/AESL_inst_myproject_axi/ap_local_block">
+               <obj_property name="ElementShortName">ap_local_block</obj_property>
+               <obj_property name="ObjectShortName">ap_local_block</obj_property>
+            </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="group11">
+      <wvobject type="group" fp_name="group16">
          <obj_property name="label">C Inputs</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="group12">
-            <obj_property name="label">in(axis)</obj_property>
+         <wvobject type="group" fp_name="group17">
+            <obj_property name="label">return(axis)</obj_property>
             <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/AESL_inst_myproject_axi/in_r_TDEST">
+               <obj_property name="ElementShortName">in_r_TDEST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">in_r_TDEST[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/AESL_inst_myproject_axi/in_r_TID">
+               <obj_property name="ElementShortName">in_r_TID[0:0]</obj_property>
+               <obj_property name="ObjectShortName">in_r_TID[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
             <wvobject type="array" fp_name="/apatb_myproject_axi_top/AESL_inst_myproject_axi/in_r_TLAST">
                <obj_property name="ElementShortName">in_r_TLAST[0:0]</obj_property>
                <obj_property name="ObjectShortName">in_r_TLAST[0:0]</obj_property>
                <obj_property name="CustomSignalColor">#ffff00</obj_property>
                <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/AESL_inst_myproject_axi/in_r_TUSER">
+               <obj_property name="ElementShortName">in_r_TUSER[0:0]</obj_property>
+               <obj_property name="ObjectShortName">in_r_TUSER[0:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
             <wvobject type="array" fp_name="/apatb_myproject_axi_top/AESL_inst_myproject_axi/in_r_TSTRB">
@@ -112,7 +150,7 @@
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="group19">
+      <wvobject type="group" fp_name="group27">
          <obj_property name="label">Reset</obj_property>
          <obj_property name="DisplayName">label</obj_property>
          <wvobject type="logic" fp_name="/apatb_myproject_axi_top/AESL_inst_myproject_axi/ap_rst_n">
@@ -120,7 +158,7 @@
             <obj_property name="ObjectShortName">ap_rst_n</obj_property>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="group21">
+      <wvobject type="group" fp_name="group29">
          <obj_property name="label">Clock</obj_property>
          <obj_property name="DisplayName">label</obj_property>
          <wvobject type="logic" fp_name="/apatb_myproject_axi_top/AESL_inst_myproject_axi/ap_clk">
@@ -129,13 +167,13 @@
          </wvobject>
       </wvobject>
    </wvobject>
-   <wvobject type="group" fp_name="group23">
+   <wvobject type="group" fp_name="group31">
       <obj_property name="label">Test Bench Signals</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject type="group" fp_name="group24">
+      <wvobject type="group" fp_name="group32">
          <obj_property name="label">Internal Signals</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="group25">
+         <wvobject type="group" fp_name="group33">
             <obj_property name="label">Simulation Status</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <wvobject type="array" fp_name="/apatb_myproject_axi_top/AUTOTB_TRANSACTION_NUM">
@@ -153,103 +191,178 @@
                <obj_property name="ObjectShortName">done_cnt[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
-            <wvobject type="array" fp_name="/apatb_myproject_axi_top/ap_c_n_tvin_trans_num_in_V_data_V">
-               <obj_property name="ElementShortName">ap_c_n_tvin_trans_num_in_V_data_V[31:0]</obj_property>
-               <obj_property name="ObjectShortName">ap_c_n_tvin_trans_num_in_V_data_V[31:0]</obj_property>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/ap_c_n_tvin_trans_num_in_r_V_data_V">
+               <obj_property name="ElementShortName">ap_c_n_tvin_trans_num_in_r_V_data_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ap_c_n_tvin_trans_num_in_r_V_data_V[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
-            <wvobject type="array" fp_name="/apatb_myproject_axi_top/ap_c_n_tvin_trans_num_in_V_keep_V">
-               <obj_property name="ElementShortName">ap_c_n_tvin_trans_num_in_V_keep_V[31:0]</obj_property>
-               <obj_property name="ObjectShortName">ap_c_n_tvin_trans_num_in_V_keep_V[31:0]</obj_property>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/ap_c_n_tvin_trans_num_in_r_V_keep_V">
+               <obj_property name="ElementShortName">ap_c_n_tvin_trans_num_in_r_V_keep_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ap_c_n_tvin_trans_num_in_r_V_keep_V[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
-            <wvobject type="array" fp_name="/apatb_myproject_axi_top/ap_c_n_tvin_trans_num_in_V_strb_V">
-               <obj_property name="ElementShortName">ap_c_n_tvin_trans_num_in_V_strb_V[31:0]</obj_property>
-               <obj_property name="ObjectShortName">ap_c_n_tvin_trans_num_in_V_strb_V[31:0]</obj_property>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/ap_c_n_tvin_trans_num_in_r_V_strb_V">
+               <obj_property name="ElementShortName">ap_c_n_tvin_trans_num_in_r_V_strb_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ap_c_n_tvin_trans_num_in_r_V_strb_V[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
-            <wvobject type="array" fp_name="/apatb_myproject_axi_top/ap_c_n_tvin_trans_num_in_V_last_V">
-               <obj_property name="ElementShortName">ap_c_n_tvin_trans_num_in_V_last_V[31:0]</obj_property>
-               <obj_property name="ObjectShortName">ap_c_n_tvin_trans_num_in_V_last_V[31:0]</obj_property>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/ap_c_n_tvin_trans_num_in_r_V_user_V">
+               <obj_property name="ElementShortName">ap_c_n_tvin_trans_num_in_r_V_user_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ap_c_n_tvin_trans_num_in_r_V_user_V[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
-            <wvobject type="array" fp_name="/apatb_myproject_axi_top/ap_c_n_tvout_trans_num_out_V_data_V">
-               <obj_property name="ElementShortName">ap_c_n_tvout_trans_num_out_V_data_V[31:0]</obj_property>
-               <obj_property name="ObjectShortName">ap_c_n_tvout_trans_num_out_V_data_V[31:0]</obj_property>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/ap_c_n_tvin_trans_num_in_r_V_last_V">
+               <obj_property name="ElementShortName">ap_c_n_tvin_trans_num_in_r_V_last_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ap_c_n_tvin_trans_num_in_r_V_last_V[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
-            <wvobject type="array" fp_name="/apatb_myproject_axi_top/ap_c_n_tvout_trans_num_out_V_keep_V">
-               <obj_property name="ElementShortName">ap_c_n_tvout_trans_num_out_V_keep_V[31:0]</obj_property>
-               <obj_property name="ObjectShortName">ap_c_n_tvout_trans_num_out_V_keep_V[31:0]</obj_property>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/ap_c_n_tvin_trans_num_in_r_V_id_V">
+               <obj_property name="ElementShortName">ap_c_n_tvin_trans_num_in_r_V_id_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ap_c_n_tvin_trans_num_in_r_V_id_V[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
-            <wvobject type="array" fp_name="/apatb_myproject_axi_top/ap_c_n_tvout_trans_num_out_V_strb_V">
-               <obj_property name="ElementShortName">ap_c_n_tvout_trans_num_out_V_strb_V[31:0]</obj_property>
-               <obj_property name="ObjectShortName">ap_c_n_tvout_trans_num_out_V_strb_V[31:0]</obj_property>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/ap_c_n_tvin_trans_num_in_r_V_dest_V">
+               <obj_property name="ElementShortName">ap_c_n_tvin_trans_num_in_r_V_dest_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ap_c_n_tvin_trans_num_in_r_V_dest_V[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
-            <wvobject type="array" fp_name="/apatb_myproject_axi_top/ap_c_n_tvout_trans_num_out_V_last_V">
-               <obj_property name="ElementShortName">ap_c_n_tvout_trans_num_out_V_last_V[31:0]</obj_property>
-               <obj_property name="ObjectShortName">ap_c_n_tvout_trans_num_out_V_last_V[31:0]</obj_property>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/ap_c_n_tvout_trans_num_out_r_V_data_V">
+               <obj_property name="ElementShortName">ap_c_n_tvout_trans_num_out_r_V_data_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ap_c_n_tvout_trans_num_out_r_V_data_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/ap_c_n_tvout_trans_num_out_r_V_keep_V">
+               <obj_property name="ElementShortName">ap_c_n_tvout_trans_num_out_r_V_keep_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ap_c_n_tvout_trans_num_out_r_V_keep_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/ap_c_n_tvout_trans_num_out_r_V_strb_V">
+               <obj_property name="ElementShortName">ap_c_n_tvout_trans_num_out_r_V_strb_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ap_c_n_tvout_trans_num_out_r_V_strb_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/ap_c_n_tvout_trans_num_out_r_V_user_V">
+               <obj_property name="ElementShortName">ap_c_n_tvout_trans_num_out_r_V_user_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ap_c_n_tvout_trans_num_out_r_V_user_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/ap_c_n_tvout_trans_num_out_r_V_last_V">
+               <obj_property name="ElementShortName">ap_c_n_tvout_trans_num_out_r_V_last_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ap_c_n_tvout_trans_num_out_r_V_last_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/ap_c_n_tvout_trans_num_out_r_V_id_V">
+               <obj_property name="ElementShortName">ap_c_n_tvout_trans_num_out_r_V_id_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ap_c_n_tvout_trans_num_out_r_V_id_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/ap_c_n_tvout_trans_num_out_r_V_dest_V">
+               <obj_property name="ElementShortName">ap_c_n_tvout_trans_num_out_r_V_dest_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ap_c_n_tvout_trans_num_out_r_V_dest_V[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="group26">
+         <wvobject type="group" fp_name="group34">
             <obj_property name="label">Port Depth</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="array" fp_name="/apatb_myproject_axi_top/LENGTH_in_V_data_V">
-               <obj_property name="ElementShortName">LENGTH_in_V_data_V[31:0]</obj_property>
-               <obj_property name="ObjectShortName">LENGTH_in_V_data_V[31:0]</obj_property>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/LENGTH_in_r_V_data_V">
+               <obj_property name="ElementShortName">LENGTH_in_r_V_data_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_in_r_V_data_V[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
-            <wvobject type="array" fp_name="/apatb_myproject_axi_top/LENGTH_in_V_keep_V">
-               <obj_property name="ElementShortName">LENGTH_in_V_keep_V[31:0]</obj_property>
-               <obj_property name="ObjectShortName">LENGTH_in_V_keep_V[31:0]</obj_property>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/LENGTH_in_r_V_keep_V">
+               <obj_property name="ElementShortName">LENGTH_in_r_V_keep_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_in_r_V_keep_V[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
-            <wvobject type="array" fp_name="/apatb_myproject_axi_top/LENGTH_in_V_strb_V">
-               <obj_property name="ElementShortName">LENGTH_in_V_strb_V[31:0]</obj_property>
-               <obj_property name="ObjectShortName">LENGTH_in_V_strb_V[31:0]</obj_property>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/LENGTH_in_r_V_strb_V">
+               <obj_property name="ElementShortName">LENGTH_in_r_V_strb_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_in_r_V_strb_V[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
-            <wvobject type="array" fp_name="/apatb_myproject_axi_top/LENGTH_in_V_last_V">
-               <obj_property name="ElementShortName">LENGTH_in_V_last_V[31:0]</obj_property>
-               <obj_property name="ObjectShortName">LENGTH_in_V_last_V[31:0]</obj_property>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/LENGTH_in_r_V_user_V">
+               <obj_property name="ElementShortName">LENGTH_in_r_V_user_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_in_r_V_user_V[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
-            <wvobject type="array" fp_name="/apatb_myproject_axi_top/LENGTH_out_V_data_V">
-               <obj_property name="ElementShortName">LENGTH_out_V_data_V[31:0]</obj_property>
-               <obj_property name="ObjectShortName">LENGTH_out_V_data_V[31:0]</obj_property>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/LENGTH_in_r_V_last_V">
+               <obj_property name="ElementShortName">LENGTH_in_r_V_last_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_in_r_V_last_V[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
-            <wvobject type="array" fp_name="/apatb_myproject_axi_top/LENGTH_out_V_keep_V">
-               <obj_property name="ElementShortName">LENGTH_out_V_keep_V[31:0]</obj_property>
-               <obj_property name="ObjectShortName">LENGTH_out_V_keep_V[31:0]</obj_property>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/LENGTH_in_r_V_id_V">
+               <obj_property name="ElementShortName">LENGTH_in_r_V_id_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_in_r_V_id_V[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
-            <wvobject type="array" fp_name="/apatb_myproject_axi_top/LENGTH_out_V_strb_V">
-               <obj_property name="ElementShortName">LENGTH_out_V_strb_V[31:0]</obj_property>
-               <obj_property name="ObjectShortName">LENGTH_out_V_strb_V[31:0]</obj_property>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/LENGTH_in_r_V_dest_V">
+               <obj_property name="ElementShortName">LENGTH_in_r_V_dest_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_in_r_V_dest_V[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
-            <wvobject type="array" fp_name="/apatb_myproject_axi_top/LENGTH_out_V_last_V">
-               <obj_property name="ElementShortName">LENGTH_out_V_last_V[31:0]</obj_property>
-               <obj_property name="ObjectShortName">LENGTH_out_V_last_V[31:0]</obj_property>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/LENGTH_out_r_V_data_V">
+               <obj_property name="ElementShortName">LENGTH_out_r_V_data_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_out_r_V_data_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/LENGTH_out_r_V_keep_V">
+               <obj_property name="ElementShortName">LENGTH_out_r_V_keep_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_out_r_V_keep_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/LENGTH_out_r_V_strb_V">
+               <obj_property name="ElementShortName">LENGTH_out_r_V_strb_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_out_r_V_strb_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/LENGTH_out_r_V_user_V">
+               <obj_property name="ElementShortName">LENGTH_out_r_V_user_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_out_r_V_user_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/LENGTH_out_r_V_last_V">
+               <obj_property name="ElementShortName">LENGTH_out_r_V_last_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_out_r_V_last_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/LENGTH_out_r_V_id_V">
+               <obj_property name="ElementShortName">LENGTH_out_r_V_id_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_out_r_V_id_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/LENGTH_out_r_V_dest_V">
+               <obj_property name="ElementShortName">LENGTH_out_r_V_dest_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_out_r_V_dest_V[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="group46">
+      <wvobject type="group" fp_name="group66">
          <obj_property name="label">C Outputs</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="group47">
-            <obj_property name="label">out(axis)</obj_property>
+         <wvobject type="group" fp_name="group67">
+            <obj_property name="label">return(axi_slave)</obj_property>
             <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/out_r_TDEST">
+               <obj_property name="ElementShortName">out_r_TDEST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">out_r_TDEST[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/out_r_TID">
+               <obj_property name="ElementShortName">out_r_TID[0:0]</obj_property>
+               <obj_property name="ObjectShortName">out_r_TID[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
             <wvobject type="array" fp_name="/apatb_myproject_axi_top/out_r_TLAST">
                <obj_property name="ElementShortName">out_r_TLAST[0:0]</obj_property>
                <obj_property name="ObjectShortName">out_r_TLAST[0:0]</obj_property>
                <obj_property name="CustomSignalColor">#ffff00</obj_property>
                <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/out_r_TUSER">
+               <obj_property name="ElementShortName">out_r_TUSER[0:0]</obj_property>
+               <obj_property name="ObjectShortName">out_r_TUSER[0:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
             <wvobject type="array" fp_name="/apatb_myproject_axi_top/out_r_TSTRB">
@@ -279,19 +392,42 @@
                <obj_property name="ObjectShortName">out_r_TDATA[31:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_axi_top/ap_local_deadlock">
+               <obj_property name="ElementShortName">ap_local_deadlock</obj_property>
+               <obj_property name="ObjectShortName">ap_local_deadlock</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_myproject_axi_top/ap_local_block">
+               <obj_property name="ElementShortName">ap_local_block</obj_property>
+               <obj_property name="ObjectShortName">ap_local_block</obj_property>
+            </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="group54">
+      <wvobject type="group" fp_name="group79">
          <obj_property name="label">C Inputs</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="group55">
-            <obj_property name="label">in(axis)</obj_property>
+         <wvobject type="group" fp_name="group80">
+            <obj_property name="label">return(axis)</obj_property>
             <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/in_r_TDEST">
+               <obj_property name="ElementShortName">in_r_TDEST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">in_r_TDEST[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/in_r_TID">
+               <obj_property name="ElementShortName">in_r_TID[0:0]</obj_property>
+               <obj_property name="ObjectShortName">in_r_TID[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
             <wvobject type="array" fp_name="/apatb_myproject_axi_top/in_r_TLAST">
                <obj_property name="ElementShortName">in_r_TLAST[0:0]</obj_property>
                <obj_property name="ObjectShortName">in_r_TLAST[0:0]</obj_property>
                <obj_property name="CustomSignalColor">#ffff00</obj_property>
                <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_myproject_axi_top/in_r_TUSER">
+               <obj_property name="ElementShortName">in_r_TUSER[0:0]</obj_property>
+               <obj_property name="ObjectShortName">in_r_TUSER[0:0]</obj_property>
                <obj_property name="Radix">HEXRADIX</obj_property>
             </wvobject>
             <wvobject type="array" fp_name="/apatb_myproject_axi_top/in_r_TSTRB">

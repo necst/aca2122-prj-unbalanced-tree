@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <!DOCTYPE boost_serialization>
-<boost_serialization signature="serialization::archive" version="15">
+<boost_serialization signature="serialization::archive" version="17">
   <syndb class_id="0" tracking_level="0" version="0">
     <userIPLatency>-1</userIPLatency>
     <userIPName/>
     <cdfg class_id="1" tracking_level="1" version="0" object_id="_0">
       <name>decision_function_1</name>
+      <module_structure>Pipeline</module_structure>
       <ret_bitwidth>32</ret_bitwidth>
       <ports class_id="2" tracking_level="0" version="0">
         <count>3</count>
@@ -15,7 +16,7 @@
             <Obj class_id="5" tracking_level="0" version="0">
               <type>1</type>
               <id>1</id>
-              <name>p_read</name>
+              <name>p_read1</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -31,7 +32,10 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>402653568</coreId>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>1919510075</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -48,39 +52,6 @@
             <Obj>
               <type>1</type>
               <id>2</id>
-              <name>p_read1</name>
-              <fileName/>
-              <fileDirectory/>
-              <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
-              <inlineStackInfo>
-                <count>0</count>
-                <item_version>0</item_version>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
-              <coreId>0</coreId>
-            </Obj>
-            <bitwidth>32</bitwidth>
-          </Value>
-          <direction>0</direction>
-          <if_type>0</if_type>
-          <array_size>0</array_size>
-          <bit_vecs>
-            <count>0</count>
-            <item_version>0</item_version>
-          </bit_vecs>
-        </item>
-        <item class_id_reference="3" object_id="_3">
-          <Value>
-            <Obj>
-              <type>1</type>
-              <id>3</id>
               <name>p_read2</name>
               <fileName/>
               <fileDirectory/>
@@ -97,7 +68,46 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>49</coreId>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>951668416</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>32</bitwidth>
+          </Value>
+          <direction>0</direction>
+          <if_type>0</if_type>
+          <array_size>0</array_size>
+          <bit_vecs>
+            <count>0</count>
+            <item_version>0</item_version>
+          </bit_vecs>
+        </item>
+        <item class_id_reference="3" object_id="_3">
+          <Value>
+            <Obj>
+              <type>1</type>
+              <id>3</id>
+              <name>p_read3</name>
+              <fileName/>
+              <fileDirectory/>
+              <lineNumber>0</lineNumber>
+              <contextFuncName/>
+              <contextNormFuncName/>
+              <inlineStackInfo>
+                <count>0</count>
+                <item_version>0</item_version>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>950983616</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -118,10 +128,10 @@
             <Obj>
               <type>0</type>
               <id>5</id>
-              <name>p_read25</name>
-              <fileName>/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h</fileName>
+              <name>p_read33</name>
+              <fileName>/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>1497</lineNumber>
+              <lineNumber>1550</lineNumber>
               <contextFuncName>operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
               <contextNormFuncName>operator_le_32_16_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
               <inlineStackInfo>
@@ -134,10 +144,10 @@
                     <item_version>0</item_version>
                     <item class_id="12" tracking_level="0" version="0">
                       <first class_id="13" tracking_level="0" version="0">
-                        <first>/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h</first>
+                        <first>/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h</first>
                         <second>operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
                       </first>
-                      <second>1497</second>
+                      <second>1550</second>
                     </item>
                   </second>
                 </item>
@@ -148,7 +158,10 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>305</coreId>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>0</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -172,10 +185,10 @@
             <Obj>
               <type>0</type>
               <id>6</id>
-              <name>p_read14</name>
-              <fileName>/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h</fileName>
+              <name>p_read22</name>
+              <fileName>/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>1497</lineNumber>
+              <lineNumber>1550</lineNumber>
               <contextFuncName>operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
               <contextNormFuncName>operator_le_32_16_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
               <inlineStackInfo>
@@ -188,10 +201,10 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h</first>
+                        <first>/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h</first>
                         <second>operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
                       </first>
-                      <second>1497</second>
+                      <second>1550</second>
                     </item>
                   </second>
                 </item>
@@ -202,7 +215,10 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>49</coreId>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>0</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -226,10 +242,10 @@
             <Obj>
               <type>0</type>
               <id>7</id>
-              <name>p_read_17</name>
-              <fileName>/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h</fileName>
+              <name>p_read11</name>
+              <fileName>/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>1497</lineNumber>
+              <lineNumber>1550</lineNumber>
               <contextFuncName>operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
               <contextNormFuncName>operator_le_32_16_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
               <inlineStackInfo>
@@ -242,10 +258,10 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h</first>
+                        <first>/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h</first>
                         <second>operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
                       </first>
-                      <second>1497</second>
+                      <second>1550</second>
                     </item>
                   </second>
                 </item>
@@ -256,7 +272,10 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>132</coreId>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>0</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -280,10 +299,10 @@
             <Obj>
               <type>0</type>
               <id>8</id>
-              <name>icmp_ln1497</name>
-              <fileName>/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h</fileName>
+              <name>comparison</name>
+              <fileName>/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>1497</lineNumber>
+              <lineNumber>1550</lineNumber>
               <contextFuncName>operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
               <contextNormFuncName>operator_le_32_16_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
               <inlineStackInfo>
@@ -296,21 +315,24 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h</first>
+                        <first>/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h</first>
                         <second>operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
                       </first>
-                      <second>1497</second>
+                      <second>1550</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName>icmp_ln1497_fu_56_p2</rtlName>
-              <control/>
+              <originalName>comparison</originalName>
+              <rtlName>comparison_fu_56_p2</rtlName>
+              <control>auto</control>
               <opType>icmp</opType>
-              <implIndex/>
-              <coreName/>
-              <coreId>132</coreId>
+              <implIndex>auto</implIndex>
+              <coreName>Cmp</coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>9</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -334,10 +356,10 @@
             <Obj>
               <type>0</type>
               <id>9</id>
-              <name>icmp_ln1497_3</name>
-              <fileName>/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h</fileName>
+              <name>comparison_14</name>
+              <fileName>/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>1497</lineNumber>
+              <lineNumber>1550</lineNumber>
               <contextFuncName>operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
               <contextNormFuncName>operator_le_32_16_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
               <inlineStackInfo>
@@ -350,21 +372,24 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h</first>
+                        <first>/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h</first>
                         <second>operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
                       </first>
-                      <second>1497</second>
+                      <second>1550</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName>icmp_ln1497_3_fu_62_p2</rtlName>
-              <control/>
+              <originalName>comparison</originalName>
+              <rtlName>comparison_14_fu_62_p2</rtlName>
+              <control>auto</control>
               <opType>icmp</opType>
-              <implIndex/>
-              <coreName/>
-              <coreId>0</coreId>
+              <implIndex>auto</implIndex>
+              <coreName>Cmp</coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>9</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -388,10 +413,10 @@
             <Obj>
               <type>0</type>
               <id>10</id>
-              <name>icmp_ln1497_4</name>
-              <fileName>/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h</fileName>
+              <name>comparison_15</name>
+              <fileName>/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>1497</lineNumber>
+              <lineNumber>1550</lineNumber>
               <contextFuncName>operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
               <contextNormFuncName>operator_le_32_16_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
               <inlineStackInfo>
@@ -404,21 +429,24 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h</first>
+                        <first>/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h</first>
                         <second>operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
                       </first>
-                      <second>1497</second>
+                      <second>1550</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName>icmp_ln1497_4_fu_68_p2</rtlName>
-              <control/>
+              <originalName>comparison</originalName>
+              <rtlName>comparison_15_fu_68_p2</rtlName>
+              <control>auto</control>
               <opType>icmp</opType>
-              <implIndex/>
-              <coreName/>
-              <coreId>49</coreId>
+              <implIndex>auto</implIndex>
+              <coreName>Cmp</coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>9</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -442,10 +470,10 @@
             <Obj>
               <type>0</type>
               <id>11</id>
-              <name>xor_ln133</name>
+              <name>activation</name>
               <fileName>firmware/BDT.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>133</lineNumber>
+              <lineNumber>135</lineNumber>
               <contextFuncName>decision_function</contextFuncName>
               <contextNormFuncName>decision_function</contextNormFuncName>
               <inlineStackInfo>
@@ -461,18 +489,21 @@
                         <first>firmware/BDT.h</first>
                         <second>decision_function</second>
                       </first>
-                      <second>133</second>
+                      <second>135</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName>xor_ln133_fu_74_p2</rtlName>
-              <control/>
+              <originalName>activation</originalName>
+              <rtlName>activation_fu_74_p2</rtlName>
+              <control>auto</control>
               <opType>xor</opType>
-              <implIndex/>
-              <coreName/>
-              <coreId>305</coreId>
+              <implIndex>auto</implIndex>
+              <coreName>LogicGate</coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>74</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -496,6 +527,63 @@
             <Obj>
               <type>0</type>
               <id>12</id>
+              <name>xor_ln135</name>
+              <fileName>firmware/BDT.h</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>135</lineNumber>
+              <contextFuncName>decision_function</contextFuncName>
+              <contextNormFuncName>decision_function</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/BDT.h</first>
+                        <second>decision_function</second>
+                      </first>
+                      <second>135</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>xor_ln135_fu_80_p2</rtlName>
+              <control>auto</control>
+              <opType>xor</opType>
+              <implIndex>auto</implIndex>
+              <coreName>LogicGate</coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>74</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>1</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>42</item>
+            <item>43</item>
+          </oprand_edges>
+          <opcode>xor</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>8</m_topoIndex>
+          <m_clusterGroupNumber>2</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_12">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>13</id>
               <name>and_ln133</name>
               <fileName>firmware/BDT.h</fileName>
               <fileDirectory>..</fileDirectory>
@@ -521,20 +609,23 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>and_ln133_fu_80_p2</rtlName>
-              <control/>
+              <rtlName>and_ln133_fu_86_p2</rtlName>
+              <control>auto</control>
               <opType>and</opType>
-              <implIndex/>
-              <coreName/>
-              <coreId>49</coreId>
+              <implIndex>auto</implIndex>
+              <coreName>LogicGate</coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>74</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
             <item_version>0</item_version>
-            <item>42</item>
-            <item>43</item>
+            <item>44</item>
+            <item>45</item>
           </oprand_edges>
           <opcode>and</opcode>
           <m_Display>0</m_Display>
@@ -542,15 +633,15 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
-          <m_topoIndex>8</m_topoIndex>
-          <m_clusterGroupNumber>1</m_clusterGroupNumber>
+          <m_topoIndex>9</m_topoIndex>
+          <m_clusterGroupNumber>2</m_clusterGroupNumber>
         </item>
-        <item class_id_reference="9" object_id="_12">
+        <item class_id_reference="9" object_id="_13">
           <Value>
             <Obj>
               <type>0</type>
-              <id>13</id>
-              <name>and_ln133_2</name>
+              <id>14</id>
+              <name>activation_29</name>
               <fileName>firmware/BDT.h</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>133</lineNumber>
@@ -574,67 +665,16 @@
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName>and_ln133_2_fu_86_p2</rtlName>
-              <control/>
+              <originalName>activation</originalName>
+              <rtlName>activation_29_fu_92_p2</rtlName>
+              <control>auto</control>
               <opType>and</opType>
-              <implIndex/>
-              <coreName/>
-              <coreId>337</coreId>
-            </Obj>
-            <bitwidth>1</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item>44</item>
-            <item>45</item>
-          </oprand_edges>
-          <opcode>and</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
-          <m_topoIndex>9</m_topoIndex>
-          <m_clusterGroupNumber>1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_13">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>14</id>
-              <name>xor_ln148</name>
-              <fileName>firmware/BDT.h</fileName>
-              <fileDirectory>..</fileDirectory>
-              <lineNumber>148</lineNumber>
-              <contextFuncName>decision_function</contextFuncName>
-              <contextNormFuncName>decision_function</contextNormFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3</first>
-                  <second>
-                    <count>1</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>firmware/BDT.h</first>
-                        <second>decision_function</second>
-                      </first>
-                      <second>148</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName>xor_ln148_fu_92_p2</rtlName>
-              <control/>
-              <opType>xor</opType>
-              <implIndex/>
-              <coreName/>
-              <coreId>132</coreId>
+              <implIndex>auto</implIndex>
+              <coreName>LogicGate</coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>74</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -644,7 +684,7 @@
             <item>46</item>
             <item>47</item>
           </oprand_edges>
-          <opcode>xor</opcode>
+          <opcode>and</opcode>
           <m_Display>0</m_Display>
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
@@ -684,11 +724,14 @@
               </inlineStackInfo>
               <originalName/>
               <rtlName>or_ln148_fu_98_p2</rtlName>
-              <control/>
+              <control>auto</control>
               <opType>or</opType>
-              <implIndex/>
-              <coreName/>
-              <coreId>49</coreId>
+              <implIndex>auto</implIndex>
+              <coreName>LogicGate</coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>74</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -705,13 +748,69 @@
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.33</m_delay>
           <m_topoIndex>11</m_topoIndex>
-          <m_clusterGroupNumber>2</m_clusterGroupNumber>
+          <m_clusterGroupNumber>1</m_clusterGroupNumber>
         </item>
         <item class_id_reference="9" object_id="_15">
           <Value>
             <Obj>
               <type>0</type>
               <id>16</id>
+              <name>zext_ln148</name>
+              <fileName>firmware/BDT.h</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>148</lineNumber>
+              <contextFuncName>decision_function</contextFuncName>
+              <contextNormFuncName>decision_function</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/BDT.h</first>
+                        <second>decision_function</second>
+                      </first>
+                      <second>148</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName>zext_ln148_fu_104_p1</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>949173680</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>2</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>50</item>
+          </oprand_edges>
+          <opcode>zext</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>12</m_topoIndex>
+          <m_clusterGroupNumber>2</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_16">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>17</id>
               <name>or_ln148_2</name>
               <fileName>firmware/BDT.h</fileName>
               <fileDirectory>..</fileDirectory>
@@ -737,20 +836,23 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>or_ln148_2_fu_104_p2</rtlName>
-              <control/>
+              <rtlName>or_ln148_2_fu_108_p2</rtlName>
+              <control>auto</control>
               <opType>or</opType>
-              <implIndex/>
-              <coreName/>
-              <coreId>673197109</coreId>
+              <implIndex>auto</implIndex>
+              <coreName>LogicGate</coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>74</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
             <item_version>0</item_version>
-            <item>50</item>
             <item>51</item>
+            <item>52</item>
           </oprand_edges>
           <opcode>or</opcode>
           <m_Display>0</m_Display>
@@ -758,71 +860,18 @@
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
-          <m_topoIndex>12</m_topoIndex>
-          <m_clusterGroupNumber>1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_16">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>17</id>
-              <name>zext_ln149</name>
-              <fileName>firmware/BDT.h</fileName>
-              <fileDirectory>..</fileDirectory>
-              <lineNumber>149</lineNumber>
-              <contextFuncName>decision_function</contextFuncName>
-              <contextNormFuncName>decision_function</contextNormFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3</first>
-                  <second>
-                    <count>1</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>firmware/BDT.h</first>
-                        <second>decision_function</second>
-                      </first>
-                      <second>149</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName>zext_ln149_fu_110_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
-              <coreId>49</coreId>
-            </Obj>
-            <bitwidth>2</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>52</item>
-          </oprand_edges>
-          <opcode>zext</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
           <m_topoIndex>13</m_topoIndex>
-          <m_clusterGroupNumber>1</m_clusterGroupNumber>
+          <m_clusterGroupNumber>2</m_clusterGroupNumber>
         </item>
         <item class_id_reference="9" object_id="_17">
           <Value>
             <Obj>
               <type>0</type>
               <id>18</id>
-              <name>select_ln149</name>
+              <name>select_ln148</name>
               <fileName>firmware/BDT.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>149</lineNumber>
+              <lineNumber>148</lineNumber>
               <contextFuncName>decision_function</contextFuncName>
               <contextNormFuncName>decision_function</contextNormFuncName>
               <inlineStackInfo>
@@ -838,18 +887,21 @@
                         <first>firmware/BDT.h</first>
                         <second>decision_function</second>
                       </first>
-                      <second>149</second>
+                      <second>148</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>select_ln149_fu_114_p3</rtlName>
+              <rtlName>select_ln148_fu_114_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
               <implIndex>auto_sel</implIndex>
               <coreName>Sel</coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
               <coreId>73</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>2</bitwidth>
           </Value>
@@ -867,17 +919,17 @@
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
           <m_topoIndex>14</m_topoIndex>
-          <m_clusterGroupNumber>1</m_clusterGroupNumber>
+          <m_clusterGroupNumber>2</m_clusterGroupNumber>
         </item>
         <item class_id_reference="9" object_id="_18">
           <Value>
             <Obj>
               <type>0</type>
               <id>19</id>
-              <name>select_ln149_2</name>
+              <name>select_ln148_2</name>
               <fileName>firmware/BDT.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>149</lineNumber>
+              <lineNumber>148</lineNumber>
               <contextFuncName>decision_function</contextFuncName>
               <contextNormFuncName>decision_function</contextNormFuncName>
               <inlineStackInfo>
@@ -893,18 +945,21 @@
                         <first>firmware/BDT.h</first>
                         <second>decision_function</second>
                       </first>
-                      <second>149</second>
+                      <second>148</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_fu_130_p5</rtlName>
+              <rtlName>agg_result_fu_130_p5</rtlName>
               <control>auto</control>
               <opType>select</opType>
               <implIndex>auto_sel</implIndex>
               <coreName>Sel</coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
               <coreId>73</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>2</bitwidth>
           </Value>
@@ -922,14 +977,14 @@
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.00</m_delay>
           <m_topoIndex>15</m_topoIndex>
-          <m_clusterGroupNumber>1</m_clusterGroupNumber>
+          <m_clusterGroupNumber>2</m_clusterGroupNumber>
         </item>
         <item class_id_reference="9" object_id="_19">
           <Value>
             <Obj>
               <type>0</type>
               <id>20</id>
-              <name>tmp</name>
+              <name>agg_result</name>
               <fileName>firmware/BDT.h</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>149</lineNumber>
@@ -955,11 +1010,14 @@
               </inlineStackInfo>
               <originalName/>
               <rtlName>mux_42_32_1_1_U22</rtlName>
-              <control/>
+              <control>auto</control>
               <opType>mux</opType>
-              <implIndex/>
-              <coreName/>
-              <coreId>385</coreId>
+              <implIndex>auto</implIndex>
+              <coreName>Multiplexer</coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>76</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -980,7 +1038,7 @@
           <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>0.60</m_delay>
           <m_topoIndex>16</m_topoIndex>
-          <m_clusterGroupNumber>1</m_clusterGroupNumber>
+          <m_clusterGroupNumber>2</m_clusterGroupNumber>
         </item>
         <item class_id_reference="9" object_id="_20">
           <Value>
@@ -1017,7 +1075,10 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>49</coreId>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>64</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -1060,7 +1121,10 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>950051904</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -1088,7 +1152,10 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>132</coreId>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>949871280</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -1116,7 +1183,10 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>481</coreId>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>949097456</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -1144,7 +1214,10 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>132</coreId>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>950051904</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -1172,7 +1245,10 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1918990189</coreId>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>542329928</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>2</bitwidth>
           </Value>
@@ -1200,7 +1276,10 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>11</coreId>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>950677280</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>2</bitwidth>
           </Value>
@@ -1228,7 +1307,10 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>950647456</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -1256,7 +1338,10 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>49</coreId>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>950677888</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -1284,7 +1369,10 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>49</coreId>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>950647456</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -1312,7 +1400,10 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>49</coreId>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>949329280</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -1343,7 +1434,10 @@
             <opType/>
             <implIndex/>
             <coreName/>
-            <coreId>49</coreId>
+            <isStorage>0</isStorage>
+            <storageDepth>0</storageDepth>
+            <coreId>950983616</coreId>
+            <rtlModuleName/>
           </Obj>
           <node_objs>
             <count>17</count>
@@ -1437,7 +1531,7 @@
         <item class_id_reference="20" object_id="_41">
           <id>39</id>
           <edge_type>1</edge_type>
-          <source_obj>9</source_obj>
+          <source_obj>8</source_obj>
           <sink_obj>11</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -1451,42 +1545,42 @@
         <item class_id_reference="20" object_id="_43">
           <id>42</id>
           <edge_type>1</edge_type>
-          <source_obj>10</source_obj>
+          <source_obj>9</source_obj>
           <sink_obj>12</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_44">
           <id>43</id>
           <edge_type>1</edge_type>
-          <source_obj>11</source_obj>
+          <source_obj>40</source_obj>
           <sink_obj>12</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_45">
           <id>44</id>
           <edge_type>1</edge_type>
-          <source_obj>12</source_obj>
+          <source_obj>10</source_obj>
           <sink_obj>13</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_46">
           <id>45</id>
           <edge_type>1</edge_type>
-          <source_obj>8</source_obj>
+          <source_obj>12</source_obj>
           <sink_obj>13</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_47">
           <id>46</id>
           <edge_type>1</edge_type>
-          <source_obj>8</source_obj>
+          <source_obj>13</source_obj>
           <sink_obj>14</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_48">
           <id>47</id>
           <edge_type>1</edge_type>
-          <source_obj>40</source_obj>
+          <source_obj>8</source_obj>
           <sink_obj>14</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -1500,28 +1594,28 @@
         <item class_id_reference="20" object_id="_50">
           <id>49</id>
           <edge_type>1</edge_type>
-          <source_obj>14</source_obj>
+          <source_obj>11</source_obj>
           <sink_obj>15</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_51">
           <id>50</id>
           <edge_type>1</edge_type>
-          <source_obj>15</source_obj>
+          <source_obj>8</source_obj>
           <sink_obj>16</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_52">
           <id>51</id>
           <edge_type>1</edge_type>
-          <source_obj>13</source_obj>
-          <sink_obj>16</sink_obj>
+          <source_obj>15</source_obj>
+          <sink_obj>17</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_53">
           <id>52</id>
           <edge_type>1</edge_type>
-          <source_obj>8</source_obj>
+          <source_obj>14</source_obj>
           <sink_obj>17</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -1535,7 +1629,7 @@
         <item class_id_reference="20" object_id="_55">
           <id>54</id>
           <edge_type>1</edge_type>
-          <source_obj>17</source_obj>
+          <source_obj>16</source_obj>
           <sink_obj>18</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -1549,7 +1643,7 @@
         <item class_id_reference="20" object_id="_57">
           <id>57</id>
           <edge_type>1</edge_type>
-          <source_obj>16</source_obj>
+          <source_obj>17</source_obj>
           <sink_obj>19</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -1769,7 +1863,7 @@
         <count>11</count>
         <item_version>0</item_version>
         <item>
-          <first>and_ln133_2_fu_86_p2 ( and ) </first>
+          <first>activation_29_fu_92_p2 ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -1792,7 +1886,57 @@
           </second>
         </item>
         <item>
-          <first>and_ln133_fu_80_p2 ( and ) </first>
+          <first>activation_fu_74_p2 ( xor ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>2</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>agg_result_fu_130_p5 ( select ) </first>
+          <second>
+            <count>5</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>(2P2)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>2</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>and_ln133_fu_86_p2 ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -1815,7 +1959,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln1497_3_fu_62_p2 ( icmp ) </first>
+          <first>comparison_14_fu_62_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -1838,7 +1982,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln1497_4_fu_68_p2 ( icmp ) </first>
+          <first>comparison_15_fu_68_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -1861,7 +2005,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln1497_fu_56_p2 ( icmp ) </first>
+          <first>comparison_fu_56_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -1884,7 +2028,7 @@
           </second>
         </item>
         <item>
-          <first>or_ln148_2_fu_104_p2 ( or ) </first>
+          <first>or_ln148_2_fu_108_p2 ( or ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -1930,7 +2074,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln149_fu_114_p3 ( select ) </first>
+          <first>select_ln148_fu_114_p3 ( select ) </first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -1957,57 +2101,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_fu_130_p5 ( select ) </first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>2</second>
-            </item>
-            <item>
-              <first>(2P2)</first>
-              <second>2</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>2</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>xor_ln133_fu_74_p2 ( xor ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>2</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>2</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>xor_ln148_fu_92_p2 ( xor ) </first>
+          <first>xor_ln135_fu_80_p2 ( xor ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2073,7 +2167,31 @@
         <count>11</count>
         <item_version>0</item_version>
         <item>
-          <first>and_ln133_2_fu_86_p2 ( and ) </first>
+          <first>activation_29_fu_92_p2 ( and ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>14</item>
+          </second>
+        </item>
+        <item>
+          <first>activation_fu_74_p2 ( xor ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>11</item>
+          </second>
+        </item>
+        <item>
+          <first>agg_result_fu_130_p5 ( select ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>19</item>
+          </second>
+        </item>
+        <item>
+          <first>and_ln133_fu_86_p2 ( and ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2081,15 +2199,7 @@
           </second>
         </item>
         <item>
-          <first>and_ln133_fu_80_p2 ( and ) </first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>12</item>
-          </second>
-        </item>
-        <item>
-          <first>icmp_ln1497_3_fu_62_p2 ( icmp ) </first>
+          <first>comparison_14_fu_62_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2097,7 +2207,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln1497_4_fu_68_p2 ( icmp ) </first>
+          <first>comparison_15_fu_68_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2105,7 +2215,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln1497_fu_56_p2 ( icmp ) </first>
+          <first>comparison_fu_56_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2113,11 +2223,11 @@
           </second>
         </item>
         <item>
-          <first>or_ln148_2_fu_104_p2 ( or ) </first>
+          <first>or_ln148_2_fu_108_p2 ( or ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>16</item>
+            <item>17</item>
           </second>
         </item>
         <item>
@@ -2129,7 +2239,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln149_fu_114_p3 ( select ) </first>
+          <first>select_ln148_fu_114_p3 ( select ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2137,27 +2247,11 @@
           </second>
         </item>
         <item>
-          <first>tmp_fu_130_p5 ( select ) </first>
+          <first>xor_ln135_fu_80_p2 ( xor ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>19</item>
-          </second>
-        </item>
-        <item>
-          <first>xor_ln133_fu_74_p2 ( xor ) </first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>11</item>
-          </second>
-        </item>
-        <item>
-          <first>xor_ln148_fu_92_p2 ( xor ) </first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>14</item>
+            <item>12</item>
           </second>
         </item>
       </dp_expression_map>
@@ -2322,12 +2416,16 @@
         <region_type>8</region_type>
         <interval>1</interval>
         <pipe_depth>1</pipe_depth>
+        <mDBIIViolationVec class_id="45" tracking_level="0" version="0">
+          <count>0</count>
+          <item_version>0</item_version>
+        </mDBIIViolationVec>
       </item>
     </regions>
-    <dp_fu_nodes class_id="45" tracking_level="0" version="0">
+    <dp_fu_nodes class_id="46" tracking_level="0" version="0">
       <count>16</count>
       <item_version>0</item_version>
-      <item class_id="46" tracking_level="0" version="0">
+      <item class_id="47" tracking_level="0" version="0">
         <first>38</first>
         <second>
           <count>1</count>
@@ -2424,7 +2522,7 @@
         </second>
       </item>
       <item>
-        <first>110</first>
+        <first>108</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2456,11 +2554,35 @@
         </second>
       </item>
     </dp_fu_nodes>
-    <dp_fu_nodes_expression class_id="48" tracking_level="0" version="0">
+    <dp_fu_nodes_expression class_id="49" tracking_level="0" version="0">
       <count>13</count>
       <item_version>0</item_version>
-      <item class_id="49" tracking_level="0" version="0">
-        <first>and_ln133_2_fu_86</first>
+      <item class_id="50" tracking_level="0" version="0">
+        <first>activation_29_fu_92</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>14</item>
+        </second>
+      </item>
+      <item>
+        <first>activation_fu_74</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>11</item>
+        </second>
+      </item>
+      <item>
+        <first>agg_result_fu_130</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>20</item>
+        </second>
+      </item>
+      <item>
+        <first>and_ln133_fu_86</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2468,15 +2590,7 @@
         </second>
       </item>
       <item>
-        <first>and_ln133_fu_80</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>12</item>
-        </second>
-      </item>
-      <item>
-        <first>icmp_ln1497_3_fu_62</first>
+        <first>comparison_14_fu_62</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2484,7 +2598,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln1497_4_fu_68</first>
+        <first>comparison_15_fu_68</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2492,7 +2606,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln1497_fu_56</first>
+        <first>comparison_fu_56</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2500,11 +2614,11 @@
         </second>
       </item>
       <item>
-        <first>or_ln148_2_fu_104</first>
+        <first>or_ln148_2_fu_108</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>16</item>
+          <item>17</item>
         </second>
       </item>
       <item>
@@ -2516,7 +2630,7 @@
         </second>
       </item>
       <item>
-        <first>select_ln149_2_fu_122</first>
+        <first>select_ln148_2_fu_122</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2524,7 +2638,7 @@
         </second>
       </item>
       <item>
-        <first>select_ln149_fu_114</first>
+        <first>select_ln148_fu_114</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2532,35 +2646,19 @@
         </second>
       </item>
       <item>
-        <first>tmp_fu_130</first>
+        <first>xor_ln135_fu_80</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>20</item>
+          <item>12</item>
         </second>
       </item>
       <item>
-        <first>xor_ln133_fu_74</first>
+        <first>zext_ln148_fu_104</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>11</item>
-        </second>
-      </item>
-      <item>
-        <first>xor_ln148_fu_92</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>14</item>
-        </second>
-      </item>
-      <item>
-        <first>zext_ln149_fu_110</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>17</item>
+          <item>16</item>
         </second>
       </item>
     </dp_fu_nodes_expression>
@@ -2572,7 +2670,15 @@
       <count>3</count>
       <item_version>0</item_version>
       <item>
-        <first>p_read14_read_fu_44</first>
+        <first>p_read11_read_fu_50</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>7</item>
+        </second>
+      </item>
+      <item>
+        <first>p_read22_read_fu_44</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2580,19 +2686,11 @@
         </second>
       </item>
       <item>
-        <first>p_read25_read_fu_38</first>
+        <first>p_read33_read_fu_38</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>5</item>
-        </second>
-      </item>
-      <item>
-        <first>p_read_17_read_fu_50</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>7</item>
         </second>
       </item>
     </dp_fu_nodes_io>
@@ -2608,7 +2706,7 @@
         </second>
       </item>
     </return_ports>
-    <dp_mem_port_nodes class_id="50" tracking_level="0" version="0">
+    <dp_mem_port_nodes class_id="51" tracking_level="0" version="0">
       <count>0</count>
       <item_version>0</item_version>
     </dp_mem_port_nodes>
@@ -2628,11 +2726,11 @@
       <count>0</count>
       <item_version>0</item_version>
     </dp_regname_phi>
-    <dp_port_io_nodes class_id="51" tracking_level="0" version="0">
+    <dp_port_io_nodes class_id="52" tracking_level="0" version="0">
       <count>3</count>
       <item_version>0</item_version>
-      <item class_id="52" tracking_level="0" version="0">
-        <first>p_read</first>
+      <item class_id="53" tracking_level="0" version="0">
+        <first>p_read1</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2647,7 +2745,7 @@
         </second>
       </item>
       <item>
-        <first>p_read1</first>
+        <first>p_read2</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2662,7 +2760,7 @@
         </second>
       </item>
       <item>
-        <first>p_read2</first>
+        <first>p_read3</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2715,7 +2813,7 @@
       <item>
         <first>12</first>
         <second>
-          <first>23</first>
+          <first>25</first>
           <second>0</second>
         </second>
       </item>
@@ -2729,7 +2827,7 @@
       <item>
         <first>14</first>
         <second>
-          <first>25</first>
+          <first>23</first>
           <second>0</second>
         </second>
       </item>
@@ -2741,7 +2839,7 @@
         </second>
       </item>
       <item>
-        <first>16</first>
+        <first>17</first>
         <second>
           <first>24</first>
           <second>0</second>

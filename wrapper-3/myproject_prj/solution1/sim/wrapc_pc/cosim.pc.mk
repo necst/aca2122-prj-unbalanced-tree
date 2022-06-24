@@ -1,6 +1,6 @@
 # ==============================================================
 # Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
-# Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+# Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 # ==============================================================
 __SIM_FPO__ = 1
 __SIM_MATHHLS__ = 1
@@ -10,7 +10,7 @@ __SIM_DDS__ = 1
 
 override TARGET := cosim.pc.exe
 
-AUTOPILOT_ROOT := /opt/Xilinx/Vitis_HLS/2020.2
+AUTOPILOT_ROOT := /opt/Xilinx/Vitis_HLS/2021.2
 AUTOPILOT_MACH := lnx64
 
 ifdef COSIM_M32
@@ -23,7 +23,7 @@ ifdef AP_GCC_M32
 endif
 IFLAG += -fPIC
 ifndef AP_GCC_PATH
-  AP_GCC_PATH := /opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/bin
+  AP_GCC_PATH := /opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/bin
 endif
 AUTOPILOT_TOOL = ${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools
 AUTOPILOT_TECH = ${AUTOPILOT_ROOT}/common/technology
@@ -46,6 +46,7 @@ IFLAG += -D__SIM_FFT__
 IFLAG += -D__SIM_FIR__
 IFLAG += -D__SIM_DDS__
 IFLAG += -D__DSP48E2__
+IFLAG += -DUSE_BINARY_TV_FILE
 IFLAG += -Wno-unknown-pragmas
 LFLAG += -L "${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools/systemc/lib" -lsystemc -lpthread
 LFLAG += -L "${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools/clang-3.9-csynth/lib/clang/7.0.0/lib/linux" -lclang_rt.builtins-x86_64

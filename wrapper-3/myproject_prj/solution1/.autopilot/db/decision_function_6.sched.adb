@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <!DOCTYPE boost_serialization>
-<boost_serialization signature="serialization::archive" version="15">
+<boost_serialization signature="serialization::archive" version="17">
 <syndb class_id="0" tracking_level="0" version="0">
 	<userIPLatency>-1</userIPLatency>
 	<userIPName></userIPName>
 	<cdfg class_id="1" tracking_level="1" version="0" object_id="_0">
 		<name>decision_function_6</name>
+		<module_structure>Pipeline</module_structure>
 		<ret_bitwidth>32</ret_bitwidth>
 		<ports class_id="2" tracking_level="0" version="0">
 			<count>3</count>
@@ -15,7 +16,7 @@
 					<Obj class_id="5" tracking_level="0" version="0">
 						<type>1</type>
 						<id>1</id>
-						<name>p_read</name>
+						<name>p_read1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -31,7 +32,10 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>950074288</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -48,39 +52,6 @@
 					<Obj>
 						<type>1</type>
 						<id>2</id>
-						<name>p_read1</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>49</coreId>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<direction>0</direction>
-				<if_type>0</if_type>
-				<array_size>0</array_size>
-				<bit_vecs>
-					<count>0</count>
-					<item_version>0</item_version>
-				</bit_vecs>
-			</item>
-			<item class_id_reference="3" object_id="_3">
-				<Value>
-					<Obj>
-						<type>1</type>
-						<id>3</id>
 						<name>p_read2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -97,7 +68,46 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>132</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>950415120</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<direction>0</direction>
+				<if_type>0</if_type>
+				<array_size>0</array_size>
+				<bit_vecs>
+					<count>0</count>
+					<item_version>0</item_version>
+				</bit_vecs>
+			</item>
+			<item class_id_reference="3" object_id="_3">
+				<Value>
+					<Obj>
+						<type>1</type>
+						<id>3</id>
+						<name>p_read3</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>30</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -118,10 +128,10 @@
 					<Obj>
 						<type>0</type>
 						<id>5</id>
-						<name>p_read25</name>
-						<fileName>/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h</fileName>
+						<name>p_read33</name>
+						<fileName>/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h</fileName>
 						<fileDirectory>/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3</fileDirectory>
-						<lineNumber>1497</lineNumber>
+						<lineNumber>1550</lineNumber>
 						<contextFuncName>operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
 						<contextNormFuncName>operator_le_32_16_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -134,10 +144,10 @@
 									<item_version>0</item_version>
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
-											<first>/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h</first>
+											<first>/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h</first>
 											<second>operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
 										</first>
-										<second>1497</second>
+										<second>1550</second>
 									</item>
 								</second>
 							</item>
@@ -148,7 +158,10 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
 						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -172,10 +185,10 @@
 					<Obj>
 						<type>0</type>
 						<id>6</id>
-						<name>p_read14</name>
-						<fileName>/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h</fileName>
+						<name>p_read22</name>
+						<fileName>/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h</fileName>
 						<fileDirectory>/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3</fileDirectory>
-						<lineNumber>1497</lineNumber>
+						<lineNumber>1550</lineNumber>
 						<contextFuncName>operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
 						<contextNormFuncName>operator_le_32_16_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -188,10 +201,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h</first>
+											<first>/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h</first>
 											<second>operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
 										</first>
-										<second>1497</second>
+										<second>1550</second>
 									</item>
 								</second>
 							</item>
@@ -202,7 +215,10 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>173</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>950053776</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -226,10 +242,10 @@
 					<Obj>
 						<type>0</type>
 						<id>7</id>
-						<name>p_read_12</name>
-						<fileName>/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h</fileName>
+						<name>p_read11</name>
+						<fileName>/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h</fileName>
 						<fileDirectory>/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3</fileDirectory>
-						<lineNumber>1497</lineNumber>
+						<lineNumber>1550</lineNumber>
 						<contextFuncName>operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
 						<contextNormFuncName>operator_le_32_16_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -242,10 +258,10 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h</first>
+											<first>/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h</first>
 											<second>operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
 										</first>
-										<second>1497</second>
+										<second>1550</second>
 									</item>
 								</second>
 							</item>
@@ -256,7 +272,10 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1735289210</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>950053608</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -280,10 +299,10 @@
 					<Obj>
 						<type>0</type>
 						<id>8</id>
-						<name>icmp_ln1497</name>
-						<fileName>/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h</fileName>
+						<name>comparison</name>
+						<fileName>/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h</fileName>
 						<fileDirectory>/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3</fileDirectory>
-						<lineNumber>1497</lineNumber>
+						<lineNumber>1550</lineNumber>
 						<contextFuncName>operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
 						<contextNormFuncName>operator_le_32_16_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -296,21 +315,24 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h</first>
+											<first>/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h</first>
 											<second>operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
 										</first>
-										<second>1497</second>
+										<second>1550</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>comparison</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1852795251</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>950141376</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -334,10 +356,10 @@
 					<Obj>
 						<type>0</type>
 						<id>9</id>
-						<name>icmp_ln1497_3</name>
-						<fileName>/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h</fileName>
+						<name>comparison_4</name>
+						<fileName>/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h</fileName>
 						<fileDirectory>/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3</fileDirectory>
-						<lineNumber>1497</lineNumber>
+						<lineNumber>1550</lineNumber>
 						<contextFuncName>operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
 						<contextNormFuncName>operator_le_32_16_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -350,21 +372,24 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h</first>
+											<first>/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h</first>
 											<second>operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
 										</first>
-										<second>1497</second>
+										<second>1550</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>comparison</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1825</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1819113532</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -388,10 +413,10 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>icmp_ln1497_4</name>
-						<fileName>/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h</fileName>
+						<name>comparison_5</name>
+						<fileName>/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h</fileName>
 						<fileDirectory>/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3</fileDirectory>
-						<lineNumber>1497</lineNumber>
+						<lineNumber>1550</lineNumber>
 						<contextFuncName>operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;</contextFuncName>
 						<contextNormFuncName>operator_le_32_16_true_AP_TRN_AP_WRAP_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -404,21 +429,24 @@
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed_base.h</first>
+											<first>/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h</first>
 											<second>operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;</second>
 										</first>
-										<second>1497</second>
+										<second>1550</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>comparison</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>3998932752</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>949528016</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -442,10 +470,10 @@
 					<Obj>
 						<type>0</type>
 						<id>11</id>
-						<name>xor_ln133</name>
+						<name>activation</name>
 						<fileName>firmware/BDT.h</fileName>
 						<fileDirectory>/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3</fileDirectory>
-						<lineNumber>133</lineNumber>
+						<lineNumber>135</lineNumber>
 						<contextFuncName>decision_function</contextFuncName>
 						<contextNormFuncName>decision_function</contextNormFuncName>
 						<inlineStackInfo>
@@ -461,18 +489,21 @@
 											<first>firmware/BDT.h</first>
 											<second>decision_function</second>
 										</first>
-										<second>133</second>
+										<second>135</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>activation</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>132</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>949890464</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -496,10 +527,10 @@
 					<Obj>
 						<type>0</type>
 						<id>12</id>
-						<name>xor_ln133_1</name>
+						<name>xor_ln135</name>
 						<fileName>firmware/BDT.h</fileName>
 						<fileDirectory>/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3</fileDirectory>
-						<lineNumber>133</lineNumber>
+						<lineNumber>135</lineNumber>
 						<contextFuncName>decision_function</contextFuncName>
 						<contextNormFuncName>decision_function</contextNormFuncName>
 						<inlineStackInfo>
@@ -515,7 +546,7 @@
 											<first>firmware/BDT.h</first>
 											<second>decision_function</second>
 										</first>
-										<second>133</second>
+										<second>135</second>
 									</item>
 								</second>
 							</item>
@@ -526,7 +557,10 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1851859059</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>950141376</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -550,10 +584,10 @@
 					<Obj>
 						<type>0</type>
 						<id>13</id>
-						<name>and_ln133_2</name>
+						<name>activation_6</name>
 						<fileName>firmware/BDT.h</fileName>
 						<fileDirectory>/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3</fileDirectory>
-						<lineNumber>133</lineNumber>
+						<lineNumber>135</lineNumber>
 						<contextFuncName>decision_function</contextFuncName>
 						<contextNormFuncName>decision_function</contextNormFuncName>
 						<inlineStackInfo>
@@ -569,18 +603,21 @@
 											<first>firmware/BDT.h</first>
 											<second>decision_function</second>
 										</first>
-										<second>133</second>
+										<second>135</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>activation</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>132</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>949535336</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -634,7 +671,10 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>949980672</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -658,7 +698,7 @@
 					<Obj>
 						<type>0</type>
 						<id>15</id>
-						<name>and_ln133_3</name>
+						<name>activation_7</name>
 						<fileName>firmware/BDT.h</fileName>
 						<fileDirectory>/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3</fileDirectory>
 						<lineNumber>133</lineNumber>
@@ -682,13 +722,16 @@
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>activation</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>949528864</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -742,7 +785,10 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1825</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -766,6 +812,62 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
+						<name>zext_ln148</name>
+						<fileName>firmware/BDT.h</fileName>
+						<fileDirectory>/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3</fileDirectory>
+						<lineNumber>148</lineNumber>
+						<contextFuncName>decision_function</contextFuncName>
+						<contextNormFuncName>decision_function</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>firmware/BDT.h</first>
+											<second>decision_function</second>
+										</first>
+										<second>148</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>2</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>53</item>
+				</oprand_edges>
+				<opcode>zext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>13</m_topoIndex>
+				<m_clusterGroupNumber>2</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_17">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>18</id>
 						<name>or_ln148_2</name>
 						<fileName>firmware/BDT.h</fileName>
 						<fileDirectory>/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3</fileDirectory>
@@ -796,70 +898,20 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>949528320</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>53</item>
 					<item>54</item>
-				</oprand_edges>
-				<opcode>or</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>13</m_topoIndex>
-				<m_clusterGroupNumber>2</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_17">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>18</id>
-						<name>zext_ln149</name>
-						<fileName>firmware/BDT.h</fileName>
-						<fileDirectory>/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3</fileDirectory>
-						<lineNumber>149</lineNumber>
-						<contextFuncName>decision_function</contextFuncName>
-						<contextNormFuncName>decision_function</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>firmware/BDT.h</first>
-											<second>decision_function</second>
-										</first>
-										<second>149</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>3999288576</coreId>
-					</Obj>
-					<bitwidth>2</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
 					<item>55</item>
 				</oprand_edges>
-				<opcode>zext</opcode>
+				<opcode>or</opcode>
 				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
@@ -873,10 +925,10 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>select_ln149</name>
+						<name>select_ln148</name>
 						<fileName>firmware/BDT.h</fileName>
 						<fileDirectory>/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3</fileDirectory>
-						<lineNumber>149</lineNumber>
+						<lineNumber>148</lineNumber>
 						<contextFuncName>decision_function</contextFuncName>
 						<contextNormFuncName>decision_function</contextNormFuncName>
 						<inlineStackInfo>
@@ -892,7 +944,7 @@
 											<first>firmware/BDT.h</first>
 											<second>decision_function</second>
 										</first>
-										<second>149</second>
+										<second>148</second>
 									</item>
 								</second>
 							</item>
@@ -903,7 +955,10 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>49</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>949548408</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>2</bitwidth>
 				</Value>
@@ -928,10 +983,10 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>select_ln149_2</name>
+						<name>select_ln148_2</name>
 						<fileName>firmware/BDT.h</fileName>
 						<fileDirectory>/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3</fileDirectory>
-						<lineNumber>149</lineNumber>
+						<lineNumber>148</lineNumber>
 						<contextFuncName>decision_function</contextFuncName>
 						<contextNormFuncName>decision_function</contextNormFuncName>
 						<inlineStackInfo>
@@ -947,7 +1002,7 @@
 											<first>firmware/BDT.h</first>
 											<second>decision_function</second>
 										</first>
-										<second>149</second>
+										<second>148</second>
 									</item>
 								</second>
 							</item>
@@ -958,7 +1013,10 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>949851360</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>2</bitwidth>
 				</Value>
@@ -983,7 +1041,7 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>tmp</name>
+						<name>agg_result</name>
 						<fileName>firmware/BDT.h</fileName>
 						<fileDirectory>/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3</fileDirectory>
 						<lineNumber>149</lineNumber>
@@ -1013,7 +1071,10 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>3999517017</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>950141376</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -1071,7 +1132,10 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>132</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>949724992</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -1114,7 +1178,10 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>3998867560</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>950065216</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -1142,7 +1209,10 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>6775156</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -1170,7 +1240,10 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>402653312</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>950141376</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -1198,7 +1271,10 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>49</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -1226,7 +1302,10 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1108351136</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>2</bitwidth>
 				</Value>
@@ -1254,7 +1333,10 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>481</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>949531072</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>2</bitwidth>
 				</Value>
@@ -1282,7 +1364,10 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>49</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1108349504</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -1310,7 +1395,10 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>3999015833</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1108349504</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -1338,7 +1426,10 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>3999289856</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>950070272</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -1366,7 +1457,10 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>3999290576</coreId>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>950041008</coreId>
+						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -1397,7 +1491,10 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>49</coreId>
+					<isStorage>0</isStorage>
+					<storageDepth>0</storageDepth>
+					<coreId>950053520</coreId>
+					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
 					<count>18</count>
@@ -1520,14 +1617,14 @@
 			<item class_id_reference="20" object_id="_46">
 				<id>45</id>
 				<edge_type>1</edge_type>
-				<source_obj>11</source_obj>
+				<source_obj>12</source_obj>
 				<sink_obj>13</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_47">
 				<id>46</id>
 				<edge_type>1</edge_type>
-				<source_obj>12</source_obj>
+				<source_obj>11</source_obj>
 				<sink_obj>13</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -1576,21 +1673,21 @@
 			<item class_id_reference="20" object_id="_54">
 				<id>53</id>
 				<edge_type>1</edge_type>
-				<source_obj>16</source_obj>
+				<source_obj>11</source_obj>
 				<sink_obj>17</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_55">
 				<id>54</id>
 				<edge_type>1</edge_type>
-				<source_obj>15</source_obj>
-				<sink_obj>17</sink_obj>
+				<source_obj>16</source_obj>
+				<sink_obj>18</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_56">
 				<id>55</id>
 				<edge_type>1</edge_type>
-				<source_obj>11</source_obj>
+				<source_obj>15</source_obj>
 				<sink_obj>18</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -1604,7 +1701,7 @@
 			<item class_id_reference="20" object_id="_58">
 				<id>57</id>
 				<edge_type>1</edge_type>
-				<source_obj>18</source_obj>
+				<source_obj>17</source_obj>
 				<sink_obj>19</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -1618,7 +1715,7 @@
 			<item class_id_reference="20" object_id="_60">
 				<id>60</id>
 				<edge_type>1</edge_type>
-				<source_obj>17</source_obj>
+				<source_obj>18</source_obj>
 				<sink_obj>20</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -1868,13 +1965,17 @@
 			<region_type>8</region_type>
 			<interval>1</interval>
 			<pipe_depth>1</pipe_depth>
+			<mDBIIViolationVec class_id="34" tracking_level="0" version="0">
+				<count>0</count>
+				<item_version>0</item_version>
+			</mDBIIViolationVec>
 		</item>
 	</regions>
-	<dp_fu_nodes class_id="34" tracking_level="0" version="0">
+	<dp_fu_nodes class_id="35" tracking_level="0" version="0">
 		<count>0</count>
 		<item_version>0</item_version>
 	</dp_fu_nodes>
-	<dp_fu_nodes_expression class_id="35" tracking_level="0" version="0">
+	<dp_fu_nodes_expression class_id="36" tracking_level="0" version="0">
 		<count>0</count>
 		<item_version>0</item_version>
 	</dp_fu_nodes_expression>
@@ -1890,7 +1991,7 @@
 		<count>0</count>
 		<item_version>0</item_version>
 	</return_ports>
-	<dp_mem_port_nodes class_id="36" tracking_level="0" version="0">
+	<dp_mem_port_nodes class_id="37" tracking_level="0" version="0">
 		<count>0</count>
 		<item_version>0</item_version>
 	</dp_mem_port_nodes>
@@ -1910,7 +2011,7 @@
 		<count>0</count>
 		<item_version>0</item_version>
 	</dp_regname_phi>
-	<dp_port_io_nodes class_id="37" tracking_level="0" version="0">
+	<dp_port_io_nodes class_id="38" tracking_level="0" version="0">
 		<count>0</count>
 		<item_version>0</item_version>
 	</dp_port_io_nodes>

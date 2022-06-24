@@ -1,13 +1,13 @@
 # ==============================================================
 # Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
-# Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+# Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 # ==============================================================
-set ::env(LD_LIBRARY_PATH) /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/fpo_v7_0:$::env(LD_LIBRARY_PATH)
-set ::env(LD_LIBRARY_PATH) /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/fft_v9_1:$::env(LD_LIBRARY_PATH)
-set ::env(LD_LIBRARY_PATH) /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/fir_v7_0:$::env(LD_LIBRARY_PATH)
-set ::env(LD_LIBRARY_PATH) /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/dds_v6_0:$::env(LD_LIBRARY_PATH)
+set ::env(LD_LIBRARY_PATH) /opt/Xilinx/Vitis_HLS/2021.2/lnx64/tools/fpo_v7_0:$::env(LD_LIBRARY_PATH)
+set ::env(LD_LIBRARY_PATH) /opt/Xilinx/Vitis_HLS/2021.2/lnx64/tools/fft_v9_1:$::env(LD_LIBRARY_PATH)
+set ::env(LD_LIBRARY_PATH) /opt/Xilinx/Vitis_HLS/2021.2/lnx64/tools/fir_v7_0:$::env(LD_LIBRARY_PATH)
+set ::env(LD_LIBRARY_PATH) /opt/Xilinx/Vitis_HLS/2021.2/lnx64/tools/dds_v6_0:$::env(LD_LIBRARY_PATH)
 set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/usr/lib/x86_64-linux-gnu
-set ::env(LD_LIBRARY_PATH) /opt/Xilinx/Vitis_HLS/2020.2/lib/lnx64.o/Ubuntu:$::env(LD_LIBRARY_PATH)
+set ::env(LD_LIBRARY_PATH) /opt/Xilinx/Vitis_HLS/2021.2/lib/lnx64.o/Ubuntu:$::env(LD_LIBRARY_PATH)
 
 source check_sim.tcl
 source dataflow_monitor_API.tcl
@@ -52,7 +52,7 @@ proc run_exec {fileExe} {
 		return -code error -errorcode 10
 	}
 	set err {}
-	set ret [catch {eval exec "./$fileExe | tee tmp.log" >&@ stdout} err]
+set ret [catch {eval exec "./$fileExe | tee tmp.log" >&@ stdout} err]
 	
 	cpfilecontent tmp.log ../../.temp11.log
 	

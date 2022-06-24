@@ -4,7 +4,7 @@ set moduleIsExternC "1"
 set rawDecl ""
 set globalVariable ""
 set PortList ""
-set PortName "in"
+set PortName "in_r"
 set BitWidth "96"
 set ArrayOpt ""
 set Const "0"
@@ -50,7 +50,43 @@ set Interface0 "wire"
 set DataType0 "[list ap_uint 4]"
 set Port0 [list $PortName0 $Interface0 $DataType0 $Pointer0 $Dims0 $Const0 $Volatile0 $ArrayOpt0]
 lappend structMem $Port0
+set PortName0 "user"
+set BitWidth0 "1"
+set ArrayOpt0 ""
+set Const0 "0"
+set Volatile0 "0"
+set Pointer0 "0"
+set Reference0 "0"
+set Dims0 [list 0]
+set Interface0 "wire"
+set DataType0 "[list ap_uint 1]"
+set Port0 [list $PortName0 $Interface0 $DataType0 $Pointer0 $Dims0 $Const0 $Volatile0 $ArrayOpt0]
+lappend structMem $Port0
 set PortName0 "last"
+set BitWidth0 "1"
+set ArrayOpt0 ""
+set Const0 "0"
+set Volatile0 "0"
+set Pointer0 "0"
+set Reference0 "0"
+set Dims0 [list 0]
+set Interface0 "wire"
+set DataType0 "[list ap_uint 1]"
+set Port0 [list $PortName0 $Interface0 $DataType0 $Pointer0 $Dims0 $Const0 $Volatile0 $ArrayOpt0]
+lappend structMem $Port0
+set PortName0 "id"
+set BitWidth0 "1"
+set ArrayOpt0 ""
+set Const0 "0"
+set Volatile0 "0"
+set Pointer0 "0"
+set Reference0 "0"
+set Dims0 [list 0]
+set Interface0 "wire"
+set DataType0 "[list ap_uint 1]"
+set Port0 [list $PortName0 $Interface0 $DataType0 $Pointer0 $Dims0 $Const0 $Volatile0 $ArrayOpt0]
+lappend structMem $Port0
+set PortName0 "dest"
 set BitWidth0 "1"
 set ArrayOpt0 ""
 set Const0 "0"
@@ -70,7 +106,7 @@ set structIsPacked "0"
 set DataType [list "ap_axiu<32, 0, 0, 0>" "struct ap_axis" $structMem 1 0 $structParameter $structArgument $NameSpace $structIsPacked]
 set Port [list $PortName $Interface $DataType $Pointer $Dims $Const $Volatile $ArrayOpt]
 lappend PortList $Port
-set PortName "out"
+set PortName "out_r"
 set BitWidth "96"
 set ArrayOpt ""
 set Const "0"
@@ -116,7 +152,43 @@ set Interface0 "wire"
 set DataType0 "[list ap_uint 4]"
 set Port0 [list $PortName0 $Interface0 $DataType0 $Pointer0 $Dims0 $Const0 $Volatile0 $ArrayOpt0]
 lappend structMem $Port0
+set PortName0 "user"
+set BitWidth0 "1"
+set ArrayOpt0 ""
+set Const0 "0"
+set Volatile0 "0"
+set Pointer0 "0"
+set Reference0 "0"
+set Dims0 [list 0]
+set Interface0 "wire"
+set DataType0 "[list ap_uint 1]"
+set Port0 [list $PortName0 $Interface0 $DataType0 $Pointer0 $Dims0 $Const0 $Volatile0 $ArrayOpt0]
+lappend structMem $Port0
 set PortName0 "last"
+set BitWidth0 "1"
+set ArrayOpt0 ""
+set Const0 "0"
+set Volatile0 "0"
+set Pointer0 "0"
+set Reference0 "0"
+set Dims0 [list 0]
+set Interface0 "wire"
+set DataType0 "[list ap_uint 1]"
+set Port0 [list $PortName0 $Interface0 $DataType0 $Pointer0 $Dims0 $Const0 $Volatile0 $ArrayOpt0]
+lappend structMem $Port0
+set PortName0 "id"
+set BitWidth0 "1"
+set ArrayOpt0 ""
+set Const0 "0"
+set Volatile0 "0"
+set Pointer0 "0"
+set Reference0 "0"
+set Dims0 [list 0]
+set Interface0 "wire"
+set DataType0 "[list ap_uint 1]"
+set Port0 [list $PortName0 $Interface0 $DataType0 $Pointer0 $Dims0 $Const0 $Volatile0 $ArrayOpt0]
+lappend structMem $Port0
+set PortName0 "dest"
 set BitWidth0 "1"
 set ArrayOpt0 ""
 set Const0 "0"

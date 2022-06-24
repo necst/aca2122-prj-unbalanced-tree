@@ -13,25 +13,26 @@ void myproject_axi(
     unsigned short out_size = 0;
 
     score_t tree_scores[BDT::fn_classes(n_classes) * n_trees]{};
-    bool is_last = false;
+    // bool is_last = false;
     input_axis_t in_struct;
     output_axis_t out_struct;
     fake_input in_local[N_IN];
     result_t out_local[N_OUT];
 
     for(unsigned i = 0; i < N_IN; i++){
-        #pragma HLS PIPELINE
+        #pragma HLS UNROLL
          // Read input with cast
     	in_struct = in.read();
         in_local[i] = in_struct.data;
-        is_last |= (in_struct.last == 1)? 1 : 0;
+        // is_last |= (in_struct.last == 1)? 1 : 0;
         // std::cout << "i_in: " << i << " - is_last: " << is_last << std::endl;
     }
     myproject(in_local, out_local, tree_scores);
 
     for(unsigned i = 0; i < N_OUT; i++){
-        #pragma HLS PIPELINE
-        out_struct.last = (is_last && (i == N_OUT - 1)) ? 1 : 0;
+        #pragma HLS UNROLL
+        out_struct.last = (i == N_OUT - 1) ? 1 : 0;
+        // out_struct.last = 1;
         out_struct.data = out_local[i];
     	out_struct.dest = 0;
     	out_struct.id = 0;

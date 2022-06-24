@@ -1,5 +1,6 @@
+// 67d7842dbbe25473c3c32b93c0da8047785f30d78e8a024de1b57352245f9689
 // ==============================================================
-// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
 
@@ -7,10 +8,10 @@
 
 module myproject_axi_fpext_32ns_64_2_no_dsp_1
 #(parameter
-    ID         = 39,
+    ID         = 1,
     NUM_STAGE  = 2,
     din0_WIDTH = 32,
-    dout_WIDTH = 64
+    dout_WIDTH = 32
 )(
     input  wire                  clk,
     input  wire                  reset,
@@ -20,15 +21,15 @@ module myproject_axi_fpext_32ns_64_2_no_dsp_1
 );
 //------------------------Local signal-------------------
 wire                  a_tvalid;
-wire [31:0]           a_tdata;
+wire [din0_WIDTH-1:0]           a_tdata;
 wire                  r_tvalid;
-wire [63:0]           r_tdata;
+wire [dout_WIDTH-1:0]           r_tdata;
 reg  [din0_WIDTH-1:0] din0_buf1;
 reg                   ce_r;
 wire [dout_WIDTH-1:0] dout_i;
 reg  [dout_WIDTH-1:0] dout_r;
 //------------------------Instantiation------------------
-myproject_axi_ap_fpext_0_no_dsp_32 myproject_axi_ap_fpext_0_no_dsp_32_u (
+myproject_axi_fpext_32ns_64_2_no_dsp_1_ip myproject_axi_fpext_32ns_64_2_no_dsp_1_ip_u (
     .s_axis_a_tvalid      ( a_tvalid ),
     .s_axis_a_tdata       ( a_tdata ),
     .m_axis_result_tvalid ( r_tvalid ),

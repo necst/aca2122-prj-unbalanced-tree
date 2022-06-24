@@ -1,9 +1,10 @@
 
-`include "sample_manager.sv"
-`include "csv_file_dump.sv"
-`include "df_fifo_monitor.sv"
-`include "df_process_monitor.sv"
-`include "nodf_module_monitor.sv"
+`include "dump_file_agent.svh"
+`include "csv_file_dump.svh"
+`include "sample_agent.svh"
+`include "sample_manager.svh"
+`include "nodf_module_interface.svh"
+`include "nodf_module_monitor.svh"
 `timescale 1ns/1ps
 
 // top module for dataflow related monitors
@@ -25,7 +26,7 @@ input logic finish
     nodf_module_monitor module_monitor_1;
     nodf_module_intf module_intf_2(clock,reset);
     assign module_intf_2.ap_start = 1'b0;
-    assign module_intf_2.ap_ready = AESL_inst_myproject_axi.out_local_V_0_myproject_fu_345.ap_ready;
+    assign module_intf_2.ap_ready = AESL_inst_myproject_axi.out_local_V_myproject_fu_179.ap_ready;
     assign module_intf_2.ap_done = 1'b0;
     assign module_intf_2.ap_continue = 1'b0;
     assign module_intf_2.finish = finish;
@@ -33,7 +34,7 @@ input logic finish
     nodf_module_monitor module_monitor_2;
     nodf_module_intf module_intf_3(clock,reset);
     assign module_intf_3.ap_start = 1'b0;
-    assign module_intf_3.ap_ready = AESL_inst_myproject_axi.out_local_V_0_myproject_fu_345.s_V_1_decision_function_6_fu_108.ap_ready;
+    assign module_intf_3.ap_ready = AESL_inst_myproject_axi.out_local_V_myproject_fu_179.s_V_decision_function_7_fu_108.ap_ready;
     assign module_intf_3.ap_done = 1'b0;
     assign module_intf_3.ap_continue = 1'b0;
     assign module_intf_3.finish = finish;
@@ -41,7 +42,7 @@ input logic finish
     nodf_module_monitor module_monitor_3;
     nodf_module_intf module_intf_4(clock,reset);
     assign module_intf_4.ap_start = 1'b0;
-    assign module_intf_4.ap_ready = AESL_inst_myproject_axi.out_local_V_0_myproject_fu_345.s_V_2_decision_function_5_fu_118.ap_ready;
+    assign module_intf_4.ap_ready = AESL_inst_myproject_axi.out_local_V_myproject_fu_179.s_V_1_decision_function_6_fu_116.ap_ready;
     assign module_intf_4.ap_done = 1'b0;
     assign module_intf_4.ap_continue = 1'b0;
     assign module_intf_4.finish = finish;
@@ -49,7 +50,7 @@ input logic finish
     nodf_module_monitor module_monitor_4;
     nodf_module_intf module_intf_5(clock,reset);
     assign module_intf_5.ap_start = 1'b0;
-    assign module_intf_5.ap_ready = AESL_inst_myproject_axi.out_local_V_0_myproject_fu_345.s_V_3_decision_function_4_fu_126.ap_ready;
+    assign module_intf_5.ap_ready = AESL_inst_myproject_axi.out_local_V_myproject_fu_179.s_V_2_decision_function_5_fu_126.ap_ready;
     assign module_intf_5.ap_done = 1'b0;
     assign module_intf_5.ap_continue = 1'b0;
     assign module_intf_5.finish = finish;
@@ -57,7 +58,7 @@ input logic finish
     nodf_module_monitor module_monitor_5;
     nodf_module_intf module_intf_6(clock,reset);
     assign module_intf_6.ap_start = 1'b0;
-    assign module_intf_6.ap_ready = AESL_inst_myproject_axi.out_local_V_0_myproject_fu_345.s_V_4_decision_function_3_fu_134.ap_ready;
+    assign module_intf_6.ap_ready = AESL_inst_myproject_axi.out_local_V_myproject_fu_179.s_V_3_decision_function_4_fu_134.ap_ready;
     assign module_intf_6.ap_done = 1'b0;
     assign module_intf_6.ap_continue = 1'b0;
     assign module_intf_6.finish = finish;
@@ -65,7 +66,7 @@ input logic finish
     nodf_module_monitor module_monitor_6;
     nodf_module_intf module_intf_7(clock,reset);
     assign module_intf_7.ap_start = 1'b0;
-    assign module_intf_7.ap_ready = AESL_inst_myproject_axi.out_local_V_0_myproject_fu_345.s_V_5_decision_function_2_fu_142.ap_ready;
+    assign module_intf_7.ap_ready = AESL_inst_myproject_axi.out_local_V_myproject_fu_179.s_V_4_decision_function_3_fu_142.ap_ready;
     assign module_intf_7.ap_done = 1'b0;
     assign module_intf_7.ap_continue = 1'b0;
     assign module_intf_7.finish = finish;
@@ -73,7 +74,7 @@ input logic finish
     nodf_module_monitor module_monitor_7;
     nodf_module_intf module_intf_8(clock,reset);
     assign module_intf_8.ap_start = 1'b0;
-    assign module_intf_8.ap_ready = AESL_inst_myproject_axi.out_local_V_0_myproject_fu_345.s_V_6_decision_function_1_fu_150.ap_ready;
+    assign module_intf_8.ap_ready = AESL_inst_myproject_axi.out_local_V_myproject_fu_179.s_V_5_decision_function_2_fu_150.ap_ready;
     assign module_intf_8.ap_done = 1'b0;
     assign module_intf_8.ap_continue = 1'b0;
     assign module_intf_8.finish = finish;
@@ -81,7 +82,7 @@ input logic finish
     nodf_module_monitor module_monitor_8;
     nodf_module_intf module_intf_9(clock,reset);
     assign module_intf_9.ap_start = 1'b0;
-    assign module_intf_9.ap_ready = AESL_inst_myproject_axi.out_local_V_0_myproject_fu_345.s_V_decision_function_7_fu_160.ap_ready;
+    assign module_intf_9.ap_ready = AESL_inst_myproject_axi.out_local_V_myproject_fu_179.s_V_6_decision_function_1_fu_158.ap_ready;
     assign module_intf_9.ap_done = 1'b0;
     assign module_intf_9.ap_continue = 1'b0;
     assign module_intf_9.finish = finish;
@@ -89,12 +90,13 @@ input logic finish
     nodf_module_monitor module_monitor_9;
     nodf_module_intf module_intf_10(clock,reset);
     assign module_intf_10.ap_start = 1'b0;
-    assign module_intf_10.ap_ready = AESL_inst_myproject_axi.out_local_V_0_myproject_fu_345.s_V_7_decision_function_fu_168.ap_ready;
+    assign module_intf_10.ap_ready = AESL_inst_myproject_axi.out_local_V_myproject_fu_179.s_V_7_decision_function_fu_168.ap_ready;
     assign module_intf_10.ap_done = 1'b0;
     assign module_intf_10.ap_continue = 1'b0;
     assign module_intf_10.finish = finish;
     csv_file_dump mstatus_csv_dumper_10;
     nodf_module_monitor module_monitor_10;
+
 
     sample_manager sample_manager_inst;
 
@@ -123,6 +125,10 @@ initial begin
     module_monitor_9 = new(module_intf_9,mstatus_csv_dumper_9);
     mstatus_csv_dumper_10 = new("./module_status10.csv");
     module_monitor_10 = new(module_intf_10,mstatus_csv_dumper_10);
+
+
+
+
 
     sample_manager_inst.add_one_monitor(module_monitor_1);
     sample_manager_inst.add_one_monitor(module_monitor_2);
