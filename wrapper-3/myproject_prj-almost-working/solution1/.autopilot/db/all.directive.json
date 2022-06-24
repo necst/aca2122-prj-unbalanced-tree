@@ -1,0 +1,41 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "myproject_axi",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "myproject_axi"
+              }]
+          }
+        },
+        {
+          "functionName": "myproject_axi",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "myproject_axi"
+              }]
+          }
+        },
+        {
+          "functionName": "myproject_axi",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "myproject_axi"
+              }]
+          }
+        }
+      ]
+    }]}

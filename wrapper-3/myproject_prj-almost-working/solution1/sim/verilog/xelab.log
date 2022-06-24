@@ -1,0 +1,144 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_myproject_axi_top glbl -prj myproject_axi.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_10 -L floating_point_v7_0_17 --lib ieee_proposed=./ieee_proposed -s myproject_axi -debug wave 
+Multi-threading is on. Using 6 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/myproject_axi_mux_42_32_1_1_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_mux_42_32_1_1_x
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/myproject_axi_decision_function_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_decision_function_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/myproject_axi_myproject_axi_Pipeline_VITIS_LOOP_22_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_myproject_axi_Pipeline_VITIS_LOOP_22_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/myproject_axi_decision_function_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_decision_function_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/myproject_axi_decision_function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_decision_function
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/myproject_axi_decision_function_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_decision_function_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/AESL_axi_s_out_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_out_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/myproject_axi_decision_function_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_decision_function_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/myproject_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/myproject_axi_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_regslice_both
+INFO: [VRFC 10-311] analyzing module myproject_axi_regslice_both_w1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/myproject_axi_decision_function_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_decision_function_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/myproject_axi_fpext_32ns_64_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_fpext_32ns_64_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx0_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/myproject_axi_decision_function_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_decision_function_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/myproject_axi_decision_function_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_decision_function_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/myproject_axi.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_myproject_axi_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/AESL_axi_s_in_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_in_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/myproject_axi_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_kernel_monitor_top
+WARNING: [VRFC 10-3824] variable 'block_delay' must explicitly be declared as automatic or static [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v:30]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/myproject_axi_mux_42_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_mux_42_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/myproject_axi_myproject.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_myproject
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/ip/xil_defaultlib/myproject_axi_fpext_32ns_64_2_no_dsp_1_ip.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'myproject_axi_fpext_32ns_64_2_no_dsp_1_ip'
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_10' of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/myproject_axi_fpext_32ns_64_2_no_dsp_1_ip.vhd:191]
+WARNING: [VRFC 10-3645] port 'axis_block_info' remains unconnected for this instance [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v:20]
+WARNING: [VRFC 10-3705] select index -1 into 'axis_block_sigs' is out of bounds [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v:43]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package floating_point_v7_1_10.floating_point_v7_1_10_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package floating_point_v7_1_10.floating_point_v7_1_10_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_10.floating_point_v7_1_10_exp_table...
+Compiling package mult_gen_v12_0_16.mult_gen_v12_0_16_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_10.floating_point_v7_1_10_pkg
+Compiling package floating_point_v7_1_10.flt_utils
+Compiling package unisim.vcomponents
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_10.delay [\delay(width=23,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_10.delay [\delay(width=8,length=0)\]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_10.delay [\delay(width=4,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_10.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_10.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_10.delay [\delay(length=0,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_10.special_detect [\special_detect(a_fw=24,op_delay...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_10.delay [\delay(length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_10.delay [\delay(width=2,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_10.delay [\delay(width=4,length=0,fast_inp...]
+Compiling architecture rtl of entity floating_point_v7_1_10.flt_to_flt_conv_exp [\flt_to_flt_conv_exp(r_w=64,r_ew...]
+Compiling architecture synth of entity floating_point_v7_1_10.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_10.flt_to_flt_conv [\flt_to_flt_conv(c_xdevicefamily...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_10.delay [\delay(width=64,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_10.floating_point_v7_1_10_viv [\floating_point_v7_1_10_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_10.floating_point_v7_1_10 [\floating_point_v7_1_10(c_xdevic...]
+Compiling architecture myproject_axi_fpext_32ns_64_2_no_dsp_1_ip_arch of entity xil_defaultlib.myproject_axi_fpext_32ns_64_2_no_dsp_1_ip [myproject_axi_fpext_32ns_64_2_no...]
+Compiling module xil_defaultlib.myproject_axi_fpext_32ns_64_2_no...
+Compiling module xil_defaultlib.myproject_axi_flow_control_loop_...
+Compiling module xil_defaultlib.myproject_axi_myproject_axi_Pipe...
+Compiling module xil_defaultlib.myproject_axi_mux_42_32_1_1(ID=1...
+Compiling module xil_defaultlib.myproject_axi_decision_function_...
+Compiling module xil_defaultlib.myproject_axi_decision_function_...
+Compiling module xil_defaultlib.myproject_axi_decision_function_...
+Compiling module xil_defaultlib.myproject_axi_mux_42_32_1_1_x(ID...
+Compiling module xil_defaultlib.myproject_axi_decision_function_...
+Compiling module xil_defaultlib.myproject_axi_decision_function_...
+Compiling module xil_defaultlib.myproject_axi_decision_function_...
+Compiling module xil_defaultlib.myproject_axi_decision_function_...
+Compiling module xil_defaultlib.myproject_axi_decision_function
+Compiling module xil_defaultlib.myproject_axi_myproject
+Compiling module xil_defaultlib.myproject_axi_regslice_both
+Compiling module xil_defaultlib.myproject_axi_regslice_both(Data...
+Compiling module xil_defaultlib.myproject_axi_regslice_both(Data...
+Compiling module xil_defaultlib.myproject_axi
+Compiling module xil_defaultlib.fifo(DEPTH=10,WIDTH=32)
+Compiling module xil_defaultlib.fifo(DEPTH=10,WIDTH=4)
+Compiling module xil_defaultlib.fifo(DEPTH=10,WIDTH=1)
+Compiling module xil_defaultlib.AESL_axi_s_in_r
+Compiling module xil_defaultlib.fifo(DEPTH=1,WIDTH=32)
+Compiling module xil_defaultlib.fifo(DEPTH=1,WIDTH=4)
+Compiling module xil_defaultlib.fifo(DEPTH=1,WIDTH=1)
+Compiling module xil_defaultlib.AESL_axi_s_out_r
+Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor
+Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_myproject_axi_top
+Compiling module work.glbl
+Built simulation snapshot myproject_axi

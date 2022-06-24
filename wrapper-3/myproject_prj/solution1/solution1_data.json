@@ -19,38 +19,22 @@
       "index": "0",
       "direction": "in",
       "srcType": "stream<hls::axis<float, 0, 0, 0>, 0>&",
-      "srcSize": "96",
-      "hwRefs": [{
-          "type": "interface",
-          "interface": "in_r",
-          "name": "",
-          "usage": "data",
-          "direction": "in"
-        }]
+      "srcSize": "96"
     },
     "out": {
       "index": "1",
       "direction": "out",
       "srcType": "stream<hls::axis<float, 0, 0, 0>, 0>&",
-      "srcSize": "96",
-      "hwRefs": [{
-          "type": "interface",
-          "interface": "out_r",
-          "name": "",
-          "usage": "data",
-          "direction": "out"
-        }]
+      "srcSize": "96"
     }
   },
   "HlsSolution": {
     "FlowTarget": "vivado",
-    "ConfigTcl": [
-      "config_compile -complex-mul-dsp=0",
-      "config_compile -name_max_length=60",
-      "config_export -format=sysgen",
-      "config_export -rtl=verilog"
+    "ConfigTcl": ["config_compile -name_max_length=60"],
+    "DirectiveTcl": [
+      "set_directive_top myproject_axi -name myproject_axi",
+      "set_directive_top myproject_axi -name myproject_axi"
     ],
-    "DirectiveTcl": ["set_directive_top myproject_axi -name myproject_axi"],
     "ProfileOption": "0",
     "ProfileType": "none",
     "KernelName": "myproject_axi"
@@ -60,8 +44,8 @@
     "ClockPeriod": "7",
     "Uncertainty": "1.89",
     "IsCombinational": "0",
-    "II": "22",
-    "Latency": "21"
+    "II": "x",
+    "Latency": "18"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 7.000 [get_ports ap_clk]"]},
   "Ipx": {
@@ -78,11 +62,11 @@
   },
   "Files": {
     "CSource": [
+      "..\/..\/firmware\/myproject.cpp",
       "..\/..\/firmware\/myproject_axi.cpp",
-      "..\/..\/firmware\/myproject.cpp"
+      "..\/..\/firmware\/BDT.h"
     ],
     "Vhdl": [
-      "impl\/vhdl\/myproject_axi_ashr_54ns_32ns_54_7_1.vhd",
       "impl\/vhdl\/myproject_axi_decision_function.vhd",
       "impl\/vhdl\/myproject_axi_decision_function_1.vhd",
       "impl\/vhdl\/myproject_axi_decision_function_2.vhd",
@@ -91,25 +75,14 @@
       "impl\/vhdl\/myproject_axi_decision_function_5.vhd",
       "impl\/vhdl\/myproject_axi_decision_function_6.vhd",
       "impl\/vhdl\/myproject_axi_decision_function_7.vhd",
-      "impl\/vhdl\/myproject_axi_flow_control_loop_pipe_sequential_init.vhd",
       "impl\/vhdl\/myproject_axi_fpext_32ns_64_2_no_dsp_1.vhd",
-      "impl\/vhdl\/myproject_axi_fpext_32ns_64_4_no_dsp_1.vhd",
-      "impl\/vhdl\/myproject_axi_lshr_32s_6ns_32_1_1.vhd",
-      "impl\/vhdl\/myproject_axi_lshr_64ns_32ns_64_2_1.vhd",
-      "impl\/vhdl\/myproject_axi_mux_42_32_1_0.vhd",
-      "impl\/vhdl\/myproject_axi_mux_42_32_1_0_x.vhd",
       "impl\/vhdl\/myproject_axi_mux_42_32_1_1.vhd",
       "impl\/vhdl\/myproject_axi_mux_42_32_1_1_x.vhd",
       "impl\/vhdl\/myproject_axi_myproject.vhd",
-      "impl\/vhdl\/myproject_axi_myproject_axi_Pipeline_VITIS_LOOP_22_1.vhd",
       "impl\/vhdl\/myproject_axi_regslice_both.vhd",
-      "impl\/vhdl\/myproject_axi_shl_32ns_32ns_32_2_1.vhd",
-      "impl\/vhdl\/myproject_axi_shl_32ns_32s_32_2_1.vhd",
-      "impl\/vhdl\/myproject_axi_shl_64ns_32ns_64_2_1.vhd",
       "impl\/vhdl\/myproject_axi.vhd"
     ],
     "Verilog": [
-      "impl\/verilog\/myproject_axi_ashr_54ns_32ns_54_7_1.v",
       "impl\/verilog\/myproject_axi_decision_function.v",
       "impl\/verilog\/myproject_axi_decision_function_1.v",
       "impl\/verilog\/myproject_axi_decision_function_2.v",
@@ -118,52 +91,27 @@
       "impl\/verilog\/myproject_axi_decision_function_5.v",
       "impl\/verilog\/myproject_axi_decision_function_6.v",
       "impl\/verilog\/myproject_axi_decision_function_7.v",
-      "impl\/verilog\/myproject_axi_flow_control_loop_pipe_sequential_init.v",
       "impl\/verilog\/myproject_axi_fpext_32ns_64_2_no_dsp_1.v",
-      "impl\/verilog\/myproject_axi_fpext_32ns_64_4_no_dsp_1.v",
-      "impl\/verilog\/myproject_axi_hls_deadlock_idx0_monitor.v",
-      "impl\/verilog\/myproject_axi_hls_deadlock_kernel_monitor_top.vh",
-      "impl\/verilog\/myproject_axi_lshr_32s_6ns_32_1_1.v",
-      "impl\/verilog\/myproject_axi_lshr_64ns_32ns_64_2_1.v",
-      "impl\/verilog\/myproject_axi_mux_42_32_1_0.v",
-      "impl\/verilog\/myproject_axi_mux_42_32_1_0_x.v",
       "impl\/verilog\/myproject_axi_mux_42_32_1_1.v",
       "impl\/verilog\/myproject_axi_mux_42_32_1_1_x.v",
       "impl\/verilog\/myproject_axi_myproject.v",
-      "impl\/verilog\/myproject_axi_myproject_axi_Pipeline_VITIS_LOOP_22_1.v",
       "impl\/verilog\/myproject_axi_regslice_both.v",
-      "impl\/verilog\/myproject_axi_shl_32ns_32ns_32_2_1.v",
-      "impl\/verilog\/myproject_axi_shl_32ns_32s_32_2_1.v",
-      "impl\/verilog\/myproject_axi_shl_64ns_32ns_64_2_1.v",
       "impl\/verilog\/myproject_axi.v"
     ],
     "IpMisc": ["impl\/misc\/logo.png"],
-    "Subcore": [
-      "impl\/misc\/myproject_axi_fpext_32ns_64_2_no_dsp_1_ip.tcl",
-      "impl\/misc\/myproject_axi_fpext_32ns_64_4_no_dsp_1_ip.tcl"
-    ],
-    "CsynthXml": "syn\/report\/csynth.xml",
+    "Subcore": ["impl\/misc\/myproject_axi_ap_fpext_0_no_dsp_32_ip.tcl"],
+    "DesignXml": ".autopilot\/db\/myproject_axi.design.xml",
     "DebugDir": ".debug",
-    "KernelXml": ".autopilot\/db\/kernel.internal.xml",
-    "Xo": "",
-    "XoHlsDir": "",
-    "ProtoInst": [".debug\/myproject_axi.protoinst"]
+    "ProtoInst": ["\/home\/nghielme\/PycharmProjects\/conifer\/examples\/wrapper-3-20220623T092548Z-001\/wrapper-3\/myproject_prj\/solution1\/.debug\/myproject_axi.protoinst"]
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
     "HasClockedDsp": false,
-    "Ip": [
-      {
-        "Name": "myproject_axi_fpext_32ns_64_2_no_dsp_1_ip",
+    "Ip": [{
+        "Name": "myproject_axi_ap_fpext_0_no_dsp_32",
         "Vlnv": "xilinx.com:ip:floating_point:7.1",
-        "Params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name myproject_axi_fpext_32ns_64_2_no_dsp_1_ip CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Float_to_Float CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
-      },
-      {
-        "Name": "myproject_axi_fpext_32ns_64_4_no_dsp_1_ip",
-        "Vlnv": "xilinx.com:ip:floating_point:7.1",
-        "Params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 2 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name myproject_axi_fpext_32ns_64_4_no_dsp_1_ip CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Float_to_Float CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
-      }
-    ]
+        "Params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name myproject_axi_ap_fpext_0_no_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Float_to_Float CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      }]
   },
   "Interfaces": {
     "ap_clk": {
@@ -198,14 +146,7 @@
         "in_r_TREADY",
         "in_r_TSTRB",
         "in_r_TVALID"
-      ],
-      "constraints": [{
-          "constraint_type": "pragma interface",
-          "mode": "axis",
-          "register_option": "1",
-          "register_mode": "both",
-          "argName": "in"
-        }]
+      ]
     },
     "out_r": {
       "type": "axi4stream",
@@ -220,27 +161,10 @@
         "out_r_TREADY",
         "out_r_TSTRB",
         "out_r_TVALID"
-      ],
-      "constraints": [{
-          "constraint_type": "pragma interface",
-          "mode": "axis",
-          "register_option": "1",
-          "register_mode": "both",
-          "argName": "out"
-        }]
+      ]
     }
   },
   "RtlPorts": {
-    "ap_local_block": {
-      "dir": "out",
-      "width": "1",
-      "isVector": "true"
-    },
-    "ap_local_deadlock": {
-      "dir": "out",
-      "width": "1",
-      "isVector": "true"
-    },
     "ap_clk": {
       "dir": "in",
       "width": "1"
@@ -303,59 +227,46 @@
   "ModuleInfo": {
     "Hierarchy": {
       "ModuleName": "myproject_axi",
-      "Instances": [
-        {
-          "ModuleName": "myproject_axi_Pipeline_VITIS_LOOP_22_1",
-          "InstanceName": "grp_myproject_axi_Pipeline_VITIS_LOOP_22_1_fu_151"
-        },
-        {
+      "Instances": [{
           "ModuleName": "myproject",
-          "InstanceName": "out_local_V_myproject_fu_173",
+          "InstanceName": "out_local_V_0_myproject_fu_325",
           "Instances": [
             {
-              "ModuleName": "decision_function_7",
-              "InstanceName": "s_V_decision_function_7_fu_108"
-            },
-            {
               "ModuleName": "decision_function_6",
-              "InstanceName": "s_V_1_decision_function_6_fu_116"
+              "InstanceName": "s_V_1_decision_function_6_fu_108"
             },
             {
               "ModuleName": "decision_function_5",
-              "InstanceName": "s_V_2_decision_function_5_fu_126"
+              "InstanceName": "s_V_2_decision_function_5_fu_118"
             },
             {
               "ModuleName": "decision_function_4",
-              "InstanceName": "s_V_3_decision_function_4_fu_134"
+              "InstanceName": "s_V_3_decision_function_4_fu_126"
             },
             {
               "ModuleName": "decision_function_3",
-              "InstanceName": "s_V_4_decision_function_3_fu_142"
+              "InstanceName": "s_V_4_decision_function_3_fu_134"
             },
             {
               "ModuleName": "decision_function_2",
-              "InstanceName": "s_V_5_decision_function_2_fu_150"
+              "InstanceName": "s_V_5_decision_function_2_fu_142"
             },
             {
               "ModuleName": "decision_function_1",
-              "InstanceName": "s_V_6_decision_function_1_fu_158"
+              "InstanceName": "s_V_6_decision_function_1_fu_150"
+            },
+            {
+              "ModuleName": "decision_function_7",
+              "InstanceName": "s_V_decision_function_7_fu_160"
             },
             {
               "ModuleName": "decision_function",
               "InstanceName": "s_V_7_decision_function_fu_168"
             }
           ]
-        }
-      ]
+        }]
     },
     "Info": {
-      "myproject_axi_Pipeline_VITIS_LOOP_22_1": {
-        "FunctionProtocol": "ap_ctrl_hs",
-        "isTaskLevelControl": "0",
-        "isPipelined": "1",
-        "isCombinational": "0",
-        "isOneStateSeq": "0"
-      },
       "decision_function_7": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "0",
@@ -428,45 +339,6 @@
       }
     },
     "Metrics": {
-      "myproject_axi_Pipeline_VITIS_LOOP_22_1": {
-        "Latency": {
-          "LatencyBest": "14",
-          "LatencyAvg": "14",
-          "LatencyWorst": "14",
-          "PipelineII": "14",
-          "PipelineDepth": "",
-          "PipelineType": "no"
-        },
-        "Timing": {
-          "Target": "7.00",
-          "Uncertainty": "1.89",
-          "Estimate": "4.885"
-        },
-        "Loops": [{
-            "Name": "VITIS_LOOP_22_1",
-            "TripCount": "10",
-            "Latency": "12",
-            "PipelineII": "1",
-            "PipelineDepth": "4"
-          }],
-        "Area": {
-          "FF": "578",
-          "AVAIL_FF": "141120",
-          "UTIL_FF": "~0",
-          "LUT": "2601",
-          "AVAIL_LUT": "70560",
-          "UTIL_LUT": "3",
-          "BRAM_18K": "0",
-          "AVAIL_BRAM": "432",
-          "UTIL_BRAM": "0",
-          "DSP": "0",
-          "AVAIL_DSP": "360",
-          "UTIL_DSP": "0",
-          "URAM": "0",
-          "AVAIL_URAM": "0",
-          "UTIL_URAM": "0"
-        }
-      },
       "decision_function_7": {
         "Latency": {
           "LatencyBest": "0",
@@ -757,23 +629,30 @@
       },
       "myproject_axi": {
         "Latency": {
-          "LatencyBest": "21",
-          "LatencyAvg": "21",
-          "LatencyWorst": "21",
-          "PipelineII": "22",
+          "LatencyBest": "18",
+          "LatencyAvg": "18",
+          "LatencyWorst": "18",
+          "PipelineII": "19",
           "PipelineDepth": "",
-          "PipelineType": "no"
+          "PipelineType": "none"
         },
         "Timing": {
           "Target": "7.00",
           "Uncertainty": "1.89",
-          "Estimate": "4.885"
+          "Estimate": "4.971"
         },
+        "Loops": [{
+            "Name": "VITIS_LOOP_22_1",
+            "TripCount": "10",
+            "Latency": "12",
+            "PipelineII": "1",
+            "PipelineDepth": "4"
+          }],
         "Area": {
-          "FF": "727",
+          "FF": "820",
           "AVAIL_FF": "141120",
           "UTIL_FF": "~0",
-          "LUT": "4879",
+          "LUT": "4930",
           "AVAIL_LUT": "70560",
           "UTIL_LUT": "6",
           "BRAM_18K": "0",
@@ -789,11 +668,11 @@
       }
     }
   },
-  "GenerateBdFiles": "0",
+  "GenerateBdFiles": "1",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2022-06-24 13:00:30 CEST",
-    "ToolName": "vitis_hls",
+    "Time": "2022-06-24 15:53:08 CEST",
+    "ToolName": "vivado_hls",
     "ToolVersion": "2020.1"
   }
 }

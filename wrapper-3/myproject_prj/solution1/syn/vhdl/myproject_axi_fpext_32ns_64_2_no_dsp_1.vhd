@@ -1,6 +1,5 @@
--- 67d7842dbbe25473c3c32b93c0da8047785f30d78e8a024de1b57352245f9689
 -- ==============================================================
--- Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+-- Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- ==============================================================
 Library ieee;
@@ -8,10 +7,10 @@ use ieee.std_logic_1164.all;
 
 entity myproject_axi_fpext_32ns_64_2_no_dsp_1 is
     generic (
-        ID         : integer := 1;
+        ID         : integer := 39;
         NUM_STAGE  : integer := 2;
         din0_WIDTH : integer := 32;
-        dout_WIDTH : integer := 32
+        dout_WIDTH : integer := 64
     );
     port (
         clk   : in  std_logic;
@@ -24,26 +23,26 @@ end entity;
 
 architecture arch of myproject_axi_fpext_32ns_64_2_no_dsp_1 is
     --------------------- Component ---------------------
-    component myproject_axi_fpext_32ns_64_2_no_dsp_1_ip is
+    component myproject_axi_ap_fpext_0_no_dsp_32 is
         port (
             s_axis_a_tvalid      : in  std_logic;
-            s_axis_a_tdata       : in  std_logic_vector(din0_WIDTH-1 downto 0);
+            s_axis_a_tdata       : in  std_logic_vector(31 downto 0);
             m_axis_result_tvalid : out std_logic;
-            m_axis_result_tdata  : out std_logic_vector(dout_WIDTH-1 downto 0)
+            m_axis_result_tdata  : out std_logic_vector(63 downto 0)
         );
     end component;
     --------------------- Local signal ------------------
     signal a_tvalid  : std_logic;
-    signal a_tdata   : std_logic_vector(din0_WIDTH-1 downto 0);
+    signal a_tdata   : std_logic_vector(31 downto 0);
     signal r_tvalid  : std_logic;
-    signal r_tdata   : std_logic_vector(dout_WIDTH-1 downto 0);
+    signal r_tdata   : std_logic_vector(63 downto 0);
     signal din0_buf1 : std_logic_vector(din0_WIDTH-1 downto 0);
     signal ce_r      : std_logic;
     signal dout_i    : std_logic_vector(dout_WIDTH-1 downto 0);
     signal dout_r    : std_logic_vector(dout_WIDTH-1 downto 0);
 begin
     --------------------- Instantiation -----------------
-    myproject_axi_fpext_32ns_64_2_no_dsp_1_ip_u : component myproject_axi_fpext_32ns_64_2_no_dsp_1_ip
+    myproject_axi_ap_fpext_0_no_dsp_32_u : component myproject_axi_ap_fpext_0_no_dsp_32
     port map (
         s_axis_a_tvalid      => a_tvalid,
         s_axis_a_tdata       => a_tdata,

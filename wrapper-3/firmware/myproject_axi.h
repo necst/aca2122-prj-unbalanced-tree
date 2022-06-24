@@ -11,8 +11,8 @@ static const unsigned N_OUT = 1;
 typedef float T_in;
 typedef float T_out;
 
-/* Template for AXI Stream interface
-template<class DT, int D,int U,int TI,int TD>
+// Template for AXI Stream interface
+/*template<class DT, int D,int U,int TI,int TD>
 struct ap_axis{
 	DT		 		data;
 	ap_uint<D/8> 	keep;
@@ -27,8 +27,8 @@ struct ap_axis{
 typedef hls::axis<T_in, 0, 0, 0> input_axis_t;
 typedef hls::axis<T_out, 0, 0, 0> output_axis_t;
 
-//typedef ap_axis<T_in, 32, 1, 1, 1> input_axis_t;
-//typedef ap_axis<T_out, 32, 1, 1, 1> output_axis_t;
+// typedef ap_axis<T_in, 32, 1, 1, 1> input_axis_t;
+// typedef ap_axis<T_out, 32, 1, 1, 1> output_axis_t;
 
 typedef hls::stream<input_axis_t> input_axi_t;
 typedef hls::stream<output_axis_t> output_axi_t;

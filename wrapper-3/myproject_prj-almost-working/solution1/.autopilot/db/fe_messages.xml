@@ -1,0 +1,1089 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_ref.h:718:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_ref.h:732:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_ref.h:746:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:85:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:86:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=feature" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:87:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=threshold" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:88:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=value" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:89:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=children_left" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:90:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=children_right" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:91:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=parent" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:106:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=comparison" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:107:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=activation" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:108:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=activation_leaf" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:109:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=value_leaf" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:113:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:126:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_types.h:33:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:122:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_user_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:126:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_id_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:130:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_dest_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:160:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_strb_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:164:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_user_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:168:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_id_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:172:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_dest_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:178:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:182:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_keep" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:186:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_last" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:191:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:195:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_keep" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:199:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_last" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:203:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keep_all" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:209:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:213:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:217:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:222:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:227:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:231:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator=" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:266:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:273:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:281:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:291:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:302:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:312:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:327:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:363:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:370:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:378:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:388:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:399:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:409:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:425:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject_axi.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="myproject_axi" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=myproject_axi" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject_axi.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="myproject_axi" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject_axi.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="myproject_axi" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject_axi.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="myproject_axi" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject_axi.cpp:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="myproject_axi" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject_axi.cpp:33:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="myproject_axi" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5565" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:9:9" msg_body="'#pragma HLS unroll' can only be applied inside loop body">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_ref.h:718:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_ref.h:732:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_ref.h:746:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:85:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:86:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=feature" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:87:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=threshold" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:88:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=value" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:89:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=children_left" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:90:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=children_right" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:91:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=parent" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:106:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=comparison" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:107:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=activation" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:108:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=activation_leaf" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:109:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=value_leaf" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:113:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:126:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_types.h:33:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:5:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="myproject" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="myproject" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=score" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="myproject" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=tree_scores" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="myproject" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="myproject" ARG_PragmaIsValid="0" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Disaggregating variable 'bdt (.3)'">
+        <args Name="bdt (.3)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Disaggregating variable 'bdt (.3.21)'">
+        <args Name="bdt (.3.21)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Disaggregating variable 'bdt (.3.20)'">
+        <args Name="bdt (.3.20)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Disaggregating variable 'bdt (.3.19)'">
+        <args Name="bdt (.3.19)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Disaggregating variable 'bdt (.3.18)'">
+        <args Name="bdt (.3.18)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Disaggregating variable 'bdt (.3.17)'">
+        <args Name="bdt (.3.17)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Disaggregating variable 'bdt (.3.16)'">
+        <args Name="bdt (.3.16)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Disaggregating variable 'bdt (.3.15)'">
+        <args Name="bdt (.3.15)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Disaggregating variable 'bdt (.3.14)'">
+        <args Name="bdt (.3.14)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Disaggregating variable 'bdt (.3.13)'">
+        <args Name="bdt (.3.13)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Disaggregating variable 'bdt (.3.12)'">
+        <args Name="bdt (.3.12)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Disaggregating variable 'bdt (.3.11)'">
+        <args Name="bdt (.3.11)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Disaggregating variable 'bdt (.3.10)'">
+        <args Name="bdt (.3.10)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Disaggregating variable 'bdt (.3.9)'">
+        <args Name="bdt (.3.9)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Disaggregating variable 'bdt (.3.8)'">
+        <args Name="bdt (.3.8)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Disaggregating variable 'bdt (.3.7)'">
+        <args Name="bdt (.3.7)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Disaggregating variable 'bdt (.3.6)'">
+        <args Name="bdt (.3.6)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Disaggregating variable 'bdt (.3.5)'">
+        <args Name="bdt (.3.5)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Disaggregating variable 'bdt (.3.4)'">
+        <args Name="bdt (.3.4)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Disaggregating variable 'bdt (.3.3)'">
+        <args Name="bdt (.3.3)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Disaggregating variable 'bdt (.3.2)'">
+        <args Name="bdt (.3.2)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:300:28" msg_body="Loop 'VITIS_LOOP_300_21' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_300_21"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:287:22" msg_body="Loop 'VITIS_LOOP_287_20' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_287_20"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:282:22" msg_body="Loop 'VITIS_LOOP_282_19' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_282_19"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:277:22" msg_body="Loop 'VITIS_LOOP_277_18' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_277_18"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:272:22" msg_body="Loop 'VITIS_LOOP_272_17' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_272_17"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:267:22" msg_body="Loop 'VITIS_LOOP_267_16' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_267_16"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:262:22" msg_body="Loop 'VITIS_LOOP_262_15' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_262_15"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:257:22" msg_body="Loop 'VITIS_LOOP_257_14' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_257_14"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:252:22" msg_body="Loop 'VITIS_LOOP_252_13' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_252_13"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:247:22" msg_body="Loop 'VITIS_LOOP_247_12' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_247_12"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:242:22" msg_body="Loop 'VITIS_LOOP_242_11' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_242_11"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:237:22" msg_body="Loop 'VITIS_LOOP_237_10' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_237_10"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:232:21" msg_body="Loop 'VITIS_LOOP_232_9' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_232_9"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:227:21" msg_body="Loop 'VITIS_LOOP_227_8' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_227_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:222:21" msg_body="Loop 'VITIS_LOOP_222_7' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_222_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:217:21" msg_body="Loop 'VITIS_LOOP_217_6' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_217_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:212:21" msg_body="Loop 'VITIS_LOOP_212_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_212_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:207:21" msg_body="Loop 'VITIS_LOOP_207_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_207_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:202:21" msg_body="Loop 'VITIS_LOOP_202_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_202_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:197:21" msg_body="Loop 'VITIS_LOOP_197_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_197_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:192:3" msg_body="Loop 'Trees' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="Trees"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:188:21" msg_body="Loop 'VITIS_LOOP_188_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_188_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:147:21" msg_body="Loop 'VITIS_LOOP_147_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_147_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:125:13" msg_body="Loop 'Activate' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:112:11" msg_body="Loop 'Compare' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:104:11" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:184:0" msg_body="Unrolling loop 'VITIS_LOOP_300_21' (firmware/BDT.h:300:28) in function 'BDT::BDT&lt;20, 3, 2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, true&gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:300:28" LoopName="VITIS_LOOP_300_21"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:184:0" msg_body="Unrolling loop 'VITIS_LOOP_287_20' (firmware/BDT.h:287:22) in function 'BDT::BDT&lt;20, 3, 2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, true&gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:287:22" LoopName="VITIS_LOOP_287_20"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:184:0" msg_body="Unrolling loop 'VITIS_LOOP_282_19' (firmware/BDT.h:282:22) in function 'BDT::BDT&lt;20, 3, 2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, true&gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:282:22" LoopName="VITIS_LOOP_282_19"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:184:0" msg_body="Unrolling loop 'VITIS_LOOP_277_18' (firmware/BDT.h:277:22) in function 'BDT::BDT&lt;20, 3, 2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, true&gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:277:22" LoopName="VITIS_LOOP_277_18"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:184:0" msg_body="Unrolling loop 'VITIS_LOOP_272_17' (firmware/BDT.h:272:22) in function 'BDT::BDT&lt;20, 3, 2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, true&gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:272:22" LoopName="VITIS_LOOP_272_17"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:184:0" msg_body="Unrolling loop 'VITIS_LOOP_267_16' (firmware/BDT.h:267:22) in function 'BDT::BDT&lt;20, 3, 2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, true&gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:267:22" LoopName="VITIS_LOOP_267_16"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:184:0" msg_body="Unrolling loop 'VITIS_LOOP_262_15' (firmware/BDT.h:262:22) in function 'BDT::BDT&lt;20, 3, 2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, true&gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:262:22" LoopName="VITIS_LOOP_262_15"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:184:0" msg_body="Unrolling loop 'VITIS_LOOP_257_14' (firmware/BDT.h:257:22) in function 'BDT::BDT&lt;20, 3, 2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, true&gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:257:22" LoopName="VITIS_LOOP_257_14"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:184:0" msg_body="Unrolling loop 'VITIS_LOOP_252_13' (firmware/BDT.h:252:22) in function 'BDT::BDT&lt;20, 3, 2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, true&gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:252:22" LoopName="VITIS_LOOP_252_13"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:184:0" msg_body="Unrolling loop 'VITIS_LOOP_247_12' (firmware/BDT.h:247:22) in function 'BDT::BDT&lt;20, 3, 2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, true&gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:247:22" LoopName="VITIS_LOOP_247_12"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:184:0" msg_body="Unrolling loop 'VITIS_LOOP_242_11' (firmware/BDT.h:242:22) in function 'BDT::BDT&lt;20, 3, 2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, true&gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:242:22" LoopName="VITIS_LOOP_242_11"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:184:0" msg_body="Unrolling loop 'VITIS_LOOP_237_10' (firmware/BDT.h:237:22) in function 'BDT::BDT&lt;20, 3, 2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, true&gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:237:22" LoopName="VITIS_LOOP_237_10"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:184:0" msg_body="Unrolling loop 'VITIS_LOOP_232_9' (firmware/BDT.h:232:21) in function 'BDT::BDT&lt;20, 3, 2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, true&gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:232:21" LoopName="VITIS_LOOP_232_9"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:184:0" msg_body="Unrolling loop 'VITIS_LOOP_227_8' (firmware/BDT.h:227:21) in function 'BDT::BDT&lt;20, 3, 2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, true&gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:227:21" LoopName="VITIS_LOOP_227_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:184:0" msg_body="Unrolling loop 'VITIS_LOOP_222_7' (firmware/BDT.h:222:21) in function 'BDT::BDT&lt;20, 3, 2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, true&gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:222:21" LoopName="VITIS_LOOP_222_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:184:0" msg_body="Unrolling loop 'VITIS_LOOP_217_6' (firmware/BDT.h:217:21) in function 'BDT::BDT&lt;20, 3, 2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, true&gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:217:21" LoopName="VITIS_LOOP_217_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:184:0" msg_body="Unrolling loop 'VITIS_LOOP_212_5' (firmware/BDT.h:212:21) in function 'BDT::BDT&lt;20, 3, 2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, true&gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:212:21" LoopName="VITIS_LOOP_212_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:184:0" msg_body="Unrolling loop 'VITIS_LOOP_207_4' (firmware/BDT.h:207:21) in function 'BDT::BDT&lt;20, 3, 2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, true&gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:207:21" LoopName="VITIS_LOOP_207_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:184:0" msg_body="Unrolling loop 'VITIS_LOOP_202_3' (firmware/BDT.h:202:21) in function 'BDT::BDT&lt;20, 3, 2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, true&gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:202:21" LoopName="VITIS_LOOP_202_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:184:0" msg_body="Unrolling loop 'VITIS_LOOP_197_2' (firmware/BDT.h:197:21) in function 'BDT::BDT&lt;20, 3, 2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, true&gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:197:21" LoopName="VITIS_LOOP_197_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:184:0" msg_body="Unrolling loop 'Trees' (firmware/BDT.h:192:3) in function 'BDT::BDT&lt;20, 3, 2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, true&gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:192:3" LoopName="Trees"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:184:0" msg_body="Unrolling loop 'VITIS_LOOP_188_1' (firmware/BDT.h:188:21) in function 'BDT::BDT&lt;20, 3, 2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, true&gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:188:21" LoopName="VITIS_LOOP_188_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree&lt;19, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:147:21" LoopName="VITIS_LOOP_147_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree&lt;19, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:125:13" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree&lt;19, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:112:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree&lt;19, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:104:11" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree&lt;18, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:147:21" LoopName="VITIS_LOOP_147_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree&lt;18, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:125:13" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree&lt;18, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:112:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree&lt;18, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:104:11" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree&lt;17, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:147:21" LoopName="VITIS_LOOP_147_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree&lt;17, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:125:13" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree&lt;17, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:112:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree&lt;17, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:104:11" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree&lt;16, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:147:21" LoopName="VITIS_LOOP_147_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree&lt;16, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:125:13" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree&lt;16, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:112:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree&lt;16, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:104:11" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree&lt;15, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:147:21" LoopName="VITIS_LOOP_147_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree&lt;15, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:125:13" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree&lt;15, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:112:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree&lt;15, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:104:11" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree&lt;14, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:147:21" LoopName="VITIS_LOOP_147_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree&lt;14, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:125:13" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree&lt;14, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:112:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree&lt;14, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:104:11" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree&lt;13, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:147:21" LoopName="VITIS_LOOP_147_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree&lt;13, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:125:13" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree&lt;13, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:112:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree&lt;13, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:104:11" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree&lt;12, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:147:21" LoopName="VITIS_LOOP_147_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree&lt;12, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:125:13" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree&lt;12, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:112:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree&lt;12, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:104:11" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree&lt;11, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:147:21" LoopName="VITIS_LOOP_147_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree&lt;11, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:125:13" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree&lt;11, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:112:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree&lt;11, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:104:11" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree&lt;10, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:147:21" LoopName="VITIS_LOOP_147_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree&lt;10, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:125:13" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree&lt;10, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:112:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree&lt;10, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:104:11" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree&lt;9, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:147:21" LoopName="VITIS_LOOP_147_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree&lt;9, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:125:13" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree&lt;9, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:112:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree&lt;9, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:104:11" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree&lt;8, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:147:21" LoopName="VITIS_LOOP_147_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree&lt;8, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:125:13" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree&lt;8, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:112:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree&lt;8, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:104:11" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree&lt;7, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 4">
+        <args Factor="4" LoopLoc="firmware/BDT.h:147:21" LoopName="VITIS_LOOP_147_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree&lt;7, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 7">
+        <args Factor="7" LoopLoc="firmware/BDT.h:125:13" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree&lt;7, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 7">
+        <args Factor="7" LoopLoc="firmware/BDT.h:112:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree&lt;7, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 4">
+        <args Factor="4" LoopLoc="firmware/BDT.h:104:11" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree&lt;6, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 4">
+        <args Factor="4" LoopLoc="firmware/BDT.h:147:21" LoopName="VITIS_LOOP_147_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree&lt;6, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 7">
+        <args Factor="7" LoopLoc="firmware/BDT.h:125:13" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree&lt;6, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 7">
+        <args Factor="7" LoopLoc="firmware/BDT.h:112:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree&lt;6, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 4">
+        <args Factor="4" LoopLoc="firmware/BDT.h:104:11" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree&lt;5, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 4">
+        <args Factor="4" LoopLoc="firmware/BDT.h:147:21" LoopName="VITIS_LOOP_147_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree&lt;5, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 7">
+        <args Factor="7" LoopLoc="firmware/BDT.h:125:13" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree&lt;5, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 7">
+        <args Factor="7" LoopLoc="firmware/BDT.h:112:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree&lt;5, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 4">
+        <args Factor="4" LoopLoc="firmware/BDT.h:104:11" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree&lt;4, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 4">
+        <args Factor="4" LoopLoc="firmware/BDT.h:147:21" LoopName="VITIS_LOOP_147_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree&lt;4, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 7">
+        <args Factor="7" LoopLoc="firmware/BDT.h:125:13" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree&lt;4, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 7">
+        <args Factor="7" LoopLoc="firmware/BDT.h:112:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree&lt;4, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 4">
+        <args Factor="4" LoopLoc="firmware/BDT.h:104:11" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree&lt;3, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 4">
+        <args Factor="4" LoopLoc="firmware/BDT.h:147:21" LoopName="VITIS_LOOP_147_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree&lt;3, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 7">
+        <args Factor="7" LoopLoc="firmware/BDT.h:125:13" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree&lt;3, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 7">
+        <args Factor="7" LoopLoc="firmware/BDT.h:112:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree&lt;3, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 4">
+        <args Factor="4" LoopLoc="firmware/BDT.h:104:11" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree&lt;2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 4">
+        <args Factor="4" LoopLoc="firmware/BDT.h:147:21" LoopName="VITIS_LOOP_147_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree&lt;2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 7">
+        <args Factor="7" LoopLoc="firmware/BDT.h:125:13" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree&lt;2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 7">
+        <args Factor="7" LoopLoc="firmware/BDT.h:112:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree&lt;2, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 4">
+        <args Factor="4" LoopLoc="firmware/BDT.h:104:11" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree&lt;1, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 4">
+        <args Factor="4" LoopLoc="firmware/BDT.h:147:21" LoopName="VITIS_LOOP_147_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree&lt;1, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 7">
+        <args Factor="7" LoopLoc="firmware/BDT.h:125:13" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree&lt;1, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 7">
+        <args Factor="7" LoopLoc="firmware/BDT.h:112:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree&lt;1, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 4">
+        <args Factor="4" LoopLoc="firmware/BDT.h:104:11" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'VITIS_LOOP_147_1' (firmware/BDT.h:147:21) in function 'BDT::Tree&lt;0, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 4">
+        <args Factor="4" LoopLoc="firmware/BDT.h:147:21" LoopName="VITIS_LOOP_147_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:125:13) in function 'BDT::Tree&lt;0, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 7">
+        <args Factor="7" LoopLoc="firmware/BDT.h:125:13" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:112:11) in function 'BDT::Tree&lt;0, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 7">
+        <args Factor="7" LoopLoc="firmware/BDT.h:112:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:84:0" msg_body="Unrolling loop 'anonymous' (firmware/BDT.h:104:11) in function 'BDT::Tree&lt;0, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 4">
+        <args Factor="4" LoopLoc="firmware/BDT.h:104:11" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.21.5': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.21.5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.21.4': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.21.4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.21.3': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.21.3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.21.2': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.21.2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.21.1': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.21.1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.21.0': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.21.0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.20.5': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.20.5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.20.4': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.20.4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.20.3': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.20.3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.20.2': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.20.2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.20.1': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.20.1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.20.0': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.20.0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.19.5': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.19.5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.19.4': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.19.4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.19.3': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.19.3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.19.2': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.19.2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.19.1': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.19.1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.19.0': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.19.0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.18.5': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.18.5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.18.4': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.18.4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.18.3': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.18.3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.18.2': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.18.2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.18.1': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.18.1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.18.0': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.18.0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.17.5': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.17.5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.17.4': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.17.4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.17.3': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.17.3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.17.2': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.17.2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.17.1': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.17.1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.17.0': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.17.0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.16.5': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.16.5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.16.4': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.16.4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.16.3': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.16.3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.16.2': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.16.2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.16.1': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.16.1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.16.0': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.16.0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.15.5': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.15.5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.15.4': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.15.4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.15.3': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.15.3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.15.2': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.15.2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.15.1': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.15.1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.15.0': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.15.0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.14.5': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.14.5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.14.4': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.14.4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.14.3': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.14.3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.14.2': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.14.2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.14.1': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.14.1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.14.0': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.14.0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.13.5': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.13.5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.13.4': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.13.4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.13.3': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.13.3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.13.2': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.13.2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.13.1': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.13.1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.13.0': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.13.0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.12.5': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.12.5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.12.4': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.12.4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.12.3': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.12.3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.12.2': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.12.2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.12.1': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.12.1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.12.0': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.12.0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.11.5': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.11.5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.11.4': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.11.4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.11.3': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.11.3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.11.2': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.11.2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.11.1': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.11.1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.11.0': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.11.0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.10.5': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.10.5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.10.4': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.10.4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.10.3': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.10.3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.10.2': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.10.2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.10.1': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.10.1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.10.0': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.10.0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.9.5': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.9.5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.9.4': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.9.4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.9.3': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.9.3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.9.2': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.9.2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.9.1': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.9.1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.9.0': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.9.0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.8.5': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.8.5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.8.4': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.8.4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.8.3': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.8.3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.8.2': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.8.2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.8.1': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.8.1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.8.0': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.8.0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.7.5': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.7.5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.7.4': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.7.4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.7.3': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.7.3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.7.2': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.7.2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.7.1': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.7.1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.7.0': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.7.0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.6.5': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.6.5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.6.4': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.6.4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.6.3': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.6.3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.6.2': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.6.2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.6.1': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.6.1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.6.0': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.6.0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.5.5': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.5.5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.5.4': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.5.4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.5.3': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.5.3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.5.2': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.5.2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.5.1': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.5.1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.5.0': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.5.0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.4.5': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.4.5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.4.4': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.4.4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.4.3': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.4.3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.4.2': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.4.2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.4.1': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.4.1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.4.0': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.4.0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.3.5': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.3.5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.3.4': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.3.4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.3.3': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.3.3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.3.2': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.3.2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.3.1': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.3.1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.3.0': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.3.0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.2.5': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.2.5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.2.4': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.2.4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.2.3': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.2.3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.2.2': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.2.2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.2.1': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.2.1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:18:0" msg_body="Applying array_partition to '_ZL3bdt.3.2.0': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL3bdt.3.2.0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/BDT.h:101:7" msg_body="Applying array_partition to 'comparison': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="comparison"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/BDT.h:102:8" msg_body="Applying array_partition to 'activation': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="activation"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/BDT.h:103:8" msg_body="Applying array_partition to 'activation_leaf': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="activation_leaf"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/BDT.h:104:11" msg_body="Applying array_partition to 'value_leaf': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="value_leaf"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/myproject_axi.cpp:15:13" msg_body="Applying array_partition to 'tree_scores': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="tree_scores"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/myproject_axi.cpp:19:16" msg_body="Applying array_partition to 'in_local': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="in_local"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/myproject_axi.cpp:20:14" msg_body="Applying array_partition to 'out_local': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="out_local"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:293:5" msg_body="Inlining function '_llvm.fpga.unpack.none.f32.i32' into 'myproject_axi(hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)'">
+        <args Callee="_llvm.fpga.unpack.none.f32.i32" Caller="myproject_axi(hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5" msg_body="Inlining function '_llvm.fpga.pack.none.i1.s_struct.ap_uint&lt;1&gt;s' into 'myproject_axi(hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)'">
+        <args Callee="_llvm.fpga.pack.none.i1.s_struct.ap_uint&lt;1&gt;s" Caller="myproject_axi(hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5" msg_body="Inlining function '_llvm.fpga.pack.none.i4.s_struct.ap_uint&lt;4&gt;s' into 'myproject_axi(hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)'">
+        <args Callee="_llvm.fpga.pack.none.i4.s_struct.ap_uint&lt;4&gt;s" Caller="myproject_axi(hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5" msg_body="Inlining function '_llvm.fpga.pack.none.i32.f32' into 'myproject_axi(hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)'">
+        <args Callee="_llvm.fpga.pack.none.i32.f32" Caller="myproject_axi(hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:293:5" msg_body="Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint&lt;4&gt;s.i4' into 'myproject_axi(hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)'">
+        <args Callee="_llvm.fpga.unpack.none.s_struct.ap_uint&lt;4&gt;s.i4" Caller="myproject_axi(hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:293:5" msg_body="Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint&lt;1&gt;s.i1' into 'myproject_axi(hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)'">
+        <args Callee="_llvm.fpga.unpack.none.s_struct.ap_uint&lt;1&gt;s.i1" Caller="myproject_axi(hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;float, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

@@ -1,8 +1,8 @@
 // ==============================================================
 // Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
-// Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
 
 extern "C" void AESL_WRAP_myproject_axi (
-hls::stream<struct ap_axis<32, 0, 0, 0 > > (&in_r),
-hls::stream<struct ap_axis<32, 0, 0, 0 > > (&out_r));
+hls::stream<struct ap_axis<32, 0, 0, 0 > > (&in),
+hls::stream<struct ap_axis<32, 0, 0, 0 > > (&out));

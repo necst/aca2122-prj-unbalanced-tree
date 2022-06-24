@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1656076063100">
+  <ports id="1" name="p_read1" type="PortType" coreId="1919510075" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="p_read2" type="PortType" coreId="4250456688" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="12" name="ap_return" direction="DirOut">
+    <dataInputObjs>ret</dataInputObjs>
+  </ports>
+  <edges id="24" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="26" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="27" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="30" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="33" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="36" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="39" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="41" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="42" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="43" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="44" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="45" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="46" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="47" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="48" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="49" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="50" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="51" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="52" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="53" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="56" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
+  <edges id="57" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
+  <edges id="70" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.15"/>
+  <edges id="71" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
+  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@ports.2"/>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="88" pipe_depth="1" RegionName="decision_function.3">
+    <basic_blocks id="21" name="decision_function.3" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="4" name="p_read22" lineNumber="1550" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." coreId="4248704912" contextFuncName="operator_le_32_16_true_AP_TRN_AP_WRAP_0" bitwidth="32" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1550" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>p_read2</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="5" name="p_read11" lineNumber="1550" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." coreId="3920107408" contextFuncName="operator_le_32_16_true_AP_TRN_AP_WRAP_0" bitwidth="32" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1550" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>p_read1</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="6" name="comparison" lineNumber="1550" originalName="comparison" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="comparison_fu_48_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="operator_le_32_16_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.11" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1550" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="7" name="comparison_10" lineNumber="1550" originalName="comparison" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="comparison_10_fu_54_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="operator_le_32_16_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.11" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1550" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="8" name="comparison_11" lineNumber="1550" originalName="comparison" fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" fileDirectory=".." rtlName="comparison_11_fu_60_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="operator_le_32_16_true_AP_TRN_AP_WRAP_0" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.11" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h" linenumber="1550" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="operator&amp;lt;=&amp;lt;32, 16, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="9" name="activation" lineNumber="135" originalName="activation" fileName="firmware/BDT.h" fileDirectory=".." rtlName="activation_fu_66_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="decision_function" bitwidth="1" opcode="xor" m_display="0" m_delay="0.33" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/BDT.h" linenumber="135" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="decision_function"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="10" name="xor_ln135" lineNumber="135" fileName="firmware/BDT.h" fileDirectory=".." rtlName="xor_ln135_fu_72_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="decision_function" bitwidth="1" opcode="xor" m_display="0" m_topoIndex="7" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="firmware/BDT.h" linenumber="135" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="decision_function"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="activation_21" lineNumber="135" originalName="activation" fileName="firmware/BDT.h" fileDirectory=".." rtlName="activation_21_fu_78_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="decision_function" bitwidth="1" opcode="and" m_display="0" m_topoIndex="8" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="firmware/BDT.h" linenumber="135" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="decision_function"/>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="and_ln133" lineNumber="133" fileName="firmware/BDT.h" fileDirectory=".." rtlName="and_ln133_fu_84_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="decision_function" bitwidth="1" opcode="and" m_display="0" m_topoIndex="9" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="firmware/BDT.h" linenumber="133" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="decision_function"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="activation_22" lineNumber="133" originalName="activation" fileName="firmware/BDT.h" fileDirectory=".." rtlName="activation_22_fu_90_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="decision_function" bitwidth="1" opcode="and" m_display="0" m_topoIndex="10" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="firmware/BDT.h" linenumber="133" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="decision_function"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="or_ln148" lineNumber="148" fileName="firmware/BDT.h" fileDirectory=".." rtlName="or_ln148_fu_96_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="decision_function" bitwidth="1" opcode="or" m_display="0" m_delay="0.33" m_topoIndex="11" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="firmware/BDT.h" linenumber="148" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="decision_function"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>and</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="zext_ln148" lineNumber="148" fileName="firmware/BDT.h" fileDirectory=".." rtlName="zext_ln148_fu_102_p1" coreId="4250069488" contextFuncName="decision_function" bitwidth="2" opcode="zext" m_display="0" m_topoIndex="12" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="firmware/BDT.h" linenumber="148" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="decision_function"/>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="or_ln148_4" lineNumber="148" fileName="firmware/BDT.h" fileDirectory=".." rtlName="or_ln148_4_fu_106_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="decision_function" bitwidth="1" opcode="or" m_display="0" m_topoIndex="13" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="firmware/BDT.h" linenumber="148" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="decision_function"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>and</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="select_ln148" lineNumber="148" fileName="firmware/BDT.h" fileDirectory=".." rtlName="select_ln148_fu_112_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="decision_function" bitwidth="2" opcode="select" m_display="0" m_topoIndex="14" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="firmware/BDT.h" linenumber="148" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="decision_function"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="select_ln148_4" lineNumber="148" fileName="firmware/BDT.h" fileDirectory=".." rtlName="agg_result_fu_128_p5" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="decision_function" bitwidth="2" opcode="select" m_display="0" m_topoIndex="15" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="firmware/BDT.h" linenumber="148" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="decision_function"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>mux</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="agg_result" lineNumber="149" fileName="firmware/BDT.h" fileDirectory=".." rtlName="mux_42_32_1_1_U33" coreName="Multiplexer" implIndex="auto" control="no" opType="mux" coreId="76" contextFuncName="decision_function" bitwidth="32" opcode="mux" m_display="0" m_delay="0.6" m_topoIndex="16" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="firmware/BDT.h" linenumber="149" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="decision_function"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>ret</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="_ln153" lineNumber="153" fileName="firmware/BDT.h" fileDirectory=".." coreId="4250324016" contextFuncName="decision_function" opcode="ret" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/BDT.h" linenumber="153" fileDirectory="/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3" functionName="decision_function"/>
+        <dataInputObjs>mux</dataInputObjs>
+        <dataOutputObjs>ap_return</dataOutputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="firmware/BDT.h">
+        <validLinenumbers>135</validLinenumbers>
+        <validLinenumbers>133</validLinenumbers>
+        <validLinenumbers>148</validLinenumbers>
+        <validLinenumbers>149</validLinenumbers>
+        <validLinenumbers>153</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h">
+        <validLinenumbers>1550</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <expressionNodes realName="zext_ln148_fu_102">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="comparison_10_fu_54">
+    <nodeIds>7</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="agg_result_fu_128">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln133_fu_84">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="comparison_fu_48">
+    <nodeIds>6</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln148_4_fu_120">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln148_4_fu_106">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="comparison_11_fu_60">
+    <nodeIds>8</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="activation_fu_66">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln148_fu_96">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln135_fu_72">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="activation_21_fu_78">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln148_fu_112">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="activation_22_fu_90">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="p_read11_read_fu_42">
+    <nodeIds>5</nodeIds>
+  </ioNodes>
+  <ioNodes realName="p_read22_read_fu_36">
+    <nodeIds>4</nodeIds>
+  </ioNodes>
+  <ioPorts name="p_read1">
+    <contents name="read">
+      <nodeIds>5</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="p_read2">
+    <contents name="read">
+      <nodeIds>4</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ap_return">
+    <contents name="ret">
+      <nodeIds>20</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="3" stage="1" latency="1"/>
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+    </states>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="decision_function_3" mII="1" mDepth="1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>21</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

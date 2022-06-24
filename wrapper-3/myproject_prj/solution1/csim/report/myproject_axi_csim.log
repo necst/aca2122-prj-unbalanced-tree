@@ -1,8 +1,8 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling ../../../../myproject_test.cpp in debug mode
-   Compiling ../../../../firmware/myproject_axi.cpp in debug mode
    Compiling ../../../../firmware/myproject.cpp in debug mode
+   Compiling ../../../../firmware/myproject_axi.cpp in debug mode
    Generating csim.exe
 Processing input 0
 data: -0.987152, last: 1
@@ -10006,6 +10006,7 @@ data: 1.45117, last: 1
 data: -1.44545, last: 1
 data: 0.185059, last: 1
 data: 0.160812, last: 1
-INFO: Saved inference results to file: tb_data/rtl_cosim_results.log
+INFO: Saved inference results to file: tb_data/csim_results.log
+The maximum depth reached by any of the 20000 hls::stream() instances in the design is 10
 INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

@@ -1,10 +1,12 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 28
+set id 12
 set name myproject_axi_mux_42_32_1_1_x
 set corename simcore_mux
 set op mux
 set stage_num 1
+set max_latency -1
+set registered_input 1
 set din0_width 32
 set din0_signed 0
 set din1_width 32
@@ -16,8 +18,38 @@ set din3_signed 1
 set din4_width 2
 set din4_signed 0
 set dout_width 32
+if {${::AESL::PGuard_simmodel_gen}} {
+if {[info proc ap_gen_simcore_mux] == "ap_gen_simcore_mux"} {
+eval "ap_gen_simcore_mux { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    din0_width ${din0_width} \
+    din0_signed ${din0_signed} \
+    din1_width ${din1_width} \
+    din1_signed ${din1_signed} \
+    din2_width ${din2_width} \
+    din2_signed ${din2_signed} \
+    din3_width ${din3_width} \
+    din3_signed ${din3_signed} \
+    din4_width ${din4_width} \
+    din4_signed ${din4_signed} \
+    dout_width ${dout_width} \
+}"
+} else {
+puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mux, check your AutoPilot builtin lib"
+}
+}
+
+
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mux} IMPL {auto} LATENCY 0 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler ${name}
 }
 
 
@@ -33,6 +65,8 @@ eval "::AESL_LIB_VIRTEX::xil_gen_pipemux { \
     reset_level 1 \
     sync_rst true \
     stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
     din0_width ${din0_width} \
     din0_signed ${din0_signed} \
     din1_width ${din1_width} \
@@ -61,7 +95,22 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 30 \
+    id 14 \
+    name p_read \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_p_read \
+    op interface \
+    ports { p_read { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 15 \
     name p_read1 \
     type other \
     dir I \
@@ -70,21 +119,6 @@ eval "cg_default_interface_gen_dc { \
     corename dc_p_read1 \
     op interface \
     ports { p_read1 { I 32 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 31 \
-    name p_read2 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_p_read2 \
-    op interface \
-    ports { p_read2 { I 32 vector } } \
 } "
 }
 

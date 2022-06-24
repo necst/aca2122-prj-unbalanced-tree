@@ -1,7 +1,6 @@
-myproject_axi_fpext_32ns_64_2_no_dsp_1
-myproject_axi_flow_control_loop_pipe_sequential_init
 myproject_axi_mux_42_32_1_1
 myproject_axi_mux_42_32_1_1_x
+myproject_axi_fpext_32ns_64_2_no_dsp_1
 myproject_axi_regslice_both
 myproject_axi_regslice_both
 myproject_axi_regslice_both
@@ -10,7 +9,6 @@ myproject_axi_regslice_both
 myproject_axi_regslice_both
 myproject_axi_regslice_both
 myproject_axi_regslice_both
-myproject_axi_Pipeline_VITIS_LOOP_22_1
 decision_function_7
 decision_function_6
 decision_function_5

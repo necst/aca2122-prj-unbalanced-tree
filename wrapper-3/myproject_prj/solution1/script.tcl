@@ -1,7 +1,7 @@
 ############################################################
 ## This file is generated automatically by Vitis HLS.
 ## Please DO NOT edit it.
-## Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+## Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ############################################################
 open_project myproject_prj
 set_top myproject_axi
@@ -14,9 +14,9 @@ open_solution "solution1" -flow_target vivado
 set_part {xczu3eg-sbva484-1-e}
 create_clock -period 7 -name default
 config_compile -name_max_length 60
-config_export -format sysgen -rtl verilog
+config_export -format ip_catalog
 source "./myproject_prj/solution1/directives.tcl"
-csim_design -clean
+csim_design
 csynth_design
 cosim_design -trace_level all
-export_design -rtl verilog -format sysgen
+export_design -format ip_catalog

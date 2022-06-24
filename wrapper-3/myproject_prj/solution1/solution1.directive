@@ -5,6 +5,11 @@
                 <option name="name" value="myproject_axi"/>
             </pragma>
         </directive>
+        <directive functionName="myproject_axi" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="myproject_axi"/>
+            </pragma>
+        </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>
 
