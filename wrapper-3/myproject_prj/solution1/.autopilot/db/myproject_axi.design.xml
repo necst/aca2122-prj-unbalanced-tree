@@ -5,10 +5,10 @@
 <ModuleName>myproject_axi</ModuleName>
 <InstancesList>
 <Instance>
-<InstName>out_local_V_myproject_fu_121</InstName>
+<InstName>out_local_V_myproject_fu_179</InstName>
 <ModuleName>myproject</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>121</ID>
+<ID>179</ID>
 <InstancesList>
 <Instance>
 <InstName>s_V_decision_function_7_fu_108</InstName>
@@ -964,27 +964,27 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>7.00</TargetClockPeriod>
 <ClockUncertainty>1.89</ClockUncertainty>
-<EstimatedClockPeriod>4.714</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.973</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>11</Best-caseLatency>
-<Average-caseLatency>11</Average-caseLatency>
-<Worst-caseLatency>11</Worst-caseLatency>
-<Best-caseRealTimeLatency>77.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>77.000 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>77.000 ns</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>12</PipelineInitiationInterval>
+<Best-caseLatency>16</Best-caseLatency>
+<Average-caseLatency>16</Average-caseLatency>
+<Worst-caseLatency>16</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.112 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.112 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.112 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>17</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<FF>364</FF>
+<FF>1927</FF>
 <AVAIL_FF>141120</AVAIL_FF>
-<UTIL_FF>~0</UTIL_FF>
-<LUT>1209</LUT>
+<UTIL_FF>1</UTIL_FF>
+<LUT>9236</LUT>
 <AVAIL_LUT>70560</AVAIL_LUT>
-<UTIL_LUT>1</UTIL_LUT>
+<UTIL_LUT>13</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>432</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>

@@ -1,22 +1,22 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.16704",
-   "Default View_TopLeft":"376,-236",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"338,-230",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
 #  -string -flagsOSRD
-preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 330 -y 0 -defaultsOSRD
-preplace inst ps8_0_axi_periph -pg 1 -lvl 3 -x 1190 -y 20 -defaultsOSRD
-preplace inst rst_ps8_0_100M -pg 1 -lvl 2 -x 830 -y 70 -defaultsOSRD
-preplace inst hier_0 -pg 1 -lvl 4 -x 1440 -y 40 -defaultsOSRD
-preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 4 20 90 650 170 1030 -130 1340
-preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 1 1 640 10n
-preplace netloc rst_ps8_0_100M_peripheral_aresetn 1 2 2 1040 170 1340
-preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 2 640J -40 1010
-preplace netloc ps8_0_axi_periph_M00_AXI 1 3 1 N 20
-preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM1_FPD 1 1 2 650J -30 1020
-levelinfo -pg 1 0 330 830 1190 1440 1550
-pagesize -pg 1 -db -bbox -sgen 0 -550 1550 180
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 330 -y -90 -defaultsOSRD
+preplace inst ps8_0_axi_periph -pg 1 -lvl 3 -x 1180 -y -80 -defaultsOSRD
+preplace inst rst_ps8_0_100M -pg 1 -lvl 2 -x 840 -y -30 -defaultsOSRD
+preplace inst hier_0 -pg 1 -lvl 4 -x 1430 -y -60 -defaultsOSRD
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 4 20 -180 650 -130 1020 80 1330
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 1 1 640 -80n
+preplace netloc rst_ps8_0_100M_peripheral_aresetn 1 2 2 1030 70 1340
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 2 640J -150 1020
+preplace netloc ps8_0_axi_periph_M00_AXI 1 3 1 N -80
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM1_FPD 1 1 2 660J -140 1030
+levelinfo -pg 1 0 330 840 1180 1430 1530
+pagesize -pg 1 -db -bbox -sgen 0 -560 1530 180
 "
 }
 {

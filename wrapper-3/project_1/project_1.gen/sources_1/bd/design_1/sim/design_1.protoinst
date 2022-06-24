@@ -6,9 +6,9 @@
 				"/hier_0/S_AXI_LITE": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
-						"ACLK": { "actual": "s_axi_lite_aclk"},
+						"ACLK": { "actual": "ap_clk"},
 						"ARADDR": { "actual": "S_AXI_LITE_araddr"},
-						"ARESETN": { "actual": "axi_resetn"},
+						"ARESETN": { "actual": "ap_rst_n"},
 						"ARREADY": { "actual": "S_AXI_LITE_arready"},
 						"ARVALID": { "actual": "S_AXI_LITE_arvalid"},
 						"AWADDR": { "actual": "S_AXI_LITE_awaddr"},

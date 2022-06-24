@@ -2,35 +2,29 @@
 Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ==============================================================
-==============================================================
-Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
-Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
-==============================================================
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 7ns.
-INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
-INFO: [HLS 200-1505] Using flow_target 'vivado'
-INFO: [HLS 200-1464] Running solution command: config_compile -name_max_length=60
-INFO: [XFORM 203-1161] The maximum of name length is set into 60.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
 INFO: [HLS 200-1510] Running: config_array_partition -maximum_size 4096 
 INFO: [XFORM 203-101] Allowed max sub elements number after partition is 4096.
 ERROR: [HLS 200-642] The 'config_array_partition -maximum_size' command is not supported.
 INFO: [HLS 200-1510] Running: config_compile -name_max_length 60 
 INFO: [XFORM 203-1161] The maximum of name length is set into 60.
 INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
 INFO: [XFORM 203-1161] The maximum of name length is set into 60.
 INFO: [HLS 200-1510] Running: create_clock -period 7 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 7ns.
 INFO: [HLS 200-1510] Running: csim_design 
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-111] Finished Command csim_design CPU user time: 4.9 seconds. CPU system time: 0.48 seconds. Elapsed time: 4.67 seconds; current allocated memory: -937.109 MB.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 4.83 seconds. CPU system time: 0.51 seconds. Elapsed time: 4.57 seconds; current allocated memory: -937.109 MB.
 INFO: [HLS 200-1510] Running: csynth_design 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 222.137 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 214.133 MB.
 INFO: [HLS 200-10] Analyzing design file 'firmware/myproject.cpp' ... 
 WARNING: [HLS 207-5565] '#pragma HLS unroll' can only be applied inside loop body (firmware/myproject.cpp:9:9)
 INFO: [HLS 200-10] Analyzing design file 'firmware/myproject_axi.cpp' ... 
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 7.35 seconds. CPU system time: 0.57 seconds. Elapsed time: 7.95 seconds; current allocated memory: 222.613 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 7.37 seconds. CPU system time: 0.58 seconds. Elapsed time: 7.94 seconds; current allocated memory: 217.340 MB.
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
 INFO: [HLS 214-284] Auto array partition mode is set into default.
 INFO: [HLS 214-210] Disaggregating variable 'bdt' (firmware/parameters.h:18:0)
@@ -312,23 +306,23 @@ INFO: [HLS 214-248] Applying array_partition to 'tree_scores': Complete partitio
 INFO: [HLS 214-248] Applying array_partition to 'in_local': Complete partitioning on dimension 1. (firmware/myproject_axi.cpp:19:16)
 INFO: [HLS 214-248] Applying array_partition to 'out_local': Complete partitioning on dimension 1. (firmware/myproject_axi.cpp:20:14)
 INFO: [HLS 214-270] Starting automatic array partition analysis...
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_fixed<32, 16, AP_TRN, AP_WRAP, 0>s.i32' into 'myproject_axi(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:293:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i1.s_struct.ap_uint<1>s' into 'myproject_axi(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i4.s_struct.ap_uint<4>s' into 'myproject_axi(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i32.s_struct.ap_fixed<32, 16, AP_TRN, AP_WRAP, 0>s' into 'myproject_axi(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<1>s.i1' into 'myproject_axi(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:293:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<4>s.i4' into 'myproject_axi(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:293:5)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 5.24 seconds. CPU system time: 0.25 seconds. Elapsed time: 5.5 seconds; current allocated memory: 227.062 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 227.062 MB.
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.f32.i32' into 'myproject_axi(hls::stream<hls::axis<float, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<float, 1ul, 1ul, 1ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:293:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i1.s_struct.ap_uint<1>s' into 'myproject_axi(hls::stream<hls::axis<float, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<float, 1ul, 1ul, 1ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i4.s_struct.ap_uint<4>s' into 'myproject_axi(hls::stream<hls::axis<float, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<float, 1ul, 1ul, 1ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i32.f32' into 'myproject_axi(hls::stream<hls::axis<float, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<float, 1ul, 1ul, 1ul>, 0>&)' (/opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:304:5)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 5.19 seconds. CPU system time: 0.27 seconds. Elapsed time: 5.46 seconds; current allocated memory: 221.699 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 221.699 MB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.12 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.15 seconds; current allocated memory: 271.484 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.16 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.17 seconds; current allocated memory: 265.184 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.3 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.3 seconds; current allocated memory: 328.250 MB.
+WARNING: [SYNCHK 200-23] /opt/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1000: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.38 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.4 seconds; current allocated memory: 321.332 MB.
 INFO: [XFORM 203-602] Inlining function 'BDT::BDT<20, 3, 2, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, true>::decision_function' into 'myproject' (firmware/myproject.cpp:10) automatically.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (firmware/myproject_axi.cpp:47:1) in function 'myproject_axi'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (firmware/myproject_axi.cpp:47:1) in function 'myproject_axi'... converting 89 basic blocks.
 INFO: [XFORM 203-11] Balancing expressions in function 'myproject' (firmware/BDT.h:4:26)...8 expression(s) balanced.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.38 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.4 seconds; current allocated memory: 407.082 MB.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.17 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.19 seconds; current allocated memory: 499.367 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.52 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.55 seconds; current allocated memory: 400.953 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.21 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.23 seconds; current allocated memory: 493.004 MB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'myproject_axi' ...
 WARNING: [SYN 201-103] Legalizing function name 'decision_function.7' to 'decision_function_7'.
@@ -345,13 +339,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'decision_function.7'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.7'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.12 seconds; current allocated memory: 499.789 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.12 seconds; current allocated memory: 494.117 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 499.848 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 494.180 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'decision_function_6' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -359,13 +353,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'decision_function.6'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.6'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 499.980 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 494.359 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 499.988 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 494.422 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'decision_function_5' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -373,13 +367,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'decision_function.5'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.5'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 500.215 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 494.598 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 500.273 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 494.660 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'decision_function_4' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -387,13 +381,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'decision_function.4'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.4'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 500.441 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 494.824 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 500.445 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 494.949 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'decision_function_3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -401,13 +395,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'decision_function.3'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.3'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 500.668 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 495.082 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 500.676 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 495.141 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'decision_function_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -415,13 +409,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'decision_function.2'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.2'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 500.898 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 495.312 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 500.906 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 495.336 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'decision_function_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -429,13 +423,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'decision_function.1'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function.1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 501.137 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 495.551 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 501.141 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 495.676 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'decision_function' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -443,13 +437,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'decision_function'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'decision_function'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 501.355 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 495.770 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 501.414 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 495.801 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'myproject' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -457,44 +451,54 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'myproject'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'myproject'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 501.633 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 496.047 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 501.664 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 496.094 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'myproject_axi' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.21 seconds. CPU system time: 0 seconds. Elapsed time: 0.22 seconds; current allocated memory: 502.629 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.41 seconds. CPU system time: 0 seconds. Elapsed time: 0.42 seconds; current allocated memory: 500.613 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 502.629 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.41 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.43 seconds; current allocated memory: 500.613 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_7' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_7'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.21 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 502.629 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.83 seconds. CPU system time: 0 seconds. Elapsed time: 0.83 seconds; current allocated memory: 500.613 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_6' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_6'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 503.008 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 500.613 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_5' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_5'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 503.547 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 500.980 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_4' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 WARNING: [RTGEN 206-101] RTL name 'mux_42_32_1_1' is changed to 'mux_42_32_1_1_x' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1_x': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 501.582 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 502.121 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------

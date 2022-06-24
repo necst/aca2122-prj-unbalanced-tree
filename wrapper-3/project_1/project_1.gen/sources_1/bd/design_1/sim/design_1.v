@@ -1,7 +1,7 @@
 //Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
-//Date        : Fri Jun 24 23:22:40 2022
+//Date        : Fri Jun 24 23:46:59 2022
 //Host        : yavin running 64-bit Ubuntu 20.04.4 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -124,8 +124,8 @@ module design_1
         .S_AXI_LITE_wdata(ps8_0_axi_periph_M00_AXI_WDATA),
         .S_AXI_LITE_wready(ps8_0_axi_periph_M00_AXI_WREADY),
         .S_AXI_LITE_wvalid(ps8_0_axi_periph_M00_AXI_WVALID),
-        .axi_resetn(rst_ps8_0_100M_peripheral_aresetn),
-        .s_axi_lite_aclk(zynq_ultra_ps_e_0_pl_clk0));
+        .ap_clk(zynq_ultra_ps_e_0_pl_clk0),
+        .ap_rst_n(rst_ps8_0_100M_peripheral_aresetn));
   design_1_ps8_0_axi_periph_0 ps8_0_axi_periph
        (.ACLK(zynq_ultra_ps_e_0_pl_clk0),
         .ARESETN(rst_ps8_0_100M_peripheral_aresetn),
@@ -967,8 +967,8 @@ module hier_0_imp_MHUNTD
     S_AXI_LITE_wdata,
     S_AXI_LITE_wready,
     S_AXI_LITE_wvalid,
-    axi_resetn,
-    s_axi_lite_aclk);
+    ap_clk,
+    ap_rst_n);
   input [39:0]S_AXI_LITE_araddr;
   output S_AXI_LITE_arready;
   input S_AXI_LITE_arvalid;
@@ -985,8 +985,8 @@ module hier_0_imp_MHUNTD
   input [31:0]S_AXI_LITE_wdata;
   output S_AXI_LITE_wready;
   input S_AXI_LITE_wvalid;
-  input axi_resetn;
-  input s_axi_lite_aclk;
+  input ap_clk;
+  input ap_rst_n;
 
   wire [31:0]axi_dma_0_M_AXIS_MM2S_TDATA;
   wire [3:0]axi_dma_0_M_AXIS_MM2S_TKEEP;
@@ -1033,8 +1033,8 @@ module hier_0_imp_MHUNTD
   assign ps8_0_axi_periph_M00_AXI_RREADY = S_AXI_LITE_rready;
   assign ps8_0_axi_periph_M00_AXI_WDATA = S_AXI_LITE_wdata[31:0];
   assign ps8_0_axi_periph_M00_AXI_WVALID = S_AXI_LITE_wvalid;
-  assign rst_ps8_0_100M_peripheral_aresetn = axi_resetn;
-  assign zynq_ultra_ps_e_0_pl_clk0 = s_axi_lite_aclk;
+  assign rst_ps8_0_100M_peripheral_aresetn = ap_rst_n;
+  assign zynq_ultra_ps_e_0_pl_clk0 = ap_clk;
   design_1_axi_dma_0_0 axi_dma_0
        (.axi_resetn(rst_ps8_0_100M_peripheral_aresetn),
         .m_axi_mm2s_aclk(zynq_ultra_ps_e_0_pl_clk0),

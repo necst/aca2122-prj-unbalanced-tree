@@ -73589,8 +73589,8 @@ static const unsigned N_OUT = 1;
 typedef float T_in;
 typedef float T_out;
 # 28 "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/firmware/myproject_axi.h"
-typedef ap_axis<32, 1, 1, 1> input_axis_t;
-typedef ap_axis<32, 1, 1, 1> output_axis_t;
+typedef hls::axis<T_in, 1, 1, 1> input_axis_t;
+typedef hls::axis<T_out, 1, 1, 1> output_axis_t;
 
 
 
@@ -73653,18 +73653,18 @@ void myproject_axi(
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_myproject_axi_ir(hls::stream<hls::axis<ap_int<32>, 1, 1, 1>, 0> &, hls::stream<hls::axis<ap_int<32>, 1, 1, 1>, 0> &);
+void apatb_myproject_axi_ir(hls::stream<hls::axis<float, 1, 1, 1>, 0> &, hls::stream<hls::axis<float, 1, 1, 1>, 0> &);
 #ifdef __cplusplus
 extern "C"
 #endif
-void myproject_axi_hw_stub(hls::stream<hls::axis<ap_int<32>, 1, 1, 1>, 0> &in, hls::stream<hls::axis<ap_int<32>, 1, 1, 1>, 0> &out){
+void myproject_axi_hw_stub(hls::stream<hls::axis<float, 1, 1, 1>, 0> &in, hls::stream<hls::axis<float, 1, 1, 1>, 0> &out){
 myproject_axi(in, out);
 return ;
 }
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_myproject_axi_sw(hls::stream<hls::axis<ap_int<32>, 1, 1, 1>, 0> &in, hls::stream<hls::axis<ap_int<32>, 1, 1, 1>, 0> &out){
+void apatb_myproject_axi_sw(hls::stream<hls::axis<float, 1, 1, 1>, 0> &in, hls::stream<hls::axis<float, 1, 1, 1>, 0> &out){
 apatb_myproject_axi_ir(in, out);
 return ;
 }
