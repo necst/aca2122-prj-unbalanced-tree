@@ -5,10 +5,10 @@
 <ModuleName>myproject_axi</ModuleName>
 <InstancesList>
 <Instance>
-<InstName>out_local_V_myproject_fu_179</InstName>
+<InstName>out_local_V_myproject_fu_178</InstName>
 <ModuleName>myproject</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>179</ID>
+<ID>178</ID>
 <InstancesList>
 <Instance>
 <InstName>s_V_decision_function_7_fu_108</InstName>
@@ -979,7 +979,7 @@
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<FF>1927</FF>
+<FF>1928</FF>
 <AVAIL_FF>141120</AVAIL_FF>
 <UTIL_FF>1</UTIL_FF>
 <LUT>9236</LUT>

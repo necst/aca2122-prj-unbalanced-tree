@@ -20253,10 +20253,10 @@ find kernel block.
 // RTL Simulation : 10000 / 10000 [100.00%] @ "1190130000"
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 1190171500 ps : File "/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/sim/verilog/myproject_axi.autotb.v" Line 305
-run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 2923.051 ; gain = 128.000 ; free physical = 20025 ; free virtual = 44146
+run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 2923.051 ; gain = 128.000 ; free physical = 19508 ; free virtual = 43314
 ## quit
-INFO: xsimkernel Simulation Memory Usage: 137276 KB (Peak: 177248 KB), Simulation CPU Usage: 10230 ms
-INFO: [Common 17-206] Exiting xsim at Fri Jun 24 23:41:25 2022...
+INFO: xsimkernel Simulation Memory Usage: 137280 KB (Peak: 177252 KB), Simulation CPU Usage: 10010 ms
+INFO: [Common 17-206] Exiting xsim at Sat Jun 25 19:04:16 2022...
 Processing input 0
 data: -0.987152, last: 1, keep: 15
 data: -1.44545, last: 1, keep: 15

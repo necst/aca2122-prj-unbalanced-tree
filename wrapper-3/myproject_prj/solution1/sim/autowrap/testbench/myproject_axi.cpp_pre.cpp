@@ -73631,7 +73631,7 @@ void myproject_axi(
 
     for(unsigned i = 0; i < N_OUT; i++){
 #pragma HLS UNROLL
-        out_struct.last = (i == N_OUT - 1) ? 1 : 0;
+        out_struct.last = in_struct.last;
 
         out_struct.data = out_local[i];
      out_struct.dest = 0;

@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'myproject_axi'
 ================================================================
 + General Information: 
-    * Date:           Fri Jun 24 23:40:24 2022
+    * Date:           Sat Jun 25 19:03:14 2022
     * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)
     * Project:        myproject_prj
     * Solution:       solution1 (Vivado IP Flow Target)
@@ -19,7 +19,7 @@
     |         Modules         | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |    |           |            |     |
     |         & Loops         | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |     LUT    | URAM|
     +-------------------------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+------------+-----+
-    |+ myproject_axi          |     -|  0.14|       16|  112.000|         -|       17|     -|        no|     -|   -|  1927 (1%)|  9236 (13%)|    -|
+    |+ myproject_axi          |     -|  0.14|       16|  112.000|         -|       17|     -|        no|     -|   -|  1928 (1%)|  9236 (13%)|    -|
     | + myproject             |    II|  0.40|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|   1056 (1%)|    -|
     |  + decision_function_7  |     -|  3.06|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    97 (~0%)|    -|
     |  + decision_function_6  |     -|  2.73|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    99 (~0%)|    -|
@@ -87,55 +87,55 @@
 | Name                     | DSP | Pragma | Variable    | Op  | Impl   | Latency |
 +--------------------------+-----+--------+-------------+-----+--------+---------+
 | + myproject_axi          | 0   |        |             |     |        |         |
-|   man_V_1_fu_314_p2      | -   |        | man_V_1     | sub | fabric | 0       |
-|   F2_fu_334_p2           | -   |        | F2          | sub | fabric | 0       |
-|   add_ln590_fu_346_p2    | -   |        | add_ln590   | add | fabric | 0       |
-|   sub_ln590_fu_352_p2    | -   |        | sub_ln590   | sub | fabric | 0       |
-|   man_V_4_fu_414_p2      | -   |        | man_V_4     | sub | fabric | 0       |
-|   F2_1_fu_434_p2         | -   |        | F2_1        | sub | fabric | 0       |
-|   add_ln590_1_fu_446_p2  | -   |        | add_ln590_1 | add | fabric | 0       |
-|   sub_ln590_1_fu_452_p2  | -   |        | sub_ln590_1 | sub | fabric | 0       |
-|   man_V_7_fu_514_p2      | -   |        | man_V_7     | sub | fabric | 0       |
-|   F2_2_fu_534_p2         | -   |        | F2_2        | sub | fabric | 0       |
-|   add_ln590_2_fu_546_p2  | -   |        | add_ln590_2 | add | fabric | 0       |
-|   sub_ln590_2_fu_552_p2  | -   |        | sub_ln590_2 | sub | fabric | 0       |
-|   man_V_10_fu_614_p2     | -   |        | man_V_10    | sub | fabric | 0       |
-|   F2_3_fu_634_p2         | -   |        | F2_3        | sub | fabric | 0       |
-|   add_ln590_3_fu_646_p2  | -   |        | add_ln590_3 | add | fabric | 0       |
-|   sub_ln590_3_fu_652_p2  | -   |        | sub_ln590_3 | sub | fabric | 0       |
-|   man_V_13_fu_714_p2     | -   |        | man_V_13    | sub | fabric | 0       |
-|   F2_4_fu_734_p2         | -   |        | F2_4        | sub | fabric | 0       |
-|   add_ln590_4_fu_746_p2  | -   |        | add_ln590_4 | add | fabric | 0       |
-|   sub_ln590_4_fu_752_p2  | -   |        | sub_ln590_4 | sub | fabric | 0       |
-|   man_V_16_fu_814_p2     | -   |        | man_V_16    | sub | fabric | 0       |
-|   F2_5_fu_834_p2         | -   |        | F2_5        | sub | fabric | 0       |
-|   add_ln590_5_fu_846_p2  | -   |        | add_ln590_5 | add | fabric | 0       |
-|   sub_ln590_5_fu_852_p2  | -   |        | sub_ln590_5 | sub | fabric | 0       |
-|   man_V_19_fu_914_p2     | -   |        | man_V_19    | sub | fabric | 0       |
-|   F2_6_fu_934_p2         | -   |        | F2_6        | sub | fabric | 0       |
-|   add_ln590_6_fu_946_p2  | -   |        | add_ln590_6 | add | fabric | 0       |
-|   sub_ln590_6_fu_952_p2  | -   |        | sub_ln590_6 | sub | fabric | 0       |
-|   man_V_22_fu_1014_p2    | -   |        | man_V_22    | sub | fabric | 0       |
-|   F2_7_fu_1034_p2        | -   |        | F2_7        | sub | fabric | 0       |
-|   add_ln590_7_fu_1046_p2 | -   |        | add_ln590_7 | add | fabric | 0       |
-|   sub_ln590_7_fu_1052_p2 | -   |        | sub_ln590_7 | sub | fabric | 0       |
-|   man_V_25_fu_1114_p2    | -   |        | man_V_25    | sub | fabric | 0       |
-|   F2_8_fu_1134_p2        | -   |        | F2_8        | sub | fabric | 0       |
-|   add_ln590_8_fu_1146_p2 | -   |        | add_ln590_8 | add | fabric | 0       |
-|   sub_ln590_8_fu_1152_p2 | -   |        | sub_ln590_8 | sub | fabric | 0       |
-|   man_V_28_fu_1214_p2    | -   |        | man_V_28    | sub | fabric | 0       |
-|   F2_9_fu_1234_p2        | -   |        | F2_9        | sub | fabric | 0       |
-|   add_ln590_9_fu_1246_p2 | -   |        | add_ln590_9 | add | fabric | 0       |
-|   sub_ln590_9_fu_1252_p2 | -   |        | sub_ln590_9 | sub | fabric | 0       |
-|   tmp_V_fu_2656_p2       | -   |        | tmp_V       | sub | fabric | 0       |
-|   sub_ln997_fu_2689_p2   | -   |        | sub_ln997   | sub | fabric | 0       |
-|   lsb_index_fu_2695_p2   | -   |        | lsb_index   | add | fabric | 0       |
-|   sub_ln1000_fu_2721_p2  | -   |        | sub_ln1000  | sub | fabric | 0       |
-|   sub_ln1012_fu_2818_p2  | -   |        | sub_ln1012  | sub | fabric | 0       |
-|   add_ln1011_fu_2833_p2  | -   |        | add_ln1011  | add | fabric | 0       |
-|   m_2_fu_2858_p2         | -   |        | m_2         | add | fabric | 0       |
-|   sub_ln1017_fu_2894_p2  | -   |        | sub_ln1017  | add | tadder | 0       |
-|   add_ln1017_fu_2899_p2  | -   |        | add_ln1017  | add | tadder | 0       |
+|   man_V_1_fu_317_p2      | -   |        | man_V_1     | sub | fabric | 0       |
+|   F2_fu_337_p2           | -   |        | F2          | sub | fabric | 0       |
+|   add_ln590_fu_349_p2    | -   |        | add_ln590   | add | fabric | 0       |
+|   sub_ln590_fu_355_p2    | -   |        | sub_ln590   | sub | fabric | 0       |
+|   man_V_4_fu_417_p2      | -   |        | man_V_4     | sub | fabric | 0       |
+|   F2_1_fu_437_p2         | -   |        | F2_1        | sub | fabric | 0       |
+|   add_ln590_1_fu_449_p2  | -   |        | add_ln590_1 | add | fabric | 0       |
+|   sub_ln590_1_fu_455_p2  | -   |        | sub_ln590_1 | sub | fabric | 0       |
+|   man_V_7_fu_517_p2      | -   |        | man_V_7     | sub | fabric | 0       |
+|   F2_2_fu_537_p2         | -   |        | F2_2        | sub | fabric | 0       |
+|   add_ln590_2_fu_549_p2  | -   |        | add_ln590_2 | add | fabric | 0       |
+|   sub_ln590_2_fu_555_p2  | -   |        | sub_ln590_2 | sub | fabric | 0       |
+|   man_V_10_fu_617_p2     | -   |        | man_V_10    | sub | fabric | 0       |
+|   F2_3_fu_637_p2         | -   |        | F2_3        | sub | fabric | 0       |
+|   add_ln590_3_fu_649_p2  | -   |        | add_ln590_3 | add | fabric | 0       |
+|   sub_ln590_3_fu_655_p2  | -   |        | sub_ln590_3 | sub | fabric | 0       |
+|   man_V_13_fu_717_p2     | -   |        | man_V_13    | sub | fabric | 0       |
+|   F2_4_fu_737_p2         | -   |        | F2_4        | sub | fabric | 0       |
+|   add_ln590_4_fu_749_p2  | -   |        | add_ln590_4 | add | fabric | 0       |
+|   sub_ln590_4_fu_755_p2  | -   |        | sub_ln590_4 | sub | fabric | 0       |
+|   man_V_16_fu_817_p2     | -   |        | man_V_16    | sub | fabric | 0       |
+|   F2_5_fu_837_p2         | -   |        | F2_5        | sub | fabric | 0       |
+|   add_ln590_5_fu_849_p2  | -   |        | add_ln590_5 | add | fabric | 0       |
+|   sub_ln590_5_fu_855_p2  | -   |        | sub_ln590_5 | sub | fabric | 0       |
+|   man_V_19_fu_917_p2     | -   |        | man_V_19    | sub | fabric | 0       |
+|   F2_6_fu_937_p2         | -   |        | F2_6        | sub | fabric | 0       |
+|   add_ln590_6_fu_949_p2  | -   |        | add_ln590_6 | add | fabric | 0       |
+|   sub_ln590_6_fu_955_p2  | -   |        | sub_ln590_6 | sub | fabric | 0       |
+|   man_V_22_fu_1017_p2    | -   |        | man_V_22    | sub | fabric | 0       |
+|   F2_7_fu_1037_p2        | -   |        | F2_7        | sub | fabric | 0       |
+|   add_ln590_7_fu_1049_p2 | -   |        | add_ln590_7 | add | fabric | 0       |
+|   sub_ln590_7_fu_1055_p2 | -   |        | sub_ln590_7 | sub | fabric | 0       |
+|   man_V_25_fu_1117_p2    | -   |        | man_V_25    | sub | fabric | 0       |
+|   F2_8_fu_1137_p2        | -   |        | F2_8        | sub | fabric | 0       |
+|   add_ln590_8_fu_1149_p2 | -   |        | add_ln590_8 | add | fabric | 0       |
+|   sub_ln590_8_fu_1155_p2 | -   |        | sub_ln590_8 | sub | fabric | 0       |
+|   man_V_28_fu_1217_p2    | -   |        | man_V_28    | sub | fabric | 0       |
+|   F2_9_fu_1237_p2        | -   |        | F2_9        | sub | fabric | 0       |
+|   add_ln590_9_fu_1249_p2 | -   |        | add_ln590_9 | add | fabric | 0       |
+|   sub_ln590_9_fu_1255_p2 | -   |        | sub_ln590_9 | sub | fabric | 0       |
+|   tmp_V_fu_2659_p2       | -   |        | tmp_V       | sub | fabric | 0       |
+|   sub_ln997_fu_2692_p2   | -   |        | sub_ln997   | sub | fabric | 0       |
+|   lsb_index_fu_2698_p2   | -   |        | lsb_index   | add | fabric | 0       |
+|   sub_ln1000_fu_2724_p2  | -   |        | sub_ln1000  | sub | fabric | 0       |
+|   sub_ln1012_fu_2821_p2  | -   |        | sub_ln1012  | sub | fabric | 0       |
+|   add_ln1011_fu_2836_p2  | -   |        | add_ln1011  | add | fabric | 0       |
+|   m_2_fu_2861_p2         | -   |        | m_2         | add | fabric | 0       |
+|   sub_ln1017_fu_2897_p2  | -   |        | sub_ln1017  | add | tadder | 0       |
+|   add_ln1017_fu_2902_p2  | -   |        | add_ln1017  | add | tadder | 0       |
 |  + myproject             | 0   |        |             |     |        |         |
 |    add_ln712_fu_176_p2   | -   |        | add_ln712   | add | fabric | 0       |
 |    add_ln712_1_fu_182_p2 | -   |        | add_ln712_1 | add | fabric | 0       |

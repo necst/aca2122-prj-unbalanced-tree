@@ -2,12 +2,12 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Fri Jun 24 23:41:28 2022
-# Process ID: 3809567
+# Start of session at: Sat Jun 25 19:04:19 2022
+# Process ID: 761805
 # Current directory: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/impl/ip
 # Command line: vivado -notrace -mode batch -source run_ippack.tcl
 # Log file: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/impl/ip/vivado.log
 # Journal file: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj/solution1/impl/ip/vivado.jou
-# Running On: yavin, OS: Linux, CPU Frequency: 4600.032 MHz, CPU Physical cores: 8, Host memory: 67274 MB
+# Running On: yavin, OS: Linux, CPU Frequency: 4600.008 MHz, CPU Physical cores: 8, Host memory: 67274 MB
 #-----------------------------------------------------------
 source run_ippack.tcl -notrace

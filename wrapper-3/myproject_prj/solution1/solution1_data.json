@@ -311,7 +311,7 @@
       "ModuleName": "myproject_axi",
       "Instances": [{
           "ModuleName": "myproject",
-          "InstanceName": "out_local_V_myproject_fu_179",
+          "InstanceName": "out_local_V_myproject_fu_178",
           "Instances": [
             {
               "ModuleName": "decision_function_7",
@@ -724,7 +724,7 @@
           "Estimate": "4.973"
         },
         "Area": {
-          "FF": "1927",
+          "FF": "1928",
           "AVAIL_FF": "141120",
           "UTIL_FF": "1",
           "LUT": "9236",
@@ -746,7 +746,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2022-06-24 23:41:26 CEST",
+    "Time": "2022-06-25 19:04:17 CEST",
     "ToolName": "vitis_hls",
     "ToolVersion": "2021.2"
   }

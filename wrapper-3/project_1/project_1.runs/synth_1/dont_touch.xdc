@@ -16,14 +16,11 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ps
 # IP: bd/design_1/ip/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_rst_ps8_0_100M_0 || ORIG_REF_NAME==design_1_rst_ps8_0_100M_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_dma_0_0 || ORIG_REF_NAME==design_1_axi_dma_0_0} -quiet] -quiet
-
-# IP: bd/design_1/ip/design_1_myproject_axi_0_0/design_1_myproject_axi_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_myproject_axi_0_0 || ORIG_REF_NAME==design_1_myproject_axi_0_0} -quiet] -quiet
-
 # IP: bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_smc_0 || ORIG_REF_NAME==design_1_axi_smc_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_dma_0_0 || ORIG_REF_NAME==design_1_axi_dma_0_0} -quiet] -quiet
 
 # IP: bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_ds_0 || ORIG_REF_NAME==design_1_auto_ds_0} -quiet] -quiet
@@ -36,5 +33,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_au
 
 # IP: bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_1 || ORIG_REF_NAME==design_1_auto_pc_1} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_myproject_axi_0_1/design_1_myproject_axi_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_myproject_axi_0_1 || ORIG_REF_NAME==design_1_myproject_axi_0_1} -quiet] -quiet
 
 # XDC: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/design_1_ooc.xdc

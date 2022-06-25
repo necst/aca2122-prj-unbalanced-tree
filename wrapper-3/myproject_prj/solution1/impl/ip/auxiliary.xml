@@ -3,5 +3,5 @@
   <xd:arg xd:name="in" xd:originalName="in" xd:direction="in" xd:interfaceRef="in_r" xd:busTypeRef="axis" xd:dataWidth="32"/>
   <xd:arg xd:name="out" xd:originalName="out" xd:direction="out" xd:interfaceRef="out_r" xd:busTypeRef="axis" xd:dataWidth="32"/>
   <xd:latencyEstimates xd:best-case="16" xd:worst-case="16" xd:average-case="16"/>
-  <xd:resourceEstimates xd:LUT="9236" xd:FF="1927" xd:BRAM="0" xd:DSP="0"/>
+  <xd:resourceEstimates xd:LUT="9236" xd:FF="1928" xd:BRAM="0" xd:DSP="0"/>
 </xd:acceleratorMap>

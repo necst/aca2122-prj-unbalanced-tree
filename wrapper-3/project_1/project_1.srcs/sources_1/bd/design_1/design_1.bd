@@ -27,8 +27,8 @@
       "rst_ps8_0_100M": "",
       "axi_smc": "",
       "hier_0": {
-        "myproject_axi_0": "",
-        "axi_dma_0": ""
+        "axi_dma_0": "",
+        "myproject_axi_0": ""
       }
     },
     "components": {
@@ -2129,12 +2129,6 @@
           }
         },
         "components": {
-          "myproject_axi_0": {
-            "vlnv": "xilinx.com:hls:myproject_axi:1.0",
-            "xci_name": "design_1_myproject_axi_0_0",
-            "xci_path": "ip/design_1_myproject_axi_0_0/design_1_myproject_axi_0_0.xci",
-            "inst_hier_path": "hier_0/myproject_axi_0"
-          },
           "axi_dma_0": {
             "vlnv": "xilinx.com:ip:axi_dma:7.1",
             "xci_name": "design_1_axi_dma_0_0",
@@ -2189,6 +2183,12 @@
                 }
               }
             }
+          },
+          "myproject_axi_0": {
+            "vlnv": "xilinx.com:hls:myproject_axi:1.0",
+            "xci_name": "design_1_myproject_axi_0_1",
+            "xci_path": "ip/design_1_myproject_axi_0_1/design_1_myproject_axi_0_1.xci",
+            "inst_hier_path": "hier_0/myproject_axi_0"
           }
         },
         "interface_nets": {
@@ -2212,8 +2212,8 @@
           },
           "myproject_axi_0_out_r": {
             "interface_ports": [
-              "myproject_axi_0/out_r",
-              "axi_dma_0/S_AXIS_S2MM"
+              "axi_dma_0/S_AXIS_S2MM",
+              "myproject_axi_0/out_r"
             ]
           },
           "ps8_0_axi_periph_M00_AXI": {

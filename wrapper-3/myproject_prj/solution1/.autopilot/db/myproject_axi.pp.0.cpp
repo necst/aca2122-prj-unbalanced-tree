@@ -33743,7 +33743,7 @@ __attribute__((sdx_kernel("myproject_axi", 0))) void myproject_axi(
 
     VITIS_LOOP_32_2: for(unsigned i = 0; i < N_OUT; i++){
 #pragma HLS UNROLL
- out_struct.last = (i == N_OUT - 1) ? 1 : 0;
+ out_struct.last = in_struct.last;
 
         out_struct.data = out_local[i];
      out_struct.dest = 0;
