@@ -12,96 +12,85 @@ source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/myproject_prj'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2021.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top design_1_wrapper -part xczu3eg-sbva484-1-e
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
 INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 3819857
+INFO: [Synth 8-7075] Helper process launched with PID 719243
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2862.359 ; gain = 141.797 ; free physical = 13932 ; free virtual = 38083
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2885.332 ; gain = 143.797 ; free physical = 11996 ; free virtual = 35532
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'hier_0_imp_MHUNTD' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:953]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_0_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-3819561-yavin/realtime/design_1_axi_dma_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_0_0' (1#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-3819561-yavin/realtime/design_1_axi_dma_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_mm2s_araddr' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-WARNING: [Synth 8-7071] port 'm_axi_mm2s_arlen' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-WARNING: [Synth 8-7071] port 'm_axi_mm2s_arsize' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-WARNING: [Synth 8-7071] port 'm_axi_mm2s_arburst' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-WARNING: [Synth 8-7071] port 'm_axi_mm2s_arprot' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-WARNING: [Synth 8-7071] port 'm_axi_mm2s_arcache' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-WARNING: [Synth 8-7071] port 'm_axi_mm2s_arvalid' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-WARNING: [Synth 8-7071] port 'm_axi_mm2s_rready' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-WARNING: [Synth 8-7071] port 'm_axi_s2mm_awaddr' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-WARNING: [Synth 8-7071] port 'm_axi_s2mm_awlen' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-WARNING: [Synth 8-7071] port 'm_axi_s2mm_awsize' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-WARNING: [Synth 8-7071] port 'm_axi_s2mm_awburst' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-WARNING: [Synth 8-7071] port 'm_axi_s2mm_awprot' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-WARNING: [Synth 8-7071] port 'm_axi_s2mm_awcache' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-WARNING: [Synth 8-7071] port 'm_axi_s2mm_awvalid' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-WARNING: [Synth 8-7071] port 'm_axi_s2mm_wdata' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-WARNING: [Synth 8-7071] port 'm_axi_s2mm_wstrb' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-WARNING: [Synth 8-7071] port 'm_axi_s2mm_wlast' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-WARNING: [Synth 8-7071] port 'm_axi_s2mm_wvalid' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-WARNING: [Synth 8-7071] port 'm_axi_s2mm_bready' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-WARNING: [Synth 8-7071] port 's2mm_introut' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'design_1_axi_dma_0_0' has 64 connections declared, but only 39 given [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1038]
-INFO: [Synth 8-6157] synthesizing module 'design_1_myproject_axi_0_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-3819561-yavin/realtime/design_1_myproject_axi_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_myproject_axi_0_0' (2#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-3819561-yavin/realtime/design_1_myproject_axi_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'ap_local_block' of module 'design_1_myproject_axi_0_0' is unconnected for instance 'myproject_axi_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1078]
-WARNING: [Synth 8-7071] port 'ap_local_deadlock' of module 'design_1_myproject_axi_0_0' is unconnected for instance 'myproject_axi_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1078]
-WARNING: [Synth 8-7071] port 'out_r_TDEST' of module 'design_1_myproject_axi_0_0' is unconnected for instance 'myproject_axi_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1078]
-WARNING: [Synth 8-7071] port 'out_r_TSTRB' of module 'design_1_myproject_axi_0_0' is unconnected for instance 'myproject_axi_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1078]
-WARNING: [Synth 8-7071] port 'out_r_TUSER' of module 'design_1_myproject_axi_0_0' is unconnected for instance 'myproject_axi_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1078]
-WARNING: [Synth 8-7071] port 'out_r_TID' of module 'design_1_myproject_axi_0_0' is unconnected for instance 'myproject_axi_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1078]
-WARNING: [Synth 8-7023] instance 'myproject_axi_0' of module 'design_1_myproject_axi_0_0' has 22 connections declared, but only 16 given [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1078]
-INFO: [Synth 8-6155] done synthesizing module 'hier_0_imp_MHUNTD' (3#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:953]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ps8_0_axi_periph_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:317]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_QJIMLI' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1097]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_QJIMLI' (4#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1097]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1A7ZMW4' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1222]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-3819561-yavin/realtime/design_1_auto_ds_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_0' (5#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-3819561-yavin/realtime/design_1_auto_ds_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-3819561-yavin/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (6#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-3819561-yavin/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1A7ZMW4' (7#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1222]
-INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_KGUFR9' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1632]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_1' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-3819561-yavin/realtime/design_1_auto_ds_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_1' (8#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-3819561-yavin/realtime/design_1_auto_ds_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-3819561-yavin/realtime/design_1_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (9#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-3819561-yavin/realtime/design_1_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_KGUFR9' (10#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1632]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-3819561-yavin/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (11#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-3819561-yavin/realtime/design_1_xbar_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:913]
-WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:913]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:913]
-WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_0' has 40 connections declared, but only 37 given [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:913]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ps8_0_axi_periph_0' (12#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:317]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps8_0_100M_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-3819561-yavin/realtime/design_1_rst_ps8_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps8_0_100M_0' (13#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-3819561-yavin/realtime/design_1_rst_ps8_0_100M_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:228]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:228]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:228]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:228]
-WARNING: [Synth 8-7023] instance 'rst_ps8_0_100M' of module 'design_1_rst_ps8_0_100M_0' has 10 connections declared, but only 6 given [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:228]
-INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-3819561-yavin/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (14#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-3819561-yavin/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'maxigp0_awuser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:235]
-WARNING: [Synth 8-7071] port 'maxigp0_aruser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:235]
-WARNING: [Synth 8-7071] port 'maxigp1_awuser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:235]
-WARNING: [Synth 8-7071] port 'maxigp1_aruser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:235]
-WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'design_1_zynq_ultra_ps_e_0_0' has 83 connections declared, but only 79 given [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:235]
-INFO: [Synth 8-6155] done synthesizing module 'design_1' (15#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (16#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-718958-yavin/realtime/design_1_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_0' (1#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-718958-yavin/realtime/design_1_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'hier_0_imp_MHUNTD' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1151]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_0_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-718958-yavin/realtime/design_1_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_0_0' (2#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-718958-yavin/realtime/design_1_axi_dma_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1352]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1352]
+WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1352]
+WARNING: [Synth 8-7071] port 's2mm_introut' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1352]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1352]
+WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'design_1_axi_dma_0_0' has 64 connections declared, but only 59 given [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1352]
+INFO: [Synth 8-6157] synthesizing module 'design_1_myproject_axi_0_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-718958-yavin/realtime/design_1_myproject_axi_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_myproject_axi_0_0' (3#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-718958-yavin/realtime/design_1_myproject_axi_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'ap_local_block' of module 'design_1_myproject_axi_0_0' is unconnected for instance 'myproject_axi_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1412]
+WARNING: [Synth 8-7071] port 'ap_local_deadlock' of module 'design_1_myproject_axi_0_0' is unconnected for instance 'myproject_axi_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1412]
+WARNING: [Synth 8-7071] port 'out_r_TDEST' of module 'design_1_myproject_axi_0_0' is unconnected for instance 'myproject_axi_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1412]
+WARNING: [Synth 8-7071] port 'out_r_TSTRB' of module 'design_1_myproject_axi_0_0' is unconnected for instance 'myproject_axi_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1412]
+WARNING: [Synth 8-7071] port 'out_r_TUSER' of module 'design_1_myproject_axi_0_0' is unconnected for instance 'myproject_axi_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1412]
+WARNING: [Synth 8-7071] port 'out_r_TID' of module 'design_1_myproject_axi_0_0' is unconnected for instance 'myproject_axi_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1412]
+WARNING: [Synth 8-7023] instance 'myproject_axi_0' of module 'design_1_myproject_axi_0_0' has 22 connections declared, but only 16 given [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1412]
+INFO: [Synth 8-6155] done synthesizing module 'hier_0_imp_MHUNTD' (4#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1151]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps8_0_axi_periph_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:515]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_QJIMLI' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1431]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_QJIMLI' (5#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1431]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1A7ZMW4' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1556]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-718958-yavin/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_0' (6#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-718958-yavin/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-718958-yavin/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (7#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-718958-yavin/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1A7ZMW4' (8#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1556]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_KGUFR9' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1966]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_1' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-718958-yavin/realtime/design_1_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_1' (9#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-718958-yavin/realtime/design_1_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-718958-yavin/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (10#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-718958-yavin/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_KGUFR9' (11#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1966]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-718958-yavin/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (12#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-718958-yavin/realtime/design_1_xbar_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1111]
+WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1111]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1111]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_0' has 40 connections declared, but only 37 given [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1111]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps8_0_axi_periph_0' (13#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:515]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps8_0_100M_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-718958-yavin/realtime/design_1_rst_ps8_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps8_0_100M_0' (14#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-718958-yavin/realtime/design_1_rst_ps8_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:388]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:388]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:388]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:388]
+WARNING: [Synth 8-7023] instance 'rst_ps8_0_100M' of module 'design_1_rst_ps8_0_100M_0' has 10 connections declared, but only 6 given [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:388]
+INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-718958-yavin/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (15#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/.Xil/Vivado-718958-yavin/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'maxigp0_awuser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:395]
+WARNING: [Synth 8-7071] port 'maxigp0_aruser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:395]
+WARNING: [Synth 8-7071] port 'maxigp1_awuser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:395]
+WARNING: [Synth 8-7071] port 'maxigp1_aruser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:395]
+WARNING: [Synth 8-7071] port 'saxigp2_bid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:395]
+WARNING: [Synth 8-7071] port 'saxigp2_rid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:395]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'design_1_zynq_ultra_ps_e_0_0' has 123 connections declared, but only 117 given [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:395]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (16#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (17#1) [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 WARNING: [Synth 8-7129] Port M_ACLK in module s01_couplers_imp_KGUFR9 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_ARESETN in module s01_couplers_imp_KGUFR9 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_1A7ZMW4 is either unconnected or has no load
@@ -177,18 +166,18 @@ WARNING: [Synth 8-7129] Port S_AXI_LITE_awaddr[12] in module hier_0_imp_MHUNTD i
 WARNING: [Synth 8-7129] Port S_AXI_LITE_awaddr[11] in module hier_0_imp_MHUNTD is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_LITE_awaddr[10] in module hier_0_imp_MHUNTD is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2914.297 ; gain = 193.734 ; free physical = 13516 ; free virtual = 37668
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2938.270 ; gain = 196.734 ; free physical = 11196 ; free virtual = 34733
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2932.109 ; gain = 211.547 ; free physical = 13509 ; free virtual = 37661
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2956.082 ; gain = 214.547 ; free physical = 11188 ; free virtual = 34726
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2932.109 ; gain = 211.547 ; free physical = 13509 ; free virtual = 37661
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2956.082 ; gain = 214.547 ; free physical = 11188 ; free virtual = 34726
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2932.109 ; gain = 0.000 ; free physical = 13764 ; free virtual = 37916
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2956.082 ; gain = 0.000 ; free physical = 11182 ; free virtual = 34720
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -207,21 +196,25 @@ Parsing XDC File [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-2022
 Finished Parsing XDC File [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc'
 Parsing XDC File [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps8_0_100M'
 Finished Parsing XDC File [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps8_0_100M'
-Parsing XDC File [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0/design_1_axi_dma_0_0_in_context.xdc] for cell 'design_1_i/hier_0/axi_dma_0'
-Finished Parsing XDC File [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0/design_1_axi_dma_0_0_in_context.xdc] for cell 'design_1_i/hier_0/axi_dma_0'
+Parsing XDC File [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0/design_1_axi_smc_0_in_context.xdc] for cell 'design_1_i/axi_smc'
+Finished Parsing XDC File [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0/design_1_axi_smc_0_in_context.xdc] for cell 'design_1_i/axi_smc'
 Parsing XDC File [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_myproject_axi_0_0/design_1_myproject_axi_0_0/design_1_myproject_axi_0_0_in_context.xdc] for cell 'design_1_i/hier_0/myproject_axi_0'
 Finished Parsing XDC File [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_myproject_axi_0_0/design_1_myproject_axi_0_0/design_1_myproject_axi_0_0_in_context.xdc] for cell 'design_1_i/hier_0/myproject_axi_0'
+Parsing XDC File [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0/design_1_axi_dma_0_0_in_context.xdc] for cell 'design_1_i/hier_0/axi_dma_0'
+Finished Parsing XDC File [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0/design_1_axi_dma_0_0_in_context.xdc] for cell 'design_1_i/hier_0/axi_dma_0'
 Parsing XDC File [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3016.922 ; gain = 0.000 ; free physical = 14350 ; free virtual = 38502
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3042.895 ; gain = 0.000 ; free physical = 12030 ; free virtual = 35568
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3016.922 ; gain = 0.000 ; free physical = 14350 ; free virtual = 38502
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3042.895 ; gain = 0.000 ; free physical = 12030 ; free virtual = 35568
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3016.922 ; gain = 296.359 ; free physical = 14410 ; free virtual = 38572
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3042.895 ; gain = 301.359 ; free physical = 12099 ; free virtual = 35637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -229,7 +222,7 @@ Start Loading Part and Timing Information
 Loading part: xczu3eg-sbva484-1-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3016.922 ; gain = 296.359 ; free physical = 14410 ; free virtual = 38572
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3042.895 ; gain = 301.359 ; free physical = 12098 ; free virtual = 35636
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -243,13 +236,14 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/s01_c
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps8_0_100M. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_0/axi_dma_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_0/myproject_axi_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_0/axi_dma_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3016.922 ; gain = 296.359 ; free physical = 14410 ; free virtual = 38572
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3042.895 ; gain = 301.359 ; free physical = 12092 ; free virtual = 35631
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3016.922 ; gain = 296.359 ; free physical = 14413 ; free virtual = 38576
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3042.895 ; gain = 301.359 ; free physical = 12105 ; free virtual = 35643
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -278,25 +272,25 @@ WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_ps8_0_axi_periph_0 i
 WARNING: [Synth 8-7129] Port S01_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S01_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3016.922 ; gain = 296.359 ; free physical = 14386 ; free virtual = 38553
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3042.895 ; gain = 301.359 ; free physical = 12093 ; free virtual = 35636
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 3450.172 ; gain = 729.609 ; free physical = 13846 ; free virtual = 38003
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3474.145 ; gain = 732.609 ; free physical = 11491 ; free virtual = 35034
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 3450.172 ; gain = 729.609 ; free physical = 13846 ; free virtual = 38003
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3474.145 ; gain = 732.609 ; free physical = 11491 ; free virtual = 35034
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 3470.211 ; gain = 749.648 ; free physical = 13844 ; free virtual = 38001
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3493.176 ; gain = 751.641 ; free physical = 11488 ; free virtual = 35031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -314,37 +308,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3476.148 ; gain = 755.586 ; free physical = 13843 ; free virtual = 37999
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3499.113 ; gain = 757.578 ; free physical = 11522 ; free virtual = 35065
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3476.148 ; gain = 755.586 ; free physical = 13843 ; free virtual = 37999
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3499.113 ; gain = 757.578 ; free physical = 11522 ; free virtual = 35065
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3476.148 ; gain = 755.586 ; free physical = 13843 ; free virtual = 37999
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3499.113 ; gain = 757.578 ; free physical = 11522 ; free virtual = 35065
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3476.148 ; gain = 755.586 ; free physical = 13843 ; free virtual = 37999
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3499.113 ; gain = 757.578 ; free physical = 11522 ; free virtual = 35065
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3476.148 ; gain = 755.586 ; free physical = 13843 ; free virtual = 37999
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3499.113 ; gain = 757.578 ; free physical = 11522 ; free virtual = 35065
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3476.148 ; gain = 755.586 ; free physical = 13843 ; free virtual = 37999
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3499.113 ; gain = 757.578 ; free physical = 11522 ; free virtual = 35065
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -359,10 +353,11 @@ Report BlackBoxes:
 |3     |design_1_auto_pc_0           |         1|
 |4     |design_1_auto_ds_1           |         1|
 |5     |design_1_auto_pc_1           |         1|
-|6     |design_1_rst_ps8_0_100M_0    |         1|
-|7     |design_1_zynq_ultra_ps_e_0_0 |         1|
-|8     |design_1_axi_dma_0_0         |         1|
-|9     |design_1_myproject_axi_0_0   |         1|
+|6     |design_1_axi_smc_0           |         1|
+|7     |design_1_rst_ps8_0_100M_0    |         1|
+|8     |design_1_zynq_ultra_ps_e_0_0 |         1|
+|9     |design_1_axi_dma_0_0         |         1|
+|10    |design_1_myproject_axi_0_0   |         1|
 +------+-----------------------------+----------+
 
 Report Cell Usage: 
@@ -372,30 +367,31 @@ Report Cell Usage:
 |1     |design_1_auto_ds           |     2|
 |3     |design_1_auto_pc           |     2|
 |5     |design_1_axi_dma_0         |     1|
-|6     |design_1_myproject_axi_0   |     1|
-|7     |design_1_rst_ps8_0_100M    |     1|
-|8     |design_1_xbar              |     1|
-|9     |design_1_zynq_ultra_ps_e_0 |     1|
+|6     |design_1_axi_smc           |     1|
+|7     |design_1_myproject_axi_0   |     1|
+|8     |design_1_rst_ps8_0_100M    |     1|
+|9     |design_1_xbar              |     1|
+|10    |design_1_zynq_ultra_ps_e_0 |     1|
 +------+---------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3476.148 ; gain = 755.586 ; free physical = 13843 ; free virtual = 37999
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3499.113 ; gain = 757.578 ; free physical = 11522 ; free virtual = 35065
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3476.148 ; gain = 670.773 ; free physical = 13880 ; free virtual = 38036
-Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3476.156 ; gain = 755.586 ; free physical = 13880 ; free virtual = 38036
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 3499.113 ; gain = 670.766 ; free physical = 11564 ; free virtual = 35107
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3499.121 ; gain = 757.578 ; free physical = 11564 ; free virtual = 35107
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:04 ; elapsed = 00:00:00 . Memory (MB): peak = 3476.156 ; gain = 0.000 ; free physical = 13968 ; free virtual = 38125
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3499.121 ; gain = 0.000 ; free physical = 11653 ; free virtual = 35196
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3511.836 ; gain = 0.000 ; free physical = 13900 ; free virtual = 38057
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3532.801 ; gain = 0.000 ; free physical = 11585 ; free virtual = 35128
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 70927aa3
+Synth Design complete, checksum: ea0aa62a
 INFO: [Common 17-83] Releasing license: Synthesis
-48 Infos, 128 Warnings, 0 Critical Warnings and 0 Errors encountered.
+54 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 3525.773 ; gain = 840.418 ; free physical = 14083 ; free virtual = 38239
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:26 . Memory (MB): peak = 3546.738 ; gain = 858.410 ; free physical = 11776 ; free virtual = 35319
 INFO: [Common 17-1381] The checkpoint '/home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Jun 24 23:50:36 2022...
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 25 18:36:05 2022...

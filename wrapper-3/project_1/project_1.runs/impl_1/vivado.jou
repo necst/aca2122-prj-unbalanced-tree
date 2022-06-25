@@ -2,12 +2,12 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Fri Jun 24 23:50:47 2022
-# Process ID: 3820468
+# Start of session at: Sat Jun 25 18:36:16 2022
+# Process ID: 719910
 # Current directory: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/impl_1
 # Command line: vivado -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
 # Log file: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/impl_1/design_1_wrapper.vdi
 # Journal file: /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.runs/impl_1/vivado.jou
-# Running On: yavin, OS: Linux, CPU Frequency: 4600.005 MHz, CPU Physical cores: 8, Host memory: 67274 MB
+# Running On: yavin, OS: Linux, CPU Frequency: 4600.010 MHz, CPU Physical cores: 8, Host memory: 67274 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace

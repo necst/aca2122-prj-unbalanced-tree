@@ -1,10 +1,10 @@
 -- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
--- Date        : Fri Jun 24 23:48:20 2022
+-- Date        : Fri Jun 24 23:48:19 2022
 -- Host        : yavin running 64-bit Ubuntu 20.04.4 LTS
--- Command     : write_vhdl -force -mode synth_stub
---               /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top design_1_auto_ds_1 -prefix
+--               design_1_auto_ds_1_ design_1_auto_ds_1_stub.vhdl
 -- Design      : design_1_auto_ds_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xczu3eg-sbva484-1-e
