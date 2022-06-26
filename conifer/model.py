@@ -85,8 +85,8 @@ class model:
                 'Driver': 'python',
                 'Precision': {'Input': 'float', 'Output': 'float'}
             },
-            'InputData': 'X_test.npy',
-            'OutputPredictions': 'y_hls.npy'
+            'InputData': os.path.join(wrapper_output_dir, 'X_test.npy'),
+            'OutputPredictions':  os.path.join(wrapper_output_dir, 'y_hls.npy')
         }
         model = hls4ml.model.HLSModel(config, reader, layers)
         model.config.get_config_value('HLSConfig')
