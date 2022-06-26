@@ -31,3 +31,14 @@ reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 4
 wait_on_run impl_1
 open_run impl_1
+xhub::refresh_catalog [xhub::get_xstores xilinx_board_store]
+set_param board.repoPaths {/home/nghielme/.Xilinx/Vivado/2021.2/xhub/board_store/xilinx_board_store /home/nghielme/.Xilinx/Vivado/2020.1/xhub/board_store/xilinx_board_store}
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:cmod_a7-15t:1.1]
+close_project
+create_project project_2 /home/nghielme/PycharmProjects/conifer/examples/wrapper-3-20220623T092548Z-001/wrapper-3/project_2 -part xcvu37p-fsvh2892-2L-e
+set_property board_part xilinx.com:vcu128:part0:1.0 [current_project]
+create_bd_design "design_1"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.3 zynq_ultra_ps_e_0
+endgroup
