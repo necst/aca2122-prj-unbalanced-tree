@@ -5,8 +5,8 @@ from sklearn.datasets import make_hastie_10_2
 import xgboost as xgb
 import conifer
 import datetime
-from scipy.special import expit
 import numpy as np
+from scipy.special import expit
 
 # Make a random dataset from sklearn 'hastie'
 X, y = make_hastie_10_2(random_state=0)
@@ -37,8 +37,8 @@ model = conifer.model(bst, conifer.converters.xgboost,
 model.compile()
 y_hls = model.decision_function(X_test)
 
-wrapper_out_dir = 'wrapper-5'
-core_output_dir = 'core-5'
+wrapper_out_dir = 'wrapper-no-opt'
+core_output_dir = 'core-no-opt'
 
 
 model.deploy(wrapper_output_dir=wrapper_out_dir, core_output_dir=core_output_dir)
