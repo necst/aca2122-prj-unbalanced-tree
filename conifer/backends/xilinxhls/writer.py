@@ -1,9 +1,7 @@
 import os
 import sys
 from shutil import copyfile
-import warnings
 import numpy as np
-import datetime
 import logging
 logger = logging.getLogger(__name__)
 
@@ -26,7 +24,6 @@ def get_tool_exe_in_path(tool):
 
 
 def get_hls():
-
     tool_exe = None
 
     if '_tool' in globals():
@@ -40,16 +37,51 @@ def get_hls():
     return tool_exe
 
 
+def mod_bdt_file(path, ensemble_dict):
+    nodes=[]
+    leaves=[]
+    trees=[]
+    decision_functions=[]
+    for ntree, x in enumerate(ensemble_dict['trees']):
+        nodes.append('\tcase {}:return {};'.format(ntree, len(x[0]['feature'])))
+        leaves.append('\tcase {}:return {};'.format(ntree, len([f for f in x[0]['feature'] if f==-2])))
+        trees.append("\tTree<{0}, input_t, score_t, threshold_t> tree_{0}[fn_classes(n_classes)];".format(ntree))
+        decision_functions.append("\t\tfor(int j = 0; j < fn_classes(n_classes); j++){{\n\t\t\tscore_t s = tree_{0}[j].decision_function(x);"\
+            "\n\t\t\tscore[j] += s;\n\t\t\ttree_scores[{0} * fn_classes(n_classes) + j] = s;\n\t\t}}".format(ntree))
+    nodes.append("\tdefault:return {};".format(2**(ensemble_dict['max_depth'] + 1) - 1))
+    leaves.append("\tdefault:return {};".format(2**(ensemble_dict['max_depth'])))
+    #print(nodes)
+    #print(leaves)
+    
+    switch_case_nodes="\n".join(nodes)
+    switch_case_leaves="\n".join(leaves)
+    tree_list = "\n".join(trees)
+    decision_functions_list = "\n".join(decision_functions)
+    #print(switch_case_nodes)
+    #print(switch_case_leaves)
+    #print(decision_functions_list)
+    
+    with open(path, "r") as f:
+        data=f.read()
+
+    data=data.replace("%%SWITCH_CASE_N_NODES%%", switch_case_nodes)
+    data=data.replace("%%SWITCH_CASE_N_LEAVES%%", switch_case_leaves)
+    data=data.replace("%%TREE_LIST%%", tree_list)
+    data=data.replace("%%DECISION_FUNCTION_LIST%%", decision_functions_list)
+        
+    with open(path, "w") as f:
+        f.write(data)
+
 def write(ensemble_dict, cfg):
-
     filedir = os.path.dirname(os.path.abspath(__file__))
-
-    logger.info(f"Writing project to {cfg['OutputDir']}")
 
     os.makedirs('{}/firmware'.format(cfg['OutputDir']))
     os.makedirs('{}/tb_data'.format(cfg['OutputDir']))
+    out_bdt_file = '{}/firmware/BDT.h'.format(cfg['OutputDir'])
     copyfile('{}/firmware/BDT.h'.format(filedir),
-             '{}/firmware/BDT.h'.format(cfg['OutputDir']))
+             out_bdt_file)
+    
+    mod_bdt_file(out_bdt_file, ensemble_dict)
 
     ###################
     # myproject.cpp
@@ -62,11 +94,12 @@ def write(ensemble_dict, cfg):
     fout.write('#include "{}.h"\n'.format(cfg['ProjectName']))
 
     fout.write(
-        'void {}(input_arr_t x, score_arr_t score, score_t tree_scores[BDT::fn_classes(n_classes) * n_trees]){{\n'.format(cfg['ProjectName']))
+        'void {}(input_arr_t x, score_arr_t score, score_t tree_scores[BDT::fn_classes(n_classes) * n_trees]){{\n'.format(
+            cfg['ProjectName']))
     fout.write('\t#pragma HLS array_partition variable=x\n')
     fout.write('\t#pragma HLS array_partition variable=score\n')
     fout.write('\t#pragma HLS array_partition variable=tree_scores\n')
-    if(cfg['Pipeline']):
+    if (cfg['Pipeline']):
         fout.write('\t#pragma HLS pipeline\n')
         fout.write('\t#pragma HLS unroll\n')
     fout.write('\tbdt.decision_function(x, score, tree_scores);\n}')
@@ -90,41 +123,12 @@ def write(ensemble_dict, cfg):
         ensemble_dict['n_classes']))
     fout.write('static const bool unroll = {};\n'.format(
         str(cfg['Pipeline']).lower()))
-
-    input_precision = None
-    if 'InputPrecision' in cfg.keys():
-        input_precision = cfg['InputPrecision']
-    elif 'Precision' in cfg.keys():
-        input_precision = cfg['Precision']
-    if input_precision is None:
-        raise ValueError('Neither Precision nor InputPrecision specified in configuration')
-    logger.debug(f"InputPrecision {input_precision}")
-    fout.write('typedef {} input_t;\n'.format(input_precision))
+    fout.write('typedef {} input_t;\n'.format(cfg['Precision']))
     fout.write('typedef input_t input_arr_t[n_features];\n')
-
-    threshold_precision = None
-    if 'ThresholdPrecision' in cfg.keys():
-        threshold_precision = cfg['ThresholdPrecision']
-    elif 'InputPrecision' in cfg.keys():
-        warnings.warn("ThresholdPrecision not specified, but InputPrecision is - using InputPrecision for ThresholdPrecision")
-        threshold_precision = cfg['InputPrecision']
-    elif 'Precision' in cfg.keys():
-        threshold_precision = cfg['Precision']
-    if threshold_precision is None:
-        raise ValueError('None of Precision, ThresholdPrecision, nor InputPrecision specified in configuration')
-    logger.debug(f"ThresholdPrecision {threshold_precision}")
-    fout.write('typedef {} threshold_t;\n'.format(threshold_precision))
-
-    score_precision = None
-    if 'ScorePrecision' in cfg.keys():
-        score_precision = cfg['ScorePrecision']
-    elif 'Precision' in cfg.keys():
-        score_precision = cfg['Precision']
-    if score_precision is None:
-        raise ValueError('Neither Precision nor ScorePrecision specified in configuration')
-    logger.debug(f"ScorePrecision {score_precision}")
-    fout.write('typedef {} score_t;\n'.format(score_precision))
+    fout.write('typedef {} score_t;\n'.format(cfg['Precision']))
     fout.write('typedef score_t score_arr_t[n_classes];\n')
+    # TODO score_arr_t
+    fout.write('typedef input_t threshold_t;\n\n')
 
     tree_fields = ['feature', 'threshold', 'value',
                    'children_left', 'children_right', 'parent']
@@ -144,13 +148,13 @@ def write(ensemble_dict, cfg):
     else:
         newline += str(ensemble_dict['init_predict'][0]) + '},\n'
     fout.write(newline)
-    fout.write("\t{ // The array of trees\n")
+    fout.write("\t// The trees\n")
     # loop over trees
     for itree, trees in enumerate(ensemble_dict['trees']):
-        fout.write('\t\t{ // trees[' + str(itree) + ']\n')
+        fout.write('\t\t// trees[' + str(itree) + ']\n')
         # loop over classes
         for iclass, tree in enumerate(trees):
-            fout.write('\t\t\t{ // [' + str(iclass) + ']\n')
+            fout.write('\t\t\t{{ // [' + str(iclass) + ']\n')
             # loop over fields
             for ifield, field in enumerate(tree_fields):
                 newline = '\t\t\t\t{'
@@ -170,7 +174,7 @@ def write(ensemble_dict, cfg):
             newline += ','
         newline += '\n'
         fout.write(newline)
-    fout.write('\t}\n};')
+    fout.write('\n};')
 
     fout.write('\n#endif')
     fout.close()
@@ -242,28 +246,28 @@ def write(ensemble_dict, cfg):
         elif '//hls-fpga-machine-learning insert top-level-function' in line:
             newline = line
             top_level = indent + \
-                '{}(x, score, tree_scores);\n'.format(cfg['ProjectName'])
+                        '{}(x, score, tree_scores);\n'.format(cfg['ProjectName'])
             newline += top_level
         elif '//hls-fpga-machine-learning insert predictions' in line:
             newline = line
             newline += indent + \
-                'for(int i = 0; i < {}; i++) {{\n'.format(
-                    ensemble_dict['n_classes'])
+                       'for(int i = 0; i < {}; i++) {{\n'.format(
+                           ensemble_dict['n_classes'])
             newline += indent + '  std::cout << pr[i] << " ";\n'
             newline += indent + '}\n'
             newline += indent + 'std::cout << std::endl;\n'
         elif '//hls-fpga-machine-learning insert tb-output' in line:
             newline = line
             newline += indent + \
-                'for(int i = 0; i < {}; i++) {{\n'.format(
-                    ensemble_dict['n_classes'])
+                       'for(int i = 0; i < {}; i++) {{\n'.format(
+                           ensemble_dict['n_classes'])
             newline += indent + '  fout << score[i] << " ";\n'
             newline += indent + '}\n'
         elif '//hls-fpga-machine-learning insert output' in line or '//hls-fpga-machine-learning insert quantized' in line:
             newline = line
             newline += indent + \
-                'for(int i = 0; i < {}; i++) {{\n'.format(
-                    ensemble_dict['n_classes'])
+                       'for(int i = 0; i < {}; i++) {{\n'.format(
+                           ensemble_dict['n_classes'])
             newline += indent + '  std::cout << score[i] << " ";\n'
             newline += indent + '}\n'
             newline += indent + 'std::cout << std::endl;\n'
@@ -302,28 +306,13 @@ def write(ensemble_dict, cfg):
     fout.close()
 
 
-def auto_config(granularity='simple'):
-    '''
-    Create an initial configuration dictionary to modify
-    Parameters
-    ----------
-    granularity : string, optional
-        Which granularity to fill the template. Can be 'simple' (default) or 'full'
-        If 'simple', only 'Precision' is included. If 'full', 'InputPrecision', 'ThresholdPrecision', and 'ScorePrecision'
-        are included.
-    '''
+def auto_config():
     config = {'ProjectName': 'my_prj',
               'OutputDir': 'my-conifer-prj',
+              'Precision': 'ap_fixed<18,8>',
               'XilinxPart': 'xcvu9p-flgb2104-2L-e',
               'ClockPeriod': '5',
-              'Pipeline' : True}
-    if granularity == 'full':
-        config['InputPrecision'] = 'ap_fixed<18,8>'
-        config['ThresholdPrecision'] = 'ap_fixed<18,8>'
-        config['ScorePrecision'] = 'ap_fixed<18,8>'
-    else:
-        config['Precision'] = 'ap_fixed<18,8>'
-
+              'Pipeline': True}
     return config
 
 
@@ -335,14 +324,13 @@ def decision_function(X, config, trees=False):
 
     hls_tool = get_hls()
     if hls_tool == None:
-        logger.error("No HLS in PATH. Did you source the appropriate Xilinx Toolchain?")
-        sys.exit()    
+        print("No HLS in PATH. Did you source the appropriate Xilinx Toolchain?")
+        sys.exit()
 
     cmd = '{} -f build_prj.tcl "csim=1 synth=0" > predict.log'.format(hls_tool)
-    logger.debug(f'decision_function invoking {hls_tool} with command "{cmd}"')
     success = os.system(cmd)
-    if(success > 0):
-        logger.error("'predict' failed, check predict.log")
+    if (success > 0):
+        print("'predict' failed, check predict.log")
         sys.exit()
     y = np.loadtxt('tb_data/csim_results.log')
     if trees:
@@ -364,19 +352,13 @@ def build(config, reset=False, csim=False, synth=True, cosim=False, export=False
 
     hls_tool = get_hls()
     if hls_tool == None:
-        logger.error("No HLS in PATH. Did you source the appropriate Xilinx Toolchain?")
+        print("No HLS in PATH. Did you source the appropriate Xilinx Toolchain?")
         sys.exit()
 
-    cmd = '{hls_tool} -f build_prj.tcl "reset={reset} csim={csim} synth={synth} cosim={cosim} export={export}" > build.log'\
+    cmd = '{hls_tool} -f build_prj.tcl "reset={reset} csim={csim} synth={synth} cosim={cosim} export={export}"' \
         .format(hls_tool=hls_tool, reset=reset, csim=csim, synth=synth, cosim=cosim, export=export)
-    start = datetime.datetime.now()
-    logger.info(f'build starting {start:%H:%M:%S}')
-    logger.debug(f'build invoking {hls_tool} with command "{cmd}"')
     success = os.system(cmd)
-    stop = datetime.datetime.now()
-    logger.info(f'build finished {stop:%H:%M:%S} - took {str(stop-start)}')
-    if(success > 0):
-        logger.error("build failed, check logs")
+    if (success > 0):
+        print("'build' failed")
         sys.exit()
-
     os.chdir(cwd)
