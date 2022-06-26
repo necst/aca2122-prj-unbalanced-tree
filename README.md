@@ -28,4 +28,4 @@ vitis_hls build_prj.tcl
 vivado -mode batch -source design.tcl
 ```
 
-#enter into project directory to access the bitstream file and hw_handheld file
+#enter into project directory to access the bitstream file and hw_handoff file
