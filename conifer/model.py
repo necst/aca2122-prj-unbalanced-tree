@@ -123,7 +123,7 @@ class model:
                 newline = 'add_files firmware/myproject.cpp\n'
             elif 'add_files -tb myproject_test.cpp -cflags \"-std=c++0x\"' in line:
                 newline = 'add_files -tb myproject_test.cpp -cflags \"-I firmware/\"\n'
-            elif 'set_part {xc7z020clg400-1}' in line:
+            elif 'set_part {xc7z020clg400-1}' in line or 'set_part {None}' in line:
                 newline = 'set_part {' + part + '}\n'
             elif 'create_clock -period 5 -name default' in line:
                 newline = 'create_clock -period ' + str(clk_period) + ' -name default\n'
