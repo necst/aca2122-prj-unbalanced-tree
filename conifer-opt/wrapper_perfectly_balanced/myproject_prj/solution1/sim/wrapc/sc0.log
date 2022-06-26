@@ -1,0 +1,8 @@
+   Build using "/opt/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling apatb_myproject_axi.cpp
+   Compiling myproject_axi.cpp_pre.cpp.tb.cpp
+   Compiling myproject.cpp_pre.cpp.tb.cpp
+   Compiling myproject_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_myproject_axi_util.cpp
+   Compiling apatb_myproject_axi_ir.ll
+   Generating cosim.tv.exe

@@ -1,0 +1,414 @@
+
+*** Running vivado
+    with args -log design_1_myproject_axi_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_myproject_axi_0_0.tcl
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source design_1_myproject_axi_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_prj'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top design_1_myproject_axi_0_0 -part xczu3eg-sbva484-1-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2188364
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2841.359 ; gain = 141.797 ; free physical = 10870 ; free virtual = 35291
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_myproject_axi_0_0' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ip/design_1_myproject_axi_0_0/synth/design_1_myproject_axi_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi.v:12]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_myproject_axi_Pipeline_VITIS_LOOP_21_1' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_myproject_axi_Pipeline_VITIS_LOOP_21_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_fpext_32ns_64_2_no_dsp_1' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_fpext_32ns_64_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_fpext_32ns_64_2_no_dsp_1_ip' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/ip/myproject_axi_fpext_32ns_64_2_no_dsp_1_ip.v:60]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [/opt/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:62649]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (1#1) [/opt/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:62649]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_fpext_32ns_64_2_no_dsp_1_ip' (13#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/ip/myproject_axi_fpext_32ns_64_2_no_dsp_1_ip.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_fpext_32ns_64_2_no_dsp_1' (14#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_fpext_32ns_64_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_flow_control_loop_pipe_sequential_init' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_flow_control_loop_pipe_sequential_init.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_flow_control_loop_pipe_sequential_init' (15#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_flow_control_loop_pipe_sequential_init.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_myproject_axi_Pipeline_VITIS_LOOP_21_1' (16#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_myproject_axi_Pipeline_VITIS_LOOP_21_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_myproject' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_myproject.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_decision_function_22' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_22.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_mux_63_32_1_1' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_mux_63_32_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_mux_63_32_1_1' (17#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_mux_63_32_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_decision_function_22' (18#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_22.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_decision_function_21' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_21.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_mux_73_32_1_1' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_mux_73_32_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_mux_73_32_1_1' (19#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_mux_73_32_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_decision_function_21' (20#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_21.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_decision_function_10' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_10.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_mux_53_32_1_1' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_mux_53_32_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_mux_53_32_1_1' (21#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_mux_53_32_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_decision_function_10' (22#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_10.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_decision_function_6' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_6.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_mux_53_32_1_1_x' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_mux_53_32_1_1_x.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_mux_53_32_1_1_x' (23#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_mux_53_32_1_1_x.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_decision_function_6' (24#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_6.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_decision_function_5' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_5.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_mux_63_32_1_1_x' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_mux_63_32_1_1_x.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_mux_63_32_1_1_x' (25#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_mux_63_32_1_1_x.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_decision_function_5' (26#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_5.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_decision_function_4' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_4.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_decision_function_4' (27#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_4.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_decision_function_3' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_mux_53_32_1_1_x0' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_mux_53_32_1_1_x0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_mux_53_32_1_1_x0' (28#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_mux_53_32_1_1_x0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_decision_function_3' (29#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_decision_function_2' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_mux_53_32_1_1_x1' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_mux_53_32_1_1_x1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_mux_53_32_1_1_x1' (30#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_mux_53_32_1_1_x1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_decision_function_2' (31#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_decision_function_1' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_mux_42_32_1_1' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_mux_42_32_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_mux_42_32_1_1' (32#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_mux_42_32_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_decision_function_1' (33#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_decision_function' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_decision_function' (34#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_decision_function_20' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_20.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_decision_function_20' (35#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_20.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_decision_function_19' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_19.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_decision_function_19' (36#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_19.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_decision_function_18' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_18.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_decision_function_18' (37#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_18.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_decision_function_17' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_17.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_mux_42_32_1_1_x' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_mux_42_32_1_1_x.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_mux_42_32_1_1_x' (38#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_mux_42_32_1_1_x.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_decision_function_17' (39#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_17.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_decision_function_16' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_16.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_decision_function_16' (40#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_16.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_decision_function_15' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_15.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_decision_function_15' (41#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_15.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_decision_function_14' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_14.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_decision_function_14' (42#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_14.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_decision_function_13' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_13.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_decision_function_13' (43#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_13.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_decision_function_12' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_12.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_decision_function_12' (44#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_12.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_decision_function_11' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_11.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_decision_function_11' (45#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_11.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_decision_function_9' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_9.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_decision_function_9' (46#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_9.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_decision_function_8' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_8.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_decision_function_8' (47#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_8.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_decision_function_7' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_7.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_decision_function_7' (48#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_decision_function_7.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_myproject' (49#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_myproject.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_regslice_both' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_regslice_both' (50#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_regslice_both__parameterized0' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_regslice_both__parameterized0' (50#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_regslice_both__parameterized1' [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_regslice_both__parameterized1' (50#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi' (51#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ipshared/1ea6/hdl/verilog/myproject_axi.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_myproject_axi_0_0' (52#1) [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ip/design_1_myproject_axi_0_0/synth/design_1_myproject_axi_0_0.v:58]
+WARNING: [Synth 8-7129] Port ap_rst in module myproject_axi_myproject is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[11] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[10] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[9] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[8] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_eq_im is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[31] in module special_detect is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tuser[0] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tlast in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aresetn in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tuser[0] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tlast in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tvalid in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[31] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[30] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[29] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[28] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[27] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[26] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[25] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[24] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[23] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[22] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[21] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[20] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[19] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[18] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[17] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[16] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[15] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[14] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[13] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[12] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[11] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[10] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[9] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[8] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[7] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[6] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[5] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[4] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[3] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[2] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[1] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[0] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tuser[0] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tlast in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tvalid in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[31] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[30] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[29] in module floating_point_v7_1_13_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[28] in module floating_point_v7_1_13_viv is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2951.234 ; gain = 251.672 ; free physical = 9277 ; free virtual = 33707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2969.047 ; gain = 269.484 ; free physical = 10584 ; free virtual = 35018
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2969.047 ; gain = 269.484 ; free physical = 10582 ; free virtual = 35016
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2974.984 ; gain = 0.000 ; free physical = 10865 ; free virtual = 35298
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ip/design_1_myproject_axi_0_0/constraints/myproject_axi_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.gen/sources_1/bd/design_1/ip/design_1_myproject_axi_0_0/constraints/myproject_axi_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.runs/design_1_myproject_axi_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.runs/design_1_myproject_axi_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3143.766 ; gain = 0.000 ; free physical = 11869 ; free virtual = 36361
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3143.766 ; gain = 0.000 ; free physical = 11861 ; free virtual = 36353
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 3143.766 ; gain = 444.203 ; free physical = 11765 ; free virtual = 36249
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 3143.766 ; gain = 444.203 ; free physical = 11767 ; free virtual = 36252
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.runs/design_1_myproject_axi_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 3143.766 ; gain = 444.203 ; free physical = 11778 ; free virtual = 36263
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 3143.766 ; gain = 444.203 ; free physical = 11702 ; free virtual = 36191
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/grp_myproject_axi_Pipeline_VITIS_LOOP_21_1_fu_180/fpext_32ns_64_2_no_dsp_1_U1/myproject_axi_fpext_32ns_64_2_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'inst/grp_myproject_axi_Pipeline_VITIS_LOOP_21_1_fu_180/fpext_32ns_64_2_no_dsp_1_U1/myproject_axi_fpext_32ns_64_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/grp_myproject_axi_Pipeline_VITIS_LOOP_21_1_fu_180/fpext_32ns_64_2_no_dsp_1_U1/myproject_axi_fpext_32ns_64_2_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'inst/grp_myproject_axi_Pipeline_VITIS_LOOP_21_1_fu_180/fpext_32ns_64_2_no_dsp_1_U1/myproject_axi_fpext_32ns_64_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_myproject_axi_Pipeline_VITIS_LOOP_21_1_fu_180/fpext_32ns_64_2_no_dsp_1_U1/myproject_axi_fpext_32ns_64_2_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'inst/grp_myproject_axi_Pipeline_VITIS_LOOP_21_1_fu_180/fpext_32ns_64_2_no_dsp_1_U1/myproject_axi_fpext_32ns_64_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/regslice_both_out_r_V_keep_V_U' (myproject_axi_regslice_both__parameterized0) to 'inst/regslice_both_out_r_V_strb_V_U'
+INFO: [Synth 8-223] decloning instance 'inst/regslice_both_out_r_V_user_V_U' (myproject_axi_regslice_both__parameterized1) to 'inst/regslice_both_out_r_V_id_V_U'
+INFO: [Synth 8-223] decloning instance 'inst/regslice_both_out_r_V_user_V_U' (myproject_axi_regslice_both__parameterized1) to 'inst/regslice_both_out_r_V_dest_V_U'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 3143.766 ; gain = 444.203 ; free physical = 10345 ; free virtual = 34856
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:48 . Memory (MB): peak = 3446.312 ; gain = 746.750 ; free physical = 4227 ; free virtual = 28748
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:48 . Memory (MB): peak = 3462.328 ; gain = 762.766 ; free physical = 3558 ; free virtual = 28078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:53 . Memory (MB): peak = 3551.367 ; gain = 851.805 ; free physical = 2701 ; free virtual = 27221
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:01:03 . Memory (MB): peak = 3551.367 ; gain = 851.805 ; free physical = 1547 ; free virtual = 24995
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:01:03 . Memory (MB): peak = 3551.367 ; gain = 851.805 ; free physical = 1546 ; free virtual = 24994
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:01:04 . Memory (MB): peak = 3551.367 ; gain = 851.805 ; free physical = 1563 ; free virtual = 25011
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:01:04 . Memory (MB): peak = 3551.367 ; gain = 851.805 ; free physical = 1586 ; free virtual = 25034
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:01:04 . Memory (MB): peak = 3551.367 ; gain = 851.805 ; free physical = 1594 ; free virtual = 25042
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:01:04 . Memory (MB): peak = 3551.367 ; gain = 851.805 ; free physical = 1592 ; free virtual = 25040
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY8 |   231|
+|2     |LUT1   |   307|
+|3     |LUT2   |  1978|
+|4     |LUT3   |   429|
+|5     |LUT4   |   210|
+|6     |LUT5   |   451|
+|7     |LUT6   |   664|
+|8     |MUXCY  |     4|
+|9     |SRL16E |     4|
+|10    |FDRE   |  1019|
+|11    |FDSE   |     4|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:01:04 . Memory (MB): peak = 3551.367 ; gain = 851.805 ; free physical = 1592 ; free virtual = 25039
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 102 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:58 . Memory (MB): peak = 3551.367 ; gain = 677.086 ; free physical = 1625 ; free virtual = 25073
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:01:04 . Memory (MB): peak = 3551.375 ; gain = 851.805 ; free physical = 1624 ; free virtual = 25072
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.10 . Memory (MB): peak = 3551.375 ; gain = 0.000 ; free physical = 1656 ; free virtual = 25105
+INFO: [Netlist 29-17] Analyzing 235 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3591.016 ; gain = 0.000 ; free physical = 3581 ; free virtual = 27033
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  (CARRY4) => CARRY8: 1 instance 
+
+Synth Design complete, checksum: 5626378f
+INFO: [Common 17-83] Releasing license: Synthesis
+114 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:01:11 . Memory (MB): peak = 3591.016 ; gain = 905.660 ; free physical = 3757 ; free virtual = 27208
+INFO: [Common 17-1381] The checkpoint '/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.runs/design_1_myproject_axi_0_0_synth_1/design_1_myproject_axi_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_myproject_axi_0_0, cache-ID = 5a4cde4265dceeae
+INFO: [Coretcl 2-1174] Renamed 18 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_semi_unbalanced/myproject_vivado_accelerator/project_1.runs/design_1_myproject_axi_0_0_synth_1/design_1_myproject_axi_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_myproject_axi_0_0_utilization_synth.rpt -pb design_1_myproject_axi_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 26 16:52:47 2022...

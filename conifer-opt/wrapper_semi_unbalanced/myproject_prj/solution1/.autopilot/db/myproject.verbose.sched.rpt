@@ -1,0 +1,181 @@
+
+
+================================================================
+== Vitis HLS Report for 'myproject'
+================================================================
+* Date:           Sun Jun 26 16:47:19 2022
+
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  7.00 ns|  4.859 ns|     1.89 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        1|        1|  7.000 ns|  7.000 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.85>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%p_read_1 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read9" [firmware/BDT.h:283->firmware/myproject.cpp:10]   --->   Operation 3 'read' 'p_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%p_read_2 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read8" [firmware/BDT.h:283->firmware/myproject.cpp:10]   --->   Operation 4 'read' 'p_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%p_read_3 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read7" [firmware/BDT.h:283->firmware/myproject.cpp:10]   --->   Operation 5 'read' 'p_read_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%p_read_4 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read6" [firmware/BDT.h:283->firmware/myproject.cpp:10]   --->   Operation 6 'read' 'p_read_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%p_read_5 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read5" [firmware/BDT.h:283->firmware/myproject.cpp:10]   --->   Operation 7 'read' 'p_read_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%p_read_6 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read4" [firmware/BDT.h:283->firmware/myproject.cpp:10]   --->   Operation 8 'read' 'p_read_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%p_read_7 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read3" [firmware/BDT.h:283->firmware/myproject.cpp:10]   --->   Operation 9 'read' 'p_read_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%p_read_8 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read2" [firmware/BDT.h:283->firmware/myproject.cpp:10]   --->   Operation 10 'read' 'p_read_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%p_read_9 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read1" [firmware/BDT.h:283->firmware/myproject.cpp:10]   --->   Operation 11 'read' 'p_read_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%p_read_10 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read" [firmware/BDT.h:283->firmware/myproject.cpp:10]   --->   Operation 12 'read' 'p_read_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (3.15ns)   --->   "%s_V = call i32 @decision_function.22, i32 %p_read_9, i32 %p_read_8, i32 %p_read_5" [firmware/BDT.h:283->firmware/myproject.cpp:10]   --->   Operation 13 'call' 's_V' <Predicate = true> <Delay = 3.15> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 14 [1/1] (3.21ns)   --->   "%s_V_1 = call i32 @decision_function.21, i32 %p_read_10, i32 %p_read_8, i32 %p_read_7, i32 %p_read_6, i32 %p_read_5, i32 %p_read_3" [firmware/BDT.h:288->firmware/myproject.cpp:10]   --->   Operation 14 'call' 's_V_1' <Predicate = true> <Delay = 3.21> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 15 [1/1] (2.76ns)   --->   "%s_V_2 = call i32 @decision_function.10, i32 %p_read_8, i32 %p_read_6, i32 %p_read_3" [firmware/BDT.h:293->firmware/myproject.cpp:10]   --->   Operation 15 'call' 's_V_2' <Predicate = true> <Delay = 2.76> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 16 [1/1] (2.76ns)   --->   "%s_V_3 = call i32 @decision_function.6, i32 %p_read_7, i32 %p_read_2, i32 %p_read_1" [firmware/BDT.h:298->firmware/myproject.cpp:10]   --->   Operation 16 'call' 's_V_3' <Predicate = true> <Delay = 2.76> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 17 [1/1] (3.15ns)   --->   "%s_V_4 = call i32 @decision_function.5, i32 %p_read_10, i32 %p_read_7, i32 %p_read_4" [firmware/BDT.h:303->firmware/myproject.cpp:10]   --->   Operation 17 'call' 's_V_4' <Predicate = true> <Delay = 3.15> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 18 [1/1] (2.96ns)   --->   "%s_V_5 = call i32 @decision_function.4, i32 %p_read_10, i32 %p_read_1" [firmware/BDT.h:308->firmware/myproject.cpp:10]   --->   Operation 18 'call' 's_V_5' <Predicate = true> <Delay = 2.96> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 19 [1/1] (3.09ns)   --->   "%s_V_6 = call i32 @decision_function.3, i32 %p_read_6, i32 %p_read_1" [firmware/BDT.h:313->firmware/myproject.cpp:10]   --->   Operation 19 'call' 's_V_6' <Predicate = true> <Delay = 3.09> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 20 [1/1] (2.76ns)   --->   "%s_V_7 = call i32 @decision_function.2, i32 %p_read_7, i32 %p_read_5, i32 %p_read_4" [firmware/BDT.h:318->firmware/myproject.cpp:10]   --->   Operation 20 'call' 's_V_7' <Predicate = true> <Delay = 2.76> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 21 [1/1] (2.04ns)   --->   "%s_V_8 = call i32 @decision_function.1, i32 %p_read_8, i32 %p_read_5, i32 %p_read_3" [firmware/BDT.h:323->firmware/myproject.cpp:10]   --->   Operation 21 'call' 's_V_8' <Predicate = true> <Delay = 2.04> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 22 [1/1] (2.37ns)   --->   "%s_V_9 = call i32 @decision_function, i32 %p_read_9, i32 %p_read_6, i32 %p_read_3" [firmware/BDT.h:328->firmware/myproject.cpp:10]   --->   Operation 22 'call' 's_V_9' <Predicate = true> <Delay = 2.37> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 23 [1/1] (2.76ns)   --->   "%s_V_10 = call i32 @decision_function.20, i32 %p_read_9, i32 %p_read_8, i32 %p_read_7" [firmware/BDT.h:333->firmware/myproject.cpp:10]   --->   Operation 23 'call' 's_V_10' <Predicate = true> <Delay = 2.76> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 24 [1/1] (2.04ns)   --->   "%s_V_11 = call i32 @decision_function.19, i32 %p_read_10, i32 %p_read_7, i32 %p_read_2" [firmware/BDT.h:338->firmware/myproject.cpp:10]   --->   Operation 24 'call' 's_V_11' <Predicate = true> <Delay = 2.04> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 25 [1/1] (2.04ns)   --->   "%s_V_12 = call i32 @decision_function.18, i32 %p_read_8, i32 %p_read_5" [firmware/BDT.h:343->firmware/myproject.cpp:10]   --->   Operation 25 'call' 's_V_12' <Predicate = true> <Delay = 2.04> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 26 [1/1] (2.37ns)   --->   "%s_V_13 = call i32 @decision_function.17, i32 %p_read_2, i32 %p_read_1" [firmware/BDT.h:348->firmware/myproject.cpp:10]   --->   Operation 26 'call' 's_V_13' <Predicate = true> <Delay = 2.37> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 27 [1/1] (2.37ns)   --->   "%s_V_14 = call i32 @decision_function.16, i32 %p_read_10, i32 %p_read_8, i32 %p_read_1" [firmware/BDT.h:353->firmware/myproject.cpp:10]   --->   Operation 27 'call' 's_V_14' <Predicate = true> <Delay = 2.37> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 28 [1/1] (2.04ns)   --->   "%s_V_15 = call i32 @decision_function.15, i32 %p_read_6, i32 %p_read_4" [firmware/BDT.h:358->firmware/myproject.cpp:10]   --->   Operation 28 'call' 's_V_15' <Predicate = true> <Delay = 2.04> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 29 [1/1] (2.37ns)   --->   "%s_V_16 = call i32 @decision_function.14, i32 %p_read_7, i32 %p_read_4, i32 %p_read_3" [firmware/BDT.h:363->firmware/myproject.cpp:10]   --->   Operation 29 'call' 's_V_16' <Predicate = true> <Delay = 2.37> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 30 [1/1] (2.37ns)   --->   "%s_V_17 = call i32 @decision_function.13, i32 %p_read_9, i32 %p_read_3" [firmware/BDT.h:368->firmware/myproject.cpp:10]   --->   Operation 30 'call' 's_V_17' <Predicate = true> <Delay = 2.37> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 31 [1/1] (2.04ns)   --->   "%s_V_18 = call i32 @decision_function.12, i32 %p_read_10, i32 %p_read_7" [firmware/BDT.h:373->firmware/myproject.cpp:10]   --->   Operation 31 'call' 's_V_18' <Predicate = true> <Delay = 2.04> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 32 [1/1] (2.37ns)   --->   "%s_V_19 = call i32 @decision_function.11, i32 %p_read_8, i32 %p_read_6, i32 %p_read_2" [firmware/BDT.h:378->firmware/myproject.cpp:10]   --->   Operation 32 'call' 's_V_19' <Predicate = true> <Delay = 2.37> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 33 [1/1] (2.37ns)   --->   "%s_V_20 = call i32 @decision_function.9, i32 %p_read_8, i32 %p_read_7, i32 %p_read_1" [firmware/BDT.h:383->firmware/myproject.cpp:10]   --->   Operation 33 'call' 's_V_20' <Predicate = true> <Delay = 2.37> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 34 [1/1] (2.37ns)   --->   "%s_V_21 = call i32 @decision_function.8, i32 %p_read_6, i32 %p_read_3" [firmware/BDT.h:388->firmware/myproject.cpp:10]   --->   Operation 34 'call' 's_V_21' <Predicate = true> <Delay = 2.37> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 35 [1/1] (2.37ns)   --->   "%s_V_22 = call i32 @decision_function.7, i32 %p_read_5, i32 %p_read_4, i32 %p_read_1" [firmware/BDT.h:393->firmware/myproject.cpp:10]   --->   Operation 35 'call' 's_V_22' <Predicate = true> <Delay = 2.37> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 36 [1/1] (1.20ns)   --->   "%add_ln712 = add i32 %s_V, i32 %s_V_2"   --->   Operation 36 'add' 'add_ln712' <Predicate = true> <Delay = 1.20> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 37 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln712_2 = add i32 %s_V_4, i32 %s_V_5"   --->   Operation 37 'add' 'add_ln712_2' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 38 [1/1] (0.88ns) (root node of TernaryAdder)   --->   "%add_ln712_3 = add i32 %add_ln712_2, i32 %s_V_3"   --->   Operation 38 'add' 'add_ln712_3' <Predicate = true> <Delay = 0.88> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 39 [1/1] (1.20ns)   --->   "%add_ln712_5 = add i32 %s_V_7, i32 %s_V_8"   --->   Operation 39 'add' 'add_ln712_5' <Predicate = true> <Delay = 1.20> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 40 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln712_6 = add i32 %add_ln712_5, i32 %s_V_6"   --->   Operation 40 'add' 'add_ln712_6' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 41 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln712_7 = add i32 %s_V_10, i32 %s_V_11"   --->   Operation 41 'add' 'add_ln712_7' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 42 [1/1] (0.88ns) (root node of TernaryAdder)   --->   "%add_ln712_8 = add i32 %add_ln712_7, i32 %s_V_9"   --->   Operation 42 'add' 'add_ln712_8' <Predicate = true> <Delay = 0.88> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 43 [1/1] (0.88ns) (root node of TernaryAdder)   --->   "%add_ln712_9 = add i32 %add_ln712_8, i32 %add_ln712_6"   --->   Operation 43 'add' 'add_ln712_9' <Predicate = true> <Delay = 0.88> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 44 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln712_11 = add i32 %s_V_13, i32 %s_V_14"   --->   Operation 44 'add' 'add_ln712_11' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 45 [1/1] (0.88ns) (root node of TernaryAdder)   --->   "%add_ln712_12 = add i32 %add_ln712_11, i32 %s_V_12"   --->   Operation 45 'add' 'add_ln712_12' <Predicate = true> <Delay = 0.88> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 46 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln712_13 = add i32 %s_V_16, i32 %s_V_17"   --->   Operation 46 'add' 'add_ln712_13' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 47 [1/1] (0.88ns) (root node of TernaryAdder)   --->   "%add_ln712_14 = add i32 %add_ln712_13, i32 %s_V_15"   --->   Operation 47 'add' 'add_ln712_14' <Predicate = true> <Delay = 0.88> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 48 [1/1] (1.20ns)   --->   "%add_ln712_16 = add i32 %s_V_19, i32 %s_V_20"   --->   Operation 48 'add' 'add_ln712_16' <Predicate = true> <Delay = 1.20> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 49 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln712_17 = add i32 %add_ln712_16, i32 %s_V_18"   --->   Operation 49 'add' 'add_ln712_17' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 50 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln712_18 = add i32 %s_V_22, i32 1161"   --->   Operation 50 'add' 'add_ln712_18' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 51 [1/1] (0.88ns) (root node of TernaryAdder)   --->   "%add_ln712_19 = add i32 %add_ln712_18, i32 %s_V_21"   --->   Operation 51 'add' 'add_ln712_19' <Predicate = true> <Delay = 0.88> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 52 [1/1] (0.88ns) (root node of TernaryAdder)   --->   "%add_ln712_20 = add i32 %add_ln712_19, i32 %add_ln712_17"   --->   Operation 52 'add' 'add_ln712_20' <Predicate = true> <Delay = 0.88> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+
+State 2 <SV = 1> <Delay = 1.77>
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%specpipeline_ln4 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_1" [firmware/myproject.cpp:4]   --->   Operation 53 'specpipeline' 'specpipeline_ln4' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 54 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln712_1 = add i32 %add_ln712, i32 %s_V_1"   --->   Operation 54 'add' 'add_ln712_1' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 55 [1/1] (0.88ns) (root node of TernaryAdder)   --->   "%add_ln712_4 = add i32 %add_ln712_3, i32 %add_ln712_1"   --->   Operation 55 'add' 'add_ln712_4' <Predicate = true> <Delay = 0.88> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 56 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln712_10 = add i32 %add_ln712_9, i32 %add_ln712_4"   --->   Operation 56 'add' 'add_ln712_10' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 57 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln712_15 = add i32 %add_ln712_14, i32 %add_ln712_12"   --->   Operation 57 'add' 'add_ln712_15' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 58 [1/1] (0.88ns) (root node of TernaryAdder)   --->   "%add_ln712_21 = add i32 %add_ln712_20, i32 %add_ln712_15"   --->   Operation 58 'add' 'add_ln712_21' <Predicate = true> <Delay = 0.88> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 59 [1/1] (0.88ns) (root node of TernaryAdder)   --->   "%add_ln712_22 = add i32 %add_ln712_21, i32 %add_ln712_10"   --->   Operation 59 'add' 'add_ln712_22' <Predicate = true> <Delay = 0.88> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 60 [1/1] (0.00ns)   --->   "%ret_ln712 = ret i32 %add_ln712_22"   --->   Operation 60 'ret' 'ret_ln712' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 7ns, clock uncertainty: 1.89ns.
+
+ <State 1>: 4.86ns
+The critical path consists of the following:
+	wire read operation ('p_read_4', firmware/BDT.h:283->firmware/myproject.cpp:10) on port 'p_read6' (firmware/BDT.h:283->firmware/myproject.cpp:10) [15]  (0 ns)
+	'call' operation ('s.V', firmware/BDT.h:318->firmware/myproject.cpp:10) to 'decision_function.2' [29]  (2.77 ns)
+	'add' operation ('add_ln712_5') [50]  (1.2 ns)
+	'add' operation ('add_ln712_6') [51]  (0 ns)
+	'add' operation ('add_ln712_9') [54]  (0.889 ns)
+
+ <State 2>: 1.78ns
+The critical path consists of the following:
+	'add' operation ('add_ln712_1') [46]  (0 ns)
+	'add' operation ('add_ln712_4') [49]  (0.889 ns)
+	'add' operation ('add_ln712_10') [55]  (0 ns)
+	'add' operation ('add_ln712_22') [67]  (0.889 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

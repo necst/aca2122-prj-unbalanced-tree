@@ -1,0 +1,95 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'myproject'" level="0">
+<item name = "Date">Sun Jun 26 15:57:26 2022
+</item>
+<item name = "Version">2021.2 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)</item>
+<item name = "Project">myproject_prj</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu3eg-sbva484-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">7.00 ns, 5.041 ns, 1.89 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">5, 5, 35.000 ns, 35.000 ns, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_decision_function_fu_1514">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_1634">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_1754">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_1874">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_1994">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_2114">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_2234">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_2354">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_2474">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_2594">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_2714">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_2834">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_2954">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_3074">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_3194">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_3314">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_3434">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_3554">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_3674">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_3794">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_3914">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_4034">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_4154">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_4274">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_4394">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_4514">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_4634">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_4754">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_4874">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_4994">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_5114">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_5234">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_5354">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_5474">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_5594">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_5714">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_5834">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_5954">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_6074">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_6194">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_6314">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_6434">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_6554">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_6674">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_6794">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_6914">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_7034">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_7154">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_7274">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+<column name="grp_decision_function_fu_7394">decision_function, 3, 3, 21.000 ns, 21.000 ns, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

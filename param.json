@@ -1,0 +1,11 @@
+{
+  "heavily_unbalanced": {
+    "max_depth": 3, "eta": 1, "alpha": 1, "gamma": 8, "objective": "binary:logistic"
+  },
+  "perfectly_balanced": {
+    "max_depth": 3, "eta": 1, "alpha": 0, "gamma": 0, "objective": "binary:logistic"
+  },
+  "semi_unbalanced": {
+    "max_depth": 3, "eta": 1, "alpha": 0, "gamma": 7, "objective": "binary:logistic"
+  }
+}

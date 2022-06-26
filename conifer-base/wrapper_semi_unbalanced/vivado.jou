@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sun Jun 26 16:10:17 2022
+# Process ID: 2093264
+# Current directory: /home/nghielme/PycharmProjects/aca-project/conifer-base/wrapper_semi_unbalanced
+# Command line: vivado -mode batch -source design.tcl
+# Log file: /home/nghielme/PycharmProjects/aca-project/conifer-base/wrapper_semi_unbalanced/vivado.log
+# Journal file: /home/nghielme/PycharmProjects/aca-project/conifer-base/wrapper_semi_unbalanced/vivado.jou
+# Running On: yavin, OS: Linux, CPU Frequency: 4600.065 MHz, CPU Physical cores: 8, Host memory: 67274 MB
+#-----------------------------------------------------------
+source design.tcl

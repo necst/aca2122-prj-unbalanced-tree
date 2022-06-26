@@ -1,0 +1,234 @@
+
+
+================================================================
+== Vitis HLS Report for 'myproject'
+================================================================
+* Date:           Sun Jun 26 15:59:13 2022
+
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  7.00 ns|  5.041 ns|     1.89 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        5|        5|  35.000 ns|  35.000 ns|    1|    1|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------------+-------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |                               |                   |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+        |            Instance           |       Module      |   min   |   max   |    min    |    max    | min | max |   Type  |
+        +-------------------------------+-------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |grp_decision_function_fu_638   |decision_function  |        3|        3|  21.000 ns|  21.000 ns|    1|    1|      yes|
+        |grp_decision_function_fu_760   |decision_function  |        3|        3|  21.000 ns|  21.000 ns|    1|    1|      yes|
+        |grp_decision_function_fu_882   |decision_function  |        3|        3|  21.000 ns|  21.000 ns|    1|    1|      yes|
+        |grp_decision_function_fu_1004  |decision_function  |        3|        3|  21.000 ns|  21.000 ns|    1|    1|      yes|
+        |grp_decision_function_fu_1126  |decision_function  |        3|        3|  21.000 ns|  21.000 ns|    1|    1|      yes|
+        |grp_decision_function_fu_1248  |decision_function  |        3|        3|  21.000 ns|  21.000 ns|    1|    1|      yes|
+        |grp_decision_function_fu_1370  |decision_function  |        3|        3|  21.000 ns|  21.000 ns|    1|    1|      yes|
+        |grp_decision_function_fu_1492  |decision_function  |        3|        3|  21.000 ns|  21.000 ns|    1|    1|      yes|
+        |grp_decision_function_fu_1614  |decision_function  |        3|        3|  21.000 ns|  21.000 ns|    1|    1|      yes|
+        |grp_decision_function_fu_1736  |decision_function  |        3|        3|  21.000 ns|  21.000 ns|    1|    1|      yes|
+        |grp_decision_function_fu_1858  |decision_function  |        3|        3|  21.000 ns|  21.000 ns|    1|    1|      yes|
+        |grp_decision_function_fu_1980  |decision_function  |        3|        3|  21.000 ns|  21.000 ns|    1|    1|      yes|
+        |grp_decision_function_fu_2102  |decision_function  |        3|        3|  21.000 ns|  21.000 ns|    1|    1|      yes|
+        |grp_decision_function_fu_2224  |decision_function  |        3|        3|  21.000 ns|  21.000 ns|    1|    1|      yes|
+        |grp_decision_function_fu_2346  |decision_function  |        3|        3|  21.000 ns|  21.000 ns|    1|    1|      yes|
+        |grp_decision_function_fu_2468  |decision_function  |        3|        3|  21.000 ns|  21.000 ns|    1|    1|      yes|
+        |grp_decision_function_fu_2590  |decision_function  |        3|        3|  21.000 ns|  21.000 ns|    1|    1|      yes|
+        |grp_decision_function_fu_2712  |decision_function  |        3|        3|  21.000 ns|  21.000 ns|    1|    1|      yes|
+        |grp_decision_function_fu_2834  |decision_function  |        3|        3|  21.000 ns|  21.000 ns|    1|    1|      yes|
+        |grp_decision_function_fu_2956  |decision_function  |        3|        3|  21.000 ns|  21.000 ns|    1|    1|      yes|
+        |grp_decision_function_fu_3078  |decision_function  |        3|        3|  21.000 ns|  21.000 ns|    1|    1|      yes|
+        |grp_decision_function_fu_3200  |decision_function  |        3|        3|  21.000 ns|  21.000 ns|    1|    1|      yes|
+        |grp_decision_function_fu_3322  |decision_function  |        3|        3|  21.000 ns|  21.000 ns|    1|    1|      yes|
+        |grp_decision_function_fu_3444  |decision_function  |        3|        3|  21.000 ns|  21.000 ns|    1|    1|      yes|
+        |grp_decision_function_fu_3566  |decision_function  |        3|        3|  21.000 ns|  21.000 ns|    1|    1|      yes|
+        |grp_decision_function_fu_3688  |decision_function  |        3|        3|  21.000 ns|  21.000 ns|    1|    1|      yes|
+        +-------------------------------+-------------------+---------+---------+-----------+-----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       0|     963|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |        -|    -|   41444|  201812|    -|
+|Memory           |        -|    -|       -|       -|    -|
+|Multiplexer      |        -|    -|       -|       -|    -|
+|Register         |        -|    -|     736|       -|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |        0|    0|   42180|  202775|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |      432|  360|  141120|   70560|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |        0|    0|      29|     287|    0|
++-----------------+---------+-----+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------------+-------------------+---------+----+------+------+-----+
+    |            Instance           |       Module      | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +-------------------------------+-------------------+---------+----+------+------+-----+
+    |grp_decision_function_fu_638   |decision_function  |        0|   0|  1594|  7762|    0|
+    |grp_decision_function_fu_760   |decision_function  |        0|   0|  1594|  7762|    0|
+    |grp_decision_function_fu_882   |decision_function  |        0|   0|  1594|  7762|    0|
+    |grp_decision_function_fu_1004  |decision_function  |        0|   0|  1594|  7762|    0|
+    |grp_decision_function_fu_1126  |decision_function  |        0|   0|  1594|  7762|    0|
+    |grp_decision_function_fu_1248  |decision_function  |        0|   0|  1594|  7762|    0|
+    |grp_decision_function_fu_1370  |decision_function  |        0|   0|  1594|  7762|    0|
+    |grp_decision_function_fu_1492  |decision_function  |        0|   0|  1594|  7762|    0|
+    |grp_decision_function_fu_1614  |decision_function  |        0|   0|  1594|  7762|    0|
+    |grp_decision_function_fu_1736  |decision_function  |        0|   0|  1594|  7762|    0|
+    |grp_decision_function_fu_1858  |decision_function  |        0|   0|  1594|  7762|    0|
+    |grp_decision_function_fu_1980  |decision_function  |        0|   0|  1594|  7762|    0|
+    |grp_decision_function_fu_2102  |decision_function  |        0|   0|  1594|  7762|    0|
+    |grp_decision_function_fu_2224  |decision_function  |        0|   0|  1594|  7762|    0|
+    |grp_decision_function_fu_2346  |decision_function  |        0|   0|  1594|  7762|    0|
+    |grp_decision_function_fu_2468  |decision_function  |        0|   0|  1594|  7762|    0|
+    |grp_decision_function_fu_2590  |decision_function  |        0|   0|  1594|  7762|    0|
+    |grp_decision_function_fu_2712  |decision_function  |        0|   0|  1594|  7762|    0|
+    |grp_decision_function_fu_2834  |decision_function  |        0|   0|  1594|  7762|    0|
+    |grp_decision_function_fu_2956  |decision_function  |        0|   0|  1594|  7762|    0|
+    |grp_decision_function_fu_3078  |decision_function  |        0|   0|  1594|  7762|    0|
+    |grp_decision_function_fu_3200  |decision_function  |        0|   0|  1594|  7762|    0|
+    |grp_decision_function_fu_3322  |decision_function  |        0|   0|  1594|  7762|    0|
+    |grp_decision_function_fu_3444  |decision_function  |        0|   0|  1594|  7762|    0|
+    |grp_decision_function_fu_3566  |decision_function  |        0|   0|  1594|  7762|    0|
+    |grp_decision_function_fu_3688  |decision_function  |        0|   0|  1594|  7762|    0|
+    +-------------------------------+-------------------+---------+----+------+------+-----+
+    |Total                          |                   |        0|   0| 41444|201812|    0|
+    +-------------------------------+-------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------+----------+----+---+----+------------+------------+
+    |      Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------+----------+----+---+----+------------+------------+
+    |add_ln712_10_fu_3901_p2  |         +|   0|  0|  32|          32|          32|
+    |add_ln712_11_fu_3852_p2  |         +|   0|  0|  32|          32|          32|
+    |add_ln712_12_fu_3858_p2  |         +|   0|  0|  32|          32|          32|
+    |add_ln712_13_fu_3864_p2  |         +|   0|  0|  32|          32|          32|
+    |add_ln712_14_fu_3870_p2  |         +|   0|  0|  32|          32|          32|
+    |add_ln712_15_fu_3907_p2  |         +|   0|  0|  32|          32|          32|
+    |add_ln712_16_fu_3876_p2  |         +|   0|  0|  39|          32|          32|
+    |add_ln712_17_fu_3911_p2  |         +|   0|  0|  32|          32|          32|
+    |add_ln712_18_fu_3915_p2  |         +|   0|  0|  32|          32|          32|
+    |add_ln712_19_fu_3882_p2  |         +|   0|  0|  39|          32|          32|
+    |add_ln712_1_fu_3816_p2   |         +|   0|  0|  32|          32|          32|
+    |add_ln712_20_fu_3919_p2  |         +|   0|  0|  32|          32|          32|
+    |add_ln712_21_fu_3924_p2  |         +|   0|  0|  32|          32|          32|
+    |add_ln712_22_fu_3930_p2  |         +|   0|  0|  32|          32|          32|
+    |add_ln712_23_fu_3936_p2  |         +|   0|  0|  32|          32|          32|
+    |add_ln712_24_fu_3947_p2  |         +|   0|  0|  39|          32|          32|
+    |add_ln712_25_fu_3969_p2  |         +|   0|  0|  39|          32|          32|
+    |add_ln712_26_fu_3975_p2  |         +|   0|  0|  32|          32|          32|
+    |add_ln712_27_fu_3981_p2  |         +|   0|  0|  32|          32|          32|
+    |add_ln712_2_fu_3822_p2   |         +|   0|  0|  32|          32|          32|
+    |add_ln712_3_fu_3828_p2   |         +|   0|  0|  32|          32|          32|
+    |add_ln712_4_fu_3888_p2   |         +|   0|  0|  32|          32|          32|
+    |add_ln712_5_fu_3834_p2   |         +|   0|  0|  39|          32|          32|
+    |add_ln712_6_fu_3892_p2   |         +|   0|  0|  32|          32|          32|
+    |add_ln712_7_fu_3840_p2   |         +|   0|  0|  32|          32|          32|
+    |add_ln712_8_fu_3846_p2   |         +|   0|  0|  32|          32|          32|
+    |add_ln712_9_fu_3896_p2   |         +|   0|  0|  32|          32|          32|
+    |add_ln712_fu_3810_p2     |         +|   0|  0|  32|          32|          32|
+    |ap_return                |         +|   0|  0|  32|          32|          32|
+    +-------------------------+----------+----+---+----+------------+------------+
+    |Total                    |          |   0|  0| 963|         928|         928|
+    +-------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    +-----------------------+----+----+-----+-----------+
+    |          Name         | FF | LUT| Bits| Const Bits|
+    +-----------------------+----+----+-----+-----------+
+    |add_ln712_12_reg_4340  |  32|   0|   32|          0|
+    |add_ln712_14_reg_4345  |  32|   0|   32|          0|
+    |add_ln712_16_reg_4350  |  32|   0|   32|          0|
+    |add_ln712_19_reg_4355  |  32|   0|   32|          0|
+    |add_ln712_1_reg_4320   |  32|   0|   32|          0|
+    |add_ln712_3_reg_4325   |  32|   0|   32|          0|
+    |add_ln712_5_reg_4330   |  32|   0|   32|          0|
+    |add_ln712_8_reg_4335   |  32|   0|   32|          0|
+    |p_read1_int_reg        |  32|   0|   32|          0|
+    |p_read2_int_reg        |  32|   0|   32|          0|
+    |p_read3_int_reg        |  32|   0|   32|          0|
+    |p_read4_int_reg        |  32|   0|   32|          0|
+    |p_read5_int_reg        |  32|   0|   32|          0|
+    |p_read6_int_reg        |  32|   0|   32|          0|
+    |p_read7_int_reg        |  32|   0|   32|          0|
+    |p_read8_int_reg        |  32|   0|   32|          0|
+    |p_read9_int_reg        |  32|   0|   32|          0|
+    |p_read_int_reg         |  32|   0|   32|          0|
+    |s_V_18_reg_4298        |  32|   0|   32|          0|
+    |s_V_21_reg_4303        |  32|   0|   32|          0|
+    |s_V_22_reg_4308        |  32|   0|   32|          0|
+    |s_V_25_reg_4313        |  32|   0|   32|          0|
+    |s_V_6_reg_4293         |  32|   0|   32|          0|
+    +-----------------------+----+----+-----+-----------+
+    |Total                  | 736|   0|  736|          0|
+    +-----------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------+-----+-----+------------+--------------+--------------+
+| RTL Ports | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-----------+-----+-----+------------+--------------+--------------+
+|ap_clk     |   in|    1|  ap_ctrl_hs|     myproject|  return value|
+|ap_rst     |   in|    1|  ap_ctrl_hs|     myproject|  return value|
+|ap_return  |  out|   32|  ap_ctrl_hs|     myproject|  return value|
+|p_read     |   in|   32|     ap_none|        p_read|        scalar|
+|p_read1    |   in|   32|     ap_none|       p_read1|        scalar|
+|p_read2    |   in|   32|     ap_none|       p_read2|        scalar|
+|p_read3    |   in|   32|     ap_none|       p_read3|        scalar|
+|p_read4    |   in|   32|     ap_none|       p_read4|        scalar|
+|p_read5    |   in|   32|     ap_none|       p_read5|        scalar|
+|p_read6    |   in|   32|     ap_none|       p_read6|        scalar|
+|p_read7    |   in|   32|     ap_none|       p_read7|        scalar|
+|p_read8    |   in|   32|     ap_none|       p_read8|        scalar|
+|p_read9    |   in|   32|     ap_none|       p_read9|        scalar|
++-----------+-----+-----+------------+--------------+--------------+
+

@@ -1,0 +1,497 @@
+
+
+================================================================
+== Synthesis Summary Report of 'myproject_axi'
+================================================================
++ General Information: 
+    * Date:           Sun Jun 26 16:01:57 2022
+    * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)
+    * Project:        myproject_prj
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu3eg-sbva484-1-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+----+-------------+---------------+-----+
+    |                  Modules                  | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |    |             |               |     |
+    |                  & Loops                  | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|      FF     |      LUT      | URAM|
+    +-------------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+----+-------------+---------------+-----+
+    |+ myproject_axi                            |     -|  0.07|       27|  189.000|         -|       28|     -|        no|     -|   -|  83954 (59%)|  398056 (564%)|    -|
+    | + myproject_axi_Pipeline_VITIS_LOOP_21_1  |     -|  0.23|       14|   98.000|         -|       14|     -|        no|     -|   -|    579 (~0%)|      2601 (3%)|    -|
+    |  o VITIS_LOOP_21_1                        |     -|  5.11|       12|   84.000|         4|        1|    10|       yes|     -|   -|            -|              -|    -|
+    | + myproject                               |    II|  0.07|        5|   35.000|         -|        1|     -|       yes|     -|   -|  83220 (58%)|  394217 (558%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    |  + decision_function                      |     -|  0.07|        3|   21.000|         -|        1|     -|       yes|     -|   -|    1642 (1%)|     7852 (11%)|    -|
+    +-------------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+----+-------------+---------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AXIS
++-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| Interface | Register Mode | TDATA | TDEST | TID | TKEEP | TLAST | TREADY | TSTRB | TUSER | TVALID |
++-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| in_r      | both          | 32    | 1     | 1   | 4     | 1     | 1      | 4     | 1     | 1      |
+| out_r     | both          | 32    | 1     | 1   | 4     | 1     | 1      | 4     | 1     | 1      |
++-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+----------+
+| Interface | Type         | Ports    |
++-----------+--------------+----------+
+| ap_clk    | clock        | ap_clk   |
+| ap_rst_n  | reset        | ap_rst_n |
+| ap_ctrl   | ap_ctrl_none |          |
++-----------+--------------+----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+---------------------------------------+
+| Argument | Direction | Datatype                              |
++----------+-----------+---------------------------------------+
+| in       | in        | stream<hls::axis<float, 1, 1, 1>, 0>& |
+| out      | out       | stream<hls::axis<float, 1, 1, 1>, 0>& |
++----------+-----------+---------------------------------------+
+
+* SW-to-HW Mapping
++----------+--------------+-----------+
+| Argument | HW Interface | HW Type   |
++----------+--------------+-----------+
+| in       | in_r         | interface |
+| out      | out_r        | interface |
++----------+--------------+-----------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+  No burst in design
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------------+-----+--------+--------------+-----+--------+---------+
+| Name                                      | DSP | Pragma | Variable     | Op  | Impl   | Latency |
++-------------------------------------------+-----+--------+--------------+-----+--------+---------+
+| + myproject_axi                           | 0   |        |              |     |        |         |
+|   sub_i_i_fu_271_p2                       | -   |        | sub_i_i      | sub | fabric | 0       |
+|   sub_ln997_fu_304_p2                     | -   |        | sub_ln997    | sub | fabric | 0       |
+|   lsb_index_fu_310_p2                     | -   |        | lsb_index    | add | fabric | 0       |
+|   sub_ln1000_fu_336_p2                    | -   |        | sub_ln1000   | sub | fabric | 0       |
+|   sub_ln1012_fu_437_p2                    | -   |        | sub_ln1012   | sub | fabric | 0       |
+|   add_ln1011_fu_452_p2                    | -   |        | add_ln1011   | add | fabric | 0       |
+|   m_2_fu_477_p2                           | -   |        | m_2          | add | fabric | 0       |
+|   sub_ln1017_fu_513_p2                    | -   |        | sub_ln1017   | add | tadder | 0       |
+|   add_ln1017_fu_518_p2                    | -   |        | add_ln1017   | add | tadder | 0       |
+|  + myproject_axi_Pipeline_VITIS_LOOP_21_1 | 0   |        |              |     |        |         |
+|    add_ln21_fu_284_p2                     | -   |        | add_ln21     | add | fabric | 0       |
+|    man_V_1_fu_394_p2                      | -   |        | man_V_1      | sub | fabric | 0       |
+|    F2_fu_353_p2                           | -   |        | F2           | sub | fabric | 0       |
+|    add_ln590_fu_365_p2                    | -   |        | add_ln590    | add | fabric | 0       |
+|    sub_ln590_fu_371_p2                    | -   |        | sub_ln590    | sub | fabric | 0       |
+|  + myproject                              | 0   |        |              |     |        |         |
+|    add_ln712_fu_7514_p2                   | -   |        | add_ln712    | add | tadder | 0       |
+|    add_ln712_1_fu_7520_p2                 | -   |        | add_ln712_1  | add | tadder | 0       |
+|    add_ln712_2_fu_7526_p2                 | -   |        | add_ln712_2  | add | tadder | 0       |
+|    add_ln712_3_fu_7532_p2                 | -   |        | add_ln712_3  | add | tadder | 0       |
+|    add_ln712_4_fu_7664_p2                 | -   |        | add_ln712_4  | add | tadder | 0       |
+|    add_ln712_5_fu_7538_p2                 | -   |        | add_ln712_5  | add | fabric | 0       |
+|    add_ln712_6_fu_7668_p2                 | -   |        | add_ln712_6  | add | tadder | 0       |
+|    add_ln712_7_fu_7544_p2                 | -   |        | add_ln712_7  | add | tadder | 0       |
+|    add_ln712_8_fu_7550_p2                 | -   |        | add_ln712_8  | add | tadder | 0       |
+|    add_ln712_9_fu_7672_p2                 | -   |        | add_ln712_9  | add | tadder | 0       |
+|    add_ln712_10_fu_7677_p2                | -   |        | add_ln712_10 | add | tadder | 0       |
+|    add_ln712_11_fu_7556_p2                | -   |        | add_ln712_11 | add | tadder | 0       |
+|    add_ln712_12_fu_7562_p2                | -   |        | add_ln712_12 | add | tadder | 0       |
+|    add_ln712_13_fu_7568_p2                | -   |        | add_ln712_13 | add | tadder | 0       |
+|    add_ln712_14_fu_7574_p2                | -   |        | add_ln712_14 | add | tadder | 0       |
+|    add_ln712_15_fu_7683_p2                | -   |        | add_ln712_15 | add | tadder | 0       |
+|    add_ln712_16_fu_7580_p2                | -   |        | add_ln712_16 | add | fabric | 0       |
+|    add_ln712_17_fu_7687_p2                | -   |        | add_ln712_17 | add | tadder | 0       |
+|    add_ln712_18_fu_7691_p2                | -   |        | add_ln712_18 | add | tadder | 0       |
+|    add_ln712_19_fu_7586_p2                | -   |        | add_ln712_19 | add | fabric | 0       |
+|    add_ln712_20_fu_7695_p2                | -   |        | add_ln712_20 | add | tadder | 0       |
+|    add_ln712_21_fu_7700_p2                | -   |        | add_ln712_21 | add | tadder | 0       |
+|    add_ln712_22_fu_7706_p2                | -   |        | add_ln712_22 | add | tadder | 0       |
+|    add_ln712_23_fu_7712_p2                | -   |        | add_ln712_23 | add | tadder | 0       |
+|    add_ln712_24_fu_7592_p2                | -   |        | add_ln712_24 | add | fabric | 0       |
+|    add_ln712_25_fu_7718_p2                | -   |        | add_ln712_25 | add | tadder | 0       |
+|    add_ln712_26_fu_7598_p2                | -   |        | add_ln712_26 | add | tadder | 0       |
+|    add_ln712_27_fu_7604_p2                | -   |        | add_ln712_27 | add | tadder | 0       |
+|    add_ln712_28_fu_7722_p2                | -   |        | add_ln712_28 | add | tadder | 0       |
+|    add_ln712_29_fu_7610_p2                | -   |        | add_ln712_29 | add | fabric | 0       |
+|    add_ln712_30_fu_7727_p2                | -   |        | add_ln712_30 | add | tadder | 0       |
+|    add_ln712_31_fu_7616_p2                | -   |        | add_ln712_31 | add | tadder | 0       |
+|    add_ln712_32_fu_7622_p2                | -   |        | add_ln712_32 | add | tadder | 0       |
+|    add_ln712_33_fu_7731_p2                | -   |        | add_ln712_33 | add | tadder | 0       |
+|    add_ln712_34_fu_7736_p2                | -   |        | add_ln712_34 | add | tadder | 0       |
+|    add_ln712_35_fu_7628_p2                | -   |        | add_ln712_35 | add | tadder | 0       |
+|    add_ln712_36_fu_7634_p2                | -   |        | add_ln712_36 | add | tadder | 0       |
+|    add_ln712_37_fu_7640_p2                | -   |        | add_ln712_37 | add | tadder | 0       |
+|    add_ln712_38_fu_7646_p2                | -   |        | add_ln712_38 | add | tadder | 0       |
+|    add_ln712_39_fu_7742_p2                | -   |        | add_ln712_39 | add | tadder | 0       |
+|    add_ln712_40_fu_7652_p2                | -   |        | add_ln712_40 | add | fabric | 0       |
+|    add_ln712_41_fu_7746_p2                | -   |        | add_ln712_41 | add | tadder | 0       |
+|    add_ln712_42_fu_7750_p2                | -   |        | add_ln712_42 | add | tadder | 0       |
+|    add_ln712_43_fu_7658_p2                | -   |        | add_ln712_43 | add | fabric | 0       |
+|    add_ln712_44_fu_7754_p2                | -   |        | add_ln712_44 | add | tadder | 0       |
+|    add_ln712_45_fu_7759_p2                | -   |        | add_ln712_45 | add | tadder | 0       |
+|    add_ln712_46_fu_7765_p2                | -   |        | add_ln712_46 | add | tadder | 0       |
+|    add_ln712_47_fu_7771_p2                | -   |        | add_ln712_47 | add | tadder | 0       |
+|    ap_return                              | -   |        | add_ln712_48 | add | tadder | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
+|   + decision_function                     | 0   |        |              |     |        |         |
+|     iLeaf_3_fu_1592_p2                    | -   |        | iLeaf_3      | add | fabric | 0       |
+|     iLeaf_5_fu_2400_p2                    | -   |        | iLeaf_5      | add | fabric | 0       |
+|     iLeaf_7_fu_2855_p2                    | -   |        | iLeaf_7      | add | fabric | 0       |
+|     iLeaf_9_fu_3558_p2                    | -   |        | iLeaf_9      | add | fabric | 0       |
++-------------------------------------------+-----+--------+--------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== User Pragma Report
+================================================================
+* Ignored Pragmas
++--------+---------+---------------------------------------+-----------------------------------------------------------+
+| Type   | Options | Location                              | Messages                                                  |
++--------+---------+---------------------------------------+-----------------------------------------------------------+
+| unroll |         | firmware/myproject.cpp:9 in myproject | '#pragma HLS unroll' can only be applied inside loop body |
++--------+---------+---------------------------------------+-----------------------------------------------------------+
+
+* Valid Pragma Syntax
++-----------------+--------------------------+---------------------------------------------------------+
+| Type            | Options                  | Location                                                |
++-----------------+--------------------------+---------------------------------------------------------+
+| pipeline        | II = 1                   | firmware/BDT.h:39 in decision_function                  |
+| array_partition | variable=feature         | firmware/BDT.h:40 in decision_function, feature         |
+| array_partition | variable=threshold       | firmware/BDT.h:41 in decision_function, threshold       |
+| array_partition | variable=value           | firmware/BDT.h:42 in decision_function, value           |
+| array_partition | variable=children_left   | firmware/BDT.h:43 in decision_function, children_left   |
+| array_partition | variable=children_right  | firmware/BDT.h:44 in decision_function, children_right  |
+| array_partition | variable=parent          | firmware/BDT.h:45 in decision_function, parent          |
+| array_partition | variable=comparison      | firmware/BDT.h:60 in decision_function, comparison      |
+| array_partition | variable=activation      | firmware/BDT.h:61 in decision_function, activation      |
+| array_partition | variable=activation_leaf | firmware/BDT.h:62 in decision_function, activation_leaf |
+| array_partition | variable=value_leaf      | firmware/BDT.h:63 in decision_function, value_leaf      |
+| unroll          |                          | firmware/BDT.h:67 in decision_function                  |
+| unroll          |                          | firmware/BDT.h:80 in decision_function                  |
+| array_partition | variable=trees dim=0     | firmware/BDT.h:120 in decision_function, trees          |
+| array_partition | variable=x               | firmware/myproject.cpp:5 in myproject, x                |
+| array_partition | variable=score           | firmware/myproject.cpp:6 in myproject, score            |
+| array_partition | variable=tree_scores     | firmware/myproject.cpp:7 in myproject, tree_scores      |
+| pipeline        |                          | firmware/myproject.cpp:8 in myproject                   |
+| interface       | axis port=in             | firmware/myproject_axi.cpp:8 in myproject_axi, in       |
+| interface       | axis port=out            | firmware/myproject_axi.cpp:9 in myproject_axi, out      |
+| interface       | ap_ctrl_none port=return | firmware/myproject_axi.cpp:10 in myproject_axi, return  |
+| pipeline        |                          | firmware/myproject_axi.cpp:22 in myproject_axi          |
+| pipeline        |                          | firmware/myproject_axi.cpp:31 in myproject_axi          |
+| unroll          |                          | firmware/nnet_utils/nnet_types.h:33 in operator=        |
++-----------------+--------------------------+---------------------------------------------------------+
+
+

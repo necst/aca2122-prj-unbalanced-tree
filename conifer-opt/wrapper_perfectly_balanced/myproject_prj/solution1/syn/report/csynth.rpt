@@ -1,0 +1,246 @@
+
+
+================================================================
+== Synthesis Summary Report of 'myproject_axi'
+================================================================
++ General Information: 
+    * Date:           Sun Jun 26 16:47:20 2022
+    * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)
+    * Project:        myproject_prj
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu3eg-sbva484-1-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+-------------+-----+
+    |                  Modules                  | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |    |           |             |     |
+    |                  & Loops                  | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |     LUT     | URAM|
+    +-------------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+-------------+-----+
+    |+ myproject_axi                            |     -|  0.15|       22|  154.000|         -|       23|     -|        no|     -|   -|  1561 (1%)|  15904 (22%)|    -|
+    | + myproject_axi_Pipeline_VITIS_LOOP_21_1  |     -|  0.23|       14|   98.000|         -|       14|     -|        no|     -|   -|  579 (~0%)|    2601 (3%)|    -|
+    |  o VITIS_LOOP_21_1                        |     -|  5.11|       12|   84.000|         4|        1|    10|       yes|     -|   -|          -|            -|    -|
+    | + myproject                               |    II|  0.15|        1|    7.000|         -|        1|     -|       yes|     -|   -|  832 (~0%)|  12076 (17%)|    -|
+    |  + decision_function_49                   |     -|  1.37|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    236 (~0%)|    -|
+    |  + decision_function_48                   |     -|  1.84|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    233 (~0%)|    -|
+    |  + decision_function_37                   |     -|  1.31|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    267 (~0%)|    -|
+    |  + decision_function_26                   |     -|  1.57|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    236 (~0%)|    -|
+    |  + decision_function_15                   |     -|  1.84|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    233 (~0%)|    -|
+    |  + decision_function_4                    |     -|  1.84|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    233 (~0%)|    -|
+    |  + decision_function_3                    |     -|  1.84|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    233 (~0%)|    -|
+    |  + decision_function_2                    |     -|  1.04|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    234 (~0%)|    -|
+    |  + decision_function_1                    |     -|  1.84|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    233 (~0%)|    -|
+    |  + decision_function                      |     -|  1.84|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    233 (~0%)|    -|
+    |  + decision_function_47                   |     -|  1.90|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    202 (~0%)|    -|
+    |  + decision_function_46                   |     -|  1.84|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    233 (~0%)|    -|
+    |  + decision_function_45                   |     -|  1.04|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    234 (~0%)|    -|
+    |  + decision_function_44                   |     -|  1.31|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    263 (~0%)|    -|
+    |  + decision_function_43                   |     -|  1.84|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    233 (~0%)|    -|
+    |  + decision_function_42                   |     -|  1.84|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    233 (~0%)|    -|
+    |  + decision_function_41                   |     -|  1.84|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    233 (~0%)|    -|
+    |  + decision_function_40                   |     -|  1.84|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    233 (~0%)|    -|
+    |  + decision_function_39                   |     -|  2.34|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    133 (~0%)|    -|
+    |  + decision_function_38                   |     -|  2.73|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|     99 (~0%)|    -|
+    |  + decision_function_36                   |     -|  1.84|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    233 (~0%)|    -|
+    |  + decision_function_35                   |     -|  2.73|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|     99 (~0%)|    -|
+    |  + decision_function_34                   |     -|  1.57|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    204 (~0%)|    -|
+    |  + decision_function_33                   |     -|  2.34|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    133 (~0%)|    -|
+    |  + decision_function_32                   |     -|  1.90|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    202 (~0%)|    -|
+    |  + decision_function_31                   |     -|  1.84|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    233 (~0%)|    -|
+    |  + decision_function_30                   |     -|  1.57|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    204 (~0%)|    -|
+    |  + decision_function_29                   |     -|  2.34|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    133 (~0%)|    -|
+    |  + decision_function_28                   |     -|  1.84|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    233 (~0%)|    -|
+    |  + decision_function_27                   |     -|  1.57|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    204 (~0%)|    -|
+    |  + decision_function_25                   |     -|  1.84|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    233 (~0%)|    -|
+    |  + decision_function_24                   |     -|  1.62|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    171 (~0%)|    -|
+    |  + decision_function_23                   |     -|  1.84|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    233 (~0%)|    -|
+    |  + decision_function_22                   |     -|  1.84|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    233 (~0%)|    -|
+    |  + decision_function_21                   |     -|  1.84|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    233 (~0%)|    -|
+    |  + decision_function_20                   |     -|  1.84|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    233 (~0%)|    -|
+    |  + decision_function_19                   |     -|  2.34|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    133 (~0%)|    -|
+    |  + decision_function_18                   |     -|  1.84|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    233 (~0%)|    -|
+    |  + decision_function_17                   |     -|  1.84|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    233 (~0%)|    -|
+    |  + decision_function_16                   |     -|  2.29|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    167 (~0%)|    -|
+    |  + decision_function_14                   |     -|  1.95|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    201 (~0%)|    -|
+    |  + decision_function_13                   |     -|  1.84|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    233 (~0%)|    -|
+    |  + decision_function_12                   |     -|  1.84|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    233 (~0%)|    -|
+    |  + decision_function_11                   |     -|  2.34|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    133 (~0%)|    -|
+    |  + decision_function_10                   |     -|  1.57|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    236 (~0%)|    -|
+    |  + decision_function_9                    |     -|  1.84|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    233 (~0%)|    -|
+    |  + decision_function_8                    |     -|  1.84|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    233 (~0%)|    -|
+    |  + decision_function_7                    |     -|  1.57|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    204 (~0%)|    -|
+    |  + decision_function_6                    |     -|  1.95|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    171 (~0%)|    -|
+    |  + decision_function_5                    |     -|  2.34|        0|    0.000|         -|        1|     -|       yes|     -|   -|          -|    135 (~0%)|    -|
+    +-------------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AXIS
++-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| Interface | Register Mode | TDATA | TDEST | TID | TKEEP | TLAST | TREADY | TSTRB | TUSER | TVALID |
++-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| in_r      | both          | 32    | 1     | 1   | 4     | 1     | 1      | 4     | 1     | 1      |
+| out_r     | both          | 32    | 1     | 1   | 4     | 1     | 1      | 4     | 1     | 1      |
++-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+----------+
+| Interface | Type         | Ports    |
++-----------+--------------+----------+
+| ap_clk    | clock        | ap_clk   |
+| ap_rst_n  | reset        | ap_rst_n |
+| ap_ctrl   | ap_ctrl_none |          |
++-----------+--------------+----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+---------------------------------------+
+| Argument | Direction | Datatype                              |
++----------+-----------+---------------------------------------+
+| in       | in        | stream<hls::axis<float, 1, 1, 1>, 0>& |
+| out      | out       | stream<hls::axis<float, 1, 1, 1>, 0>& |
++----------+-----------+---------------------------------------+
+
+* SW-to-HW Mapping
++----------+--------------+-----------+
+| Argument | HW Interface | HW Type   |
++----------+--------------+-----------+
+| in       | in_r         | interface |
+| out      | out_r        | interface |
++----------+--------------+-----------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+  No burst in design
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------------+-----+--------+--------------+-----+--------+---------+
+| Name                                      | DSP | Pragma | Variable     | Op  | Impl   | Latency |
++-------------------------------------------+-----+--------+--------------+-----+--------+---------+
+| + myproject_axi                           | 0   |        |              |     |        |         |
+|   sub_i_i_fu_271_p2                       | -   |        | sub_i_i      | sub | fabric | 0       |
+|   sub_ln997_fu_304_p2                     | -   |        | sub_ln997    | sub | fabric | 0       |
+|   lsb_index_fu_310_p2                     | -   |        | lsb_index    | add | fabric | 0       |
+|   sub_ln1000_fu_336_p2                    | -   |        | sub_ln1000   | sub | fabric | 0       |
+|   sub_ln1012_fu_437_p2                    | -   |        | sub_ln1012   | sub | fabric | 0       |
+|   add_ln1011_fu_452_p2                    | -   |        | add_ln1011   | add | fabric | 0       |
+|   m_2_fu_477_p2                           | -   |        | m_2          | add | fabric | 0       |
+|   sub_ln1017_fu_513_p2                    | -   |        | sub_ln1017   | add | tadder | 0       |
+|   add_ln1017_fu_518_p2                    | -   |        | add_ln1017   | add | tadder | 0       |
+|  + myproject_axi_Pipeline_VITIS_LOOP_21_1 | 0   |        |              |     |        |         |
+|    add_ln21_fu_284_p2                     | -   |        | add_ln21     | add | fabric | 0       |
+|    man_V_1_fu_394_p2                      | -   |        | man_V_1      | sub | fabric | 0       |
+|    F2_fu_353_p2                           | -   |        | F2           | sub | fabric | 0       |
+|    add_ln590_fu_365_p2                    | -   |        | add_ln590    | add | fabric | 0       |
+|    sub_ln590_fu_371_p2                    | -   |        | sub_ln590    | sub | fabric | 0       |
+|  + myproject                              | 0   |        |              |     |        |         |
+|    add_ln712_fu_846_p2                    | -   |        | add_ln712    | add | tadder | 0       |
+|    add_ln712_1_fu_852_p2                  | -   |        | add_ln712_1  | add | tadder | 0       |
+|    add_ln712_2_fu_858_p2                  | -   |        | add_ln712_2  | add | tadder | 0       |
+|    add_ln712_3_fu_864_p2                  | -   |        | add_ln712_3  | add | tadder | 0       |
+|    add_ln712_4_fu_990_p2                  | -   |        | add_ln712_4  | add | tadder | 0       |
+|    add_ln712_5_fu_994_p2                  | -   |        | add_ln712_5  | add | fabric | 0       |
+|    add_ln712_6_fu_998_p2                  | -   |        | add_ln712_6  | add | tadder | 0       |
+|    add_ln712_7_fu_870_p2                  | -   |        | add_ln712_7  | add | tadder | 0       |
+|    add_ln712_8_fu_876_p2                  | -   |        | add_ln712_8  | add | tadder | 0       |
+|    add_ln712_9_fu_1003_p2                 | -   |        | add_ln712_9  | add | tadder | 0       |
+|    add_ln712_10_fu_1008_p2                | -   |        | add_ln712_10 | add | tadder | 0       |
+|    add_ln712_11_fu_882_p2                 | -   |        | add_ln712_11 | add | tadder | 0       |
+|    add_ln712_12_fu_888_p2                 | -   |        | add_ln712_12 | add | tadder | 0       |
+|    add_ln712_13_fu_894_p2                 | -   |        | add_ln712_13 | add | tadder | 0       |
+|    add_ln712_14_fu_900_p2                 | -   |        | add_ln712_14 | add | tadder | 0       |
+|    add_ln712_15_fu_1014_p2                | -   |        | add_ln712_15 | add | tadder | 0       |
+|    add_ln712_16_fu_906_p2                 | -   |        | add_ln712_16 | add | fabric | 0       |
+|    add_ln712_17_fu_1018_p2                | -   |        | add_ln712_17 | add | tadder | 0       |
+|    add_ln712_18_fu_1022_p2                | -   |        | add_ln712_18 | add | tadder | 0       |
+|    add_ln712_19_fu_912_p2                 | -   |        | add_ln712_19 | add | fabric | 0       |
+|    add_ln712_20_fu_1026_p2                | -   |        | add_ln712_20 | add | tadder | 0       |
+|    add_ln712_21_fu_1031_p2                | -   |        | add_ln712_21 | add | tadder | 0       |
+|    add_ln712_22_fu_1037_p2                | -   |        | add_ln712_22 | add | tadder | 0       |
+|    add_ln712_23_fu_1043_p2                | -   |        | add_ln712_23 | add | tadder | 0       |
+|    add_ln712_24_fu_918_p2                 | -   |        | add_ln712_24 | add | fabric | 0       |
+|    add_ln712_25_fu_1049_p2                | -   |        | add_ln712_25 | add | tadder | 0       |
+|    add_ln712_26_fu_924_p2                 | -   |        | add_ln712_26 | add | tadder | 0       |
+|    add_ln712_27_fu_930_p2                 | -   |        | add_ln712_27 | add | tadder | 0       |
+|    add_ln712_28_fu_1053_p2                | -   |        | add_ln712_28 | add | tadder | 0       |
+|    add_ln712_29_fu_936_p2                 | -   |        | add_ln712_29 | add | fabric | 0       |
+|    add_ln712_30_fu_1058_p2                | -   |        | add_ln712_30 | add | tadder | 0       |
+|    add_ln712_31_fu_942_p2                 | -   |        | add_ln712_31 | add | tadder | 0       |
+|    add_ln712_32_fu_948_p2                 | -   |        | add_ln712_32 | add | tadder | 0       |
+|    add_ln712_33_fu_1062_p2                | -   |        | add_ln712_33 | add | tadder | 0       |
+|    add_ln712_34_fu_1067_p2                | -   |        | add_ln712_34 | add | tadder | 0       |
+|    add_ln712_35_fu_954_p2                 | -   |        | add_ln712_35 | add | tadder | 0       |
+|    add_ln712_36_fu_960_p2                 | -   |        | add_ln712_36 | add | tadder | 0       |
+|    add_ln712_37_fu_966_p2                 | -   |        | add_ln712_37 | add | tadder | 0       |
+|    add_ln712_38_fu_972_p2                 | -   |        | add_ln712_38 | add | tadder | 0       |
+|    add_ln712_39_fu_1073_p2                | -   |        | add_ln712_39 | add | tadder | 0       |
+|    add_ln712_40_fu_978_p2                 | -   |        | add_ln712_40 | add | fabric | 0       |
+|    add_ln712_41_fu_1077_p2                | -   |        | add_ln712_41 | add | tadder | 0       |
+|    add_ln712_42_fu_1081_p2                | -   |        | add_ln712_42 | add | tadder | 0       |
+|    add_ln712_43_fu_984_p2                 | -   |        | add_ln712_43 | add | fabric | 0       |
+|    add_ln712_44_fu_1085_p2                | -   |        | add_ln712_44 | add | tadder | 0       |
+|    add_ln712_45_fu_1090_p2                | -   |        | add_ln712_45 | add | tadder | 0       |
+|    add_ln712_46_fu_1096_p2                | -   |        | add_ln712_46 | add | tadder | 0       |
+|    add_ln712_47_fu_1102_p2                | -   |        | add_ln712_47 | add | tadder | 0       |
+|    ap_return                              | -   |        | add_ln712_48 | add | tadder | 0       |
++-------------------------------------------+-----+--------+--------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== User Pragma Report
+================================================================
+* Ignored Pragmas
++--------+---------+---------------------------------------+-----------------------------------------------------------+
+| Type   | Options | Location                              | Messages                                                  |
++--------+---------+---------------------------------------+-----------------------------------------------------------+
+| unroll |         | firmware/myproject.cpp:9 in myproject | '#pragma HLS unroll' can only be applied inside loop body |
++--------+---------+---------------------------------------+-----------------------------------------------------------+
+
+* Valid Pragma Syntax
++-----------------+--------------------------+----------------------------------------------------------+
+| Type            | Options                  | Location                                                 |
++-----------------+--------------------------+----------------------------------------------------------+
+| pipeline        | II = 1                   | firmware/BDT.h:145 in decision_function                  |
+| array_partition | variable=feature         | firmware/BDT.h:146 in decision_function, feature         |
+| array_partition | variable=threshold       | firmware/BDT.h:147 in decision_function, threshold       |
+| array_partition | variable=value           | firmware/BDT.h:148 in decision_function, value           |
+| array_partition | variable=children_left   | firmware/BDT.h:149 in decision_function, children_left   |
+| array_partition | variable=children_right  | firmware/BDT.h:150 in decision_function, children_right  |
+| array_partition | variable=parent          | firmware/BDT.h:151 in decision_function, parent          |
+| array_partition | variable=comparison      | firmware/BDT.h:166 in decision_function, comparison      |
+| array_partition | variable=activation      | firmware/BDT.h:167 in decision_function, activation      |
+| array_partition | variable=activation_leaf | firmware/BDT.h:168 in decision_function, activation_leaf |
+| array_partition | variable=value_leaf      | firmware/BDT.h:169 in decision_function, value_leaf      |
+| unroll          |                          | firmware/BDT.h:173 in decision_function                  |
+| unroll          |                          | firmware/BDT.h:186 in decision_function                  |
+| array_partition | variable=x               | firmware/myproject.cpp:5 in myproject, x                 |
+| array_partition | variable=score           | firmware/myproject.cpp:6 in myproject, score             |
+| array_partition | variable=tree_scores     | firmware/myproject.cpp:7 in myproject, tree_scores       |
+| pipeline        |                          | firmware/myproject.cpp:8 in myproject                    |
+| interface       | axis port=in             | firmware/myproject_axi.cpp:8 in myproject_axi, in        |
+| interface       | axis port=out            | firmware/myproject_axi.cpp:9 in myproject_axi, out       |
+| interface       | ap_ctrl_none port=return | firmware/myproject_axi.cpp:10 in myproject_axi, return   |
+| pipeline        |                          | firmware/myproject_axi.cpp:22 in myproject_axi           |
+| pipeline        |                          | firmware/myproject_axi.cpp:31 in myproject_axi           |
+| unroll          |                          | firmware/nnet_utils/nnet_types.h:33 in operator=         |
++-----------------+--------------------------+----------------------------------------------------------+
+
+

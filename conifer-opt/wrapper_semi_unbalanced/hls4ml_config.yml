@@ -1,0 +1,19 @@
+AcceleratorConfig:
+  Driver: python
+  Interface: axi_stream
+  Precision:
+    Input: float
+    Output: float
+Backend: VivadoAccelerator
+ClockPeriod: 7
+HLSConfig:
+  Model:
+    Precision: ap_fixed<32,16>
+    ReuseFactor: 1
+IOType: io_parallel
+InputData: wrapper_semi_unbalanced/X_test.npy
+OutputDir: wrapper_semi_unbalanced
+OutputPredictions: wrapper_semi_unbalanced/y_hls.npy
+Part: xczu3eg-sbva484-1-e
+ProjectName: myproject
+Stamp: 0A77f5Fc

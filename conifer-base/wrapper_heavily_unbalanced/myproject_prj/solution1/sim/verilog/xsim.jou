@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# xsim v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sun Jun 26 15:58:14 2022
+# Process ID: 2080404
+# Current directory: /home/nghielme/PycharmProjects/aca-project/conifer-base/wrapper_heavily_unbalanced/myproject_prj/solution1/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/myproject_axi/xsim_script.tcl}
+# Log file: /home/nghielme/PycharmProjects/aca-project/conifer-base/wrapper_heavily_unbalanced/myproject_prj/solution1/sim/verilog/xsim.log
+# Journal file: /home/nghielme/PycharmProjects/aca-project/conifer-base/wrapper_heavily_unbalanced/myproject_prj/solution1/sim/verilog/xsim.jou
+# Running On: yavin, OS: Linux, CPU Frequency: 4600.014 MHz, CPU Physical cores: 8, Host memory: 67274 MB
+#-----------------------------------------------------------
+source xsim.dir/myproject_axi/xsim_script.tcl
+open_wave_config myproject_axi_dataflow_ana.wcfg
+source myproject_axi.tcl

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sun Jun 26 16:47:40 2022
+# Process ID: 2172588
+# Current directory: /home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_perfectly_balanced/myproject_prj/solution1/.autopilot/db/ip_tmp
+# Command line: vivado  -notrace -log vivado.log -mode batch -source run_vivado_gen_ip.tcl
+# Log file: /home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_perfectly_balanced/myproject_prj/solution1/.autopilot/db/ip_tmp/vivado.log
+# Journal file: /home/nghielme/PycharmProjects/aca-project/conifer-opt/wrapper_perfectly_balanced/myproject_prj/solution1/.autopilot/db/ip_tmp/vivado.jou
+# Running On: yavin, OS: Linux, CPU Frequency: 4599.997 MHz, CPU Physical cores: 8, Host memory: 67274 MB
+#-----------------------------------------------------------
+source run_vivado_gen_ip.tcl -notrace

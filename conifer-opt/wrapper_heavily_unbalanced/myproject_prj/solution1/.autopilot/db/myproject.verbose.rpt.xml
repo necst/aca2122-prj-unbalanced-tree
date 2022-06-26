@@ -1,0 +1,184 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'myproject'" level="0">
+<item name = "Date">Sun Jun 26 16:40:41 2022
+</item>
+<item name = "Version">2021.2 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)</item>
+<item name = "Project">myproject_prj</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu3eg-sbva484-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">7.00 ns, 4.970 ns, 1.89 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1, 1, 7.000 ns, 7.000 ns, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="s_V_decision_function_21_fu_136">decision_function_21, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="s_V_1_decision_function_20_fu_144">decision_function_20, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="s_V_2_decision_function_9_fu_158">decision_function_9, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="s_V_3_decision_function_6_fu_168">decision_function_6, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="s_V_4_decision_function_5_fu_176">decision_function_5, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="s_V_5_decision_function_4_fu_186">decision_function_4, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="s_V_6_decision_function_3_fu_194">decision_function_3, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="s_V_7_decision_function_2_fu_204">decision_function_2, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="s_V_8_decision_function_1_fu_216">decision_function_1, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="s_V_9_decision_function_fu_224">decision_function, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="s_V_10_decision_function_19_fu_232">decision_function_19, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="s_V_11_decision_function_18_fu_240">decision_function_18, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="s_V_12_decision_function_17_fu_250">decision_function_17, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="s_V_13_decision_function_16_fu_260">decision_function_16, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="s_V_14_decision_function_15_fu_270">decision_function_15, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="s_V_15_decision_function_14_fu_280">decision_function_14, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="s_V_16_decision_function_13_fu_288">decision_function_13, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="s_V_17_decision_function_12_fu_298">decision_function_12, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="s_V_18_decision_function_11_fu_306">decision_function_11, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="s_V_19_decision_function_10_fu_314">decision_function_10, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="s_V_20_decision_function_8_fu_322">decision_function_8, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="s_V_21_decision_function_7_fu_328">decision_function_7, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 718, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 0, 2160, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, -, -</column>
+<column name="Register">-, -, 160, -, -</column>
+<specialColumn name="Available">432, 360, 141120, 70560, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, 4, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="s_V_9_decision_function_fu_224">decision_function, 0, 0, 0, 91, 0</column>
+<column name="s_V_8_decision_function_1_fu_216">decision_function_1, 0, 0, 0, 97, 0</column>
+<column name="s_V_19_decision_function_10_fu_314">decision_function_10, 0, 0, 0, 61, 0</column>
+<column name="s_V_18_decision_function_11_fu_306">decision_function_11, 0, 0, 0, 63, 0</column>
+<column name="s_V_17_decision_function_12_fu_298">decision_function_12, 0, 0, 0, 63, 0</column>
+<column name="s_V_16_decision_function_13_fu_288">decision_function_13, 0, 0, 0, 99, 0</column>
+<column name="s_V_15_decision_function_14_fu_280">decision_function_14, 0, 0, 0, 99, 0</column>
+<column name="s_V_14_decision_function_15_fu_270">decision_function_15, 0, 0, 0, 91, 0</column>
+<column name="s_V_13_decision_function_16_fu_260">decision_function_16, 0, 0, 0, 91, 0</column>
+<column name="s_V_12_decision_function_17_fu_250">decision_function_17, 0, 0, 0, 99, 0</column>
+<column name="s_V_11_decision_function_18_fu_240">decision_function_18, 0, 0, 0, 91, 0</column>
+<column name="s_V_10_decision_function_19_fu_232">decision_function_19, 0, 0, 0, 99, 0</column>
+<column name="s_V_7_decision_function_2_fu_204">decision_function_2, 0, 0, 0, 171, 0</column>
+<column name="s_V_1_decision_function_20_fu_144">decision_function_20, 0, 0, 0, 171, 0</column>
+<column name="s_V_decision_function_21_fu_136">decision_function_21, 0, 0, 0, 97, 0</column>
+<column name="s_V_6_decision_function_3_fu_194">decision_function_3, 0, 0, 0, 99, 0</column>
+<column name="s_V_5_decision_function_4_fu_186">decision_function_4, 0, 0, 0, 91, 0</column>
+<column name="s_V_4_decision_function_5_fu_176">decision_function_5, 0, 0, 0, 201, 0</column>
+<column name="s_V_3_decision_function_6_fu_168">decision_function_6, 0, 0, 0, 97, 0</column>
+<column name="s_V_21_decision_function_7_fu_328">decision_function_7, 0, 0, 0, 29, 0</column>
+<column name="s_V_20_decision_function_8_fu_322">decision_function_8, 0, 0, 0, 61, 0</column>
+<column name="s_V_2_decision_function_9_fu_158">decision_function_9, 0, 0, 0, 99, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln712_10_fu_376_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln712_11_fu_382_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln712_12_fu_388_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln712_13_fu_394_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln712_14_fu_400_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln712_15_fu_406_p2">+, 0, 0, 39, 32, 32</column>
+<column name="add_ln712_16_fu_412_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln712_17_fu_418_p2">+, 0, 0, 32, 32, 7</column>
+<column name="add_ln712_18_fu_424_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln712_19_fu_430_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln712_1_fu_340_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln712_20_fu_436_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln712_2_fu_346_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln712_3_fu_352_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln712_4_fu_358_p2">+, 0, 0, 39, 32, 32</column>
+<column name="add_ln712_5_fu_442_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln712_6_fu_364_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln712_7_fu_370_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln712_8_fu_446_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln712_9_fu_451_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln712_fu_334_p2">+, 0, 0, 32, 32, 32</column>
+<column name="ap_return">+, 0, 0, 32, 32, 32</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="add_ln712_20_reg_481">32, 0, 32, 0</column>
+<column name="add_ln712_3_reg_466">32, 0, 32, 0</column>
+<column name="add_ln712_4_reg_471">32, 0, 32, 0</column>
+<column name="add_ln712_7_reg_476">32, 0, 32, 0</column>
+<column name="s_V_5_reg_461">32, 0, 32, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, myproject, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, myproject, return value</column>
+<column name="ap_return">out, 32, ap_ctrl_hs, myproject, return value</column>
+<column name="p_read">in, 32, ap_none, p_read, scalar</column>
+<column name="p_read1">in, 32, ap_none, p_read1, scalar</column>
+<column name="p_read2">in, 32, ap_none, p_read2, scalar</column>
+<column name="p_read3">in, 32, ap_none, p_read3, scalar</column>
+<column name="p_read4">in, 32, ap_none, p_read4, scalar</column>
+<column name="p_read5">in, 32, ap_none, p_read5, scalar</column>
+<column name="p_read6">in, 32, ap_none, p_read6, scalar</column>
+<column name="p_read7">in, 32, ap_none, p_read7, scalar</column>
+<column name="p_read8">in, 32, ap_none, p_read8, scalar</column>
+<column name="p_read9">in, 32, ap_none, p_read9, scalar</column>
+</table>
+</item>
+</section>
+</profile>
