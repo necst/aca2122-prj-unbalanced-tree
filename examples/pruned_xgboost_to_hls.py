@@ -6,6 +6,7 @@ import xgboost as xgb
 import conifer
 import datetime
 from scipy.special import expit
+import numpy as np
 
 # Make a random dataset from sklearn 'hastie'
 X, y = make_hastie_10_2(random_state=0)
@@ -18,7 +19,7 @@ dtest = xgb.DMatrix(X_test, label=y_test)
 
 # Train a BDT
 param = {'max_depth': 3, 'eta': 1, 'alpha': 10,
-         'gamma': 10, 'objective': 'binary:logistic'}
+         'gamma': 1, 'objective': 'binary:logistic'}
 # Gamma controls pruning in XGBoost, Alpha controls L1 regularization
 
 num_round = 20  # num_round is equivalent to number of trees
@@ -27,20 +28,29 @@ bst = xgb.train(param, dtrain, num_round)
 # Create a conifer config
 cfg = conifer.backends.xilinxhls.auto_config()
 # Set the output directory to something unique
-cfg['OutputDir'] = 'prj_{}'.format(int(datetime.datetime.now().timestamp()))
+cfg['OutputDir'] = 'csim_from_python_{}'.format(int(datetime.datetime.now().timestamp()))
 
 # Create and compile the model
 model = conifer.model(bst, conifer.converters.xgboost,
                       conifer.backends.xilinxhls, cfg)
+
 model.compile()
+y_hls = model.decision_function(X_test)
+
+wrapper_out_dir = 'wrapper-5'
+core_output_dir = 'core-5'
 
 
+model.deploy(wrapper_output_dir=wrapper_out_dir, core_output_dir=core_output_dir)
+
+np.save(wrapper_out_dir + '/X_test.npy', X_test)
+np.save(wrapper_out_dir + '/y_hls.npy', y_hls)
 # Run HLS C Simulation and get the output
 # xgboost 'predict' returns a probability like sklearn 'predict_proba'
 # so we need to compute the probability from the decision_function returned
 # by the HLS C Simulation
-y_hls = expit(model.decision_function(X_test))
-y_xgb = bst.predict(dtest)
+# y_xgb = bst.predict(dtest)
 
 # Synthesize the model
-model.build()
+# model.build()
+

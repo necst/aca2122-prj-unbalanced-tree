@@ -1,6 +1,7 @@
 import os
 import sys
 from shutil import copyfile
+
 import numpy as np
 
 _TOOLS = {
@@ -22,7 +23,6 @@ def get_tool_exe_in_path(tool):
 
 
 def get_hls():
-
     tool_exe = None
 
     if '_tool' in globals():
@@ -93,11 +93,12 @@ def write(ensemble_dict, cfg):
     fout.write('#include "{}.h"\n'.format(cfg['ProjectName']))
 
     fout.write(
-        'void {}(input_arr_t x, score_arr_t score, score_t tree_scores[BDT::fn_classes(n_classes) * n_trees]){{\n'.format(cfg['ProjectName']))
+        'void {}(input_arr_t x, score_arr_t score, score_t tree_scores[BDT::fn_classes(n_classes) * n_trees]){{\n'.format(
+            cfg['ProjectName']))
     fout.write('\t#pragma HLS array_partition variable=x\n')
     fout.write('\t#pragma HLS array_partition variable=score\n')
     fout.write('\t#pragma HLS array_partition variable=tree_scores\n')
-    if(cfg['Pipeline']):
+    if (cfg['Pipeline']):
         fout.write('\t#pragma HLS pipeline\n')
         fout.write('\t#pragma HLS unroll\n')
     fout.write('\tbdt.decision_function(x, score, tree_scores);\n}')
@@ -244,28 +245,28 @@ def write(ensemble_dict, cfg):
         elif '//hls-fpga-machine-learning insert top-level-function' in line:
             newline = line
             top_level = indent + \
-                '{}(x, score, tree_scores);\n'.format(cfg['ProjectName'])
+                        '{}(x, score, tree_scores);\n'.format(cfg['ProjectName'])
             newline += top_level
         elif '//hls-fpga-machine-learning insert predictions' in line:
             newline = line
             newline += indent + \
-                'for(int i = 0; i < {}; i++) {{\n'.format(
-                    ensemble_dict['n_classes'])
+                       'for(int i = 0; i < {}; i++) {{\n'.format(
+                           ensemble_dict['n_classes'])
             newline += indent + '  std::cout << pr[i] << " ";\n'
             newline += indent + '}\n'
             newline += indent + 'std::cout << std::endl;\n'
         elif '//hls-fpga-machine-learning insert tb-output' in line:
             newline = line
             newline += indent + \
-                'for(int i = 0; i < {}; i++) {{\n'.format(
-                    ensemble_dict['n_classes'])
+                       'for(int i = 0; i < {}; i++) {{\n'.format(
+                           ensemble_dict['n_classes'])
             newline += indent + '  fout << score[i] << " ";\n'
             newline += indent + '}\n'
         elif '//hls-fpga-machine-learning insert output' in line or '//hls-fpga-machine-learning insert quantized' in line:
             newline = line
             newline += indent + \
-                'for(int i = 0; i < {}; i++) {{\n'.format(
-                    ensemble_dict['n_classes'])
+                       'for(int i = 0; i < {}; i++) {{\n'.format(
+                           ensemble_dict['n_classes'])
             newline += indent + '  std::cout << score[i] << " ";\n'
             newline += indent + '}\n'
             newline += indent + 'std::cout << std::endl;\n'
@@ -276,14 +277,14 @@ def write(ensemble_dict, cfg):
     # fout.write('#include "firmware/parameters.h"\n')
     # fout.write('#include "firmware/{}.h"\n'.format(cfg['ProjectName']))
 
-    #fout.write('int main(){\n')
-    #fout.write('\tinput_arr_t x = {{{}}};\n'.format(str([0] * ensemble_dict['n_features'])[1:-1]));
-    #fout.write('\tscore_arr_t score;\n')
-    #fout.write('\t{}(x, score);\n'.format(cfg['ProjectName']))
-    #fout.write('\tfor(int i = 0; i < n_classes; i++){\n')
-    #fout.write('\t\tstd::cout << score[i] << ", ";\n\t}\n')
-    #fout.write('\tstd::cout << std::endl;\n')
-    #fout.write('\treturn 0;\n}')
+    # fout.write('int main(){\n')
+    # fout.write('\tinput_arr_t x = {{{}}};\n'.format(str([0] * ensemble_dict['n_features'])[1:-1]));
+    # fout.write('\tscore_arr_t score;\n')
+    # fout.write('\t{}(x, score);\n'.format(cfg['ProjectName']))
+    # fout.write('\tfor(int i = 0; i < n_classes; i++){\n')
+    # fout.write('\t\tstd::cout << score[i] << ", ";\n\t}\n')
+    # fout.write('\tstd::cout << std::endl;\n')
+    # fout.write('\treturn 0;\n}')
     # fout.close()
 
     fout.close()
@@ -325,7 +326,7 @@ def auto_config():
               'Precision': 'ap_fixed<18,8>',
               'XilinxPart': 'xcvu9p-flgb2104-2L-e',
               'ClockPeriod': '5',
-              'Pipeline' : True}
+              'Pipeline': True}
     return config
 
 
@@ -342,7 +343,7 @@ def decision_function(X, config, trees=False):
 
     cmd = '{} -f build_prj.tcl "csim=1 synth=0" > predict.log'.format(hls_tool)
     success = os.system(cmd)
-    if(success > 0):
+    if (success > 0):
         print("'predict' failed, check predict.log")
         sys.exit()
     y = np.loadtxt('tb_data/csim_results.log')
@@ -368,10 +369,10 @@ def build(config, reset=False, csim=False, synth=True, cosim=False, export=False
         print("No HLS in PATH. Did you source the appropriate Xilinx Toolchain?")
         sys.exit()
 
-    cmd = '{hls_tool} -f build_prj.tcl "reset={reset} csim={csim} synth={synth} cosim={cosim} export={export}"'\
+    cmd = '{hls_tool} -f build_prj.tcl "reset={reset} csim={csim} synth={synth} cosim={cosim} export={export}"' \
         .format(hls_tool=hls_tool, reset=reset, csim=csim, synth=synth, cosim=cosim, export=export)
     success = os.system(cmd)
-    if(success > 0):
+    if (success > 0):
         print("'build' failed")
         sys.exit()
     os.chdir(cwd)
