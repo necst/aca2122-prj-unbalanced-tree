@@ -37,7 +37,7 @@ class model:
         self.backend.build(self.config, **kwargs)
 
     def deploy(self, input_shape=[10], output_shape=[1], wrapper_output_dir='wrapper', core_output_dir='core', precision='ap_fixed<32,16>',
-               prj_name='myproject', part='xczu3eg-sbva484-1-e', clk_period=5):
+               prj_name='myproject', part='xczu3eg-sbva484-1-e', clk_period=7):
         import hls4ml
         import shutil
 
@@ -104,6 +104,7 @@ class model:
         shutil.copyfile(core_firm_path + '/myproject.h', wrap_firm_path + '/myproject.h')
         shutil.copyfile(core_firm_path + '/parameters.h', wrap_firm_path + '/parameters.h')
         shutil.copyfile(core_firm_path + '/BDT.h', wrap_firm_path + '/BDT.h')
+        shutil.copyfile(core_output_dir + '/design.tcl', wrapper_output_dir + '/design.tcl')
 
         # modify build script
         oldfile = os.path.join(wrapper_output_dir, 'build_prj.tcl')
@@ -177,7 +178,12 @@ class model:
                 newline = '        out_struct.data = out_local[i];\n'
             elif 'out[i].last = (is_last && (i == N_OUT - 1))? true : false;' in line:
                 newline = '        out_struct.last = in_struct.last;\n' \
-                          '        out.write(out_struct);'
+                          '        out_struct.dest = 0;\n' \
+                          '        out_struct.id = 0;\n' \
+                          '        out_struct.keep = ( 1<<(sizeof(T_out)) ) - 1;\n' \
+                          '        out_struct.strb = ( 1<<(sizeof(T_out)) ) - 1;\n' \
+                          '        out_struct.user = 0;\n' \
+                          '        out.write(out_struct);\n'
 
             else:
                 newline = line
@@ -278,30 +284,13 @@ class model:
         os.remove(oldfile)
         os.rename(newfile, oldfile)
 
-        # modify design.tcl
-        oldfile = os.path.join(wrapper_output_dir, 'design.tcl')
-        newfile = os.path.join(wrapper_output_dir, 'design.tcl.mod')
-        f = open(oldfile, 'r')
-        fout = open(newfile, 'w')
 
-        for line in f.readlines():
-            if 'create_project project_1 ${myproject}_vivado_accelerator -part xc7z020clg400-1 -force' in line:
-                newline = 'create_project project_1 ${myproject}_vivado_accelerator -part ' + part + ' -force\n'
-            elif 'set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]' in line:
-                newline = 'set_property board_part em.avnet.com:ultra96:part0:1.2 [current_project]\n'
-
-            else:
-                newline = line
-            fout.write(newline)
-
-        os.remove(oldfile)
-        os.rename(newfile, oldfile)
-
-        # run vitis build_prj.tcl
-        # run  try:
-        #                     os.system('vivado -mode batch -source design.tcl')
-        #                 except:
-        #                     print("Something went wrong, check the Vivado logs")
+        # os.system('vitis20212')
+        # cwd = os.getcwd()
+        # os.chdir(wrapper_output_dir)
+        # os.system('vitis_hls build_prj.tcl')
+        # os.system('vivado -mode batch -source design.tcl')
+        # os.chdir(cwd)
         return model
 
     def profile(self, bins=50, return_data=False, return_figure=True):

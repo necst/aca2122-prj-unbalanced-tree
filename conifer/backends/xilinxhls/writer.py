@@ -1,4 +1,5 @@
 import os
+import shutil
 import sys
 from shutil import copyfile
 
@@ -288,6 +289,25 @@ def write(ensemble_dict, cfg):
     # fout.close()
 
     fout.close()
+
+    #######################
+    # design.tcl
+    #######################
+    from pathlib import Path
+    home = str(Path.home())
+    oldfile = os.path.join(filedir, 'hls-template/design.tcl')
+    newfile = os.path.join(filedir, 'hls-template/design.tcl.mod')
+    f = open(oldfile, 'r')
+    fout = open(newfile, 'w')
+    for line in f.readlines():
+        line = line.replace('{home}', home)
+        fout.write(line)
+    f.close()
+    fout.close()
+    os.remove(oldfile)
+    os.rename(newfile, oldfile)
+    shutil.copyfile(os.path.join(filedir, 'hls-template/design.tcl'), '{}/design.tcl'.format(cfg['OutputDir']))
+
 
     #######################
     # build_prj.tcl
