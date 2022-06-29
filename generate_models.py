@@ -23,7 +23,7 @@ import json
 params = json.load(open('param.json'))
 
 for k, param in params.items():
-    num_round = 50  # num_round is equivalent to number of trees
+    num_round = 20  # num_round is equivalent to number of trees
     bst = xgb.train(param, dtrain, num_round)
 
     # Create a conifer config
