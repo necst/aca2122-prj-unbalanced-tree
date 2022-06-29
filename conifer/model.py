@@ -161,6 +161,10 @@ class model:
         for line in f.readlines():
             if 'in_size, out_size' in line:
                 newline = line.replace('in_size, out_size', 'tree_scores')
+            elif '#pragma HLS INTERFACE axis port' in line:
+                newline = line.replace('#pragma HLS INTERFACE axis port', '#pragma HLS INTERFACE axis register both port')
+            elif '#pragma HLS PIPELINE' in line:
+                newline = '#pragma HLS UNROLL\n'
             elif 'bool is_last = false;' in line:
                 newline = '    score_t tree_scores[BDT::fn_classes(n_classes) * n_trees]{};\n' \
                           '    input_axis_t in_struct;\n' \
